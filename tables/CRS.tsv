@@ -1,5 +1,3 @@
-# Description: Coordinate reference system used for coordinate variables
-# Source: BUFR table 0 01 150, WIGOS 11-02
 Value	Description
 0	WGS84
 1	ETRS89
