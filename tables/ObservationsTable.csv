@@ -1,0 +1,109 @@
+# Descripion: table defining elements in main observations table
+# Source:
+ElementNumber;ElementName;Kind;ExternalTable;WIGOS # (MCO);Description
+1;ReportID ;bigint (pk);;NA;Unique ID for report (unique ID given by combination of RecordID and ObservationID)
+2;Region ;int (fk);Region;3-01 (C);Region (WMO region / Ocean basin)
+3;SubRegion ;int (fk);SubRegion;3-02 (C);Country / regional sea
+4;ApplicationArea ;int[] (fk);ApplicationArea;2-01 (M);WMO application area(s)
+5;ObservingProgramme ;int (fk);ObservingProgramme;2-02 (M);Observing programme, e.g. VOS
+6;ReportType ;int (fk);ReportType;NA;e.g. SYNOP, TEMP, CLIMAT, etc
+7;StationName ;varchar;;3-03 (M);e.g. GRUAN station name, ship name, site name etc
+8;StationType ;int (fk);StationType;3-04 (M);Type of station, e.g. land station, sea station etc
+9;PlatformType ;int (fk);PlatformType;NA;Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
+10;PlatformSubType ;int (fk);PlatformSubType;NA;Sub-type for platform, e.g. 3m discuss buoy
+11;PrimaryStationId;varchar;;3-06 (M);Unique (WMO) station identifier, e.g. WIGOS ID
+12;PrimaryStationIdScheme;int (fk);IDScheme;NA;Scheme used for unique station ID
+13;SecondaryStationId;varchar;;;Alternate (local) ID for station, e.g. Network ID
+14;SecondaryStationIdScheme;int (fk);IDScheme;;Alternate ID Scheme, e.g. Network ID
+15;StationLocation_Longitude;numeric ;;3-07 (M);Longitude of station, -180.0 to 180.0 (or other as defined by StationCRS)
+16;StationLocation_Latitude;numeric;;3-07 (M);Latitude of station, -90 to 90 (or other as defined by StationCRS)
+17;StationLocationAccuracy;numeric;;NA;Accuracy to which station location recorded (radius in km)
+18;StationLocationQuality;int (fk);LocationQuality;NA;Quality flag for station location
+19;StationCRS ;int (fk);CRS;11-Feb;Coordinate reference scheme for station location
+20;SurfaceType ;int (fk);SurfaceType;4-01 (C);e.g. rolling hills
+21;SurfaceTypeScheme ;int (fk);SurfaceTypeScheme;4-02 (C);Scheme used to classify surface cover
+22;SiteTopography ;int (fk);SiteTopography;4-03 (C);Description of local topography and broader context
+23;StationConfiguration;bigint (fk);StationConfiguration;NA;Link to station metadata / configuration
+24;HeightOfStationAboveLocalGround ;numeric;;3-07 (M);Height of station above local ground (m)
+25;HeightOfStationAboveSeaLevel ;numeric;;3-07 (M);Height of station above mean sea level (m), negative values for below sea level.
+26;HeightOfStationAboveSeaLevelAccuracy;numeric;;;Accuracy to which height of station known (m)
+27;SeaLevelDatum;int (fk);SeaLevelDatum;;Datum used for sea level
+28;ReportMeaningOfTimeStamp;int (fk);MeaningOffTimeStamp;11-03 (M);Report time - beginning, middle or end of reporting period
+29;ReportYear;int;;;Year of report (UTC)
+30;ReportMonth;int;;;Month of report (UTC)
+31;ReportDay;int;;;Day of report (UTC)
+32;ReportHour;int;;;Hour of report (UTC)
+33;ReportMinutes;int;;;Minute of report (UTC)
+34;ReportSeconds;int;;;Seconds of report (UTC)
+35;ReportDuration;int;;;Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
+36;ReportTimeAccuracy;numeric;;NA;Precision to which time was recorded (s)
+37;ReportTimeQuality;int (fk);TimeQuality;NA;Quality flag for ReportDateTime
+38;ReportTimeReference;int (fk);TimeReference;;Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
+39;ProfileConfiguration ;bigint (fk);ProfileConfiguration;NA;Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
+40;EventsAtStation;int (fk);EventsAtStation;4-04 (O);e.g. ship hove to, crop burning etc.
+41;ReportQuality;int (fk);QualityFlag;NA;Overall quality of report
+42;DuplicateStatus ;int (fk);DuplicateStatus;NA;E.g. no duplicates, best duplicate, duplicate, not checked.
+43;Duplicates ;bigint [] (fk);this;NA;Array of reportIDs for duplicates
+44;MaintenanceAndUpdateFrequency ;int (fk);UpdateFrequency;NA;Frequency with which modifications and deletions are made to the data after it is first produced
+45;History ;bigint (fk);ReportHistory;NA;Sequence of processing steps – link to table
+46;RecordYear;int ;;;Year of revision of this record (UTC)
+47;RecordMonth;int ;;;Month of revision of this record (UTC)
+48;RecordDay;int ;;;Day of revision of this record (UTC)
+49;RecordHour;int ;;;Hour of revision of this record (UTC)
+50;RecordMinute;int ;;;Minute of revision of this record (UTC)
+51;RecordSeconds;int ;;NA;Seconds of revision of this record (UTC)
+52;ProcessingLevel;int;ReportProcessingLevel;;Level of processing applied to this report
+53;ProcessingCode(s);int[];ReportProcessingCode;;Processing applied to this report
+54;SourceID ;int (fk);SourceConfiguration;NA;Original source of data – link to table 
+55;SourceRecordId ;varchar;;NA;Record ID in source data, e.g. ID of event from GRUAN meta database
+56;DataPolicyLicence ;int (fk);DataPolicyLicence;9-02 (M);WMOessential, WMOadditional, WMOother
+57;ObservationID ;int (pk);;;Together with RecordID forms unique ID for observation / record
+58;ObservedVariable ;int (fk);ObservedVariable;1-01 (M);The variable being observed / measured
+59;Units ;int (fk);Units;1-02 (M);Units for the observed variable
+60;CodeTable ;int (fk);ObservationCodeTable;NA;Encode / decode table for variable (if encoded)
+61;ObservationValue ;numeric;;NA;The observed value
+62;ObservationValueSignificance;int (fk);ValueSignificance;NA;e.g. min, max, mean, sum
+63;ObservationTimestampMeaning;int (fk);MeaningOffTimeStamp;11-03 (M);beginning, middle, end
+64;ObservationYear;int ;;1-03 (M);Year ofobservation (UTC)
+65;ObservationMonth;int ;;1-03 (M);Month of observation (UTC)
+66;ObvservationDay;int ;;1-03 (M);Day of observation (UTC)
+67;ObservationHour;int ;;1-03 (M);Hour of observation (UTC)
+68;ObservationMinute;int ;;1-03 (M);Minutes of observation (UTC)
+69;ObservationSeconds;int ;;1-03 (M);Seconds of observation (UTC)
+70;ObservationDuration ;int;;7-09 (M);Duration/period over which observation was made (s)
+71;ObservationLongitude;numeric;;;Longitude of the observed value, -180 to 180 (or other as defined by CRS)
+72;ObservationLatitude;numeric;;1-04 (M);Latitude of the observed value, -90 to 90 (or other as defined by CRS)
+73;ObservationLocationMethod ;int (fk);LocationMethod;11-01;Method of determining location, 
+74;ObservationLocationPrecision ;numeric;;;Precision to which location is reported (radius km)
+75;ObservationBoundingBoxMinLongitude;numeric;;1-04 (M);Bounding box for observation, valid range given by CRS
+76;ObservationBoundingBoxMaxLongitude;numeric;;1-04 (M);Bounding box for observation, valid range given by CRS
+77;ObservationBoundingBoxMinLatitude;numeric;;1-04 (M);Bounding box for observation, valid range given by CRS
+78;ObservationBoundingBoxMaxLatitude;numeric;;1-04 (M);Bounding box for observation, valid range given by CRS
+79;ObservationSpatialRepresentativeness ;int (fk);SpatialRepresentativeness;1-05 (O);Spatial representativeness of observation
+80;ObservationHeightAboveStationSurface ;numeric;;5-05 (C);Positive values for above surface (e.g. sondes), negative for below (e.g. xbt)
+81;ObservationZCoordinate ;numeric;;5-05 (C);z coordinate of observation
+82;ObservationZCoordinateType ;int (fk);ZCoordinateType;5-05 (C);Type of z coordinate
+83;ObservationZCoordinateMethod;int (fk);ZCoordinateMethod;;Method of determining z coordinate
+84;QualityFlag ;int (fk);QualityFlag;8-03 (M);Quality flag for observation
+85;NumericalPrecision ;int;;7-12 (O);Reporting precision of observation in units given by 'Units' variable. Equivalent to BUFR scale factor
+86;StandardUncertainty ;numeric;;8-01 (C);Standard uncertainty in reported value
+87;MethodOfEstimatingStandardUncertainty ;int (fk);UncertaintyMethod;8-02 (C);Method of estimating the standard uncertainty
+88;UncertaintyDueToCorrelatedErrors ;numeric;;8-01 (C);Uncertainty due to errors in the observation that are correlated between observations
+89;MethodOfEstimatingUncertaintyDueToCorrelatedErrors ;int (fk);UncertaintyMethod;8-02 (C);
+90;UncertaintyDueToUncorrelatedErrors ;numeric ;;8-01 (C);Uncertainty due to errors in the observation that are uncorrelated between observations
+91;MethodOfEstimatingUncertaintyDueToUncorrelatedErrors ;int (fk);UncertaintyMethod;8-02 (C);
+92;UncertaintyDueToSystematicErrors ;numeric ;;8-01 (C);Uncertainty due to errors in the observations that are correlated under similar observing conditions
+93;MethodOfEstimatingUncertaintyDueToSystematicErrors ;int (fk);UncertaintyMethod;8-02 (C);
+94;TotalUncertainty ;numeric ;;8-01 (C);
+95;MethodOfEstimatingTotalUncertainty ;int (fk);UncertaintyMethod;8-02 (C);
+96;SensorConfiguration;int (fk);SensorConfiguration;;
+97;SensorAutomationStatus ;int (fk);Automation;5-01 (M);Automated, manual, mixed or visual observation
+98;ExposureOfSensor ;int (fk);SensorExposureQuality;5-15 (C);Whether the exposure of the instrument will impact on the quality of the measurement
+99;OriginalPrecision ;int ;;NA;Original reporting precision in units given by 'OriginalUnits'
+100;OriginalUnits ;int (fk);Units;NA;Original units 
+101;OriginalValue ;numeric ;;NA;Original value as reported or recorded in log book.
+102;ConversionFactor ;int (fk);ConversionFactor;7-01 (O);Link to table describing conversion process
+103;ProcessingCode ;int (fk);ProcessingCode;7-01 (O);e.g. TRC (temperature radiation corrections) etc. Encoded in table.
+104;ProcessingLevel ;int (fk);ProcessingLevel;7-06 (O);Level of processing applied to observation.
+105;AdjustmentID ;int (fk);AdjustmentsTable;;
+106;Traceability ;int (fk);Traceability;8-05 (C);Whether observation can be traced to international standards.

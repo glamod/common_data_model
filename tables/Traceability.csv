@@ -1,0 +1,6 @@
+# Description: Whether observation is traceably to international / known standards
+# Source: WIGOS 8-05
+Value;Description
+0;Unknown
+1;Traceable to international standards
+2;Traceable to other standards
