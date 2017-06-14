@@ -1,7 +1,7 @@
 digraph Region {
 node [color=white]
 Region [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="3" ALIGN="left"># Table: Region</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left" PORT="head"># Table: Region</TD></TR>
 <TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Region.tsv</TD></TR>
 <TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="3"># Description: WMO Region where report / observation was made</TD></TR>

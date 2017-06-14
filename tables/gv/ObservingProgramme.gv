@@ -1,7 +1,7 @@
 digraph ObservingProgramme {
 node [color=white]
 ObservingProgramme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="4" ALIGN="left"># Table: ObservingProgramme</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head"># Table: ObservingProgramme</TD></TR>
 <TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservingProgramme.tsv</TD></TR>
 <TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="4"># Description: Observing programme(s) that this report / observation was collected as part of</TD></TR>

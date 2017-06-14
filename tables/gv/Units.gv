@@ -1,7 +1,7 @@
 digraph Units {
 node [color=white]
 Units [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="6" ALIGN="left"># Table: Units</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left" PORT="head"># Table: Units</TD></TR>
 <TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Units.tsv</TD></TR>
 <TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="6"># Description: units that value is reported in</TD></TR>

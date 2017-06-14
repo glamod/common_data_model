@@ -1,7 +1,7 @@
 digraph DataPolicyLicence {
 node [color=white]
 DataPolicyLicence [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="3" ALIGN="left"># Table: DataPolicyLicence</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left" PORT="head"># Table: DataPolicyLicence</TD></TR>
 <TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/DataPolicyLicence.tsv</TD></TR>
 <TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="3"># Description: Data policy / licence applicable to this report / observations / data source</TD></TR>

@@ -17,7 +17,7 @@ set ncols = `awk 'BEGIN {FS="\t"} ; /^Value/ || /^ElementNumber/ {print NF}' $fi
 echo "digraph $tablename {" > ${tablename}.gv
 echo "node [color=white]" >> ${tablename}.gv
 echo $tablename '[label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">' >> ${tablename}.gv
-echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># Table: '$tablename'</TD></TR>' >> ${tablename}.gv
+echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left" PORT="head"># Table: '$tablename'</TD></TR>' >> ${tablename}.gv
 echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/'$tablename'.tsv</TD></TR>' >> ${tablename}.gv
 echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>' >> ${tablename}.gv
 head -23 $file | awk -v ncols="$ncols" '\

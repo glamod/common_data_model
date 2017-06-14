@@ -1,7 +1,7 @@
 digraph EventsAtStation {
 node [color=white]
 EventsAtStation [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="2" ALIGN="left"># Table: EventsAtStation</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left" PORT="head"># Table: EventsAtStation</TD></TR>
 <TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/EventsAtStation.tsv</TD></TR>
 <TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="2"># Description: Report events at station at the time of the report / observation</TD></TR>

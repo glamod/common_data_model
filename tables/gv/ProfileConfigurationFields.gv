@@ -1,7 +1,7 @@
 digraph ProfileConfigurationFields {
 node [color=white]
 ProfileConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="9" ALIGN="left"># Table: ProfileConfigurationFields</TD></TR>
+<TR><TD COLSPAN="9" ALIGN="left" PORT="head"># Table: ProfileConfigurationFields</TD></TR>
 <TR><TD COLSPAN="9" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfigurationFields.tsv</TD></TR>
 <TR><TD COLSPAN="9" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="9"># Description:</TD></TR>
