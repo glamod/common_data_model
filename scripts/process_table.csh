@@ -30,3 +30,6 @@ echo "</TABLE>>];"
 echo "}"
 
 
+# now replace special characters
+# ohm
+# degree
