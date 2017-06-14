@@ -12,4 +12,4 @@ set tablename = `echo $file | cut -d '.' -f 1`
 
 echo $file $tablename
 
-cat ${file} | grep -v '#' | sed 's/;/	/g;s/"/&quot;/g' | sed "s/&quot;/''/g" > ${tablename}.tsv
+cat ${file} | grep -v '#' | sed 's/;/	/g;s/"/\&quot;/g' | sed "s/\&quot;/''/g" > ${tablename}.tsv
