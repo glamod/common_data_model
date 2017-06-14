@@ -21,9 +21,9 @@ echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># Table: '$tablename'</TD></TR>'
 echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/'$tablename'.csv</TD></TR>'
 awk -v ncols="$ncols" '\
 BEGIN { FS=";"  } ; \
-/^#/ {print "<TR><TD ALIGN=\"left\" COLSPAN=\""ncols"\">"$0"</TD></TR>"} \
-/^Value/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
-/^[^#]/ && /^[^Value]/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD>%s<\/TD>", $i };printf "<\/TR>\n" }}' $file
+  /^#/ {print "<TR><TD ALIGN=\"left\" COLSPAN=\""ncols"\">"$0"</TD></TR>"} \
+  /^Value/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
+  /^[^#]/ && /^[^Value]/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD>%s<\/TD>", $i };printf "<\/TR>\n" }}' $file
 
 # end table / node
 echo "</TABLE>>];"
