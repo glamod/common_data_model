@@ -29,7 +29,7 @@ UnitsID	Units	Conventional abbreviation	Abbreviation in IA5/ASCII (5)	Abbreviati
 82	sievert 	Sv 	Sv 	SV 	m2 s–2
 110	degree (angle) 	° 	deg 	DEG	
 111	minute (angle) 	' 	'	 MNT	
-112	second (angle) 	&quot; 	&quot; 	SEC	
+112	second (angle) 	''	''	SEC	
 120	litre 	l or L 	l or L 	L	
 130	minute (time) 	min 	min 	MIN	
 131	hour 	h 	h 	HR	
