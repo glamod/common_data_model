@@ -1,0 +1,13 @@
+digraph MeaningOfTimeStamp {
+node [color=white]
+MeaningOfTimeStamp [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: MeaningOfTimeStamp</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/MeaningOfTimeStamp.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: Meaning / significance of date / time reported for report or observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WIGOS 11-03</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Name</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Beginning</TD><TD>Time stamps indicate the beginning of a period covering the range up to but excluding the following time stamp.</TD></TR>
+<TR><TD>2</TD><TD>End</TD><TD>Time stamps indicate the end of a period covering the range up to but excluding the preceding time stamp.</TD></TR>
+<TR><TD>3</TD><TD>Middle</TD><TD>Time stamps indicate the middle of a period beginning at the middle of the range described by this and the preceding time stamp and ending right before the middle of the range described by this and the following time stamp.</TD></TR>
+</TABLE>>];
+}

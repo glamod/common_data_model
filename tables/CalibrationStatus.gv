@@ -1,0 +1,14 @@
+digraph CalibrationStatus {
+node [color=white]
+CalibrationStatus [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: CalibrationStatus</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CalibrationStatus.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Calibration status of the instrument</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 5-08</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>No changes - in calibration.</TD></TR>
+<TR><TD>1</TD><TD>No changes - out of calibration.</TD></TR>
+<TR><TD>2</TD><TD>No changes - calibration unknown.</TD></TR>
+<TR><TD>3</TD><TD>Recalibrated - in calibration.</TD></TR>
+</TABLE>>];
+}

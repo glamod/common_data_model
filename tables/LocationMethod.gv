@@ -1,0 +1,7 @@
+digraph LocationMethod {
+node [color=white]
+LocationMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="" ALIGN="left"># Table: LocationMethod</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/LocationMethod.tsv</TD></TR>
+</TABLE>>];
+}
