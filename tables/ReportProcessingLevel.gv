@@ -1,7 +1,0 @@
-digraph ReportProcessingLevel {
-node [color=white]
-ReportProcessingLevel [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="" ALIGN="left"># Table: ReportProcessingLevel</TD></TR>
-<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportProcessingLevel.tsv</TD></TR>
-</TABLE>>];
-}

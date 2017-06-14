@@ -1,7 +1,7 @@
 # Description: base time to which times referenced
 # Source: WIGOS: 7-10
-Value;Description
-0;Unknown
-1;Time server
-2;Radio clock
-3;Manual comparison
+Value	Description
+0	Unknown
+1	Time server
+2	Radio clock
+3	Manual comparison

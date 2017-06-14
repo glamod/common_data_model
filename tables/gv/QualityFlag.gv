@@ -1,0 +1,19 @@
+digraph QualityFlag {
+node [color=white]
+QualityFlag [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: QualityFlag</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/QualityFlag.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Quality flag for observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: based on WIGOS 8-03-01 and BUFR 0 33 020</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Good </TD></TR>
+<TR><TD>1</TD><TD>Inconsistent </TD></TR>
+<TR><TD>2</TD><TD>Doubtful </TD></TR>
+<TR><TD>3</TD><TD>Wrong </TD></TR>
+<TR><TD>4</TD><TD>Not checked </TD></TR>
+<TR><TD>5</TD><TD>Has been changed </TD></TR>
+<TR><TD>6</TD><TD>Estimated </TD></TR>
+<TR><TD>7</TD><TD>Missing value </TD></TR>
+</TABLE>>];
+}

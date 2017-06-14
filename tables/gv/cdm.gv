@@ -1,0 +1,922 @@
+digraph cdm {
+rankdir=LR;
+node [color=white]
+Adjustment [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: Adjustment</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Adjustment.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Table providing record of adjustments applied to the records / observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>AdjustmentID </TD><TD>int </TD><TD>Unique Id for adjustment </TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint </TD><TD>Report to which adjustment has been applied </TD></TR>
+<TR><TD>2</TD><TD>ElementNumber </TD><TD>int </TD><TD>Which element has been adjusted </TD></TR>
+<TR><TD>3</TD><TD>AdjustmentValue </TD><TD>numeric </TD><TD>Adjusted value = original value + adjustment value </TD></TR>
+<TR><TD>4</TD><TD>ReasonForAdjustment </TD><TD>varcahr </TD><TD>Reason for adjusting the data </TD></TR>
+<TR><TD>5</TD><TD>References </TD><TD>int[] </TD><TD>References describing adjustment process </TD></TR>
+</TABLE>>];
+ApplicationArea [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ApplicationArea</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ApplicationArea.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Application area</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 2-01</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Global numerical weather prediction (GNWP) </TD></TR>
+<TR><TD>2</TD><TD>High-resolution numerical weather prediction (HRNWP) </TD></TR>
+<TR><TD>3</TD><TD>Nowcasting and very short range forecasting (NVSRF) </TD></TR>
+<TR><TD>4</TD><TD>Seasonal and inter-annual forecasting (SIAF) </TD></TR>
+<TR><TD>5</TD><TD>General weather forecasting </TD></TR>
+<TR><TD>6</TD><TD>Aeronautical meteorology </TD></TR>
+<TR><TD>7</TD><TD>Ocean applications </TD></TR>
+<TR><TD>8</TD><TD>Agricultural meteorology </TD></TR>
+<TR><TD>9</TD><TD>Hydrology </TD></TR>
+<TR><TD>10</TD><TD>Climate monitoring (as undertaken through the Global Climate Observing System, <BR/>GCOS) </TD></TR>
+<TR><TD>11</TD><TD>Climate applications </TD></TR>
+<TR><TD>12</TD><TD>Space weather </TD></TR>
+<TR><TD>13</TD><TD>Cryosphere applications </TD></TR>
+<TR><TD>14</TD><TD>Energy sector </TD></TR>
+<TR><TD>15</TD><TD>Transportation sector </TD></TR>
+<TR><TD>16</TD><TD>Health sector </TD></TR>
+<TR><TD>17</TD><TD>Terrestrial ecology </TD></TR>
+<TR><TD>18</TD><TD>Operational air quality forecasting </TD></TR>
+<TR><TD>19</TD><TD>Atmospheric composition forecasting </TD></TR>
+<TR><TD>20</TD><TD>Atmospheric composition monitoring and analysis </TD></TR>
+</TABLE>>];
+AutomationStatus [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: AutomationStatus</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/AutomationStatus.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Automation status of the station and / or individual observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Automatic observation. </TD></TR>
+<TR><TD>1</TD><TD>Automatic, always supplemented by manual input. </TD></TR>
+<TR><TD>2</TD><TD>Automatic, occasionally supplemented by manual input. </TD></TR>
+<TR><TD>3</TD><TD>Automatic, supplemented by manual observations. </TD></TR>
+<TR><TD>4</TD><TD>Manual observation. </TD></TR>
+<TR><TD>5</TD><TD>Unknown. </TD></TR>
+<TR><TD>6</TD><TD>Visual observation. </TD></TR>
+</TABLE>>];
+CRS [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: CRS</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CRS.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Coordinate reference system used for coordinate variables</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: BUFR table 0 01 150, WIGOS 11-02</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>WGS84 </TD></TR>
+<TR><TD>1</TD><TD>ETRS89 </TD></TR>
+<TR><TD>2</TD><TD>NAD83 </TD></TR>
+<TR><TD>3</TD><TD>DHDN </TD></TR>
+<TR><TD>4</TD><TD>Ellipsoidal datum using International Reference Meridian maintained by the International <BR/>Earth Rotation and Reference System Services (IERS) </TD></TR>
+</TABLE>>];
+CalibrationStatus [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: CalibrationStatus</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CalibrationStatus.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Calibration status of the instrument</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 5-08</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>No changes - in calibration. </TD></TR>
+<TR><TD>1</TD><TD>No changes - out of calibration. </TD></TR>
+<TR><TD>2</TD><TD>No changes - calibration unknown. </TD></TR>
+<TR><TD>3</TD><TD>Recalibrated - in calibration. </TD></TR>
+</TABLE>>];
+CommunucationMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: CommunucationMethod</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CommunucationMethod.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Method by which station reports its observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: Various (WMO47, WIGOS, BUFR)</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Cellular (unspecified) </TD></TR>
+<TR><TD>1</TD><TD>Meteosat DCP </TD></TR>
+<TR><TD>2</TD><TD>Iridium (unspecified) </TD></TR>
+<TR><TD>3</TD><TD>GOES DCP </TD></TR>
+<TR><TD>4</TD><TD>VSAT (unspecified) </TD></TR>
+<TR><TD>5</TD><TD>Landline telephone </TD></TR>
+<TR><TD>6</TD><TD>Radio modem </TD></TR>
+<TR><TD>7</TD><TD>E-mail (unspecified) </TD></TR>
+<TR><TD>8</TD><TD>Voice (ship). The observation is sent to a NMS through <BR/>the telephone network. The communication may use Inmarsat, Iridium, Vsat, <BR/>VHF </TD></TR>
+<TR><TD>9</TD><TD>Email (ship). The observation is sent to a NMS through <BR/>an email. The WMO message is attached to this email. <BR/>The satellite communication provider may be Inmarsat, Iridium, Vsat </TD></TR>
+<TR><TD>10</TD><TD>Web (ship). The observation is sent through the Web (example: <BR/>TurboWeb). The satellite communication provider may be Inmarsat, Iridium, Vsat <BR/></TD></TR>
+<TR><TD>11</TD><TD>Inmarsat-C (FM13, SAC41). Standard procedure used to report observations (FM13 <BR/>messages) from conventional VOS for many years. Collect call system: <BR/>the NMS which receives the observations pays the communication costs <BR/></TD></TR>
+<TR><TD>12</TD><TD>Inmarsat-C (FM13, other SAC). FM13 messages are sent to a <BR/>dedicated SAC (other than SAC41) established at one, or more <BR/>LES. In general, communications are paid by the country who <BR/>recruited the ship </TD></TR>
+<TR><TD>13</TD><TD>Inmarsat-C (EUHC). Text messages containing compressed data (E-SURFMAR format) are <BR/>sent ashore through Inmarsat-C to a dedicated SAC and LES. <BR/>Communications are paid by the country who recruited the ship <BR/></TD></TR>
+<TR><TD>14</TD><TD>Inmarsat-C (SEAS). SEAS binary messages sent through Inmarsat-C Data Mode <BR/>to a dedicated SAC and LES. Communications are paid by <BR/>NOAA/NWS </TD></TR>
+<TR><TD>15</TD><TD>Automated Identification System (direct or through satellite) </TD></TR>
+<TR><TD>16</TD><TD>Argos system </TD></TR>
+<TR><TD>17</TD><TD>Cellular (Dial-up). Dial-up communication using terrestrial wireless networks (GSM, GPRS) <BR/></TD></TR>
+<TR><TD>18</TD><TD>Cellular (SMS). SMS sent through terrestrial wireless networks (GSM, GPRS) <BR/></TD></TR>
+<TR><TD>19</TD><TD>Globalstar communication system </TD></TR>
+</TABLE>>];
+ConversionFactor [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: ConversionFactor</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ConversionFactor.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: Table containing definition of conversions between units used</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Implementation</TD></TR>
+<TR><TD>0</TD><TD>Farenheit to degrees Celsius </TD><TD>T_celsius = (T_Farenheit - 32) / 1.8 </TD></TR>
+</TABLE>>];
+DataPolicyLicence [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: DataPolicyLicence</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/DataPolicyLicence.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: Data policy / licence applicable to this report / observations / data source</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WIGOS 9-02</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Name</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>WMO Essential </TD><TD>WMO Essential Data: free and unrestricted international exchange of basic <BR/>data and products. </TD></TR>
+<TR><TD>2</TD><TD>WMO Additional </TD><TD>WMO Additional Data: free and unrestricted access to data and <BR/>products exchanged under the auspices of WMO to the research <BR/>and education communities for non-commercial activities. A more precise definition <BR/>of the data policy may be additionally supplied within the <BR/>metadata. In all cases it shall be the responsibility of <BR/>the data consumer to ensure that they understand the data <BR/>policy specified by the data provider – which may necessitate <BR/>dialogue with the data publisher for confirmation of terms and <BR/>conditions. </TD></TR>
+<TR><TD>3</TD><TD>WMO Other </TD><TD>Data identified for global distribution via WMO infrastructure (GTS / <BR/>WIS) that is not covered by WMO Resolution 25 neither <BR/>WMO Resolution 40 e.g. aviation OPMET data. Data marked with <BR/>“WMOOther” data policy shall be treated like “WMOAdditional” where a <BR/>more precise definition of the data policy may be additionally <BR/>supplied within the metadata. In all cases it shall be <BR/>the responsibility of the data consumer to ensure that they <BR/>understand the data policy specified by the data provider – <BR/>which may necessitate dialogue with the data publisher for confirmation <BR/>of terms and conditions. </TD></TR>
+</TABLE>>];
+DuplicateStatus [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: DuplicateStatus</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/DuplicateStatus.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Duplicate status of the observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: Simplified version of duplicate status flags from IMMA (ICOADS)</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Unique observation, no known duplicates </TD></TR>
+<TR><TD>1</TD><TD>Best duplicate </TD></TR>
+<TR><TD>2</TD><TD>Worst duplicate </TD></TR>
+<TR><TD>3</TD><TD>Unchecked </TD></TR>
+</TABLE>>];
+EventsAtStation [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: EventsAtStation</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/EventsAtStation.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Report events at station at the time of the report / observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 4-04</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Grass-cutting </TD></TR>
+<TR><TD>2</TD><TD>Snow clearing </TD></TR>
+<TR><TD>3</TD><TD>Tree removal </TD></TR>
+<TR><TD>4</TD><TD>Construction activity </TD></TR>
+<TR><TD>5</TD><TD>Road work </TD></TR>
+<TR><TD>6</TD><TD>Biomass burning </TD></TR>
+<TR><TD>7</TD><TD>Dust storm </TD></TR>
+<TR><TD>8</TD><TD>Storm damage </TD></TR>
+<TR><TD>9</TD><TD>Wind storm </TD></TR>
+<TR><TD>10</TD><TD>Flood </TD></TR>
+<TR><TD>11</TD><TD>Fire </TD></TR>
+<TR><TD>12</TD><TD>Earthquake </TD></TR>
+<TR><TD>13</TD><TD>Land slide </TD></TR>
+<TR><TD>14</TD><TD>Storm surge or tsunami </TD></TR>
+<TR><TD>15</TD><TD>Lightning </TD></TR>
+<TR><TD>16</TD><TD>Vandalism </TD></TR>
+</TABLE>>];
+IDScheme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: IDScheme</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/IDScheme.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: ID Scheme in use of ID element</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: ICOADS, other ...</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>ICOADS: ID present, but unknown type </TD></TR>
+<TR><TD>1</TD><TD>ICOADS: ship, Ocean Station Vessel (OSV), or ice station callsign <BR/></TD></TR>
+<TR><TD>2</TD><TD>ICOADS: generic ID (e.g., SHIP, BUOY, RIGG, PLAT) </TD></TR>
+<TR><TD>3</TD><TD>ICOADS: WMO 5-digit buoy number </TD></TR>
+<TR><TD>4</TD><TD>ICAODS: other buoy number (e.g., Argos or national buoy number) <BR/></TD></TR>
+<TR><TD>5</TD><TD>ICOADS: Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC <BR/>or other organizations) </TD></TR>
+<TR><TD>6</TD><TD>ICOADS: station name or number </TD></TR>
+<TR><TD>7</TD><TD>ICOADS: oceanographic platform/cruise number </TD></TR>
+<TR><TD>8</TD><TD>ICOADS: fishing vessel psuedo-ID </TD></TR>
+<TR><TD>9</TD><TD>ICOADS: national ship number </TD></TR>
+<TR><TD>10</TD><TD>ICOADS: composite information from early ship data </TD></TR>
+<TR><TD>11</TD><TD>ICOADS: 7-digit buoy ID (proposed) </TD></TR>
+<TR><TD>12</TD><TD>WIGOS ID </TD></TR>
+<TR><TD>13</TD><TD>GRUAN ID </TD></TR>
+<TR><TD>14</TD><TD>IMO Number </TD></TR>
+</TABLE>>];
+InstrumentExposureQuality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: InstrumentExposureQuality</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/InstrumentExposureQuality.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Quality of exposure of instrument used to make observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 5-15</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Class 1 - Exposure of instrument allows reference level measurements <BR/></TD></TR>
+<TR><TD>2</TD><TD>Class 2 - Exposure of instrument has small or infrequent <BR/>influence on measurement </TD></TR>
+<TR><TD>3</TD><TD>Class 3 - Exposure of instrument leads to increased uncertainty <BR/>or occasional invalid measurements </TD></TR>
+<TR><TD>4</TD><TD>Class 4 - Exposure of instruemnt leads to high uncertainty <BR/>or regular invalid measurements </TD></TR>
+<TR><TD>5</TD><TD>Class 5 - Exposure of instrument leads to invalid measurements <BR/></TD></TR>
+</TABLE>>];
+LocationMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: LocationMethod</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/LocationMethod.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Method by which location of station / observation determined</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 11-01 and BUFR 0 02 148</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Argos </TD></TR>
+<TR><TD>1</TD><TD>ARGOS DOPPLER </TD></TR>
+<TR><TD>2</TD><TD>ARGOS Kalman </TD></TR>
+<TR><TD>3</TD><TD>Argos-3 </TD></TR>
+<TR><TD>4</TD><TD>Argos-4 </TD></TR>
+<TR><TD>5</TD><TD>From map </TD></TR>
+<TR><TD>6</TD><TD>GALILEO </TD></TR>
+<TR><TD>7</TD><TD>GOES DCP </TD></TR>
+<TR><TD>8</TD><TD>GPS </TD></TR>
+<TR><TD>9</TD><TD>INMARSAT </TD></TR>
+<TR><TD>10</TD><TD>Iridium </TD></TR>
+<TR><TD>11</TD><TD>Iridium and GPS </TD></TR>
+<TR><TD>12</TD><TD>IRIDIUM DOPPLER </TD></TR>
+<TR><TD>13</TD><TD>LORAN </TD></TR>
+<TR><TD>14</TD><TD>Meteosat DCP </TD></TR>
+<TR><TD>15</TD><TD>Orbcomm </TD></TR>
+<TR><TD>16</TD><TD>Reserved </TD></TR>
+<TR><TD>17</TD><TD>Surveyed </TD></TR>
+</TABLE>>];
+LocationQuality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: LocationQuality</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/LocationQuality.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+</TABLE>>];
+MeaningOfTimeStamp [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: MeaningOfTimeStamp</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/MeaningOfTimeStamp.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: Meaning / significance of date / time reported for report or observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WIGOS 11-03</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Name</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Beginning </TD><TD>Time stamps indicate the beginning of a period covering the <BR/>range up to but excluding the following time stamp. </TD></TR>
+<TR><TD>2</TD><TD>End </TD><TD>Time stamps indicate the end of a period covering the <BR/>range up to but excluding the preceding time stamp. </TD></TR>
+<TR><TD>3</TD><TD>Middle </TD><TD>Time stamps indicate the middle of a period beginning at <BR/>the middle of the range described by this and the <BR/>preceding time stamp and ending right before the middle of <BR/>the range described by this and the following time stamp. <BR/></TD></TR>
+</TABLE>>];
+MethodOfEstimatingUncertainty [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: MethodOfEstimatingUncertainty</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/MethodOfEstimatingUncertainty.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+</TABLE>>];
+ObservationCodeTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: ObservationCodeTable</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationCodeTable.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Code Table Scheme</TD><TD BGCOLOR="GRAY">Code Table ID</TD><TD BGCOLOR="GRAY">Code Table Name</TD></TR>
+<TR><TD>0</TD><TD>BUFR </TD><TD>0 20 003 </TD><TD>Present Weather </TD></TR>
+</TABLE>>];
+ObservationValueSignificance [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ObservationValueSignificance</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationValueSignificance.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Significance of observed value, e.g. instantaneous value, statistic over specified period, tendancy over specified period</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: BUFR 0 08 023, BUFR 0 10 063</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Maximum value over indicated period </TD></TR>
+<TR><TD>1</TD><TD>Minimum value over indicated period </TD></TR>
+<TR><TD>2</TD><TD>Mean value over indicated period </TD></TR>
+<TR><TD>3</TD><TD>Median value over indicated period </TD></TR>
+<TR><TD>4</TD><TD>Modal value over indicated period </TD></TR>
+<TR><TD>5</TD><TD>Mean absolute error over indicated period </TD></TR>
+<TR><TD>6</TD><TD>Best estimate of standard deviation (N-1) of observed parameter over <BR/>indicated period </TD></TR>
+<TR><TD>7</TD><TD>Standard deviation (N) of observed parameter over indicated period </TD></TR>
+<TR><TD>8</TD><TD>Harmonic mean of observed parameter over indicated period </TD></TR>
+<TR><TD>9</TD><TD>Root mean square vector error of observed parameter over indicated <BR/>period </TD></TR>
+<TR><TD>10</TD><TD>root mean square of observed parameter over indicated period </TD></TR>
+<TR><TD>11</TD><TD>Vector mean of observed parameter over indicated period </TD></TR>
+<TR><TD>12</TD><TD>Instantaneous value of observed parameter </TD></TR>
+<TR><TD>13</TD><TD>Observed tendancy: Increasing, then decreasing; Observed parameter the same or <BR/>higher than three hours ago </TD></TR>
+<TR><TD>14</TD><TD>Observed tendancy: Increasing, then steady; or increasing, then increasing more <BR/>slowly </TD></TR>
+<TR><TD>15</TD><TD>Observed tendancy: Increasing (steadily or unsteadily) </TD></TR>
+<TR><TD>16</TD><TD>Observed tendancy: Decreasing or steady, then increasing; or increasing, then <BR/>increasing more rapidly </TD></TR>
+<TR><TD>17</TD><TD>Observed tendancy: Steady; Observed parameter the same as three hours <BR/>ago </TD></TR>
+<TR><TD>18</TD><TD>Observed tendancy: Decreasing, then increasing; Observed parameter the same or <BR/>lower than three hours ago </TD></TR>
+<TR><TD>19</TD><TD>Observed tendancy: Decreasing, then steady; or decreasing, then decreasing more <BR/>slowly </TD></TR>
+</TABLE>>];
+ObservationsTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left"># Table: ObservationsTable</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationsTable.tsv</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Descripion: table defining elements in main observations table</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">WIGOS (MCO)</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint (pk) </TD><TD></TD><TD>NA </TD><TD>Unique ID for report (unique ID given by combination of <BR/>RecordID and ObservationID) </TD></TR>
+<TR><TD>2</TD><TD>Region </TD><TD>int (fk) </TD><TD>Region </TD><TD>3-01 (C) </TD><TD>Region (WMO region / Ocean basin) </TD></TR>
+<TR><TD>3</TD><TD>SubRegion </TD><TD>int (fk) </TD><TD>SubRegion </TD><TD>3-02 (C) </TD><TD>Country / regional sea </TD></TR>
+<TR><TD>4</TD><TD>ApplicationArea </TD><TD>int[] (fk) </TD><TD>ApplicationArea </TD><TD>2-01 (M) </TD><TD>WMO application area(s) </TD></TR>
+<TR><TD>5</TD><TD>ObservingProgramme </TD><TD>int (fk) </TD><TD>ObservingProgramme </TD><TD>2-02 (M) </TD><TD>Observing programme, e.g. VOS </TD></TR>
+<TR><TD>6</TD><TD>ReportType </TD><TD>int (fk) </TD><TD>ReportType </TD><TD>NA </TD><TD>e.g. SYNOP, TEMP, CLIMAT, etc </TD></TR>
+<TR><TD>7</TD><TD>StationName </TD><TD>varchar </TD><TD></TD><TD>3-03 (M) </TD><TD>e.g. GRUAN station name, ship name, site name etc </TD></TR>
+<TR><TD>8</TD><TD>StationType </TD><TD>int (fk) </TD><TD>StationType </TD><TD>3-04 (M) </TD><TD>Type of station, e.g. land station, sea station etc </TD></TR>
+<TR><TD>9</TD><TD>PlatformType </TD><TD>int (fk) </TD><TD>PlatformType </TD><TD>NA </TD><TD>Structure upon which sensor is mounted, e.g. ship, drifting buoy, <BR/>tower etc </TD></TR>
+<TR><TD>10</TD><TD>PlatformSubType </TD><TD>int (fk) </TD><TD>PlatformSubType </TD><TD>NA </TD><TD>Sub-type for platform, e.g. 3m discuss buoy </TD></TR>
+<TR><TD>11</TD><TD>PrimaryStationId </TD><TD>varchar </TD><TD></TD><TD>3-06 (M) </TD><TD>Unique (WMO) station identifier, e.g. WIGOS ID </TD></TR>
+<TR><TD>12</TD><TD>PrimaryStationIdScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>NA </TD><TD>Scheme used for unique station ID </TD></TR>
+<TR><TD>13</TD><TD>SecondaryStationId </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Alternate (local) ID for station, e.g. Network ID </TD></TR>
+<TR><TD>14</TD><TD>SecondaryStationIdScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD></TD><TD>Alternate ID Scheme, e.g. Network ID </TD></TR>
+<TR><TD>15</TD><TD>StationLocation_Longitude </TD><TD>numeric </TD><TD></TD><TD>3-07 (M) </TD><TD>Longitude of station, -180.0 to 180.0 (or other as defined <BR/>by StationCRS) </TD></TR>
+<TR><TD>16</TD><TD>StationLocation_Latitude </TD><TD>numeric </TD><TD></TD><TD>3-07 (M) </TD><TD>Latitude of station, -90 to 90 (or other as defined <BR/>by StationCRS) </TD></TR>
+<TR><TD>17</TD><TD>StationLocationAccuracy </TD><TD>numeric </TD><TD></TD><TD>NA </TD><TD>Accuracy to which station location recorded (radius in km) </TD></TR>
+<TR><TD>18</TD><TD>StationLocationMethod </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>19</TD><TD>StationLocationQuality </TD><TD>int (fk) </TD><TD>LocationQuality </TD><TD>NA </TD><TD>Quality flag for station location </TD></TR>
+<TR><TD>20</TD><TD>StationCRS </TD><TD>int (fk) </TD><TD>CRS </TD><TD>11-Feb </TD><TD>Coordinate reference scheme for station location </TD></TR>
+</TABLE>>];
+ObservedVariable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: ObservedVariable</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservedVariable.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description: Table defined the list of potential observed variables</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source: CF conventions,  ODB governance database</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Standard Name</TD><TD BGCOLOR="GRAY">Units</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Code space</TD><TD BGCOLOR="GRAY">Code space Index</TD></TR>
+<TR><TD>0</TD><TD></TD><TD>acoustic_signal_roundtrip_travel_time_in_sea_water </TD><TD>s </TD><TD>The quantity with standard name acoustic_signal_roundtrip_travel_time_in_sea_water is the time taken <BR/>for an acoustic signal to propagate from the emitting instrument <BR/>to a reflecting surface and back again to the instrument. <BR/>In the case of an instrument based on the sea <BR/>floor and measuring the roundtrip time to the sea surface, <BR/>the data are commonly used as a measure of ocean <BR/>heat content. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>1</TD><TD></TD><TD>aerodynamic_particle_diameter </TD><TD>m </TD><TD>The diameter of a spherical particle with density 1000 kg <BR/>m-3 having the same aerodynamic properties as the particles in <BR/>question. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>2</TD><TD></TD><TD>aerodynamic_resistance </TD><TD>m-1 s </TD><TD>The "aerodynamic_resistance" is the resistance to mixing through the boundary <BR/>layer toward the surface by means of the dominant process, <BR/>turbulent transport. Reference: Wesely, M. L., 1989, doi:10.1016/0004-6981(89)90153-4. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>3</TD><TD></TD><TD>age_of_sea_ice </TD><TD>year </TD><TD>Age of sea ice means the length of time elapsed <BR/>since the ice formed. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>4</TD><TD></TD><TD>age_of_stratospheric_air </TD><TD>s </TD><TD>Age of stratospheric air means an estimate of the time <BR/>since a parcel of stratospheric air was last in contact <BR/>with the troposphere. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>5</TD><TD></TD><TD>age_of_surface_snow </TD><TD>day </TD><TD>Age of surface snow means the length of time elapsed <BR/>since the snow accumulated on the earth's surface. The surface <BR/>called "surface" means the lower boundary of the atmosphere. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>6</TD><TD></TD><TD>air_density </TD><TD>kg m-3 </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>7</TD><TD></TD><TD>air_potential_temperature </TD><TD>K </TD><TD>Potential temperature is the temperature a parcel of air or <BR/>sea water would have if moved adiabatically to sea level <BR/>pressure. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>8</TD><TD></TD><TD>air_pressure </TD><TD>Pa </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>9</TD><TD></TD><TD>air_pressure_anomaly </TD><TD>Pa </TD><TD>anomaly means difference from climatology. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>10</TD><TD></TD><TD>air_pressure_at_cloud_base </TD><TD>Pa </TD><TD>cloud_base refers to the base of the lowest cloud. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>11</TD><TD></TD><TD>air_pressure_at_cloud_top </TD><TD>Pa </TD><TD>cloud_top refers to the top of the highest cloud. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>12</TD><TD></TD><TD>air_pressure_at_convective_cloud_base </TD><TD>Pa </TD><TD>cloud_base refers to the base of the lowest cloud. Convective <BR/>cloud is that produced by the convection schemes in an <BR/>atmosphere model. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>13</TD><TD></TD><TD>air_pressure_at_convective_cloud_top </TD><TD>Pa </TD><TD>cloud_top refers to the top of the highest cloud. Convective <BR/>cloud is that produced by the convection schemes in an <BR/>atmosphere model. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>14</TD><TD></TD><TD>air_pressure_at_freezing_level </TD><TD>Pa </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>15</TD><TD></TD><TD>air_pressure_at_sea_level </TD><TD>Pa </TD><TD>sea_level means mean sea level, which is close to the <BR/>geoid in sea areas. Air pressure at sea level is <BR/>the quantity often abbreviated as MSLP or PMSL. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>16</TD><TD></TD><TD>air_temperature </TD><TD>K </TD><TD>Air temperature is the bulk temperature of the air, not <BR/>the surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>17</TD><TD></TD><TD>air_temperature_anomaly </TD><TD>K </TD><TD>anomaly means difference from climatology. Air temperature is the bulk <BR/>temperature of the air, not the surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>18</TD><TD></TD><TD>air_temperature_at_cloud_top </TD><TD>K </TD><TD>cloud_top refers to the top of the highest cloud. Air <BR/>temperature is the bulk temperature of the air, not the <BR/>surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>19</TD><TD></TD><TD>air_temperature_at_effective_cloud_top_defined_by_infrared_radiation </TD><TD>K </TD><TD>The "effective cloud top defined by infrared radiation" is (approximately) <BR/>the geometric height above the surface that is one optical <BR/>depth at infrared wavelengths (in the region of 11 micrometers) <BR/>below the cloud top that would be detected by visible <BR/>and lidar techniques. Reference: Minnis, P. et al 2011 CERES <BR/>Edition-2 Cloud Property Retrievals Using TRMM VIRS and Terra and <BR/>Aqua MODIS Data x2014; Part I: Algorithms IEEE Transactions on <BR/>Geoscience and Remote Sensing, 49(11), 4374-4400. doi: http://dx.doi.org/10.1109/TGRS.2011.2144601. </TD><TD>CF-44 </TD><TD></TD></TR>
+</TABLE>>];
+ObservingFrequency [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: ObservingFrequency</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservingFrequency.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: Frequency at which observations are typically made by this station</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WMO47 - 0602</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Code</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>OPD </TD><TD>One observation per day (24 hour intervals). </TD></TR>
+<TR><TD>1</TD><TD>TPD </TD><TD>Two observations per day (12 hour intervals). </TD></TR>
+<TR><TD>2</TD><TD>FPD </TD><TD>Four observations per day (6 hour intervals). </TD></TR>
+<TR><TD>3</TD><TD>EPD </TD><TD>Eight observations per day (3 hour intervals). </TD></TR>
+<TR><TD>4</TD><TD>HLY </TD><TD>Hourly observations. </TD></TR>
+<TR><TD>5</TD><TD>IRR </TD><TD>Irregular observations. </TD></TR>
+</TABLE>>];
+ObservingProgramme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: ObservingProgramme</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservingProgramme.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Observing programme(s) that this report / observation was collected as part of</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source: WIGOS 2-02</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Sponsor</TD></TR>
+<TR><TD>1</TD><TD>AMDAR </TD><TD>Global Aircraft Meteorological DAta Relay </TD><TD>WMO/GOS </TD></TR>
+<TR><TD>2</TD><TD>EPA </TD><TD>Environmental Protection Agency </TD><TD></TD></TR>
+<TR><TD>3</TD><TD>EUMETNET </TD><TD>Grouping of European National Meteorological Services </TD><TD>WMO/GOS </TD></TR>
+<TR><TD>4</TD><TD>WMO/GAW </TD><TD>World Meteorological Organization/Global Atmospheric Watch </TD><TD></TD></TR>
+<TR><TD>5</TD><TD>GCOS </TD><TD>Global Climate Observing System </TD><TD></TD></TR>
+<TR><TD>6</TD><TD>GCW </TD><TD>Global Cryosphere Watch </TD><TD></TD></TR>
+<TR><TD>7</TD><TD>GOOS </TD><TD>Global Ocean Observing System </TD><TD></TD></TR>
+<TR><TD>8</TD><TD>IPA </TD><TD>International Permafrost Association </TD><TD></TD></TR>
+<TR><TD>9</TD><TD>JCOMM </TD><TD>Joint Technical Commission for Oceanography and Marine Meteorology </TD><TD>WMO/GOS </TD></TR>
+<TR><TD>10</TD><TD>WMO/GOS </TD><TD>World Meteorological Organization/Global Observing System </TD><TD></TD></TR>
+<TR><TD>11</TD><TD>GTOS </TD><TD>Global Terrestrial Observing System </TD><TD></TD></TR>
+<TR><TD>12</TD><TD>IAGOS </TD><TD>In-service Aircraft for a Global Observing System </TD><TD></TD></TR>
+<TR><TD>13</TD><TD>WHYCOS </TD><TD>World Hydrological Cycle Observing System </TD><TD></TD></TR>
+<TR><TD>14</TD><TD>WMO/CLW </TD><TD>World Meteorological Office/Climate and Water Department </TD><TD></TD></TR>
+<TR><TD>15</TD><TD>ADNET </TD><TD>Asian dust and aerosol lidar observation network </TD><TD>GALION , WMO/GAW </TD></TR>
+<TR><TD>16</TD><TD>Aeronet </TD><TD>AErosol RObotic NETwork </TD><TD>NASA? </TD></TR>
+<TR><TD>17</TD><TD>ANTON </TD><TD>Antarctic Observing Network </TD><TD>WMO/GOS </TD></TR>
+<TR><TD>18</TD><TD>ASAP </TD><TD>Automated Shipboard Aerological Program </TD><TD>WMO/GOS </TD></TR>
+<TR><TD>19</TD><TD>BSRN </TD><TD>Baseline Surface Radiation Network </TD><TD>WMO/GAW &amp; GCOS </TD></TR>
+<TR><TD>20</TD><TD>CASTNET </TD><TD>Clean Air Status and Trends Network </TD><TD>(National - USA) </TD></TR>
+</TABLE>>];
+PlatformSubType [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: PlatformSubType</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/PlatformSubType.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Platform subtype for platform making observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source: WMO47, ICOADS, BUFR 0 02 149</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Platform Type</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Ship </TD><TD>BA </TD><TD>Barge </TD></TR>
+<TR><TD>1</TD><TD>Ship </TD><TD>BC </TD><TD>Bulk Carrier </TD></TR>
+<TR><TD>2</TD><TD>Ship </TD><TD>CA </TD><TD>Cable ship </TD></TR>
+<TR><TD>3</TD><TD>Ship </TD><TD>CG </TD><TD>Coast Guard Ship </TD></TR>
+<TR><TD>4</TD><TD>Ship </TD><TD>CS </TD><TD>Container Ship </TD></TR>
+<TR><TD>5</TD><TD>Ship </TD><TD>DR </TD><TD>Dredger </TD></TR>
+<TR><TD>6</TD><TD>Ship </TD><TD>FE </TD><TD>Passenger ferries </TD></TR>
+<TR><TD>7</TD><TD>Ship </TD><TD>FP </TD><TD>Floating production and storage units </TD></TR>
+<TR><TD>8</TD><TD>Ship </TD><TD>FV </TD><TD>Other Fishing Vessel </TD></TR>
+<TR><TD>9</TD><TD>Ship </TD><TD>GC </TD><TD>General Cargo </TD></TR>
+<TR><TD>10</TD><TD>Ship </TD><TD>GT </TD><TD>Gas Tanker </TD></TR>
+<TR><TD>11</TD><TD>Ship </TD><TD>IC </TD><TD>Icebreaking vessel </TD></TR>
+<TR><TD>12</TD><TD>Ship </TD><TD>IF </TD><TD>Inshore Fishing Vessel </TD></TR>
+<TR><TD>13</TD><TD>Ship </TD><TD>LC </TD><TD>Livestock carrier </TD></TR>
+<TR><TD>14</TD><TD>Ship </TD><TD>LT </TD><TD>Liquid Tanker </TD></TR>
+<TR><TD>15</TD><TD>Ship </TD><TD>LV </TD><TD>Light Vessel </TD></TR>
+<TR><TD>16</TD><TD>Ship </TD><TD>MI </TD><TD>Mobile installation including mobile offshore drill ships, jack-up rigs and <BR/>semi-submersibles </TD></TR>
+<TR><TD>17</TD><TD>Ship </TD><TD>MS </TD><TD>Military Ship </TD></TR>
+<TR><TD>18</TD><TD>Ship </TD><TD>OT </TD><TD>Other </TD></TR>
+<TR><TD>19</TD><TD>Ship </TD><TD>MW </TD><TD>Ocean Weather Ship </TD></TR>
+</TABLE>>];
+PlatformType [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: PlatformType</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/PlatformType.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Type of platform making the observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: IMMA (ICOADS) and BUFR 0 03 001</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Aircraft </TD></TR>
+<TR><TD>1</TD><TD>Autonomous marine vehicle </TD></TR>
+<TR><TD>2</TD><TD>Autonomous pinneped bathythermograph </TD></TR>
+<TR><TD>3</TD><TD>Coastal / Island </TD></TR>
+<TR><TD>4</TD><TD>Drifting buoy </TD></TR>
+<TR><TD>5</TD><TD>Expendable bathythermograph (XBT) </TD></TR>
+<TR><TD>6</TD><TD>Glider </TD></TR>
+<TR><TD>7</TD><TD>High-resolution Conductivity-Temperature-Depth (CTD) / Expendable CTD(XCTD) </TD></TR>
+<TR><TD>8</TD><TD>Ice buoy </TD></TR>
+<TR><TD>9</TD><TD>Ice station </TD></TR>
+<TR><TD>10</TD><TD>Land station </TD></TR>
+<TR><TD>11</TD><TD>Land vehicle </TD></TR>
+<TR><TD>12</TD><TD>Lightship </TD></TR>
+<TR><TD>13</TD><TD>Mechanical / digital / micro bathythermograph (MBT) </TD></TR>
+<TR><TD>14</TD><TD>Moored buoy </TD></TR>
+<TR><TD>15</TD><TD>Oceanographic station data (bottle and low resolution CTD / XCTD <BR/>data) </TD></TR>
+<TR><TD>16</TD><TD>Profiling float </TD></TR>
+<TR><TD>17</TD><TD>Rig / platform </TD></TR>
+<TR><TD>18</TD><TD>Shallow water station (fixed to sea / lake floor) </TD></TR>
+<TR><TD>19</TD><TD>Ship </TD></TR>
+</TABLE>>];
+ProcessingCode [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ProcessingCode</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProcessingCode.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+</TABLE>>];
+ProcessingLevel [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ProcessingLevel</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProcessingLevel.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Processing level applied to observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 7-06</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Unknown </TD></TR>
+<TR><TD>1</TD><TD>Raw </TD></TR>
+<TR><TD>2</TD><TD>Level 0 </TD></TR>
+<TR><TD>3</TD><TD>Level I </TD></TR>
+<TR><TD>4</TD><TD>Level II </TD></TR>
+<TR><TD>5</TD><TD>Level III </TD></TR>
+<TR><TD>6</TD><TD>Level IV </TD></TR>
+</TABLE>>];
+ProfileConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left"># Table: ProfileConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: table containing information on individual profiles</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>ProfileID </TD><TD>varchar </TD><TD></TD><TD></TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>varchar </TD><TD></TD><TD></TD></TR>
+<TR><TD>2</TD><TD>StandardTime </TD><TD>int (fk) </TD><TD></TD><TD>e.g. Standard / scheduled time for launch or report, e.g. <BR/>00, 06, 12, 18 UTC </TD></TR>
+<TR><TD>3</TD><TD>ActualTime </TD><TD></TD><TD></TD><TD>Actual report / launch time </TD></TR>
+<TR><TD>4</TD><TD>Processing codes </TD><TD>int (fk) </TD><TD></TD><TD></TD></TR>
+<TR><TD>5</TD><TD>ProfileNumber </TD><TD>numeric </TD><TD></TD><TD>e.g. Balloon Number </TD></TR>
+<TR><TD>6</TD><TD>Number of fields </TD><TD>numeric </TD><TD></TD><TD></TD></TR>
+<TR><TD>7</TD><TD>Field </TD><TD>int[] </TD><TD></TD><TD></TD></TR>
+<TR><TD>8</TD><TD>Value </TD><TD>numeric[] </TD><TD></TD><TD></TD></TR>
+<TR><TD>9</TD><TD>Comment </TD><TD>varchar </TD><TD></TD><TD></TD></TR>
+</TABLE>>];
+ProfileConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="9" ALIGN="left"># Table: ProfileConfigurationFields</TD></TR>
+<TR><TD COLSPAN="9" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="9" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="9"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="9"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">FieldNumber</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Code Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">StartDate</TD><TD BGCOLOR="GRAY">EndDate</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>Kaysam </TD><TD></TD><TD></TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Totex </TD><TD></TD><TD></TD></TR>
+<TR><TD>2</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>KKS </TD><TD></TD><TD></TD></TR>
+<TR><TD>3</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>3 </TD><TD>3 </TD><TD>Guangzhou Shuangyi (China) </TD><TD></TD><TD></TD></TR>
+<TR><TD>4</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>4 </TD><TD>4 </TD><TD>ChemChina Zhuzhou (China) </TD><TD></TD><TD></TD></TR>
+<TR><TD>5</TD><TD>2 </TD><TD>BalloonType </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>6</TD><TD>3 </TD><TD>BurstpointAltitude </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>7</TD><TD>4 </TD><TD>BurstpointPressure </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>8</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>No corrections </TD><TD></TD><TD></TD></TR>
+<TR><TD>9</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Time lag correction provided by manufacturer </TD><TD></TD><TD></TD></TR>
+<TR><TD>10</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>Solar radiation correction provided by the manufacturer </TD><TD></TD><TD></TD></TR>
+<TR><TD>11</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>3 </TD><TD>3 </TD><TD>Solar radiation and time lag correction provided by the manufacturer <BR/></TD><TD></TD><TD></TD></TR>
+<TR><TD>12</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>4 </TD><TD>7 </TD><TD>GRUAN solar radiation and time lag </TD><TD></TD><TD></TD></TR>
+<TR><TD>13</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>Upwards profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>14</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Downwards profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>15</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>Horizontal profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>16</TD><TD>7 </TD><TD>FillingWeight </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>17</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>0 </TD><TD>0 </TD><TD>Geopotential height calculated from pressure </TD><TD></TD><TD></TD></TR>
+<TR><TD>18</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>1 </TD><TD>1 </TD><TD>Geopotential height calculated from GPS height </TD><TD></TD><TD></TD></TR>
+<TR><TD>19</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>2 </TD><TD>2 </TD><TD>Geopotential height calculated from radar height </TD><TD></TD><TD></TD></TR>
+</TABLE>>];
+QualityFlag [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: QualityFlag</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/QualityFlag.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Quality flag for observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: based on WIGOS 8-03-01 and BUFR 0 33 020</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Good </TD></TR>
+<TR><TD>1</TD><TD>Inconsistent </TD></TR>
+<TR><TD>2</TD><TD>Doubtful </TD></TR>
+<TR><TD>3</TD><TD>Wrong </TD></TR>
+<TR><TD>4</TD><TD>Not checked </TD></TR>
+<TR><TD>5</TD><TD>Has been changed </TD></TR>
+<TR><TD>6</TD><TD>Estimated </TD></TR>
+<TR><TD>7</TD><TD>Missing value </TD></TR>
+</TABLE>>];
+Region [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: Region</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Region.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: WMO Region where report / observation was made</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WIGOS 3-01</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">WMORegion</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD></TD><TD>Reserved </TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>Africa </TD></TR>
+<TR><TD>2</TD><TD>2 </TD><TD>Asia </TD></TR>
+<TR><TD>3</TD><TD>3 </TD><TD>South America </TD></TR>
+<TR><TD>4</TD><TD>4 </TD><TD>North America, Central America, Caribbean </TD></TR>
+<TR><TD>5</TD><TD>5 </TD><TD>South-West Pacific </TD></TR>
+<TR><TD>6</TD><TD>6 </TD><TD>Europe </TD></TR>
+<TR><TD>7</TD><TD>7 </TD><TD>Antarctica </TD></TR>
+</TABLE>>];
+ReportHistory [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: ReportHistory</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportHistory.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Table containing history for records</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:	</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>HistoryID </TD><TD>bigint </TD><TD>Unique ID for entry </TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint </TD><TD>Which report this is an entry for </TD></TR>
+<TR><TD>2</TD><TD>Timestamp </TD><TD></TD><TD>timestamp for entry </TD></TR>
+<TR><TD>3</TD><TD>History </TD><TD>varchar </TD><TD>String containing history entry </TD></TR>
+</TABLE>>];
+ReportProcessingCode [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ReportProcessingCode</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportProcessingCode.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+</TABLE>>];
+ReportProcessingLevel [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ReportProcessingLevel</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportProcessingLevel.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: </TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+</TABLE>>];
+ReportType [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: ReportType</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportType.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Original report type for this report / observaiton</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>SYNOP </TD></TR>
+<TR><TD>1</TD><TD>TEMP </TD></TR>
+<TR><TD>2</TD><TD>CLIMAT </TD></TR>
+</TABLE>>];
+SeaLevelDatum [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: SeaLevelDatum</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SeaLevelDatum.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Datum used to define mean sea level</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: BUFR 0 01 151</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Earth Gravitational Model 1996 </TD></TR>
+<TR><TD>1</TD><TD>Baltic height system 1977 </TD></TR>
+</TABLE>>];
+SensorConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left"># Table: SensorConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: definition of table specifying sensor configuration</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>InstrumentID </TD><TD>varchar </TD><TD></TD><TD>Unique ID for this instrument </TD></TR>
+<TR><TD>1</TD><TD>Parameter </TD><TD>varchar or int (fk) </TD><TD></TD><TD>The observed variable that this instrument measures (one entry per <BR/>parameter if more than one) </TD></TR>
+<TR><TD>2</TD><TD>Manufacturer </TD><TD>varchar or int (fk) </TD><TD></TD><TD>Manufacturer of sensor / instrument </TD></TR>
+<TR><TD>3</TD><TD>SensorType </TD><TD>int (fk) </TD><TD></TD><TD>Type of sensor, e.g. RS92 or anemometer </TD></TR>
+<TR><TD>4</TD><TD>SensorModel </TD><TD>int (fk) </TD><TD></TD><TD>Manufacturers designation / model number </TD></TR>
+<TR><TD>5</TD><TD>Serial number </TD><TD>varchar </TD><TD></TD><TD>Serial number </TD></TR>
+<TR><TD>6</TD><TD>ObservingMethod </TD><TD>int (fk) </TD><TD></TD><TD>estimate, measured or computed value </TD></TR>
+<TR><TD>7</TD><TD>SamplingStrategy </TD><TD>int (fk) </TD><TD></TD><TD>Continuous, discrete, event </TD></TR>
+<TR><TD>8</TD><TD>LastCalibrationDate </TD><TD>timestamp </TD><TD></TD><TD>Date sensor last calibrated </TD></TR>
+<TR><TD>9</TD><TD>CalibrationStatus </TD><TD>int (fk) </TD><TD></TD><TD>Calibration status </TD></TR>
+<TR><TD>10</TD><TD>NumberOfElements </TD><TD>int </TD><TD></TD><TD>Number of metadata fields for this instrument </TD></TR>
+<TR><TD>11</TD><TD>Field </TD><TD>int [] </TD><TD></TD><TD>Field(s) for which next value applies </TD></TR>
+<TR><TD>12</TD><TD>Value </TD><TD>numeric [] </TD><TD></TD><TD>Value(s) of field(s) indicated </TD></TR>
+<TR><TD>13</TD><TD>Comment </TD><TD>varchar </TD><TD></TD><TD>Comments on sensor </TD></TR>
+</TABLE>>];
+SensorConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: SensorConfigurationFields</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description: List of fields and decode table for sensor configuration</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source: various</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Field</TD><TD BGCOLOR="GRAY">Parameter</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">CodeValue</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>0 </TD><TD>humidity </TD><TD>Ice bulb status </TD><TD>int (fk) </TD><TD>0 </TD><TD>Ice bulb </TD></TR>
+<TR><TD>1</TD><TD>0 </TD><TD>humidity </TD><TD>Ice bulb status </TD><TD>int (fk) </TD><TD>1 </TD><TD>Wet bulb </TD></TR>
+<TR><TD>2</TD><TD>1 </TD><TD>all </TD><TD>Observing method </TD><TD>int (fk) </TD><TD>0 </TD><TD>computed </TD></TR>
+<TR><TD>3</TD><TD>1 </TD><TD>all </TD><TD>Observing method </TD><TD>int (fk) </TD><TD>1 </TD><TD>estimated (visual) </TD></TR>
+<TR><TD>4</TD><TD>1 </TD><TD>all </TD><TD>Observing method </TD><TD>int (fk) </TD><TD>2 </TD><TD>measured (instrumental) </TD></TR>
+<TR><TD>5</TD><TD>2 </TD><TD>all </TD><TD>Sampling strategy </TD><TD>int (fk) </TD><TD>0 </TD><TD>Continuous </TD></TR>
+<TR><TD>6</TD><TD>2 </TD><TD>all </TD><TD>Sampling strategy </TD><TD>int (fk) </TD><TD>1 </TD><TD>Discrete </TD></TR>
+<TR><TD>7</TD><TD>2 </TD><TD>all </TD><TD>Sampling strategy </TD><TD>int (fk) </TD><TD>2 </TD><TD>Event </TD></TR>
+<TR><TD>8</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>0 </TD><TD>Double v section louvers </TD></TR>
+<TR><TD>9</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>1 </TD><TD>non-overlapping louvers </TD></TR>
+<TR><TD>10</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>2 </TD><TD>Not applicable </TD></TR>
+<TR><TD>11</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>3 </TD><TD>Overlapping louvers </TD></TR>
+<TR><TD>12</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>4 </TD><TD>single v-section louvers </TD></TR>
+<TR><TD>13</TD><TD>3 </TD><TD>all </TD><TD>Sensor housing - configuration </TD><TD>int (fk) </TD><TD>5 </TD><TD>vented, non-louvered </TD></TR>
+<TR><TD>14</TD><TD>4 </TD><TD>all </TD><TD>Sensor housing - heating </TD><TD>int (fk) </TD><TD>0 </TD><TD>Heated </TD></TR>
+<TR><TD>15</TD><TD>4 </TD><TD>all </TD><TD>Sensor housing - heating </TD><TD>int (fk) </TD><TD>1 </TD><TD>Unheated </TD></TR>
+<TR><TD>16</TD><TD>5 </TD><TD>all </TD><TD>Sensor housing - material </TD><TD>int (fk) </TD><TD>0 </TD><TD>Metal alloy </TD></TR>
+<TR><TD>17</TD><TD>5 </TD><TD>all </TD><TD>Sensor housing - material </TD><TD>int (fk) </TD><TD>1 </TD><TD>Plastic / Glass reinforced plastic </TD></TR>
+<TR><TD>18</TD><TD>5 </TD><TD>all </TD><TD>Sensor housing - material </TD><TD>int (fk) </TD><TD>2 </TD><TD>Reed / grass / leaf </TD></TR>
+<TR><TD>19</TD><TD>5 </TD><TD>all </TD><TD>Sensor housing - material </TD><TD>int (fk) </TD><TD>3 </TD><TD>Wood </TD></TR>
+</TABLE>>];
+SourceConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left"># Table: SourceConfiguration</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Description: Table defining additional information on data sources</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">WIGOS (MCO)</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>SourceID </TD><TD>int </TD><TD></TD><TD></TD><TD>Unique record ID for dataset </TD></TR>
+<TR><TD>1</TD><TD>ProductID </TD><TD>varchar </TD><TD></TD><TD></TD><TD>ID for product </TD></TR>
+<TR><TD>2</TD><TD>ProductName </TD><TD>int (fk) </TD><TD>Products </TD><TD></TD><TD>Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, <BR/>RS92 GRUAN Data Product </TD></TR>
+<TR><TD>3</TD><TD>ProductCode </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Abbreviations / product code, e.g. ICOADS, RS92-GDP </TD></TR>
+<TR><TD>4</TD><TD>ProductVersion </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Version number for dataset, e.g. Release 3.0.0 </TD></TR>
+<TR><TD>5</TD><TD>ProductLevel </TD><TD>int (fk) </TD><TD>ProductLevel </TD><TD></TD><TD>Level of product </TD></TR>
+<TR><TD>6</TD><TD>Description </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Description of dataset / comments </TD></TR>
+<TR><TD>7</TD><TD>ProductReferences </TD><TD>varchar[] </TD><TD></TD><TD></TD><TD>References describing the dataset </TD></TR>
+<TR><TD>8</TD><TD>ProductCitation </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Citation to use when using this product </TD></TR>
+<TR><TD>9</TD><TD>ProductStatus </TD><TD>int (fk) </TD><TD>ProductStatus </TD><TD></TD><TD></TD></TR>
+<TR><TD>10</TD><TD>SourceFormat </TD><TD>int [fk] </TD><TD>SourceFormat </TD><TD>7-07 (M) </TD><TD>Original format for data </TD></TR>
+<TR><TD>11</TD><TD>SourceFormatVersion </TD><TD>varchar </TD><TD></TD><TD>7-08 (M) </TD><TD>Version of original data format </TD></TR>
+<TR><TD>12</TD><TD>SourceFile </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Filename for data from source </TD></TR>
+<TR><TD>13</TD><TD>SourceFileChecksum </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Checksum of source datafile </TD></TR>
+<TR><TD>14</TD><TD>DataCentre </TD><TD>int [fk] </TD><TD>DataCentre </TD><TD>9-01 (M) </TD><TD>Data centre from which data sourced </TD></TR>
+<TR><TD>15</TD><TD>DataCentreURL </TD><TD>varchar </TD><TD></TD><TD>9-01 (M) </TD><TD>URL for data centre </TD></TR>
+<TR><TD>16</TD><TD>DataPolicyLicence </TD><TD>int [fk] </TD><TD>DataPolicyLicence </TD><TD>9-02 (M) </TD><TD>Data policy / licence </TD></TR>
+<TR><TD>17</TD><TD>PIName </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD>Name of PI responsible for dataset </TD></TR>
+<TR><TD>18</TD><TD>PIemail </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD>Email address of PI </TD></TR>
+<TR><TD>19</TD><TD>PIurl </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD>URL for PI </TD></TR>
+</TABLE>>];
+SourceConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: SourceConfigurationFields</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description: Additional fields for source configuration</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Field</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">CodeValue</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Extended Description</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>0 </TD><TD>IMMT version just prior to version number being included </TD><TD></TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>1 </TD><TD>IMMT-1 (in effect from 2 Nov. 1994) </TD><TD></TD></TR>
+<TR><TD>2</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>2 </TD><TD>IMMT-2 (in effect from Jan. 2003) </TD><TD></TD></TR>
+<TR><TD>3</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>3 </TD><TD>IMMT-3 (in effect from Jan. 2007) </TD><TD></TD></TR>
+<TR><TD>4</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>4 </TD><TD>IMMT-4 (in effect from Jan. 2011) </TD><TD></TD></TR>
+<TR><TD>5</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>5 </TD><TD>IMMT-5 (in effect from June 2012) </TD><TD></TD></TR>
+<TR><TD>6</TD><TD>2 </TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>0 </TD><TD>COAPS </TD><TD></TD></TR>
+<TR><TD>7</TD><TD>2 </TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>1 </TD><TD>WMO Publication 47 </TD><TD></TD></TR>
+<TR><TD>8</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>1 </TD><TD>Output from digitisation project, semi-colon delimited format (1955) </TD><TD></TD></TR>
+<TR><TD>9</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>2 </TD><TD>Output from digitisation project, semi-colon delimited format (1956) </TD><TD></TD></TR>
+<TR><TD>10</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>3 </TD><TD>Output from digitisation project, semi-colon delimited format (1957 - 1967) <BR/></TD><TD></TD></TR>
+<TR><TD>11</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>4 </TD><TD>Output from digitisation project, semi-colon delimited format (1968 - 1969) <BR/></TD><TD></TD></TR>
+<TR><TD>12</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>5 </TD><TD>Fixed format (1970 - 1004) </TD><TD></TD></TR>
+<TR><TD>13</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>6 </TD><TD>Semi-colon delimited format (1995 - 2001) </TD><TD></TD></TR>
+<TR><TD>14</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>7 </TD><TD>Semi-colon delimited format (2002 - 2007 q1) </TD><TD></TD></TR>
+<TR><TD>15</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>8 </TD><TD>Semi-colon delimited format (2007 - 2008) </TD><TD></TD></TR>
+<TR><TD>16</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>9 </TD><TD>Semi-colon delimited format (2009 - 2014) </TD><TD></TD></TR>
+<TR><TD>17</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>0 </TD><TD>unknown </TD><TD></TD></TR>
+<TR><TD>18</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>1 </TD><TD>delayed mode - logbook (paper) </TD><TD></TD></TR>
+<TR><TD>19</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>2 </TD><TD>real time - national telecommunication channels </TD><TD></TD></TR>
+</TABLE>>];
+SourceFormat [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: SourceFormat</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceFormat.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Data format from source prior to ingestion</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>IMMA </TD></TR>
+<TR><TD>1</TD><TD>NetCDF (GRUAN) </TD></TR>
+<TR><TD>2</TD><TD>NetCDF (Other) </TD></TR>
+<TR><TD>3</TD><TD>CSV </TD></TR>
+</TABLE>>];
+SpatialRepresentativeness [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: SpatialRepresentativeness</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SpatialRepresentativeness.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Spatial extent over which observation is representative</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 1-05</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Nil reason - None of the codes in the table <BR/>is applicable in the context of the observed quantity or <BR/>unknown, or not available information. </TD></TR>
+<TR><TD>1</TD><TD>microscale - An area or volume less than 100 m <BR/>horizontal extent (for example, evaporation) </TD></TR>
+<TR><TD>2</TD><TD>toposcale, local scale - An area or volume of 100 <BR/>m to 3 km horizontal extent (for example, air pollution, <BR/>tornadoes) </TD></TR>
+<TR><TD>3</TD><TD>mesoscale - An area or volume of 3 km to <BR/>100 km horizontal extent (for example, thunderstorms, sea and mountain <BR/>breezes) </TD></TR>
+<TR><TD>4</TD><TD>large scale- An area or volume of 100 km to <BR/>3000 km horizontal extent (for example, fronts, various cyclones, cloud <BR/>clusters) </TD></TR>
+<TR><TD>5</TD><TD>planetary scale - An area or volume of more than <BR/>3000 km horizontal extent (for example, long upper tropospheric waves) <BR/></TD></TR>
+<TR><TD>6</TD><TD>drainage area - An area (also known as ‘catchment’) having <BR/>a common outlet for its surface runoff, in km2 </TD></TR>
+</TABLE>>];
+StationConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left"># Table: StationConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: </TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>StationPrimaryID </TD><TD>varchar </TD><TD></TD><TD>Primary (WMO) ID for station </TD></TR>
+<TR><TD>1</TD><TD>StationPrimaryIDScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>Scheme used for primary ID </TD></TR>
+<TR><TD>2</TD><TD>StationSecondaryID </TD><TD>varchar </TD><TD></TD><TD>Secondary (local) ID for station </TD></TR>
+<TR><TD>3</TD><TD>StationSecondaryIDScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>Scheme used for secondary ID </TD></TR>
+<TR><TD>4</TD><TD>StationName </TD><TD>varchar </TD><TD></TD><TD>Name of station (e.g. Tateno) </TD></TR>
+<TR><TD>5</TD><TD>StationAbbreviation </TD><TD>varchar </TD><TD></TD><TD>Abbreviation of station name (e.g. TAT) </TD></TR>
+<TR><TD>6</TD><TD>StartDate </TD><TD></TD><TD></TD><TD>Date that the station first started reporting </TD></TR>
+<TR><TD>7</TD><TD>EndDate </TD><TD></TD><TD></TD><TD>Last data the station reported </TD></TR>
+<TR><TD>8</TD><TD>StationType </TD><TD>int (fk) </TD><TD>StationType </TD><TD>Type of reporting station </TD></TR>
+<TR><TD>9</TD><TD>PlatformType </TD><TD>int (fk) </TD><TD>PlatformType </TD><TD>Generic type of observing platform </TD></TR>
+<TR><TD>10</TD><TD>PlatformSubType </TD><TD>int (fk) </TD><TD>PlatformSubType </TD><TD>Specific type of observing platform </TD></TR>
+<TR><TD>11</TD><TD>OperatingInstitute </TD><TD>int (fk) </TD><TD>Institute </TD><TD>Institute operating the station </TD></TR>
+<TR><TD>12</TD><TD>OperatingTerritory </TD><TD>int (fk) </TD><TD>SubRegion </TD><TD>Sub-region where station is located or country of registry for <BR/>mobile station </TD></TR>
+<TR><TD>13</TD><TD>ObservingFrequency </TD><TD></TD><TD>ObservingFrequency </TD><TD>Typical frequency of observations for this station </TD></TR>
+<TR><TD>14</TD><TD>TelecommunicationMethod </TD><TD>int (fk) </TD><TD>CommunicationMethod </TD><TD>Method used to report observations </TD></TR>
+<TR><TD>15</TD><TD>StationAutomation </TD><TD>int (fk) </TD><TD>AutomationStatus </TD><TD>Whether station is automated, manual or mixed </TD></TR>
+<TR><TD>16</TD><TD>MeasuringSystemModel </TD><TD>int (fk) </TD><TD></TD><TD>Station / AWS model type </TD></TR>
+<TR><TD>17</TD><TD>MeasuringSystemID </TD><TD>varchar </TD><TD></TD><TD>ID or serial number of measuring system </TD></TR>
+<TR><TD>18</TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>MetadataSources </TD><TD>Source of metadata for this station </TD></TR>
+<TR><TD>19</TD><TD>MetadataVersion </TD><TD>varchar </TD><TD></TD><TD>Version of metadata source </TD></TR>
+</TABLE>>];
+StationConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: StationConfigurationFields</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Field</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">Code Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>AWS Entry and Display Software </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>1</TD><TD>2 </TD><TD>AWS Entry and Display Software Version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>2</TD><TD>3 </TD><TD>AWS Model </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>3</TD><TD>4 </TD><TD>AWS Model Version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>4</TD><TD>5 </TD><TD>AWS Software </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>5</TD><TD>6 </TD><TD>AWS Software version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>6</TD><TD>7 </TD><TD>Cargo height </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Height of cargo above max summer load line (m) </TD></TR>
+<TR><TD>7</TD><TD>8 </TD><TD>Distance of bridge from bow </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Distance of bridge from bow of ship (m) </TD></TR>
+<TR><TD>8</TD><TD>9 </TD><TD>Draught </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Draught of ship (m) </TD></TR>
+<TR><TD>9</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD>Unspecified drogue </TD></TR>
+<TR><TD>10</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>1 </TD><TD></TD><TD>Holey sock </TD></TR>
+<TR><TD>11</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>2 </TD><TD></TD><TD>TRISTAR </TD></TR>
+<TR><TD>12</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>3 </TD><TD></TD><TD>Window shade </TD></TR>
+<TR><TD>13</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>4 </TD><TD></TD><TD>Parachute </TD></TR>
+<TR><TD>14</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>5 </TD><TD></TD><TD>Non-lagrangian sea anchor </TD></TR>
+<TR><TD>15</TD><TD>11 </TD><TD>Freeboard </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Freeboard of ship </TD></TR>
+<TR><TD>16</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD>Drogue is detached </TD></TR>
+<TR><TD>17</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>1 </TD><TD></TD><TD>Drogue is attached </TD></TR>
+<TR><TD>18</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>2 </TD><TD></TD><TD>Drogue status unknown </TD></TR>
+<TR><TD>19</TD><TD>13 </TD><TD>Length overall of the ship, ignoring bulbous bow </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Length of ship </TD></TR>
+</TABLE>>];
+StationType [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: StationType</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationType.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: simplified description of station type</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 3-04</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Land station </TD></TR>
+<TR><TD>2</TD><TD>Sea station </TD></TR>
+<TR><TD>3</TD><TD>Aircraft </TD></TR>
+<TR><TD>4</TD><TD>Satellite </TD></TR>
+<TR><TD>5</TD><TD>Underwater platform </TD></TR>
+</TABLE>>];
+SubRegion [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: SubRegion</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SubRegion.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Sub-region / country where observation was made, or recruiting country for mobile platforms</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Code</TD><TD BGCOLOR="GRAY">SubRegion</TD></TR>
+<TR><TD>0</TD><TD>Country </TD><TD>AD </TD><TD>ANDORRA </TD></TR>
+<TR><TD>1</TD><TD>Country </TD><TD>AE </TD><TD>UNITED ARAB EMIRATES </TD></TR>
+<TR><TD>2</TD><TD>Country </TD><TD>AF </TD><TD>AFGHANISTAN </TD></TR>
+<TR><TD>3</TD><TD>Country </TD><TD>AG </TD><TD>ANTIGUA AND BARBUDA </TD></TR>
+<TR><TD>4</TD><TD>Country </TD><TD>AI </TD><TD>ANGUILLA </TD></TR>
+<TR><TD>5</TD><TD>Country </TD><TD>AL </TD><TD>ALBANIA </TD></TR>
+<TR><TD>6</TD><TD>Country </TD><TD>AM </TD><TD>ARMENIA </TD></TR>
+<TR><TD>7</TD><TD>Country </TD><TD>AN </TD><TD>NETHERLANDS ANTILLES </TD></TR>
+<TR><TD>8</TD><TD>Country </TD><TD>AO </TD><TD>ANGOLA </TD></TR>
+<TR><TD>9</TD><TD>Country </TD><TD>AQ </TD><TD>ANTARCTICA </TD></TR>
+<TR><TD>10</TD><TD>Country </TD><TD>AR </TD><TD>ARGENTINA </TD></TR>
+<TR><TD>11</TD><TD>Country </TD><TD>AS </TD><TD>AMERICAN SAMOA </TD></TR>
+<TR><TD>12</TD><TD>Country </TD><TD>AT </TD><TD>AUSTRIA </TD></TR>
+<TR><TD>13</TD><TD>Country </TD><TD>AU </TD><TD>AUSTRALIA </TD></TR>
+<TR><TD>14</TD><TD>Country </TD><TD>AW </TD><TD>ARUBA </TD></TR>
+<TR><TD>15</TD><TD>Country </TD><TD>AX </TD><TD>ALAND ISLANDS </TD></TR>
+<TR><TD>16</TD><TD>Country </TD><TD>AZ </TD><TD>AZERBAIJAN </TD></TR>
+<TR><TD>17</TD><TD>Country </TD><TD>BA </TD><TD>BOSNIA AND HERZEGOVINA </TD></TR>
+<TR><TD>18</TD><TD>Country </TD><TD>BB </TD><TD>BARBADOS </TD></TR>
+<TR><TD>19</TD><TD>Country </TD><TD>BD </TD><TD>BANGLADESH </TD></TR>
+</TABLE>>];
+TimeQuality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: TimeQuality</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/TimeQuality.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Quality of time variable</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Timestamp valid, time reported to nearest second </TD></TR>
+<TR><TD>1</TD><TD>Timestamp valid, time reported to nearest minute </TD></TR>
+<TR><TD>2</TD><TD>Timestamp valid, time reported to nearest hour </TD></TR>
+<TR><TD>3</TD><TD>Time missing, date valid. Report set to local midday </TD></TR>
+<TR><TD>4</TD><TD>Day missing </TD></TR>
+<TR><TD>5</TD><TD>Invalid date / time </TD></TR>
+</TABLE>>];
+TimeReference [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: TimeReference</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/TimeReference.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: base time to which times referenced</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS: 7-10</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Unknown </TD></TR>
+<TR><TD>1</TD><TD>Time server </TD></TR>
+<TR><TD>2</TD><TD>Radio clock </TD></TR>
+<TR><TD>3</TD><TD>Manual comparison </TD></TR>
+</TABLE>>];
+Traceability [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: Traceability</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Traceability.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Whether observation is traceably to international / known standards</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 8-05</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Unknown </TD></TR>
+<TR><TD>1</TD><TD>Traceable to international standards </TD></TR>
+<TR><TD>2</TD><TD>Traceable to other standards </TD></TR>
+</TABLE>>];
+Units [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left"># Table: Units</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Units.tsv</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Description: units that value is reported in</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source: WMO BUFR Common Code Table C6</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Units</TD><TD BGCOLOR="GRAY">Conventional abbreviation</TD><TD BGCOLOR="GRAY">Abbreviation in IA5/ASCII (5)</TD><TD BGCOLOR="GRAY">Abbreviation in ITA2 (5)</TD><TD BGCOLOR="GRAY">Definition in base units (2)</TD></TR>
+<TR><TD>1</TD><TD>metre </TD><TD>m </TD><TD>m </TD><TD>M </TD><TD></TD></TR>
+<TR><TD>2</TD><TD>kilogram </TD><TD>kg </TD><TD>kg </TD><TD>KG </TD><TD></TD></TR>
+<TR><TD>3</TD><TD>second </TD><TD>s </TD><TD>s </TD><TD>S </TD><TD></TD></TR>
+<TR><TD>4</TD><TD>ampere </TD><TD>A </TD><TD>A </TD><TD>A </TD><TD></TD></TR>
+<TR><TD>5</TD><TD>kelvin </TD><TD>K </TD><TD>K </TD><TD>K </TD><TD></TD></TR>
+<TR><TD>6</TD><TD>mole </TD><TD>mol </TD><TD>mol </TD><TD>MOL </TD><TD></TD></TR>
+<TR><TD>7</TD><TD>candela </TD><TD>cd </TD><TD>cd </TD><TD>CD </TD><TD></TD></TR>
+<TR><TD>21</TD><TD>radian </TD><TD>rad </TD><TD>rad </TD><TD>RAD </TD><TD></TD></TR>
+<TR><TD>22</TD><TD>steradian </TD><TD>sr </TD><TD>sr </TD><TD>SR </TD><TD></TD></TR>
+<TR><TD>30</TD><TD>hertz </TD><TD>Hz </TD><TD>Hz </TD><TD>HZ </TD><TD>s–1 </TD></TR>
+<TR><TD>31</TD><TD>newton </TD><TD>N </TD><TD>N </TD><TD>N </TD><TD>kg m s–2 </TD></TR>
+<TR><TD>32</TD><TD>pascal </TD><TD>Pa </TD><TD>Pa </TD><TD>PAL </TD><TD>kg m–1 s–2 </TD></TR>
+<TR><TD>33</TD><TD>joule </TD><TD>J </TD><TD>J </TD><TD>J </TD><TD>kg m2 s–2 </TD></TR>
+<TR><TD>34</TD><TD>watt </TD><TD>W </TD><TD>W </TD><TD>W </TD><TD>kg m2 s–3 </TD></TR>
+<TR><TD>35</TD><TD>coulomb </TD><TD>C </TD><TD>C </TD><TD>C </TD><TD>A s </TD></TR>
+<TR><TD>36</TD><TD>volt </TD><TD>V </TD><TD>V </TD><TD>V </TD><TD>kg m2 s–3 A–1 </TD></TR>
+<TR><TD>37</TD><TD>farad </TD><TD>F </TD><TD>F </TD><TD>F </TD><TD>kg–1 m–2 s4 A2 </TD></TR>
+<TR><TD>38</TD><TD>ohm </TD><TD>&#8486; </TD><TD>Ohm </TD><TD>OHM </TD><TD>kg m2 s–3 A–2 </TD></TR>
+<TR><TD>39</TD><TD>siemens </TD><TD>S </TD><TD>S </TD><TD>SIE </TD><TD>kg–1 m–2 s3 A2 </TD></TR>
+<TR><TD>40</TD><TD>weber </TD><TD>Wb </TD><TD>Wb </TD><TD>WB </TD><TD>kg m2 s–2 A–1 </TD></TR>
+</TABLE>>];
+UpdateFrequency [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: UpdateFrequency</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/UpdateFrequency.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Table defining frequencies at which data updated / reprocessed</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: </TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Annual </TD></TR>
+</TABLE>>];
+ZCoordinateMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="" ALIGN="left"># Table: ZCoordinateMethod</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ZCoordinateMethod.tsv</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+</TABLE>>];
+ZCoordinateType [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="" ALIGN="left"># Table: ZCoordinateType</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ZCoordinateType.tsv</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+</TABLE>>];
+
+
+ObservationsTable:SourceConfigurationR -> SourceConfiguration:SourceIDL;
+ObservationsTable:StationConfigurationR -> StationConfiguration:StationIDL;
+ObservationsTable:ProfileConfigurationR -> ProfileConfiguration:ProfileIDL;
+ObservationsTable:SensorConfigurationR -> SensorConfiguration:SensorIDL;
+
+
+}

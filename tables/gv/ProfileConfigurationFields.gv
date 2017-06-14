@@ -1,0 +1,31 @@
+digraph ProfileConfigurationFields {
+node [color=white]
+ProfileConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="9" ALIGN="left"># Table: ProfileConfigurationFields</TD></TR>
+<TR><TD COLSPAN="9" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="9" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="9"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="9"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">FieldNumber</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Code Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">StartDate</TD><TD BGCOLOR="GRAY">EndDate</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>Kaysam </TD><TD></TD><TD></TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Totex </TD><TD></TD><TD></TD></TR>
+<TR><TD>2</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>KKS </TD><TD></TD><TD></TD></TR>
+<TR><TD>3</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>3 </TD><TD>3 </TD><TD>Guangzhou Shuangyi (China) </TD><TD></TD><TD></TD></TR>
+<TR><TD>4</TD><TD>1 </TD><TD>Balloon manufacturer </TD><TD>int (fk) </TD><TD>4 </TD><TD>4 </TD><TD>ChemChina Zhuzhou (China) </TD><TD></TD><TD></TD></TR>
+<TR><TD>5</TD><TD>2 </TD><TD>BalloonType </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>6</TD><TD>3 </TD><TD>BurstpointAltitude </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>7</TD><TD>4 </TD><TD>BurstpointPressure </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>8</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>No corrections </TD><TD></TD><TD></TD></TR>
+<TR><TD>9</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Time lag correction provided by manufacturer </TD><TD></TD><TD></TD></TR>
+<TR><TD>10</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>Solar radiation correction provided by the manufacturer </TD><TD></TD><TD></TD></TR>
+<TR><TD>11</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>3 </TD><TD>3 </TD><TD>Solar radiation and time lag correction provided by the manufacturer <BR/></TD><TD></TD><TD></TD></TR>
+<TR><TD>12</TD><TD>5 </TD><TD>Correction algorithm for humidity measurements </TD><TD>int (fk) </TD><TD>4 </TD><TD>7 </TD><TD>GRUAN solar radiation and time lag </TD><TD></TD><TD></TD></TR>
+<TR><TD>13</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>0 </TD><TD>0 </TD><TD>Upwards profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>14</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>1 </TD><TD>1 </TD><TD>Downwards profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>15</TD><TD>6 </TD><TD>Direction of profile </TD><TD>int (fk) </TD><TD>2 </TD><TD>2 </TD><TD>Horizontal profile </TD><TD></TD><TD></TD></TR>
+<TR><TD>16</TD><TD>7 </TD><TD>FillingWeight </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>17</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>0 </TD><TD>0 </TD><TD>Geopotential height calculated from pressure </TD><TD></TD><TD></TD></TR>
+<TR><TD>18</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>1 </TD><TD>1 </TD><TD>Geopotential height calculated from GPS height </TD><TD></TD><TD></TD></TR>
+<TR><TD>19</TD><TD>8 </TD><TD>Geopotential height calculation </TD><TD>int(fk) </TD><TD>2 </TD><TD>2 </TD><TD>Geopotential height calculated from radar height </TD><TD></TD><TD></TD></TR>
+</TABLE>>];
+}

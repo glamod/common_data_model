@@ -1,0 +1,31 @@
+digraph CommunucationMethod {
+node [color=white]
+CommunucationMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: CommunucationMethod</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CommunucationMethod.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Method by which station reports its observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: Various (WMO47, WIGOS, BUFR)</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Cellular (unspecified) </TD></TR>
+<TR><TD>1</TD><TD>Meteosat DCP </TD></TR>
+<TR><TD>2</TD><TD>Iridium (unspecified) </TD></TR>
+<TR><TD>3</TD><TD>GOES DCP </TD></TR>
+<TR><TD>4</TD><TD>VSAT (unspecified) </TD></TR>
+<TR><TD>5</TD><TD>Landline telephone </TD></TR>
+<TR><TD>6</TD><TD>Radio modem </TD></TR>
+<TR><TD>7</TD><TD>E-mail (unspecified) </TD></TR>
+<TR><TD>8</TD><TD>Voice (ship). The observation is sent to a NMS through <BR/>the telephone network. The communication may use Inmarsat, Iridium, Vsat, <BR/>VHF </TD></TR>
+<TR><TD>9</TD><TD>Email (ship). The observation is sent to a NMS through <BR/>an email. The WMO message is attached to this email. <BR/>The satellite communication provider may be Inmarsat, Iridium, Vsat </TD></TR>
+<TR><TD>10</TD><TD>Web (ship). The observation is sent through the Web (example: <BR/>TurboWeb). The satellite communication provider may be Inmarsat, Iridium, Vsat <BR/></TD></TR>
+<TR><TD>11</TD><TD>Inmarsat-C (FM13, SAC41). Standard procedure used to report observations (FM13 <BR/>messages) from conventional VOS for many years. Collect call system: <BR/>the NMS which receives the observations pays the communication costs <BR/></TD></TR>
+<TR><TD>12</TD><TD>Inmarsat-C (FM13, other SAC). FM13 messages are sent to a <BR/>dedicated SAC (other than SAC41) established at one, or more <BR/>LES. In general, communications are paid by the country who <BR/>recruited the ship </TD></TR>
+<TR><TD>13</TD><TD>Inmarsat-C (EUHC). Text messages containing compressed data (E-SURFMAR format) are <BR/>sent ashore through Inmarsat-C to a dedicated SAC and LES. <BR/>Communications are paid by the country who recruited the ship <BR/></TD></TR>
+<TR><TD>14</TD><TD>Inmarsat-C (SEAS). SEAS binary messages sent through Inmarsat-C Data Mode <BR/>to a dedicated SAC and LES. Communications are paid by <BR/>NOAA/NWS </TD></TR>
+<TR><TD>15</TD><TD>Automated Identification System (direct or through satellite) </TD></TR>
+<TR><TD>16</TD><TD>Argos system </TD></TR>
+<TR><TD>17</TD><TD>Cellular (Dial-up). Dial-up communication using terrestrial wireless networks (GSM, GPRS) <BR/></TD></TR>
+<TR><TD>18</TD><TD>Cellular (SMS). SMS sent through terrestrial wireless networks (GSM, GPRS) <BR/></TD></TR>
+<TR><TD>19</TD><TD>Globalstar communication system </TD></TR>
+</TABLE>>];
+}

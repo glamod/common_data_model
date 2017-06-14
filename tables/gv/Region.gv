@@ -1,0 +1,19 @@
+digraph Region {
+node [color=white]
+Region [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="3" ALIGN="left"># Table: Region</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Region.tsv</TD></TR>
+<TR><TD COLSPAN="3" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Description: WMO Region where report / observation was made</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="3"># Source: WIGOS 3-01</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">WMORegion</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD></TD><TD>Reserved </TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>Africa </TD></TR>
+<TR><TD>2</TD><TD>2 </TD><TD>Asia </TD></TR>
+<TR><TD>3</TD><TD>3 </TD><TD>South America </TD></TR>
+<TR><TD>4</TD><TD>4 </TD><TD>North America, Central America, Caribbean </TD></TR>
+<TR><TD>5</TD><TD>5 </TD><TD>South-West Pacific </TD></TR>
+<TR><TD>6</TD><TD>6 </TD><TD>Europe </TD></TR>
+<TR><TD>7</TD><TD>7 </TD><TD>Antarctica </TD></TR>
+</TABLE>>];
+}

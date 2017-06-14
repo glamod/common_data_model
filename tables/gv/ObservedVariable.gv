@@ -1,0 +1,31 @@
+digraph ObservedVariable {
+node [color=white]
+ObservedVariable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: ObservedVariable</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservedVariable.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description: Table defined the list of potential observed variables</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source: CF conventions,  ODB governance database</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Standard Name</TD><TD BGCOLOR="GRAY">Units</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Code space</TD><TD BGCOLOR="GRAY">Code space Index</TD></TR>
+<TR><TD>0</TD><TD></TD><TD>acoustic_signal_roundtrip_travel_time_in_sea_water </TD><TD>s </TD><TD>The quantity with standard name acoustic_signal_roundtrip_travel_time_in_sea_water is the time taken <BR/>for an acoustic signal to propagate from the emitting instrument <BR/>to a reflecting surface and back again to the instrument. <BR/>In the case of an instrument based on the sea <BR/>floor and measuring the roundtrip time to the sea surface, <BR/>the data are commonly used as a measure of ocean <BR/>heat content. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>1</TD><TD></TD><TD>aerodynamic_particle_diameter </TD><TD>m </TD><TD>The diameter of a spherical particle with density 1000 kg <BR/>m-3 having the same aerodynamic properties as the particles in <BR/>question. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>2</TD><TD></TD><TD>aerodynamic_resistance </TD><TD>m-1 s </TD><TD>The "aerodynamic_resistance" is the resistance to mixing through the boundary <BR/>layer toward the surface by means of the dominant process, <BR/>turbulent transport. Reference: Wesely, M. L., 1989, doi:10.1016/0004-6981(89)90153-4. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>3</TD><TD></TD><TD>age_of_sea_ice </TD><TD>year </TD><TD>Age of sea ice means the length of time elapsed <BR/>since the ice formed. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>4</TD><TD></TD><TD>age_of_stratospheric_air </TD><TD>s </TD><TD>Age of stratospheric air means an estimate of the time <BR/>since a parcel of stratospheric air was last in contact <BR/>with the troposphere. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>5</TD><TD></TD><TD>age_of_surface_snow </TD><TD>day </TD><TD>Age of surface snow means the length of time elapsed <BR/>since the snow accumulated on the earth's surface. The surface <BR/>called "surface" means the lower boundary of the atmosphere. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>6</TD><TD></TD><TD>air_density </TD><TD>kg m-3 </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>7</TD><TD></TD><TD>air_potential_temperature </TD><TD>K </TD><TD>Potential temperature is the temperature a parcel of air or <BR/>sea water would have if moved adiabatically to sea level <BR/>pressure. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>8</TD><TD></TD><TD>air_pressure </TD><TD>Pa </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>9</TD><TD></TD><TD>air_pressure_anomaly </TD><TD>Pa </TD><TD>anomaly means difference from climatology. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>10</TD><TD></TD><TD>air_pressure_at_cloud_base </TD><TD>Pa </TD><TD>cloud_base refers to the base of the lowest cloud. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>11</TD><TD></TD><TD>air_pressure_at_cloud_top </TD><TD>Pa </TD><TD>cloud_top refers to the top of the highest cloud. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>12</TD><TD></TD><TD>air_pressure_at_convective_cloud_base </TD><TD>Pa </TD><TD>cloud_base refers to the base of the lowest cloud. Convective <BR/>cloud is that produced by the convection schemes in an <BR/>atmosphere model. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>13</TD><TD></TD><TD>air_pressure_at_convective_cloud_top </TD><TD>Pa </TD><TD>cloud_top refers to the top of the highest cloud. Convective <BR/>cloud is that produced by the convection schemes in an <BR/>atmosphere model. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>14</TD><TD></TD><TD>air_pressure_at_freezing_level </TD><TD>Pa </TD><TD>NA </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>15</TD><TD></TD><TD>air_pressure_at_sea_level </TD><TD>Pa </TD><TD>sea_level means mean sea level, which is close to the <BR/>geoid in sea areas. Air pressure at sea level is <BR/>the quantity often abbreviated as MSLP or PMSL. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>16</TD><TD></TD><TD>air_temperature </TD><TD>K </TD><TD>Air temperature is the bulk temperature of the air, not <BR/>the surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>17</TD><TD></TD><TD>air_temperature_anomaly </TD><TD>K </TD><TD>anomaly means difference from climatology. Air temperature is the bulk <BR/>temperature of the air, not the surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>18</TD><TD></TD><TD>air_temperature_at_cloud_top </TD><TD>K </TD><TD>cloud_top refers to the top of the highest cloud. Air <BR/>temperature is the bulk temperature of the air, not the <BR/>surface (skin) temperature. </TD><TD>CF-44 </TD><TD></TD></TR>
+<TR><TD>19</TD><TD></TD><TD>air_temperature_at_effective_cloud_top_defined_by_infrared_radiation </TD><TD>K </TD><TD>The "effective cloud top defined by infrared radiation" is (approximately) <BR/>the geometric height above the surface that is one optical <BR/>depth at infrared wavelengths (in the region of 11 micrometers) <BR/>below the cloud top that would be detected by visible <BR/>and lidar techniques. Reference: Minnis, P. et al 2011 CERES <BR/>Edition-2 Cloud Property Retrievals Using TRMM VIRS and Terra and <BR/>Aqua MODIS Data x2014; Part I: Algorithms IEEE Transactions on <BR/>Geoscience and Remote Sensing, 49(11), 4374-4400. doi: http://dx.doi.org/10.1109/TGRS.2011.2144601. </TD><TD>CF-44 </TD><TD></TD></TR>
+</TABLE>>];
+}

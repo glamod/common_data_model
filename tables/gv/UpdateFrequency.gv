@@ -1,0 +1,12 @@
+digraph UpdateFrequency {
+node [color=white]
+UpdateFrequency [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: UpdateFrequency</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/UpdateFrequency.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Table defining frequencies at which data updated / reprocessed</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: </TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Annual </TD></TR>
+</TABLE>>];
+}

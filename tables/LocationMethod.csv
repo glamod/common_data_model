@@ -1,0 +1,21 @@
+# Description: Method by which location of station / observation determined
+# Source: WIGOS 11-01 and BUFR 0 02 148
+Value	Description
+0	Argos
+1	ARGOS DOPPLER
+2	ARGOS Kalman
+3	Argos-3
+4	Argos-4
+5	From map
+6	GALILEO
+7	GOES DCP
+8	GPS
+9	INMARSAT
+10	Iridium
+11	Iridium and GPS
+12	IRIDIUM DOPPLER
+13	LORAN
+14	Meteosat DCP
+15	Orbcomm
+16	Reserved
+17	Surveyed

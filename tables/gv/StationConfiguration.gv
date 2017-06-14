@@ -1,0 +1,31 @@
+digraph StationConfiguration {
+node [color=white]
+StationConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left"># Table: StationConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: </TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>StationPrimaryID </TD><TD>varchar </TD><TD></TD><TD>Primary (WMO) ID for station </TD></TR>
+<TR><TD>1</TD><TD>StationPrimaryIDScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>Scheme used for primary ID </TD></TR>
+<TR><TD>2</TD><TD>StationSecondaryID </TD><TD>varchar </TD><TD></TD><TD>Secondary (local) ID for station </TD></TR>
+<TR><TD>3</TD><TD>StationSecondaryIDScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>Scheme used for secondary ID </TD></TR>
+<TR><TD>4</TD><TD>StationName </TD><TD>varchar </TD><TD></TD><TD>Name of station (e.g. Tateno) </TD></TR>
+<TR><TD>5</TD><TD>StationAbbreviation </TD><TD>varchar </TD><TD></TD><TD>Abbreviation of station name (e.g. TAT) </TD></TR>
+<TR><TD>6</TD><TD>StartDate </TD><TD></TD><TD></TD><TD>Date that the station first started reporting </TD></TR>
+<TR><TD>7</TD><TD>EndDate </TD><TD></TD><TD></TD><TD>Last data the station reported </TD></TR>
+<TR><TD>8</TD><TD>StationType </TD><TD>int (fk) </TD><TD>StationType </TD><TD>Type of reporting station </TD></TR>
+<TR><TD>9</TD><TD>PlatformType </TD><TD>int (fk) </TD><TD>PlatformType </TD><TD>Generic type of observing platform </TD></TR>
+<TR><TD>10</TD><TD>PlatformSubType </TD><TD>int (fk) </TD><TD>PlatformSubType </TD><TD>Specific type of observing platform </TD></TR>
+<TR><TD>11</TD><TD>OperatingInstitute </TD><TD>int (fk) </TD><TD>Institute </TD><TD>Institute operating the station </TD></TR>
+<TR><TD>12</TD><TD>OperatingTerritory </TD><TD>int (fk) </TD><TD>SubRegion </TD><TD>Sub-region where station is located or country of registry for <BR/>mobile station </TD></TR>
+<TR><TD>13</TD><TD>ObservingFrequency </TD><TD></TD><TD>ObservingFrequency </TD><TD>Typical frequency of observations for this station </TD></TR>
+<TR><TD>14</TD><TD>TelecommunicationMethod </TD><TD>int (fk) </TD><TD>CommunicationMethod </TD><TD>Method used to report observations </TD></TR>
+<TR><TD>15</TD><TD>StationAutomation </TD><TD>int (fk) </TD><TD>AutomationStatus </TD><TD>Whether station is automated, manual or mixed </TD></TR>
+<TR><TD>16</TD><TD>MeasuringSystemModel </TD><TD>int (fk) </TD><TD></TD><TD>Station / AWS model type </TD></TR>
+<TR><TD>17</TD><TD>MeasuringSystemID </TD><TD>varchar </TD><TD></TD><TD>ID or serial number of measuring system </TD></TR>
+<TR><TD>18</TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>MetadataSources </TD><TD>Source of metadata for this station </TD></TR>
+<TR><TD>19</TD><TD>MetadataVersion </TD><TD>varchar </TD><TD></TD><TD>Version of metadata source </TD></TR>
+</TABLE>>];
+}

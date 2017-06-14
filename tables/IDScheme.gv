@@ -1,7 +1,0 @@
-digraph IDScheme {
-node [color=white]
-IDScheme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="" ALIGN="left"># Table: IDScheme</TD></TR>
-<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/IDScheme.tsv</TD></TR>
-</TABLE>>];
-}

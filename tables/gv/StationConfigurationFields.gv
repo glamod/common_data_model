@@ -1,0 +1,31 @@
+digraph StationConfigurationFields {
+node [color=white]
+StationConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: StationConfigurationFields</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Field</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">Code Value</TD><TD BGCOLOR="GRAY">Abbreviation</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>AWS Entry and Display Software </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>1</TD><TD>2 </TD><TD>AWS Entry and Display Software Version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>2</TD><TD>3 </TD><TD>AWS Model </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>3</TD><TD>4 </TD><TD>AWS Model Version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>4</TD><TD>5 </TD><TD>AWS Software </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>5</TD><TD>6 </TD><TD>AWS Software version </TD><TD>int (fk) </TD><TD></TD><TD></TD><TD>TBD </TD></TR>
+<TR><TD>6</TD><TD>7 </TD><TD>Cargo height </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Height of cargo above max summer load line (m) </TD></TR>
+<TR><TD>7</TD><TD>8 </TD><TD>Distance of bridge from bow </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Distance of bridge from bow of ship (m) </TD></TR>
+<TR><TD>8</TD><TD>9 </TD><TD>Draught </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Draught of ship (m) </TD></TR>
+<TR><TD>9</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD>Unspecified drogue </TD></TR>
+<TR><TD>10</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>1 </TD><TD></TD><TD>Holey sock </TD></TR>
+<TR><TD>11</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>2 </TD><TD></TD><TD>TRISTAR </TD></TR>
+<TR><TD>12</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>3 </TD><TD></TD><TD>Window shade </TD></TR>
+<TR><TD>13</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>4 </TD><TD></TD><TD>Parachute </TD></TR>
+<TR><TD>14</TD><TD>10 </TD><TD>Drogue type </TD><TD>int (fk) </TD><TD>5 </TD><TD></TD><TD>Non-lagrangian sea anchor </TD></TR>
+<TR><TD>15</TD><TD>11 </TD><TD>Freeboard </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Freeboard of ship </TD></TR>
+<TR><TD>16</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>0 </TD><TD></TD><TD>Drogue is detached </TD></TR>
+<TR><TD>17</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>1 </TD><TD></TD><TD>Drogue is attached </TD></TR>
+<TR><TD>18</TD><TD>12 </TD><TD>Lagrangian drifter drogue status </TD><TD>int (fk) </TD><TD>2 </TD><TD></TD><TD>Drogue status unknown </TD></TR>
+<TR><TD>19</TD><TD>13 </TD><TD>Length overall of the ship, ignoring bulbous bow </TD><TD>numeric </TD><TD>NA </TD><TD></TD><TD>Length of ship </TD></TR>
+</TABLE>>];
+}

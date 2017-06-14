@@ -1,0 +1,17 @@
+digraph Adjustment {
+node [color=white]
+Adjustment [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: Adjustment</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Adjustment.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Table providing record of adjustments applied to the records / observations</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>AdjustmentID </TD><TD>int </TD><TD>Unique Id for adjustment </TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint </TD><TD>Report to which adjustment has been applied </TD></TR>
+<TR><TD>2</TD><TD>ElementNumber </TD><TD>int </TD><TD>Which element has been adjusted </TD></TR>
+<TR><TD>3</TD><TD>AdjustmentValue </TD><TD>numeric </TD><TD>Adjusted value = original value + adjustment value </TD></TR>
+<TR><TD>4</TD><TD>ReasonForAdjustment </TD><TD>varcahr </TD><TD>Reason for adjusting the data </TD></TR>
+<TR><TD>5</TD><TD>References </TD><TD>int[] </TD><TD>References describing adjustment process </TD></TR>
+</TABLE>>];
+}

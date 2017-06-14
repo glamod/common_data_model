@@ -1,0 +1,12 @@
+digraph ObservationCodeTable {
+node [color=white]
+ObservationCodeTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: ObservationCodeTable</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationCodeTable.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Code Table Scheme</TD><TD BGCOLOR="GRAY">Code Table ID</TD><TD BGCOLOR="GRAY">Code Table Name</TD></TR>
+<TR><TD>0</TD><TD>BUFR </TD><TD>0 20 003 </TD><TD>Present Weather </TD></TR>
+</TABLE>>];
+}

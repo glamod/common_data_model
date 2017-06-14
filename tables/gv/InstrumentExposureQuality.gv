@@ -1,0 +1,16 @@
+digraph InstrumentExposureQuality {
+node [color=white]
+InstrumentExposureQuality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: InstrumentExposureQuality</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/InstrumentExposureQuality.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Quality of exposure of instrument used to make observation</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 5-15</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>Class 1 - Exposure of instrument allows reference level measurements <BR/></TD></TR>
+<TR><TD>2</TD><TD>Class 2 - Exposure of instrument has small or infrequent <BR/>influence on measurement </TD></TR>
+<TR><TD>3</TD><TD>Class 3 - Exposure of instrument leads to increased uncertainty <BR/>or occasional invalid measurements </TD></TR>
+<TR><TD>4</TD><TD>Class 4 - Exposure of instruemnt leads to high uncertainty <BR/>or regular invalid measurements </TD></TR>
+<TR><TD>5</TD><TD>Class 5 - Exposure of instrument leads to invalid measurements <BR/></TD></TR>
+</TABLE>>];
+}

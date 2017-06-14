@@ -1,0 +1,17 @@
+# Description: definition of table specifying sensor configuration
+# Source:
+ElementNumber	ElementName	Type	ExternalTable	Description
+0	InstrumentID	varchar		Unique ID for this instrument 
+1	Parameter	varchar or int (fk)		The observed variable that this instrument measures (one entry per parameter if more than one)
+2	Manufacturer	varchar or int (fk)		Manufacturer of sensor / instrument
+3	SensorType	int (fk)		Type of sensor, e.g. RS92 or anemometer
+4	SensorModel	int (fk)		Manufacturers designation / model number
+5	Serial number	varchar		Serial number
+6	ObservingMethod	int (fk)		estimate, measured or computed value
+7	SamplingStrategy	int (fk)		Continuous, discrete, event
+8	LastCalibrationDate	timestamp		Date sensor last calibrated
+9	CalibrationStatus	int (fk)		Calibration status
+10	NumberOfElements	int		Number of metadata fields for this instrument
+11	Field	int []		Field(s) for which next value applies
+12	Value	numeric []		Value(s) of field(s) indicated
+13	Comment	varchar		Comments on sensor

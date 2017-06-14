@@ -1,0 +1,6 @@
+# Description: Original report type for this report / observaiton
+# Source:
+Value	Description
+0	SYNOP
+1	TEMP
+2	CLIMAT

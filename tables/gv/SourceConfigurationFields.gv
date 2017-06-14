@@ -1,0 +1,31 @@
+digraph SourceConfigurationFields {
+node [color=white]
+SourceConfigurationFields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="7" ALIGN="left"># Table: SourceConfigurationFields</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceConfigurationFields.tsv</TD></TR>
+<TR><TD COLSPAN="7" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Description: Additional fields for source configuration</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="7"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Field</TD><TD BGCOLOR="GRAY">FieldName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">CodeValue</TD><TD BGCOLOR="GRAY">Description</TD><TD BGCOLOR="GRAY">Extended Description</TD></TR>
+<TR><TD>0</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>0 </TD><TD>IMMT version just prior to version number being included </TD><TD></TD></TR>
+<TR><TD>1</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>1 </TD><TD>IMMT-1 (in effect from 2 Nov. 1994) </TD><TD></TD></TR>
+<TR><TD>2</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>2 </TD><TD>IMMT-2 (in effect from Jan. 2003) </TD><TD></TD></TR>
+<TR><TD>3</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>3 </TD><TD>IMMT-3 (in effect from Jan. 2007) </TD><TD></TD></TR>
+<TR><TD>4</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>4 </TD><TD>IMMT-4 (in effect from Jan. 2011) </TD><TD></TD></TR>
+<TR><TD>5</TD><TD>1 </TD><TD>DelayedModeFormat </TD><TD>int (fk) </TD><TD>5 </TD><TD>IMMT-5 (in effect from June 2012) </TD><TD></TD></TR>
+<TR><TD>6</TD><TD>2 </TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>0 </TD><TD>COAPS </TD><TD></TD></TR>
+<TR><TD>7</TD><TD>2 </TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD>1 </TD><TD>WMO Publication 47 </TD><TD></TD></TR>
+<TR><TD>8</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>1 </TD><TD>Output from digitisation project, semi-colon delimited format (1955) </TD><TD></TD></TR>
+<TR><TD>9</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>2 </TD><TD>Output from digitisation project, semi-colon delimited format (1956) </TD><TD></TD></TR>
+<TR><TD>10</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>3 </TD><TD>Output from digitisation project, semi-colon delimited format (1957 - 1967) <BR/></TD><TD></TD></TR>
+<TR><TD>11</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>4 </TD><TD>Output from digitisation project, semi-colon delimited format (1968 - 1969) <BR/></TD><TD></TD></TR>
+<TR><TD>12</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>5 </TD><TD>Fixed format (1970 - 1004) </TD><TD></TD></TR>
+<TR><TD>13</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>6 </TD><TD>Semi-colon delimited format (1995 - 2001) </TD><TD></TD></TR>
+<TR><TD>14</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>7 </TD><TD>Semi-colon delimited format (2002 - 2007 q1) </TD><TD></TD></TR>
+<TR><TD>15</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>8 </TD><TD>Semi-colon delimited format (2007 - 2008) </TD><TD></TD></TR>
+<TR><TD>16</TD><TD>3 </TD><TD>MetadataSourceFormat </TD><TD>int (fk) </TD><TD>9 </TD><TD>Semi-colon delimited format (2009 - 2014) </TD><TD></TD></TR>
+<TR><TD>17</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>0 </TD><TD>unknown </TD><TD></TD></TR>
+<TR><TD>18</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>1 </TD><TD>delayed mode - logbook (paper) </TD><TD></TD></TR>
+<TR><TD>19</TD><TD>4 </TD><TD>ObservationSourceType </TD><TD>int (fk) </TD><TD>2 </TD><TD>real time - national telecommunication channels </TD><TD></TD></TR>
+</TABLE>>];
+}

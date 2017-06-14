@@ -1,0 +1,31 @@
+digraph ObservationsTable {
+node [color=white]
+ObservationsTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left"># Table: ObservationsTable</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationsTable.tsv</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Descripion: table defining elements in main observations table</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">WIGOS (MCO)</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint (pk) </TD><TD></TD><TD>NA </TD><TD>Unique ID for report (unique ID given by combination of <BR/>RecordID and ObservationID) </TD></TR>
+<TR><TD>2</TD><TD>Region </TD><TD>int (fk) </TD><TD>Region </TD><TD>3-01 (C) </TD><TD>Region (WMO region / Ocean basin) </TD></TR>
+<TR><TD>3</TD><TD>SubRegion </TD><TD>int (fk) </TD><TD>SubRegion </TD><TD>3-02 (C) </TD><TD>Country / regional sea </TD></TR>
+<TR><TD>4</TD><TD>ApplicationArea </TD><TD>int[] (fk) </TD><TD>ApplicationArea </TD><TD>2-01 (M) </TD><TD>WMO application area(s) </TD></TR>
+<TR><TD>5</TD><TD>ObservingProgramme </TD><TD>int (fk) </TD><TD>ObservingProgramme </TD><TD>2-02 (M) </TD><TD>Observing programme, e.g. VOS </TD></TR>
+<TR><TD>6</TD><TD>ReportType </TD><TD>int (fk) </TD><TD>ReportType </TD><TD>NA </TD><TD>e.g. SYNOP, TEMP, CLIMAT, etc </TD></TR>
+<TR><TD>7</TD><TD>StationName </TD><TD>varchar </TD><TD></TD><TD>3-03 (M) </TD><TD>e.g. GRUAN station name, ship name, site name etc </TD></TR>
+<TR><TD>8</TD><TD>StationType </TD><TD>int (fk) </TD><TD>StationType </TD><TD>3-04 (M) </TD><TD>Type of station, e.g. land station, sea station etc </TD></TR>
+<TR><TD>9</TD><TD>PlatformType </TD><TD>int (fk) </TD><TD>PlatformType </TD><TD>NA </TD><TD>Structure upon which sensor is mounted, e.g. ship, drifting buoy, <BR/>tower etc </TD></TR>
+<TR><TD>10</TD><TD>PlatformSubType </TD><TD>int (fk) </TD><TD>PlatformSubType </TD><TD>NA </TD><TD>Sub-type for platform, e.g. 3m discuss buoy </TD></TR>
+<TR><TD>11</TD><TD>PrimaryStationId </TD><TD>varchar </TD><TD></TD><TD>3-06 (M) </TD><TD>Unique (WMO) station identifier, e.g. WIGOS ID </TD></TR>
+<TR><TD>12</TD><TD>PrimaryStationIdScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD>NA </TD><TD>Scheme used for unique station ID </TD></TR>
+<TR><TD>13</TD><TD>SecondaryStationId </TD><TD>varchar </TD><TD></TD><TD></TD><TD>Alternate (local) ID for station, e.g. Network ID </TD></TR>
+<TR><TD>14</TD><TD>SecondaryStationIdScheme </TD><TD>int (fk) </TD><TD>IDScheme </TD><TD></TD><TD>Alternate ID Scheme, e.g. Network ID </TD></TR>
+<TR><TD>15</TD><TD>StationLocation_Longitude </TD><TD>numeric </TD><TD></TD><TD>3-07 (M) </TD><TD>Longitude of station, -180.0 to 180.0 (or other as defined <BR/>by StationCRS) </TD></TR>
+<TR><TD>16</TD><TD>StationLocation_Latitude </TD><TD>numeric </TD><TD></TD><TD>3-07 (M) </TD><TD>Latitude of station, -90 to 90 (or other as defined <BR/>by StationCRS) </TD></TR>
+<TR><TD>17</TD><TD>StationLocationAccuracy </TD><TD>numeric </TD><TD></TD><TD>NA </TD><TD>Accuracy to which station location recorded (radius in km) </TD></TR>
+<TR><TD>18</TD><TD>StationLocationMethod </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>19</TD><TD>StationLocationQuality </TD><TD>int (fk) </TD><TD>LocationQuality </TD><TD>NA </TD><TD>Quality flag for station location </TD></TR>
+<TR><TD>20</TD><TD>StationCRS </TD><TD>int (fk) </TD><TD>CRS </TD><TD>11-Feb </TD><TD>Coordinate reference scheme for station location </TD></TR>
+</TABLE>>];
+}

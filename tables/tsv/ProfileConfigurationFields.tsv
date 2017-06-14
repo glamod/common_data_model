@@ -1,0 +1,278 @@
+Value	FieldNumber	FieldName	Type	Code Value	Abbreviation	Description	StartDate	EndDate
+0	1	Balloon manufacturer	int (fk)	0	0	Kaysam		
+1	1	Balloon manufacturer	int (fk)	1	1	Totex		
+2	1	Balloon manufacturer	int (fk)	2	2	KKS		
+3	1	Balloon manufacturer	int (fk)	3	3	Guangzhou Shuangyi (China)		
+4	1	Balloon manufacturer	int (fk)	4	4	ChemChina Zhuzhou (China)		
+5	2	BalloonType	int (fk)	0				
+6	3	BurstpointAltitude	numeric	NA				
+7	4	BurstpointPressure	numeric	NA				
+8	5	Correction algorithm for humidity measurements	int (fk)	0	0	No corrections		
+9	5	Correction algorithm for humidity measurements	int (fk)	1	1	Time lag correction provided by manufacturer		
+10	5	Correction algorithm for humidity measurements	int (fk)	2	2	Solar radiation correction provided by the manufacturer		
+11	5	Correction algorithm for humidity measurements	int (fk)	3	3	Solar radiation and time lag correction provided by the manufacturer		
+12	5	Correction algorithm for humidity measurements	int (fk)	4	7	GRUAN solar radiation and time lag		
+13	6	Direction of profile	int (fk)	0	0	Upwards profile		
+14	6	Direction of profile	int (fk)	1	1	Downwards profile		
+15	6	Direction of profile	int (fk)	2	2	Horizontal profile		
+16	7	FillingWeight	numeric	NA				
+17	8	Geopotential height calculation	int(fk)	0	0	Geopotential height calculated from pressure		
+18	8	Geopotential height calculation	int(fk)	1	1	Geopotential height calculated from GPS height		
+19	8	Geopotential height calculation	int(fk)	2	2	Geopotential height calculated from radar height		
+20	9	GrossWeight	numeric	NA				
+21	10	IncludeDescent	numeric	NA				
+22	11	Instrument type for water temperature salinity profile	int (fk)	0				
+23	12	Method of depth calculation	int (fk)	0	0	Depth calculated using fall rate equation		
+24	12	Method of depth calculation	int (fk)	1	1	Depth calculate from water pressure / equation of state (of sea water)		
+25	13	Payload	numeric	NA		Weight of payload (g)		
+26	14	Processing code	int (fk)	0	cc	Calibration correction (of humidity sensors)		
+27	14	Processing code	int (fk)	1	HRC	Humidity radiation correction		
+28	14	Processing code	int (fk)	2	or	Outlier removal (remove temperature spikes)		
+29	14	Processing code	int (fk)	3	pGPS	Combination of pressure and GPS		
+30	14	Processing code	int (fk)	4	TL	Time-lag correction		
+31	14	Processing code	int (fk)	5	TRC	Temperature radiation correction		
+32	15	Radiosonde / sounding system used	int (fk)	0	00	Reserved	NULL	30/06/2007
+33	15	Radiosonde / sounding system used	int (fk)	1	01	iMet-1-BB (United States)	01/01/1900	30/06/2007
+34	15	Radiosonde / sounding system used	int (fk)	2	01	Not vacant	30/06/2007	NULL
+35	15	Radiosonde / sounding system used	int (fk)	3	02	No radiosonde - passive target (e.g. reflector)	NULL	30/06/2007
+36	15	Radiosonde / sounding system used	int (fk)	4	03	No radiosonde - active target (e.g. transponder)	NULL	30/06/2007
+37	15	Radiosonde / sounding system used	int (fk)	5	04	No radiosonde - passive temperature-humidity profiler	NULL	30/06/2007
+38	15	Radiosonde / sounding system used	int (fk)	6	05	No radiosonde - active temperature-humidity profiler	NULL	30/06/2007
+39	15	Radiosonde / sounding system used	int (fk)	7	06	No radiosonde - radio-acoustic sounder	NULL	30/06/2007
+40	15	Radiosonde / sounding system used	int (fk)	8	07	iMet-1-AB (United States)	01/01/1900	30/06/2007
+41	15	Radiosonde / sounding system used	int (fk)	9	07	Not vacant	30/06/2007	NULL
+42	15	Radiosonde / sounding system used	int (fk)	10	08	No radiosonde - ... (reserved)	NULL	30/06/2007
+43	15	Radiosonde / sounding system used	int (fk)	11	09	No radiosonde - system unknown or not specified	NULL	30/06/2007
+44	15	Radiosonde / sounding system used	int (fk)	12	10	Sippican LMS5 w/Chip Thermistor, duct mounted capacitance relative humidity sensor and derived pressure from GPS height	01/01/1900	30/06/2007
+45	15	Radiosonde / sounding system used	int (fk)	13	10	VIZ type A pressure-commutated (United States)	01/01/2008	NULL
+46	15	Radiosonde / sounding system used	int (fk)	14	11	Sippican LMS6 w/Chip Thermistor, external boom mounted capacitance relative humidity sensor, and derived pressure from GPS height	01/01/1900	30/06/2007
+47	15	Radiosonde / sounding system used	int (fk)	15	11	VIZ type B time-commutated (United States)	01/01/2008	NULL
+48	15	Radiosonde / sounding system used	int (fk)	16	12	Jin Yang RSG-20A with derived pressure from GPS height/GL-5000P (Republic of Korea)	01/01/1900	30/06/2007
+49	15	Radiosonde / sounding system used	int (fk)	17	12	RS SDC (Space Data Corporation - United States)	06/05/2015	NULL
+50	15	Radiosonde / sounding system used	int (fk)	18	13	Astor (no longer made - Australia)	01/01/1900	30/06/2007
+51	15	Radiosonde / sounding system used	int (fk)	19	13	Vaisala RS92/MARWIN MW32 (Finland)	15/09/2010	NULL
+52	15	Radiosonde / sounding system used	int (fk)	20	14	Vaisala RS92/DigiCORA MW41 (Finland)	01/01/1900	30/06/2007
+53	15	Radiosonde / sounding system used	int (fk)	21	14	VIZ MARK I MICROSONDE (United States)	03/11/2011	NULL
+54	15	Radiosonde / sounding system used	int (fk)	22	15	EEC Company type 23 (United States)	01/01/1900	30/06/2007
+55	15	Radiosonde / sounding system used	int (fk)	23	15	PAZA-12M/Radiotheodolite-UL (Ukraine)	01/12/2011	NULL
+56	15	Radiosonde / sounding system used	int (fk)	24	16	Elin (Austria)	01/01/1900	30/06/2007
+57	15	Radiosonde / sounding system used	int (fk)	25	16	PAZA-22/AVK-1 (Ukraine)	01/12/2011	NULL
+58	15	Radiosonde / sounding system used	int (fk)	26	17	Graw DFM-09 (Germany)	01/01/1900	30/06/2007
+59	15	Radiosonde / sounding system used	int (fk)	27	17	Graw G. (Germany)	02/05/2012	NULL
+60	15	Radiosonde / sounding system used	int (fk)	28	18	Graw DFM-06 (Germany)	01/01/1900	30/06/2007
+61	15	Radiosonde / sounding system used	int (fk)	29	18	Not vacant	30/06/2007	NULL
+62	15	Radiosonde / sounding system used	int (fk)	30	19	Graw M60 (Germany)	01/01/1900	30/06/2007
+63	15	Radiosonde / sounding system used	int (fk)	31	19	Vacant	30/06/2007	NULL
+64	15	Radiosonde / sounding system used	int (fk)	32	20	Indian Meteorological Service MK3 (India)	01/01/1900	30/06/2007
+65	15	Radiosonde / sounding system used	int (fk)	33	20	Not vacant	30/06/2007	NULL
+66	15	Radiosonde / sounding system used	int (fk)	34	21	Jin Yang 1524LA LORAN-C/GL5000 (Republic of Korea)	01/01/1900	30/06/2007
+67	15	Radiosonde / sounding system used	int (fk)	35	21	VIZ/Jin Yang MARK I MICROSONDE (Republic of Korea)	06/05/2015	NULL
+68	15	Radiosonde / sounding system used	int (fk)	36	22	Meisei RS-11G GPS radiosonde w/thermistor, capacitance relative humidity sensor, and derived pressure from GPS height (Japan)	01/01/1900	30/06/2007
+69	15	Radiosonde / sounding system used	int (fk)	37	22	Meisei RS2-80 (Japan)	02/05/2012	NULL
+70	15	Radiosonde / sounding system used	int (fk)	38	23	Mesural FMO 1950A (France)	01/01/1900	30/06/2007
+71	15	Radiosonde / sounding system used	int (fk)	39	23	Vaisala RS41/DigiCORA MW41 (Finland)	03/11/2011	NULL
+72	15	Radiosonde / sounding system used	int (fk)	40	24	Mesural FMO 1945A (France)	01/01/1900	30/06/2007
+73	15	Radiosonde / sounding system used	int (fk)	41	24	Vaisala RS41/AUTOSONDE (Finland)	03/11/2011	NULL
+74	15	Radiosonde / sounding system used	int (fk)	42	25	Mesural MH73A (France)	01/01/1900	30/06/2007
+75	15	Radiosonde / sounding system used	int (fk)	43	25	Vaisala RS41/MARWIN MW32 (Finland)	03/11/2011	NULL
+76	15	Radiosonde / sounding system used	int (fk)	44	26	Meteolabor Basora (Switzerland)	01/01/1900	30/06/2007
+77	15	Radiosonde / sounding system used	int (fk)	45	26	Meteolabor SRS-C34/Argus 37 (Switzerland)	07/05/2014	NULL
+78	15	Radiosonde / sounding system used	int (fk)	46	27	AVK-MRZ (Russian Federation)	01/01/1900	30/06/2007
+79	15	Radiosonde / sounding system used	int (fk)	47	27	Not vacant	30/06/2007	NULL
+80	15	Radiosonde / sounding system used	int (fk)	48	28	AVK - AK2-02 (Russian Federation)	01/01/1900	30/06/2007
+81	15	Radiosonde / sounding system used	int (fk)	49	28	Meteorit MARZ2-1 (Russian Federation)	15/09/2011	NULL
+82	15	Radiosonde / sounding system used	int (fk)	50	29	MARL-A or Vektor-M - AK2-02 (Russian Federation)	01/01/1900	30/06/2007
+83	15	Radiosonde / sounding system used	int (fk)	51	29	Meteorit MARZ2-2 (Russian Federation)	15/09/2011	NULL
+84	15	Radiosonde / sounding system used	int (fk)	52	30	Meisei RS-06G (Japan)	01/01/1900	30/06/2007
+85	15	Radiosonde / sounding system used	int (fk)	53	30	Oki RS2-80 (Japan)	01/01/2010	NULL
+86	15	Radiosonde / sounding system used	int (fk)	54	31	Taiyuan GTS1-1/GFE(L) (China )	01/01/1900	30/06/2007
+87	15	Radiosonde / sounding system used	int (fk)	55	31	VIZ/Valcom type A pressure-commutated (Canada)	03/11/2011	NULL
+88	15	Radiosonde / sounding system used	int (fk)	56	32	Shanghai GTS1/GFE(L) (China)	01/01/1900	30/06/2007
+89	15	Radiosonde / sounding system used	int (fk)	57	32	Shanghai Radio (China)	03/11/2011	NULL
+90	15	Radiosonde / sounding system used	int (fk)	58	33	Nanjing GTS1-2/GFE(L) (China)	01/01/1900	30/06/2007
+91	15	Radiosonde / sounding system used	int (fk)	59	33	UK Met Office MK3 (UK)	03/11/2011	NULL
+92	15	Radiosonde / sounding system used	int (fk)	60	34	Vacant	01/01/1900	30/06/2007
+93	15	Radiosonde / sounding system used	int (fk)	61	34	Vinohrady (Czechia)	30/06/2007	NULL
+94	15	Radiosonde / sounding system used	int (fk)	62	35	Meisei iMS-100 GPS radiosonde w/thermistor sensor, capacitance relative humidity sensor, and derived pressure from GPS height (Japan)	01/01/1900	30/06/2007
+95	15	Radiosonde / sounding system used	int (fk)	63	35	Vaisala RS18 (Finland)	07/05/2014	NULL
+96	15	Radiosonde / sounding system used	int (fk)	64	36	Vacant	01/01/1900	30/06/2007
+97	15	Radiosonde / sounding system used	int (fk)	65	36	Vaisala RS21 (Finland)	30/06/2007	NULL
+98	15	Radiosonde / sounding system used	int (fk)	66	37	Not vacant	01/01/1900	30/06/2007
+99	15	Radiosonde / sounding system used	int (fk)	67	37	Vaisala RS80 (Finland)	30/06/2007	NULL
+100	15	Radiosonde / sounding system used	int (fk)	68	38	Vacant	01/01/1900	30/06/2007
+101	15	Radiosonde / sounding system used	int (fk)	69	38	VIZ LOCATE Loran-C (United States)	30/06/2007	NULL
+102	15	Radiosonde / sounding system used	int (fk)	70	39	Sprenger E076 (Germany)	01/01/1900	30/06/2007
+103	15	Radiosonde / sounding system used	int (fk)	71	39	Vacant	30/06/2007	NULL
+104	15	Radiosonde / sounding system used	int (fk)	72	40	Sprenger E084 (Germany)	01/01/1900	30/06/2007
+105	15	Radiosonde / sounding system used	int (fk)	73	40	Vacant	30/06/2007	NULL
+106	15	Radiosonde / sounding system used	int (fk)	74	41	Sprenger E085 (Germany)	01/01/1900	30/06/2007
+107	15	Radiosonde / sounding system used	int (fk)	75	41	Vaisala RS41 with pressure derived from GPS height/ DigiCORA MW41 (Finland)	03/11/2011	NULL
+108	15	Radiosonde / sounding system used	int (fk)	76	42	Sprenger E086 (Germany)	01/01/1900	30/06/2007
+109	15	Radiosonde / sounding system used	int (fk)	77	42	Vaisala RS41 with pressure derived from GPS height/ AUTOSONDE (Finland)	03/11/2011	NULL
+110	15	Radiosonde / sounding system used	int (fk)	78	43	AIR IS - 4A - 1680 (United States)	01/01/1900	30/06/2007
+111	15	Radiosonde / sounding system used	int (fk)	79	43	NanJing Daqiao XGP-3G (China)*	07/05/2014	NULL
+112	15	Radiosonde / sounding system used	int (fk)	80	44	AIR IS - 4A - 1680 X (United States)	01/01/1900	30/06/2007
+113	15	Radiosonde / sounding system used	int (fk)	81	44	TianJin HuaYunTianYi GTS(U)1 (China)*	07/05/2014	NULL
+114	15	Radiosonde / sounding system used	int (fk)	82	45	Beijing Changfeng CF-06 (China)*	01/01/1900	30/06/2007
+115	15	Radiosonde / sounding system used	int (fk)	83	45	RS MSS (United States)	07/05/2014	NULL
+116	15	Radiosonde / sounding system used	int (fk)	84	46	AIR IS - 4A - 403 (United States)	01/01/1900	30/06/2007
+117	15	Radiosonde / sounding system used	int (fk)	85	46	Shanghai Changwang GTS3 (China)*	07/05/2014	NULL
+118	15	Radiosonde / sounding system used	int (fk)	86	47	Meisei RS2-91 (Japan)	01/01/1900	30/06/2007
+119	15	Radiosonde / sounding system used	int (fk)	87	47	Not vacant	30/06/2007	NULL
+120	15	Radiosonde / sounding system used	int (fk)	88	48	PAZA-22M/MARL-A	01/01/1900	30/06/2007
+121	15	Radiosonde / sounding system used	int (fk)	89	48	VALCOM (Canada)	02/05/2012	NULL
+122	15	Radiosonde / sounding system used	int (fk)	90	49	Not vacant	01/01/1900	30/06/2007
+123	15	Radiosonde / sounding system used	int (fk)	91	49	VIZ MARK II (United States)	30/06/2007	NULL
+124	15	Radiosonde / sounding system used	int (fk)	92	50	Graw DFM-90 (Germany)	01/01/1900	30/06/2007
+125	15	Radiosonde / sounding system used	int (fk)	93	50	Meteolabor SRS-C50/Argus (Switzerland)	02/11/2016	NULL
+126	15	Radiosonde / sounding system used	int (fk)	94	51	Not vacant	01/01/1900	30/06/2007
+127	15	Radiosonde / sounding system used	int (fk)	95	51	VIZ-B2 (United States)	30/06/2007	NULL
+128	15	Radiosonde / sounding system used	int (fk)	96	52	Vaisala RS80-57H	01/01/1900	30/06/2007
+129	15	Radiosonde / sounding system used	int (fk)	97	52	Vaisala RS92-NGP/Intermet IMS-2000 (United States)	03/11/2011	NULL
+130	15	Radiosonde / sounding system used	int (fk)	98	53	AVK - I-2012 (Russian Federation)	01/01/1900	30/06/2007
+131	15	Radiosonde / sounding system used	int (fk)	99	53	AVK-RF95 (Russian Federation)	06/05/2015	NULL
+132	15	Radiosonde / sounding system used	int (fk)	100	54	Graw DFM-97 (Germany)	01/01/1900	30/06/2007
+133	15	Radiosonde / sounding system used	int (fk)	101	54	Not vacant	30/06/2007	NULL
+134	15	Radiosonde / sounding system used	int (fk)	102	55	Meisei RS-01G (Japan)	01/01/1900	30/06/2007
+135	15	Radiosonde / sounding system used	int (fk)	103	55	Not vacant	30/06/2007	NULL
+136	15	Radiosonde / sounding system used	int (fk)	104	56	M2K2 (France)	01/01/1900	30/06/2007
+137	15	Radiosonde / sounding system used	int (fk)	105	56	Not vacant	30/06/2007	NULL
+138	15	Radiosonde / sounding system used	int (fk)	106	57	Modem M2K2-DC (France)	01/01/1900	30/06/2007
+139	15	Radiosonde / sounding system used	int (fk)	107	57	Not vacant	30/06/2007	NULL
+140	15	Radiosonde / sounding system used	int (fk)	108	58	AVK-BAR (Russian Federation)	01/01/1900	30/06/2007
+141	15	Radiosonde / sounding system used	int (fk)	109	58	Not vacant	30/06/2007	NULL
+142	15	Radiosonde / sounding system used	int (fk)	110	59	Modem M2K2-R 1680 MHz RDF radiosonde with pressure sensor chip (France)	01/01/1900	30/06/2007
+143	15	Radiosonde / sounding system used	int (fk)	111	59	Not vacant	30/06/2007	NULL
+144	15	Radiosonde / sounding system used	int (fk)	112	60	MARL-A or Vektor-M - I-2012 (Russian Federation)	01/01/1900	30/06/2007
+145	15	Radiosonde / sounding system used	int (fk)	113	60	Vaisala RS80/MicroCora (Finland)	06/05/2015	NULL
+146	15	Radiosonde / sounding system used	int (fk)	114	61	Not vacant	01/01/1900	30/06/2007
+147	15	Radiosonde / sounding system used	int (fk)	115	61	Vaisala RS80/Loran/Digicora I, II or Marwin (Finland)	30/06/2007	NULL
+148	15	Radiosonde / sounding system used	int (fk)	116	62	MARL-A or Vektor-M - MRZ-3MK (Russian Federation)	01/01/1900	30/06/2007
+149	15	Radiosonde / sounding system used	int (fk)	117	62	Vaisala RS80/PCCora (Finland)	06/05/2015	NULL
+150	15	Radiosonde / sounding system used	int (fk)	118	63	Vacant	01/01/1900	30/06/2007
+151	15	Radiosonde / sounding system used	int (fk)	119	63	Vaisala RS80/Star (Finland)	30/06/2007	NULL
+152	15	Radiosonde / sounding system used	int (fk)	120	64	Orbital Sciences Corporation, Space Data Division, transponder radiosonde, type 909-11-XX, where XX corresponds to the model of the instrument (United States)	01/01/1900	30/06/2007
+153	15	Radiosonde / sounding system used	int (fk)	121	64	Vacant	30/06/2007	NULL
+154	15	Radiosonde / sounding system used	int (fk)	122	65	Vacant	01/01/1900	30/06/2007
+155	15	Radiosonde / sounding system used	int (fk)	123	65	VIZ transponder radiosonde, model number 1499-520 (United States)	30/06/2007	NULL
+156	15	Radiosonde / sounding system used	int (fk)	124	66	Vacant	01/01/1900	30/06/2007
+157	15	Radiosonde / sounding system used	int (fk)	125	66	Vaisala RS80 /Autosonde (Finland)	30/06/2007	NULL
+158	15	Radiosonde / sounding system used	int (fk)	126	67	Not vacant	01/01/1900	30/06/2007
+159	15	Radiosonde / sounding system used	int (fk)	127	67	Vaisala RS80/Digicora III (Finland)	30/06/2007	NULL
+160	15	Radiosonde / sounding system used	int (fk)	128	68	AVK-RZM-2 (Russian Federation)	01/01/1900	30/06/2007
+161	15	Radiosonde / sounding system used	int (fk)	129	68	Not vacant	30/06/2007	NULL
+162	15	Radiosonde / sounding system used	int (fk)	130	69	MARL-A or Vektor-M-RZM-2 (Russian Federation)	01/01/1900	30/06/2007
+163	15	Radiosonde / sounding system used	int (fk)	131	69	Not vacant	30/06/2007	NULL
+164	15	Radiosonde / sounding system used	int (fk)	132	70	Not vacant	01/01/1900	30/06/2007
+165	15	Radiosonde / sounding system used	int (fk)	133	70	Vaisala RS92/Star (Finland)	30/06/2007	NULL
+166	15	Radiosonde / sounding system used	int (fk)	134	71	Not vacant	01/01/1900	30/06/2007
+167	15	Radiosonde / sounding system used	int (fk)	135	71	Vaisala RS90/Loran/Digicora I, II or Marwin (Finland)	30/06/2007	NULL
+168	15	Radiosonde / sounding system used	int (fk)	136	72	Not vacant	01/01/1900	30/06/2007
+169	15	Radiosonde / sounding system used	int (fk)	137	72	Vaisala RS90/PC-Cora (Finland)	30/06/2007	NULL
+170	15	Radiosonde / sounding system used	int (fk)	138	73	MARL-A (Russian Federation) - ASPAN-15 (Kazakhstan)	01/01/1900	30/06/2007
+171	15	Radiosonde / sounding system used	int (fk)	139	73	Vaisala RS90/Autosonde (Finland)	02/11/2016	NULL
+172	15	Radiosonde / sounding system used	int (fk)	140	74	Not vacant	01/01/1900	30/06/2007
+173	15	Radiosonde / sounding system used	int (fk)	141	74	Vaisala RS90/Star (Finland)	30/06/2007	NULL
+174	15	Radiosonde / sounding system used	int (fk)	142	75	AVK-MRZ-ARMA (Russian Federation)	01/01/1900	30/06/2007
+175	15	Radiosonde / sounding system used	int (fk)	143	75	Not vacant	30/06/2007	NULL
+176	15	Radiosonde / sounding system used	int (fk)	144	76	AVK-RF95-ARMA (Russian Federation)	01/01/1900	30/06/2007
+177	15	Radiosonde / sounding system used	int (fk)	145	76	Not vacant	30/06/2007	NULL
+178	15	Radiosonde / sounding system used	int (fk)	146	77	GEOLINK GPSonde GL98 (France)	01/01/1900	30/06/2007
+179	15	Radiosonde / sounding system used	int (fk)	147	77	Modem GPSonde M10 (France)	15/03/2010	NULL
+180	15	Radiosonde / sounding system used	int (fk)	148	78	Not vacant	01/01/1900	30/06/2007
+181	15	Radiosonde / sounding system used	int (fk)	149	78	Vaisala RS90/Digicora III (Finland)	30/06/2007	NULL
+182	15	Radiosonde / sounding system used	int (fk)	150	79	Not vacant	01/01/1900	30/06/2007
+183	15	Radiosonde / sounding system used	int (fk)	151	79	Vaisala RS92/Digicora I, II or Marwin (Finland)	30/06/2007	NULL
+184	15	Radiosonde / sounding system used	int (fk)	152	80	Not vacant	01/01/1900	30/06/2007
+185	15	Radiosonde / sounding system used	int (fk)	153	80	Vaisala RS92/Digicora III (Finland)	30/06/2007	NULL
+186	15	Radiosonde / sounding system used	int (fk)	154	81	Not vacant	01/01/1900	30/06/2007
+187	15	Radiosonde / sounding system used	int (fk)	155	81	Vaisala RS92/Autosonde (Finland)	30/06/2007	NULL
+188	15	Radiosonde / sounding system used	int (fk)	156	82	Lockheed Martin LMS-6 w/chip thermistor; external boom mounted polymer capacitive relative humidity sensor; capacitive pressure sensor and GPS wind	01/01/1900	30/06/2007
+189	15	Radiosonde / sounding system used	int (fk)	157	82	Sippican MK2 GPS/STAR (United States) with rod thermistor, carbon element and derived pressure	07/11/2012	NULL
+190	15	Radiosonde / sounding system used	int (fk)	158	83	Sippican MK2 GPS/W9000 (United States) with rod thermistor, carbon element and derived pressure	01/01/1900	30/06/2007
+191	15	Radiosonde / sounding system used	int (fk)	159	83	Vaisala RS92-D/Intermet IMS 1500 w/silicon capacitive pressure sensor, capacitive wire temperature sensor, twin thin-film heated polymer capacitive relative humidity sensor and RDF wind	07/11/2012	NULL
+192	15	Radiosonde / sounding system used	int (fk)	160	84	Sippican MARK II with chip thermistor, carbon element and derived pressure from GPS height	01/01/1900	30/06/2007
+193	15	Radiosonde / sounding system used	int (fk)	161	84	Vacant	30/06/2007	NULL
+194	15	Radiosonde / sounding system used	int (fk)	162	85	Not vacant	01/01/1900	30/06/2007
+195	15	Radiosonde / sounding system used	int (fk)	163	85	Sippican MARK IIA with chip thermistor, carbon element and derived pressure from GPS height	30/06/2007	NULL
+196	15	Radiosonde / sounding system used	int (fk)	164	86	Not vacant	01/01/1900	30/06/2007
+197	15	Radiosonde / sounding system used	int (fk)	165	86	Sippican MARK II with chip thermistor, pressure and carbon element	30/06/2007	NULL
+198	15	Radiosonde / sounding system used	int (fk)	166	87	Not vacant	01/01/1900	30/06/2007
+199	15	Radiosonde / sounding system used	int (fk)	167	87	Sippican MARK IIA with chip thermistor, pressure and carbon element	30/06/2007	NULL
+200	15	Radiosonde / sounding system used	int (fk)	168	88	MARL-A or Vektor-M-MRZ (Russian Federation)	01/01/1900	30/06/2007
+201	15	Radiosonde / sounding system used	int (fk)	169	88	Not vacant	30/06/2007	NULL
+202	15	Radiosonde / sounding system used	int (fk)	170	89	MARL-A or Vektor-M-BAR (Russian Federation)	01/01/1900	30/06/2007
+203	15	Radiosonde / sounding system used	int (fk)	171	89	Not vacant	30/06/2007	NULL
+204	15	Radiosonde / sounding system used	int (fk)	172	90	Radiosonde not specified or unknown	NULL	30/06/2007
+205	15	Radiosonde / sounding system used	int (fk)	173	91	Pressure only radiosonde	NULL	30/06/2007
+206	15	Radiosonde / sounding system used	int (fk)	174	92	Pressure only radiosonde plus transponder	NULL	30/06/2007
+207	15	Radiosonde / sounding system used	int (fk)	175	93	Pressure only radiosonde plus radar reflector	NULL	30/06/2007
+208	15	Radiosonde / sounding system used	int (fk)	176	94	No pressure radiosonde plus transponder	NULL	30/06/2007
+209	15	Radiosonde / sounding system used	int (fk)	177	95	No pressure radiosonde plus radar reflector	NULL	30/06/2007
+210	15	Radiosonde / sounding system used	int (fk)	178	96	Descending radiosonde	NULL	30/06/2007
+211	15	Radiosonde / sounding system used	int (fk)	179	97	BAT-16P (South Africa)	01/01/1900	30/06/2007
+212	15	Radiosonde / sounding system used	int (fk)	180	97	Not vacant	30/06/2007	NULL
+213	15	Radiosonde / sounding system used	int (fk)	181	98	BAT-16G (South Africa)	01/01/1900	30/06/2007
+214	15	Radiosonde / sounding system used	int (fk)	182	98	Not vacant	30/06/2007	NULL
+215	15	Radiosonde / sounding system used	int (fk)	183	99	BAT-4G (South Africa)		
+216	15	Radiosonde / sounding system used	int (fk)	184	99	Not vacant		
+217	15	Radiosonde / sounding system used	int (fk)	185				
+218	16	Radiosonde completeness	int(fk)	0	1	Pressure only radiosonde		
+219	16	Radiosonde completeness	int(fk)	1	2	Pressure only radiosonde plus trasnponder		
+220	16	Radiosonde completeness	int(fk)	2	3	Pressure only radiosonde plus radar reflector		
+221	16	Radiosonde completeness	int(fk)	3	4	No-pressure radiosonde plus transponder		
+222	16	Radiosonde completeness	int(fk)	4	5	No-pressure radiosonde plus radar reflector		
+223	17	Radiosonde computational method	int(fk)	0	TBD			
+224	18	Radiosonde configuration	int(fk)	0		bit flag		
+225	19	Radiosonde ground receiving system	int(fk)	0	0	InterMet IMS 2000		
+226	19	Radiosonde ground receiving system	int(fk)	1	1	InterMet IMS 1500C		
+227	19	Radiosonde ground receiving system	int(fk)	2	2	Shanghai GTC1		
+228	19	Radiosonde ground receiving system	int(fk)	3	3	Nanjing GTC2		
+229	19	Radiosonde ground receiving system	int(fk)	4	4	Nanjing GFE(L)1		
+230	19	Radiosonde ground receiving system	int(fk)	5	5	MARL-A radar		
+231	19	Radiosonde ground receiving system	int(fk)	6	6	VEKTOR-M radar		
+232	20	Radiosonde type (see WMO3685)	int(fk)	0		Common code table C2		
+233	21	Reason for termination	int(fk)	0				
+234	22	Solar and infrared radiation correction	int(fk)	0	0	No correction		
+235	22	Solar and infrared radiation correction	int(fk)	1	1	CIMO solar corrected and CIMO infrared corrected		
+236	22	Solar and infrared radiation correction	int(fk)	2	2	CIMO solar corrected and infrared corrected		
+237	22	Solar and infrared radiation correction	int(fk)	3	3	CIMO solar corrected only		
+238	22	Solar and infrared radiation correction	int(fk)	4	4	Solar and infrared corrected automatically by radiosonde system		
+239	22	Solar and infrared radiation correction	int(fk)	5	5	Solar corrected automatically by radiosonde system		
+240	22	Solar and infrared radiation correction	int(fk)	6	6	Solar and infrared corrected as specified by country		
+241	22	Solar and infrared radiation correction	int(fk)	7	7	Solar corrected as specified by country		
+242	22	Solar and infrared radiation correction	int(fk)	8	8	Solar and infrared correction as specified by GRUAN		
+243	22	Solar and infrared radiation correction	int(fk)	9	9	Solar corrected as specified by GRUAN		
+244	23	Tracking technique / status of system used	int(fk)	0		common code table C7		
+245	24	Type of balloon	int(fk)	0	0	GP26		
+246	24	Type of balloon	int(fk)	1	1	GP28		
+247	24	Type of balloon	int(fk)	2	2	GP30		
+248	24	Type of balloon	int(fk)	3	3	HM26		
+249	24	Type of balloon	int(fk)	4	4	HM28		
+250	24	Type of balloon	int(fk)	5	5	HM30		
+251	24	Type of balloon	int(fk)	6	6	SV16		
+252	24	Type of balloon	int(fk)	7	7	Totex TA type balloons		
+253	24	Type of balloon	int(fk)	8	8	Totex TX type balloons		
+254	25	Type of balloon shelter	int(fk)	0				
+255	26	Type of gas used in balloon	int(fk)	0				
+256	27	Type of measuring equipment used	int(fk)	0	0	Pressure instrument associated with wind measuring equipment		
+257	27	Type of measuring equipment used	int(fk)	1	1	Optical theodolite		
+258	27	Type of measuring equipment used	int(fk)	2	2	Radio theodolite		
+259	27	Type of measuring equipment used	int(fk)	3	3	Radar		
+260	27	Type of measuring equipment used	int(fk)	4	4	VLF-Omega		
+261	27	Type of measuring equipment used	int(fk)	5	5	Loran-C		
+262	27	Type of measuring equipment used	int(fk)	6	6	Wind profiler		
+263	27	Type of measuring equipment used	int(fk)	7	7	Satellite navigation		
+264	27	Type of measuring equipment used	int(fk)	8	8	Radio-acoustic Sounding System (RASS)		
+265	27	Type of measuring equipment used	int(fk)	9	9	Sodar		
+266	27	Type of measuring equipment used	int(fk)	10	14	Pressure instrument associated with wind measuring equipment but pressure element failed during ascent		
+267	27	Type of measuring equipment used	int(fk)	11	15	Missing value		
+268	27	Type of measuring equipment used	int(fk)	12	10 - 13	Reserved		
+269	28	Type of pressure sensor	int(fk)	0	0	Capacitance aneroid		
+270	28	Type of pressure sensor	int(fk)	1	1	Derived from GPS		
+271	28	Type of pressure sensor	int(fk)	2	2	Resistive strain gauge		
+272	28	Type of pressure sensor	int(fk)	3	3	Silicon capacitor		
+273	28	Type of pressure sensor	int(fk)	4	4	Derived from radar height		
+274	29	UnwinderType	int(fk)	0		STRING		
+275	30	Water temperature profile recorder type	int(fk)	0		TBD (check BUFR tables)		
+276	31	XBT / XCTD launcher type	int(fk)	0		TBD (check BUFR tables)		

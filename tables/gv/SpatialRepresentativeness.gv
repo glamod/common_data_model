@@ -1,0 +1,18 @@
+digraph SpatialRepresentativeness {
+node [color=white]
+SpatialRepresentativeness [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: SpatialRepresentativeness</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SpatialRepresentativeness.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Spatial extent over which observation is representative</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: WIGOS 1-05</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Nil reason - None of the codes in the table <BR/>is applicable in the context of the observed quantity or <BR/>unknown, or not available information. </TD></TR>
+<TR><TD>1</TD><TD>microscale - An area or volume less than 100 m <BR/>horizontal extent (for example, evaporation) </TD></TR>
+<TR><TD>2</TD><TD>toposcale, local scale - An area or volume of 100 <BR/>m to 3 km horizontal extent (for example, air pollution, <BR/>tornadoes) </TD></TR>
+<TR><TD>3</TD><TD>mesoscale - An area or volume of 3 km to <BR/>100 km horizontal extent (for example, thunderstorms, sea and mountain <BR/>breezes) </TD></TR>
+<TR><TD>4</TD><TD>large scale- An area or volume of 100 km to <BR/>3000 km horizontal extent (for example, fronts, various cyclones, cloud <BR/>clusters) </TD></TR>
+<TR><TD>5</TD><TD>planetary scale - An area or volume of more than <BR/>3000 km horizontal extent (for example, long upper tropospheric waves) <BR/></TD></TR>
+<TR><TD>6</TD><TD>drainage area - An area (also known as ‘catchment’) having <BR/>a common outlet for its surface runoff, in km2 </TD></TR>
+</TABLE>>];
+}

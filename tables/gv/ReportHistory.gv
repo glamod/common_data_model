@@ -1,0 +1,15 @@
+digraph ReportHistory {
+node [color=white]
+ReportHistory [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left"># Table: ReportHistory</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ReportHistory.tsv</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description: Table containing history for records</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source:	</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>HistoryID </TD><TD>bigint </TD><TD>Unique ID for entry </TD></TR>
+<TR><TD>1</TD><TD>ReportID </TD><TD>bigint </TD><TD>Which report this is an entry for </TD></TR>
+<TR><TD>2</TD><TD>Timestamp </TD><TD></TD><TD>timestamp for entry </TD></TR>
+<TR><TD>3</TD><TD>History </TD><TD>varchar </TD><TD>String containing history entry </TD></TR>
+</TABLE>>];
+}

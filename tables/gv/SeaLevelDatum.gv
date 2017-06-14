@@ -1,0 +1,13 @@
+digraph SeaLevelDatum {
+node [color=white]
+SeaLevelDatum [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="2" ALIGN="left"># Table: SeaLevelDatum</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SeaLevelDatum.tsv</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Description: Datum used to define mean sea level</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="2"># Source: BUFR 0 01 151</TD></TR>
+<TR><TD BGCOLOR="GRAY">Value</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD>0</TD><TD>Earth Gravitational Model 1996 </TD></TR>
+<TR><TD>1</TD><TD>Baltic height system 1977 </TD></TR>
+</TABLE>>];
+}

@@ -10,6 +10,8 @@ endif
 
 set tablename = `echo $file | cut -d '.' -f 1`
 
-echo $file $tablename
+#echo $file $tablename
+# Following line no longer needed, input data should be tab delimited now. We jsut need to remove #
+#cat ${file} | grep -v '#' | sed 's/;/	/g;s/"/\&quot;/g' | sed "s/\&quot;/''/g" > ${tablename}.tsv
+grep -v "#" $file > ${tablename}.tsv
 
-cat ${file} | grep -v '#' | sed 's/;/	/g;s/"/\&quot;/g' | sed "s/\&quot;/''/g" > ${tablename}.tsv

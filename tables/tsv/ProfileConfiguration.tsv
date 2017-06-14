@@ -1,0 +1,11 @@
+ElementNumber	ElementName	Kind	ExternalTable	Description
+0	ProfileID	varchar		
+1	ReportID	varchar		
+2	StandardTime	int (fk)		e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
+3	ActualTime			Actual report / launch time
+4	Processing codes	int (fk)		
+5	ProfileNumber	numeric		e.g. Balloon Number
+6	Number of fields	numeric		
+7	Field	int[]		
+8	Value	numeric[]		
+9	Comment	varchar		
