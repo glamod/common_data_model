@@ -3,7 +3,7 @@
 ElementNumber	ElementName	type	ExternalTable	WIGOS (MCO)	Description
 0	SourceID	int 			Unique record ID for dataset
 1	ProductID	varchar			ID for product
-2	ProductName	int (fk)	Products		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
+2	ProductName	varchar		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
 3	ProductCode	varchar			Abbreviations / product code, e.g. ICOADS, RS92-GDP
 4	ProductVersion	varchar			Version number for dataset, e.g. Release 3.0.0
 5	ProductLevel	int (fk)	ProductLevel		Level of product
@@ -22,8 +22,8 @@ ElementNumber	ElementName	type	ExternalTable	WIGOS (MCO)	Description
 18	PIemail 	varchar		10-01 (M)	Email address of PI
 19	PIurl 	varchar		10-01 (M)	URL for PI
 20	NumberOfFileds	numeric			Number of additional fields
-21	Field(s)	int[]			Fields to which following values apply
-22	Value(s)	numeric[]			additional values
+21	Field	int[]	SourceConfigurationFields		Fields to which following values apply
+22	Value	numeric[]			additional values
 23	History	varchar			History of source
 24	Comments	varchar			Additional comments / footnotes
 25	Timestamp				Date record created

@@ -22,6 +22,6 @@ ElementNumber	ElementName	Type	ExternalTable	Description
 20	MetadataID	varchar		Record number in metadata source (or other unique ID)
 21	MetadataReportDate			Date metadata record was prepared
 22	Number of Fields	numeric		Number of additional fields
-23	Field	int[]		Field to which following values correspond
+23	Field	int[]	StationConfigurationFields	Field to which following values correspond
 24	Value	numeric[]		Values for specified fields
 25	Comment	varchar		Any other comments / footnotes

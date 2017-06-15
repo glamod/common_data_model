@@ -32,7 +32,7 @@ ElementNumber	ElementName	Kind	ExternalTable	WIGOS (MCO)	Description
 29	HeightOfStationAboveSeaLevel 	numeric		3-07 (M)	Height of station above mean sea level (m), negative values for below sea level.
 30	HeightOfStationAboveSeaLevelAccuracy	numeric			Accuracy to which height of station known (m)
 31	SeaLevelDatum	int (fk)	SeaLevelDatum		Datum used for sea level
-32	ReportMeaningOfTimeStamp	int (fk)	MeaningOffTimeStamp	11-03 (M)	Report time - beginning, middle or end of reporting period
+32	ReportMeaningOfTimeStamp	int (fk)	MeaningOfTimeStamp	11-03 (M)	Report time - beginning, middle or end of reporting period
 33	ReportYear	int			Year of report (UTC)
 34	ReportMonth	int			Month of report (UTC)
 35	ReportDay	int			Day of report (UTC)
@@ -66,8 +66,8 @@ ElementNumber	ElementName	Kind	ExternalTable	WIGOS (MCO)	Description
 63	Units 	int (fk)	Units	1-02 (M)	Units for the observed variable
 64	CodeTable 	int (fk)	ObservationCodeTable	NA	Encode / decode table for variable (if encoded)
 65	ObservationValue 	numeric		NA	The observed value
-66	ObservationValueSignificance	int (fk)	ValueSignificance	NA	e.g. min, max, mean, sum
-67	ObservationTimestampMeaning	int (fk)	MeaningOffTimeStamp	11-03 (M)	beginning, middle, end
+66	ObservationValueSignificance	int (fk)	ObservationValueSignificance	NA	e.g. min, max, mean, sum
+67	ObservationTimestampMeaning	int (fk)	MeaningOfTimeStamp	11-03 (M)	beginning, middle, end
 68	ObservationYear	int 		1-03 (M)	Year ofobservation (UTC)
 69	ObservationMonth	int 		1-03 (M)	Month of observation (UTC)
 70	ObvservationDay	int 		1-03 (M)	Day of observation (UTC)
@@ -91,15 +91,15 @@ ElementNumber	ElementName	Kind	ExternalTable	WIGOS (MCO)	Description
 88	QualityFlag 	int (fk)	QualityFlag	8-03 (M)	Quality flag for observation
 89	NumericalPrecision 	int		7-12 (O)	Reporting precision of observation in units given by 'Units' variable. Equivalent to BUFR scale factor
 90	StandardUncertainty 	numeric		8-01 (C)	Standard uncertainty in reported value
-91	MethodOfEstimatingStandardUncertainty 	int (fk)	UncertaintyMethod	8-02 (C)	Method of estimating the standard uncertainty
+91	MethodOfEstimatingStandardUncertainty 	int (fk)	MethodOfEstimatingUncertainty	8-02 (C)	Method of estimating the standard uncertainty
 92	UncertaintyDueToCorrelatedErrors 	numeric		8-01 (C)	Uncertainty due to errors in the observation that are correlated between observations
-93	MethodOfEstimatingUncertaintyDueToCorrelatedErrors 	int (fk)	UncertaintyMethod	8-02 (C)	
+93	MethodOfEstimatingUncertaintyDueToCorrelatedErrors 	int (fk)	MethodOfEstimatingUncertainty	8-02 (C)	
 94	UncertaintyDueToUncorrelatedErrors 	numeric 		8-01 (C)	Uncertainty due to errors in the observation that are uncorrelated between observations
-95	MethodOfEstimatingUncertaintyDueToUncorrelatedErrors 	int (fk)	UncertaintyMethod	8-02 (C)	
+95	MethodOfEstimatingUncertaintyDueToUncorrelatedErrors 	int (fk)	MethodOfEstimatingUncertainty	8-02 (C)	
 96	UncertaintyDueToSystematicErrors 	numeric 		8-01 (C)	Uncertainty due to errors in the observations that are correlated under similar observing conditions
-97	MethodOfEstimatingUncertaintyDueToSystematicErrors 	int (fk)	UncertaintyMethod	8-02 (C)	
+97	MethodOfEstimatingUncertaintyDueToSystematicErrors 	int (fk)	MethodOfEstimatingUncertainty	8-02 (C)	
 98	TotalUncertainty 	numeric 		8-01 (C)	
-99	MethodOfEstimatingTotalUncertainty 	int (fk)	UncertaintyMethod	8-02 (C)	
+99	MethodOfEstimatingTotalUncertainty 	int (fk)	MethodOfEstimatingUncertainty	8-02 (C)	
 100	SensorConfiguration	int (fk)	SensorConfiguration		
 101	SensorAutomationStatus 	int (fk)	AutomationStatus	5-01 (M)	Automated, manual, mixed or visual observation
 102	ExposureOfSensor 	int (fk)	InstrumentExposureQuality	5-15 (C)	Whether the exposure of the instrument will impact on the quality of the measurement

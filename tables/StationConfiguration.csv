@@ -17,13 +17,13 @@ ElementNumber	ElementName	Type	ExternalTable	Description
 13	ObservingFrequency		ObservingFrequency	Typical frequency of observations for this station
 14	TelecommunicationMethod	int (fk)	CommunicationMethod	Method used to report observations
 15	StationAutomation	int (fk)	AutomationStatus	Whether station is automated, manual or mixed
-16	MeasuringSystemModel	int (fk)		Station / AWS model type
+16	MeasuringSystemModel	int (fk)	MeasuringSystemModel	Station / AWS model type
 17	MeasuringSystemID	varchar		ID or serial number of measuring system
-18	MetadataSource	int (fk)	MetadataSources	Source of metadata for this station
+18	MetadataSource	int (fk)	MetadataSource	Source of metadata for this station
 19	MetadataVersion	varchar		Version of metadata source
 20	MetadataID	varchar		Record number in metadata source (or other unique ID)
 21	MetadataReportDate			Date metadata record was prepared
 22	Number of Fields	numeric		Number of additional fields
-23	Field	int[]		Field to which following values correspond
+23	Field	int[]	StationConfigurationFields	Field to which following values correspond
 24	Value	numeric[]		Values for specified fields
 25	Comment	varchar		Any other comments / footnotes

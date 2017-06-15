@@ -10,6 +10,6 @@ ElementNumber	ElementName	Type	ExternalTable	Description
 8	LastCalibrationDate	timestamp		Date sensor last calibrated
 9	CalibrationStatus	int (fk)		Calibration status
 10	NumberOfElements	int		Number of metadata fields for this instrument
-11	Field	int []		Field(s) for which next value applies
+11	Field	int []	SensorConfigurationFields	Field(s) for which next value applies
 12	Value	numeric []		Value(s) of field(s) indicated
 13	Comment	varchar		Comments on sensor

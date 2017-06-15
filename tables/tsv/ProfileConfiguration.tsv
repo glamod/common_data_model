@@ -6,6 +6,6 @@ ElementNumber	ElementName	Kind	ExternalTable	Description
 4	Processing codes	int (fk)		
 5	ProfileNumber	numeric		e.g. Balloon Number
 6	Number of fields	numeric		
-7	Field	int[]		
+7	Field	int[] ProfileConfigurationFields	Fields to which the following values apply		
 8	Value	numeric[]		
 9	Comment	varchar		

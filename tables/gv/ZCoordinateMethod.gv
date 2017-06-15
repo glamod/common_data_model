@@ -1,8 +1,0 @@
-digraph ZCoordinateMethod {
-node [color=white]
-ZCoordinateMethod [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
-<TR><TD COLSPAN="" ALIGN="left" PORT="head"># Table: ZCoordinateMethod</TD></TR>
-<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ZCoordinateMethod.tsv</TD></TR>
-<TR><TD COLSPAN="" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
-</TABLE>>];
-}

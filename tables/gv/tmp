@@ -1,5 +1,3 @@
-digraph ObservationsTable {
-node [color=white]
 ObservationsTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
 <TR><TD COLSPAN="6" ALIGN="left" PORT="head"># Table: ObservationsTable</TD></TR>
 <TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservationsTable.tsv</TD></TR>
@@ -118,4 +116,111 @@ ObservationsTable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR
 <TR><TD PORT="AdjustmentID L">109</TD><TD>AdjustmentID </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Adjustment.tsv"><FONT color="blue">Adjustment </FONT></TD><TD></TD><TD PORT="AdjustmentID R"></TD></TR>
 <TR><TD PORT="Traceability L">110</TD><TD>Traceability </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Traceability.tsv"><FONT color="blue">Traceability </FONT></TD><TD>8-05 (C) </TD><TD PORT="Traceability R">Whether observation can be traced to international standards. </TD></TR>
 </TABLE>>];
-}
+ProfileConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: ProfileConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: table containing information on individual profiles</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Kind</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD PORT="ProfileIDL">0</TD><TD>ProfileID </TD><TD>varchar </TD><TD></TD><TD PORT="ProfileIDR"></TD></TR>
+<TR><TD PORT="ReportIDL">1</TD><TD>ReportID </TD><TD>varchar </TD><TD></TD><TD PORT="ReportIDR"></TD></TR>
+<TR><TD PORT="StandardTimeL">2</TD><TD>StandardTime </TD><TD>int (fk) </TD><TD></TD><TD PORT="StandardTimeR">e.g. Standard / scheduled time for launch or report, e.g. <BR/>00, 06, 12, 18 UTC </TD></TR>
+<TR><TD PORT="ActualTimeL">3</TD><TD>ActualTime </TD><TD></TD><TD></TD><TD PORT="ActualTimeR">Actual report / launch time </TD></TR>
+<TR><TD PORT="Processing codesL">4</TD><TD>Processing codes </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProcessingCode.tsv"><FONT color="blue">ProcessingCode </FONT></TD><TD PORT="Processing codesR"></TD></TR>
+<TR><TD PORT="ProfileNumberL">5</TD><TD>ProfileNumber </TD><TD>numeric </TD><TD></TD><TD PORT="ProfileNumberR">e.g. Balloon Number </TD></TR>
+<TR><TD PORT="Number of fieldsL">6</TD><TD>Number of fields </TD><TD>numeric </TD><TD></TD><TD PORT="Number of fieldsR"></TD></TR>
+<TR><TD PORT="FieldL">7</TD><TD>Field </TD><TD>int[] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProfileConfigurationFields.tsv"><FONT color="blue">ProfileConfigurationFields </FONT></TD><TD PORT="FieldR">Fields to which the following values apply </TD></TR>
+<TR><TD PORT="ValueL">8</TD><TD>Value </TD><TD>numeric[] </TD><TD></TD><TD PORT="ValueR"></TD></TR>
+<TR><TD PORT="CommentL">9</TD><TD>Comment </TD><TD>varchar </TD><TD></TD><TD PORT="CommentR"></TD></TR>
+</TABLE>>];
+SensorConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: SensorConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: definition of table specifying sensor configuration</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD PORT="InstrumentIDL">0</TD><TD>InstrumentID </TD><TD>varchar </TD><TD></TD><TD PORT="InstrumentIDR">Unique ID for this instrument </TD></TR>
+<TR><TD PORT="ParameterL">1</TD><TD>Parameter </TD><TD>int (fk) </TD><TD></TD><TD PORT="ParameterR">The observed variable that this instrument measures (one entry per <BR/>parameter if more than one) </TD></TR>
+<TR><TD PORT="ManufacturerL">2</TD><TD>Manufacturer </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Manufacturer.tsv"><FONT color="blue">Manufacturer </FONT></TD><TD PORT="ManufacturerR">Manufacturer of sensor / instrument </TD></TR>
+<TR><TD PORT="SensorTypeL">3</TD><TD>SensorType </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorType.tsv"><FONT color="blue">SensorType </FONT></TD><TD PORT="SensorTypeR">Type of sensor, e.g. RS92 or anemometer </TD></TR>
+<TR><TD PORT="SensorModelL">4</TD><TD>SensorModel </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorModel.tsv"><FONT color="blue">SensorModel </FONT></TD><TD PORT="SensorModelR">Manufacturers designation / model number </TD></TR>
+<TR><TD PORT="Serial numberL">5</TD><TD>Serial number </TD><TD>varchar </TD><TD></TD><TD PORT="Serial numberR">Serial number </TD></TR>
+<TR><TD PORT="ObservingMethodL">6</TD><TD>ObservingMethod </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservingMethod.tsv"><FONT color="blue">ObservingMethod </FONT></TD><TD PORT="ObservingMethodR">Estimate, measured or computed value </TD></TR>
+<TR><TD PORT="SamplingStrategyL">7</TD><TD>SamplingStrategy </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SamplingStrategy.tsv"><FONT color="blue">SamplingStrategy </FONT></TD><TD PORT="SamplingStrategyR">Continuous, discrete, event </TD></TR>
+<TR><TD PORT="LastCalibrationDateL">8</TD><TD>LastCalibrationDate </TD><TD>timestamp </TD><TD></TD><TD PORT="LastCalibrationDateR">Date sensor last calibrated </TD></TR>
+<TR><TD PORT="CalibrationStatusL">9</TD><TD>CalibrationStatus </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CalibrationStatus.tsv"><FONT color="blue">CalibrationStatus </FONT></TD><TD PORT="CalibrationStatusR">Calibration status </TD></TR>
+<TR><TD PORT="NumberOfElementsL">10</TD><TD>NumberOfElements </TD><TD>int </TD><TD></TD><TD PORT="NumberOfElementsR">Number of metadata fields for this instrument </TD></TR>
+<TR><TD PORT="FieldL">11</TD><TD>Field </TD><TD>int [] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SensorConfigurationFields.tsv"><FONT color="blue">SensorConfigurationFields </FONT></TD><TD PORT="FieldR">Field(s) for which next value applies </TD></TR>
+<TR><TD PORT="ValueL">12</TD><TD>Value </TD><TD>numeric [] </TD><TD></TD><TD PORT="ValueR">Value(s) of field(s) indicated </TD></TR>
+<TR><TD PORT="CommentL">13</TD><TD>Comment </TD><TD>varchar </TD><TD></TD><TD PORT="CommentR">Comments on sensor </TD></TR>
+</TABLE>>];
+SourceConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left" PORT="head"># Table: SourceConfiguration</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Description: Table defining additional information on data sources</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">WIGOS (MCO)</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD PORT="SourceIDL">0</TD><TD>SourceID </TD><TD>int </TD><TD></TD><TD></TD><TD PORT="SourceIDR">Unique record ID for dataset </TD></TR>
+<TR><TD PORT="ProductIDL">1</TD><TD>ProductID </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="ProductIDR">ID for product </TD></TR>
+<TR><TD PORT="ProductNameL">2</TD><TD>ProductName </TD><TD>varchar </TD><TD></TD><TD PORT="ProductNameR">Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, <BR/>RS92 GRUAN Data Product </TD></TR>
+<TR><TD PORT="ProductCodeL">3</TD><TD>ProductCode </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="ProductCodeR">Abbreviations / product code, e.g. ICOADS, RS92-GDP </TD></TR>
+<TR><TD PORT="ProductVersionL">4</TD><TD>ProductVersion </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="ProductVersionR">Version number for dataset, e.g. Release 3.0.0 </TD></TR>
+<TR><TD PORT="ProductLevelL">5</TD><TD>ProductLevel </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProductLevel.tsv"><FONT color="blue">ProductLevel </FONT></TD><TD></TD><TD PORT="ProductLevelR">Level of product </TD></TR>
+<TR><TD PORT="Description L">6</TD><TD>Description </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="Description R">Description of dataset / comments </TD></TR>
+<TR><TD PORT="ProductReferencesL">7</TD><TD>ProductReferences </TD><TD>varchar[] </TD><TD></TD><TD></TD><TD PORT="ProductReferencesR">References describing the dataset </TD></TR>
+<TR><TD PORT="ProductCitationL">8</TD><TD>ProductCitation </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="ProductCitationR">Citation to use when using this product </TD></TR>
+<TR><TD PORT="ProductStatusL">9</TD><TD>ProductStatus </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ProductStatus.tsv"><FONT color="blue">ProductStatus </FONT></TD><TD></TD><TD PORT="ProductStatusR"></TD></TR>
+<TR><TD PORT="SourceFormat L">10</TD><TD>SourceFormat </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceFormat.tsv"><FONT color="blue">SourceFormat </FONT></TD><TD>7-07 (M) </TD><TD PORT="SourceFormat R">Original format for data </TD></TR>
+<TR><TD PORT="SourceFormatVersion L">11</TD><TD>SourceFormatVersion </TD><TD>varchar </TD><TD></TD><TD>7-08 (M) </TD><TD PORT="SourceFormatVersion R">Version of original data format </TD></TR>
+<TR><TD PORT="SourceFileL">12</TD><TD>SourceFile </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="SourceFileR">Filename for data from source </TD></TR>
+<TR><TD PORT="SourceFileChecksumL">13</TD><TD>SourceFileChecksum </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="SourceFileChecksumR">Checksum of source datafile </TD></TR>
+<TR><TD PORT="DataCentre L">14</TD><TD>DataCentre </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/DataCentre.tsv"><FONT color="blue">DataCentre </FONT></TD><TD>9-01 (M) </TD><TD PORT="DataCentre R">Data centre from which data sourced </TD></TR>
+<TR><TD PORT="DataCentreURL L">15</TD><TD>DataCentreURL </TD><TD>varchar </TD><TD></TD><TD>9-01 (M) </TD><TD PORT="DataCentreURL R">URL for data centre </TD></TR>
+<TR><TD PORT="DataPolicyLicence L">16</TD><TD>DataPolicyLicence </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/DataPolicyLicence.tsv"><FONT color="blue">DataPolicyLicence </FONT></TD><TD>9-02 (M) </TD><TD PORT="DataPolicyLicence R">Data policy / licence </TD></TR>
+<TR><TD PORT="PIName L">17</TD><TD>PIName </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD PORT="PIName R">Name of PI responsible for dataset </TD></TR>
+<TR><TD PORT="PIemail L">18</TD><TD>PIemail </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD PORT="PIemail R">Email address of PI </TD></TR>
+<TR><TD PORT="PIurl L">19</TD><TD>PIurl </TD><TD>varchar </TD><TD></TD><TD>10-01 (M) </TD><TD PORT="PIurl R">URL for PI </TD></TR>
+<TR><TD PORT="NumberOfFiledsL">20</TD><TD>NumberOfFileds </TD><TD>numeric </TD><TD></TD><TD></TD><TD PORT="NumberOfFiledsR">Number of additional fields </TD></TR>
+<TR><TD PORT="FieldL">21</TD><TD>Field </TD><TD>int[] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SourceConfigurationFields.tsv"><FONT color="blue">SourceConfigurationFields </FONT></TD><TD></TD><TD PORT="FieldR">Fields to which following values apply </TD></TR>
+<TR><TD PORT="ValueL">22</TD><TD>Value </TD><TD>numeric[] </TD><TD></TD><TD></TD><TD PORT="ValueR">additional values </TD></TR>
+<TR><TD PORT="HistoryL">23</TD><TD>History </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="HistoryR">History of source </TD></TR>
+<TR><TD PORT="CommentsL">24</TD><TD>Comments </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="CommentsR">Additional comments / footnotes </TD></TR>
+<TR><TD PORT="TimestampL">25</TD><TD>Timestamp </TD><TD></TD><TD></TD><TD></TD><TD PORT="TimestampR">Date record created </TD></TR>
+</TABLE>>];
+StationConfiguration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: StationConfiguration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfiguration.tsv</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: </TD></TR>
+<TR><TD BGCOLOR="GRAY">ElementNumber</TD><TD BGCOLOR="GRAY">ElementName</TD><TD BGCOLOR="GRAY">Type</TD><TD BGCOLOR="GRAY">ExternalTable</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD PORT="StationPrimaryIDL">0</TD><TD>StationPrimaryID </TD><TD>varchar </TD><TD></TD><TD PORT="StationPrimaryIDR">Primary (WMO) ID for station </TD></TR>
+<TR><TD PORT="StationPrimaryIDSchemeL">1</TD><TD>StationPrimaryIDScheme </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/IDScheme.tsv"><FONT color="blue">IDScheme </FONT></TD><TD PORT="StationPrimaryIDSchemeR">Scheme used for primary ID </TD></TR>
+<TR><TD PORT="StationSecondaryIDL">2</TD><TD>StationSecondaryID </TD><TD>varchar </TD><TD></TD><TD PORT="StationSecondaryIDR">Secondary (local) ID for station </TD></TR>
+<TR><TD PORT="StationSecondaryIDSchemeL">3</TD><TD>StationSecondaryIDScheme </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/IDScheme.tsv"><FONT color="blue">IDScheme </FONT></TD><TD PORT="StationSecondaryIDSchemeR">Scheme used for secondary ID </TD></TR>
+<TR><TD PORT="StationNameL">4</TD><TD>StationName </TD><TD>varchar </TD><TD></TD><TD PORT="StationNameR">Name of station (e.g. Tateno) </TD></TR>
+<TR><TD PORT="StationAbbreviationL">5</TD><TD>StationAbbreviation </TD><TD>varchar </TD><TD></TD><TD PORT="StationAbbreviationR">Abbreviation of station name (e.g. TAT) </TD></TR>
+<TR><TD PORT="StartDateL">6</TD><TD>StartDate </TD><TD></TD><TD></TD><TD PORT="StartDateR">Date that the station first started reporting </TD></TR>
+<TR><TD PORT="EndDateL">7</TD><TD>EndDate </TD><TD></TD><TD></TD><TD PORT="EndDateR">Last data the station reported </TD></TR>
+<TR><TD PORT="StationTypeL">8</TD><TD>StationType </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationType.tsv"><FONT color="blue">StationType </FONT></TD><TD PORT="StationTypeR">Type of reporting station </TD></TR>
+<TR><TD PORT="PlatformTypeL">9</TD><TD>PlatformType </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/PlatformType.tsv"><FONT color="blue">PlatformType </FONT></TD><TD PORT="PlatformTypeR">Generic type of observing platform </TD></TR>
+<TR><TD PORT="PlatformSubTypeL">10</TD><TD>PlatformSubType </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/PlatformSubType.tsv"><FONT color="blue">PlatformSubType </FONT></TD><TD PORT="PlatformSubTypeR">Specific type of observing platform </TD></TR>
+<TR><TD PORT="OperatingInstituteL">11</TD><TD>OperatingInstitute </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/Institute.tsv"><FONT color="blue">Institute </FONT></TD><TD PORT="OperatingInstituteR">Institute operating the station </TD></TR>
+<TR><TD PORT="OperatingTerritoryL">12</TD><TD>OperatingTerritory </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/SubRegion.tsv"><FONT color="blue">SubRegion </FONT></TD><TD PORT="OperatingTerritoryR">Sub-region where station is located or country of registry for <BR/>mobile station </TD></TR>
+<TR><TD PORT="ObservingFrequencyL">13</TD><TD>ObservingFrequency </TD><TD></TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/ObservingFrequency.tsv"><FONT color="blue">ObservingFrequency </FONT></TD><TD PORT="ObservingFrequencyR">Typical frequency of observations for this station </TD></TR>
+<TR><TD PORT="TelecommunicationMethodL">14</TD><TD>TelecommunicationMethod </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/CommunicationMethod.tsv"><FONT color="blue">CommunicationMethod </FONT></TD><TD PORT="TelecommunicationMethodR">Method used to report observations </TD></TR>
+<TR><TD PORT="StationAutomationL">15</TD><TD>StationAutomation </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/AutomationStatus.tsv"><FONT color="blue">AutomationStatus </FONT></TD><TD PORT="StationAutomationR">Whether station is automated, manual or mixed </TD></TR>
+<TR><TD PORT="MeasuringSystemModelL">16</TD><TD>MeasuringSystemModel </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/MeasuringSystemModel.tsv"><FONT color="blue">MeasuringSystemModel </FONT></TD><TD PORT="MeasuringSystemModelR">Station / AWS model type </TD></TR>
+<TR><TD PORT="MeasuringSystemIDL">17</TD><TD>MeasuringSystemID </TD><TD>varchar </TD><TD></TD><TD PORT="MeasuringSystemIDR">ID or serial number of measuring system </TD></TR>
+<TR><TD PORT="MetadataSourceL">18</TD><TD>MetadataSource </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/MetadataSource.tsv"><FONT color="blue">MetadataSource </FONT></TD><TD PORT="MetadataSourceR">Source of metadata for this station </TD></TR>
+<TR><TD PORT="MetadataVersionL">19</TD><TD>MetadataVersion </TD><TD>varchar </TD><TD></TD><TD PORT="MetadataVersionR">Version of metadata source </TD></TR>
+<TR><TD PORT="MetadataIDL">20</TD><TD>MetadataID </TD><TD>varchar </TD><TD></TD><TD PORT="MetadataIDR">Record number in metadata source (or other unique ID) </TD></TR>
+<TR><TD PORT="MetadataReportDateL">21</TD><TD>MetadataReportDate </TD><TD></TD><TD></TD><TD PORT="MetadataReportDateR">Date metadata record was prepared </TD></TR>
+<TR><TD PORT="Number of FieldsL">22</TD><TD>Number of Fields </TD><TD>numeric </TD><TD></TD><TD PORT="Number of FieldsR">Number of additional fields </TD></TR>
+<TR><TD PORT="FieldL">23</TD><TD>Field </TD><TD>int[] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/StationConfigurationFields.tsv"><FONT color="blue">StationConfigurationFields </FONT></TD><TD PORT="FieldR">Field to which following values correspond </TD></TR>
+<TR><TD PORT="ValueL">24</TD><TD>Value </TD><TD>numeric[] </TD><TD></TD><TD PORT="ValueR">Values for specified fields </TD></TR>
+<TR><TD PORT="CommentL">25</TD><TD>Comment </TD><TD>varchar </TD><TD></TD><TD PORT="CommentR">Any other comments / footnotes </TD></TR>
+</TABLE>>];
