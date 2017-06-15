@@ -1,38 +1,38 @@
 # Descripion: table defining elements in main observations table
 # Source:
-element_number	element_name	kind	external_table	wigos (_m_c_o)	Description
-1	report_id 	bigint (pk)		n_a	Unique ID for report (unique ID given by combination of RecordID and ObservationID)
-2	region 	int (fk)	region	3-01 (_c)	Region (WMO region / Ocean basin)
-3	sub_region 	int (fk)	sub_region	3-02 (_c)	Country / regional sea
-4	application_area 	int[] (fk)	application_area	2-01 (_m)	WMO application area(s)
-5	observing_programme 	int (fk)	observing_programme	2-02 (_m)	Observing programme, e.g. VOS
-6	report_type 	int (fk)	report_type	n_a	e.g. SYNOP, TEMP, CLIMAT, etc
-7	station_name 	varchar		3-03 (_m)	e.g. GRUAN station name, ship name, site name etc
-8	station_type 	int (fk)	station_type	3-04 (_m)	Type of station, e.g. land station, sea station etc
-9	platform_type 	int (fk)	platform_type	n_a	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
-10	platform_sub_type 	int (fk)	platform_sub_type	n_a	Sub-type for platform, e.g. 3m discuss buoy
-11	primary_station_id	varchar		3-06 (_m)	Unique (WMO) station identifier, e.g. WIGOS ID
-12	primary_station_id_scheme	int (fk)	id_scheme	n_a	Scheme used for unique station ID
+element_number	element_name	kind	external_table	wigos (mco)	Description
+1	report_id	bigint (pk)		NA	Unique ID for report (unique ID given by combination of RecordID and ObservationID)
+2	region	int (fk)	region	3-01 (c)	Region (WMO region / Ocean basin)
+3	sub_region	int (fk)	sub_region	3-02 (c)	Country / regional sea
+4	application_area	int[] (fk)	application_area	2-01 (m)	WMO application area(s)
+5	observing_programme	int (fk)	observing_programme	2-02 (m)	Observing programme, e.g. VOS
+6	report_type	int (fk)	report_type	NA	e.g. SYNOP, TEMP, CLIMAT, etc
+7	station_name	varchar		3-03 (m)	e.g. GRUAN station name, ship name, site name etc
+8	station_type	int (fk)	station_type	3-04 (m)	Type of station, e.g. land station, sea station etc
+9	platform_type	int (fk)	platform_type	NA	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
+10	platform_sub_type	int (fk)	platform_sub_type	NA	Sub-type for platform, e.g. 3m discuss buoy
+11	primary_station_id	varchar		3-06 (m)	Unique (WMO) station identifier, e.g. WIGOS ID
+12	primary_station_id_scheme	int (fk)	id_scheme	NA	Scheme used for unique station ID
 13	secondary_station_id	varchar			Alternate (local) ID for station, e.g. Network ID
 14	secondary_station_id_scheme	int (fk)	id_scheme		Alternate ID Scheme, e.g. Network ID
-15	station_location__longitude	numeric 		3-07 (_m)	Longitude of station, -180.0 to 180.0 (or other as defined by StationCRS)
-16	station_location__latitude	numeric		3-07 (_m)	Latitude of station, -90 to 90 (or other as defined by StationCRS)
-17	station_location_accuracy	numeric		n_a	Accuracy to which station location recorded (radius in km)
+15	station_location_longitude	numeric		3-07 (m)	Longitude of station, -180.0 to 180.0 (or other as defined by StationCRS)
+16	station_location_latitude	numeric		3-07 (m)	Latitude of station, -90 to 90 (or other as defined by StationCRS)
+17	station_location_accuracy	numeric		NA	Accuracy to which station location recorded (radius in km)
 18	station_location_method				
-19	station_location_quality	int (fk)	location_quality	n_a	Quality flag for station location
-20	station_crs 	int (fk)	crs	11-02	Coordinate reference scheme for station location
+19	station_location_quality	int (fk)	location_quality	NA	Quality flag for station location
+20	station_crs	int (fk)	crs	11-02	Coordinate reference scheme for station location
 21	station_speed	numeric			Station speed over ground if mobile (m/s)
 22	station_course	numeric			Station course over ground if mobile (degree true)
 23	station_heading	numeric			Station heading if mobile
-24	surface_type 	int (fk)	surface_type	4-01 (_c)	e.g. rolling hills
-25	surface_type_scheme 	int (fk)	surface_type_scheme	4-02 (_c)	Scheme used to classify surface cover
-26	site_topography 	int (fk)	site_topography	4-03 (_c)	Description of local topography and broader context
-27	station_configuration	bigint (fk)	station_configuration	n_a	Link to station metadata / configuration
-28	height_of_station_above_local_ground 	numeric		3-07 (_m)	Height of station above local ground (m)
-29	height_of_station_above_sea_level 	numeric		3-07 (_m)	Height of station above mean sea level (m), negative values for below sea level.
+24	surface_type	int (fk)	surface_type	4-01 (c)	e.g. rolling hills
+25	surface_type_scheme	int (fk)	surface_type_scheme	4-02 (c)	Scheme used to classify surface cover
+26	site_topography	int (fk)	site_topography	4-03 (c)	Description of local topography and broader context
+27	station_configuration	bigint (fk)	station_configuration	NA	Link to station metadata / configuration
+28	height_of_station_above_local_ground	numeric		3-07 (m)	Height of station above local ground (m)
+29	height_of_station_above_sea_level	numeric		3-07 (m)	Height of station above mean sea level (m), negative values for below sea level.
 30	height_of_station_above_sea_level_accuracy	numeric			Accuracy to which height of station known (m)
 31	sea_level_datum	int (fk)	sea_level_datum		Datum used for sea level
-32	report_meaning_of_time_stamp	int (fk)	meaning_of_time_stamp	11-03 (_m)	Report time - beginning, middle or end of reporting period
+32	report_meaning_of_time_stamp	int (fk)	meaning_of_time_stamp	11-03 (m)	Report time - beginning, middle or end of reporting period
 33	report_year	int			Year of report (UTC)
 34	report_month	int			Month of report (UTC)
 35	report_day	int			Day of report (UTC)
@@ -40,74 +40,74 @@ element_number	element_name	kind	external_table	wigos (_m_c_o)	Description
 37	report_minutes	int			Minute of report (UTC)
 38	report_seconds	int			Seconds of report (UTC)
 39	report_duration	int			Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
-40	report_time_accuracy	numeric		n_a	Precision to which time was recorded (s)
-41	report_time_quality	int (fk)	time_quality	n_a	Quality flag for ReportDateTime
+40	report_time_accuracy	numeric		NA	Precision to which time was recorded (s)
+41	report_time_quality	int (fk)	time_quality	NA	Quality flag for ReportDateTime
 42	report_time_reference	int (fk)	time_reference		Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
-43	profile_configuration 	bigint (fk)	profile_configuration	n_a	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
-44	events_at_station	int (fk)	events_at_station	4-04 (_o)	e.g. ship hove to, crop burning etc.
-45	report_quality	int (fk)	quality_flag	n_a	Overall quality of report
-46	duplicate_status 	int (fk)	duplicate_status	n_a	E.g. no duplicates, best duplicate, duplicate, not checked.
-47	duplicates 	bigint [] (fk)	observations_table	n_a	Array of reportIDs for duplicates
-48	maintenance_and_update_frequency 	int (fk)	update_frequency	n_a	Frequency with which modifications and deletions are made to the data after it is first produced
-49	history 	bigint (fk)	report_history	n_a	Sequence of processing steps – link to table
-50	record_year	int 			Year of revision of this record (UTC)
-51	record_month	int 			Month of revision of this record (UTC)
-52	record_day	int 			Day of revision of this record (UTC)
-53	record_hour	int 			Hour of revision of this record (UTC)
-54	record_minute	int 			Minute of revision of this record (UTC)
-55	record_seconds	int 		n_a	Seconds of revision of this record (UTC)
+43	profile_configuration	bigint (fk)	profile_configuration	NA	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
+44	events_at_station	int (fk)	events_at_station	4-04 (o)	e.g. ship hove to, crop burning etc.
+45	report_quality	int (fk)	quality_flag	NA	Overall quality of report
+46	duplicate_status	int (fk)	duplicate_status	NA	E.g. no duplicates, best duplicate, duplicate, not checked.
+47	duplicates	bigint [] (fk)	observations_table	NA	Array of reportIDs for duplicates
+48	maintenance_and_update_frequency	int (fk)	update_frequency	NA	Frequency with which modifications and deletions are made to the data after it is first produced
+49	history	bigint (fk)	report_history	NA	Sequence of processing steps – link to table
+50	record_year	int			Year of revision of this record (UTC)
+51	record_month	int			Month of revision of this record (UTC)
+52	record_day	int			Day of revision of this record (UTC)
+53	record_hour	int			Hour of revision of this record (UTC)
+54	record_minute	int			Minute of revision of this record (UTC)
+55	record_seconds	int		NA	Seconds of revision of this record (UTC)
 56	processing_level	int	report_processing_level		Level of processing applied to this report
-57	processing_code(s)	int[]	report_processing_code		Processing applied to this report
-58	source_id 	int (fk)	source_configuration	n_a	Original source of data – link to table 
-59	source_record_id 	varchar		n_a	Record ID in source data, e.g. ID of event from GRUAN meta database
-60	data_policy_licence 	int (fk)	data_policy_licence	9-02 (_m)	WMOessential, WMOadditional, WMOother
-61	observation_id 	int (pk)			Together with RecordID forms unique ID for observation / record
-62	observed_variable 	int (fk)	observed_variable	1-01 (_m)	The variable being observed / measured
-63	units 	int (fk)	units	1-02 (_m)	Units for the observed variable
-64	code_table 	int (fk)	observation_code_table	n_a	Encode / decode table for variable (if encoded)
-65	observation_value 	numeric		n_a	The observed value
-66	observation_value_significance	int (fk)	observation_value_significance	n_a	e.g. min, max, mean, sum
-67	observation_timestamp_meaning	int (fk)	meaning_of_time_stamp	11-03 (_m)	beginning, middle, end
-68	observation_year	int 		1-03 (_m)	Year ofobservation (UTC)
-69	observation_month	int 		1-03 (_m)	Month of observation (UTC)
-70	obvservation_day	int 		1-03 (_m)	Day of observation (UTC)
-71	observation_hour	int 		1-03 (_m)	Hour of observation (UTC)
-72	observation_minute	int 		1-03 (_m)	Minutes of observation (UTC)
-73	observation_seconds	int 		1-03 (_m)	Seconds of observation (UTC)
-74	observation_duration 	int		7-09 (_m)	Duration/period over which observation was made (s)
+57	processing_code	int[]	report_processing_code		Processing applied to this report
+58	source_id	int (fk)	source_configuration	NA	Original source of data – link to table 
+59	source_record_id	varchar		NA	Record ID in source data, e.g. ID of event from GRUAN meta database
+60	data_policy_licence	int (fk)	data_policy_licence	9-02 (m)	WMOessential, WMOadditional, WMOother
+61	observation_id	int (pk)			Together with RecordID forms unique ID for observation / record
+62	observed_variable	int (fk)	observed_variable	1-01 (m)	The variable being observed / measured
+63	units	int (fk)	units	1-02 (m)	Units for the observed variable
+64	code_table	int (fk)	observation_code_table	NA	Encode / decode table for variable (if encoded)
+65	observation_value	numeric		NA	The observed value
+66	observation_value_significance	int (fk)	observation_value_significance	NA	e.g. min, max, mean, sum
+67	observation_timestamp_meaning	int (fk)	meaning_of_time_stamp	11-03 (m)	beginning, middle, end
+68	observation_year	int		1-03 (m)	Year ofobservation (UTC)
+69	observation_month	int		1-03 (m)	Month of observation (UTC)
+70	obvservation_day	int		1-03 (m)	Day of observation (UTC)
+71	observation_hour	int		1-03 (m)	Hour of observation (UTC)
+72	observation_minute	int		1-03 (m)	Minutes of observation (UTC)
+73	observation_seconds	int		1-03 (m)	Seconds of observation (UTC)
+74	observation_duration	int		7-09 (m)	Duration/period over which observation was made (s)
 75	observation_longitude	numeric			Longitude of the observed value, -180 to 180 (or other as defined by CRS)
-76	observation_latitude	numeric		1-04 (_m)	Latitude of the observed value, -90 to 90 (or other as defined by CRS)
-77	observation_location_method 	int (fk)	location_method	11-01	Method of determining location, 
-78	observation_location_precision 	numeric			Precision to which location is reported (radius km)
-79	observation_bounding_box_min_longitude	numeric		1-04 (_m)	Bounding box for observation, valid range given by CRS
-80	observation_bounding_box_max_longitude	numeric		1-04 (_m)	Bounding box for observation, valid range given by CRS
-81	observation_bounding_box_min_latitude	numeric		1-04 (_m)	Bounding box for observation, valid range given by CRS
-82	observation_bounding_box_max_latitude	numeric		1-04 (_m)	Bounding box for observation, valid range given by CRS
-83	observation_spatial_representativeness 	int (fk)	spatial_representativeness	1-05 (_o)	Spatial representativeness of observation
-84	observation_height_above_station_surface 	numeric		5-05 (_c)	Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
-85	observation_z_coordinate 	numeric		5-05 (_c)	z coordinate of observation
-86	observation_z_coordinate_type 	int (fk)	z_coordinate_type	5-05 (_c)	Type of z coordinate
+76	observation_latitude	numeric		1-04 (m)	Latitude of the observed value, -90 to 90 (or other as defined by CRS)
+77	observation_location_method	int (fk)	location_method	11-01	Method of determining location, 
+78	observation_location_precision	numeric			Precision to which location is reported (radius km)
+79	observation_bounding_box_min_longitude	numeric		1-04 (m)	Bounding box for observation, valid range given by CRS
+80	observation_bounding_box_max_longitude	numeric		1-04 (m)	Bounding box for observation, valid range given by CRS
+81	observation_bounding_box_min_latitude	numeric		1-04 (m)	Bounding box for observation, valid range given by CRS
+82	observation_bounding_box_max_latitude	numeric		1-04 (m)	Bounding box for observation, valid range given by CRS
+83	observation_spatial_representativeness	int (fk)	spatial_representativeness	1-05 (o)	Spatial representativeness of observation
+84	observation_height_above_station_surface	numeric		5-05 (c)	Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
+85	observation_z_coordinate	numeric		5-05 (c)	z coordinate of observation
+86	observation_z_coordinate_type	int (fk)	z_coordinate_type	5-05 (c)	Type of z coordinate
 87	observation_z_coordinate_method	int (fk)	z_coordinate_method		Method of determining z coordinate
-88	quality_flag 	int (fk)	quality_flag	8-03 (_m)	Quality flag for observation
-89	numerical_precision 	int		7-12 (_o)	Reporting precision of observation in units given by 'Units' variable. Equivalent to BUFR scale factor
-90	standard_uncertainty 	numeric		8-01 (_c)	Standard uncertainty in reported value
-91	method_of_estimating_standard_uncertainty 	int (fk)	method_of_estimating_uncertainty	8-02 (_c)	Method of estimating the standard uncertainty
-92	uncertainty_due_to_correlated_errors 	numeric		8-01 (_c)	Uncertainty due to errors in the observation that are correlated between observations
-93	method_of_estimating_uncertainty_due_to_correlated_errors 	int (fk)	method_of_estimating_uncertainty	8-02 (_c)	
-94	uncertainty_due_to_uncorrelated_errors 	numeric 		8-01 (_c)	Uncertainty due to errors in the observation that are uncorrelated between observations
-95	method_of_estimating_uncertainty_due_to_uncorrelated_errors 	int (fk)	method_of_estimating_uncertainty	8-02 (_c)	
-96	uncertainty_due_to_systematic_errors 	numeric 		8-01 (_c)	Uncertainty due to errors in the observations that are correlated under similar observing conditions
-97	method_of_estimating_uncertainty_due_to_systematic_errors 	int (fk)	method_of_estimating_uncertainty	8-02 (_c)	
-98	total_uncertainty 	numeric 		8-01 (_c)	
-99	method_of_estimating_total_uncertainty 	int (fk)	method_of_estimating_uncertainty	8-02 (_c)	
+88	quality_flag	int (fk)	quality_flag	8-03 (m)	Quality flag for observation
+89	numerical_precision	int		7-12 (o)	Reporting precision of observation in units given by 'Units' variable. Equivalent to BUFR scale factor
+90	standard_uncertainty	numeric		8-01 (c)	Standard uncertainty in reported value
+91	method_of_estimating_standard_uncertainty	int (fk)	method_of_estimating_uncertainty	8-02 (c)	Method of estimating the standard uncertainty
+92	uncertainty_due_to_correlated_errors	numeric		8-01 (c)	Uncertainty due to errors in the observation that are correlated between observations
+93	method_of_estimating_uncertainty_due_to_correlated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
+94	uncertainty_due_to_uncorrelated_errors	numeric 		8-01 (c)	Uncertainty due to errors in the observation that are uncorrelated between observations
+95	method_of_estimating_uncertainty_due_to_uncorrelated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
+96	uncertainty_due_to_systematic_errors	numeric 		8-01 (c)	Uncertainty due to errors in the observations that are correlated under similar observing conditions
+97	method_of_estimating_uncertainty_due_to_systematic_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
+98	total_uncertainty	numeric 		8-01 (c)	
+99	method_of_estimating_total_uncertainty	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
 100	sensor_configuration	int (fk)	sensor_configuration		
-101	sensor_automation_status 	int (fk)	automation_status	5-01 (_m)	Automated, manual, mixed or visual observation
-102	exposure_of_sensor 	int (fk)	instrument_exposure_quality	5-15 (_c)	Whether the exposure of the instrument will impact on the quality of the measurement
-103	original_precision 	int 		n_a	Original reporting precision in units given by 'OriginalUnits'
-104	original_units 	int (fk)	units	n_a	Original units 
-105	original_value 	numeric 		n_a	Original value as reported or recorded in log book.
-106	conversion_factor 	int (fk)	conversion_factor	7-01 (_o)	Link to table describing conversion process
-107	processing_code 	int (fk)	processing_code	7-01 (_o)	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
-108	processing_level 	int (fk)	processing_level	7-06 (_o)	Level of processing applied to observation.
-109	adjustment_id 	int (fk)	adjustment		
-110	traceability 	int (fk)	traceability	8-05 (_c)	Whether observation can be traced to international standards.
+101	sensor_automation_status	int (fk)	automation_status	5-01 (m)	Automated, manual, mixed or visual observation
+102	exposure_of_sensor	int (fk)	instrument_exposure_quality	5-15 (c)	Whether the exposure of the instrument will impact on the quality of the measurement
+103	original_precision	int 		NA	Original reporting precision in units given by 'OriginalUnits'
+104	original_units	int (fk)	units	NA	Original units 
+105	original_value	numeric 		NA	Original value as reported or recorded in log book.
+106	conversion_factor	int (fk)	conversion_factor	7-01 (o)	Link to table describing conversion process
+107	processing_code	int (fk)	processing_code	7-01 (o)	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
+108	processing_level	int (fk)	processing_level	7-06 (o)	Level of processing applied to observation.
+109	adjustment_id	int (fk)	adjustment		
+110	traceability	int (fk)	traceability	8-05 (c)	Whether observation can be traced to international standards.

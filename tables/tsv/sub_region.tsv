@@ -1,251 +1,251 @@
-value	type	code	SubRegion
-0	country	a_d	ANDORRA
-1	country	a_e	UNITED ARAB EMIRATES
-2	country	a_f	AFGHANISTAN
-3	country	a_g	ANTIGUA AND BARBUDA
-4	country	a_i	ANGUILLA
-5	country	a_l	ALBANIA
-6	country	a_m	ARMENIA
-7	country	a_n	NETHERLANDS ANTILLES
-8	country	a_o	ANGOLA
-9	country	a_q	ANTARCTICA
-10	country	a_r	ARGENTINA
-11	country	a_s	AMERICAN SAMOA
-12	country	a_t	AUSTRIA
-13	country	a_u	AUSTRALIA
-14	country	a_w	ARUBA
-15	country	a_x	ALAND ISLANDS
-16	country	a_z	AZERBAIJAN
-17	country	b_a	BOSNIA AND HERZEGOVINA
-18	country	b_b	BARBADOS
-19	country	b_d	BANGLADESH
-20	country	b_e	BELGIUM
-21	country	b_f	BURKINA FASO
-22	country	b_g	BULGARIA
-23	country	b_h	BAHRAIN
-24	country	b_i	BURUNDI
-25	country	b_j	BENIN
-26	country	b_l	SAINT BARTHƒLEMY
-27	country	b_m	BERMUDA
-28	country	b_n	BRUNEI DARUSSALAM
-29	country	b_o	BOLIVIA
-30	country	b_r	BRAZIL
-31	country	b_s	BAHAMAS
-32	country	b_t	BHUTAN
-33	country	b_v	BOUVET ISLAND
-34	country	b_w	BOTSWANA
-35	country	b_y	BELARUS
-36	country	b_z	BELIZE
-37	country	c_a	CANADA
-38	country	c_c	COCOS (KEELING) ISLANDS
-39	country	c_d	CONGO, THE DEMOCRATIC REPUBLIC OF THE
-40	country	c_f	CENTRAL AFRICAN REPUBLIC
-41	country	c_g	CONGO
-42	country	c_h	SWITZERLAND
-43	country	c_i	COTE D'IVOIRE
-44	country	c_k	COOK ISLANDS
-45	country	c_l	CHILE
-46	country	c_m	CAMEROON
-47	country	c_n	CHINA
-48	country	c_o	COLOMBIA
-49	country	c_r	COSTA RICA
-50	country	c_u	CUBA
-51	country	c_v	CAPE VERDE
-52	country	c_x	CHRISTMAS ISLAND
-53	country	c_y	CYPRUS
-54	country	c_z	CZECH REPUBLIC
-55	country	d_d	GERMAN DEMOCRATIC REPUBLIC
-56	country	d_e	GERMANY
-57	country	d_j	DJIBOUTI
-58	country	d_k	DENMARK
-59	country	d_m	DOMINICA
-60	country	d_o	DOMINICAN REPUBLIC
-61	country	d_z	ALGERIA
-62	country	e_c	ECUADOR
-63	country	e_e	ESTONIA
-64	country	e_g	EGYPT
-65	country	e_h	WESTERN SAHARA
-66	country	e_r	ERITREA
-67	country	e_s	SPAIN
-68	country	e_t	ETHIOPIA
-69	country	f_i	FINLAND
-70	country	f_j	FIJI
-71	country	f_k	FALKLAND ISLANDS (MALVINAS)
-72	country	f_m	MICRONESIA, FEDERATED STATES OF
-73	country	f_o	FAROE ISLANDS
-74	country	f_r	FRANCE
-75	country	g_a	GABON
-76	country	g_b	UNITED KINGDOM
-77	country	g_d	GRENADA
-78	country	g_e	GEORGIA
-79	country	g_f	FRENCH GUIANA
-80	country	g_g	GUERNSEY
-81	country	g_h	GHANA
-82	country	g_i	GIBRALTAR
-83	country	g_l	GREENLAND
-84	country	g_m	GAMBIA
-85	country	g_n	GUINEA
-86	country	g_p	GUADELOUPE
-87	country	g_q	EQUATORIAL GUINEA
-88	country	g_r	GREECE
-89	country	g_s	SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
-90	country	g_t	GUATEMALA
-91	country	g_u	GUAM
-92	country	g_w	GUINEA-BISSAU
-93	country	g_y	GUYANA
-94	country	h_k	HONG KONG
-95	country	h_m	HEARD ISLAND AND MCDONALD ISLANDS
-96	country	h_n	HONDURAS
-97	country	h_r	CROATIA
-98	country	h_t	HAITI
-99	country	h_u	HUNGARY
-100	country	id	INDONESIA
-101	country	i_e	IRELAND
-102	country	i_l	ISRAEL
-103	country	i_m	ISLE OF MAN
-104	country	i_n	INDIA
-105	country	i_o	BRITISH INDIAN OCEAN TERRITORY
-106	country	i_q	IRAQ
-107	country	i_r	IRAN, ISLAMIC REPUBLIC OF
-108	country	i_s	ICELAND
-109	country	i_t	ITALY
-110	country	j_e	JERSEY
-111	country	j_m	JAMAICA
-112	country	j_o	JORDAN
-113	country	j_p	JAPAN
-114	country	k_e	KENYA
-115	country	k_g	KYRGYZSTAN
-116	country	k_h	CAMBODIA
-117	country	k_i	KIRIBATI
-118	country	k_m	COMOROS
-119	country	k_n	SAINT KITTS AND NEVIS
-120	country	k_p	KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF
-121	country	k_r	KOREA, REPUBLIC OF
-122	country	k_w	KUWAIT
-123	country	k_y	CAYMAN ISLANDS
-124	country	k_z	KAZAKHSTAN
-125	country	l_a	LAO PEOPLE'S DEMOCRATIC REPUBLIC
-126	country	l_b	LEBANON
-127	country	l_c	SAINT LUCIA
-128	country	l_i	LIECHTENSTEIN
-129	country	l_k	SRI LANKA
-130	country	l_r	LIBERIA
-131	country	l_s	LESOTHO
-132	country	l_t	LITHUANIA
-133	country	l_u	LUXEMBOURG
-134	country	l_v	LATVIA
-135	country	l_y	LIBYAN ARAB JAMAHIRIYA
-136	country	m_a	MOROCCO
-137	country	m_c	MONACO
-138	country	m_d	MOLDOVA, REPUBLIC OF
-139	country	m_e	MONTENEGRO
-140	country	m_f	SAINT MARTIN
-141	country	m_g	MADAGASCAR
-142	country	m_h	MARSHALL ISLANDS
-143	country	m_k	MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
-144	country	m_l	MALI
-145	country	m_m	MYANMAR
-146	country	m_n	MONGOLIA
-147	country	m_o	MACAO
-148	country	m_p	NORTHERN MARIANA ISLANDS
-149	country	m_q	MARTINIQUE
-150	country	m_r	MAURITANIA
-151	country	m_s	MONTSERRAT
-152	country	m_t	MALTA
-153	country	m_u	MAURITIUS
-154	country	m_v	MALDIVES
-155	country	m_w	MALAWI
-156	country	m_x	MEXICO
-157	country	m_y	MALAYSIA
-158	country	m_z	MOZAMBIQUE
-159	country	n_a	NAMIBIA
-160	country	n_c	NEW CALEDONIA
-161	country	n_e	NIGER
-162	country	n_f	NORFOLK ISLAND
-163	country	n_g	NIGERIA
-164	country	n_i	NICARAGUA
-165	country	n_l	NETHERLANDS
-166	country	n_o	NORWAY
-167	country	n_p	NEPAL
-168	country	n_r	NAURU
-169	country	n_u	NIUE
-170	country	n_z	NEW ZEALAND
-171	country	o_m	OMAN
-172	country	p_a	PANAMA
-173	country	p_e	PERU
-174	country	p_f	FRENCH POLYNESIA
-175	country	p_g	PAPUA NEW GUINEA
-176	country	p_h	PHILIPPINES
-177	country	p_k	PAKISTAN
-178	country	p_l	POLAND
-179	country	p_m	SAINT PIERRE AND MIQUELON
-180	country	p_n	PITCAIRN
-181	country	p_r	PUERTO RICO
-182	country	p_s	PALESTINIAN TERRITORY, OCCUPIED
-183	country	p_t	PORTUGAL
-184	country	p_w	PALAU
-185	country	p_y	PARAGUAY
-186	country	q_a	QATAR
-187	country	r_e	REUNION
-188	country	r_o	ROMANIA
-189	country	r_s	SERBIA
-190	country	r_u	RUSSIAN FEDERATION
-191	country	r_w	RWANDA
-192	country	s_a	SAUDI ARABIA
-193	country	s_b	SOLOMON ISLANDS
-194	country	s_c	SEYCHELLES
-195	country	s_d	SUDAN
-196	country	s_e	SWEDEN
-197	country	s_g	SINGAPORE
-198	country	s_h	SAINT HELENA
-199	country	s_i	SLOVENIA
-200	country	s_j	SVALBARD AND JAN MAYEN
-201	country	s_k	SLOVAKIA
-202	country	s_l	SIERRA LEONE
-203	country	s_m	SAN MARINO
-204	country	s_n	SENEGAL
-205	country	s_o	SOMALIA
-206	country	s_r	SURINAME
-207	country	s_t	SAO TOME AND PRINCIPE
-208	country	s_u	USSR
-209	country	s_v	EL SALVADOR
-210	country	s_y	SYRIAN ARAB REPUBLIC
-211	country	s_z	SWAZILAND
-212	country	t_c	TURKS AND CAICOS ISLANDS
-213	country	t_d	CHAD
-214	country	t_f	FRENCH SOUTHERN TERRITORIES
-215	country	t_g	TOGO
-216	country	t_h	THAILAND
-217	country	t_j	TAJIKISTAN
-218	country	t_k	TOKELAU
-219	country	t_l	TIMOR-LESTE
-220	country	t_m	TURKMENISTAN
-221	country	t_n	TUNISIA
-222	country	t_o	TONGA
-223	country	t_r	TURKEY
-224	country	t_t	TRINIDAD AND TOBAGO
-225	country	t_v	TUVALU
-226	country	t_w	TAIWAN, PROVINCE OF CHINA
-227	country	t_z	TANZANIA, UNITED REPUBLIC OF
-228	country	u_a	UKRAINE
-229	country	u_g	UGANDA
-230	country	u_m	UNITED STATES MINOR OUTLYING ISLANDS
-231	country	u_s	UNITED STATES
-232	country	u_y	URUGUAY
-233	country	u_z	UZBEKISTAN
-234	country	v_a	HOLY SEE (VATICAN CITY STATE)
-235	country	v_c	SAINT VINCENT AND THE GRENADINES
-236	country	v_e	VENEZUELA
-237	country	v_g	VIRGIN ISLANDS, BRITISH
-238	country	v_i	VIRGIN ISLANDS, U.S.
-239	country	v_n	VIET NAM
-240	country	v_u	VANUATU
-241	country	w_f	WALLIS AND FUTUNA
-242	country	w_s	SAMOA
-243	country	y_e	YEMEN
-244	country	y_t	MAYOTTE
-245	country	y_u	YUGOSLAVIA
-246	country	z_a	SOUTH AFRICA
-247	country	z_m	ZAMBIA
-248	country	z_w	ZIMBABWE
-249	country	z_z	THIRD PARTY SUPPORT SHIPS
+value	type	code	sub_region
+0	country	AD	ANDORRA
+1	country	AE	UNITED ARAB EMIRATES
+2	country	AF	AFGHANISTAN
+3	country	AG	ANTIGUA AND BARBUDA
+4	country	AI	ANGUILLA
+5	country	AL	ALBANIA
+6	country	AM	ARMENIA
+7	country	AN	NETHERLANDS ANTILLES
+8	country	AO	ANGOLA
+9	country	AQ	ANTARCTICA
+10	country	AR	ARGENTINA
+11	country	AS	AMERICAN SAMOA
+12	country	AT	AUSTRIA
+13	country	AU	AUSTRALIA
+14	country	AW	ARUBA
+15	country	AX	ALAND ISLANDS
+16	country	AZ	AZERBAIJAN
+17	country	BA	BOSNIA AND HERZEGOVINA
+18	country	BB	BARBADOS
+19	country	BD	BANGLADESH
+20	country	BE	BELGIUM
+21	country	BF	BURKINA FASO
+22	country	BG	BULGARIA
+23	country	BH	BAHRAIN
+24	country	BI	BURUNDI
+25	country	BJ	BENIN
+26	country	BL	SAINT BARTHƒLEMY
+27	country	BM	BERMUDA
+28	country	BN	BRUNEI DARUSSALAM
+29	country	BO	BOLIVIA
+30	country	BR	BRAZIL
+31	country	BS	BAHAMAS
+32	country	BT	BHUTAN
+33	country	BV	BOUVET ISLAND
+34	country	BW	BOTSWANA
+35	country	BY	BELARUS
+36	country	BZ	BELIZE
+37	country	CA	CANADA
+38	country	CC	COCOS (KEELING) ISLANDS
+39	country	CD	CONGO, THE DEMOCRATIC REPUBLIC OF THE
+40	country	CF	CENTRAL AFRICAN REPUBLIC
+41	country	CG	CONGO
+42	country	CH	SWITZERLAND
+43	country	CI	COTE D'IVOIRE
+44	country	CK	COOK ISLANDS
+45	country	CL	CHILE
+46	country	CM	CAMEROON
+47	country	CN	CHINA
+48	country	CO	COLOMBIA
+49	country	CR	COSTA RICA
+50	country	CU	CUBA
+51	country	CV	CAPE VERDE
+52	country	CX	CHRISTMAS ISLAND
+53	country	CY	CYPRUS
+54	country	CZ	CZECH REPUBLIC
+55	country	DD	GERMAN DEMOCRATIC REPUBLIC
+56	country	DE	GERMANY
+57	country	DJ	DJIBOUTI
+58	country	DK	DENMARK
+59	country	DM	DOMINICA
+60	country	DO	DOMINICAN REPUBLIC
+61	country	DZ	ALGERIA
+62	country	EC	ECUADOR
+63	country	EE	ESTONIA
+64	country	EG	EGYPT
+65	country	EH	WESTERN SAHARA
+66	country	ER	ERITREA
+67	country	ES	SPAIN
+68	country	ET	ETHIOPIA
+69	country	FI	FINLAND
+70	country	FJ	FIJI
+71	country	FK	FALKLAND ISLANDS (MALVINAS)
+72	country	FM	MICRONESIA, FEDERATED STATES OF
+73	country	FO	FAROE ISLANDS
+74	country	FR	FRANCE
+75	country	GA	GABON
+76	country	GB	UNITED KINGDOM
+77	country	GD	GRENADA
+78	country	GE	GEORGIA
+79	country	GF	FRENCH GUIANA
+80	country	GG	GUERNSEY
+81	country	GH	GHANA
+82	country	GI	GIBRALTAR
+83	country	GL	GREENLAND
+84	country	GM	GAMBIA
+85	country	GN	GUINEA
+86	country	GP	GUADELOUPE
+87	country	GQ	EQUATORIAL GUINEA
+88	country	GR	GREECE
+89	country	GS	SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+90	country	GT	GUATEMALA
+91	country	GU	GUAM
+92	country	GW	GUINEA-BISSAU
+93	country	GY	GUYANA
+94	country	HK	HONG KONG
+95	country	HM	HEARD ISLAND AND MCDONALD ISLANDS
+96	country	HN	HONDURAS
+97	country	HR	CROATIA
+98	country	HT	HAITI
+99	country	HU	HUNGARY
+100	country	ID	INDONESIA
+101	country	IE	IRELAND
+102	country	IL	ISRAEL
+103	country	IM	ISLE OF MAN
+104	country	IN	INDIA
+105	country	IO	BRITISH INDIAN OCEAN TERRITORY
+106	country	IQ	IRAQ
+107	country	IR	IRAN, ISLAMIC REPUBLIC OF
+108	country	IS	ICELAND
+109	country	IT	ITALY
+110	country	JE	JERSEY
+111	country	JM	JAMAICA
+112	country	JO	JORDAN
+113	country	JP	JAPAN
+114	country	KE	KENYA
+115	country	KG	KYRGYZSTAN
+116	country	KH	CAMBODIA
+117	country	KI	KIRIBATI
+118	country	KM	COMOROS
+119	country	KN	SAINT KITTS AND NEVIS
+120	country	KP	KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF
+121	country	KR	KOREA, REPUBLIC OF
+122	country	KW	KUWAIT
+123	country	KY	CAYMAN ISLANDS
+124	country	KZ	KAZAKHSTAN
+125	country	LA	LAO PEOPLE'S DEMOCRATIC REPUBLIC
+126	country	LB	LEBANON
+127	country	LC	SAINT LUCIA
+128	country	LI	LIECHTENSTEIN
+129	country	LK	SRI LANKA
+130	country	LR	LIBERIA
+131	country	LS	LESOTHO
+132	country	LT	LITHUANIA
+133	country	LU	LUXEMBOURG
+134	country	LV	LATVIA
+135	country	LY	LIBYAN ARAB JAMAHIRIYA
+136	country	MA	MOROCCO
+137	country	MC	MONACO
+138	country	MD	MOLDOVA, REPUBLIC OF
+139	country	ME	MONTENEGRO
+140	country	MF	SAINT MARTIN
+141	country	MG	MADAGASCAR
+142	country	MH	MARSHALL ISLANDS
+143	country	MK	MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
+144	country	ML	MALI
+145	country	MM	MYANMAR
+146	country	MN	MONGOLIA
+147	country	MO	MACAO
+148	country	MP	NORTHERN MARIANA ISLANDS
+149	country	MQ	MARTINIQUE
+150	country	MR	MAURITANIA
+151	country	MS	MONTSERRAT
+152	country	MT	MALTA
+153	country	MU	MAURITIUS
+154	country	MV	MALDIVES
+155	country	MW	MALAWI
+156	country	MX	MEXICO
+157	country	MY	MALAYSIA
+158	country	MZ	MOZAMBIQUE
+159	country	NA	NAMIBIA
+160	country	NC	NEW CALEDONIA
+161	country	NE	NIGER
+162	country	NF	NORFOLK ISLAND
+163	country	NG	NIGERIA
+164	country	NI	NICARAGUA
+165	country	NL	NETHERLANDS
+166	country	NO	NORWAY
+167	country	NP	NEPAL
+168	country	NR	NAURU
+169	country	NU	NIUE
+170	country	NZ	NEW ZEALAND
+171	country	OM	OMAN
+172	country	PA	PANAMA
+173	country	PE	PERU
+174	country	PF	FRENCH POLYNESIA
+175	country	PG	PAPUA NEW GUINEA
+176	country	PH	PHILIPPINES
+177	country	PK	PAKISTAN
+178	country	PL	POLAND
+179	country	PM	SAINT PIERRE AND MIQUELON
+180	country	PN	PITCAIRN
+181	country	PR	PUERTO RICO
+182	country	PS	PALESTINIAN TERRITORY, OCCUPIED
+183	country	PT	PORTUGAL
+184	country	PW	PALAU
+185	country	PY	PARAGUAY
+186	country	QA	QATAR
+187	country	RE	REUNION
+188	country	RO	ROMANIA
+189	country	RS	SERBIA
+190	country	RU	RUSSIAN FEDERATION
+191	country	RW	RWANDA
+192	country	SA	SAUDI ARABIA
+193	country	SB	SOLOMON ISLANDS
+194	country	SC	SEYCHELLES
+195	country	SD	SUDAN
+196	country	SE	SWEDEN
+197	country	SG	SINGAPORE
+198	country	SH	SAINT HELENA
+199	country	SI	SLOVENIA
+200	country	SJ	SVALBARD AND JAN MAYEN
+201	country	SK	SLOVAKIA
+202	country	SL	SIERRA LEONE
+203	country	SM	SAN MARINO
+204	country	SN	SENEGAL
+205	country	SO	SOMALIA
+206	country	SR	SURINAME
+207	country	ST	SAO TOME AND PRINCIPE
+208	country	SU	USSR
+209	country	SV	EL SALVADOR
+210	country	SY	SYRIAN ARAB REPUBLIC
+211	country	SZ	SWAZILAND
+212	country	TC	TURKS AND CAICOS ISLANDS
+213	country	TD	CHAD
+214	country	TF	FRENCH SOUTHERN TERRITORIES
+215	country	TG	TOGO
+216	country	TH	THAILAND
+217	country	TJ	TAJIKISTAN
+218	country	TK	TOKELAU
+219	country	TL	TIMOR-LESTE
+220	country	TM	TURKMENISTAN
+221	country	TN	TUNISIA
+222	country	TO	TONGA
+223	country	TR	TURKEY
+224	country	TT	TRINIDAD AND TOBAGO
+225	country	TV	TUVALU
+226	country	TW	TAIWAN, PROVINCE OF CHINA
+227	country	TZ	TANZANIA, UNITED REPUBLIC OF
+228	country	UA	UKRAINE
+229	country	UG	UGANDA
+230	country	UM	UNITED STATES MINOR OUTLYING ISLANDS
+231	country	US	UNITED STATES
+232	country	UY	URUGUAY
+233	country	UZ	UZBEKISTAN
+234	country	VA	HOLY SEE (VATICAN CITY STATE)
+235	country	VC	SAINT VINCENT AND THE GRENADINES
+236	country	VE	VENEZUELA
+237	country	VG	VIRGIN ISLANDS, BRITISH
+238	country	VI	VIRGIN ISLANDS, U.S.
+239	country	VN	VIET NAM
+240	country	VU	VANUATU
+241	country	WF	WALLIS AND FUTUNA
+242	country	WS	SAMOA
+243	country	YE	YEMEN
+244	country	YT	MAYOTTE
+245	country	YU	YUGOSLAVIA
+246	country	ZA	SOUTH AFRICA
+247	country	ZM	ZAMBIA
+248	country	ZW	ZIMBABWE
+249	country	ZZ	THIRD PARTY SUPPORT SHIPS

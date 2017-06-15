@@ -7,8 +7,8 @@ value	field_number	field_name	type	code _value	abbreviation	description	start_da
 3	1	balloon manufacturer	int (fk)	3	3	guangzhou _shuangyi (_china)		
 4	1	balloon manufacturer	int (fk)	4	4	chem_china _zhuzhou (_china)		
 5	2	balloon_type	int (fk)	0				
-6	3	burstpoint_altitude	numeric	n_a				
-7	4	burstpoint_pressure	numeric	n_a				
+6	3	burstpoint_altitude	numeric	NA				
+7	4	burstpoint_pressure	numeric	NA				
 8	5	correction algorithm for humidity measurements	int (fk)	0	0	no corrections		
 9	5	correction algorithm for humidity measurements	int (fk)	1	1	time lag correction provided by manufacturer		
 10	5	correction algorithm for humidity measurements	int (fk)	2	2	solar radiation correction provided by the manufacturer		
@@ -17,16 +17,16 @@ value	field_number	field_name	type	code _value	abbreviation	description	start_da
 13	6	direction of profile	int (fk)	0	0	upwards profile		
 14	6	direction of profile	int (fk)	1	1	downwards profile		
 15	6	direction of profile	int (fk)	2	2	horizontal profile		
-16	7	filling_weight	numeric	n_a				
+16	7	filling_weight	numeric	NA				
 17	8	geopotential height calculation	int(fk)	0	0	geopotential height calculated from pressure		
 18	8	geopotential height calculation	int(fk)	1	1	geopotential height calculated from _g_p_s height		
 19	8	geopotential height calculation	int(fk)	2	2	geopotential height calculated from radar height		
-20	9	gross_weight	numeric	n_a				
-21	10	include_descent	numeric	n_a				
+20	9	gross_weight	numeric	NA				
+21	10	include_descent	numeric	NA				
 22	11	instrument type for water temperature salinity profile	int (fk)	0				
 23	12	method of depth calculation	int (fk)	0	0	depth calculated using fall rate equation		
 24	12	method of depth calculation	int (fk)	1	1	depth calculate from water pressure / equation of state (of sea water)		
-25	13	payload	numeric	n_a		weight of payload (g)		
+25	13	payload	numeric	NA		weight of payload (g)		
 26	14	processing code	int (fk)	0	cc	calibration correction (of humidity sensors)		
 27	14	processing code	int (fk)	1	h_r_c	humidity radiation correction		
 28	14	processing code	int (fk)	2	or	outlier removal (remove temperature spikes)		

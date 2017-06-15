@@ -21,7 +21,7 @@ element_number	element_name	type	external_table	Description
 19	metadata_version	varchar		Version of metadata source
 20	metadata_id	varchar		Record number in metadata source (or other unique ID)
 21	metadata_report_date			Date metadata record was prepared
-22	number of _fields	numeric		Number of additional fields
+22	number_of_fields	numeric		Number of additional fields
 23	field	int[]	station_configuration_fields	Field to which following values correspond
 24	value	numeric[]		Values for specified fields
 25	comment	varchar		Any other comments / footnotes

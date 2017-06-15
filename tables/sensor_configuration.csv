@@ -6,7 +6,7 @@ element_number	element_name	type	external_table	Description
 2	manufacturer	int (fk)	manufacturer	Manufacturer of sensor / instrument
 3	sensor_type	int (fk)	sensor_type	Type of sensor, e.g. RS92 or anemometer
 4	sensor_model	int (fk)	sensor_model	Manufacturers designation / model number
-5	serial number	varchar		Serial number
+5	serial_number	varchar		Serial number
 6	observing_method	int (fk)	observing_method	Estimate, measured or computed value
 7	sampling_strategy	int (fk)	sampling_strategy	Continuous, discrete, event
 8	last_calibration_date	timestamp		Date sensor last calibrated

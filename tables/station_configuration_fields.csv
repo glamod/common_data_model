@@ -7,23 +7,23 @@ value	field	field_name	kind	code _value	abbreviation	Description
 3	4	a_w_s _model _version	int (fk)			TBD
 4	5	a_w_s _software	int (fk)			TBD
 5	6	a_w_s _software version	int (fk)			TBD
-6	7	cargo height	numeric	n_a		Height of cargo above max summer load line (m)
-7	8	distance of bridge from bow	numeric	n_a		Distance of bridge from bow of ship (m)
-8	9	draught	numeric	n_a		Draught of ship (m)
+6	7	cargo height	numeric	NA		Height of cargo above max summer load line (m)
+7	8	distance of bridge from bow	numeric	NA		Distance of bridge from bow of ship (m)
+8	9	draught	numeric	NA		Draught of ship (m)
 9	10	drogue type	int (fk)	0		Unspecified drogue
 10	10	drogue type	int (fk)	1		Holey sock
 11	10	drogue type	int (fk)	2		TRISTAR
 12	10	drogue type	int (fk)	3		Window shade
 13	10	drogue type	int (fk)	4		Parachute
 14	10	drogue type	int (fk)	5		Non-lagrangian sea anchor
-15	11	freeboard	numeric	n_a		Freeboard of ship
+15	11	freeboard	numeric	NA		Freeboard of ship
 16	12	lagrangian drifter drogue status	int (fk)	0		Drogue is detached
 17	12	lagrangian drifter drogue status	int (fk)	1		Drogue is attached
 18	12	lagrangian drifter drogue status	int (fk)	2		Drogue status unknown
-19	13	length overall of the ship, ignoring bulbous bow	numeric	n_a		Length of ship
+19	13	length overall of the ship, ignoring bulbous bow	numeric	NA		Length of ship
 20	14	log_book software and version	int (fk)			TBD
-21	15	maximum operating speed on normal service	numeric	n_a		maximum operating speed of platform (m/s)
-22	16	moulded breadth	numeric	n_a		breadth of ship
+21	15	maximum operating speed on normal service	numeric	NA		maximum operating speed of platform (m/s)
+22	16	moulded breadth	numeric	NA		breadth of ship
 23	17	other instruments	int (fk)	0	b_a_t	Bathythermometer.
 24	17	other instruments	int (fk)	1	b_t	Bathythermograph (towed).
 25	17	other instruments	int (fk)	2	f_l_m	Fluorometer.

@@ -41,7 +41,7 @@ value	field	parameter	field_name	type	code_value	Description
 37	8	all	sensor housing - ventilation	int (fk)	0	Artificial aspiration in use, constant flow at time of reading
 38	8	all	sensor housing - ventilation	int (fk)	1	Artificial aspiration in use, variable flow at time of reading
 39	8	all	sensor housing - ventilation	int (fk)	2	Natural  ventilation in use
-40	9	all	sensor housing - ventilation rate	numeric	n_a	cubic m per second
+40	9	all	sensor housing - ventilation rate	numeric	NA	cubic m per second
 41	10	all	sensor location - ship	int (fk)	0	Aft mast.
 42	10	all	sensor location - ship	int (fk)	1	Bridge wing
 43	10	all	sensor location - ship	int (fk)	2	Foremast yardarm
@@ -176,9 +176,9 @@ value	field	parameter	field_name	type	code_value	Description
 172	24	wind speed	sensor type - wind speed	int (fk)	9	Propeller vane.
 173	24	wind speed	sensor type - wind speed	int (fk)	10	Sonic anemometer.
 174	24	wind speed	sensor type - wind speed	int (fk)	11	Wind observation through ambiant noise (WOTAN)
-175	25	wind speed	sensor location - distance from bow	numeric	n_a	Distance of sensor from bow of ship (m)
-176	26	wind speed	sensor location - distance from center line	numeric	n_a	Distance of sensor from center line of ship (m)
-177	27	wind speed	sensor location - height above deck	numeric	n_a	Height of sensor above deck on which it is installed (m)
-178	28	sonde	weight	numeric	n_a	Weight of sensor (g)
+175	25	wind speed	sensor location - distance from bow	numeric	NA	Distance of sensor from bow of ship (m)
+176	26	wind speed	sensor location - distance from center line	numeric	NA	Distance of sensor from center line of ship (m)
+177	27	wind speed	sensor location - height above deck	numeric	NA	Height of sensor above deck on which it is installed (m)
+178	28	sonde	weight	numeric	NA	Weight of sensor (g)
 179	29	sonde	telemetry_sonde	int (fk)		
-180	30	all	software_version	varchar	n_a	
+180	30	all	software_version	varchar	NA	
