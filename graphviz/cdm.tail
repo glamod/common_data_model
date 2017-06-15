@@ -1,6 +1,6 @@
-ObservationsTable:ProfileConfigurationR -> ProfileConfiguration:head;
-ObservationsTable:SourceIDR -> SourceConfiguration:head;
-ObservationsTable:StationConfigurationR -> StationConfiguration:head;
-ObservationsTable:SensorConfigurationR -> SensorConfiguration:head;
+observations_table:profile_configurationR -> profile_configuration:head;
+observations_table:source_idR -> source_configuration:head;
+observations_table:station_configurationR -> station_configuration:head;
+observations_table:sensor_configurationR -> sensor_configuration:head;
 
 }

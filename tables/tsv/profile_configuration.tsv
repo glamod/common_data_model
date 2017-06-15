@@ -1,0 +1,11 @@
+element_number	element_name	kind	external_table	Description
+0	profile_id	varchar		
+1	report_id	varchar		
+2	standard_time	int (fk)		e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
+3	actual_time			Actual report / launch time
+4	processing codes	int (fk)	processing_code	 
+5	profile_number	numeric		e.g. Balloon Number
+6	number of fields	numeric		
+7	field	int[]	profile_configuration_fields	Fields to which the following values apply
+8	value	numeric[]		
+9	comment	varchar		

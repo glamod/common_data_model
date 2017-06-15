@@ -1,0 +1,29 @@
+# Description: Table defining additional information on data sources
+# Source:
+element_number	element_name	type	external_table	wigos (_m_c_o)	Description
+0	source_id	int 			Unique record ID for dataset
+1	product_id	varchar			ID for product
+2	product_name	varchar		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
+3	product_code	varchar			Abbreviations / product code, e.g. ICOADS, RS92-GDP
+4	product_version	varchar			Version number for dataset, e.g. Release 3.0.0
+5	product_level	int (fk)	product_level		Level of product
+6	description 	varchar			Description of dataset / comments
+7	product_references	varchar[]			References describing the dataset
+8	product_citation	varchar			Citation to use when using this product
+9	product_status	int (fk)	product_status		
+10	source_format 	int [fk]	source_format	7-07 (_m)	Original format for data
+11	source_format_version 	varchar		7-08 (_m)	Version of original data format
+12	source_file	varchar			Filename for data from source
+13	source_file_checksum	varchar			Checksum of source datafile
+14	data_centre 	int [fk]	data_centre	9-01 (_m)	Data centre from which data sourced
+15	data_centre_u_r_l 	varchar		9-01 (_m)	URL for data centre
+16	data_policy_licence 	int [fk]	data_policy_licence	9-02 (_m)	Data policy / licence
+17	p_i_name 	varchar		10-01 (_m)	Name of PI responsible for dataset
+18	p_iemail 	varchar		10-01 (_m)	Email address of PI
+19	p_iurl 	varchar		10-01 (_m)	URL for PI
+20	number_of_fileds	numeric			Number of additional fields
+21	field	int[]	source_configuration_fields		Fields to which following values apply
+22	value	numeric[]			additional values
+23	history	varchar			History of source
+24	comments	varchar			Additional comments / footnotes
+25	timestamp				Date record created

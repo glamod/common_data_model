@@ -1,0 +1,7 @@
+value	code	Description
+0	o_p_d	One observation per day (24 hour intervals).
+1	t_p_d	Two observations per day (12 hour intervals).
+2	f_p_d	Four observations per day (6 hour intervals).
+3	e_p_d	Eight observations per day (3 hour intervals).
+4	h_l_y	Hourly observations.
+5	i_r_r	Irregular observations.

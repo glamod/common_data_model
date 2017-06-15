@@ -1,9 +1,0 @@
-# Description: Table providing record of adjustments applied to the records / observations
-# Source:
-ElementNumber	ElementName	Type	Description
-0	AdjustmentID	int	Unique Id for adjustment
-1	ReportID	bigint	Report to which adjustment has been applied
-2	ElementNumber	int	Which element has been adjusted
-3	AdjustmentValue	numeric	Adjusted value = original value + adjustment value
-4	ReasonForAdjustment	varcahr	Reason for adjusting the data
-5	References	int[]	References describing adjustment process

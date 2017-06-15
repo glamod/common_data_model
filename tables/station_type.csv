@@ -1,0 +1,8 @@
+# Description: simplified description of station type
+# Source: WIGOS 3-04
+value	Description
+1	Land station
+2	Sea station
+3	Aircraft
+4	Satellite
+5	Underwater platform

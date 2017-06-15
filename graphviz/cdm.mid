@@ -1,6 +1,3 @@
-digraph cdm {
-node [color=white]
-rankdir=LR;
 node [color=white]
 observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
 <TR><TD COLSPAN="6" ALIGN="left" PORT="head"># Table: observations_table</TD></TR>
@@ -227,9 +224,3 @@ station_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" C
 <TR><TD PORT="valueL">24</TD><TD>value </TD><TD>numeric[] </TD><TD></TD><TD PORT="valueR">Values for specified fields </TD></TR>
 <TR><TD PORT="commentL">25</TD><TD>comment </TD><TD>varchar </TD><TD></TD><TD PORT="commentR">Any other comments / footnotes </TD></TR>
 </TABLE>>];
-observations_table:profile_configurationR -> profile_configuration:head;
-observations_table:source_idR -> source_configuration:head;
-observations_table:station_configurationR -> station_configuration:head;
-observations_table:sensor_configurationR -> sensor_configuration:head;
-
-}

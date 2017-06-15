@@ -1,0 +1,45 @@
+value	field	field_name	kind	code_value	description	Extended Description
+0	1	delayed_mode_format	int (fk)	0	i_m_m_t version just prior to version number being included	
+1	1	delayed_mode_format	int (fk)	1	i_m_m_t-1 (in effect from 2 _nov. 1994)	
+2	1	delayed_mode_format	int (fk)	2	i_m_m_t-2 (in effect from _jan. 2003)	
+3	1	delayed_mode_format	int (fk)	3	i_m_m_t-3 (in effect from _jan. 2007)	
+4	1	delayed_mode_format	int (fk)	4	i_m_m_t-4 (in effect from _jan. 2011)	
+5	1	delayed_mode_format	int (fk)	5	i_m_m_t-5 (in effect from _june 2012)	
+6	2	metadata_source	int (fk)	0	c_o_a_p_s	
+7	2	metadata_source	int (fk)	1	w_m_o _publication 47	
+8	3	metadata_source_format	int (fk)	1	output from digitisation project, semi-colon delimited format (1955)	
+9	3	metadata_source_format	int (fk)	2	output from digitisation project, semi-colon delimited format (1956)	
+10	3	metadata_source_format	int (fk)	3	output from digitisation project, semi-colon delimited format (1957 - 1967)	
+11	3	metadata_source_format	int (fk)	4	output from digitisation project, semi-colon delimited format (1968 - 1969)	
+12	3	metadata_source_format	int (fk)	5	fixed format (1970 - 1004)	
+13	3	metadata_source_format	int (fk)	6	semi-colon delimited format (1995 - 2001)	
+14	3	metadata_source_format	int (fk)	7	semi-colon delimited format (2002 - 2007 q1)	
+15	3	metadata_source_format	int (fk)	8	semi-colon delimited format (2007 - 2008)	
+16	3	metadata_source_format	int (fk)	9	semi-colon delimited format (2009 - 2014)	
+17	4	observation_source_type	int (fk)	0	unknown	
+18	4	observation_source_type	int (fk)	1	delayed mode - logbook (paper)	
+19	4	observation_source_type	int (fk)	2	real time - national telecommunication channels	
+20	4	observation_source_type	int (fk)	3	delayed mode - national publications	
+21	4	observation_source_type	int (fk)	4	delayed mode - logbook (electronic)	
+22	4	observation_source_type	int (fk)	5	real time - global telecommunication system (_g_t_s)	
+23	4	observation_source_type	int (fk)	6	delayed mode - _international publications	
+24	5	real_time_format	int (fk)	0	previous to _f_m24-_v	
+25	5	real_time_format	int (fk)	1	f_m 24-_v	
+26	5	real_time_format	int (fk)	2	f_m 24-_v_i _ext.	
+27	5	real_time_format	int (fk)	3	f_m 13-_v_i_i	
+28	5	real_time_format	int (fk)	4	f_m 13-_v_i_i_i	
+29	5	real_time_format	int (fk)	5	f_m 13-_v_i_i_i _ext.	
+30	5	real_time_format	int (fk)	6	f_m 12-_i_x	
+31	5	real_time_format	int (fk)	7	f_m 13-_i_x _ext.	
+32	5	real_time_format	int (fk)	8	f_m 13-_x	
+33	5	real_time_format	int (fk)	9	f_m 13-_x_i	
+34	5	real_time_format	int (fk)	10	f_m 13-_x_i_i _ext.	
+35	5	real_time_format	int (fk)	11	f_m 13-_x_i_i_i	
+36	5	real_time_format	int (fk)	12	f_m 13-_x_i_v _ext.	
+37	6	source_format	int (fk)	0	i_m_m_a - _version 0	
+38	6	source_format	int (fk)	1	i_m_m_a - _version 1	
+39	7	source_deck	int (fk)		i_c_o_a_d_s _source deck	
+40	8	source_id	int (fk)		i_c_o_a_d_s _source _id	
+41	9	product_level	int (fk)	2	data read from original data file	
+42	10	product_status	int (fk)	1	data approved	Data exist, read from chache, PTU + altitude columns available, all GC25 tests ok, all uncertainties as expected
+43	11	product_org_resolutiuon	numeric		original time resolution of data	

@@ -11,10 +11,10 @@ endif
 set tablename = `echo $file | cut -d '.' -f1`
 
 # get number of columns based on header row
-set ncols = `awk 'BEGIN {FS="\t"} ; /^Value/ || /^ElementNumber/ {print NF}' $file`
+set ncols = `awk 'BEGIN {FS="\t"} ; /^value/ || /^element_number/ {print NF}' $file`
 
 # get column containing the external table
-set extTable = `cat $file | grep "ExternalTable" | awk -F"\t" '{for(i = 1; i <=NF ; i++){if ( $i ~ /ExternalTable/ ){print i} }}'`
+set extTable = `cat $file | grep "external_table" | awk -F"\t" '{for(i = 1; i <=NF ; i++){if ( $i ~ /external_table/ ){print i} }}'`
 
 # print out rows
 echo "digraph $tablename {" > ${tablename}.gv
@@ -25,8 +25,8 @@ echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/DavidBer
 awk -v ncols="$ncols" -v extcolumn="$extTable" '\
 BEGIN { FS="\t"  } ; \
   /^#/ {print "<TR><TD ALIGN=\"left\" COLSPAN=\""ncols"\">"$0"</TD></TR>"} \
-  /^Value/ || /^ElementNumber/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
-  /^[^#]/ && /^[^Value]/ && /^[^ElementNumber]/ { \
+  /^value/ || /^element_number/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
+  /^[^#]/ && /^[^value]/ && /^[^element_number]/ { \
       {printf "<TR>"};{ \
       printf "<TD PORT=\"%sL\">%s</TD>",$2, $1 \
       for(i=2;i<=NF;i++){ \

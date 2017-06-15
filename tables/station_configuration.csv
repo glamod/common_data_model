@@ -1,0 +1,29 @@
+# Description:
+# Source: 
+element_number	element_name	type	external_table	Description
+0	station_primary_id	varchar		Primary (WMO) ID for station
+1	station_primary_id_scheme	int (fk)	id_scheme	Scheme used for primary ID
+2	station_secondary_id	varchar		Secondary (local) ID for station
+3	station_secondary_id_scheme	int (fk)	id_scheme	Scheme used for secondary ID
+4	station_name	varchar		Name of station (e.g. Tateno)
+5	station_abbreviation	varchar		Abbreviation of station name (e.g. TAT)
+6	start_date			Date that the station first started reporting
+7	end_date			Last data the station reported
+8	station_type	int (fk)	station_type	Type of reporting station
+9	platform_type	int (fk)	platform_type	Generic type of observing platform
+10	platform_sub_type	int (fk)	platform_sub_type	Specific type of observing platform
+11	operating_institute	int (fk)	institute	Institute operating the station
+12	operating_territory	int (fk)	sub_region	Sub-region where station is located or country of registry for mobile station
+13	observing_frequency		observing_frequency	Typical frequency of observations for this station
+14	telecommunication_method	int (fk)	communication_method	Method used to report observations
+15	station_automation	int (fk)	automation_status	Whether station is automated, manual or mixed
+16	measuring_system_model	int (fk)	measuring_system_model	Station / AWS model type
+17	measuring_system_id	varchar		ID or serial number of measuring system
+18	metadata_source	int (fk)	metadata_source	Source of metadata for this station
+19	metadata_version	varchar		Version of metadata source
+20	metadata_id	varchar		Record number in metadata source (or other unique ID)
+21	metadata_report_date			Date metadata record was prepared
+22	number of _fields	numeric		Number of additional fields
+23	field	int[]	station_configuration_fields	Field to which following values correspond
+24	value	numeric[]		Values for specified fields
+25	comment	varchar		Any other comments / footnotes

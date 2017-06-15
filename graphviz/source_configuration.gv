@@ -1,0 +1,36 @@
+digraph source_configuration {
+node [color=white]
+source_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="6" ALIGN="left" PORT="head"># Table: source_configuration</TD></TR>
+<TR><TD COLSPAN="6" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/source_configuration.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Description: Table defining additional information on data sources</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="6"># Source:</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_number</TD><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">wigos (_m_c_o)</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD PORT="source_idL">0</TD><TD>source_id </TD><TD>int </TD><TD></TD><TD></TD><TD PORT="source_idR">Unique record ID for dataset </TD></TR>
+<TR><TD PORT="product_idL">1</TD><TD>product_id </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="product_idR">ID for product </TD></TR>
+<TR><TD PORT="product_nameL">2</TD><TD>product_name </TD><TD>varchar </TD><TD></TD><TD PORT="product_nameR">Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, <BR/>RS92 GRUAN Data Product </TD></TR>
+<TR><TD PORT="product_codeL">3</TD><TD>product_code </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="product_codeR">Abbreviations / product code, e.g. ICOADS, RS92-GDP </TD></TR>
+<TR><TD PORT="product_versionL">4</TD><TD>product_version </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="product_versionR">Version number for dataset, e.g. Release 3.0.0 </TD></TR>
+<TR><TD PORT="product_levelL">5</TD><TD>product_level </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/product_level.tsv"><FONT color="blue">product_level </FONT></TD><TD></TD><TD PORT="product_levelR">Level of product </TD></TR>
+<TR><TD PORT="description L">6</TD><TD>description </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="description R">Description of dataset / comments </TD></TR>
+<TR><TD PORT="product_referencesL">7</TD><TD>product_references </TD><TD>varchar[] </TD><TD></TD><TD></TD><TD PORT="product_referencesR">References describing the dataset </TD></TR>
+<TR><TD PORT="product_citationL">8</TD><TD>product_citation </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="product_citationR">Citation to use when using this product </TD></TR>
+<TR><TD PORT="product_statusL">9</TD><TD>product_status </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/product_status.tsv"><FONT color="blue">product_status </FONT></TD><TD></TD><TD PORT="product_statusR"></TD></TR>
+<TR><TD PORT="source_format L">10</TD><TD>source_format </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/source_format.tsv"><FONT color="blue">source_format </FONT></TD><TD>7-07 (_m) </TD><TD PORT="source_format R">Original format for data </TD></TR>
+<TR><TD PORT="source_format_version L">11</TD><TD>source_format_version </TD><TD>varchar </TD><TD></TD><TD>7-08 (_m) </TD><TD PORT="source_format_version R">Version of original data format </TD></TR>
+<TR><TD PORT="source_fileL">12</TD><TD>source_file </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="source_fileR">Filename for data from source </TD></TR>
+<TR><TD PORT="source_file_checksumL">13</TD><TD>source_file_checksum </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="source_file_checksumR">Checksum of source datafile </TD></TR>
+<TR><TD PORT="data_centre L">14</TD><TD>data_centre </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/data_centre.tsv"><FONT color="blue">data_centre </FONT></TD><TD>9-01 (_m) </TD><TD PORT="data_centre R">Data centre from which data sourced </TD></TR>
+<TR><TD PORT="data_centre_u_r_l L">15</TD><TD>data_centre_u_r_l </TD><TD>varchar </TD><TD></TD><TD>9-01 (_m) </TD><TD PORT="data_centre_u_r_l R">URL for data centre </TD></TR>
+<TR><TD PORT="data_policy_licence L">16</TD><TD>data_policy_licence </TD><TD>int [fk] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/data_policy_licence.tsv"><FONT color="blue">data_policy_licence </FONT></TD><TD>9-02 (_m) </TD><TD PORT="data_policy_licence R">Data policy / licence </TD></TR>
+<TR><TD PORT="p_i_name L">17</TD><TD>p_i_name </TD><TD>varchar </TD><TD></TD><TD>10-01 (_m) </TD><TD PORT="p_i_name R">Name of PI responsible for dataset </TD></TR>
+<TR><TD PORT="p_iemail L">18</TD><TD>p_iemail </TD><TD>varchar </TD><TD></TD><TD>10-01 (_m) </TD><TD PORT="p_iemail R">Email address of PI </TD></TR>
+<TR><TD PORT="p_iurl L">19</TD><TD>p_iurl </TD><TD>varchar </TD><TD></TD><TD>10-01 (_m) </TD><TD PORT="p_iurl R">URL for PI </TD></TR>
+<TR><TD PORT="number_of_filedsL">20</TD><TD>number_of_fileds </TD><TD>numeric </TD><TD></TD><TD></TD><TD PORT="number_of_filedsR">Number of additional fields </TD></TR>
+<TR><TD PORT="fieldL">21</TD><TD>field </TD><TD>int[] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/source_configuration_fields.tsv"><FONT color="blue">source_configuration_fields </FONT></TD><TD></TD><TD PORT="fieldR">Fields to which following values apply </TD></TR>
+<TR><TD PORT="valueL">22</TD><TD>value </TD><TD>numeric[] </TD><TD></TD><TD></TD><TD PORT="valueR">additional values </TD></TR>
+<TR><TD PORT="historyL">23</TD><TD>history </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="historyR">History of source </TD></TR>
+<TR><TD PORT="commentsL">24</TD><TD>comments </TD><TD>varchar </TD><TD></TD><TD></TD><TD PORT="commentsR">Additional comments / footnotes </TD></TR>
+<TR><TD PORT="timestampL">25</TD><TD>timestamp </TD><TD></TD><TD></TD><TD></TD><TD PORT="timestampR">Date record created </TD></TR>
+</TABLE>>];
+}

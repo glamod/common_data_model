@@ -1,0 +1,7 @@
+value	Description
+0	Timestamp valid, time reported to nearest second
+1	Timestamp valid, time reported to nearest minute
+2	Timestamp valid, time  reported to nearest hour
+3	Time missing, date valid. Report set to local midday
+4	Day missing
+5	Invalid date / time

@@ -1,0 +1,25 @@
+# Description: Significance of observed value, e.g. instantaneous value, statistic over specified period, tendancy over specified period
+# Source: BUFR 0 08 023, BUFR 0 10 063
+value	Description
+0	Maximum value over indicated period
+1	Minimum value over indicated period
+2	Mean value over indicated period
+3	Median value over indicated period
+4	Modal value over indicated period
+5	Mean absolute error over indicated period
+6	Best estimate of standard deviation (N-1) of observed parameter over indicated period
+7	Standard deviation (N) of observed parameter over indicated period
+8	Harmonic mean of observed parameter over indicated period
+9	Root mean square vector error of observed parameter over indicated period
+10	root mean square of observed parameter over indicated period
+11	Vector mean of observed parameter over indicated period
+12	Instantaneous value of observed parameter
+13	Observed tendancy: Increasing, then decreasing; Observed parameter the same or higher than three hours ago
+14	Observed tendancy: Increasing, then steady; or increasing, then increasing more slowly
+15	Observed tendancy: Increasing (steadily or unsteadily)
+16	Observed tendancy: Decreasing or steady, then increasing; or increasing, then increasing more rapidly
+17	Observed tendancy: Steady; Observed parameter the same as three hours ago
+18	Observed tendancy: Decreasing, then increasing;  Observed parameter the same or lower than three hours ago
+19	Observed tendancy: Decreasing, then steady; or decreasing, then decreasing more slowly
+20	Observed tendancy: Decreasing (steadily or unsteadily)
+21	Observed tendancy: Steady or increasing, then decreasing; or decreasing, then decreasing more rapidly
