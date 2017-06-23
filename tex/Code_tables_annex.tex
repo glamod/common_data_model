@@ -1,0 +1,35 @@
+\documentclass{article}
+
+
+\usepackage{pgfplotstable} 
+
+
+\title {Copernicus Climate Change Service - 311a Lot 2\\Defining a common data model}
+\author {David I. Berry}
+\date {23 June 2017}
+\begin{document}
+\maketitle
+\section {Summary}
+\section {Introduction}
+
+\section {Observations Table}
+\section {Configuration Tables}
+\section {Decode tables}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Data Policy Licence}
+    \label{table1}
+    \pgfplotstabletypeset[
+        col sep=tab,
+        columns={value,name,Description}, 
+        columns/name/.style={string type, column type=l, string replace*={_}{}},
+        columns/Description/.style={string type, column type=l, string replace*={_}{}}
+        ] {/users/dyb/data_policy_licence.tsv} 
+  \end{center}
+\end{table}
+
+
+\section {References}
+
+\end{document}
