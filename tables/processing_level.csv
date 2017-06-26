@@ -1,6 +1,6 @@
 # Description: Processing level applied to observation
 # Source: WIGOS 7-06
-value	Description
+Value	Description
 0	Unknown
 1	Raw
 2	Level 0

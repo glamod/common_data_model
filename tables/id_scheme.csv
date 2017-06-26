@@ -1,6 +1,6 @@
 # Description: ID Scheme in use of ID element
 # Source: ICOADS, other ...
-value	Description
+Value	Description
 0	ICOADS: ID present, but unknown type
 1	ICOADS: ship, Ocean Station Vessel (OSV), or ice station callsign
 2	ICOADS: generic ID (e.g., SHIP, BUOY, RIGG, PLAT)

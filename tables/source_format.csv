@@ -1,6 +1,6 @@
 # Description: Data format from source prior to ingestion
 # Source:
-value	Description
+Value	Description
 0	IMMA
 1	NetCDF (GRUAN)
 2	NetCDF (Other)

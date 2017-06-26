@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={6in, 9.5in}]{geometry}
+\usepackage{pgfplotstable} 
+\usepackage{longtable}
+\usepackage{booktabs}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{showframe}
+
+
+
+\pgfplotstableset{
+  begin table=\begin{longtable},
+  end table=\end{longtable},
+}
+
+
+\title {Copernicus Climate Change Service - 311a Lot 2\\Defining a common data model}
+\author {David I. Berry}
+\date {23 June 2017}
+\begin{document}
+\maketitle
+\section {Decode tables}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Communication method}
+    \pgfplotstabletypeset[
+        col sep=tab,
+        header=true,
+        every head row/.style={
+            before row=\toprule\toprule, after row=\bottomrule\bottomrule\endhead
+        }, 
+        every last row/.style={
+            after row=\bottomrule
+        },
+        after row=\hline,
+        columns={Value,Description},
+        columns/Value/.style={
+            string type, 
+            column type=l, 
+            string replace*={_}{}
+        },
+        columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = p{0.6\textwidth}
+        }]{/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/communication_method.2.csv}
+  \end{center}
+\end{table}
+
+\end{document}

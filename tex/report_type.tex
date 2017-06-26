@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={6in, 9.5in}]{geometry}
+\usepackage{pgfplotstable} 
+\usepackage{longtable}
+\usepackage{booktabs}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+
+
+\pgfplotstableset{
+begin table=\begin{longtable},
+end table=\end{longtable},
+}
+
+
+\title {Copernicus Climate Change Service - 311a Lot 2\\Defining a common data model}
+\author {David I. Berry}
+\date {23 June 2017}
+\begin{document}
+\maketitle
+\section {Decode tables}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Report type}
+    \pgfplotstabletypeset[
+        col sep=tab, string type,
+        header=true,
+        every head row/.style={before row=\toprule\toprule, after row=\bottomrule\bottomrule\endhead}, 
+        every last row/.style={after row=\bottomrule},
+        after row=\hline,
+        columns={Value,Description},
+        columns/Value/.style={string type, column type=l, string replace*={_}{}},
+        columns/Description/.style={string type, column type=p{0.5\textwidth}, string replace*={_}{}}
+    ]{/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/report_type.csv}
+  \end{center}
+\end{table}
+
+\end{document}
