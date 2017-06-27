@@ -1,0 +1,11 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Sensor configuration}
+            \label{tab:DataTable}\\
+            % Initial column headers

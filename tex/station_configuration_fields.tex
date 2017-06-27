@@ -1,0 +1,78 @@
+\begin{landscape}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Station configuration fields}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Value}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Field}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Kind}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Code Value}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Abbreviation}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{7}{c}{Table \thetable\ Station configuration fields (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Value}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Field}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Kind}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Code Value}} & 
+\multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Abbreviation}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{7}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{7}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/Field/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/FieldName/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/Kind/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/Code Value/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/Abbreviation/.style={
+            string type, 
+            column type= V{1.116667 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/station_configuration_fields.csv}
+\end{landscape}

@@ -1,0 +1,92 @@
+\begin{landscape}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Profile configuration fields}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Value}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{FieldNumber}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Type}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Code Value}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Abbreviation}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Description}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{StartDate}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{EndDate}} \\ \hline\hline \endfirsthead
+            \multicolumn{9}{c}{Table \thetable\ Profile configuration fields (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Value}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{FieldNumber}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Type}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Code Value}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Abbreviation}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Description}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{StartDate}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{EndDate}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{9}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{9}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/FieldNumber/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/FieldName/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/Type/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/Code Value/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/Abbreviation/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/StartDate/.style={
+            string type, 
+            column type= V{0.837500 in}, 
+            string replace*={_}{}
+        },
+    columns/EndDate/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/profile_configuration_fields.csv}
+\end{landscape}

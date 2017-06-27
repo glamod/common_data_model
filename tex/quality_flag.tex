@@ -1,7 +1,7 @@
 \pgfplotstabletypeset[
     empty header,
     begin table=\begin{longtable},
-    every head row/.style={output empty row},
+    %every head row/.style={output empty row},
     every nth row={1}{before row=\hline},
     every first row/.append style={
         before row={%
@@ -9,10 +9,12 @@
             \caption{Quality flag}
             \label{tab:DataTable}\\
             % Initial column headers
-            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in}} { \textbf{Value}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
             \multicolumn{2}{c}{Table \thetable\ Quality flag (cont.)} \\
             % column headers on additional pages
-            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in} } { \textbf{Value}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{2}{r}{{Continued on next page}} \\
             \endfoot
@@ -28,12 +30,12 @@
     string type,
     columns/Value/.style={
             string type, 
-            column type= V{2 in}, 
+            column type= V{3.300000 in}, 
             string replace*={_}{}
         },
     columns/Description/.style={
             string type, 
             string replace*={_}{},
-            column type = V{4 in}
+            column type = V{3.000000 in}
         }
-    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/quality_flag.csv}
+    ]{/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/quality_flag.csv}

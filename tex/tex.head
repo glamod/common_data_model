@@ -3,6 +3,7 @@
 \usepackage{longtable}
 \usepackage{varwidth}
 \usepackage{array}
+\usepackage{lscape}
 \usepackage[top=2 cm,bottom=2cm]{geometry} %For demo purposes
 \begin{document}
 \pgfplotstableset{
