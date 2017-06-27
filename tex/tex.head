@@ -1,24 +1,16 @@
-\documentclass{article}
-
-\usepackage[a4paper, total={6in, 9.5in}]{geometry}
-\usepackage{pgfplotstable} 
+\documentclass[a4paper]{article}
+\usepackage{pgfplotstable}
 \usepackage{longtable}
-\usepackage{booktabs}
-\renewcommand{\familydefault}{\sfdefault}
-
-
-
-
-\pgfplotstableset{
-begin table=\begin{longtable},
-end table=\end{longtable},
-}
-
-
-\title {Copernicus Climate Change Service - 311a Lot 2\\Defining a common data model}
-\author {David I. Berry}
-\date {23 June 2017}
+\usepackage{varwidth}
+\usepackage{array}
+\usepackage[top=2 cm,bottom=2cm]{geometry} %For demo purposes
 \begin{document}
-\maketitle
-\section {Decode tables}
-
+\pgfplotstableset{
+empty header/.style={
+           typeset cell/.append code={%
+               \ifnum\pgfplotstablerow=-1 %
+                   \pgfkeyssetvalue{/pgfplots/table/@cell content}{}%
+               \fi
+           }
+       }
+   }

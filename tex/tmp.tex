@@ -1,0 +1,1376 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Application area}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Application area (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/application_area.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Automation status}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Automation status (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/automation_status.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Calibration status}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Calibration status (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/calibration_status.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Communication method}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Communication method (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/communication_method.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Conversion factor}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{description}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Implementation}} \\ \hline\hline \endfirsthead
+            \multicolumn{3}{c}{Table \thetable\ Conversion factor (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{description}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Implementation}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{3}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{3}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/description/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Implementation/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/conversion_factor.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Data policy licence}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{name}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{3}{c}{Table \thetable\ Data policy licence (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{name}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{3}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{3}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/name/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/data_policy_licence.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Duplicate status}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Duplicate status (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/duplicate_status.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Events at station}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Events at station (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/events_at_station.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Id scheme}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Id scheme (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/id_scheme.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Instrument exposure quality}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Instrument exposure quality (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/instrument_exposure_quality.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Location method}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Location method (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/location_method.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Location quality}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Location quality (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/location_quality.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Meaning of time stamp}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{name}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{3}{c}{Table \thetable\ Meaning of time stamp (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{name}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{3}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{3}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/name/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/meaning_of_time_stamp.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Measuring system model}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Measuring system model (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/measuring_system_model.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Method of estimating uncertainty}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Method of estimating uncertainty (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/method_of_estimating_uncertainty.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Observation code table}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{code _table _scheme}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{code _table _id}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Code Table Name}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ Observation code table (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{code _table _scheme}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{code _table _id}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Code Table Name}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/code _table _scheme/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/code _table _id/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Code Table Name/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observation_code_table.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Observation value significance}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Observation value significance (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observation_value_significance.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Observing frequency}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{Code}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{3}{c}{Table \thetable\ Observing frequency (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{Code}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{3}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{3}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Code/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observing_frequency.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Observing programme}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{Abbreviation}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{Description}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Sponsor}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ Observing programme (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{Abbreviation}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{Description}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Sponsor}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Abbreviation/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Sponsor/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observing_programme.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Platform type}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Platform type (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/platform_type.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Processing code}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Processing code (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/processing_code.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Processing level}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Processing level (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/processing_level.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Quality flag}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Quality flag (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/quality_flag.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Report processing code}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Report processing code (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/report_processing_code.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Report processing level}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Report processing level (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/report_processing_level.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Report type}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Report type (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/report_type.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Sea level datum}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Sea level datum (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/sea_level_datum.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Source format}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Source format (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/source_format.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Spatial representativeness}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Spatial representativeness (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/spatial_representativeness.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Station type}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Station type (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/station_type.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Sub region}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{Type}} &\multicolumn{1} { > {\centering}V{2 in}} { \textbf{Code}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Subregion}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ Sub region (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{Type}} &\multicolumn{1} { > {\centering}V{2 in} } { \textbf{Code}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Subregion}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Type/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Code/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Subregion/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/sub_region.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Time quality}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Time quality (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/time_quality.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Time reference}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Time reference (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/time_reference.csv}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Update frequency}
+            \label{tab:DataTable}\\
+            % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in}} { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ Update frequency (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{2 in} } { \textbf{Value}} & \multicolumn{1} { > {\centering} V{4 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/Value/.style={
+            string type, 
+            column type= V{2 in}, 
+            string replace*={_}{}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{},
+            column type = V{4 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/update_frequency.csv}
