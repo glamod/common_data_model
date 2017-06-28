@@ -1,38 +1,38 @@
 # Description:
 # Source:
-Value	FieldNumber	FieldName	Type	Code Value	Abbreviation	Description	StartDate	EndDate
-0	1	Balloon manufacturer	int (fk)	0	0	Kaysam		
-1	1	Balloon manufacturer	int (fk)	1	1	Totex		
-2	1	Balloon manufacturer	int (fk)	2	2	KKS		
-3	1	Balloon manufacturer	int (fk)	3	3	Guangzhou Shuangyi (China)		
-4	1	Balloon manufacturer	int (fk)	4	4	ChemChina Zhuzhou (China)		
-5	2	BalloonType	int (fk)	0				
-6	3	BurstpointAltitude	numeric	NA				
-7	4	BurstpointPressure	numeric	NA				
-8	5	Correction algorithm for humidity measurements	int (fk)	0	0	No corrections		
-9	5	Correction algorithm for humidity measurements	int (fk)	1	1	Time lag correction provided by manufacturer		
-10	5	Correction algorithm for humidity measurements	int (fk)	2	2	Solar radiation correction provided by the manufacturer		
-11	5	Correction algorithm for humidity measurements	int (fk)	3	3	Solar radiation and time lag correction provided by the manufacturer		
-12	5	Correction algorithm for humidity measurements	int (fk)	4	7	GRUAN solar radiation and time lag		
-13	6	Direction of profile	int (fk)	0	0	Upwards profile		
-14	6	Direction of profile	int (fk)	1	1	Downwards profile		
-15	6	Direction of profile	int (fk)	2	2	Horizontal profile		
-16	7	FillingWeight	numeric	NA				
-17	8	Geopotential height calculation	int(fk)	0	0	Geopotential height calculated from pressure		
-18	8	Geopotential height calculation	int(fk)	1	1	Geopotential height calculated from GPS height		
-19	8	Geopotential height calculation	int(fk)	2	2	Geopotential height calculated from radar height		
-20	9	GrossWeight	numeric	NA				
-21	10	IncludeDescent	numeric	NA				
-22	11	Instrument type for water temperature salinity profile	int (fk)	0				
-23	12	Method of depth calculation	int (fk)	0	0	Depth calculated using fall rate equation		
-24	12	Method of depth calculation	int (fk)	1	1	Depth calculate from water pressure / equation of state (of sea water)		
-25	13	Payload	numeric	NA		Weight of payload (g)		
-26	14	Processing code	int (fk)	0	cc	Calibration correction (of humidity sensors)		
-27	14	Processing code	int (fk)	1	HRC	Humidity radiation correction		
-28	14	Processing code	int (fk)	2	or	Outlier removal (remove temperature spikes)		
-29	14	Processing code	int (fk)	3	pGPS	Combination of pressure and GPS		
-30	14	Processing code	int (fk)	4	TL	Time-lag correction		
-31	14	Processing code	int (fk)	5	TRC	Temperature radiation correction		
+Value	Field number	Field name	Type	Code Value	Abbreviation	Description	StartDate	EndDate
+0	1	Balloon manufacturer	int (fk)	0	0	Kaysam	NA	NA
+1	1	Balloon manufacturer	int (fk)	1	1	Totex	NA	NA
+2	1	Balloon manufacturer	int (fk)	2	2	KKS	NA	NA
+3	1	Balloon manufacturer	int (fk)	3	3	Guangzhou Shuangyi (China)	NA	NA
+4	1	Balloon manufacturer	int (fk)	4	4	ChemChina Zhuzhou (China)	NA	NA
+5	2	BalloonType	int (fk)	0	NA	NA	NA	NA
+6	3	BurstpointAltitude	numeric	NA	NA	NA	NA	NA
+7	4	BurstpointPressure	numeric	NA	NA	NA	NA	NA
+8	5	Correction algorithm for humidity measurements	int (fk)	0	0	No corrections	NA	NA
+9	5	Correction algorithm for humidity measurements	int (fk)	1	1	Time lag correction provided by manufacturer	NA	NA
+10	5	Correction algorithm for humidity measurements	int (fk)	2	2	Solar radiation correction provided by the manufacturer	NA	NA
+11	5	Correction algorithm for humidity measurements	int (fk)	3	3	Solar radiation and time lag correction provided by the manufacturer	NA	NA
+12	5	Correction algorithm for humidity measurements	int (fk)	4	7	GRUAN solar radiation and time lag	NA	NA
+13	6	Direction of profile	int (fk)	0	0	Upwards profile	NA	NA
+14	6	Direction of profile	int (fk)	1	1	Downwards profile	NA	NA
+15	6	Direction of profile	int (fk)	2	2	Horizontal profile	NA	NA
+16	7	FillingWeight	numeric	NA	NA	NA	NA	NA
+17	8	Geopotential height calculation	int(fk)	0	0	Geopotential height calculated from pressure	NA	NA
+18	8	Geopotential height calculation	int(fk)	1	1	Geopotential height calculated from GPS height	NA	NA
+19	8	Geopotential height calculation	int(fk)	2	2	Geopotential height calculated from radar height	NA	NA
+20	9	GrossWeight	numeric	NA	NA	NA	NA	NA
+21	10	IncludeDescent	numeric	NA	NA	NA	NA	NA
+22	11	Instrument type for water temperature salinity profile	int (fk)	0	NA	NA	NA	NA
+23	12	Method of depth calculation	int (fk)	0	0	Depth calculated using fall rate equation	NA	NA
+24	12	Method of depth calculation	int (fk)	1	1	Depth calculate from water pressure / equation of state (of sea water)	NA	NA
+25	13	Payload	numeric	NA	NA	Weight of payload (g)	NA	NA
+26	14	Processing code	int (fk)	0	cc	Calibration correction (of humidity sensors)	NA	NA
+27	14	Processing code	int (fk)	1	HRC	Humidity radiation correction	NA	NA
+28	14	Processing code	int (fk)	2	or	Outlier removal (remove temperature spikes)	NA	NA
+29	14	Processing code	int (fk)	3	pGPS	Combination of pressure and GPS	NA	NA
+30	14	Processing code	int (fk)	4	TL	Time-lag correction	NA	NA
+31	14	Processing code	int (fk)	5	TRC	Temperature radiation correction	NA	NA
 32	15	Radiosonde / sounding system used	int (fk)	0	00	Reserved	NULL	30/06/2007
 33	15	Radiosonde / sounding system used	int (fk)	1	01	iMet-1-BB (United States)	01/01/1900	30/06/2007
 34	15	Radiosonde / sounding system used	int (fk)	2	01	Not vacant	30/06/2007	NULL
@@ -216,65 +216,65 @@ Value	FieldNumber	FieldName	Type	Code Value	Abbreviation	Description	StartDate	E
 212	15	Radiosonde / sounding system used	int (fk)	180	97	Not vacant	30/06/2007	NULL
 213	15	Radiosonde / sounding system used	int (fk)	181	98	BAT-16G (South Africa)	01/01/1900	30/06/2007
 214	15	Radiosonde / sounding system used	int (fk)	182	98	Not vacant	30/06/2007	NULL
-215	15	Radiosonde / sounding system used	int (fk)	183	99	BAT-4G (South Africa)		
-216	15	Radiosonde / sounding system used	int (fk)	184	99	Not vacant		
-217	15	Radiosonde / sounding system used	int (fk)	185				
-218	16	Radiosonde completeness	int(fk)	0	1	Pressure only radiosonde		
-219	16	Radiosonde completeness	int(fk)	1	2	Pressure only radiosonde plus trasnponder		
-220	16	Radiosonde completeness	int(fk)	2	3	Pressure only radiosonde plus radar reflector		
-221	16	Radiosonde completeness	int(fk)	3	4	No-pressure radiosonde plus transponder		
-222	16	Radiosonde completeness	int(fk)	4	5	No-pressure radiosonde plus radar reflector		
-223	17	Radiosonde computational method	int(fk)	0	TBD			
-224	18	Radiosonde configuration	int(fk)	0		bit flag		
-225	19	Radiosonde ground receiving system	int(fk)	0	0	InterMet IMS 2000		
-226	19	Radiosonde ground receiving system	int(fk)	1	1	InterMet IMS 1500C		
-227	19	Radiosonde ground receiving system	int(fk)	2	2	Shanghai GTC1		
-228	19	Radiosonde ground receiving system	int(fk)	3	3	Nanjing GTC2		
-229	19	Radiosonde ground receiving system	int(fk)	4	4	Nanjing GFE(L)1		
-230	19	Radiosonde ground receiving system	int(fk)	5	5	MARL-A radar		
-231	19	Radiosonde ground receiving system	int(fk)	6	6	VEKTOR-M radar		
-232	20	Radiosonde type (see WMO3685)	int(fk)	0		Common code table C2		
-233	21	Reason for termination	int(fk)	0				
-234	22	Solar and infrared radiation correction	int(fk)	0	0	No correction		
-235	22	Solar and infrared radiation correction	int(fk)	1	1	CIMO solar corrected and CIMO infrared corrected		
-236	22	Solar and infrared radiation correction	int(fk)	2	2	CIMO solar corrected and infrared corrected		
-237	22	Solar and infrared radiation correction	int(fk)	3	3	CIMO solar corrected only		
-238	22	Solar and infrared radiation correction	int(fk)	4	4	Solar and infrared corrected automatically by radiosonde system		
-239	22	Solar and infrared radiation correction	int(fk)	5	5	Solar corrected automatically by radiosonde system		
-240	22	Solar and infrared radiation correction	int(fk)	6	6	Solar and infrared corrected as specified by country		
-241	22	Solar and infrared radiation correction	int(fk)	7	7	Solar corrected as specified by country		
-242	22	Solar and infrared radiation correction	int(fk)	8	8	Solar and infrared correction as specified by GRUAN		
-243	22	Solar and infrared radiation correction	int(fk)	9	9	Solar corrected as specified by GRUAN		
-244	23	Tracking technique / status of system used	int(fk)	0		common code table C7		
-245	24	Type of balloon	int(fk)	0	0	GP26		
-246	24	Type of balloon	int(fk)	1	1	GP28		
-247	24	Type of balloon	int(fk)	2	2	GP30		
-248	24	Type of balloon	int(fk)	3	3	HM26		
-249	24	Type of balloon	int(fk)	4	4	HM28		
-250	24	Type of balloon	int(fk)	5	5	HM30		
-251	24	Type of balloon	int(fk)	6	6	SV16		
-252	24	Type of balloon	int(fk)	7	7	Totex TA type balloons		
-253	24	Type of balloon	int(fk)	8	8	Totex TX type balloons		
-254	25	Type of balloon shelter	int(fk)	0				
-255	26	Type of gas used in balloon	int(fk)	0				
-256	27	Type of measuring equipment used	int(fk)	0	0	Pressure instrument associated with wind measuring equipment		
-257	27	Type of measuring equipment used	int(fk)	1	1	Optical theodolite		
-258	27	Type of measuring equipment used	int(fk)	2	2	Radio theodolite		
-259	27	Type of measuring equipment used	int(fk)	3	3	Radar		
-260	27	Type of measuring equipment used	int(fk)	4	4	VLF-Omega		
-261	27	Type of measuring equipment used	int(fk)	5	5	Loran-C		
-262	27	Type of measuring equipment used	int(fk)	6	6	Wind profiler		
-263	27	Type of measuring equipment used	int(fk)	7	7	Satellite navigation		
-264	27	Type of measuring equipment used	int(fk)	8	8	Radio-acoustic Sounding System (RASS)		
-265	27	Type of measuring equipment used	int(fk)	9	9	Sodar		
-266	27	Type of measuring equipment used	int(fk)	10	14	Pressure instrument associated with wind measuring equipment but pressure element failed during ascent		
-267	27	Type of measuring equipment used	int(fk)	11	15	Missing value		
-268	27	Type of measuring equipment used	int(fk)	12	10 - 13	Reserved		
-269	28	Type of pressure sensor	int(fk)	0	0	Capacitance aneroid		
-270	28	Type of pressure sensor	int(fk)	1	1	Derived from GPS		
-271	28	Type of pressure sensor	int(fk)	2	2	Resistive strain gauge		
-272	28	Type of pressure sensor	int(fk)	3	3	Silicon capacitor		
-273	28	Type of pressure sensor	int(fk)	4	4	Derived from radar height		
-274	29	UnwinderType	int(fk)	0		STRING		
-275	30	Water temperature profile recorder type	int(fk)	0		TBD (check BUFR tables)		
-276	31	XBT / XCTD launcher type	int(fk)	0		TBD (check BUFR tables)		
+215	15	Radiosonde / sounding system used	int (fk)	183	99	BAT-4G (South Africa)	NA	NA
+216	15	Radiosonde / sounding system used	int (fk)	184	99	Not vacant	NA	NA
+217	15	Radiosonde / sounding system used	int (fk)	185	NA	NA	NA	NA
+218	16	Radiosonde completeness	int(fk)	0	1	Pressure only radiosonde	NA	NA
+219	16	Radiosonde completeness	int(fk)	1	2	Pressure only radiosonde plus trasnponder	NA	NA
+220	16	Radiosonde completeness	int(fk)	2	3	Pressure only radiosonde plus radar reflector	NA	NA
+221	16	Radiosonde completeness	int(fk)	3	4	No-pressure radiosonde plus transponder	NA	NA
+222	16	Radiosonde completeness	int(fk)	4	5	No-pressure radiosonde plus radar reflector	NA	NA
+223	17	Radiosonde computational method	int(fk)	0	TBD	NA	NA	NA
+224	18	Radiosonde configuration	int(fk)	0	NA	bit flag	NA	NA
+225	19	Radiosonde ground receiving system	int(fk)	0	0	InterMet IMS 2000	NA	NA
+226	19	Radiosonde ground receiving system	int(fk)	1	1	InterMet IMS 1500C	NA	NA
+227	19	Radiosonde ground receiving system	int(fk)	2	2	Shanghai GTC1	NA	NA
+228	19	Radiosonde ground receiving system	int(fk)	3	3	Nanjing GTC2	NA	NA
+229	19	Radiosonde ground receiving system	int(fk)	4	4	Nanjing GFE(L)1	NA	NA
+230	19	Radiosonde ground receiving system	int(fk)	5	5	MARL-A radar	NA	NA
+231	19	Radiosonde ground receiving system	int(fk)	6	6	VEKTOR-M radar	NA	NA
+232	20	Radiosonde type (see WMO3685)	int(fk)	0	NA	Common code table C2	NA	NA
+233	21	Reason for termination	int(fk)	0	NA	NA	NA	NA
+234	22	Solar and infrared radiation correction	int(fk)	0	0	No correction	NA	NA
+235	22	Solar and infrared radiation correction	int(fk)	1	1	CIMO solar corrected and CIMO infrared corrected	NA	NA
+236	22	Solar and infrared radiation correction	int(fk)	2	2	CIMO solar corrected and infrared corrected	NA	NA
+237	22	Solar and infrared radiation correction	int(fk)	3	3	CIMO solar corrected only	NA	NA
+238	22	Solar and infrared radiation correction	int(fk)	4	4	Solar and infrared corrected automatically by radiosonde system	NA	NA
+239	22	Solar and infrared radiation correction	int(fk)	5	5	Solar corrected automatically by radiosonde system	NA	NA
+240	22	Solar and infrared radiation correction	int(fk)	6	6	Solar and infrared corrected as specified by country	NA	NA
+241	22	Solar and infrared radiation correction	int(fk)	7	7	Solar corrected as specified by country	NA	NA
+242	22	Solar and infrared radiation correction	int(fk)	8	8	Solar and infrared correction as specified by GRUAN	NA	NA
+243	22	Solar and infrared radiation correction	int(fk)	9	9	Solar corrected as specified by GRUAN	NA	NA
+244	23	Tracking technique / status of system used	int(fk)	0	NA	common code table C7	NA	NA
+245	24	Type of balloon	int(fk)	0	0	GP26	NA	NA
+246	24	Type of balloon	int(fk)	1	1	GP28	NA	NA
+247	24	Type of balloon	int(fk)	2	2	GP30	NA	NA
+248	24	Type of balloon	int(fk)	3	3	HM26	NA	NA
+249	24	Type of balloon	int(fk)	4	4	HM28	NA	NA
+250	24	Type of balloon	int(fk)	5	5	HM30	NA	NA
+251	24	Type of balloon	int(fk)	6	6	SV16	NA	NA
+252	24	Type of balloon	int(fk)	7	7	Totex TA type balloons	NA	NA
+253	24	Type of balloon	int(fk)	8	8	Totex TX type balloons	NA	NA
+254	25	Type of balloon shelter	int(fk)	0	NA	NA	NA	NA
+255	26	Type of gas used in balloon	int(fk)	0	NA	NA	NA	NA
+256	27	Type of measuring equipment used	int(fk)	0	0	Pressure instrument associated with wind measuring equipment	NA	NA
+257	27	Type of measuring equipment used	int(fk)	1	1	Optical theodolite	NA	NA
+258	27	Type of measuring equipment used	int(fk)	2	2	Radio theodolite	NA	NA
+259	27	Type of measuring equipment used	int(fk)	3	3	Radar	NA	NA
+260	27	Type of measuring equipment used	int(fk)	4	4	VLF-Omega	NA	NA
+261	27	Type of measuring equipment used	int(fk)	5	5	Loran-C	NA	NA
+262	27	Type of measuring equipment used	int(fk)	6	6	Wind profiler	NA	NA
+263	27	Type of measuring equipment used	int(fk)	7	7	Satellite navigation	NA	NA
+264	27	Type of measuring equipment used	int(fk)	8	8	Radio-acoustic Sounding System (RASS)	NA	NA
+265	27	Type of measuring equipment used	int(fk)	9	9	Sodar	NA	NA
+266	27	Type of measuring equipment used	int(fk)	10	14	Pressure instrument associated with wind measuring equipment but pressure element failed during ascent	NA	NA
+267	27	Type of measuring equipment used	int(fk)	11	15	Missing value	NA	NA
+268	27	Type of measuring equipment used	int(fk)	12	10 - 13	Reserved	NA	NA
+269	28	Type of pressure sensor	int(fk)	0	0	Capacitance aneroid	NA	NA
+270	28	Type of pressure sensor	int(fk)	1	1	Derived from GPS	NA	NA
+271	28	Type of pressure sensor	int(fk)	2	2	Resistive strain gauge	NA	NA
+272	28	Type of pressure sensor	int(fk)	3	3	Silicon capacitor	NA	NA
+273	28	Type of pressure sensor	int(fk)	4	4	Derived from radar height	NA	NA
+274	29	UnwinderType	int(fk)	0	NA	STRING	NA	NA
+275	30	Water temperature profile recorder type	int(fk)	0	NA	TBD (check BUFR tables)	NA	NA
+276	31	XBT / XCTD launcher type	int(fk)	0	NA	TBD (check BUFR tables)	NA	NA

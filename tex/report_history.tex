@@ -6,6 +6,50 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Report history}
-            \label{tab:DataTable}\\
+            \caption{report\_history}
+            \label{tab:DataTableReporthistory}\\
             % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{element\_number}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{element\_name}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{type}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ report\_history (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{element\_number}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{element\_name}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{type}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/element_number/.style={
+            string type, 
+            column type= V{1.100000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/element_name/.style={
+            string type, 
+            column type= V{1.100000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/type/.style={
+            string type, 
+            column type= V{1.100000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/report_history.csv}

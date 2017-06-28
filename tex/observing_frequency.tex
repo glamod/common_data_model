@@ -6,13 +6,13 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Observing frequency}
-            \label{tab:DataTable}\\
+            \caption{observing\_frequency}
+            \label{tab:DataTableObservingfrequency}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.650000 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.650000 in}} { \textbf{Code}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
-            \multicolumn{3}{c}{Table \thetable\ Observing frequency (cont.)} \\
+            \multicolumn{3}{c}{Table \thetable\ observing\_frequency (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.650000 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.650000 in} } { \textbf{Code}} & 
@@ -33,16 +33,16 @@
     columns/Value/.style={
             string type, 
             column type= V{1.650000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Code/.style={
             string type, 
             column type= V{1.650000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Description/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observing_frequency.csv}

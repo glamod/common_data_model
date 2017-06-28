@@ -7,23 +7,23 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Profile configuration fields}
-            \label{tab:DataTable}\\
+            \caption{profile\_configuration\_fields}
+            \label{tab:DataTableProfileconfigurationfields}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{FieldNumber}} & 
-\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Field number}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Field name}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Type}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Code Value}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Abbreviation}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{Description}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in}} { \textbf{StartDate}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{EndDate}} \\ \hline\hline \endfirsthead
-            \multicolumn{9}{c}{Table \thetable\ Profile configuration fields (cont.)} \\
+            \multicolumn{9}{c}{Table \thetable\ profile\_configuration\_fields (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{FieldNumber}} & 
-\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{FieldName}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Field number}} & 
+\multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Field name}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Type}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Code Value}} & 
 \multicolumn{1} { > {\centering}V{0.837500 in} } { \textbf{Abbreviation}} & 
@@ -46,46 +46,46 @@
     columns/Value/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
-    columns/FieldNumber/.style={
+    columns/Field number/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
-    columns/FieldName/.style={
+    columns/Field name/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Type/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Code Value/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Abbreviation/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Description/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/StartDate/.style={
             string type, 
             column type= V{0.837500 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/EndDate/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/profile_configuration_fields.csv}

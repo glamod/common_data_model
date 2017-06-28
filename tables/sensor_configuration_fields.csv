@@ -92,7 +92,7 @@ Value	Field	Parameter	Field name	Type	Code value	Description
 88	15	pressure	sensor type - barometer	int (fk)	3	Mercury barometer.
 89	15	pressure	sensor type - barometer	int (fk)	4	Other
 90	15	pressure	sensor type - barometer	int (fk)	5	Ship's aneroid barometer.
-91	16	evaporation	sensor type - evaporation	int (fk)	0	
+91	16	evaporation	sensor type - evaporation	int (fk)	0	placeholder
 92	17	air temperature	sensor type - extremes	int (fk)	0	Automated instruments
 93	17	air temperature	sensor type - extremes	int (fk)	1	Maximum / minimum thermometers
 94	17	air temperature	sensor type - extremes	int (fk)	2	Reserved
@@ -180,5 +180,20 @@ Value	Field	Parameter	Field name	Type	Code value	Description
 176	26	wind speed	sensor location - distance from center line	numeric	NA	Distance of sensor from center line of ship (m)
 177	27	wind speed	sensor location - height above deck	numeric	NA	Height of sensor above deck on which it is installed (m)
 178	28	sonde	weight	numeric	NA	Weight of sensor (g)
-179	29	sonde	telemetry_sonde	int (fk)		
-180	30	all	software_version	varchar	NA	
+179	29	sonde	telemetry_sonde	int (fk)		NA
+180	30	all	software_version	varchar	NA	NA
+190	31	all	manufacturer	int(fk)	0	Vaisala
+191	32	all	sensor_type	int(fk)	0	Anemometer
+193	33	all	sensor_model	int(fk)	0	WMT700
+194	34	all	serial_number	varchar	NA	ABC-123-zyx-987
+195	35	all	observing_method	int(fk)	0	Instrumental
+196	35	all	observing_method	int(fk)	1	Estimated
+197	35	all	observing_method	int(fk)	2	Computed
+198	36	all	sampling_strategy	int(fk)	0	Continuous
+199	36	all	sampling_strategy	int(fk)	1	Discrete
+200	36	all	sampling_strategy	int(fk)	2	Event
+201	37	all	last_calibration_date	timestamp	NA	NA
+202	38	all	calibration_status	int(fk)	0	No changes - in calibration.
+203	38	all	calibration_status	int(fk)	1	No changes - out of calibration.
+204	38	all	calibration_status	int(fk)	2	No changes - calibration unknown.
+205	38	all	calibration_status	int(fk)	3	Recalibrated - in calibration.

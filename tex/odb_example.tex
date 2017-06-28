@@ -1,0 +1,69 @@
+\pgfplotstabletypeset[
+   empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Simplified example of records in ODB type data model, with observations from reports 1 and 2 spanning multiple records. For simplicity, the z coordinate has been omitted but profile data would be represented with each layer / height as a separate record}
+            \label{tab:DataTableAdjustment}\\
+            % Initial column headers
+            \hline\hline
+            \multicolumn{5} {c} { \textbf{header information}} & 
+            \multicolumn{3} {c} { \textbf{observation information}} 
+            \\
+            \hline
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{record id}} & 
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{report id}} & 
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{obs id}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{date}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{location}} & 
+            \multicolumn{1} { > {\centering}V{0.75 in}} { \textbf{parameter}} & 
+            \multicolumn{1} { > {\centering} V{0.75 in} } {\textbf{value}} &
+            \multicolumn{1} { > {\centering} V{0.75 in} } {\textbf{units}} 
+            \\ \hline\hline \endfirsthead
+            \multicolumn{6}{c}{Table \thetable\ adjustment (cont.)} \\
+            % column headers on additional pages
+            \hline\hline 
+            \multicolumn{5} { > {\centering}V{2.9 in}} { \textbf{header information}} & 
+            \multicolumn{3} { > {\centering}V{2.25 in}} { \textbf{observation information}} 
+            \\
+            \hline
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{record id}} & 
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{report id}} & 
+            \multicolumn{1} { > {\centering}V{0.3 in}} { \textbf{obs id}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{date}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{location}} & 
+            \multicolumn{1} { > {\centering}V{0.75 in}} { \textbf{parameter}} & 
+            \multicolumn{1} { > {\centering} V{0.75 in} } {\textbf{value}} &
+            \multicolumn{1} { > {\centering} V{0.75 in} } {\textbf{units}} 
+            \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{6}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{6}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep = &,
+    row sep = \\ , 
+    columns/record id/.style={string type, column type = V{0.3 in}},
+    columns/report id/.style={string type, column type = V{0.3 in}},
+    columns/observation id/.style={string type, column type = V{0.3 in}},
+    columns/date/.style={string type, column type = V{1 in}},
+    columns/location/.style={string type, column type = V{1 in}}, 
+    columns/parameter/.style={string type, column type = V{1 in}},
+    columns/value/.style={string type, column type = V{0.3 in}},
+    columns/units/.style={string type, column type = V{0.3 in}}
+]{
+record id& report id& observation id& date & location & parameter & value & units \\
+1 & 1 & 1 & 2012-01-01 12:00+0.0 & POINT(-40 40) & air temperature & 300.0 & K \\
+2 & 1 & 2 & 2012-01-01 12:00+0.0 & POINT(-40 40) & sea level pressure & 1013.0 & hPa \\
+3 & 2 & 3 & 2012-01-01 18:00+0.0 & POINT(-40.1 40.2) & air temperature & 300.3 & K \\
+4 & 2 & 4 & 2012-01-01 18:00+0.0 & POINT(-40.1 40.2) & sea level pressure & 1013.2 & hPa \\
+}

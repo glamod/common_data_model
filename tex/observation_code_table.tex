@@ -6,18 +6,18 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Observation code table}
-            \label{tab:DataTable}\\
+            \caption{observation\_code\_table}
+            \label{tab:DataTableObservationcodetable}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code _table _scheme}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code _table _id}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code \_table \_scheme}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code \_table \_id}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Code Table Name}} \\ \hline\hline \endfirsthead
-            \multicolumn{4}{c}{Table \thetable\ Observation code table (cont.)} \\
+            \multicolumn{4}{c}{Table \thetable\ observation\_code\_table (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code _table _scheme}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code _table _id}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code \_table \_scheme}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code \_table \_id}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Code Table Name}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{4}{r}{{Continued on next page}} \\
@@ -35,21 +35,21 @@
     columns/Value/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/code _table _scheme/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/code _table _id/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Code Table Name/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/observation_code_table.csv}

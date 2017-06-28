@@ -45,7 +45,7 @@ Value	Units	Conventional abbreviation	Abbreviation in IA5/ASCII	Abbreviation in 
 220	hectare 	ha 	ha 	HAR	NA
 230	week	NA	NA	NA	NA
 231	year 	a 	a 	ANN	NA
-300	per cent 	% 	% 	PERCENT	NA
+300	per cent 	\% 	\% 	PERCENT	NA
 301	parts per thousand 	‰ 	0/00 	PERTHOU	NA
 310	eighths of cloud 	okta 	okta 	OKTA	NA
 320	degrees true 	° 	deg 	DEG	NA

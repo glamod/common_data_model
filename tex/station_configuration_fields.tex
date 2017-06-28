@@ -7,8 +7,8 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Station configuration fields}
-            \label{tab:DataTable}\\
+            \caption{station\_configuration\_fields}
+            \label{tab:DataTableStationconfigurationfields}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Field}} & 
@@ -17,7 +17,7 @@
 \multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Code Value}} & 
 \multicolumn{1} { > {\centering}V{1.116667 in}} { \textbf{Abbreviation}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
-            \multicolumn{7}{c}{Table \thetable\ Station configuration fields (cont.)} \\
+            \multicolumn{7}{c}{Table \thetable\ station\_configuration\_fields (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.116667 in} } { \textbf{Field}} & 
@@ -42,36 +42,36 @@
     columns/Value/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Field/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/FieldName/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Kind/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Code Value/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Abbreviation/.style={
             string type, 
             column type= V{1.116667 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Description/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/station_configuration_fields.csv}

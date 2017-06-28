@@ -1,13 +1,13 @@
 # Description: table containing information on individual profiles
 # Source:
 element_number	element_name	kind	external_table	Description
-0	profile_id	varchar		
-1	report_id	varchar		
+0	profile_id	varchar	NA	NA
+1	report_id	varchar	NA	NA
 2	standard_time	int (fk)		e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
 3	actual_time			Actual report / launch time
-4	processing_codes	int (fk)	processing_code	 
+4	processing_codes	int (fk)	processing_code	NA
 5	profile_number	numeric		e.g. Balloon Number
-6	number_of_fields	numeric		
+6	number_of_fields	numeric		Number of fields in array
 7	field	int[]	profile_configuration_fields	Fields to which the following values apply
-8	value	numeric[]		
-9	comment	varchar		
+8	value	numeric[]	NA	Values for the additional fields
+9	comment	varchar		Any other comments

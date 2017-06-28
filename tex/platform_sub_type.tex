@@ -6,14 +6,14 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Platform sub type}
-            \label{tab:DataTable}\\
+            \caption{platform\_sub\_type}
+            \label{tab:DataTablePlatformsubtype}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Platform Type}} & 
 \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Abbreviation}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
-            \multicolumn{4}{c}{Table \thetable\ Platform sub type (cont.)} \\
+            \multicolumn{4}{c}{Table \thetable\ platform\_sub\_type (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Platform Type}} & 
@@ -35,21 +35,21 @@
     columns/Value/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Platform Type/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Abbreviation/.style={
             string type, 
             column type= V{1.100000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Description/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/platform_sub_type.csv}

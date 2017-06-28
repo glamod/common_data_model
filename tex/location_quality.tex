@@ -6,12 +6,12 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Location quality}
-            \label{tab:DataTable}\\
+            \caption{location\_quality}
+            \label{tab:DataTableLocationquality}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in}} { \textbf{Value}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
-            \multicolumn{2}{c}{Table \thetable\ Location quality (cont.)} \\
+            \multicolumn{2}{c}{Table \thetable\ location\_quality (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in} } { \textbf{Value}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endhead
@@ -31,11 +31,11 @@
     columns/Value/.style={
             string type, 
             column type= V{3.300000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Description/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/location_quality.csv}

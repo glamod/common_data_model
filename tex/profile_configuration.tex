@@ -1,3 +1,4 @@
+\begin{landscape}
 \pgfplotstabletypeset[
     empty header,
     begin table=\begin{longtable},
@@ -6,6 +7,58 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Profile configuration}
-            \label{tab:DataTable}\\
+            \caption{profile\_configuration}
+            \label{tab:DataTableProfileconfiguration}\\
             % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{1.675000 in}} { \textbf{element\_number}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in}} { \textbf{element\_name}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in}} { \textbf{kind}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in}} { \textbf{external\_table}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endfirsthead
+            \multicolumn{5}{c}{Table \thetable\ profile\_configuration (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{1.675000 in} } { \textbf{element\_number}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in} } { \textbf{element\_name}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in} } { \textbf{kind}} & 
+\multicolumn{1} { > {\centering}V{1.675000 in} } { \textbf{external\_table}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{5}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{5}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/element_number/.style={
+            string type, 
+            column type= V{1.675000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/element_name/.style={
+            string type, 
+            column type= V{1.675000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/kind/.style={
+            string type, 
+            column type= V{1.675000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/external_table/.style={
+            string type, 
+            column type= V{1.675000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/Description/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/profile_configuration.csv}
+\end{landscape}

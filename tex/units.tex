@@ -7,8 +7,8 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Units}
-            \label{tab:DataTable}\\
+            \caption{units}
+            \label{tab:DataTableUnits}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Units}} & 
@@ -16,7 +16,7 @@
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Abbreviation in IA5/ASCII}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Abbreviation in ITA2}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Definition in base units}} \\ \hline\hline \endfirsthead
-            \multicolumn{6}{c}{Table \thetable\ Units (cont.)} \\
+            \multicolumn{6}{c}{Table \thetable\ units (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Units}} & 
@@ -40,31 +40,31 @@
     columns/Value/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Units/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Conventional abbreviation/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Abbreviation in IA5/ASCII/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Abbreviation in ITA2/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Definition in base units/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/units.csv}

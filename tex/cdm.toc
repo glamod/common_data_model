@@ -1,7 +1,13 @@
 \contentsline {section}{\numberline {1}Introduction}{4}
-\contentsline {section}{\numberline {2}Observations table}{4}
-\contentsline {section}{\numberline {3}Station configuration table}{10}
-\contentsline {section}{\numberline {4}Source configuration table}{10}
-\contentsline {section}{\numberline {5}Profile configuration table}{10}
-\contentsline {section}{\numberline {6}Sensor configuration table}{10}
-\contentsline {section}{\numberline {7}Code tables}{10}
+\contentsline {section}{\numberline {2}Background and existing standards}{5}
+\contentsline {subsection}{\numberline {2.1}ODB and tenders for Lots 2 and 3}{5}
+\contentsline {subsection}{\numberline {2.2}BUFR and WIGOS Metadata Standard}{6}
+\contentsline {section}{\numberline {3}Common Data Model}{6}
+\contentsline {subsection}{\numberline {3.1}Observations table}{7}
+\contentsline {subsection}{\numberline {3.2}Station configuration table}{13}
+\contentsline {subsection}{\numberline {3.3}Source configuration table}{15}
+\contentsline {subsection}{\numberline {3.4}Profile configuration table}{17}
+\contentsline {subsection}{\numberline {3.5}Sensor configuration table}{19}
+\contentsline {section}{\numberline {4}References}{21}
+\contentsline {section}{\numberline {5}Appendix}{21}
+\contentsline {subsection}{\numberline {5.1}Code tables}{21}

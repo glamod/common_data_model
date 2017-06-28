@@ -7,8 +7,8 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Institute}
-            \label{tab:DataTable}\\
+            \caption{institute}
+            \label{tab:DataTableInstitute}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{0.957143 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{0.957143 in}} { \textbf{Name}} & 
@@ -18,7 +18,7 @@
 \multicolumn{1} { > {\centering}V{0.957143 in}} { \textbf{Contact}} & 
 \multicolumn{1} { > {\centering}V{0.957143 in}} { \textbf{Contact email}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{URL}} \\ \hline\hline \endfirsthead
-            \multicolumn{8}{c}{Table \thetable\ Institute (cont.)} \\
+            \multicolumn{8}{c}{Table \thetable\ institute (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{0.957143 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{0.957143 in} } { \textbf{Name}} & 
@@ -44,41 +44,41 @@
     columns/Value/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Name/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Region/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Sub region/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Address/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Contact/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Contact email/.style={
             string type, 
             column type= V{0.957143 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/URL/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/institute.csv}

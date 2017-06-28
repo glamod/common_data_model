@@ -7,8 +7,8 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{Adjustment}
-            \label{tab:DataTable}\\
+            \caption{adjustment}
+            \label{tab:DataTableAdjustment}\\
             % Initial column headers
             \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Report ID}} & 
@@ -16,7 +16,7 @@
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Adjustment}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Reason}} & 
  \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Reference}} \\ \hline\hline \endfirsthead
-            \multicolumn{6}{c}{Table \thetable\ Adjustment (cont.)} \\
+            \multicolumn{6}{c}{Table \thetable\ adjustment (cont.)} \\
             % column headers on additional pages
             \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Value}} & 
 \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Report ID}} & 
@@ -40,31 +40,31 @@
     columns/Value/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Report ID/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Observation ID/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Adjustment/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Reason/.style={
             string type, 
             column type= V{1.340000 in}, 
-            string replace*={_}{}
+            string replace*={_}{\_}
         },
     columns/Reference/.style={
             string type, 
-            string replace*={_}{},
+            string replace*={_}{\_},
             column type = V{3.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/adjustment.csv}
