@@ -15,7 +15,7 @@ element_number	element_name	type	external_table	wigos (_m_c_o)	Description
 11	source_format_version 	varchar		7-08 (_m)	Version of original data format
 12	source_file	varchar			Filename for data from source
 13	source_file_checksum	varchar			Checksum of source datafile
-14	data_centre 	int [fk]	data_centre	9-01 (_m)	Data centre from which data sourced
+14	data_centre 	int [fk]	institute	9-01 (_m)	Data centre from which data sourced
 15	data_centre_url 	varchar		9-01 (_m)	URL for data centre
 16	data_policy_licence 	int [fk]	data_policy_licence	9-02 (_m)	Data policy / licence
 17	pi_name 	varchar		10-01 (_m)	Name of PI responsible for dataset

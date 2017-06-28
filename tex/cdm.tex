@@ -4,8 +4,15 @@
 \usepackage{varwidth}
 \usepackage{array}
 \usepackage{lscape}
-\usepackage[top=2 cm,bottom=2cm]{geometry} %For demo purposes
-\begin{document}
+\usepackage[top=2 cm,bottom=2cm]{geometry}
+
+
+
+\title {Copernicus Climate Change Service - 311a Lot 2 \\ Defining a Common Data Model}
+\author {David I. Berry \\ National Oceanography Centre, UK}
+\date {28th June 2017}
+
+
 \pgfplotstableset{
 empty header/.style={
            typeset cell/.append code={%
@@ -16,21 +23,120 @@ empty header/.style={
        }
    }
 
+\begin{document}
 
+
+\maketitle
+
+\vskip 0.5in
+\hrule
+Summary ...
+\vskip 2in
+\hrule
+
+\newpage
+\tableofcontents
+\newpage
 \listoftables
 \newpage
 
-\include {application_area}
-\include {automation_status}
-\include {calibration_status}
-\include {communication_method}
-\include {conversion_factor}
-\include {data_policy_licence}
-\include {duplicate_status}
-\include {events_at_station}
-\include {id_scheme}
-\include {instrument_exposure_quality}
-\include {location_method}
+
+\section {Introduction}
+
+The Copernicus Climate Change Service (C3S), through its "Collection and Processing of In Situ Observations (C3S 311a)" tender, seeks to harmonise both data formats and metadata (discovery and observational) conventions. The first step of this process, as noted within the invitation to tender, is the development or adoption of a common data model  for the data and metadata. Within this document, when complete, we will describe the common data model developed within Lot(s) 1 - 4 of the C3S 311a tender in consultation with ECMWF. The themes for the Lots 1 - 4 are:\\
+\begin{itemize}\item Lot 1 - Coordination of data rescue activities\item Lot 2 - Access to observations from global climate data archives\item Lot 3 - Access to observations from baseline and reference networks\item Lot 4 - Climate monitoring products for Europe based on in situ observations.
+\end{itemize}
+Lot 1:\\
+Within Lot 2, observations and metadata from land stations and marine platforms will be harmonised into a common data model and a web based service developed to serve the data through the C3S Climate Data Store (CDS). The observations include instantaneous / point observations, such as those from SYNOP weather reports, as well as daily and monthly summaries (CLIMAT DAILY and CLIMAT). A single report may contain observations of multiple parameters, e.g. air temperature, humidity, wind speed etc. The stations range from stationary land stations to mobile merchant ships, drifting buoys and other marine platforms.\\
+Lot 3: Atmospheric profile data from GRUAN. Multiple observations of the same parameter(s) at different heights in a single report ? \\
+
+Lot 4: Users of data extracted from CDS?\\
+
+Section 2 of this report provides background information on joint activities between Lots 2 and 3 so far, the ECMWF Observations DataBase (ODB) data model and relevant WMO data models. Section 3 gives an overview of the preferred data model from Lot 2 and proposes a list of elements for the observations table. Auxiliary tables are also proposed in Section 3 but left empty for future discussion once the principles of the type of data model have been agreed across lots. Section 4 proposes a governance mechanism for the common data model across lots and next steps required.\\
+
+\section {Observations table}
+
+Preamble text ... \\
+
+\input{observations_table}
+
+\section {Station configuration table}
+
+Entity-attribute value based table for station configuration (and others).
+
+\section {Source configuration table}
+\section {Profile configuration table}
+\section {Sensor configuration table}
+\section {Code tables}
+
+\input {region}
+\input {sub_region}
+\input {application_area}
+\input {observing_programme}
+\input {report_type}
+\input {station_type}
+\input {platform_type}
+\input {platform_sub_type}
+\input {id_scheme}
+\input {location_method}
+%\include {location_quality}
+\input {crs}
+%\include {surface_type}
+% \include {surface_type_scheme}
+% \incude {topography}
+% \include {station_configuration}
+\input {sea_level_datum}
+\input {meaning_of_time_stamp}
+\input {time_quality}
+\input {time_reference}
+%\include {profile_configuration}
+\input {events_at_station}
+\input {quality_flag}
+\input {duplicate_status}
+\input {update_frequency}
+%\include {report_history}
+%\include {report_processing_level}
+%\include {report_processing_code}
+%\include {source_configuration}
+\input {data_policy_licence}
+\input {observed_variable}
+\input {units}
+%\include {observation_code_tables}
+\input {observation_value_significance}
+\input {spatial_representativeness}
+%\include {z_coordinate_type}
+%\include {z_coordinate_method}
+%\include {method_of_estimating_uncertainty}
+%\include {sensor_configuration}
+\input {automation_status}
+\input {instrument_exposure_quality}
+\input {conversion_factor}
+%\include {processing_code}
+\input {processing_level}
+\input {adjustment}
+\input {traceability}
+\input {institute}
+\input {observing_frequency}
+\input {communication_method}
+%\include {measuring_system_model}
+\input {metadata_source}
+%\include {station_configuration_fields}
+%\include {profile_configuration_fields}
+%\include {product_level}
+%\include {product_status}
+\input {source_format}
+%\include {source_configuration_fields}
+%\include {manufacturer}
+%\include {sensor_type}
+%\include {sensor_model}
+\input {observing_method}
+\input {sampling_strategy}
+\input {calibration_status}
+%\include {sensor_configuration_fields}
+
+
+
+
 
 \end{document}
 

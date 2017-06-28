@@ -1,4 +1,4 @@
-value	Description
+Value	Description
 0	Nil reason - None of the codes in the table is applicable in the context of the observed quantity or unknown, or not available information.
 1	microscale - An area or volume less than 100 m horizontal extent (for example, evaporation)
 2	toposcale, local scale - An area or volume of 100 m to 3 km horizontal extent (for example, air pollution, tornadoes)

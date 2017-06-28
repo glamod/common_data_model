@@ -1,11 +1,39 @@
-\contentsline {table}{\numberline {1}{Application area}}{2}
-\contentsline {table}{\numberline {2}{Automation status}}{3}
-\contentsline {table}{\numberline {3}{Calibration status}}{4}
-\contentsline {table}{\numberline {4}{Communication method}}{5}
-\contentsline {table}{\numberline {5}{Conversion factor}}{7}
-\contentsline {table}{\numberline {6}{Data policy licence}}{8}
-\contentsline {table}{\numberline {7}{Duplicate status}}{9}
-\contentsline {table}{\numberline {8}{Events at station}}{10}
-\contentsline {table}{\numberline {9}{Id scheme}}{11}
-\contentsline {table}{\numberline {10}{Instrument exposure quality}}{12}
-\contentsline {table}{\numberline {11}{Location method}}{13}
+\contentsline {table}{\numberline {1}{observations\_table}}{5}
+\contentsline {table}{\numberline {2}{Region}}{10}
+\contentsline {table}{\numberline {3}{Sub region}}{10}
+\contentsline {table}{\numberline {4}{Application area}}{15}
+\contentsline {table}{\numberline {5}{Observing programme}}{15}
+\contentsline {table}{\numberline {6}{Report type}}{18}
+\contentsline {table}{\numberline {7}{Station type}}{19}
+\contentsline {table}{\numberline {8}{Platform type}}{19}
+\contentsline {table}{\numberline {9}{Platform sub type}}{19}
+\contentsline {table}{\numberline {10}{Id scheme}}{22}
+\contentsline {table}{\numberline {11}{Location method}}{22}
+\contentsline {table}{\numberline {12}{Crs}}{23}
+\contentsline {table}{\numberline {13}{Sea level datum}}{23}
+\contentsline {table}{\numberline {14}{Meaning of time stamp}}{23}
+\contentsline {table}{\numberline {15}{Time quality}}{23}
+\contentsline {table}{\numberline {16}{Time reference}}{24}
+\contentsline {table}{\numberline {17}{Events at station}}{24}
+\contentsline {table}{\numberline {18}{Quality flag}}{24}
+\contentsline {table}{\numberline {19}{Duplicate status}}{25}
+\contentsline {table}{\numberline {20}{Update frequency}}{25}
+\contentsline {table}{\numberline {21}{Data policy licence}}{25}
+\contentsline {table}{\numberline {22}{Observed variable}}{26}
+\contentsline {table}{\numberline {23}{Units}}{29}
+\contentsline {table}{\numberline {24}{Observation value significance}}{37}
+\contentsline {table}{\numberline {25}{Spatial representativeness}}{37}
+\contentsline {table}{\numberline {26}{Automation status}}{38}
+\contentsline {table}{\numberline {27}{Instrument exposure quality}}{38}
+\contentsline {table}{\numberline {28}{Conversion factor}}{38}
+\contentsline {table}{\numberline {29}{Processing level}}{39}
+\contentsline {table}{\numberline {30}{Adjustment}}{40}
+\contentsline {table}{\numberline {31}{Traceability}}{41}
+\contentsline {table}{\numberline {32}{Institute}}{42}
+\contentsline {table}{\numberline {33}{Observing frequency}}{43}
+\contentsline {table}{\numberline {34}{Communication method}}{43}
+\contentsline {table}{\numberline {35}{Metadata source}}{44}
+\contentsline {table}{\numberline {36}{Source format}}{44}
+\contentsline {table}{\numberline {37}{Observing method}}{44}
+\contentsline {table}{\numberline {38}{Sampling strategy}}{44}
+\contentsline {table}{\numberline {39}{Calibration status}}{45}

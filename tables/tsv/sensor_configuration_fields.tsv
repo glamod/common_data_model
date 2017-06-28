@@ -1,4 +1,4 @@
-value	field	parameter	field_name	type	code_value	Description
+Value	Field	Parameter	Field name	Type	Code value	Description
 0	0	humidity	ice bulb status	int (fk)	0	Ice bulb
 1	0	humidity	ice bulb status	int (fk)	1	Wet bulb
 2	1	all	observing method	int (fk)	0	computed

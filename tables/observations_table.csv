@@ -1,6 +1,6 @@
 # Descripion: table defining elements in main observations table
 # Source:
-element_number	element_name	kind	external_table	wigos (mco)	Description
+element_number	element_name	kind	external_table	wigos	description
 1	report_id	bigint (pk)		NA	Unique ID for report (unique ID given by combination of RecordID and ObservationID)
 2	region	int (fk)	region	3-01 (c)	Region (WMO region / Ocean basin)
 3	sub_region	int (fk)	sub_region	3-02 (c)	Country / regional sea
@@ -18,7 +18,7 @@ element_number	element_name	kind	external_table	wigos (mco)	Description
 15	station_location_longitude	numeric		3-07 (m)	Longitude of station, -180.0 to 180.0 (or other as defined by StationCRS)
 16	station_location_latitude	numeric		3-07 (m)	Latitude of station, -90 to 90 (or other as defined by StationCRS)
 17	station_location_accuracy	numeric		NA	Accuracy to which station location recorded (radius in km)
-18	station_location_method				
+18	station_location_method	int(fk)	NA	location_method	Method by which location determined			
 19	station_location_quality	int (fk)	location_quality	NA	Quality flag for station location
 20	station_crs	int (fk)	crs	11-02	Coordinate reference scheme for station location
 21	station_speed	numeric			Station speed over ground if mobile (m/s)
@@ -93,14 +93,14 @@ element_number	element_name	kind	external_table	wigos (mco)	Description
 90	standard_uncertainty	numeric		8-01 (c)	Standard uncertainty in reported value
 91	method_of_estimating_standard_uncertainty	int (fk)	method_of_estimating_uncertainty	8-02 (c)	Method of estimating the standard uncertainty
 92	uncertainty_due_to_correlated_errors	numeric		8-01 (c)	Uncertainty due to errors in the observation that are correlated between observations
-93	method_of_estimating_uncertainty_due_to_correlated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
+93	method_of_estimating_uncertainty_due_to_correlated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	NA
 94	uncertainty_due_to_uncorrelated_errors	numeric 		8-01 (c)	Uncertainty due to errors in the observation that are uncorrelated between observations
-95	method_of_estimating_uncertainty_due_to_uncorrelated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
+95	method_of_estimating_uncertainty_due_to_uncorrelated_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	NA
 96	uncertainty_due_to_systematic_errors	numeric 		8-01 (c)	Uncertainty due to errors in the observations that are correlated under similar observing conditions
-97	method_of_estimating_uncertainty_due_to_systematic_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
-98	total_uncertainty	numeric 		8-01 (c)	
-99	method_of_estimating_total_uncertainty	int (fk)	method_of_estimating_uncertainty	8-02 (c)	
-100	sensor_configuration	int (fk)	sensor_configuration		
+97	method_of_estimating_uncertainty_due_to_systematic_errors	int (fk)	method_of_estimating_uncertainty	8-02 (c)	NA
+98	total_uncertainty	numeric 		8-01 (c)	NA
+99	method_of_estimating_total_uncertainty	int (fk)	method_of_estimating_uncertainty	8-02 (c)	NA
+100	sensor_configuration	int (fk)	sensor_configuration		NA
 101	sensor_automation_status	int (fk)	automation_status	5-01 (m)	Automated, manual, mixed or visual observation
 102	exposure_of_sensor	int (fk)	instrument_exposure_quality	5-15 (c)	Whether the exposure of the instrument will impact on the quality of the measurement
 103	original_precision	int 		NA	Original reporting precision in units given by 'OriginalUnits'
@@ -109,5 +109,5 @@ element_number	element_name	kind	external_table	wigos (mco)	Description
 106	conversion_factor	int (fk)	conversion_factor	7-01 (o)	Link to table describing conversion process
 107	processing_code	int (fk)	processing_code	7-01 (o)	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
 108	processing_level	int (fk)	processing_level	7-06 (o)	Level of processing applied to observation.
-109	adjustment_id	int (fk)	adjustment		
+109	adjustment_id	int (fk)	adjustment		Adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 110	traceability	int (fk)	traceability	8-05 (c)	Whether observation can be traced to international standards.

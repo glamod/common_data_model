@@ -1,59 +1,59 @@
-value	abbreviation	description	Sponsor
-1	a_m_d_a_r	global _aircraft _meteorological _d_ata _relay	WMO/GOS
-2	e_p_a	environmental _protection _agency	
-3	e_u_m_e_t_n_e_t	grouping of _european _national _meteorological _services	WMO/GOS
-4	w_m_o/_g_a_w	world _meteorological _organization/_global _atmospheric _watch	
-5	g_c_o_s	global _climate _observing _system	
-6	g_c_w	global _cryosphere _watch	
-7	g_o_o_s	global _ocean _observing _system	
-8	i_p_a	international _permafrost _association	
-9	j_c_o_m_m	joint _technical _commission for _oceanography and _marine _meteorology	WMO/GOS
-10	w_m_o/_g_o_s	world _meteorological _organization/_global _observing _system	
-11	g_t_o_s	global _terrestrial _observing _system	
-12	i_a_g_o_s	in-service _aircraft for a _global _observing _system	
-13	w_h_y_c_o_s	world _hydrological _cycle _observing _system	
-14	w_m_o/_c_l_w	world _meteorological _office/_climate and _water _department	
-15	a_d_n_e_t	asian dust and aerosol lidar observation network	GALION , WMO/GAW
-16	aeronet	a_erosol _r_obotic _n_e_twork	NASA?
-17	a_n_t_o_n	antarctic _observing _network	WMO/GOS
-18	a_s_a_p	automated _shipboard _aerological _program	WMO/GOS
-19	b_s_r_n	baseline _surface _radiation _network	WMO/GAW & GCOS
-20	c_a_s_t_n_e_t	clean _air _status and _trends _network	(National - USA)
-21	c_i_s-_li_net	lidar network for monitoring atmosphere over _c_i_s regions	GALION , WMO/GAW
-22	c_l_n	c_r_e_s_t _lidar _network	GALION , WMO/GAW
-23	d_a_r_t	deep-ocean _assessment and _reporting of _tsunamis	NOAA Centre for Tsunamis Research
-24	e-_a_m_d_a_r	european - _aircraft _meteorological _d_ata _relay	EUMETNET , WMO/GOS
-25	e-_a_s_a_p	european - _automated _shipboard _aerological _program	EUMETNET , WMO/GOS
-26	e-_g_v_a_p	european - _g_n_s_s water vapour programme	EUMETNET , WMO/GOS
-27	e-_p_r_o_f_i_l_e	european - wind profiles from radar	EUMETNET , WMO/GOS
-28	e-_s_u_r_f_m_a_r	european - _surface _marine _operational _service	EUMETNET , WMO/GOS
-29	e_a_r_l_i_n_e_t	european _aerosol _research _lidar _network	GALION , WMO/GAW
-30	g_a_l_i_o_n	g_a_w _aerosol _lidar _observation _network	WMO/GAW
-31	g_a_w-_p_f_r	g_a_w-_precision _filter _radiometers	WMO/GAW
-32	german _a_o_d _network	german _aerosol _optical _depth _network	WMO/GAW
-33	g_l_o_s_s	global _sea _level _observing _system	JCOMM , WMO/GOS
-34	g_r_u_a_n	g_c_o_s _reference _upper _air _network	GCOS
-35	g_s_n	g_c_o_s _surface _network	GCOS
-36	g_t_n-_g	global _terrestrial _network - _glaciers	GCOS
-37	g_t_n-_h	global _terrestrial _network - _hydrology	WMO/CLW , GCOS , GTOS
-38	g_t_n-_p	global _terrestrial _network - _permafrost	IPA , GCOS , GTOS
-39	g_u_a_n	g_c_o_s _upper _air _network	GCOS
-40	i_a_g_o_s-_m_o_z_a_i_c	measurement of _ozone and _water _vapour on _airbus in-service _aircraft	IAGOS
-41	l_a_l_i_n_e_t	latin _america _lidar _network	GALION, WMO/GAW
-42	m_p_l_n_e_t	micro _pulse _lidar _network	GALION, WMO/GAW
-43	n_d_a_c_c	network for the _detection of _atmospheric _composition _change	GALION, WMO/GAW
-44	o_p_e_r_a	european _weather _radar _project	EUMETNET, (WMO/GOS)
-45	p_i_r_a_t_a	prediction and _research _moored _array in the _atlantic	GOOS, WMO/GOS
-46	polar_a_o_d	polar _aerosol _optical _depth _measurement _network _project	WMO/GAW
-47	r_a_m_a	research _moored _array for _african-_asian-_australian _monsoon _analysis and _prediction	NOAA
-48	r_b_c_n	regional _basic _climatological _network	WMO/GOS
-49	r_b_o_n	regional _basic _observing _network	WMO/GOS
-50	r_b_s_n	regional _basic _synoptic _network	WMO/GOS
-51	t_a_o	tropical _atmosphere and _ocean _array	NOAA, GCOS
-52	s_k_y_n_e_t	aerosol -cloud-radiation interaction in the atmosphere project	WMO/GAW
-53	sib_rad	w_m_o/_g_a_w	
-54	s_o_o_p	ship of _opportunity	JCOMM , WMO/GOS
-55	u._s. _i_o_o_s	united _states _integrated _ocean _observing _system	(National - USA)
-56	v_o_s	voluntary _observing _fleet	JCOMM , WMO/GOS
-57	v_o_s_c_l_i_m	voluntary _observing _fleet (_v_o_s) _climate _project	JCOMM , WMO/GOS
-58	w_r_a_p	worldwide _recurring _a_s_a_p _project	JCOMM , WMO/GOS
+Value	Abbreviation	Description	Sponsor
+1	AMDAR	Global Aircraft Meteorological DAta Relay	WMO/GOS
+2	EPA	Environmental Protection Agency	NA
+3	EUMETNET	Grouping of European National Meteorological Services	WMO/GOS
+4	WMO/GAW	World Meteorological Organization/Global Atmospheric Watch	NA
+5	GCOS	Global Climate Observing System	NA
+6	GCW	Global Cryosphere Watch	NA
+7	GOOS	Global Ocean Observing System	NA
+8	IPA	International Permafrost Association	NA
+9	JCOMM	Joint Technical Commission for Oceanography and Marine Meteorology	WMO/GOS
+10	WMO/GOS	World Meteorological Organization/Global Observing System	NA
+11	GTOS	Global Terrestrial Observing System	NA
+12	IAGOS	In-service Aircraft for a Global Observing System	NA
+13	WHYCOS	World Hydrological Cycle Observing System	NA
+14	WMO/CLW	World Meteorological Office/Climate and Water Department	NA
+15	ADNET	Asian dust and aerosol lidar observation network	GALION ; WMO/GAW
+16	Aeronet	AErosol RObotic NETwork	NASA?
+17	ANTON	Antarctic Observing Network	WMO/GOS
+18	ASAP	Automated Shipboard Aerological Program	WMO/GOS
+19	BSRN	Baseline Surface Radiation Network	WMO/GAW \& GCOS
+20	CASTNET	Clean Air Status and Trends Network	(National - USA)
+21	CIS-LiNet	Lidar network for monitoring atmosphere over CIS regions	GALION ; WMO/GAW
+22	CLN	CREST Lidar Network	GALION ; WMO/GAW
+23	DART	Deep-ocean Assessment and Reporting of Tsunamis	NOAA Centre for Tsunamis Research
+24	E-AMDAR	European - Aircraft Meteorological DAta Relay	EUMETNET ; WMO/GOS
+25	E-ASAP	European - Automated Shipboard Aerological Program	EUMETNET ; WMO/GOS
+26	E-GVAP	European - GNSS water vapour programme	EUMETNET ; WMO/GOS
+27	E-PROFILE	European - wind profiles from radar	EUMETNET ; WMO/GOS
+28	E-SURFMAR	European - Surface Marine Operational Service	EUMETNET ; WMO/GOS
+29	EARLINET	European Aerosol Research Lidar Network	GALION ; WMO/GAW
+30	GALION	GAW Aerosol Lidar Observation Network	WMO/GAW
+31	GAW-PFR	GAW-Precision Filter Radiometers	WMO/GAW
+32	German AOD Network	German Aerosol Optical Depth Network	WMO/GAW
+33	GLOSS	Global Sea Level Observing System	JCOMM ; WMO/GOS
+34	GRUAN	GCOS Reference Upper Air Network	GCOS
+35	GSN	GCOS Surface Network	GCOS
+36	GTN-G	Global Terrestrial Network - Glaciers	GCOS
+37	GTN-H	Global Terrestrial Network - Hydrology	WMO/CLW ; GCOS ; GTOS
+38	GTN-P	Global Terrestrial Network - Permafrost	IPA ; GCOS ; GTOS
+39	GUAN	GCOS Upper Air Network	GCOS
+40	IAGOS-MOZAIC	Measurement of Ozone and Water Vapour on Airbus in-service Aircraft	IAGOS
+41	LALINET	Latin America Lidar Network	GALION; WMO/GAW
+42	MPLNET	Micro Pulse Lidar Network	GALION; WMO/GAW
+43	NDACC	Network for the Detection of Atmospheric Composition Change	GALION; WMO/GAW
+44	OPERA	European Weather Radar Project	EUMETNET; (WMO/GOS)
+45	PIRATA	Prediction and Research Moored Array in the Atlantic	GOOS; WMO/GOS
+46	PolarAOD	Polar Aerosol Optical Depth Measurement Network Project	WMO/GAW
+47	RAMA	Research Moored Array for African-Asian-Australian Monsoon Analysis and Prediction	NOAA
+48	RBCN	Regional Basic Climatological Network	WMO/GOS
+49	RBON	Regional Basic Observing Network	WMO/GOS
+50	RBSN	Regional Basic Synoptic Network	WMO/GOS
+51	TAO	Tropical Atmosphere and Ocean Array	NOAA; GCOS
+52	SKYNET	Aerosol -cloud-radiation interaction in the atmosphere project	WMO/GAW
+53	SibRad	NA	WMO/GAW
+54	SOOP	Ship of Opportunity	JCOMM ; WMO/GOS
+55	U.S. IOOS	United States Integrated Ocean Observing System	(National - USA)
+56	VOS	Voluntary Observing Fleet	JCOMM ; WMO/GOS
+57	VOSCLIM	Voluntary Observing Fleet (VOS) Climate Project	JCOMM ; WMO/GOS
+58	WRAP	Worldwide Recurring ASAP Project	JCOMM ; WMO/GOS

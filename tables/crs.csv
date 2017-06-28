@@ -1,0 +1,8 @@
+# Description: coordinate reference system used to report location
+# Source: BUFR 0 01 150; WIGOS 11-02
+Value	Description
+0	WGS84
+1	ETRS89
+2	NAD83
+3	DHDN
+4	Ellipsoidal datum using International Reference Meridian maintained by the International Earth Rotation and Reference System Services (IERS)

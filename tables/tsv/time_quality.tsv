@@ -1,4 +1,4 @@
-value	Description
+Value	Description
 0	Timestamp valid, time reported to nearest second
 1	Timestamp valid, time reported to nearest minute
 2	Timestamp valid, time  reported to nearest hour
