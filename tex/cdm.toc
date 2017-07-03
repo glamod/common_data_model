@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {2}Background and existing standards}{5}
 \contentsline {subsection}{\numberline {2.1}ODB and tenders for Lots 2 and 3}{5}
 \contentsline {subsection}{\numberline {2.2}BUFR and WIGOS Metadata Standard}{6}
-\contentsline {section}{\numberline {3}Common Data Model}{6}
+\contentsline {section}{\numberline {3}Common Data Model}{7}
 \contentsline {subsection}{\numberline {3.1}Observations table}{7}
 \contentsline {subsection}{\numberline {3.2}Station configuration table}{13}
 \contentsline {subsection}{\numberline {3.3}Source configuration table}{15}

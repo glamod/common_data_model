@@ -1,0 +1,51 @@
+\pgfplotstabletypeset[
+   empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{Simplified  example for EAV type table for profile (atmospheric and oceanic) data.}
+            \label{tab:DataTableEAV}\\
+            % Initial column headers
+            \hline\hline
+            \multicolumn{1} { > {\centering}V{0.5 in}} { \textbf{report id}} & 
+            \multicolumn{1} { > {\centering}V{0.5 in}} { \textbf{report type}} & 
+            \multicolumn{1} { > {\centering}V{1.5 in}} { \textbf{field}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{value coded}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{value numeric}}
+            \\ \hline\hline \endfirsthead
+            \multicolumn{5}{c}{Table \thetable\ adjustment (cont.)} \\
+            % column headers on additional pages
+            \hline\hline 
+            \multicolumn{1} { > {\centering}V{0.5 in}} { \textbf{report id}} & 
+            \multicolumn{1} { > {\centering}V{0.5 in}} { \textbf{report type}} & 
+            \multicolumn{1} { > {\centering}V{1.5 in}} { \textbf{field}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{value coded}} & 
+            \multicolumn{1} { > {\centering}V{1 in}} { \textbf{value numeric}}
+            \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{5}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{5}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep = &,
+    row sep = \\ , 
+    columns/report id/.style={string type, column type = V{0.5 in}},
+    columns/report type/.style={string type, column type = V{0.5 in}},
+    columns/field/.style={string type, column type = V{1.5 in}},
+    columns/value coded/.style={string type, column type = V{1 in}}, 
+    columns/value numeric/.style={string type, column type = V{1 in}}
+]{
+report id & report type & field & value coded & value numeric \\
+4 & GRUAN & Ascent Balloon Number & 1 & NA \\
+4 & GRUAN & Ascent Balloon Type & 1 & NA \\
+4 & GRUAN & Ascent balloon weight (g) & NA & 100.0 \\
+}
