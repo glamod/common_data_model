@@ -1,29 +1,34 @@
-# Description: Table defining additional information on data sources
-# Source:
-element_number	element_name	type	external_table	wigos	Description
-0	source_id	int 			Unique record ID for dataset
-1	product_id	varchar			ID for product
-2	product_name	varchar			Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
-3	product_code	varchar			Abbreviations / product code, e.g. ICOADS, RS92-GDP
-4	product_version	varchar			Version number for dataset, e.g. Release 3.0.0
-5	product_level	int (fk)	product_level		Level of product
-6	description 	varchar			Description of dataset / comments
-7	product_references	varchar[]			References describing the dataset
-8	product_citation	varchar			Citation to use when using this product
-9	product_status	int (fk)	product_status		Status of product, draft, pre-release, release
-10	source_format 	int [fk]	source_format	7-07 (m)	Original format for data
-11	source_format_version 	varchar		7-08 (m)	Version of original data format
-12	source_file	varchar			Filename for data from source
-13	source_file_checksum	varchar			Checksum of source datafile
-14	data_centre 	int [fk]	institute	9-01 (m)	Data centre from which data sourced
-15	data_centre_url 	varchar		9-01 (m)	URL for data centre
-16	data_policy_licence 	int [fk]	data_policy_licence	9-02 (m)	Data policy / licence
-17	pi_name 	varchar		10-01 (m)	Name of PI responsible for dataset
-18	pi_email 	varchar		10-01 (m)	Email address of PI
-19	pi_url 	varchar		10-01 (m)	URL for PI
-20	number_of_fields	numeric			Number of additional fields
-21	field	int[]	source_configuration_fields		Fields to which following values apply
-22	value	numeric[]			additional values
-23	history	varchar			History of source
-24	comments	varchar			Additional comments / footnotes
-25	timestamp				Date record created
+# Description: Table defining additional information on data sources				
+# Source:				
+element_number	element_name	type	external_table	description
+0	source_id	int 		Unique record ID for dataset
+1	product_id	varchar		ID for product
+2	product_name	varchar		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
+3	product_code	varchar		Abbreviations / product code, e.g. ICOADS, RS92-GDP
+4	product_version	varchar		Version number for dataset, e.g. Release 3.0.0
+5	product_level	int (fk)	product_level	Level of product
+6	description 	varchar		Description of dataset / comments
+7	product_references	varchar[]		References describing the dataset
+8	product_citation	varchar[]		Citation to use when using this product
+9	product_status	int (fk)	product_status	Status of product, draft, pre-release, release
+10	source_format 	int (fk)	source_format	Original format for data
+11	source_format_version 	varchar		Version of original data format
+12	source_file	varchar		Filename for data from source
+13	source_file_checksum	varchar		Checksum of source datafile
+14	data_centre 	int (fk)	institute	Data centre from which data sourced
+15	data_centre_url 	varchar		URL for data centre
+16	data_policy_licence 	int (fk)	data_policy_licence	Data policy / licence
+17	pi_name 	varchar		Name of PI responsible for dataset
+18	pi_email 	varchar		Email address of PI
+19	pi_url 	varchar		URL for PI
+21	field_numeric	int[] (fk)	source_configuration_fields	Fields to which following values apply
+22	value_numeric	numeric[]	NA	additional values
+21	field_coded	int[] (fk)	source_configuration_fields	Fields to which following values apply
+22	value_coded	int[] (fk)	source_configuration_fields	additional values
+21	field_character	int[] (fk)	source_configuration_fields	Fields to which following values apply
+22	value_character	varchar[]	NA	additional values
+21	field_timestamp	int[] (fk)	source_configuration_fields	Fields to which following values apply
+22	value_timestamp	timestamp[]	NA	additional values
+23	history	varchar		History of source
+24	comments	varchar		Additional comments / footnotes
+25	timestamp			Date record created

@@ -1,4 +1,4 @@
-Value	Description
+value	description
 0	ICOADS: ID present, but unknown type
 1	ICOADS: ship, Ocean Station Vessel (OSV), or ice station callsign
 2	ICOADS: generic ID (e.g., SHIP, BUOY, RIGG, PLAT)
@@ -14,3 +14,5 @@ Value	Description
 12	WIGOS ID
 13	GRUAN ID
 14	IMO Number
+15	National ID
+16	WMO buoy / station number

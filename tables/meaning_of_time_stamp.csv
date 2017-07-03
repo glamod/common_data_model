@@ -1,6 +1,6 @@
 # Description: Meaning / significance of date / time reported for report or observation
-# Source: WIGOS 11-03
-Value	name	Description
-1	beginning	Time stamps indicate the beginning of a period covering the range up to but excluding the following time stamp.
-2	end	Time stamps indicate the end of a period covering the range up to but excluding the preceding time stamp.
-3	middle	Time stamps indicate the middle of a period beginning at the middle of the range described by this and the preceding time stamp and ending right before the middle of the range described by this and the following time stamp.
+# Source: WIGOS 11-03 (simplified)
+value	name	description
+1	beginning	Date / time specified indicates the start of the period over which the observation was made.
+2	end	Date / time specified indicates the end of the period over which the observation was made.
+3	middle	Date / time specified indicates the middle of the period over which the observation was made.

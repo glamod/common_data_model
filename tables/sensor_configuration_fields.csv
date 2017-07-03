@@ -1,14 +1,8 @@
 # Description: List of fields and decode table for sensor configuration
 # Source: various
-Value	Field	Parameter	Field name	Type	Code value	Description
+value	field	parameter	field_name	type	code_value	description
 0	0	humidity	ice bulb status	int (fk)	0	Ice bulb
 1	0	humidity	ice bulb status	int (fk)	1	Wet bulb
-2	1	all	observing method	int (fk)	0	computed
-3	1	all	observing method	int (fk)	1	estimated (visual)
-4	1	all	observing method	int (fk)	2	measured (instrumental)
-5	2	all	sampling strategy	int (fk)	0	Continuous
-6	2	all	sampling strategy	int (fk)	1	Discrete
-7	2	all	sampling strategy	int (fk)	2	Event
 8	3	all	sensor housing - configuration	int (fk)	0	Double v section louvers
 9	3	all	sensor housing - configuration	int (fk)	1	non-overlapping louvers
 10	3	all	sensor housing - configuration	int (fk)	2	Not applicable
@@ -186,14 +180,3 @@ Value	Field	Parameter	Field name	Type	Code value	Description
 191	32	all	sensor_type	int(fk)	0	Anemometer
 193	33	all	sensor_model	int(fk)	0	WMT700
 194	34	all	serial_number	varchar	NA	ABC-123-zyx-987
-195	35	all	observing_method	int(fk)	0	Instrumental
-196	35	all	observing_method	int(fk)	1	Estimated
-197	35	all	observing_method	int(fk)	2	Computed
-198	36	all	sampling_strategy	int(fk)	0	Continuous
-199	36	all	sampling_strategy	int(fk)	1	Discrete
-200	36	all	sampling_strategy	int(fk)	2	Event
-201	37	all	last_calibration_date	timestamp	NA	NA
-202	38	all	calibration_status	int(fk)	0	No changes - in calibration.
-203	38	all	calibration_status	int(fk)	1	No changes - out of calibration.
-204	38	all	calibration_status	int(fk)	2	No changes - calibration unknown.
-205	38	all	calibration_status	int(fk)	3	Recalibrated - in calibration.

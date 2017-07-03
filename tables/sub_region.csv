@@ -1,6 +1,6 @@
 # Description: Sub-region / country where observation was made, or recruiting country for mobile platforms
 # Source:
-Value	Type	Code	Subregion
+value	type	code	sub_region
 0	country	AD	ANDORRA
 1	country	AE	UNITED ARAB EMIRATES
 2	country	AF	AFGHANISTAN

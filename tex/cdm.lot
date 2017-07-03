@@ -1,4 +1,5 @@
 \contentsline {table}{\numberline {1}{Simplified example of records in ODB type data model, with observations from reports 1 and 2 spanning multiple records. For simplicity, the z coordinate has been omitted but profile data would be represented with each layer / height as a separate record}}{5}
+<<<<<<< HEAD
 \contentsline {table}{\numberline {2}{Simplified example for EAV type table for profile (atmospheric and oceanic) data.}}{6}
 \contentsline {table}{\numberline {3}{observations\_table}}{8}
 \contentsline {table}{\numberline {4}{station\_configuration}}{14}
@@ -48,3 +49,56 @@
 \contentsline {table}{\numberline {48}{sampling\_strategy}}{105}
 \contentsline {table}{\numberline {49}{calibration\_status}}{105}
 \contentsline {table}{\numberline {50}{sensor\_configuration\_fields}}{106}
+=======
+\contentsline {table}{\numberline {2}{observations\_table}}{8}
+\contentsline {table}{\numberline {3}{station\_configuration}}{14}
+\contentsline {table}{\numberline {4}{source\_configuration}}{17}
+\contentsline {table}{\numberline {5}{profile\_configuration}}{20}
+\contentsline {table}{\numberline {6}{sensor\_configuration}}{22}
+\contentsline {table}{\numberline {7}{adjustment}}{24}
+\contentsline {table}{\numberline {8}{application\_area}}{25}
+\contentsline {table}{\numberline {9}{automation\_status}}{25}
+\contentsline {table}{\numberline {10}{calibration\_status}}{25}
+\contentsline {table}{\numberline {11}{communication\_method}}{26}
+\contentsline {table}{\numberline {12}{conversion\_factor}}{27}
+\contentsline {table}{\numberline {13}{crs}}{27}
+\contentsline {table}{\numberline {14}{data\_policy\_licence}}{27}
+\contentsline {table}{\numberline {15}{duplicate\_status}}{28}
+\contentsline {table}{\numberline {16}{events\_at\_station}}{28}
+\contentsline {table}{\numberline {17}{id\_scheme}}{28}
+\contentsline {table}{\numberline {18}{institute}}{30}
+\contentsline {table}{\numberline {19}{instrument\_exposure\_quality}}{31}
+\contentsline {table}{\numberline {20}{location\_method}}{31}
+\contentsline {table}{\numberline {21}{location\_quality}}{31}
+\contentsline {table}{\numberline {22}{meaning\_of\_time\_stamp}}{31}
+\contentsline {table}{\numberline {23}{observed\_variable}}{33}
+\contentsline {table}{\numberline {24}{observation\_value\_significance}}{36}
+\contentsline {table}{\numberline {25}{observing\_frequency}}{36}
+\contentsline {table}{\numberline {26}{observing\_method}}{37}
+\contentsline {table}{\numberline {27}{observing\_programme}}{37}
+\contentsline {table}{\numberline {28}{platform\_sub\_type}}{40}
+\contentsline {table}{\numberline {29}{platform\_type}}{43}
+\contentsline {table}{\numberline {30}{processing\_level}}{43}
+\contentsline {table}{\numberline {31}{profile\_configuration\_fields}}{44}
+\contentsline {table}{\numberline {32}{quality\_flag}}{81}
+\contentsline {table}{\numberline {33}{region}}{81}
+\contentsline {table}{\numberline {34}{report\_processing\_codes}}{81}
+\contentsline {table}{\numberline {35}{report\_processing\_level}}{81}
+\contentsline {table}{\numberline {36}{report\_type}}{81}
+\contentsline {table}{\numberline {37}{sampling\_strategy}}{82}
+\contentsline {table}{\numberline {38}{sea\_level\_datum}}{82}
+\contentsline {table}{\numberline {39}{sensor\_configuration\_fields}}{83}
+\contentsline {table}{\numberline {40}{source\_configuration\_fields}}{95}
+\contentsline {table}{\numberline {41}{source\_format}}{99}
+\contentsline {table}{\numberline {42}{spatial\_representativeness}}{99}
+\contentsline {table}{\numberline {43}{station\_configuration\_fields}}{100}
+\contentsline {table}{\numberline {44}{station\_type}}{104}
+\contentsline {table}{\numberline {45}{sub\_region}}{104}
+\contentsline {table}{\numberline {46}{time\_quality}}{108}
+\contentsline {table}{\numberline {47}{time\_reference}}{109}
+\contentsline {table}{\numberline {48}{traceability}}{109}
+\contentsline {table}{\numberline {49}{units}}{110}
+\contentsline {table}{\numberline {50}{update\_frequency}}{118}
+\contentsline {table}{\numberline {51}{z\_coordinate\_method}}{118}
+\contentsline {table}{\numberline {52}{z\_coordinate\_type}}{118}
+>>>>>>> origin/master

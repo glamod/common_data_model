@@ -1,6 +1,6 @@
 # Description: Table defined the list of potential observed variables
 # Source: CF conventions,  ODB governance database
-Value	Abbreviation	Standard name	Units	Description	Code space	Code space index
+value	abbreviation	standard_name	units	description	code_space	code_space index
 0		acoustic_signal_roundtrip_travel_time_in_sea_water	s	The quantity with standard name acoustic_signal_roundtrip_travel_time_in_sea_water is the time taken for an acoustic signal to propagate from the emitting instrument to a reflecting surface and back again to the instrument. In the case of an instrument based on the sea floor and measuring the roundtrip time to the sea surface,  the data are commonly used as a measure of ocean heat content.	CF-44	
 1		aerodynamic_particle_diameter	m	The diameter of a spherical particle with density 1000 kg m-3 having the same aerodynamic properties as the particles in question.	CF-44	
 2		aerodynamic_resistance	m-1 s	The "aerodynamic_resistance" is the resistance to mixing through the boundary layer toward the surface by means of the dominant process,  turbulent transport. Reference: Wesely,  M. L.,  1989,   doi:10.1016/0004-6981(89)90153-4.	CF-44	

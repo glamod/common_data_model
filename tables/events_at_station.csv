@@ -1,6 +1,6 @@
 # Description: Report events at station at the time of the report / observation
 # Source: WIGOS 4-04
-Value	Description
+value	description
 1	Grass-cutting
 2	Snow clearing
 3	Tree removal

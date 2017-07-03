@@ -6,6 +6,7 @@
 \usepackage{lscape}
 \usepackage[top=2 cm,bottom=2cm]{geometry}
 \usepackage{helvet}
+\usepackage{tabto}
 \renewcommand{\familydefault}{\sfdefault}
 
 
@@ -23,6 +24,9 @@ empty header/.style={
            }
        }
    }
+
+
+\setlength{\parindent}{0pt}
 
 \begin{document}
 
@@ -90,7 +94,12 @@ In order to represent the wide variety of metadata required across (and within) 
 
 Within this document we are proposing to use solution (3), defining a minimum set of parameters to be included in the observations table and linking to the metadata in auxiliary tables. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
 
+<<<<<<< HEAD
 \input{eav_example}
+=======
+% \input{example_eav_table}
+Example EAV table here ... \\
+>>>>>>> origin/master
 
 \subsection {BUFR and WIGOS Metadata Standard}
 Prior to defining the data model it is useful to refer to both the WMO Binary Universal Form for the Representation of meteorological data (BUFR) (WMO, 2015a) and the WMO Integrated Observing System Metadata Standard (WMDS) (WMO, 2015b). \\
@@ -103,9 +112,22 @@ In recognition of the increasing importance of observational metadata the WMDS i
 
 As noted above, we are proposing a data model based on the ODB type data model, but with the metadata linked through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1. The observations table is described fully below (Table 3) and contains the geospatial (xyz) and temporal (t) locations of both the station making the report and the observed parameter, unique identifying information for the station, source data (i.e. dataset) information, observed values and data licencing / usage rights. In Table 3 below, where we list the proposed elements for the observations table, we also identify where there is overlap with the elements required by the WMDS. It should be noted that not all elements from the WMDS will appear in the observations table but will be included in the auxiliary tables. \\
 
-To enable flexibility and accommodate the diverse data types and metadata the additional tables are proposed to be EAV based (see Table 2 above for example). This also gives the flexibility of adding a new field by simply adding a new row rather than column. These additional tables have been deliberately omitted from this document whilst the general principles and structure of the CDM are agreed.
+Simplified CDM schematic here\\
+
+To enable flexibility and accommodate the diverse data types and metadata the additional tables are proposed to be EAV based (see Table 2 above for example). This also gives the flexibility of adding a new metadata field by simply adding a new row rather than column. Within the following tables the following syntax has been used to indicate the data type for the different elements: \\
+\begin{itemize}
+\item numeric: \tabto{3 cm} Any numeric value (integer or floating point).
+\item int: \tabto{3 cm} An integer value.
+\item varchar: \tabto{3 cm} A variable length character string.
+\item timestamp: \tabto{3 cm} A timestamp, e.g. "2017-07-01 00:00:0.0+00".
+\item {[]}:\tabto{3 cm} An array of the indicated type.
+\item (fk)  \tabto{3 cm} The indicated value is also a foreign key linking to another table.
+\end {itemize}
 
 %\input{cdm_schematic}
+
+
+%\begin{landscape}
 
 \subsection {Observations table}
 
@@ -115,7 +137,7 @@ Preamble text ... \\
 
 \subsection {Station configuration table}
 
-Entity-attribute value based table for station configuration (and others).
+%Entity-attribute value based table for station configuration (and others).
 \include {station_configuration}
 
 
@@ -131,6 +153,8 @@ Entity-attribute value based table for station configuration (and others).
 
 \include {sensor_configuration}
 
+%\end{landscape}
+
 \section {References}
 
 \noindent WMO, 2015a: Manual On Codes (WMO-No 306), Volume I.2, Part B - Binary Codes, WMO, Geneva.\\
@@ -141,64 +165,71 @@ Entity-attribute value based table for station configuration (and others).
 
 \subsection {Code tables}
 
-\input {region}
-\input {sub_region}
+\input {adjustment}
 \input {application_area}
-\input {observing_programme}
-\input {report_type}
-\input {station_type}
-\input {platform_type}
-\input {platform_sub_type}
-\input {id_scheme}
-\input {location_method}
-\include {location_quality}
+\input {automation_status}
+\input {calibration_status}
+\input {communication_method}
+\input {conversion_factor}
 \input {crs}
+\input {data_policy_licence}
+\input {duplicate_status}
+
+\input {events_at_station}
+
+\input {id_scheme}
+\input {institute}
+\input {instrument_exposure_quality}
+\input {location_method}
+\input {location_quality}
+% \input {metadata_source}
+\input {meaning_of_time_stamp}
+\input {observed_variable}
+\input {observation_value_significance}
+\input {observing_frequency}
+\input {observing_method}
+\input {observing_programme}
+\input {platform_sub_type}
+\input {platform_type}
+\input {processing_level}
+\input {profile_configuration_fields}
+\input {quality_flag}
+\input {region}
+\input {report_processing_codes}
+\input {report_processing_level}
+\input {report_type}
+\input {sampling_strategy}
+\input {sea_level_datum}
+\input {sensor_configuration_fields}
+\input {source_configuration_fields}
+\input {source_format}
+\input {spatial_representativeness}
+\input {station_configuration_fields}
+\input {station_type}
+\input {sub_region}
+\input {time_quality}
+\input {time_reference}
+\input {traceability}
+\input {units}
+\input {update_frequency}
+\input {z_coordinate_method}
+\input {z_coordinate_type}
+
 %\include {surface_type}
 % \include {surface_type_scheme}
 % \incude {topography}
-\input {sea_level_datum}
-\input {meaning_of_time_stamp}
-\input {time_quality}
-\input {time_reference}
-%\include {profile_configuration}
-\input {events_at_station}
-\input {quality_flag}
-\input {duplicate_status}
-\input {update_frequency}
-%\include {report_history}
-%\include {report_processing_level}
-%\include {report_processing_code}
-\input {data_policy_licence}
-\input {observed_variable}
-\input {units}
+
+
 %\include {observation_code_tables}
-\input {observation_value_significance}
-\input {spatial_representativeness}
-%\include {z_coordinate_type}
-%\include {z_coordinate_method}
 %\include {method_of_estimating_uncertainty}
-\input {automation_status}
-\input {instrument_exposure_quality}
-\input {conversion_factor}
 %\include {processing_code}
-\input {processing_level}
-\input {adjustment}
-\input {traceability}
-\input {institute}
-\input {observing_frequency}
-\input {communication_method}
 %\include {measuring_system_model}
-\input {metadata_source}
-\include {station_configuration_fields}
-\include {profile_configuration_fields}
 %\include {product_level}
 %\include {product_status}
-\input {source_format}
-\include {source_configuration_fields}
-\input {observing_method}
-\input {sampling_strategy}
-\input {calibration_status}
-\include {sensor_configuration_fields}
+
+
+
+
 
 
 
