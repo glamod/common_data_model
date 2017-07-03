@@ -1,0 +1,70 @@
+# Description:
+# Source:
+value	field	field_name	kind	code_value	abbreviation	description
+0	1	AWS Entry and Display Software	int (fk)			TBD
+1	2	AWS Entry and Display Software Version	int (fk)			TBD
+2	3	AWS Model	int (fk)			TBD
+3	4	AWS Model Version	int (fk)			TBD
+4	5	AWS Software	int (fk)			TBD
+5	6	AWS Software version	int (fk)			TBD
+6	7	Cargo height	numeric	NA		Height of cargo above max summer load line (m)
+7	8	Distance of bridge from bow	numeric	NA		Distance of bridge from bow of ship (m)
+8	9	Draught	numeric	NA		Draught of ship (m)
+9	10	Drogue type	int (fk)	0		Unspecified drogue
+10	10	Drogue type	int (fk)	1		Holey sock
+11	10	Drogue type	int (fk)	2		TRISTAR
+12	10	Drogue type	int (fk)	3		Window shade
+13	10	Drogue type	int (fk)	4		Parachute
+14	10	Drogue type	int (fk)	5		Non-lagrangian sea anchor
+15	11	Freeboard	numeric	NA		Freeboard of ship
+16	12	Lagrangian drifter drogue status	int (fk)	0		Drogue is detached
+17	12	Lagrangian drifter drogue status	int (fk)	1		Drogue is attached
+18	12	Lagrangian drifter drogue status	int (fk)	2		Drogue status unknown
+19	13	Length overall of the ship, ignoring bulbous bow	numeric	NA		Length of ship
+20	14	LogBook software and version	int (fk)			TBD
+21	15	Maximum operating speed on normal service	numeric	NA		maximum operating speed of platform (m/s)
+22	16	Moulded breadth	numeric	NA		breadth of ship
+23	17	Other instruments	int (fk)	0	BAT	Bathythermometer.
+24	17	Other instruments	int (fk)	1	BT	Bathythermograph (towed).
+25	17	Other instruments	int (fk)	2	FLM	Fluorometer.
+26	17	Other instruments	int (fk)	3	LWR	Long wave radiation.
+27	17	Other instruments	int (fk)	4	MAX	Maximum thermometer.
+28	17	Other instruments	int (fk)	5	MIN	Minimum thermometer.
+29	17	Other instruments	int (fk)	6	NTE	Nitrate sensor.
+30	17	Other instruments	int (fk)	7	NTT	Nutrient sensor.
+31	17	Other instruments	int (fk)	8	P	Pilot balloon equipment.
+32	17	Other instruments	int (fk)	9	CO2	pCO2 system.
+33	17	Other instruments	int (fk)	10	PLK	Plankton recorder.
+34	17	Other instruments	int (fk)	11	PRS	Photosynthetic radiation sensor.
+35	17	Other instruments	int (fk)	12	PYG	Pyrogeometer.
+36	17	Other instruments	int (fk)	13	R	Radiosonde equipment.
+37	17	Other instruments	int (fk)	14	RG	Rain gauge.
+38	17	Other instruments	int (fk)	15	RSD	Radar storm and meteorological phenomena detection.
+39	17	Other instruments	int (fk)	16	RT	Reversing thermometer.
+40	17	Other instruments	int (fk)	17	SKY	Sky camera.
+41	17	Other instruments	int (fk)	18	SLM	Solarimeter.
+42	17	Other instruments	int (fk)	19	ST	Sea thermograph.
+43	17	Other instruments	int (fk)	20	SWR	Short wave radiation.
+44	17	Other instruments	int (fk)	21	TSD	Temperature/salinity/depth probe.
+45	17	Other instruments	int (fk)	22	TUR	Turbidity sensor.
+46	17	Other instruments	int (fk)	23	W	Radiowind or radarwind equipment.
+47	17	Other instruments	int (fk)	24	WR	Wave Recorder
+48	17	Other instruments	int (fk)	25	XBT	Expendable bathythermograph.
+49	17	Other instruments	int (fk)	26	OT	Other (specify in footnote).
+50	18	Station status	int (fk)	1		Planned
+51	18	Station status	int (fk)	2		Pre-operational
+52	18	Station status	int (fk)	3		Operational / Reporting
+53	18	Station status	int (fk)	4		Partly reporting
+54	18	Station status	int (fk)	5		Temporarily suspended
+55	18	Station status	int (fk)	6		Closed
+56	19	Type of meteorological reporting ship	int (fk)	0	70	Auxiliary ship
+57	19	Type of meteorological reporting ship	int (fk)	1	75	Auxiliary ship (AWS)
+58	19	Type of meteorological reporting ship	int (fk)	2	10	Selected
+59	19	Type of meteorological reporting ship	int (fk)	3	15	Selected (AWS)
+60	19	Type of meteorological reporting ship	int (fk)	4	40	Supplementary 
+61	19	Type of meteorological reporting ship	int (fk)	5	45	Supplementary (AWS)
+62	19	Type of meteorological reporting ship	int (fk)	6	80	Third party
+63	19	Type of meteorological reporting ship	int (fk)	7	85	Third party (AWS)
+64	19	Type of meteorological reporting ship	int (fk)	8	99	Unknown
+65	19	Type of meteorological reporting ship	int (fk)	9	30	VOSClim - VOS Climate
+66	19	Type of meteorological reporting ship	int (fk)	10	35	VOSClim (AWS) - VOS Climate (AWS)

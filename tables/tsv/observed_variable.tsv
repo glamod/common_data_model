@@ -13,7 +13,7 @@ value	parameter_group	domain	sub_domain	abbreviation	name	units	description
 11	humidity	atmospheric	surface; upper-air	t_wet	wet_bulb_temperature	K	NA
 12	humidity	atmospheric	surface; upper-air	t_ice_bulb	ice_bulb_temperature	K	NA
 13	pressure	atmospheric	surface	a	pressure_tendancy_characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
-14	pressure	atmospheric	surface	slp	air_pressure	Pa	NA
+14	pressure	atmospheric	surface	p	air_pressure	Pa	NA
 15	pressure	atmospheric	surface	mslp	air_pressure_at_sea_level	Pa	sea_level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
 16	pressure	atmospheric	surface	ppp	pressure_tendancy	Pa	pressure tendency
 18	salinity	oceanic	surface; sub-surface	sal	salinity	psu	ocean salinity (PSU)

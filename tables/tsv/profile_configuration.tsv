@@ -2,13 +2,13 @@ element_number	element_name	kind	external_table	description
 0	profile_id	varchar	NA	NA
 1	report_id	varchar	NA	NA
 2	entry_number	int	NA	Entry number for this profile
-3	standard_time	int (fk)		e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
-4	actual_time			Actual report / launch time
+3	standard_time	int (fk)	standard_time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
+4	actual_time	timestamp		Actual report / launch time
 5	profile_number	numeric		e.g. Balloon Number
 6	field_numeric	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
 7	value_numeric	numeric	NA	Values for the additional fields
 8	field_coded	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
-9	value_coded	int[] (fk)	profile_configuration_fields	Values for the additional fields
+9	value_coded	int[] (fk)	profile_configuration_codes	Values for the additional fields
 10	field_character	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
 11	value_character	varchar[]	NA	Values for the additional fields
 12	field_timestamp	int[] (fk)	profile_configuration_fields	Fields to which the following values apply

@@ -11,9 +11,9 @@ element_number	element_name	kind	external_table	description
 8	station_type	int (fk)	station_type	Type of station, e.g. land station, sea station etc
 9	platform_type	int (fk)	platform_type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
 10	platform_sub_type	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m discuss buoy
-11	primary_station_id	varchar		Unique (WMO) station identifier, e.g. WIGOS ID
+11	primary_station_id	varchar		Primary station identifier, e.g. WIGOS ID
 12	primary_station_id_scheme	int (fk)	id_scheme	Scheme used for unique station ID
-13	secondary_station_id	varchar		Alternate (local) ID for station, e.g. Network ID
+13	secondary_station_id	varchar		Alternate (local) ID for station
 14	secondary_station_id_scheme	int (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID
 15	station_location_longitude	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
 16	station_location_latitude	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)

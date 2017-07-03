@@ -10,7 +10,7 @@ element_number	element_name	type	external_table	description
 6	field_numeric	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
 7	value_numeric	numeric[]	NA	Numeric value for this entry (if numeric)
 8	field_coded	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
-9	value_coded	int[] (fk)	sensor_configuration_fields	coded value for this entry
+9	value_coded	int[] (fk)	sensor_configuration_codes	coded value for this entry
 10	field_character	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
 11	value_character	varchar[]	NA	Value for entry if not coded or numeric
 12	field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable

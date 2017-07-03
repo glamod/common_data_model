@@ -7,12 +7,14 @@
 \usepackage[top=2 cm,bottom=2cm]{geometry}
 \usepackage{helvet}
 \usepackage{tabto}
+\usepackage{collcell}
+\usepackage{seqsplit}
 \renewcommand{\familydefault}{\sfdefault}
 
 
 \title {Copernicus Climate Change Service - 311a Lot 2 \\ Defining a Common Data Model}
 \author {David I. Berry \\ National Oceanography Centre, UK}
-\date {28th June 2017}
+\date{\today}
 
 
 \pgfplotstableset{
@@ -27,6 +29,11 @@ empty header/.style={
 
 
 \setlength{\parindent}{0pt}
+
+
+\newcolumntype{n}[1]{  > {\collectcell\seqsplit} V{#1} < {\endcollectcell}    }
+\newcolumntype{h}[1]{  > {\collectcell\textbf\seqsplit} V{#1} < {\endcollectcell}    }
+
 
 \begin{document}
 
@@ -94,12 +101,7 @@ In order to represent the wide variety of metadata required across (and within) 
 
 Within this document we are proposing to use solution (3), defining a minimum set of parameters to be included in the observations table and linking to the metadata in auxiliary tables. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
 
-<<<<<<< HEAD
 \input{eav_example}
-=======
-% \input{example_eav_table}
-Example EAV table here ... \\
->>>>>>> origin/master
 
 \subsection {BUFR and WIGOS Metadata Standard}
 Prior to defining the data model it is useful to refer to both the WMO Binary Universal Form for the Representation of meteorological data (BUFR) (WMO, 2015a) and the WMO Integrated Observing System Metadata Standard (WMDS) (WMO, 2015b). \\
@@ -158,7 +160,7 @@ Preamble text ... \\
 \section {References}
 
 \noindent WMO, 2015a: Manual On Codes (WMO-No 306), Volume I.2, Part B - Binary Codes, WMO, Geneva.\\
-\noindent WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Anenex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.
+\noindent WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Annex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.
 
 
 \section {Appendix}
@@ -192,6 +194,7 @@ Preamble text ... \\
 \input {platform_sub_type}
 \input {platform_type}
 \input {processing_level}
+\input {profile_configuration_codes}
 \input {profile_configuration_fields}
 \input {quality_flag}
 \input {region}

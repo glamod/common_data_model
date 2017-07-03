@@ -12,7 +12,7 @@ set tablename = `echo $file | cut -d '.' -f1`
 set tablecaption = `echo $file | cut -d '.' -f1 | sed "s/_//g" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2)) }'`
 
 # get number of columns based on header row
-set ncols = `awk 'BEGIN {FS="\t"} ; /^Value/ || /^element_number/ {print NF}' $file`
+set ncols = `awk 'BEGIN {FS="\t"} ; /^value/ || /^element_number/ {print NF}' $file`
 
 set tablepath="/Users/dyb/GitHub/C3S_311a_CDM/tables/"
 #set tablepath="/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/"
@@ -22,9 +22,9 @@ awk -v ncols="$ncols" -v tablecaption="$tablecaption" -v tablename="$tablename" 
 BEGIN { FS = "\t" ; \
     if( ncols > 4){\
       print "\\begin{landscape}";\
-      pagewidth = 9.7;\
+      pagewidth = 10.7;\
     }else{\
-      pagewidth = 6.3;\
+      pagewidth = 7.3;\
     }\
     gsub(/_/,"\\_",tablename); \
     colwidth = (pagewidth-3.0) / (ncols - 1.0) ;\
@@ -40,27 +40,27 @@ BEGIN { FS = "\t" ; \
    printf "            \\label{tab:DataTable%s}\\\\\n", tablecaption;\
     print "            % Initial column headers";\
 }\
-/^Value/ || /^element_number/ {\
+/^value/ || /^element_number/ {\
     printf "            \\hline\\hline " \
     for( i = 1; i < NF ; i ++) { \
         entry = $i;\
         gsub(/_/,"\\_",entry);\
-        printf "\\multicolumn{1} { > {\\centering}V{%f in}} { \\textbf{%s}} & \n", colwidth , entry \
+        printf "            \\multicolumn{1} { V{%f in}} { \\textbf{\\seqsplit{%s}}} & \n", colwidth , entry \
     } \
     entry = $i;\
     gsub(/_/,"\\_",entry);\
-    printf " \\multicolumn{1} { > {\\centering} V{%f in} } {\\textbf{%s}} \\\\ \\hline\\hline \\endfirsthead\n", 3.0, entry; \
+    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endfirsthead\n", 3.0, entry; \
     printf "            \\multicolumn{%d}{c}{Table \\thetable\\ %s (cont.)} \\\\\n", ncols, tablename;\
     print "            % column headers on additional pages";\
     printf "            \\hline\\hline " \
     for( i = 1; i < NF ; i ++) { \
         entry = $i;\
         gsub(/_/,"\\_",entry);\
-        printf "\\multicolumn{1} { > {\\centering}V{%f in} } { \\textbf{%s}} & \n", colwidth, entry \
+        printf "            \\multicolumn{1} {V{%f in} } { \\textbf{\\seqsplit{%s}}} & \n", colwidth, entry \
     } \
     entry = $i;\
     gsub(/_/,"\\_",entry);\
-    printf " \\multicolumn{1} { > {\\centering} V{%f in} } {\\textbf{%s}} \\\\ \\hline\\hline \\endhead\n",3.0,  entry; \
+    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endhead\n",3.0,  entry; \
     print "            % Footer on 1st to penultimate pages";\
     printf "            \\multicolumn{%d}{r}{{Continued on next page}} \\\\\n", ncols;\
     print "            \\endfoot";\
@@ -77,7 +77,11 @@ BEGIN { FS = "\t" ; \
     for( i = 1 ; i < NF ; i ++){\
         printf "    columns/%s/.style={\n", $i;\
         print "            string type, ";\
-        printf "            column type= V{%f in}, \n", colwidth;\
+        if( $i == "element_name" || $i == "external_table" || $i ~ "name" ){\
+          printf "            column type= n{%f in}, \n", colwidth;\
+        }else{\
+          printf "            column type= V{%f in}, \n", colwidth;\
+        }\
         print "            string replace*={_}{\\_}";\
         print "        },";\
     }\
