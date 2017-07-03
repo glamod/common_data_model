@@ -1,0 +1,10 @@
+# Description: Spatial extent over which observation is representative
+# Source: WIGOS 1-05
+value	description
+0	Nil reason - None of the codes in the table is applicable in the context of the observed quantity or unknown, or not available information.
+1	Microscale - An area or volume less than 100 m horizontal extent (for example, evaporation)
+2	Toposcale, local scale - An area or volume of 100 m to 3 km horizontal extent (for example, air pollution, tornadoes)
+3	Mesoscale - An area or volume of 3 km to 100 km horizontal extent (for example, thunderstorms, sea and mountain breezes)
+4	Large scale- An area or volume of 100 km to 3000 km horizontal extent (for example, fronts, various cyclones, cloud clusters)
+5	Planetary scale - An area or volume of more than 3000 km horizontal extent (for example, long upper tropospheric waves)
+6	Drainage area - An area (also known as ‘catchment’) having a common outlet for its surface runoff, in km2
