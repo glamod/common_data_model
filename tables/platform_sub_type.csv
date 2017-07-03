@@ -1,6 +1,6 @@
 # Description: Platform subtype for platform making observation
 # Source: WMO47, ICOADS, BUFR 0 02 149
-Value	Platform Type	Abbreviation	Description
+value	platform_type	abbreviation	description
 0	Ship	BA	Barge
 1	Ship	BC	Bulk Carrier
 2	Ship	CA	 Cable ship

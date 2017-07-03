@@ -1,1 +1,4 @@
-Value	Description
+value	description
+0	Raw - data as originally reported in source data set
+1	Partial - subset of reported values (location, date / time, observand etc) processed
+2	Full - all elements of report processed

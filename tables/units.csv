@@ -1,6 +1,6 @@
 # Description:
 # Source:
-Value	Units	Conventional abbreviation	Abbreviation in IA5/ASCII	Abbreviation in ITA2	Definition in base units
+value	units	conventional_abbreviation	abbreviation_in_ASCII	abbreviation_in_ITA2	definition_in_base_units
 1	metre 	m 	m 	M	NA
 2	kilogram 	kg 	kg 	KG	NA
 3	second 	s 	s 	S	NA

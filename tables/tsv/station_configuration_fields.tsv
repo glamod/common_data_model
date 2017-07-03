@@ -1,4 +1,4 @@
-Value	Field	FieldName	Kind	Code Value	Abbreviation	Description
+value	field	field_name	kind	code_value	abbreviation	description
 0	1	AWS Entry and Display Software	int (fk)			TBD
 1	2	AWS Entry and Display Software Version	int (fk)			TBD
 2	3	AWS Model	int (fk)			TBD

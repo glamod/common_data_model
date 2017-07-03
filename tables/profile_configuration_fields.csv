@@ -1,6 +1,6 @@
 # Description:
 # Source:
-Value	Field number	Field name	Type	Code Value	Abbreviation	Description	StartDate	EndDate
+value	field_number	field_name	type	code_value	abbreviation	description	start_date	end_date
 0	1	Balloon manufacturer	int (fk)	0	0	Kaysam	NA	NA
 1	1	Balloon manufacturer	int (fk)	1	1	Totex	NA	NA
 2	1	Balloon manufacturer	int (fk)	2	2	KKS	NA	NA

@@ -9,16 +9,16 @@
             \caption{observation\_code\_table}
             \label{tab:DataTableObservationcodetable}\\
             % Initial column headers
-            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code \_table \_scheme}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code \_table \_id}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Code Table Name}} \\ \hline\hline \endfirsthead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code\_table\_scheme}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code\_table\_id}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{code\_table\_name}} \\ \hline\hline \endfirsthead
             \multicolumn{4}{c}{Table \thetable\ observation\_code\_table (cont.)} \\
             % column headers on additional pages
-            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code \_table \_scheme}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code \_table \_id}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Code Table Name}} \\ \hline\hline \endhead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code\_table\_scheme}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code\_table\_id}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{code\_table\_name}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
@@ -32,22 +32,22 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/Value/.style={
+    columns/value/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/code _table _scheme/.style={
+    columns/code_table_scheme/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/code _table _id/.style={
+    columns/code_table_id/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/Code Table Name/.style={
+    columns/code_table_name/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{3.000000 in}

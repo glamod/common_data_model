@@ -9,16 +9,16 @@
             \caption{sub\_region}
             \label{tab:DataTableSubregion}\\
             % Initial column headers
-            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Type}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{Code}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Subregion}} \\ \hline\hline \endfirsthead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{type}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in}} { \textbf{code}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{sub\_region}} \\ \hline\hline \endfirsthead
             \multicolumn{4}{c}{Table \thetable\ sub\_region (cont.)} \\
             % column headers on additional pages
-            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Type}} & 
-\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{Code}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Subregion}} \\ \hline\hline \endhead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{type}} & 
+\multicolumn{1} { > {\centering}V{1.100000 in} } { \textbf{code}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{sub\_region}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
@@ -32,22 +32,22 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/Value/.style={
+    columns/value/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/Type/.style={
+    columns/type/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/Code/.style={
+    columns/code/.style={
             string type, 
             column type= V{1.100000 in}, 
             string replace*={_}{\_}
         },
-    columns/Subregion/.style={
+    columns/sub_region/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{3.000000 in}

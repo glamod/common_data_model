@@ -9,3 +9,33 @@
             \caption{z\_coordinate\_method}
             \label{tab:DataTableZcoordinatemethod}\\
             % Initial column headers
+            \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in}} { \textbf{value}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{description}} \\ \hline\hline \endfirsthead
+            \multicolumn{2}{c}{Table \thetable\ z\_coordinate\_method (cont.)} \\
+            % column headers on additional pages
+            \hline\hline \multicolumn{1} { > {\centering}V{3.300000 in} } { \textbf{value}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{description}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{2}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{2}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/value/.style={
+            string type, 
+            column type= V{3.300000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/description/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/z_coordinate_method.csv}

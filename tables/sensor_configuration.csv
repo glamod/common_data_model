@@ -1,14 +1,19 @@
 # Description: definition of table specifying sensor configuration
 # Source:
-element_number	element_name	type	external_table	Description
+element_number	element_name	type	external_table	description
 0	instrument_id	varchar		Unique ID for this instrument in combination with entry_number
-1	entry_number	numeric	NA	Entry number for this record / instrument
-2	station_id	varchar	station_configuration	Station associated with this instrument
-3	field	int (fk)	sensor_configuration_fields	fields for which this entry is applicable
-4	type	int (fk)	data_type	type of metadata entry, 0 = numeric, 1 = coded etc
-3	value_numeric	numeric	NA	Numeric value for this entry (if numeric)
-4	value_coded	int (fk)	sensor_configuration_fields	coded value for this entry
-5	value_character	varchar	NA	Value for entry if not coded or numeric
-6	value_timestamp	timestamp	NA	time stamp entry
-7	date_start	timestamp	NA	start date for period of validity assoiciated with this entry
-8	date_end	timestamp	NA	end date for period of validity assoiciated with this entry
+1	station_id	varchar	station_configuration	Station associated with this instrument
+2	observing_method	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
+3	sampling_strategy	int (fk)	sampling_strategy	Sampling strategy used by instrument
+4	calibration_status	int (fk)	calibration_status	Whether the sensor is in / out of calibration
+5	calibration_date	timestamp	NA	Date of last calibration
+6	field_numeric	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+7	value_numeric	numeric[]	NA	Numeric value for this entry (if numeric)
+8	field_coded	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+9	value_coded	int[] (fk)	sensor_configuration_fields	coded value for this entry
+10	field_character	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+11	value_character	varchar[]	NA	Value for entry if not coded or numeric
+12	field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+13	value_timestamp	timestamp[]	NA	time stamp entry
+14	date_start	timestamp	NA	start date for period of validity assoiciated with this entry
+15	date_end	timestamp	NA	end date for period of validity assoiciated with this entry

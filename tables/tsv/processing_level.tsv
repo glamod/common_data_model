@@ -1,8 +1,8 @@
-Value	Description
-0	Unknown
-1	Raw
-2	Level 0
-3	Level I
-4	Level II
-5	Level III
-6	Level IV
+value	processing_level	description
+0	Unknown	NA
+1	Raw	NA
+2	Level 0	NA
+3	Level I	NA
+4	Level II	NA
+5	Level III	NA
+6	Level IV	NA

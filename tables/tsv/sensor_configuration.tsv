@@ -1,15 +1,17 @@
-element_number	element_name	type	external_table	Description
-0	instrument_id	varchar		Unique ID for this instrument 
-1	parameter	int (fk)		The observed variable that this instrument measures (one entry per parameter if more than one)
-2	manufacturer	int (fk)	manufacturer	Manufacturer of sensor / instrument
-3	sensor_type	int (fk)	sensor_type	Type of sensor, e.g. RS92 or anemometer
-4	sensor_model	int (fk)	sensor_model	Manufacturers designation / model number
-5	serial_number	varchar		Serial number
-6	observing_method	int (fk)	observing_method	Estimate, measured or computed value
-7	sampling_strategy	int (fk)	sampling_strategy	Continuous, discrete, event
-8	last_calibration_date	timestamp		Date sensor last calibrated
-9	calibration_status	int (fk)	calibration_status	Calibration status
-10	number_of_elements	int		Number of metadata fields for this instrument
-11	field	int []	sensor_configuration_fields	Field(s) for which next value applies
-12	value	numeric []		Value(s) of field(s) indicated
-13	comment	varchar		Comments on sensor
+element_number	element_name	type	external_table	description
+0	instrument_id	varchar		Unique ID for this instrument in combination with entry_number
+1	station_id	varchar	station_configuration	Station associated with this instrument
+2	observing_method	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
+3	sampling_strategy	int (fk)	sampling_strategy	Sampling strategy used by instrument
+4	calibration_status	int (fk)	calibration_status	Whether the sensor is in / out of calibration
+5	calibration_date	timestamp	NA	Date of last calibration
+6	field_numeric	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+7	value_numeric	numeric[]	NA	Numeric value for this entry (if numeric)
+8	field_coded	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+9	value_coded	int[] (fk)	sensor_configuration_fields	coded value for this entry
+10	field_character	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+11	value_character	varchar[]	NA	Value for entry if not coded or numeric
+12	field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+13	value_timestamp	timestamp[]	NA	time stamp entry
+14	date_start	timestamp	NA	start date for period of validity assoiciated with this entry
+15	date_end	timestamp	NA	end date for period of validity assoiciated with this entry

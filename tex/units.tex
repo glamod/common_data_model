@@ -10,20 +10,20 @@
             \caption{units}
             \label{tab:DataTableUnits}\\
             % Initial column headers
-            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Units}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Conventional abbreviation}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Abbreviation in IA5/ASCII}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Abbreviation in ITA2}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Definition in base units}} \\ \hline\hline \endfirsthead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{units}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{conventional\_abbreviation}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{abbreviation\_in\_ASCII}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{abbreviation\_in\_ITA2}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{definition\_in\_base\_units}} \\ \hline\hline \endfirsthead
             \multicolumn{6}{c}{Table \thetable\ units (cont.)} \\
             % column headers on additional pages
-            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Units}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Conventional abbreviation}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Abbreviation in IA5/ASCII}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Abbreviation in ITA2}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Definition in base units}} \\ \hline\hline \endhead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{units}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{conventional\_abbreviation}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{abbreviation\_in\_ASCII}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{abbreviation\_in\_ITA2}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{definition\_in\_base\_units}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{6}{r}{{Continued on next page}} \\
             \endfoot
@@ -37,32 +37,32 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/Value/.style={
+    columns/value/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Units/.style={
+    columns/units/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Conventional abbreviation/.style={
+    columns/conventional_abbreviation/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Abbreviation in IA5/ASCII/.style={
+    columns/abbreviation_in_ASCII/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Abbreviation in ITA2/.style={
+    columns/abbreviation_in_ITA2/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Definition in base units/.style={
+    columns/definition_in_base_units/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{3.000000 in}

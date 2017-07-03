@@ -10,20 +10,20 @@
             \caption{adjustment}
             \label{tab:DataTableAdjustment}\\
             % Initial column headers
-            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Report ID}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Observation ID}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Adjustment}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{Reason}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Reference}} \\ \hline\hline \endfirsthead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{report\_id}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{observation\_id}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{adjustment}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in}} { \textbf{reason}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{reference}} \\ \hline\hline \endfirsthead
             \multicolumn{6}{c}{Table \thetable\ adjustment (cont.)} \\
             % column headers on additional pages
-            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Value}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Report ID}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Observation ID}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Adjustment}} & 
-\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{Reason}} & 
- \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{Reference}} \\ \hline\hline \endhead
+            \hline\hline \multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{value}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{report\_id}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{observation\_id}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{adjustment}} & 
+\multicolumn{1} { > {\centering}V{1.340000 in} } { \textbf{reason}} & 
+ \multicolumn{1} { > {\centering} V{3.000000 in} } {\textbf{reference}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{6}{r}{{Continued on next page}} \\
             \endfoot
@@ -37,32 +37,32 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/Value/.style={
+    columns/value/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Report ID/.style={
+    columns/report_id/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Observation ID/.style={
+    columns/observation_id/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Adjustment/.style={
+    columns/adjustment/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Reason/.style={
+    columns/reason/.style={
             string type, 
             column type= V{1.340000 in}, 
             string replace*={_}{\_}
         },
-    columns/Reference/.style={
+    columns/reference/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{3.000000 in}
