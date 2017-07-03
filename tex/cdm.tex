@@ -4,11 +4,21 @@
 \usepackage{varwidth}
 \usepackage{array}
 \usepackage{lscape}
-\usepackage[top=2 cm,bottom=2cm]{geometry}
+\usepackage[top=4.5 cm,bottom=2.54cm, lmargin=2cm, rmargin=1.74cm, headheight=3.25cm]{geometry}
 \usepackage{helvet}
 \usepackage{tabto}
 \usepackage{collcell}
 \usepackage{seqsplit}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{mdframed}
+
+
+\definecolor{maroon}{RGB}{102,0,33}
+\sectionfont{\color{maroon}}  % sets colour of sections
+
 \renewcommand{\familydefault}{\sfdefault}
 
 
@@ -30,10 +40,38 @@ empty header/.style={
 
 \setlength{\parindent}{0pt}
 
+\newcounter{FramedDepth}
+\setcounter{FramedDepth}{-1}
+
+\mdfdefinestyle{Framed}{linecolor=black,linewidth=1pt,leftmargin=10pt,rightmargin=10pt,
+                        innerleftmargin=10pt,innerrightmargin=10pt}
+                        
+\newenvironment{Framed}{%
+  \addtocounter{FramedDepth}{1}
+  \ifcase\theFramedDepth\def\FrameColour{white!50}%
+    \or\def\FrameColour{white!50}%
+    \or\def\FrameColour{white!50}%
+    \or\def\FrameColour{white!50}%
+    \fi%
+  \begin{mdframed}[style=Framed,backgroundcolor=\FrameColour]%
+}{\end{mdframed}\addtocounter{FramedDepth}{-1}}
+
+
+
 
 \newcolumntype{n}[1]{  > {\collectcell\seqsplit} V{#1} < {\endcollectcell}    }
-\newcolumntype{h}[1]{  > {\collectcell\textbf\seqsplit} V{#1} < {\endcollectcell}    }
 
+% 1.25
+% 0.65
+
+% headers
+\lhead{\textcolor{maroon}{Copernicus Climate Change Sevice}\\}
+\rhead{\includegraphics{/Users/dyb/GitHub/C3S_311a_CDM/png/c3s_logo_small.png}}
+\lfoot{C3S\_311a\_Lot2\_NUIM\_2017 \{ref\} }
+\cfoot{}
+\rfoot{Page \textbf{\thepage}  of \textbf{\pageref{LastPage} } }
+
+\pagestyle{fancy}
 
 \begin{document}
 
@@ -52,6 +90,12 @@ empty header/.style={
 \end{itemize}
 \vskip 0.25in
 \hrule
+
+\newpage
+\vspace*{\fill}
+\begin{Framed}
+This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commissionand the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
+\end{Framed}
 
 \newpage
 \tableofcontents

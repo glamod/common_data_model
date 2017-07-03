@@ -22,9 +22,9 @@ awk -v ncols="$ncols" -v tablecaption="$tablecaption" -v tablename="$tablename" 
 BEGIN { FS = "\t" ; \
     if( ncols > 4){\
       print "\\begin{landscape}";\
-      pagewidth = 10.7;\
+      pagewidth = 8.9;\
     }else{\
-      pagewidth = 7.3;\
+      pagewidth = 6.8;\
     }\
     gsub(/_/,"\\_",tablename); \
     colwidth = (pagewidth-3.0) / (ncols - 1.0) ;\
