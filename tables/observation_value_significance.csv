@@ -14,13 +14,4 @@ index	observation_value_significance	description
 10	10	root mean square of observed parameter over indicated period
 11	11	Vector mean of observed parameter over indicated period
 12	12	Instantaneous value of observed parameter
-13	13	Observed tendancy: Increasing, then decreasing; Observed parameter the same or higher than three hours ago
-14	14	Observed tendancy: Increasing, then steady; or increasing, then increasing more slowly
-15	15	Observed tendancy: Increasing (steadily or unsteadily)
-16	16	Observed tendancy: Decreasing or steady, then increasing; or increasing, then increasing more rapidly
-17	17	Observed tendancy: Steady; Observed parameter the same as three hours ago
-18	18	Observed tendancy: Decreasing, then increasing;  Observed parameter the same or lower than three hours ago
-19	19	Observed tendancy: Decreasing, then steady; or decreasing, then decreasing more slowly
-20	20	Observed tendancy: Decreasing (steadily or unsteadily)
-21	21	Observed tendancy: Steady or increasing, then decreasing; or decreasing, then decreasing more rapidly
-22	22	Accumulation over specified period
+13	13	Accumulation over specified period

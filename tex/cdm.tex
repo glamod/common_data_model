@@ -18,7 +18,8 @@
 \usepackage{textpos}
 \usepackage{placeins}
 \usepackage{listings}
-
+\usepackage{tikz}
+\usepackage{hyperref}
 
 \SetWatermarkText{Draft}
 
@@ -67,27 +68,64 @@ empty header/.style={
 
 % 1.25 18.4, 1.7
 % 0.65
-
 % Copernicus logo on page 3 onwards needs to go at (18.4cm, 1.7cm from top left of page) size (0.9cm by 0.86 cm)
 
 % headers and footers
-
-
 \headheight 3.5 cm          
 \headsep  0.5 cm
 
 \lhead{\textcolor{maroon}{Copernicus Climate Change Sevice}\vskip 0.5 cm}
-\rhead{\includegraphics{/Users/dyb/GitHub/C3S_311a_CDM/png/c3s_logo_small.png} \vskip 0.3 cm}
+\rhead{\includegraphics{/Users/dyb/GitHub/common_data_model/png/c3s_logo_small.png} \vskip 0.3 cm}
 
 \lfoot{C3S\_311a\_Lot2\_NUIM\_2017 \{ref\} }
 \cfoot{}
 \rfoot{Page \textbf{\thepage}  of \textbf{\pageref{LastPage}} }
 
-
-
 \pagestyle{fancy}
 
 \begin{document}
+
+
+
+% top banner
+\begin{tikzpicture}[remember picture,overlay]
+\draw ([yshift=-15.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/c3s_banner_top.png}};
+\draw ([yshift=-25.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=62.8mm]{/Users/dyb/GitHub/common_data_model/png/copernicus_logo_large.png}};
+\node[shift={(0 mm, -10mm)}]  at (current page.north)   {
+\tiny\color{white} ECMWF COPERNICUS REPORT \\
+};
+\end{tikzpicture}
+
+% top maroon bar
+\begin{tikzpicture}[remember picture,overlay]
+\draw ([yshift=-53.3 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/header_bar.png}};
+\draw ([xshift=95mm, yshift=-53.0 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=11.8mm]{/Users/dyb/GitHub/common_data_model/png/logo_thermometer.png}};
+\draw ([xshift=89mm, yshift=-55.0 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=12.0mm]{/Users/dyb/GitHub/common_data_model/png/logo_earth.png}};
+\node at (1.5,-0.15)   {
+    \color{white} Copernicus Climate Change Service
+};
+\node at (2.5,-0.65)   {
+    \color{white} Copernicus Climate Change Service
+};
+\end{tikzpicture}
+
+
+\vskip 4cm
+\begin{center} 
+\Large\textbf{Copernicus Climate Change Service - 311a Lot 2 \\ Defining a Common Data Model}
+\vskip 1cm
+\Large C3S\_311a\_Lot2\_NUIM - Access to Observations from Global Climate Data Archives
+\end{center}
+
+%footer bar
+\begin{tikzpicture}[remember picture,overlay]
+\draw ([yshift=15. mm]current page.south) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/footer_bar.png}};
+\draw ([yshift=10.5 mm]current page.south) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/copernicus_logo.png}};
+\draw ([xshift=-30 mm, yshift=10.5 mm]current page.south east) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ECMWF_logo.png}};
+\draw ([xshift=30 mm, yshift=10.5 mm]current page.south west) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ec_logo_small.png}};
+\end{tikzpicture}
+
+
 % First page will be replaced with appropriate cover sheet
 % \setcounter{page}{2}
 \maketitle
@@ -96,8 +134,17 @@ empty header/.style={
 \section*{Summary}
 \hrule
 \vskip 0.25in
-\noindent This document describes background information on the definition of a common data model for the representation of in situ observations as part of the C3S 311a activity.\\ \\
-\noindent A draft data model is proposed.\\
+This document describes background information on the definition of a common data model for the representation of in situ observations as part of the C3S 311a activity.\\ \\
+A draft data model is proposed.\\ \\
+Call participants are requested to:\\
+\begin{itemize}
+\item Review the proposed data model, specifically tables 3 - 7.
+\item Review the configuration field and code tables and suggest additions / deletions.
+\item Other actions ...
+\end{itemize}
+\vskip 0.25in
+Tab separated versions of the code tables can be found at:\\ \\
+\tabto{2cm} \url{https://github.com/glamod/common_data_model/tree/master/tables}
 \vskip 0.25in
 \hrule
 
@@ -130,7 +177,7 @@ The Copernicus Climate Change Service (C3S), through its "Collection and Process
 
 \textbf{Within Lot 2}, observations and metadata from land stations and marine platforms will be harmonised into a common data model and a web based service developed to serve the data through the C3S Climate Data Store (CDS). The observations include instantaneous / point observations, such as those from SYNOP weather reports, as well as daily and monthly summaries (CLIMAT DAILY and CLIMAT). A single report may contain observations of multiple parameters, e.g. air temperature, humidity, wind speed etc. The stations range from stationary land stations to mobile merchant ships, drifting buoys and other marine platforms.\\
 
-\textbf{Lot 3} are creating a harmonized observational dataset of measurements from the Global Baseline and Reference radiosounding networks. Within the first year observations are restricted to temperature and humidity measurements, in future years this will be expanded to include other essential climate variables (surface temperature, wind, ozone, trace gases, GPS IWV). Observations from the GRUAN and GUAN networks will be the main focus, but with potential extension to the broader RAOB program. Annual updates will be provided. Integrated physical and statistical corrections will be used to improve the quality of the baseline observations using the data from the reference networks. Lot 3 intend to be fully compliant with ODB version 2 (ODB2), noting that some changes will be necessary to ODB2 to report the full range of information required. Discovery metadata are planned to be compliant with ISO 19115 and observational metadata reported using the CF conventions. Compliance with the WIGOS metadata standard is also expected. \\
+\textbf{Lot 3} are creating a harmonised observational dataset of measurements from the Global Baseline and Reference radiosounding networks. Within the first year observations are restricted to temperature and humidity measurements, in future years this will be expanded to include other essential climate variables (surface temperature, wind, ozone, trace gases, GPS IWV). Observations from the GRUAN and GUAN networks will be the main focus, but with potential extension to the broader RAOB program. Annual updates will be provided. Integrated physical and statistical corrections will be used to improve the quality of the baseline observations using the data from the reference networks. Lot 3 intend to be fully compliant with ODB version 2 (ODB2), noting that some changes will be necessary to ODB2 to report the full range of information required. Discovery metadata are planned to be compliant with ISO 19115 and observational metadata reported using the CF conventions. Compliance with the WIGOS metadata standard is also expected. \\
 
 \textbf{Lot 4} will build on and extend the European Climate Assessment and Dataset (ECA\&D) project and E-OBS daily dataset for Europe. The gridded E-OBS dataset was initially developed as part of the ENSEMBLES project for statistical comparisons with Regional Climate Model output (Haylock et al., 2008). More recently European research projects EURO4M, UERRA, EUPORIAS, EUSTACE, and CLIPc led to further improvements and applications, and ECA\&D/E-OBS has now become reference datasets for a larger user community, also outside climate research. Funding by EUMETNET and KNMI supported the developments of additional functionality, and the close collaboration with EUMETNET members has led to strongly improved ECA\&D station coverage over Europe in recent years. Within C3S\_311a lot 4, the ECA\&D and E-OBS will be transformed into an operational system for the Copernicus Climate Change Service (C3S), delivering regularly updated gridded products based on European in-situ data for many Essential Climate Variables (ECVs). The underlying station data that include surface air temperature, precipitation, humidity, wind speed and direction, will be made available as well, pending permission by the owners of these data. To serve climate change monitoring and climate impact assessments a large number of user-oriented climate indices will be provided, both as time series at station sites and as gridded products. No preference has been specified for the data models to be used.\\
 
@@ -147,17 +194,17 @@ Both Lots 2 and 3 have proposed using data models based on the data model develo
 
 The implementation of the ODB model at ECMWF, that proposed in Lots 2 and 3 all have differing requirements. For example, the existing observations table columns defined within ODB\footnote{http://apps.ecmwf.int/odbgov/column/}  contain many parameters that are of little relevance to the In Situ observations but are relevant to the assimilation of data from many different sources into the numerical models. Conversely, there are many parameters included in the data from Lots 2 and 3 that are required to correctly interpret the observations but that are not included in ODB. \\
 
-In order to facilitate the development of the data model there have been two initial teleconferences between Lots 2 and 3 discussing the CDM and collating information on the parameters required . Each parameter and report type has its own unique set of fields and metadata fields. For example, surface air temperature observations are typically made in a screen or shelter that can influence the quality of the measurements. As a result, it is desirable to include information on the screen type, material and dimensions alongside the observation. For upper air temperature observations this metadata information is not relevant but other parameters will be required, such as the type of balloons used, instrument type and burstpoint.\\
+In order to facilitate the development of the data model there have been two initial teleconferences between Lots 2 and 3 discussing the CDM and collating information on the parameters required . Each parameter and report type has its own unique set of fields and metadata fields. For example, surface air temperature observations are typically made in a screen or shelter that can influence the quality of the measurements. As a result, it is desirable to include information on the screen type, material and dimensions alongside the observation. For upper air temperature observations this metadata information is not relevant but other parameters will be required, such as the type of balloons used, instrument type and burst point.\\
 
 In order to represent the wide variety of metadata required across (and within) Lots four different solutions are possible:\\
 \begin{itemize}
 \item The observations table is expanded to include all possible metadata fields, with new columns added when a new data / report type is included.
 \item Each report (and possibly parameter) type has a separate observations table, with a minimum set of common parameters defined across the different tables.
 \item The observations table is defined to include the minimum set of information required for each observation and the metadata is then linked via a series of Entity-Attribute-Value (EAV) based tables (e.g. see Table 2).
-\item Similar to the EAV based approach, the minimum set of information requried is included in the main observations table and the main observations table is linked to a series of metadata tables. These metadata tables then include the additional fields through the use of arrays indicating the field the metadata is for and storing the value of the metadata.
+\item Similar to the EAV based approach, the minimum set of information required is included in the main observations table and the main observations table is linked to a series of metadata tables. These metadata tables then include the additional fields through the use of arrays indicating the field the metadata is for and storing the value of the metadata.
 \end{itemize}
 
-Within this document we are proposing to use solution (4), with the use of arrays to store metadata elements not common across all data types. Compared to the EAV approach, this requires fewing joins between tables and less duplication of entires, making the data model in principle more efficient. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
+Within this document we are proposing to use solution (4), with the use of arrays to store metadata elements not common across all data types. Compared to the EAV approach, this requires fewer joins between tables and less duplication of entires, making the data model in principle more efficient. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
 
 \input{eav_example}
 
@@ -170,14 +217,14 @@ In recognition of the increasing importance of observational metadata the WMDS i
 
 \section {Common Data Model}
 \FloatBarrier
-As noted above, we are proposing a data model based on the ODB type data model, but with the metadata linked / nested through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1. The primary table, or data structure, containing the observations is defined by the "observations\_table" (Table 3). This table contains the information on the geospatial location of the observations (and station), date / time of the report, the observed parameter, source information; data licencing and usage permissions etc and links to additional metadata. The "station\_configuration" table (Table 4) contains detailed information on the station reporting the data including: institute operating the station; the type of station; station / AWS model type; location; operating territory; reporting frequency etc. The "source\_configuration" table (Table 5) contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc. The "profile\_configuration" table (Table 6) contains detailed metadata for atmospheric and oceanic profiles, including: profile type; type of launcher; direction of profile; balloon / XBT type etc; The "sensor\_configuration" table (Table 7) contains detailed information on the sensor used to make a particular observation, including: calibration status; sampling strategy; observing method; sensor housing and ventilation; instrument model and serial number etc;\\
+As noted above, we are proposing a data model based on the ODB type data model, but with the metadata linked / nested through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. The primary table, or data structure, containing the observations is defined by the "observations\_table" (Table 3). This table contains the information on the geospatial location of the observations (and station), date / time of the report, the observed parameter, source information; data licensing and usage permissions etc and links to additional metadata. The "station\_configuration" table (Table 4) contains detailed information on the station reporting the data including: institute operating the station; the type of station; station / AWS model type; location; operating territory; reporting frequency etc. The "source\_configuration" table (Table 5) contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc. The "profile\_configuration" table (Table 6) contains detailed metadata for atmospheric and oceanic profiles, including: profile type; type of launcher; direction of profile; balloon / XBT type etc; The "sensor\_configuration" table (Table 7) contains detailed information on the sensor used to make a particular observation, including: calibration status; sampling strategy; observing method; sensor housing and ventilation; instrument model and serial number etc;\\
 
-Whilst Figure 1 and Tables 3 - 7 show the data model from a relational database perspective the same data model could be represented in XML. A simplified XML example of this is shown in Figure 2. For readability the majority of elements have been omitted, with a few example elements and nested data structures retained. In this example, the records from the configuraiton tables are nested within the entries for the respective records from the observations\_table.\\
+Whilst Figure 1 and Tables 3 - 7 show the data model from a relational database perspective the same data model could be represented in XML. A simplified XML example of this is shown in Figure 2. For readability the majority of elements have been omitted, with a few example elements and nested data structures retained. In this example, the records from the configuration tables are nested within the entries for the respective records from the observations\_table.\\
 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{/Users/dyb/GitHub/C3S_311a_CDM/png/cdm_schematic_simple.png}
+\includegraphics[width=0.75\textwidth]{/Users/dyb/GitHub/common_data_model/png/cdm_schematic_simple.png}
 \caption {Simplified schematic showing overview of common data model}
 \end{figure}
 
@@ -253,7 +300,7 @@ To do ...
 To do ...
 \section {Common Data Model governance}
 \begin{itemize}
-\item Tables defining data model and decode tables stored in Git repository.
+\item Tables defining data model and decode tables stored in Git repository (\url{https://github.com/glamod/common_data_model/}).
 \item Whilst service in development data model updated / revised annually (modified / new elements in Tables 3 - 7).
 \item New entries to decode tables every 3 / 6 months (TBD).
 \item Changes made by consensus across Lots and with ECMWF.
