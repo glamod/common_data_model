@@ -1,4 +1,4 @@
 # Description: Table defining frequencies at which data updated / reprocessed
 # Source: 
 index	update_frequency	description
-1	Annual
+0	1	Annual

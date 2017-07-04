@@ -10,8 +10,8 @@ element_number	element_name	kind	external_table	description
 9	platform_type	int (fk)	platform_type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
 10	platform_sub_type	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m discuss buoy
 11	primary_station_id	varchar		Primary station identifier, e.g. WIGOS ID
-12	primary_station_id_scheme	int (fk)	id_scheme	Scheme used for unique station ID
-13	secondary_station_id	varchar		Alternate (local) ID for station
+12	primary_station_id_scheme	int (fk)	id_scheme	Scheme used for station ID
+13	secondary_station_id	varchar		Alternate (e.g. local) ID for station
 14	secondary_station_id_scheme	int (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID
 15	station_location_longitude	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
 16	station_location_latitude	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
@@ -55,7 +55,7 @@ element_number	element_name	kind	external_table	description
 54	record_minute	int		Minute of revision of this record (UTC)
 55	record_seconds	int		Seconds of revision of this record (UTC)
 56	processing_level	int (fk)	report_processing_level	Level of processing applied to this report
-57	processing_code	int[] (fk)	report_processing_code	Processing applied to this report
+57	processing_codes	int[] (fk)	report_processing_codes	Processing applied to this report
 58	source_id	int (fk)	source_configuration	Original source of data – link to table 
 59	source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
 60	data_policy_licence	int (fk)	data_policy_licence	WMOessential, WMOadditional, WMOother
@@ -90,13 +90,13 @@ element_number	element_name	kind	external_table	description
 89	numerical_precision	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
 90	standard_uncertainty	numeric		Standard uncertainty in reported value
 91	method_of_estimating_standard_uncertainty	int (fk)	method_of_estimating_uncertainty	Method of estimating the standard uncertainty
-92	uncertainty_due_to_correlated_errors	numeric		Uncertainty due to errors in the observation that are correlated between observations
+92	uncertainty_due_to_correlated_errors	numeric		Uncertainty due to errors in the observation that are correlated between observations, e.g. due to sensor housing
 93	method_of_estimating_uncertainty_due_to_correlated_errors	int (fk)	method_of_estimating_uncertainty	NA
-94	uncertainty_due_to_uncorrelated_errors	numeric 		Uncertainty due to errors in the observation that are uncorrelated between observations
+94	uncertainty_due_to_uncorrelated_errors	numeric 		Uncertainty due to errors in the observation that are uncorrelated between observations, e.g. due to sensor noise / small scale variability
 95	method_of_estimating_uncertainty_due_to_uncorrelated_errors	int (fk)	method_of_estimating_uncertainty	NA
 96	uncertainty_due_to_systematic_errors	numeric 		Uncertainty due to errors in the observations that are correlated under similar observing conditions
 97	method_of_estimating_uncertainty_due_to_systematic_errors	int (fk)	method_of_estimating_uncertainty	NA
-98	total_uncertainty	numeric 		NA
+98	total_uncertainty	numeric 		Sum of uncertainty terms added in quadrature
 99	method_of_estimating_total_uncertainty	int (fk)	method_of_estimating_uncertainty	NA
 100	sensor_id	int (fk)	sensor_configuration	NA
 101	sensor_automation_status	int (fk)	automation_status	Automated, manual, mixed or visual observation
@@ -104,7 +104,7 @@ element_number	element_name	kind	external_table	description
 103	original_precision	int 		Original reporting precision in units given by 'original_units'
 104	original_units	int (fk)	units	Original units 
 105	original_value	numeric 		Original value as reported or recorded in log book.
-106	conversion_factor	int (fk)	conversion_factor	Link to table describing conversion process
+106	conversion_method	int (fk)	conversion_method	Link to table describing conversion process
 107	processing_code	int[] (fk)	processing_code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
 108	processing_level	int (fk)	processing_level	Level of processing applied to observation.
 109	adjustment_id	int (fk)	adjustment	Adjustment applied to observation reported in observation value (observation_value = original + adjustment)

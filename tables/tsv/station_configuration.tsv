@@ -1,8 +1,8 @@
 element_number	element_name	type	external_table	description
-0	station_primary_id	varchar		Primary (WMO) ID for station
+0	station_primary_id	varchar		Primary (e.g. WMO) ID for station
 1	station_primary_id_scheme	int (fk)	id_scheme	Scheme used for primary ID
-2	station_record_number	int	NA	Record number for this station entry
-3	station_secondary_id	varchar		Secondary (local) ID for station
+2	station_record_number	int		Record number for this station entry
+3	station_secondary_id	varchar		Secondary (e.g. local) ID for station
 4	station_secondary_id_scheme	int (fk)	id_scheme	Scheme used for secondary ID
 5	station_name	varchar		Name of station (e.g. Tateno)
 6	station_abbreviation	varchar		Abbreviation of station name (e.g. TAT)

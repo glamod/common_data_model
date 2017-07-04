@@ -1,0 +1,64 @@
+\begin{landscape}
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{conversion\_method}
+            \label{tab:DataTableConversionmethod}\\
+            % Initial column headers
+            \hline\hline             \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{conversion}}} & 
+            \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{implementation}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{reference}}} \\ \hline\hline \endfirsthead
+            \multicolumn{5}{c}{Table \thetable\ conversion\_method (cont.)} \\
+            % column headers on additional pages
+            \hline\hline             \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{conversion}}} & 
+            \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{implementation}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{reference}}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{5}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{5}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/index/.style={
+            string type, 
+            column type= V{1.475000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/conversion/.style={
+            string type, 
+            column type= V{1.475000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/description/.style={
+            string type, 
+            column type= V{1.475000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/implementation/.style={
+            string type, 
+            column type= V{1.475000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/reference/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/conversion_method.csv}
+\end{landscape}

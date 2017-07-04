@@ -1,9 +1,9 @@
 # Description: Quality of time variable
 # Source:
 index	time_quality	description
-0	Timestamp valid, time reported to nearest second
-1	Timestamp valid, time reported to nearest minute
-2	Timestamp valid, time  reported to nearest hour
-3	Time missing, date valid. Report set to local midday
-4	Day missing
-5	Invalid date / time
+0	0	Timestamp valid, time reported to nearest second
+1	1	Timestamp valid, time reported to nearest minute
+2	2	Timestamp valid, time  reported to nearest hour
+3	3	Time missing, date valid. Report set to local midday
+4	4	Day missing
+5	5	Invalid date / time

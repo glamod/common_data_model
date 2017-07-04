@@ -10,30 +10,32 @@
             \caption{institute}
             \label{tab:DataTableInstitute}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{value}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{name}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{region}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{sub\_region}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{address}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{contact}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{contact\_email}}} & 
+            \hline\hline             \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{institute}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{region}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{sub\_region}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{address}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{contact}}} & 
+            \multicolumn{1} { V{0.737500 in}} { \textbf{\seqsplit{contact\_email}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{URL}}} \\ \hline\hline \endfirsthead
-            \multicolumn{8}{c}{Table \thetable\ institute (cont.)} \\
+            \multicolumn{9}{c}{Table \thetable\ institute (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{value}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{name}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{region}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{sub\_region}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{address}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{contact}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{contact\_email}}} & 
+            \hline\hline             \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{institute}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{region}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{sub\_region}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{address}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{contact}}} & 
+            \multicolumn{1} {V{0.737500 in} } { \textbf{\seqsplit{contact\_email}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{URL}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{8}{r}{{Continued on next page}} \\
+            \multicolumn{9}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{8}{r}{{End of table}} \\ 
+            \multicolumn{9}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -41,39 +43,44 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/value/.style={
+    columns/index/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
+            string replace*={_}{\_}
+        },
+    columns/institute/.style={
+            string type, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/name/.style={
             string type, 
-            column type= n{0.842857 in}, 
+            column type= n{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/region/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/sub_region/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/address/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/contact/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/contact_email/.style={
             string type, 
-            column type= V{0.842857 in}, 
+            column type= V{0.737500 in}, 
             string replace*={_}{\_}
         },
     columns/URL/.style={

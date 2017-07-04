@@ -1,0 +1,45 @@
+digraph {
+  node [color=white]
+  rankdir=LR;
+  observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">observations_table</TD></TR>
+                                <TR><TD PORT="head">Header information</TD></TR>
+                                <TR><TD PORT="source">Source information</TD></TR>
+                                <TR><TD PORT="sensor">Observed parameter and sensor information</TD></TR>
+                             </TABLE>>]
+
+
+  station_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">station_configuration</TD></TR>
+                                <TR><TD>Detailed information on the station reporting the data.<BR ALIGN="LEFT"/>
+Information changes infrequently, required fields expected<BR ALIGN="LEFT"/>
+to be common across reports from different networks or <BR ALIGN="LEFT"/>observing programmes.<BR ALIGN="LEFT"/><BR/>&nbsp;
+<BR ALIGN="LEFT"/>
+Elements will be repeated in the observations tables <BR ALIGN="left"/>for ease of filtering.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+profile_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">profile_configuration</TD></TR>
+                                <TR><TD>Detailed information on the profile (atmospheric / oceanic).<BR ALIGN="LEFT"/>
+Expected to change with every report. Fields will be<BR ALIGN="LEFT"/>
+dependent on profile type.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+source_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">source_configuration</TD></TR>
+                                <TR><TD>Detailed information on the original source of the data.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">sensor_configuration</TD></TR>
+                                <TR><TD>
+Detailed information on the instrument / sensor making.<BR ALIGN="LEFT"/>
+the observation. Fields reported will depend on variable<BR ALIGN="LEFT"/>
+and observation type.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+  observations_table:head -> station_configuration:head;
+  observations_table:head -> profile_configuration:head;
+  observations_table:source -> source_configuration:head;
+  observations_table:sensor -> sensor_configuration:head;
+}

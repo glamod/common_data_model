@@ -1,9 +1,0 @@
-# Description: Frequency at which observations are typically made by this station
-# Source: WMO47 - 0602
-Value	Code	Description
-0	OPD	One observation per day (24 hour intervals).
-1	TPD	Two observations per day (12 hour intervals).
-2	FPD	Four observations per day (6 hour intervals).
-3	EPD	Eight observations per day (3 hour intervals).
-4	HLY	Hourly observations.
-5	IRR	Irregular observations.

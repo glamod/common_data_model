@@ -1,7 +1,0 @@
-# Description: Table containing history for records
-# Source:	
-ElementNumber	ElementName	Type	Description
-0	HistoryID	bigint	Unique ID for entry
-1	ReportID	bigint	Which report this is an entry for
-2	Timestamp		timestamp for entry
-3	History	varchar	String containing history entry

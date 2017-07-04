@@ -1,4 +1,0 @@
-# Description: Table containing definition of conversions between units used
-# Source:
-Value	Description	Implementation
-0	Farenheit to degrees Celsius	T_celsius = (T_Farenheit - 32) / 1.8

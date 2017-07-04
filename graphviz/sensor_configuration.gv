@@ -1,24 +1,26 @@
 digraph sensor_configuration {
 node [color=white]
-sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
 <TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: sensor_configuration</TD></TR>
 <TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration.tsv</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="5"># Description: definition of table specifying sensor configuration</TD></TR>
 <TR><TD ALIGN="left" COLSPAN="5"># Source:</TD></TR>
-<TR><TD BGCOLOR="GRAY">element_number</TD><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">Description</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_number</TD><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
 <TR><TD PORT="instrument_idL">0</TD><TD>instrument_id </TD><TD>varchar </TD><TD></TD><TD PORT="instrument_idR">Unique ID for this instrument </TD></TR>
-<TR><TD PORT="parameterL">1</TD><TD>parameter </TD><TD>int (fk) </TD><TD></TD><TD PORT="parameterR">The observed variable that this instrument measures (one entry per <BR/>parameter if more than one) </TD></TR>
-<TR><TD PORT="manufacturerL">2</TD><TD>manufacturer </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/manufacturer.tsv"><FONT color="blue">manufacturer </FONT></TD><TD PORT="manufacturerR">Manufacturer of sensor / instrument </TD></TR>
-<TR><TD PORT="sensor_typeL">3</TD><TD>sensor_type </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_type.tsv"><FONT color="blue">sensor_type </FONT></TD><TD PORT="sensor_typeR">Type of sensor, e.g. RS92 or anemometer </TD></TR>
-<TR><TD PORT="sensor_modelL">4</TD><TD>sensor_model </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_model.tsv"><FONT color="blue">sensor_model </FONT></TD><TD PORT="sensor_modelR">Manufacturers designation / model number </TD></TR>
-<TR><TD PORT="serial_numberL">5</TD><TD>serial_number </TD><TD>varchar </TD><TD></TD><TD PORT="serial_numberR">Serial number </TD></TR>
-<TR><TD PORT="observing_methodL">6</TD><TD>observing_method </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/observing_method.tsv"><FONT color="blue">observing_method </FONT></TD><TD PORT="observing_methodR">Estimate, measured or computed value </TD></TR>
-<TR><TD PORT="sampling_strategyL">7</TD><TD>sampling_strategy </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sampling_strategy.tsv"><FONT color="blue">sampling_strategy </FONT></TD><TD PORT="sampling_strategyR">Continuous, discrete, event </TD></TR>
-<TR><TD PORT="last_calibration_dateL">8</TD><TD>last_calibration_date </TD><TD>timestamp </TD><TD></TD><TD PORT="last_calibration_dateR">Date sensor last calibrated </TD></TR>
-<TR><TD PORT="calibration_statusL">9</TD><TD>calibration_status </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/calibration_status.tsv"><FONT color="blue">calibration_status </FONT></TD><TD PORT="calibration_statusR">Calibration status </TD></TR>
-<TR><TD PORT="number_of_elementsL">10</TD><TD>number_of_elements </TD><TD>int </TD><TD></TD><TD PORT="number_of_elementsR">Number of metadata fields for this instrument </TD></TR>
-<TR><TD PORT="fieldL">11</TD><TD>field </TD><TD>int [] </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_fields.tsv"><FONT color="blue">sensor_configuration_fields </FONT></TD><TD PORT="fieldR">Field(s) for which next value applies </TD></TR>
-<TR><TD PORT="valueL">12</TD><TD>value </TD><TD>numeric [] </TD><TD></TD><TD PORT="valueR">Value(s) of field(s) indicated </TD></TR>
-<TR><TD PORT="commentL">13</TD><TD>comment </TD><TD>varchar </TD><TD></TD><TD PORT="commentR">Comments on sensor </TD></TR>
+<TR><TD PORT="station_idL">1</TD><TD>station_id </TD><TD>varchar </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/station_configuration.tsv"><FONT color="blue">station_configuration </FONT></TD><TD PORT="station_idR">Station associated with this instrument </TD></TR>
+<TR><TD PORT="observing_methodL">2</TD><TD>observing_method </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/observing_method.tsv"><FONT color="blue">observing_method </FONT></TD><TD PORT="observing_methodR">Method (instrumental, estimated / visual, computed) by which observation made <BR/></TD></TR>
+<TR><TD PORT="sampling_strategyL">3</TD><TD>sampling_strategy </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sampling_strategy.tsv"><FONT color="blue">sampling_strategy </FONT></TD><TD PORT="sampling_strategyR">Sampling strategy used by instrument </TD></TR>
+<TR><TD PORT="calibration_statusL">4</TD><TD>calibration_status </TD><TD>int (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/calibration_status.tsv"><FONT color="blue">calibration_status </FONT></TD><TD PORT="calibration_statusR">Whether the sensor is in / out of calibration </TD></TR>
+<TR><TD PORT="calibration_dateL">5</TD><TD>calibration_date </TD><TD>timestamp </TD><TD></TD><TD PORT="calibration_dateR">Date of last calibration </TD></TR>
+<TR><TD PORT="field_numericL">6</TD><TD>field_numeric </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_fields.tsv"><FONT color="blue">sensor_configuration_fields </FONT></TD><TD PORT="field_numericR">fields for which this entry is applicable </TD></TR>
+<TR><TD PORT="value_numericL">7</TD><TD>value_numeric </TD><TD>numeric[] </TD><TD></TD><TD PORT="value_numericR">Numeric value for this entry (if numeric) </TD></TR>
+<TR><TD PORT="field_codedL">8</TD><TD>field_coded </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_fields.tsv"><FONT color="blue">sensor_configuration_fields </FONT></TD><TD PORT="field_codedR">fields for which this entry is applicable </TD></TR>
+<TR><TD PORT="value_codedL">9</TD><TD>value_coded </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_codes.tsv"><FONT color="blue">sensor_configuration_codes </FONT></TD><TD PORT="value_codedR">coded value for this entry </TD></TR>
+<TR><TD PORT="field_characterL">10</TD><TD>field_character </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_fields.tsv"><FONT color="blue">sensor_configuration_fields </FONT></TD><TD PORT="field_characterR">fields for which this entry is applicable </TD></TR>
+<TR><TD PORT="value_characterL">11</TD><TD>value_character </TD><TD>varchar[] </TD><TD></TD><TD PORT="value_characterR">Value for entry if not coded or numeric </TD></TR>
+<TR><TD PORT="field_timestampL">12</TD><TD>field_timestamp </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/sensor_configuration_fields.tsv"><FONT color="blue">sensor_configuration_fields </FONT></TD><TD PORT="field_timestampR">fields for which this entry is applicable </TD></TR>
+<TR><TD PORT="value_timestampL">13</TD><TD>value_timestamp </TD><TD>timestamp[] </TD><TD></TD><TD PORT="value_timestampR">time stamp entry </TD></TR>
+<TR><TD PORT="date_startL">14</TD><TD>date_start </TD><TD>timestamp </TD><TD></TD><TD PORT="date_startR">start date for period of validity assoiciated with this entry <BR/></TD></TR>
+<TR><TD PORT="date_endL">15</TD><TD>date_end </TD><TD>timestamp </TD><TD></TD><TD PORT="date_endR">end date for period of validity assoiciated with this entry <BR/></TD></TR>
 </TABLE>>];
 }
