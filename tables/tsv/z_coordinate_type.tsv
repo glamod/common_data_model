@@ -1,2 +1,2 @@
-value	description
-0	height (m) above sea level
+index	z_coordinate_type	description
+0	0	height (m) above sea level

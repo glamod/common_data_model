@@ -1,7 +1,7 @@
 # Description: Calibration status of the instrument
 # Source: WIGOS 5-08
 index	calibration_status	description
-0	No changes - in calibration.
-1	No changes - out of calibration.
-2	No changes - calibration unknown.
-3	Recalibrated - in calibration.
+0	0	No changes - in calibration.
+1	1	No changes - out of calibration.
+2	2	No changes - calibration unknown.
+3	3	Recalibrated - in calibration.

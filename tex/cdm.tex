@@ -16,6 +16,9 @@
 \usepackage{mdframed}
 \usepackage{draftwatermark}
 \usepackage{textpos}
+\usepackage{placeins}
+\usepackage{listings}
+
 
 \SetWatermarkText{Draft}
 
@@ -93,12 +96,8 @@ empty header/.style={
 \section*{Summary}
 \hrule
 \vskip 0.25in
-\noindent This document describes background information and a summary of initial steps taken towards defining a common data model for the representation of in situ observations as part of the C3S 311a activity.\\ \\
-\noindent An overview of the preferred data model from Lot 2 is given and participants on the call are invited to:\\
-\begin{itemize}
-\item Review the background information and proposed data model presented in this document
-\item Endorse the proposed data model or propose an alternative model for use within C3S 311a.
-\end{itemize}
+\noindent This document describes background information on the definition of a common data model for the representation of in situ observations as part of the C3S 311a activity.\\ \\
+\noindent A draft data model is proposed.\\
 \vskip 0.25in
 \hrule
 
@@ -150,14 +149,15 @@ The implementation of the ODB model at ECMWF, that proposed in Lots 2 and 3 all 
 
 In order to facilitate the development of the data model there have been two initial teleconferences between Lots 2 and 3 discussing the CDM and collating information on the parameters required . Each parameter and report type has its own unique set of fields and metadata fields. For example, surface air temperature observations are typically made in a screen or shelter that can influence the quality of the measurements. As a result, it is desirable to include information on the screen type, material and dimensions alongside the observation. For upper air temperature observations this metadata information is not relevant but other parameters will be required, such as the type of balloons used, instrument type and burstpoint.\\
 
-In order to represent the wide variety of metadata required across (and within) Lots three different solutions are possible:\\
+In order to represent the wide variety of metadata required across (and within) Lots four different solutions are possible:\\
 \begin{itemize}
 \item The observations table is expanded to include all possible metadata fields, with new columns added when a new data / report type is included.
 \item Each report (and possibly parameter) type has a separate observations table, with a minimum set of common parameters defined across the different tables.
 \item The observations table is defined to include the minimum set of information required for each observation and the metadata is then linked via a series of Entity-Attribute-Value (EAV) based tables (e.g. see Table 2).
+\item Similar to the EAV based approach, the minimum set of information requried is included in the main observations table and the main observations table is linked to a series of metadata tables. These metadata tables then include the additional fields through the use of arrays indicating the field the metadata is for and storing the value of the metadata.
 \end{itemize}
 
-Within this document we are proposing to use solution (3), defining a minimum set of parameters to be included in the observations table and linking to the metadata in auxiliary tables. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
+Within this document we are proposing to use solution (4), with the use of arrays to store metadata elements not common across all data types. Compared to the EAV approach, this requires fewing joins between tables and less duplication of entires, making the data model in principle more efficient. Solution (1) has been discounted as being impractical from an implementation perspective and from the perspective of adding new data types at a future date. Option (2) has not been discounted but will result in a series of data models being defined rather than a single unified data model.\\
 
 \input{eav_example}
 
@@ -169,12 +169,19 @@ The BUFR format is a flexible and efficient table driven format for reporting we
 In recognition of the increasing importance of observational metadata the WMDS is currently under development and undergoing a phased implementation (WMO, 2015b). The WMDS forms an extension of the ISO19115 metadata standard, with additional mandatory elements describing both the station level and discovery metadata as well as specific information on the instrumentation used and processing steps. As part of the process simplified versions of BUFR and other tables have been included in the standard. As with BUFR these tables should be referenced, where appropriate, in preference to defining new code tables. Additionally, for compatibility with WIGOS the CDM should contain all mandatory elements of the WMDS. 
 
 \section {Common Data Model}
+\FloatBarrier
+As noted above, we are proposing a data model based on the ODB type data model, but with the metadata linked / nested through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1. The primary table, or data structure, containing the observations is defined by the "observations\_table" (Table 3). This table contains the information on the geospatial location of the observations (and station), date / time of the report, the observed parameter, source information; data licencing and usage permissions etc and links to additional metadata. The "station\_configuration" table (Table 4) contains detailed information on the station reporting the data including: institute operating the station; the type of station; station / AWS model type; location; operating territory; reporting frequency etc. The "source\_configuration" table (Table 5) contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc. The "profile\_configuration" table (Table 6) contains detailed metadata for atmospheric and oceanic profiles, including: profile type; type of launcher; direction of profile; balloon / XBT type etc; The "sensor\_configuration" table (Table 7) contains detailed information on the sensor used to make a particular observation, including: calibration status; sampling strategy; observing method; sensor housing and ventilation; instrument model and serial number etc;\\
 
-As noted above, we are proposing a data model based on the ODB type data model, but with the metadata linked through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1. The observations table is described fully below (Table 3) and contains the geospatial (xyz) and temporal (t) locations of both the station making the report and the observed parameter, unique identifying information for the station, source data (i.e. dataset) information, observed values and data licencing / usage rights. In Table 3 below, where we list the proposed elements for the observations table, we also identify where there is overlap with the elements required by the WMDS. It should be noted that not all elements from the WMDS will appear in the observations table but will be included in the auxiliary tables. \\
+Whilst Figure 1 and Tables 3 - 7 show the data model from a relational database perspective the same data model could be represented in XML. A simplified XML example of this is shown in Figure 2. For readability the majority of elements have been omitted, with a few example elements and nested data structures retained. In this example, the records from the configuraiton tables are nested within the entries for the respective records from the observations\_table.\\
 
-Simplified CDM schematic here\\
 
-To enable flexibility and accommodate the diverse data types and metadata the additional tables are proposed to be EAV based (see Table 2 above for example). This also gives the flexibility of adding a new metadata field by simply adding a new row rather than column. Within the following tables the following syntax has been used to indicate the data type for the different elements: \\
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{/Users/dyb/GitHub/C3S_311a_CDM/png/cdm_schematic_simple.png}
+\caption {Simplified schematic showing overview of common data model}
+\end{figure}
+
+Within the following tables the following syntax has been used to indicate the data type for the different elements: \\
 \begin{itemize}
 \item numeric: \tabto{3 cm} Any numeric value (integer or floating point).
 \item int: \tabto{3 cm} An integer value.
@@ -184,36 +191,73 @@ To enable flexibility and accommodate the diverse data types and metadata the ad
 \item (fk)  \tabto{3 cm} The indicated value is also a foreign key linking to another table.
 \end {itemize}
 
-%\input{cdm_schematic}
-
-
-%\begin{landscape}
-
-\subsection {Observations table}
-
-Preamble text ... \\
+\begin{figure}
+\begin{Framed}
+\begin{lstlisting}[language=XML]
+<observations_table>
+    <report>
+        <report_id type="integer"/>
+        <region type="integer"/>
+        <sub_region type="integer"/>
+        <application_area type="array"></application_area>
+        <observing_programme type="array"></observing_programme>
+        <report_type type="integer"/>
+        <station_name type="string"/>
+        ...
+        ...
+        <station_configuration>
+            <station_primary_id type="string"/>
+            <station_primary_id_scheme type="integer"/>
+            ...
+            ...
+            <field_numeric type="array"></field_numeric>
+            <value_numeric type="array"></value_numeric>
+             ...
+        </station_configuration>
+        ...
+        ...
+    </report>
+    <report>
+    ...
+    </report>
+</observations_table>
+\end{lstlisting}
+\end{Framed}
+\caption{Truncated / simplified XML example of data model defined in Tables 3 - 7.}
+\end{figure}
+\FloatBarrier
+%\subsection {Observations table}
 
 \input{observations_table}
 
-\subsection {Station configuration table}
+%\subsection {Station configuration table}
 
 %Entity-attribute value based table for station configuration (and others).
 \include {station_configuration}
 
-
-\subsection {Source configuration table}
-
-\include {source_configuration}
-
-\subsection {Profile configuration table}
+% \subsection {Profile configuration table}
 
 \input {profile_configuration}
 
-\subsection {Sensor configuration table}
+% \subsection {Source configuration table}
+
+\include {source_configuration}
+
+% \subsection {Sensor configuration table}
 
 \include {sensor_configuration}
 
-%\end{landscape}
+\section {Mapping to WIGOS metadata standard}
+To do ...
+\section {Mapping to INSPIRE}
+To do ...
+\section {Common Data Model governance}
+\begin{itemize}
+\item Tables defining data model and decode tables stored in Git repository.
+\item Whilst service in development data model updated / revised annually (modified / new elements in Tables 3 - 7).
+\item New entries to decode tables every 3 / 6 months (TBD).
+\item Changes made by consensus across Lots and with ECMWF.
+\end{itemize}
 
 \section {References}
 
@@ -230,7 +274,7 @@ Preamble text ... \\
 \input {automation_status}
 \input {calibration_status}
 \input {communication_method}
-\input {conversion_factor}
+\input {conversion_method}
 \input {crs}
 \input {data_policy_licence}
 \input {duplicate_status}
@@ -244,7 +288,10 @@ Preamble text ... \\
 \input {location_quality}
 % \input {metadata_source}
 \input {meaning_of_time_stamp}
+\input {measuring_system_model}
+\input {method_of_estimating_uncertainty}
 \input {observed_variable}
+\input {observation_code_tables}
 \input {observation_value_significance}
 \input {observing_frequency}
 \input {observing_method}
@@ -252,6 +299,8 @@ Preamble text ... \\
 \input {platform_sub_type}
 \input {platform_type}
 \input {processing_level}
+\input {product_level}
+\input {product_status}
 \input {profile_configuration_codes}
 \input {profile_configuration_fields}
 \input {quality_flag}
@@ -261,10 +310,13 @@ Preamble text ... \\
 \input {report_type}
 \input {sampling_strategy}
 \input {sea_level_datum}
+\input {sensor_configuration_codes}
 \input {sensor_configuration_fields}
+\input {source_configuration_codes}
 \input {source_configuration_fields}
 \input {source_format}
 \input {spatial_representativeness}
+\input {station_configuration_codes}
 \input {station_configuration_fields}
 \input {station_type}
 \input {sub_region}
@@ -276,17 +328,11 @@ Preamble text ... \\
 \input {z_coordinate_method}
 \input {z_coordinate_type}
 
-%\include {surface_type}
-% \include {surface_type_scheme}
-% \incude {topography}
+%\input {surface_type}
+%\input {surface_type_scheme}
+%\input {topography}
+%\input {processing_code}
 
-
-%\include {observation_code_tables}
-%\include {method_of_estimating_uncertainty}
-%\include {processing_code}
-%\include {measuring_system_model}
-%\include {product_level}
-%\include {product_status}
 
 
 

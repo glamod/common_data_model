@@ -2,7 +2,9 @@ Directory structure:
 	./tables	csv (tsv) files containing table definition and header / comment rows
 	./tables/tsv/	tsv files containing table definitions with comments stripped. Generate from csv files in higher level directory
 	./graphviz/	graphviz files for each table
-        ./xlsx/		Previous Excel file that was used to collate the information
         ./scripts/	Scripts used to convert .csv to .gv and .tsv files
+        ./tex/          latex files used to generate pdf documentation
+        ./png/          figrues / pngs used in documentation
 
-The file cdm.pdf contains a schematic for the common data model. External tables are linked to their definition tsv on github.
+The file cdm_short.pdf contains a schematic for the common data model. External tables are linked to their definition tsv on github.
+The file cdm_full.pdf contains the full specification of the data model.

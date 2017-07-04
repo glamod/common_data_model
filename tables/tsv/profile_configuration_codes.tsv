@@ -1,4 +1,4 @@
-value	field_number	field_name	code_value	abbreviation	description	start_date	end_date
+index	field_number	field_name	code_value	abbreviation	description	start_date	end_date
 0	1	balloon_manufacturer	0	0	Kaysam	NA	NA
 1	1	balloon_manufacturer	1	1	Totex	NA	NA
 2	1	balloon_manufacturer	2	2	KKS	NA	NA

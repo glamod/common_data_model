@@ -1,0 +1,2 @@
+index	product_status	description	extended_description
+0	1	Data approved	Data exist, read from chache, PTU + altitude columns available, all GC25 tests ok, all uncertainties as expected

@@ -1,2 +1,2 @@
-value	report_id	observation_id	adjustment	reason	reference
-0	0	0	-0.123	Test value	DOI of paper / document describing adjustment methodology
+index	adjustment	report_id	observation_id	value	reason	reference
+0	0	0	0	-0.123	Test value	DOI of paper / document describing adjustment methodology

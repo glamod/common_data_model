@@ -1,4 +1,4 @@
-value	description
-0	Measured
-1	Estimated
-2	Computed
+index	observing_method	description
+0	0	Measured
+1	1	Estimated
+2	2	Computed

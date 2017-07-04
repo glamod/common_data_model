@@ -9,18 +9,20 @@
             \caption{method\_of\_estimating\_uncertainty}
             \label{tab:DataTableMethodofestimatinguncertainty}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{3.800000 in}} { \textbf{\seqsplit{value}}} & 
+            \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{method\_of\_estimating\_uncertainty}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{2}{c}{Table \thetable\ method\_of\_estimating\_uncertainty (cont.)} \\
+            \multicolumn{3}{c}{Table \thetable\ method\_of\_estimating\_uncertainty (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{3.800000 in} } { \textbf{\seqsplit{value}}} & 
+            \hline\hline             \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{index}}} & 
+            \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{method\_of\_estimating\_uncertainty}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{2}{r}{{Continued on next page}} \\
+            \multicolumn{3}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{2}{r}{{End of table}} \\ 
+            \multicolumn{3}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -28,9 +30,14 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/value/.style={
+    columns/index/.style={
             string type, 
-            column type= V{3.800000 in}, 
+            column type= V{1.900000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/method_of_estimating_uncertainty/.style={
+            string type, 
+            column type= V{1.900000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={

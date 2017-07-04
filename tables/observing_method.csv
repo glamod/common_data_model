@@ -1,6 +1,6 @@
 # Description: method by which observation made
 # Source:
 index	observing_method	description
-0	Measured
-1	Estimated
-2	Computed
+0	0	Measured
+1	1	Estimated
+2	2	Computed

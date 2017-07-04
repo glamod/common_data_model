@@ -3,11 +3,14 @@
 \contentsline {subsection}{\numberline {2.1}ODB and tenders for Lots 2 and 3}{7}
 \contentsline {subsection}{\numberline {2.2}BUFR and WIGOS Metadata Standard}{8}
 \contentsline {section}{\numberline {3}Common Data Model}{9}
-\contentsline {subsection}{\numberline {3.1}Observations table}{9}
-\contentsline {subsection}{\numberline {3.2}Station configuration table}{15}
-\contentsline {subsection}{\numberline {3.3}Source configuration table}{18}
-\contentsline {subsection}{\numberline {3.4}Profile configuration table}{21}
-\contentsline {subsection}{\numberline {3.5}Sensor configuration table}{23}
-\contentsline {section}{\numberline {4}References}{25}
-\contentsline {section}{\numberline {5}Appendix}{25}
-\contentsline {subsection}{\numberline {5.1}Code tables}{25}
+\contentsline {subsection}{\numberline {3.1}Observations table}{11}
+\contentsline {subsection}{\numberline {3.2}Station configuration table}{16}
+\contentsline {subsection}{\numberline {3.3}Profile configuration table}{18}
+\contentsline {subsection}{\numberline {3.4}Source configuration table}{19}
+\contentsline {subsection}{\numberline {3.5}Sensor configuration table}{21}
+\contentsline {section}{\numberline {4}Mapping to WIGOS metadata standard}{22}
+\contentsline {section}{\numberline {5}Mapping to INSPIRE}{22}
+\contentsline {section}{\numberline {6}Common Data Model governance}{22}
+\contentsline {section}{\numberline {7}References}{22}
+\contentsline {section}{\numberline {8}Appendix}{22}
+\contentsline {subsection}{\numberline {8.1}Code tables}{22}

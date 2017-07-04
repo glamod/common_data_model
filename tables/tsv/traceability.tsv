@@ -1,4 +1,4 @@
-value	description
-0	Unknown
-1	Traceable to international standards
-2	Traceable to other standards
+index	traceability	description
+0	0	Unknown
+1	1	Traceable to international standards
+2	2	Traceable to other standards

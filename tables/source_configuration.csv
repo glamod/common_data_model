@@ -22,13 +22,13 @@ element_number	element_name	type	external_table	description
 18	pi_email 	varchar		Email address of PI
 19	pi_url 	varchar		URL for PI
 21	field_numeric	int[] (fk)	source_configuration_fields	Fields to which following values apply
-22	value_numeric	numeric[]	NA	additional values
+22	value_numeric	numeric[]		additional values
 21	field_coded	int[] (fk)	source_configuration_fields	Fields to which following values apply
 22	value_coded	int[] (fk)	source_configuration_codes	additional values
 21	field_character	int[] (fk)	source_configuration_fields	Fields to which following values apply
-22	value_character	varchar[]	NA	additional values
+22	value_character	varchar[]		additional values
 21	field_timestamp	int[] (fk)	source_configuration_fields	Fields to which following values apply
-22	value_timestamp	timestamp[]	NA	additional values
+22	value_timestamp	timestamp[]		additional values
 23	history	varchar		History of source
 24	comments	varchar		Additional comments / footnotes
-25	timestamp			Date record created
+25	timestamp			Date record created / created
