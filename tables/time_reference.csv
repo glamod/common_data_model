@@ -1,6 +1,6 @@
 # Description: base time to which times referenced
 # Source: WIGOS: 7-10
-value	description
+index	time_reference	description
 0	Unknown
 1	Time server
 2	Radio clock

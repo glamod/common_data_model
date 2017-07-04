@@ -1,6 +1,6 @@
 # Description: Region where observation was made
 # Source: WIGOS 3-01
-value	WMO_region	description
+index	region	WMO_region	description
 0	NA	Reserved
 1	1	Africa
 2	2	Asia

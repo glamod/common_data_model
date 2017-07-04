@@ -1,6 +1,6 @@
 # Description: Table defined the list of potential observed variables
 # Source: 
-value	parameter_group	domain	sub_domain	abbreviation	name	units	description
+index	observed_variable	parameter_group	domain	sub_domain	abbreviation	name	units	description
 0	cloud	atmospheric	upper-air	ch	high_cloud_type	coded	type of high clouds (ch)
 1	cloud	atmospheric	upper-air	cm	middle_cloud_type	coded	type of middle clouds (cm)
 2	cloud	atmospheric	upper-air	cl	low_cloud_type	coded	type of low clouds (cl)

@@ -15,8 +15,7 @@
 \usepackage{sectsty}
 \usepackage{mdframed}
 \usepackage{draftwatermark}
-
-
+\usepackage{textpos}
 
 \SetWatermarkText{Draft}
 
@@ -25,12 +24,12 @@
 
 \renewcommand{\familydefault}{\sfdefault}
 
-
+% Set title etc
 \title {Copernicus Climate Change Service - 311a Lot 2 \\ Defining a Common Data Model}
 \author {David I. Berry \\ National Oceanography Centre, UK}
 \date{\today}
 
-
+% empty header style for tables later on
 \pgfplotstableset{
 empty header/.style={
            typeset cell/.append code={%
@@ -41,15 +40,17 @@ empty header/.style={
        }
    }
 
+% new column for tables to split long strings
+\newcolumntype{n}[1]{  > {\collectcell\seqsplit} V{#1} < {\endcollectcell}    }
 
+% no indent of new paragraphs
 \setlength{\parindent}{0pt}
 
+% framed text boxes
 \newcounter{FramedDepth}
 \setcounter{FramedDepth}{-1}
-
 \mdfdefinestyle{Framed}{linecolor=black,linewidth=1pt,leftmargin=10pt,rightmargin=10pt,
                         innerleftmargin=10pt,innerrightmargin=10pt}
-                        
 \newenvironment{Framed}{%
   \addtocounter{FramedDepth}{1}
   \ifcase\theFramedDepth\def\FrameColour{white!50}%
@@ -61,25 +62,31 @@ empty header/.style={
 }{\end{mdframed}\addtocounter{FramedDepth}{-1}}
 
 
-
-
-\newcolumntype{n}[1]{  > {\collectcell\seqsplit} V{#1} < {\endcollectcell}    }
-
-% 1.25
+% 1.25 18.4, 1.7
 % 0.65
 
-% headers
-\lhead{\textcolor{maroon}{Copernicus Climate Change Sevice}\\}
-\rhead{\includegraphics{/Users/dyb/GitHub/C3S_311a_CDM/png/c3s_logo_small.png}}
+% Copernicus logo on page 3 onwards needs to go at (18.4cm, 1.7cm from top left of page) size (0.9cm by 0.86 cm)
+
+% headers and footers
+
+
+\headheight 3.5 cm          
+\headsep  0.5 cm
+
+\lhead{\textcolor{maroon}{Copernicus Climate Change Sevice}\vskip 0.5 cm}
+\rhead{\includegraphics{/Users/dyb/GitHub/C3S_311a_CDM/png/c3s_logo_small.png} \vskip 0.3 cm}
+
 \lfoot{C3S\_311a\_Lot2\_NUIM\_2017 \{ref\} }
 \cfoot{}
-\rfoot{Page \textbf{\thepage}  of \textbf{\pageref{LastPage} } }
+\rfoot{Page \textbf{\thepage}  of \textbf{\pageref{LastPage}} }
+
+
 
 \pagestyle{fancy}
 
 \begin{document}
-
-
+% First page will be replaced with appropriate cover sheet
+% \setcounter{page}{2}
 \maketitle
 
 \vskip 0.25in
@@ -98,7 +105,10 @@ empty header/.style={
 \newpage
 \vspace*{\fill}
 \begin{Framed}
-This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commissionand the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
+This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\
+The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\
+The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commission
+and the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
 \end{Framed}
 
 \newpage

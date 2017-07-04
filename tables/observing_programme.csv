@@ -1,6 +1,6 @@
 # Description: Observing programme(s) that this report / observation was collected as part of
 # Source: WIGOS 2-02
-value	abbreviation	description	sponsor
+index	observing_programme	abbreviation	description	sponsor
 1	AMDAR	Global Aircraft Meteorological DAta Relay	WMO/GOS
 2	EPA	Environmental Protection Agency	NA
 3	EUMETNET	Grouping of European National Meteorological Services	WMO/GOS

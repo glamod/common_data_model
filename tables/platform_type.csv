@@ -1,6 +1,6 @@
 # Description: Type of platform making the observation
 # Source: IMMA (ICOADS) and BUFR 0 03 001
-value	description
+index	platform_type	description
 0	Aircraft
 1	Autonomous marine vehicle
 2	Autonomous pinneped bathythermograph

@@ -1,6 +1,6 @@
 # Description: Duplicate status of the observation
 # Source: Simplified version of duplicate status flags from IMMA (ICOADS)
-value	description
+index	duplicate_status	description
 0	Unique observation, no known duplicates
 1	Best duplicate
 2	Worst duplicate

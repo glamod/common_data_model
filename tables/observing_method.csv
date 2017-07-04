@@ -1,6 +1,6 @@
 # Description: method by which observation made
 # Source:
-value	description
+index	observing_method	description
 0	Measured
 1	Estimated
 2	Computed

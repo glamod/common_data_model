@@ -1,6 +1,6 @@
 # Description:
 # Source:
-value	field_name	type	description
+index	field	field_name	type	description
 1	balloon_manufacturer	int (fk)	NA
 2	balloon_type	int (fk)	NA
 3	burstpoint_altitude	numeric	NA

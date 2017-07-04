@@ -1,6 +1,6 @@
 # Description: Quality of time variable
 # Source:
-value	description
+index	time_quality	description
 0	Timestamp valid, time reported to nearest second
 1	Timestamp valid, time reported to nearest minute
 2	Timestamp valid, time  reported to nearest hour

@@ -1,6 +1,6 @@
 # Description:
 # Source:
-value	description
+index	location_quality	description
 0	Good - location consistent with other reports from this station
 1	Doubtful  
 2	Bad - Track check failed
