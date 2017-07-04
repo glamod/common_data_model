@@ -21,7 +21,7 @@ echo "digraph $tablename {" > ${tablename}.gv
 echo "node [color=white]" >> ${tablename}.gv
 echo $tablename '[label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">' >> ${tablename}.gv
 echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left" PORT="head"># Table: '$tablename'</TD></TR>' >> ${tablename}.gv
-echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/'$tablename'.tsv</TD></TR>' >> ${tablename}.gv
+echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/'$tablename'.tsv</TD></TR>' >> ${tablename}.gv
 awk -v ncols="$ncols" -v extcolumn="$extTable" '\
 BEGIN { FS="\t"  } ; \
   /^#/ {print "<TR><TD ALIGN=\"left\" COLSPAN=\""ncols"\">"$0"</TD></TR>"} \
@@ -31,7 +31,7 @@ BEGIN { FS="\t"  } ; \
       printf "<TD PORT=\"%sL\">%s</TD>",$2, $1 \
       for(i=2;i<=NF;i++){ \
         if( i == extcolumn && length($i) > 1 ){ \
-          printf "<TD HREF=\"https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/%s.tsv\">",$i \
+          printf "<TD HREF=\"https://github.com/glamod/common_data_model/blob/master/tables/tsv/%s.tsv\">",$i \
           printf "<FONT color=\"blue\">" \
         } \
         else if(i == NF) {\
