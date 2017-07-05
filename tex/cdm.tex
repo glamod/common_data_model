@@ -24,7 +24,7 @@
 \SetWatermarkText{Draft}
 
 \definecolor{maroon}{RGB}{102,0,33}
-\sectionfont{\color{maroon}}  % sets colour of sections
+\sectionfont{\color{maroon}}  % sets colour of section headings
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -74,7 +74,7 @@ empty header/.style={
 \headheight 3.5 cm          
 \headsep  0.5 cm
 
-\lhead{\textcolor{maroon}{Copernicus Climate Change Sevice}\vskip 0.5 cm}
+\lhead{\textcolor{maroon}{Copernicus Climate Change Service}\vskip 0.5 cm}
 \rhead{\includegraphics{/Users/dyb/GitHub/common_data_model/png/c3s_logo_small.png} \vskip 0.3 cm}
 
 \lfoot{C3S\_311a\_Lot2\_NUIM\_2017 \{ref\} }
@@ -86,6 +86,7 @@ empty header/.style={
 \begin{document}\thispagestyle{empty}
 
 
+% Cover sheet
 
 % top banner
 \begin{tikzpicture}[remember picture,overlay]
@@ -134,10 +135,9 @@ The user thereof uses the information at its sole risk and liability. For the av
 and the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
 \end{Framed}
 
+% title page
 \newpage
 
-% First page will be replaced with appropriate cover sheet
-% \setcounter{page}{2}
 \maketitle
 
 \vskip 0.25in
