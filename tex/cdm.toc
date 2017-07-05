@@ -3,14 +3,14 @@
 \contentsline {subsection}{\numberline {2.1}ODB and tenders for Lots 2 and 3}{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}BUFR and WIGOS Metadata Standard}{9}{subsection.2.2}
 \contentsline {section}{\numberline {3}Common Data Model}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Observations table}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Station configuration table}{17}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Profile configuration table}{19}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Source configuration table}{20}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Sensor configuration table}{22}{subsection.3.5}
-\contentsline {section}{\numberline {4}Mapping to WIGOS metadata standard}{23}{section.4}
-\contentsline {section}{\numberline {5}Mapping to INSPIRE}{23}{section.5}
-\contentsline {section}{\numberline {6}Common Data Model governance}{23}{section.6}
-\contentsline {section}{\numberline {7}References}{23}{section.7}
-\contentsline {section}{\numberline {8}Appendix}{23}{section.8}
-\contentsline {subsection}{\numberline {8.1}Code tables}{23}{subsection.8.1}
+\contentsline {subsection}{\numberline {3.1}Observations table}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Station configuration table}{18}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Profile configuration table}{20}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Source configuration table}{21}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Sensor configuration table}{23}{subsection.3.5}
+\contentsline {section}{\numberline {4}Mapping to WIGOS metadata standard}{24}{section.4}
+\contentsline {section}{\numberline {5}Mapping to INSPIRE}{24}{section.5}
+\contentsline {section}{\numberline {6}Common Data Model governance}{24}{section.6}
+\contentsline {section}{\numberline {7}References}{24}{section.7}
+\contentsline {section}{\numberline {8}Appendix}{24}{section.8}
+\contentsline {subsection}{\numberline {8.1}Code tables}{24}{subsection.8.1}
