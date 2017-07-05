@@ -19,7 +19,7 @@
 \usepackage{placeins}
 \usepackage{listings}
 \usepackage{tikz}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \SetWatermarkText{Draft}
 
@@ -83,7 +83,7 @@ empty header/.style={
 
 \pagestyle{fancy}
 
-\begin{document}
+\begin{document}\thispagestyle{empty}
 
 
 
@@ -124,7 +124,17 @@ empty header/.style={
 \draw ([xshift=-30 mm, yshift=10.5 mm]current page.south east) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ECMWF_logo.png}};
 \draw ([xshift=30 mm, yshift=10.5 mm]current page.south west) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ec_logo_small.png}};
 \end{tikzpicture}
+\newpage
 
+\vspace*{\fill}
+\begin{Framed}
+This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\
+The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\
+The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commission
+and the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
+\end{Framed}
+
+\newpage
 
 % First page will be replaced with appropriate cover sheet
 % \setcounter{page}{2}
@@ -136,26 +146,18 @@ empty header/.style={
 \vskip 0.25in
 This document describes background information on the definition of a common data model for the representation of in situ observations as part of the C3S 311a activity.\\ \\
 A draft data model is proposed.\\ \\
-Call participants are requested to:\\
+\textbf{Call participants are requested to}:\\
 \begin{itemize}
 \item Review the proposed data model, specifically tables 3 - 7.
-\item Review the configuration field and code tables and suggest additions / deletions.
-\item Other actions ...
+\item Review the configuration field tables and suggest modifications, additions and deletions.
+\item Review the configuration code tables and suggest modifications, additions and deletions.
+\item Review the code tables and propose / identify where an existing table (e.g. BUFR code table) and be used in replacement.
 \end{itemize}
 \vskip 0.25in
 Tab separated versions of the code tables can be found at:\\ \\
 \tabto{2cm} \url{https://github.com/glamod/common_data_model/tree/master/tables}
 \vskip 0.25in
 \hrule
-
-\newpage
-\vspace*{\fill}
-\begin{Framed}
-This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\
-The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\
-The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commission
-and the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
-\end{Framed}
 
 \newpage
 \tableofcontents

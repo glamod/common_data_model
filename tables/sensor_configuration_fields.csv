@@ -33,3 +33,17 @@ index	field	field_name	parameter	type	decription
 29	29	manufacturer	all	int(fk)	NA
 30	30	sensor model	all	varchar	NA
 31	31	serial number	all	varchar	NA
+32	32	sensor accuracy	all	numeric	Reported accuracy of sensor in units of measurement.
+33	33	sensor stability	all	numeric	Reported stability of sensor in reported units of measurement per year.
+34	34	calibration interval	all	numeric	Maximum number of months recommended between calibrations.
+35	35	calibration method	all	int(fk) TDB	Method used to calibrate instrument
+36	36	calibration party	all	varchar	Who performed the calibration
+37	37	calibration result	all	varchar TBD	Result of the calibration
+38	38	sensor range - min	all	numeric	Minimum observable value with sensor in reported units of measurement
+39	39	sensor range - max	all	numeric	Maximum observable value with sensor in reported units of measurement
+40	40	sensor response time	all	numeric	Time (s) for sensor to chnage from previous state to current state
+41	41	sensor resolution	all	numeric	NA
+42	42	sampling frequency	all	numeric	time period (s) between successive measurements from sensor
+43	43	sample treatment	all	TBD	treatment of the sample prior to analysis
+44	44	sampling procedure	all	TBD	how the sample was obtained
+45	45	quality control procedure	all	int (fk)	Procedure used to quality control the observation and set quality flag
