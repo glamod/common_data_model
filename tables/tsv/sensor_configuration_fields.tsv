@@ -1,33 +1,47 @@
-index	field	field_name	parameter	type	decription
-0	0	ice bulb status	humidity	int (fk)	NA
-1	1	sensor housing - configuration	all	int (fk)	NA
-2	2	sensor housing - heating	all	int (fk)	NA
-3	3	sensor housing - material	all	int (fk)	NA
-4	4	sensor housing - radiation shielding	all	int (fk)	NA
-5	5	sensor housing - type	all	int (fk)	NA
-6	6	sensor housing - ventilation	all	int (fk)	NA
-7	7	sensor housing - ventilation rate	all	numeric	NA
-8	8	sensor location - ship	all	int (fk)	NA
-9	9	sensor side - ship	all	int (fk)	NA
-10	10	sensor owner	all	int (fk)	NA
-11	11	sensor type - air temperature	air temperature	int (fk)	NA
-12	12	sensor type - barograph	pressure trend	int (fk)	NA
-13	13	sensor type - barometer	pressure	int (fk)	NA
-14	14	sensor type - evaporation	evaporation	int (fk)	NA
-15	15	sensor type - extremes	air temperature	int (fk)	NA
-16	16	sensor type - humidity	humidity	int (fk)	NA
-17	17	sensor type - precipitation	precipitation	int (fk)	NA
-18	18	sensor type - present weather	present weather	int (fk)	NA
-19	19	sensor type - salinity	salinity	int (fk)	NA
-20	20	sensor type - water temperature	water temperature	int (fk)	NA
-21	21	sensor type - waves	waves	int (fk)	NA
-22	22	sensor type - wind speed	wind speed	int (fk)	NA
-23	23	sensor location - distance from bow	wind speed	numeric	NA
-24	24	sensor location - distance from center line	wind speed	numeric	NA
-25	25	sensor location - height above deck	wind speed	numeric	NA
-26	26	weight	sonde	numeric	NA
-27	27	telemetry_sonde	sonde	int (fk)	NA
-28	28	software_version	all	varchar	NA
-29	29	manufacturer	all	int(fk)	NA
-30	30	sensor model	all	varchar	NA
-31	31	serial number	all	varchar	NA
+field_id	field_name	parameter	type	decription
+ACC	sensor accuracy	all	numeric	Reported accuracy of sensor in units of measurement.
+B002033	sensor type - salinity	salinity	int (fk)	NA
+B002038	sensor type - water temperature	water temperature	int (fk)	NA
+B002051	sensor type - extremes	air temperature	int (fk)	NA
+B002096	sensor type - air temperature	air temperature	int (fk)	NA
+B002097	sensor type - humidity	humidity	int (fk)	NA
+B002169	sensor type - wind speed	wind speed	int (fk)	NA
+B002185	sensor type - evaporation	evaporation	int (fk)	NA
+B003003	sensor housing - type	all	int (fk)	NA
+B003004	sensor housing - radiation shielding	all	int (fk)	NA
+B003008	sensor housing - ventilation	all	int (fk)	NA
+B003020	sensor housing - material	all	int (fk)	NA
+B003021	sensor housing - heating	all	int (fk)	NA
+B003022	sensor owner	all	int (fk)	NA
+B003023	sensor housing - configuration	all	int (fk)	NA
+BARG	sensor type - barograph	pressure trend	int (fk)	NA
+BARM	sensor type - barometer	pressure	int (fk)	NA
+CALINT	calibration interval	all	numeric	Maximum number of months recommended between calibrations.
+CALMETH	calibration method	all	int (fk)	Method used to calibrate instrument
+CALPRTY	calibration party	all	varchar	Who performed the calibration
+CALRES	calibration result	all	varchar TBD	Result of the calibration
+FREQ	sampling frequency	all	numeric	time period (s) between successive measurements from sensor
+IBS	ice bulb status	humidity	int (fk)	NA
+LDCL	sensor location - distance from center line	wind speed	numeric	NA
+LDFB	sensor location - distance from bow	wind speed	numeric	NA
+LHAD	sensor location - height above deck	wind speed	numeric	NA
+MANU	manufacturer	all	int (fk)	NA
+QCPROC	quality control procedure	all	int (fk)	Procedure used to quality control the observation and set quality flag
+SERIAL	serial number	all	varchar	NA
+SHVR	sensor housing - ventilation rate	all	numeric	NA
+SLOC	sensor location - ship	all	int (fk)	NA
+SMAX	sensor range - max	all	numeric	Maximum observable value with sensor in reported units of measurement
+SMIN	sensor range - min	all	numeric	Minimum observable value with sensor in reported units of measurement
+SMOD	sensor model	all	varchar	NA
+SOFT	software_version	all	varchar	NA
+SPROC	sampling procedure	all	int (fk)	how the sample was obtained
+SRES	sensor resolution	all	numeric	NA
+SRESP	sensor response time	all	numeric	Time (s) for sensor to chnage from previous state to current state
+SRR	sensor type - precipitation	precipitation	int (fk)	NA
+SSIDE	sensor side - ship	all	int (fk)	NA
+STAB	sensor stability	all	numeric	Reported stability of sensor in reported units of measurement per year.
+SWV	sensor type - waves	waves	int (fk)	NA
+SWW	sensor type - present weather	present weather	int (fk)	NA
+TREAT	sample treatment	all	int (fk)	treatment of the sample prior to analysis
+TSONDE	telemetry_sonde	sonde	int (fk)	NA
+WGHT	weight	sonde	numeric	NA

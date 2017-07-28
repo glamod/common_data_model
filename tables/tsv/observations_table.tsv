@@ -1,5 +1,5 @@
 element_number	element_name	kind	external_table	description
-1	report_id	bigint (pk)		Unique ID for report (unique ID given by combination of RecordID and ObservationID)
+1	report_id	int (pk)		Unique ID for report (unique ID given by combination of RecordID and ObservationID)
 2	region	int (fk)	region	Region (WMO region / Ocean basin)
 3	sub_region	int (fk)	sub_region	Country / regional sea
 4	application_area	int[] (fk)	application_area	WMO application area(s)

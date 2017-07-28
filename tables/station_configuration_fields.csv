@@ -20,3 +20,8 @@ index	field	field_name	kind	description
 16	16	Other instruments	int (fk)	NA
 17	17	Station status	int (fk)	NA
 18	18	Type of meteorological reporting ship	int (fk)	NA
+19	19	Surface cover	int (fk)	NA
+20	20	Surface cover scheme	int (fk)	NA
+21	21	Topography	int (fk)	NA
+22	22	Soil type	int (fk)	NA
+23	23	Land use	int (fk)	NA

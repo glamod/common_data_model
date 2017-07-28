@@ -15,3 +15,4 @@ index	observation_value_significance	description
 11	11	Vector mean of observed parameter over indicated period
 12	12	Instantaneous value of observed parameter
 13	13	Accumulation over specified period
+14	14	Not applicable

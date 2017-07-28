@@ -13,5 +13,6 @@ element_number	element_name	type	external_table	description
 11	value_character	varchar[]		Value for entry if not coded or numeric
 12	field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
 13	value_timestamp	timestamp[]		time stamp entry
-14	date_start	timestamp		start date for period of validity assoiciated with this entry
-15	date_end	timestamp		end date for period of validity assoiciated with this entry
+14	comments	varchar		additional comments for sensor not reportable elsewhere
+15	date_start	timestamp		start date for period of validity assoiciated with this entry
+16	date_end	timestamp		end date for period of validity assoiciated with this entry

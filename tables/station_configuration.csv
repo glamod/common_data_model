@@ -29,3 +29,5 @@ element_number	element_name	type	external_table	description
 25	field_timestamp	int[] (fk)	station_configuration_fields	Field to which following values correspond
 26	value_timestamp	timestamp[]		Values for specified fields
 27	comment	varchar		Any other comments / footnotes
+28	city	varchar	NA	Nearest city / town to station location
+29	local_gravity	numeric	NA	Local gravity at station location

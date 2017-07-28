@@ -24,9 +24,6 @@ element_number	element_name	kind	external_table	description
 21	station_speed	numeric		Station speed over ground if mobile (m/s)
 22	station_course	numeric		Station course over ground if mobile (degree true)
 23	station_heading	numeric		Station heading if mobile
-24	surface_type	int (fk)	surface_type	e.g. rolling hills
-25	surface_type_scheme	int (fk)	surface_type_scheme	Scheme used to classify surface cover
-26	site_topography	int (fk)	site_topography	Description of local topography and broader context
 27	station_configuration	int (fk)	station_configuration	Link to station metadata / configuration
 28	height_of_station_above_local_ground	numeric		Height of station above local ground (m)
 29	height_of_station_above_sea_level	numeric		Height of station above mean sea level (m), negative values for below sea level.
@@ -111,3 +108,5 @@ element_number	element_name	kind	external_table	description
 108	processing_level	int (fk)	processing_level	Level of processing applied to observation.
 109	adjustment_id	int (fk)	adjustment	Adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 110	traceability	int (fk)	traceability	Whether observation can be traced to international standards.
+111	advanced_qc	int (fk)	NA	Whether there are advanced qc data available for this observation in qc_records table
+112	advanced_uncertainty	flag	NA	Whether there are advanced uncertainty estimates for this observation in the uncertainty_budget table

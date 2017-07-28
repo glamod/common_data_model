@@ -12,7 +12,7 @@ set tablename = `echo $file | cut -d '.' -f1`
 set tablecaption = `echo $file | cut -d '.' -f1 | sed "s/_//g" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2)) }'`
 
 # get number of columns based on header row
-set ncols = `awk 'BEGIN {FS="\t"} ; /^index/ || /^element_number/ {print NF}' $file`
+set ncols = `awk 'BEGIN {FS="\t"} ; /^index/ || /^element_number/ || /^field_id/ {print NF}' $file`
 
 set tablepath="/Users/dyb/GitHub/C3S_311a_CDM/tables/"
 #set tablepath="/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/"
@@ -40,7 +40,7 @@ BEGIN { FS = "\t" ; \
    printf "            \\label{tab:DataTable%s}\\\\\n", tablecaption;\
     print "            % Initial column headers";\
 }\
-/^index/ || /^element_number/ {\
+/^index/ || /^element_number/ || /^field_id/ {\
     printf "            \\hline\\hline " \
     for( i = 1; i < NF ; i ++) { \
         entry = $i;\

@@ -1,171 +1,88 @@
-index	field	field_name	parameter	code_value	description
-0	0	ice bulb status	humidity	0	Ice bulb
-1	0	ice bulb status	humidity	1	Wet bulb
-2	1	sensor housing - configuration	all	0	Double v section louvers
-3	1	sensor housing - configuration	all	1	non-overlapping louvers
-4	1	sensor housing - configuration	all	2	Not applicable
-5	1	sensor housing - configuration	all	3	Overlapping louvers
-6	1	sensor housing - configuration	all	4	single v-section louvers
-7	1	sensor housing - configuration	all	5	vented, non-louvered
-8	2	sensor housing - heating	all	0	Heated
-9	2	sensor housing - heating	all	1	Unheated
-10	3	sensor housing - material	all	0	Metal alloy
-11	3	sensor housing - material	all	1	Plastic / Glass reinforced plastic
-12	3	sensor housing - material	all	2	Reed / grass / leaf
-13	3	sensor housing - material	all	3	Wood
-14	4	sensor housing - radiation shielding	all	0	Concentric tube
-15	4	sensor housing - radiation shielding	all	1	Cylindrical section plate shield
-16	4	sensor housing - radiation shielding	all	2	Integrated (e.g. chilled mirror)
-17	4	sensor housing - radiation shielding	all	3	Marine Stevenson screen
-18	4	sensor housing - radiation shielding	all	4	Open covered inverted V roof
-19	4	sensor housing - radiation shielding	all	5	open covered lean-to
-20	4	sensor housing - radiation shielding	all	6	Rectangular section section
-21	4	sensor housing - radiation shielding	all	7	Square section shield
-22	4	sensor housing - radiation shielding	all	8	Stevenson screen
-23	4	sensor housing - radiation shielding	all	9	Triangular section shield
-24	5	sensor housing - type	all	0	Aspirated (e.g. Assmann)
-25	5	sensor housing - type	all	1	Hand-held digital temperature/humidity sensor
-26	5	sensor housing - type	all	2	Other shelter
-27	5	sensor housing - type	all	3	Radiation Shield (e.g. cylindrical / Gill multi-plate radiation shield)
-28	5	sensor housing - type	all	4	Screen
-29	5	sensor housing - type	all	5	Sling / whirling
-30	5	sensor housing - type	all	6	Unscreened.
-31	6	sensor housing - ventilation	all	0	Artificial aspiration in use, constant flow at time of reading
-32	6	sensor housing - ventilation	all	1	Artificial aspiration in use, variable flow at time of reading
-33	6	sensor housing - ventilation	all	2	Natural  ventilation in use
-34	8	sensor location - ship	all	0	Aft mast.
-35	8	sensor location - ship	all	1	Bridge wing
-36	8	sensor location - ship	all	2	Foremast yardarm
-37	8	sensor location - ship	all	3	Foremast.
-38	8	sensor location - ship	all	4	Handheld.
-39	8	sensor location - ship	all	5	Main deck
-40	8	sensor location - ship	all	6	Mainmast yardarm
-41	8	sensor location - ship	all	7	Mainmast.
-42	8	sensor location - ship	all	8	Mast on wheelhouse top yardarm
-43	8	sensor location - ship	all	9	Mast on wheelhouse top.
-44	8	sensor location - ship	all	10	Meteorological mast.
-45	8	sensor location - ship	all	11	Not fitted.
-46	8	sensor location - ship	all	12	Other
-47	8	sensor location - ship	all	13	Pressurised wheelhouse (closed and not vented to the outside).
-48	8	sensor location - ship	all	14	Wheelhouse
-49	8	sensor location - ship	all	15	Wheelhouse, not pressurised (vented to the outside).
-50	9	sensor side - ship	all	0	Center
-51	9	sensor side - ship	all	1	Port
-52	9	sensor side - ship	all	2	Starboard
-53	9	sensor side - ship	all	3	Windward side
-54	10	sensor owner	all	0	National hydrometeorological / weather service
-55	10	sensor owner	all	1	Other
-56	10	sensor owner	all	2	Standards institute
-57	11	sensor type - air temperature	air temperature	0	Alcohol / glycol
-58	11	sensor type - air temperature	air temperature	1	Bead thermistor
-59	11	sensor type - air temperature	air temperature	2	Capacitance bead
-60	11	sensor type - air temperature	air temperature	3	Capacitance wire
-61	11	sensor type - air temperature	air temperature	4	Chip thermistor
-62	11	sensor type - air temperature	air temperature	5	Mercury
-63	11	sensor type - air temperature	air temperature	6	Resistive sensor
-64	11	sensor type - air temperature	air temperature	7	Rod thermistor
-65	12	sensor type - barograph	pressure trend	0	Open Scale barograph with 1 day clock.
-66	12	sensor type - barograph	pressure trend	1	Open Scale barograph with 2 day clock.
-67	12	sensor type - barograph	pressure trend	2	Open Scale barograph with 3 day clock.
-68	12	sensor type - barograph	pressure trend	3	Open Scale barograph with 4 day clock.
-69	12	sensor type - barograph	pressure trend	4	Open Scale barograph with 5 day clock.
-70	12	sensor type - barograph	pressure trend	5	Open Scale barograph with 6 day clock.
-71	12	sensor type - barograph	pressure trend	6	Open Scale barograph with 7 day clock.
-72	12	sensor type - barograph	pressure trend	7	Open Scale barograph with 8 day clock.
-73	12	sensor type - barograph	pressure trend	8	Open Scale barograph with 9 day clock.
-74	12	sensor type - barograph	pressure trend	9	Open Scale barograph.
-75	12	sensor type - barograph	pressure trend	10	Other (specify in footnote).
-76	12	sensor type - barograph	pressure trend	11	Small Scale barograph.
-77	12	sensor type - barograph	pressure trend	12	Tendency obtained from an electronic digital barometer.
-78	13	sensor type - barometer	pressure	0	Aneroid barometer (issued by the PMO or a NMS).
-79	13	sensor type - barometer	pressure	1	Digital aneroid barometer (aka Precision Aneroid Barometer).
-80	13	sensor type - barometer	pressure	2	Electronic digital barometer (consisting of one or more pressure transducers).
-81	13	sensor type - barometer	pressure	3	Mercury barometer.
-82	13	sensor type - barometer	pressure	4	Other
-83	13	sensor type - barometer	pressure	5	Ship's aneroid barometer.
-84	14	sensor type - evaporation	evaporation	NA	placeholder
-85	15	sensor type - extremes	air temperature	0	Automated instruments
-86	15	sensor type - extremes	air temperature	1	Maximum / minimum thermometers
-87	15	sensor type - extremes	air temperature	2	Reserved
-88	15	sensor type - extremes	air temperature	3	Thermograph
-89	16	sensor type - humidity	humidity	0	Capacitive (ceramic, including metal oxide)
-90	16	sensor type - humidity	humidity	1	Capacitive (generic)
-91	16	sensor type - humidity	humidity	2	Capacitive (polymer)
-92	16	sensor type - humidity	humidity	3	Carbon hygristor
-93	16	sensor type - humidity	humidity	4	chilled mirror hygrometer
-94	16	sensor type - humidity	humidity	5	dew cell
-95	16	sensor type - humidity	humidity	6	Electric.
-96	16	sensor type - humidity	humidity	7	Goldbeater's skin
-97	16	sensor type - humidity	humidity	8	Gravimetric
-98	16	sensor type - humidity	humidity	9	Hair hygrometer.
-99	16	sensor type - humidity	humidity	10	Humicap capacitance sensor with active de-icing method
-100	16	sensor type - humidity	humidity	11	Hygristor.
-101	16	sensor type - humidity	humidity	12	optical absorption sensor
-102	16	sensor type - humidity	humidity	13	Ordinary human hair
-103	16	sensor type - humidity	humidity	14	Other
-104	16	sensor type - humidity	humidity	15	Paper - metal coil
-105	16	sensor type - humidity	humidity	16	Psychrometer.
-106	16	sensor type - humidity	humidity	17	Resistive (conductive polymer)
-107	16	sensor type - humidity	humidity	18	Resistive (generic)
-108	16	sensor type - humidity	humidity	19	Resistive (salt polymer)
-109	16	sensor type - humidity	humidity	20	Rolled hair (torsion)
-110	16	sensor type - humidity	humidity	21	Sippican Mark IIA carbon hygristor
-111	16	sensor type - humidity	humidity	22	Thermal conductivity
-112	16	sensor type - humidity	humidity	23	Twin alternatively heated Humicap capacitance sensor
-113	16	sensor type - humidity	humidity	24	Vaisala A-Humicap
-114	16	sensor type - humidity	humidity	25	Vaisala H-Humicap
-115	16	sensor type - humidity	humidity	26	Vaisala RS90
-116	16	sensor type - humidity	humidity	27	VIZ B2 hygristor
-117	16	sensor type - humidity	humidity	28	VIZ Mark II carbon hygristor
-118	17	sensor type - precipitation	precipitation	NA	Place holder
-119	18	sensor type - present weather	present weather	0	Automatic, included (using WMO Codes 4677 and 4561)
-120	18	sensor type - present weather	present weather	1	Automatic, included (using WMO codes 4680 amd 4531)
-121	18	sensor type - present weather	present weather	2	Automatic, omitted (no observation, data not available)
-122	18	sensor type - present weather	present weather	3	Automatic, omitted (no significant phenomenon to report)
-123	18	sensor type - present weather	present weather	4	Manned, included
-124	18	sensor type - present weather	present weather	5	Manned, omitted (no observation, data not available)
-125	18	sensor type - present weather	present weather	6	Manned, omitted (no significant phenomenon to report)
-126	19	sensor type - salinity	salinity	0	in situ, accuracy better han 0.02 ppt
-127	19	sensor type - salinity	salinity	1	in situ, accuracy worse than 0.02 ppt
-128	19	sensor type - salinity	salinity	2	No salinity
-129	19	sensor type - salinity	salinity	3	sample analysis
-130	20	sensor type - water temperature	water temperature	0	Bait tanks thermometer.
-131	20	sensor type - water temperature	water temperature	1	Bucket
-132	20	sensor type - water temperature	water temperature	2	Condensor Intake on Steam Ships, or Engine Cooling System Inlet on Motor Ships.
-133	20	sensor type - water temperature	water temperature	3	Digital BT
-134	20	sensor type - water temperature	water temperature	4	electronic sensor
-135	20	sensor type - water temperature	water temperature	5	Expendable BT
-136	20	sensor type - water temperature	water temperature	6	Hull contact sensor
-137	20	sensor type - water temperature	water temperature	7	Iimplied bucket [note: applicable to early ICOADS data]
-138	20	sensor type - water temperature	water temperature	8	In-line thermosalinograph
-139	20	sensor type - water temperature	water temperature	9	Infrared radiometer
-140	20	sensor type - water temperature	water temperature	10	Infrared scanner
-141	20	sensor type - water temperature	water temperature	11	Mechanical BT
-142	20	sensor type - water temperature	water temperature	12	Microwave scanner
-143	20	sensor type - water temperature	water temperature	13	Other
-144	20	sensor type - water temperature	water temperature	14	Radiation thermometer.
-145	20	sensor type - water temperature	water temperature	15	Reversing thermometer
-146	20	sensor type - water temperature	water temperature	16	reversing thermometer or mechanical sensor
-147	20	sensor type - water temperature	water temperature	17	STD / CTD sensor
-148	20	sensor type - water temperature	water temperature	18	Thermistor Chain
-149	20	sensor type - water temperature	water temperature	19	Through Hull sensor.
-150	20	sensor type - water temperature	water temperature	20	Towed body
-151	20	sensor type - water temperature	water temperature	21	Trailing thermistor
-152	20	sensor type - water temperature	water temperature	22	unknown or non-bucket
-153	21	sensor type - waves	waves	0	buoy
-154	21	sensor type - waves	waves	1	other
-155	21	sensor type - waves	waves	2	shipborne wave recorder
-156	22	sensor type - wind speed	wind speed	0	Anemograph.
-157	22	sensor type - wind speed	wind speed	1	Anemometer - type unspecified
-158	22	sensor type - wind speed	wind speed	2	Beaufort force
-159	22	sensor type - wind speed	wind speed	3	Cup anemometer and wind vane (combined unit).
-160	22	sensor type - wind speed	wind speed	4	Cup anemometer and wind vane (separate instruments).
-161	22	sensor type - wind speed	wind speed	5	Cup rotor
-162	22	sensor type - wind speed	wind speed	6	Handheld anemometer.
-163	22	sensor type - wind speed	wind speed	7	Other (specify in footnote).
-164	22	sensor type - wind speed	wind speed	8	Propeller rotor
-165	22	sensor type - wind speed	wind speed	9	Propeller vane.
-166	22	sensor type - wind speed	wind speed	10	Sonic anemometer.
-167	22	sensor type - wind speed	wind speed	11	Wind observation through ambiant noise (WOTAN)
-168	27	telemetry_sonde	sonde		NA
-169	29	manufacturer	all	0	Vaisala
+field_id	field_name	parameter	code_value	abbreviation	description
+B002033	sensor type - salinity	salinity	0 - 7		See BUFR table 0 02 033
+B002038	sensor type - water temperature	water temperature	0 - 15		See BUFR table 0 02 038
+B002038	sensor type - water temperature	water temperature	16		Bait tanks thermometer.
+B002038	sensor type - water temperature	water temperature	17		electronic sensor
+B002038	sensor type - water temperature	water temperature	18		Iimplied bucket [note: applicable to early ICOADS data]
+B002038	sensor type - water temperature	water temperature	19		Radiation thermometer.
+B002038	sensor type - water temperature	water temperature	20		Through Hull sensor.
+B002038	sensor type - water temperature	water temperature	21		Trailing thermistor
+B002038	sensor type - water temperature	water temperature	22		unknown or non-bucket
+B002051	sensor type - extremes	air temperature	0 - 15		See BUFR table 0 02 051
+B002096	sensor type - air temperature	air temperature	0		See BUFR table 0 02 096
+B002097	sensor type - humidity	humidity	0 - 31		See BUFR table 0 02 097
+B002169	sensor type - wind speed	wind speed	0 - 15		See BUFR table 0 02 169
+B002169	sensor type - wind speed	wind speed	16		Anemograph.
+B002169	sensor type - wind speed	wind speed	17		Anemometer - type unspecified
+B002169	sensor type - wind speed	wind speed	18		Beaufort force
+B002169	sensor type - wind speed	wind speed	19		Cup anemometer and wind vane (combined unit).
+B002169	sensor type - wind speed	wind speed	20		Cup anemometer and wind vane (separate instruments).
+B002169	sensor type - wind speed	wind speed	21		Handheld anemometer.
+B002169	sensor type - wind speed	wind speed	22		Other (specify in footnote).
+B002169	sensor type - wind speed	wind speed	23		Propeller vane.
+B002185	sensor type - evaporation	evaporation	0 - 15		See BUFR table 0 02 185
+B003003	sensor housing - type	all	0 - 15		See BUFR table 0 03 003
+B003004	sensor housing - radiation shielding	all	0 - 15		See BUFR table 0 03 004
+B003008	sensor housing - ventilation	all	0 - 7		See BUFR table 0 03 008
+B003020	sensor housing - material	all	0 - 7		See BUFR table 0 03 020
+B003021	sensor housing - heating	all	0 - 4		See BUFR table 0 03 021
+B003022	sensor owner	all	0 - 7		See BUFR table 0 03 022
+B003023	sensor housing - configuration	all	0 - 7		See BUFR table 0 03 023
+BARG	sensor type - barograph	pressure trend	0		Open Scale barograph with 1 day clock.
+BARG	sensor type - barograph	pressure trend	1		Open Scale barograph with 2 day clock.
+BARG	sensor type - barograph	pressure trend	2		Open Scale barograph with 3 day clock.
+BARG	sensor type - barograph	pressure trend	3		Open Scale barograph with 4 day clock.
+BARG	sensor type - barograph	pressure trend	4		Open Scale barograph with 5 day clock.
+BARG	sensor type - barograph	pressure trend	5		Open Scale barograph with 6 day clock.
+BARG	sensor type - barograph	pressure trend	6		Open Scale barograph with 7 day clock.
+BARG	sensor type - barograph	pressure trend	7		Open Scale barograph with 8 day clock.
+BARG	sensor type - barograph	pressure trend	8		Open Scale barograph with 9 day clock.
+BARG	sensor type - barograph	pressure trend	9		Open Scale barograph.
+BARG	sensor type - barograph	pressure trend	10		Other (specify in footnote).
+BARG	sensor type - barograph	pressure trend	11		Small Scale barograph.
+BARG	sensor type - barograph	pressure trend	12		Tendency obtained from an electronic digital barometer.
+BARM	sensor type - barometer	pressure	0		Aneroid barometer (issued by the PMO or a NMS).
+BARM	sensor type - barometer	pressure	1		Digital aneroid barometer (aka Precision Aneroid Barometer).
+BARM	sensor type - barometer	pressure	2		Electronic digital barometer (consisting of one or more pressure transducers).
+BARM	sensor type - barometer	pressure	3		Mercury barometer.
+BARM	sensor type - barometer	pressure	4		Other
+BARM	sensor type - barometer	pressure	5		Ship's aneroid barometer.
+IBS	ice bulb status	humidity	0		Ice bulb
+IBS	ice bulb status	humidity	1		Wet bulb
+MANU	manufacturer	all	0		Vaisala
+SLOC	sensor location - ship	all	0		Aft mast.
+SLOC	sensor location - ship	all	1		Bridge wing
+SLOC	sensor location - ship	all	2		Foremast yardarm
+SLOC	sensor location - ship	all	3		Foremast.
+SLOC	sensor location - ship	all	4		Handheld.
+SLOC	sensor location - ship	all	5		Main deck
+SLOC	sensor location - ship	all	6		Mainmast yardarm
+SLOC	sensor location - ship	all	7		Mainmast.
+SLOC	sensor location - ship	all	8		Mast on wheelhouse top yardarm
+SLOC	sensor location - ship	all	9		Mast on wheelhouse top.
+SLOC	sensor location - ship	all	10		Meteorological mast.
+SLOC	sensor location - ship	all	11		Not fitted.
+SLOC	sensor location - ship	all	12		Other
+SLOC	sensor location - ship	all	13		Pressurised wheelhouse (closed and not vented to the outside).
+SLOC	sensor location - ship	all	14		Wheelhouse
+SLOC	sensor location - ship	all	15		Wheelhouse, not pressurised (vented to the outside).
+SRR	sensor type - precipitation	precipitation	NA		Place holder
+SSIDE	sensor side - ship	all	0		Center
+SSIDE	sensor side - ship	all	1		Port
+SSIDE	sensor side - ship	all	2		Starboard
+SSIDE	sensor side - ship	all	3		Windward side
+SWV	sensor type - waves	waves	0		buoy
+SWV	sensor type - waves	waves	1		other
+SWV	sensor type - waves	waves	2		shipborne wave recorder
+SWW	sensor type - present weather	present weather	0		Automatic, included (using WMO Codes 4677 and 4561)
+SWW	sensor type - present weather	present weather	1		Automatic, included (using WMO codes 4680 amd 4531)
+SWW	sensor type - present weather	present weather	2		Automatic, omitted (no observation, data not available)
+SWW	sensor type - present weather	present weather	3		Automatic, omitted (no significant phenomenon to report)
+SWW	sensor type - present weather	present weather	4		Manned, included
+SWW	sensor type - present weather	present weather	5		Manned, omitted (no observation, data not available)
+SWW	sensor type - present weather	present weather	6		Manned, omitted (no significant phenomenon to report)
+TSONDE	telemetry_sonde	sonde	TBD		TBD
+TREAT	sample treatment	all	TBD		TBD
+SPROC	sample procedure	all	TBD		TBD
+QCPROC	quality control procedure	all	TBD		TBD
+CALMETH	Calibration method	all	TBD		TBD
