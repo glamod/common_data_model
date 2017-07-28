@@ -3,7 +3,7 @@
 field_id	field_name	type	description
 0	include_descent	int (fk)	NA
 1	processing_code	int (fk)	NA
-2	unwinder_type	int (fk)	NA
+2	unwinder_type	varchar	NA
 3	burstpoint_altitude	numeric	NA
 4	burstpoint_pressure	numeric	NA
 5	filling_weight	numeric	NA
