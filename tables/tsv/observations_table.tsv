@@ -1,86 +1,89 @@
-element_name	kind	external_table	description
-report_id	int (pk)		Unique ID for report (unique ID given by combination of RecordID and ObservationID)
-region	int (fk)	region	Region (WMO region / Ocean basin)
-sub_region	int (fk)	sub_region	Country / regional sea
-application_area	int[] (fk)	application_area	WMO application area(s)
-observing_programme	int[] (fk)	observing_programme	Observing programme, e.g. VOS
-report_type	int (fk)	report_type	e.g. SYNOP, TEMP, CLIMAT, etc
-station_name	varchar		e.g. GRUAN station name, ship name, site name etc
-station_type	int (fk)	station_type	Type of station, e.g. land station, sea station etc
-platform_type	int (fk)	platform_type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
-platform_sub_type	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m discuss buoy
-primary_station_id	varchar		Primary station identifier, e.g. WIGOS ID
-primary_station_id_scheme	int (fk)	id_scheme	Scheme used for station ID
-secondary_station_id	varchar		Alternate (e.g. local) ID for station
-secondary_station_id_scheme	int (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID
-station_configuration	int (fk)	station_configuration	Link to station metadata / configuration
-station_location_longitude	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
-station_location_latitude	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
-station_location_accuracy	numeric		Accuracy to which station location recorded (radius in km)
-station_location_method	int(fk)	location_method	Method by which location determined
-station_location_quality	int (fk)	location_quality	Quality flag for station location
-station_crs	int (fk)	crs	Coordinate reference scheme for station location
-station_speed	numeric		Station speed over ground if mobile (m/s)
-station_course	numeric		Station course over ground if mobile (degree true)
-station_heading	numeric		Station heading if mobile
-height_of_station_above_local_ground	numeric		Height of station above local ground (m)
-height_of_station_above_sea_level	numeric		Height of station above mean sea level (m), negative values for below sea level.
-height_of_station_above_sea_level_accuracy	numeric		Accuracy to which height of station known (m)
-sea_level_datum	int (fk)	sea_level_datum	Datum used for sea level
-report_meaning_of_time_stamp	int (fk)	meaning_of_time_stamp	Report time - beginning, middle or end of reporting period
-report_time_stamp	timestamp with timezone		e.g. 1991-01-01 12:00:0.0+0
-report_duration	int		Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
-report_time_accuracy	numeric		Precision to which time was recorded (s)
-report_time_quality	int (fk)	time_quality	Quality flag for ReportDateTime
-report_time_reference	int (fk)	time_reference	Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
-profile_configuration	int (fk)	profile_configuration	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
-events_at_station	int[] (fk)	events_at_station	e.g. ship hove to, crop burning etc.
-report_quality	int (fk)	quality_flag	Overall quality of report
-duplicate_status	int (fk)	duplicate_status	E.g. no duplicates, best duplicate, duplicate, not checked.
-duplicates	int[] (fk)	observations_table	Array of report_id's for duplicates
-record_timestamp	timestamp with timezone		Timestamp of revision for this record
-history	varchar 	 	Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. 
-processing_level	int (fk)	report_processing_level	Level of processing applied to this report
-processing_codes	int[] (fk)	report_processing_codes	Processing applied to this report
-source_id	int (fk)	source_configuration	Original source of data ‚Äì link to table¬†
-source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
-data_policy_licence	int (fk)	data_policy_licence	WMOessential, WMOadditional, WMOother
-observation_id	int (pk)		Together with RecordID forms unique ID for observation / record
-observed_variable	int (fk)	observed_variable	The variable being observed / measured
-units	int (fk)	units	Units for the observed variable
-code_table	int (fk)	observation_code_table	Encode / decode table for variable (if encoded)
-observation_value	numeric		The observed value
-observation_value_significance	int (fk)	observation_value_significance	e.g. min, max, mean, sum
-observation_timestamp_meaning	int (fk)	meaning_of_time_stamp	beginning, middle, end
-observation_timestamp	timestamp with timezone		timestamp for observation
-observation_duration	int		Duration/period over which observation was made (s)
-observation_longitude	numeric		Longitude of the observed value, -180 to 180 (or other as defined by CRS)
-observation_latitude	numeric		Latitude of the observed value, -90 to 90 (or other as defined by CRS)
-observation_location_method	int (fk)	location_method	Method of determining location, 
-observation_location_precision	numeric		Precision to which location is reported (radius km)
-observation_bounding_box_min_longitude	numeric		Bounding box for observation, valid range given by CRS
-observation_bounding_box_max_longitude	numeric		Bounding box for observation, valid range given by CRS
-observation_bounding_box_min_latitude	numeric		Bounding box for observation, valid range given by CRS
-observation_bounding_box_max_latitude	numeric		Bounding box for observation, valid range given by CRS
-observation_spatial_representativeness	int (fk)	spatial_representativeness	Spatial representativeness of observation
-observation_height_above_station_surface	numeric		Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
-observation_z_coordinate	numeric		z coordinate of observation
-observation_z_coordinate_type	int (fk)	z_coordinate_type	Type of z coordinate
-observation_z_coordinate_method	int (fk)	z_coordinate_method	Method of determining z coordinate
-quality_flag	int (fk)	quality_flag	Quality flag for observation
-numerical_precision	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
-standard_uncertainty	numeric		Standard uncertainty in reported value
-method_of_estimating_standard_uncertainty	int (fk)	method_of_estimating_uncertainty	Method of estimating the standard uncertainty
-sensor_id	int (fk)	sensor_configuration	NA
-sensor_automation_status	int (fk)	automation_status	Automated, manual, mixed or visual observation
-exposure_of_sensor	int (fk)	instrument_exposure_quality	Whether the exposure of the instrument will impact on the quality of the measurement
-original_precision	int 		Original reporting precision in units given by 'original_units'
-original_units	int (fk)	units	Original units 
-original_value	numeric 		Original value as reported or recorded in log book.
-conversion_method	int (fk)	conversion_method	Link to table describing conversion process
-processing_code	int[] (fk)	processing_code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
-processing_level	int (fk)	processing_level	Level of processing applied to observation.
-adjustment_id	int (fk)	adjustment	Adjustment applied to observation reported in observation value (observation_value = original + adjustment)
-traceability	int (fk)	traceability	Whether observation can be traced to international standards.
-advanced_qc	int (fk)	NA	Whether there are advanced qc data available for this observation in qc_records table
-advanced_uncertainty	flag	NA	Whether there are advanced uncertainty estimates for this observation in the uncertainty_budget table
+element_name	occurance	kind	external_table	description
+report_id	1	varchar (pk)		Unique ID for report (unique ID given by combination of report_id and observation_id)
+region	1	int (fk)	region	Region (WMO region / Ocean basin)
+sub_region	1	int (fk)	sub_region	Country / regional sea
+application_area	1+	int[] (fk)	application_area	WMO application area(s)
+observing_programme	1+	int[] (fk)	observing_programme	Observing programme, e.g. VOS
+report_type	1	int (fk)	report_type	e.g. SYNOP, TEMP, CLIMAT, etc
+station_name	1	varchar		e.g. GRUAN station name, ship name, site name etc
+station_type	1	int (fk)	station_type	Type of station, e.g. land station, sea station etc
+platform_type	1	int (fk)	platform_type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
+platform_sub_type	1	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m discuss buoy
+primary_station_id	1	varchar (fk)	station_configuration	Primary station identifier, e.g. WIGOS ID
+station_record_number	1	int (fk)	station_configuration	Together with primary_station_id this forms a link to the station configuration table.
+primary_station_id_scheme	1	int (fk)	id_scheme	Scheme used for station ID
+secondary_station_id	0+	varchar []		Alternate (e.g. local) ID for station.
+secondary_station_id_scheme	0+	int[] (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID.
+station_location_longitude	1	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
+station_location_latitude	1	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
+station_location_accuracy	1	numeric		Accuracy to which station location recorded (radius in km)
+station_location_method	1	int(fk)	location_method	Method by which location determined
+station_location_quality	1	int (fk)	location_quality	Quality flag for station location
+station_crs	1	int (fk)	crs	Coordinate reference scheme for station location
+station_speed	1	numeric		Station speed over ground if mobile (m/s)
+station_course	1	numeric		Station course over ground if mobile (degree true)
+station_heading	1	numeric		Station heading if mobile
+height_of_station_above_local_ground	1	numeric		Height of station above local ground (m)
+height_of_station_above_sea_level	1	numeric		Height of station above mean sea level (m), negative values for below sea level.
+height_of_station_above_sea_level_accuracy	1	numeric		Accuracy to which height of station known (m)
+sea_level_datum	1	int (fk)	sea_level_datum	Datum used for sea level
+report_meaning_of_time_stamp	1	int (fk)	meaning_of_time_stamp	Report time - beginning, middle or end of reporting period
+report_timestamp	1	timestamp with timezone		e.g. 1991-01-01 12:00:0.0+0
+report_duration	1	int		Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
+report_time_accuracy	1	numeric		Precision to which time was recorded (s)
+report_time_quality	1	int (fk)	time_quality	Quality flag for report_timestamp 
+report_time_reference	1	int (fk)	time_reference	Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
+profile_id	1	varchar (fk)	profile_configuration	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
+events_at_station	0+	int[] (fk)	events_at_station	e.g. ship hove to, crop burning etc.
+report_quality	1	int (fk)	quality_flag	Overall quality of report
+duplicate_status	1	int (fk)	duplicate_status	E.g. no duplicates, best duplicate, duplicate, not checked.
+duplicates	0+	varchar[] (fk)	observations_table	Array of report_id's for duplicates
+record_timestamp	1	timestamp with timezone		Timestamp of revision for this record
+history	1	varchar 	 	Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. 
+processing_level	1	int (fk)	report_processing_level	Level of processing applied to this report
+processing_codes	0+	int[] (fk)	report_processing_codes	Processing applied to this report
+source_id	1	varchar (fk)	source_configuration	Original source of data ‚Äö√Ñ√¨ link to table¬¨‚Ä†
+source_record_id	1	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
+data_policy_licence	1	int (fk)	data_policy_licence	WMOessential, WMOadditional, WMOother
+observation_id	1	int (pk)		Together with report_id forms unique ID for observation / record
+observed_variable	1	int (fk)	observed_variable	The variable being observed / measured
+secondary_variable	0 or 1	int (fk)	secondary_variable	Secondary variable required to understand observation, e.g. chemical constituent
+units	1	int (fk)	units	Units for the observed variable
+code_table	1	int (fk)	observation_code_table	Encode / decode table for variable (if encoded)
+observation_value	1	numeric		The observed value
+secondary_value	0 or 1	int (fk)	TBD	value for the secondary variable.
+observation_value_significance	1	int (fk)	observation_value_significance	e.g. min, max, mean, sum
+observation_timestamp_meaning	1	int (fk)	meaning_of_time_stamp	beginning, middle, end
+observation_timestamp	1	timestamp with timezone		timestamp for observation
+observation_duration	1	int		Duration/period over which observation was made (s)
+observation_longitude	1	numeric		Longitude of the observed value, -180 to 180 (or other as defined by CRS)
+observation_latitude	1	numeric		Latitude of the observed value, -90 to 90 (or other as defined by CRS)
+observation_location_method	1	int (fk)	location_method	Method of determining location, 
+observation_location_precision	1	numeric		Precision to which location is reported (radius km)
+observation_bounding_box_min_longitude	1	numeric		Bounding box for observation, valid range given by CRS
+observation_bounding_box_max_longitude	1	numeric		Bounding box for observation, valid range given by CRS
+observation_bounding_box_min_latitude	1	numeric		Bounding box for observation, valid range given by CRS
+observation_bounding_box_max_latitude	1	numeric		Bounding box for observation, valid range given by CRS
+observation_spatial_representativeness	1	int (fk)	spatial_representativeness	Spatial representativeness of observation
+observation_height_above_station_surface	1	numeric		Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
+observation_z_coordinate	1	numeric		z coordinate of observation
+observation_z_coordinate_type	1	int (fk)	z_coordinate_type	Type of z coordinate
+observation_z_coordinate_method	1	int (fk)	z_coordinate_method	Method of determining z coordinate
+quality_flag	1	int (fk)	quality_flag	Quality flag for observation
+quality_bitmap	1	byte		TBD
+numerical_precision	1	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
+standard_uncertainty	1	numeric		Standard uncertainty in reported value
+method_of_estimating_standard_uncertainty	1	int (fk)	method_of_estimating_uncertainty	Method of estimating the standard uncertainty
+sensor_id	1	varchar (fk)	sensor_configuration	NA
+sensor_automation_status	1	int (fk)	automation_status	Automated, manual, mixed or visual observation
+exposure_of_sensor	1	int (fk)	instrument_exposure_quality	Whether the exposure of the instrument will impact on the quality of the measurement
+original_precision	1	int 		Original reporting precision in units given by 'original_units'
+original_units	1	int (fk)	units	Original units 
+original_value	1	numeric 		Original value as reported or recorded in log book.
+conversion_method	1	int (fk)	conversion_method	Link to table describing conversion process
+processing_code	0+	int[] (fk)	processing_code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
+processing_level	1	int (fk)	processing_level	Level of processing applied to observation.
+adjustment_id	1	int (fk)	adjustment	Adjustment applied to observation reported in observation value (observation_value = original + adjustment)
+traceability	1	int (fk)	traceability	Whether observation can be traced to international standards.
+advanced_qc	1	flag	NA	Whether there are advanced qc data available for this observation in qc_records table
+advanced_uncertainty	1	flag	NA	Whether there are advanced uncertainty estimates for this observation in the uncertainty_budget table

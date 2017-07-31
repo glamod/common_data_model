@@ -1,15 +1,8 @@
-element_name	kind	external_table	description
-profile_id	varchar	NA	Unique ID for this profile entry
-report_id	int (fk)	observations_table	Report to which this profile entry belongs
-standard_time	int (fk)	standard_time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
-actual_time	timestamp		Actual report / launch time
-profile_number	numeric		e.g. Balloon Number
-field_numeric	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
-value_numeric	numeric		Values for the additional fields
-field_coded	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
-value_coded	int[] (fk)	profile_configuration_codes	Values for the additional fields
-field_character	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
-value_character	varchar[]		Values for the additional fields
-field_timestamp	int[] (fk)	profile_configuration_fields	Fields to which the following values apply
-value_timestamp	timestamp[]		Values for the additional fields
-comments	varchar		Any additional comments / footnotes
+element_name	occurance	kind	external_table	description
+profile_id	1	varchar	NA	Unique ID for this profile entry
+profile_type	1	int (fk)	profile_type	Type of profile (e.g. atmospheric or oceanic)
+standard_time	1	int (fk)	standard_time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
+actual_time	1	timestamp		Actual report / launch time
+profile_number	1	numeric		e.g. Balloon Number
+comments	1	varchar		Any additional comments / footnotes
+	0+	NA		See profile_configuration_fields for valid fields and types.
