@@ -1,7 +1,7 @@
 # Description: Table defining additional information on data sources				
 # Source:				
 element_name	occurance	type	external_table	description
-source_id	1	int 		Unique record ID for dataset
+source_id	1	varchar (pk) 		Unique record ID for dataset
 product_id	1	varchar		ID for product
 product_name	1	varchar		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
 product_code	1	varchar		Abbreviations / product code, e.g. ICOADS, RS92-GDP

@@ -1,8 +1,7 @@
 # Description: definition of table specifying sensor configuration				
 # Source:				
 element_name	occurance	type	external_table	description
-instrument_id	1	varchar		Unique ID for this instrument
-station_id	1	varchar	station_configuration	Station associated with this instrument
+instrument_id	1	varchar (pk)		Unique ID for this instrument
 observing_method	1	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
 sampling_strategy	1	int (fk)	sampling_strategy	Sampling strategy used by instrument
 calibration_status	1	int (fk)	calibration_status	Whether the sensor is in / out of calibration

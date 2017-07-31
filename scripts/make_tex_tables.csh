@@ -10,7 +10,7 @@ endif
 # get name of table
 set tablename = `echo $file | cut -d '.' -f1`
 set tablecaption = `echo $file | cut -d '.' -f1 | sed "s/_//g" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2)) }'`
-
+set tablesource = `grep '^# Source:' $file | sed 's/^# Source: //g'`
 # get number of columns based on header row
 set ncols = `awk 'BEGIN {FS="\t"} ; '"/^$tablename/"' || /^element_name/ || /^index/ || /^element_number/ || /^field_id/ {print NF}' $file`
 
@@ -18,7 +18,7 @@ set tablepath="/Users/dyb/GitHub/C3S_311a_CDM/tables/"
 #set tablepath="/Users/dyb/Documents/Projects/C3S_311a_Lot2/WP2/CDM/github/tables/"
 
 # awk  -v ncols="$ncols" -v tablename="$tablename" -v file="$file" -v tablepath=$"tablepath" '\
-awk -v ncols="$ncols" -v tablecaption="$tablecaption" -v tablename="$tablename" -v file="$file" -v tablepath="$tablepath" '\
+awk -v ncols="$ncols" -v tablecaption="$tablecaption" -v tablename="$tablename" -v file="$file" -v tablepath="$tablepath" -v tablesource="$tablesource" '\
 BEGIN { FS = "\t" ; \
     if( ncols > 4){\
       print "\\begin{landscape}";\
@@ -36,7 +36,7 @@ BEGIN { FS = "\t" ; \
     print "    every first row/.append style={";\
     print "        before row={%";\
     print "            % Initial caption";\
-   printf "            \\caption{%s}\n" , tablename;\
+   printf "            \\caption{%s (%s)}\n" , tablename, tablesource;\
    printf "            \\label{tab:DataTable%s}\\\\\n", tablecaption;\
     print "            % Initial column headers";\
 }\

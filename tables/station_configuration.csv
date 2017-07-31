@@ -10,7 +10,7 @@ station_name	1	varchar		Name of station (e.g. Tateno)
 station_abbreviation	1	varchar		Abbreviation of station name (e.g. TAT)
 alternative_name	0+	varchar[]		NA
 station_crs	1	int (fk)	crs	coordinate reference system used to report stations location
-station_longitude	1	numeric		Report position for station if stationary or NULL if mobile
+station_longitude	1	numeric		Report position for station if stationary or NULL if mobile. If more than one estimate record best here and additional values using optional fields.
 station_latitude	1	numeric		Report position for station if stationary or NULL if mobile
 local_gravity	1	numeric	NA	Local gravity at station location (units ms-2)
 start_date	1	timestamp		Date that the station first started reporting in this configuration

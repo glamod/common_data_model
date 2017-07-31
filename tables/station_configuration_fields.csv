@@ -23,5 +23,8 @@ field_id	field_name	kind	description
 19	Surface cover	int (fk)	NA
 20	Surface cover scheme	int (fk)	NA
 21	Topography	int (fk)	NA
-22	Soil type	int (fk)	NA
-23	Land use	int (fk)	NA
+22	Topography scheme	int (fk)	NA
+23	Soil type	int (fk)	NA
+24	Land use	int (fk)	NA
+25	Alternate longitude	numeric	NA
+26	Alternate latitude	numeric	NA

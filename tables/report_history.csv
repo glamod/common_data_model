@@ -1,5 +1,5 @@
 # Description: Table containing history for records
-# _source:	
+# Source:	
 element_name	type	Description
 history_id	bigint	Unique ID for entry
 report_id	bigint	Which report this is an entry for

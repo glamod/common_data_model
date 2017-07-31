@@ -2,7 +2,7 @@
 # Source:				
 element_name	occurance	kind	external_table	description
 profile_id	1	varchar	NA	Unique ID for this profile entry
-report_id	1	int (fk)	observations_table	Report to which this profile entry belongs
+profile_type	1	int (fk)	profile_type	Type of profile (e.g. atmospheric or oceanic)
 standard_time	1	int (fk)	standard_time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
 actual_time	1	timestamp		Actual report / launch time
 profile_number	1	numeric		e.g. Balloon Number

@@ -174,7 +174,7 @@ This document defines the initial version of the Common Data Model (CDM)\footnot
 \subsection {Scope}
 The defined common data model is intended for use with in situ land and marine observations. Instantaneous (or point) observations and temporal statistics (e.g. daily and monthly min / max temperatures, accumulation of precipitation etc.)  are supported through the use of a significance qualifier. Similarly, profile data is supported through reporting the z-coordinate alongside the observed value.\\
 
-Whilst initially intended for use with observations of Essential Climate Variables (ECVs; e.g. GCOS, 2010) the data model is not restricted to the ECVs. Following the ECMWF Observations DataBase (ODB) type data model, the observand is parameterized, with both the variable being reported and it's value specified in the data model.\\
+Whilst initially intended for use with observations of Essential Climate Variables (ECVs; e.g. GCOS, 2010) the data model is not restricted to the ECVs. Following the ECMWF Observations DataBase (ODB) type data model, the measurand (or observed parameter) is parameterized, with both the variable being reported and it's value specified in the data model.\\
 
 Comprehensive metadata is supported through the use of configuration tables, recording information on:
 \begin{itemize}
@@ -204,24 +204,24 @@ In order to meet the above requirements a data model based on the ECMWF Observat
 
 \subsection{ECMWF Observations DataBase (ODB)}
 
-The data model defined and used in the ECMWF Observations DataBase (ODB) software allows the representation of environmental data from many sources, including in situ observations, satellite data and model output. This flexibility is achieved through storing each observation, or estimate, of a single parameter as a separate record together with header information providing information on the location and source of the observation. Where multiple observations are made in a single report the report spans multiple records, with the header information repeated. A simplified example is given in Table 1.\\
+The data model defined and used in the ECMWF Observations DataBase (ODB) software allows the representation of environmental data from many sources, including in situ observations, satellite data and model output. This flexibility is achieved through storing each observation, or estimate, of a single parameter as a separate record together with header information providing information on the location and source of the observation. Where multiple observations are made in a single report the report spans multiple records, with the header information repeated. A simplified example is given in Table 1. Additional tables give further information on the coded values.\\
 
 \input{odb_example}
 
 \subsection {BUFR and WIGOS Metadata Standard}
 There has been a large body of work and significant effort previously invested in defining data models and parameterising the data and metadata for encoding the data into those data models.  Within the scope of the CDM and the C3S 311a service, the WMO Binary Universal Form for the Representation of meteorological data (BUFR) (WMO, 2015a) and the WMO Integrated Observing System Metadata Standard (WMDS) (WMO, 2015b) are key background material. \\
 
-The BUFR format is a flexible and efficient table driven format for reporting weather observations on the WMO Global Telecommunications System (GTS) in binary. The tables defined as part of the BUFR format include many of the parameters that will be included in the CDM. For example, Common code table C6 (WMO 2015a) includes all the measurement units reportable in BUFR (and other WMO codes). Similarly, code tables are defined for reporting instrument types and methods, station types etc. Where possible, these code tables should be referenced and used in preference to defining new code tables.\\
+The BUFR format is a flexible and efficient table driven format for reporting weather observations on the WMO Global Telecommunications System (GTS) in binary. The tables defined as part of the BUFR format include many of the parameters that will be included in the CDM. For example, Common code table C6 (WMO 2015a) includes all the measurement units reportable in BUFR (and other WMO codes). Similarly, code tables are defined for reporting instrument types and methods, station types etc. Where possible, these code tables have been referenced and used in preference to defining new code tables.  Tables from Version 27 of Master Table 0 have been used in this document.\\
 
-In recognition of the increasing importance of observational metadata the WMDS is currently under development and undergoing a phased implementation (WMO, 2015b). The WMDS forms an extension of the ISO19115 metadata standard, with additional mandatory elements describing both the station level and discovery metadata as well as specific information on the instrumentation used and processing steps. As part of the process simplified versions of BUFR and other tables have been included in the standard. As with BUFR these tables should be referenced, where appropriate, in preference to defining new code tables. \\
+In recognition of the increasing importance of observational metadata the WMDS is currently under development and undergoing a phased implementation (WMO, 2015b). The WMDS forms an extension of the ISO19115 metadata standard, with additional mandatory elements describing both the station level and discovery metadata as well as specific information on the instrumentation used and processing steps. As part of the process simplified versions of BUFR and other tables have been included in the standard. As with BUFR these tables have been referenced, where appropriate, in preference to defining new code tables.\\
 
 \section {Common Data Model}
 \FloatBarrier
 Whilst the ODB data model has great flexibility the requirements of the implementation at ECMWF and that required by the C3S 311a service are different. For example, the existing columns defined within ECMWFs ODB implementation\footnote{http://apps.ecmwf.int/odbgov/column/}  contain many parameters that are of little relevance to the in situ observations but are relevant to the assimilation of data from many different sources into the numerical models. Conversely, there are many parameters included in the data from the C3S 311a service that are required to correctly interpret the observations but that are not included in ODB. \\
 
-To give the flexibility required, and to maintain compatibility with the ODB, the primary observations table within the CDM has been developed based on the ODB model, but with the metadata linked / nested through a series of auxiliary / configuration tables. A schematic of this is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. In essence, the CDM constists of 7 primary tables:\\
+To give the flexibility required, and to maintain compatibility with the ODB, the primary observations table within the CDM has been developed based on the ODB model, but with the metadata linked / nested through a series of auxiliary configuration tables. A schematic of this is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. The CDM consists of 7 primary tables:\\
 \begin{itemize}
-\item \textit{observations\_table} table (Table 2). This is the primary table, or data structure, containing the observations and the information on the geospatial location of the observations (and station), date / time of the report, the observed parameter, source information; data licensing and usage permissions etc and links to additional metadata.
+\item \textit{observations\_table} table (Table 2). This is the primary table, or data structure, containing the observations and information on the geospatial location of the observations (and station), date / time of the report, the observed parameter, source information; data licensing and usage permissions etc and links to additional metadata.
 \item \textit{station\_configuration} table (Table 3). This table contains detailed information on the station reporting the data including: institute operating the station; the type of station; station / AWS model type; location; operating territory; reporting frequency etc.
 \item \textit{source\_configuration} table (Table 5). This table contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc.
 \item \textit{profile\_configuration} table (Table 7). This table contains detailed metadata for atmospheric and oceanic profiles, including: profile type; type of launcher; direction of profile; balloon / XBT type etc.
@@ -238,7 +238,7 @@ To give the flexibility required, and to maintain compatibility with the ODB, th
 
 \FloatBarrier
 
-Whilst Figure 1 and the tables show the data model from a relational database perspective the same data model could be represented in XML. A simplified XML example of this is shown in Figure 2. For readability the majority of elements have been omitted, with a few example elements and nested data structures retained. In this example, the records from the configuration tables are nested within the entries for the respective records from the observations\_table.\\
+Whilst Figure 1 and the tables show the data model from a relational database perspective the same data model could be represented in XML. A simplified XML example of this is shown in Figure 2. For readability the majority of elements have been omitted, with a few example elements and nested data structures retained. In this example, the records from the configuration tables are nested within the entries for the respective records from the observations\_table. Similarly, the data model could be represented in NetCDF with elements common at the report level, and from the configuration tables, included in the NetCDF file as global or variable attributes as appropriate.\\
 
 Within the following tables the following syntax has been used to indicate the data type for the different elements: \\
 \begin{itemize}
@@ -248,10 +248,11 @@ Within the following tables the following syntax has been used to indicate the d
 \item timestamp: \tabto{3 cm} A timestamp, e.g. "2017-07-01 00:00:0.0+00".
 \item byte: \tabto{3 cm} A single byte of data used to store e.g. a bit flag array. 
 \item {[]}:\tabto{3 cm} An array of the indicated type.
-\item (fk)  \tabto{3 cm} The indicated value is also a foreign key linking to another table (e.g. encoded data and decode table).
+\item (fk)  \tabto{3 cm} The indicated value is also a foreign key linking to another table (e.g. decode table for encoded data).
+\item (pk) \tabto{3 cm} The indicated elements marked as (pk) within a table form the unique ID for the record.
 \end {itemize}
 
-Mandatory elements are indicated by a 1 (or 1+) in the occurance column. Mandatory elements that are not available must be encoded but may be reported as missing (.e.g NA or NULL). Optional elements are indicated by 0+. Whilst arrays have been indicated for the elements containing multiple values this does not preclude other implementations. Where there are many optional elements for a given table these are parameterised and included in the appendix. For example, the \textit{station\_configuration} table has many optional elements, with valid elements (and there kind / type) listed in the \textit{station\_configuration\_fields} table.
+Mandatory elements are indicated by a 1 (or 1+) in the occurance column. Mandatory elements that are not available must be encoded but may be reported as missing (.e.g NA, NULL or format specific equivalent). Optional elements are indicated by 0+. Whilst arrays have been indicated for the elements containing multiple values this does not preclude other implementations. Where there are many optional elements for a given table these are parameterised and included in the appendix. For example, the \textit{station\_configuration} table has many optional elements, with valid optional elements, and their kind, listed in the \textit{station\_configuration\_fields} table. This, in turn, is linked to the \textit{station\_configuration\_codes} table. No method is specified for the inclusion of the additional elements as the inclusion is dependent on the implementation of the data model and format used (e.g. ASCII, NetCDF, XML, relational database). For example, as with the other configuration fields, the optional elements could be reported in the global attributes section of a NetCDF file. Alternatively, EAV based tables linked to the configuration tables could be used in a relational database setting. 
 
 \begin{figure}
 \begin{Framed}
@@ -312,7 +313,7 @@ Mandatory elements are indicated by a 1 (or 1+) in the occurance column. Mandato
 \input {sensor_configuration_fields}
 
 \subsection {Quality control flags}
-A single QC flag is provided in the observaitons table for the observed value. Additional flags can be provided using the qc\_table and by setting the advanced\_qc flag to true in the observations\_table.\\
+A single QC flag is provided in the observations table for the observed value. Additional flags can be provided using the qc\_table and by setting the advanced\_qc flag to true in the observations\_table.\\
 \input {qc_table}
 
 \subsection {Uncertainty budget}
@@ -411,14 +412,6 @@ A single standard uncertainty value is provided for each observed value in the o
 %\input {surface_type_scheme}
 %\input {topography}
 %\input {processing_code}
-
-
-
-
-
-
-
-
 
 
 \end{document}
