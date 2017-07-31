@@ -1,5 +1,5 @@
-index	duplicate_status	description
-0	0	Unique observation, no known duplicates
-1	1	Best duplicate
-2	2	Worst duplicate
-3	3	Unchecked
+duplicate_status	description
+0	Unique observation, no known duplicates
+1	Best duplicate
+2	Worst duplicate
+3	Unchecked

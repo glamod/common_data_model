@@ -9,6 +9,8 @@ field_id	field_name	type	description
 5	filling_weight	numeric	NA
 6	gross_weight	numeric	NA
 7	payload	numeric	NA
+8	unwinder_length	numeric	NA
+9	ascent_rate	numeric	Rate of ascent / descent for profile (+ve values indicate ascent, -ve descent)(m/s)
 B002016	radiosonde_configuration	int (fk)	NA
 B002003	type_of_measuring_equipment used	int (fk)	NA
 B002011	radiosonde_sounding_system	int (fk)	NA

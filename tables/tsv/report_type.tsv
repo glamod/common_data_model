@@ -1,4 +1,4 @@
-index	report_type	abbreviation	description
-0	0	SYNOP	NA
-1	1	TEMP	NA
-2	2	CLIMAT	NA
+report_type	abbreviation	description
+0	SYNOP	NA
+1	TEMP	NA
+2	CLIMAT	NA

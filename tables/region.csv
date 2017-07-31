@@ -1,11 +1,11 @@
 # Description: Region where observation was made
 # Source: WIGOS 3-01
-index	region	WMO_region	description
-0	0	NA	Reserved
-1	1	1	Africa
-2	2	2	Asia
-3	3	3	South America
-4	4	4	North America, Central America, Caribbean
-5	5	5	South-West Pacific
-6	6	6	Europe
-7	7	7	Antarctica
+region	WMO_region	description
+0	NA	Reserved
+1	1	Africa
+2	2	Asia
+3	3	South America
+4	4	North America, Central America, Caribbean
+5	5	South-West Pacific
+6	6	Europe
+7	7	Antarctica

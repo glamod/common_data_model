@@ -1,5 +1,3 @@
-\begin{landscape}
-\subsection {Profile configuration table}
 \pgfplotstabletypeset[
     empty header,
     begin table=\begin{longtable},
@@ -11,15 +9,15 @@
             \caption{profile\_configuration}
             \label{tab:DataTableProfileconfiguration}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{element\_number}}} & 
-            \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \hline\hline             \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{occurance}}} & 
             \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{kind}}} & 
             \multicolumn{1} { V{1.475000 in}} { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{5}{c}{Table \thetable\ profile\_configuration (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{element\_number}}} & 
-            \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \hline\hline             \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{occurance}}} & 
             \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{kind}}} & 
             \multicolumn{1} {V{1.475000 in} } { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
@@ -36,14 +34,14 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/element_number/.style={
-            string type, 
-            column type= V{1.475000 in}, 
-            string replace*={_}{\_}
-        },
     columns/element_name/.style={
             string type, 
             column type= n{1.475000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/occurance/.style={
+            string type, 
+            column type= V{1.475000 in}, 
             string replace*={_}{\_}
         },
     columns/kind/.style={
@@ -61,5 +59,5 @@
             string replace*={_}{\_},
             column type = V{3.000000 in}
         }
-    ]{/Users/dyb/GitHub/common_data_model/tables/profile_configuration.csv}
-\end{landscape}
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/profile_configuration.csv}
+

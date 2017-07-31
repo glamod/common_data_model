@@ -1,6 +1,6 @@
-index	crs	description
-0	0	WGS84
-1	1	ETRS89
-2	2	NAD83
-3	3	DHDN
-4	4	Ellipsoidal datum using International Reference Meridian maintained by the International Earth Rotation and Reference System Services (IERS)
+crs	description
+0	WGS84
+1	ETRS89
+2	NAD83
+3	DHDN
+4	Ellipsoidal datum using International Reference Meridian maintained by the International Earth Rotation and Reference System Services (IERS)

@@ -1,29 +1,36 @@
-element_number	element_name	type	external_table	description
-0	station_primary_id	varchar		Primary (e.g. WMO) ID for station
-1	station_primary_id_scheme	int (fk)	id_scheme	Scheme used for primary ID
-2	station_record_number	int		Record number for this station entry
-3	station_secondary_id	varchar		Secondary (e.g. local) ID for station
-4	station_secondary_id_scheme	int (fk)	id_scheme	Scheme used for secondary ID
-5	station_name	varchar		Name of station (e.g. Tateno)
-6	station_abbreviation	varchar		Abbreviation of station name (e.g. TAT)
-7	start_date	timestamp		Date that the station first started reporting in this configuration
-8	end_date	timestamp		Last data the station reported in this configuration
-9	station_type	int (fk)	station_type	Type of reporting station
-10	platform_type	int (fk)	platform_type	Generic type of observing platform
-11	platform_sub_type	int (fk)	platform_sub_type	Specific type of observing platform
-12	operating_institute	int (fk)	institute	Institute operating the station
-13	operating_territory	int (fk)	sub_region	Sub-region where station is located or country of registry for mobile station
-14	observing_frequency		observing_frequency	Typical frequency of observations for this station
-15	telecommunication_method	int (fk)	communication_method	Method used to report observations
-16	station_automation	int (fk)	automation_status	Whether station is automated, manual or mixed
-17	measuring_system_model	int (fk)	measuring_system_model	Station / AWS model type
-18	measuring_system_id	varchar		ID or serial number of measuring system
-19	field_numeric	int[] (fk)	station_configuration_fields	Field to which following values correspond
-20	value_numeric	numeric[]		Values for specified fields
-21	field_coded	int[] (fk)	station_configuration_fields	Field to which following values correspond
-22	value_coded	int[] (fk)	station_configuration_codes	Values for specified fields
-23	field_character	int[] (fk)	station_configuration_fields	Field to which following values correspond
-24	value_character	varchar[]		Values for specified fields
-25	field_timestamp	int[] (fk)	station_configuration_fields	Field to which following values correspond
-26	value_timestamp	timestamp[]		Values for specified fields
-27	comment	varchar		Any other comments / footnotes
+element_name	type	external_table	description
+station_primary_id	varchar		Primary (e.g. WMO) ID for station
+station_primary_id_scheme	int (fk)	id_scheme	Scheme used for primary ID
+station_record_number	int		Record number for this station entry
+station_secondary_id	varchar		Secondary (e.g. local) ID for station
+station_secondary_id_scheme	int (fk)	id_scheme	Scheme used for secondary ID
+station_name	varchar		Name of station (e.g. Tateno)
+station_abbreviation	varchar		Abbreviation of station name (e.g. TAT)
+station_crs	int (fk)	crs	coordinate reference system used to report stations location
+station_longitude	numeric		Report position for station if stationary or NULL if mobile
+station_latitude	numeric		Report position for station if stationary or NULL if mobile
+local_gravity	numeric	NA	Local gravity at station location (units ms-2)
+start_date	timestamp		Date that the station first started reporting in this configuration
+end_date	timestamp		Last data the station reported in this configuration
+station_type	int (fk)	station_type	Type of reporting station
+platform_type	int (fk)	platform_type	Generic type of observing platform
+platform_sub_type	int (fk)	platform_sub_type	Specific type of observing platform
+operating_institute	int (fk)	institute	Institute operating the station (e.g. National Oceanography Centre)
+operating_organisation	int (fk)	organisation	Parent organsiation for the institute (e.g. Natural Environment Research Council)
+operating_territory	int (fk)	sub_region	Sub-region where station is located or country of registry for mobile station
+city	int (fk)	cities	Nearest city / town to station location
+observing_frequency	int	observing_frequency	Typical frequency of observations for this station (reports per day)
+telecommunication_method	int (fk)	communication_method	Method used to report observations
+station_automation	int (fk)	automation_status	Whether station is automated, manual or mixed
+measuring_system_model	int (fk)	measuring_system_model	Station / AWS model type
+measuring_system_id	varchar		ID or serial number of measuring system
+observed_variables	int[] (fk)	observed_variable	array indicating which variables are observed by this station
+field_numeric	int[] (fk)	station_configuration_fields	Field to which following values correspond
+value_numeric	numeric[]		Values for specified fields
+field_coded	int[] (fk)	station_configuration_fields	Field to which following values correspond
+value_coded	int[] (fk)	station_configuration_codes	Values for specified fields
+field_character	int[] (fk)	station_configuration_fields	Field to which following values correspond
+value_character	varchar[]		Values for specified fields
+field_timestamp	int[] (fk)	station_configuration_fields	Field to which following values correspond
+value_timestamp	timestamp[]		Values for specified fields
+comment	varchar		Any other comments / footnotes

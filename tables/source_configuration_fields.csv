@@ -1,12 +1,12 @@
 # Description:
 # Source:
-index	field	field_name	kind	description
-0	0	delayed mode format	int (fk)	NA
-1	1	metadata source	int (fk)	NA
-2	2	metadata source format	int (fk)	NA
-3	3	observation source type	int (fk)	NA
-4	4	real time format	int (fk)	NA
-5	5	source format	int (fk)	NA
-6	6	source deck	int (fk)	NA
-7	7	source id	int (fk)	NA
-10	10	product original time resolution	numeric	NA
+field_id	field_name	kind	description
+0	delayed mode format	int (fk)	NA
+1	metadata source	int (fk)	NA
+2	metadata source format	int (fk)	NA
+3	observation source type	int (fk)	NA
+4	real time format	int (fk)	NA
+5	source format	int (fk)	NA
+6	source deck	int (fk)	NA
+7	source id	int (fk)	NA
+10	product original time resolution	numeric	NA

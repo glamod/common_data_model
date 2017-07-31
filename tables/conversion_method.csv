@@ -1,4 +1,4 @@
 # Description: Table containing definition of conversions between units used
 # Source:
-index	conversion	description	implementation	reference
-0	0	Farenheit to degrees Celsius	T_Celsius = (T_Farenheit - 32) / 1.8	NA
+conversion_method	description	implementation	reference
+0	Farenheit to degrees Celsius	T_Celsius = (T_Farenheit - 32) / 1.8	NA

@@ -1,4 +1,4 @@
-index	sampling_strategy	description
-0	1	Continuous
-1	2	Discrete
-2	3	Event
+sampling_strategy	description
+1	Continuous
+2	Discrete
+3	Event

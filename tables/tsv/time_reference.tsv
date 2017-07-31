@@ -1,5 +1,5 @@
-index	time_reference	description
-0	0	Unknown
-1	1	Time server
-2	2	Radio clock
-3	3	Manual comparison
+time_reference	description
+0	Unknown
+1	Time server
+2	Radio clock
+3	Manual comparison

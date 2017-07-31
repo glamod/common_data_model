@@ -1,27 +1,27 @@
 # Description:
 # Source:
-index	field	field_name	kind	description
-0	0	AWS Entry and Display Software	int (fk)	NA
-1	1	AWS Entry and Display Software Version	int (fk)	NA
-2	2	AWS Model	int (fk)	NA
-3	3	AWS Model Version	int (fk)	NA
-4	4	AWS Software	int (fk)	NA
-5	5	AWS Software version	int (fk)	NA
-6	6	Cargo height	numeric	NA
-7	7	Distance of bridge from bow	numeric	NA
-8	8	Draught	numeric	NA
-9	9	Drogue type	int (fk)	NA
-10	10	Freeboard	numeric	NA
-11	11	Lagrangian drifter drogue status	int (fk)	NA
-12	12	Length overall of the ship, ignoring bulbous bow	numeric	NA
-13	13	LogBook software and version	int (fk)	NA
-14	14	Maximum operating speed on normal service	numeric	NA
-15	15	Moulded breadth	numeric	NA
-16	16	Other instruments	int (fk)	NA
-17	17	Station status	int (fk)	NA
-18	18	Type of meteorological reporting ship	int (fk)	NA
-19	19	Surface cover	int (fk)	NA
-20	20	Surface cover scheme	int (fk)	NA
-21	21	Topography	int (fk)	NA
-22	22	Soil type	int (fk)	NA
-23	23	Land use	int (fk)	NA
+field_id	field_name	kind	description
+0	AWS Entry and Display Software	int (fk)	NA
+1	AWS Entry and Display Software Version	int (fk)	NA
+2	AWS Model	int (fk)	NA
+3	AWS Model Version	int (fk)	NA
+4	AWS Software	int (fk)	NA
+5	AWS Software version	int (fk)	NA
+6	Cargo height	numeric	NA
+7	Distance of bridge from bow	numeric	NA
+8	Draught	numeric	NA
+9	Drogue type	int (fk)	NA
+10	Freeboard	numeric	NA
+11	Lagrangian drifter drogue status	int (fk)	NA
+12	Length overall of the ship, ignoring bulbous bow	numeric	NA
+13	LogBook software and version	int (fk)	NA
+14	Maximum operating speed on normal service	numeric	NA
+15	Moulded breadth	numeric	NA
+16	Other instruments	int (fk)	NA
+17	Station status	int (fk)	NA
+18	Type of meteorological reporting ship	int (fk)	NA
+19	Surface cover	int (fk)	NA
+20	Surface cover scheme	int (fk)	NA
+21	Topography	int (fk)	NA
+22	Soil type	int (fk)	NA
+23	Land use	int (fk)	NA

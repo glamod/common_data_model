@@ -1,24 +1,24 @@
 # Description: Application area
 # Source: WIGOS 2-01
-index	application_area	description
-0	1	Global numerical weather prediction (GNWP)
-1	2	High-resolution numerical weather prediction (HRNWP)
-2	3	Nowcasting and very short range forecasting (NVSRF)
-3	4	Seasonal and inter-annual forecasting (SIAF)
-4	5	General weather forecasting
-5	6	Aeronautical meteorology
-6	7	Ocean applications
-7	8	Agricultural meteorology
-8	9	Hydrology 
-9	10	Climate monitoring (as undertaken through the Global Climate Observing System, GCOS)
-10	11	Climate applications
-11	12	Space weather
-12	13	Cryosphere applications
-13	14	Energy sector
-14	15	Transportation sector
-15	16	Health sector
-16	17	Terrestrial ecology
-17	18	Operational air quality forecasting
-18	19	Atmospheric composition forecasting
-19	20	Atmospheric composition monitoring and analysis
-20	21	Large urban complexes
+application_area	description
+1	Global numerical weather prediction (GNWP)
+2	High-resolution numerical weather prediction (HRNWP)
+3	Nowcasting and very short range forecasting (NVSRF)
+4	Seasonal and inter-annual forecasting (SIAF)
+5	General weather forecasting
+6	Aeronautical meteorology
+7	Ocean applications
+8	Agricultural meteorology
+9	Hydrology 
+10	Climate monitoring (as undertaken through the Global Climate Observing System, GCOS)
+11	Climate applications
+12	Space weather
+13	Cryosphere applications
+14	Energy sector
+15	Transportation sector
+16	Health sector
+17	Terrestrial ecology
+18	Operational air quality forecasting
+19	Atmospheric composition forecasting
+20	Atmospheric composition monitoring and analysis
+21	Large urban complexes

@@ -1,30 +1,30 @@
-index	observed_variable	parameter_group	domain	sub_domain	abbreviation	name	units	description
-0	0	cloud	atmospheric	upper-air	ch	high_cloud_type	coded	type of high clouds (ch)
-1	1	cloud	atmospheric	upper-air	cm	middle_cloud_type	coded	type of middle clouds (cm)
-2	2	cloud	atmospheric	upper-air	cl	low_cloud_type	coded	type of low clouds (cl)
-3	3	cloud	atmospheric	upper-air	nh	cloud_base_height	m	cloud base height (nh)
-4	4	cloud	atmospheric	upper-air	nl	low_cloud_amount	Okta	low cloud amount (n)
-5	5	cloud	atmospheric	upper-air	tcc	total_cloud_amount	Okta	total amount of clouds
-6	6	cloud	atmospheric	upper-air	n	cloud_cover	Okta	Total cloud cover
-7	7	humidity	atmospheric	surface; upper-air	rh	relative_humidity	1	NA
-8	8	humidity	atmospheric	surface; upper-air	q	specific_humidity	1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
-9	9	humidity	atmospheric	surface; upper-air	dep_dew	dew_point_depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
-10	10	humidity	atmospheric	surface; upper-air	t_dew	dew_point_temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
-11	11	humidity	atmospheric	surface; upper-air	t_wet	wet_bulb_temperature	K	NA
-12	12	humidity	atmospheric	surface; upper-air	t_ice_bulb	ice_bulb_temperature	K	NA
-13	13	pressure	atmospheric	surface	a	pressure_tendancy_characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
-14	14	pressure	atmospheric	surface	p	air_pressure	Pa	NA
-15	15	pressure	atmospheric	surface	mslp	air_pressure_at_sea_level	Pa	sea_level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
-16	16	pressure	atmospheric	surface	ppp	pressure_tendancy	Pa	pressure tendency
-17	18	salinity	oceanic	surface; sub-surface	sal	salinity	psu	ocean salinity (PSU)
-18	19	temperature	atmospheric	surface; upper-air	t_air	air_temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
-19	20	temperature	oceanic	surface; sub-surface	t_water	water_temperature	K	Water (sea, river, lake) temperature at depth indicated
-20	21	visibility	atmospheric	surface	vv	horizontal_visibility_in_air	m	The visibility is the distance at which something can be seen.
-21	22	weather	atmospheric	surface	w1	past_weather_1	coded	past weather (w)
-22	23	weather	atmospheric	surface	ww	present_weather	coded	present weather (ww)
-23	24	weather	atmospheric	surface	w2	past_weather_2	coded	past weather 2 (used in synoptic maps)
-24	26	wind	atmospheric	surface; upper-air	d	wind_from_direction	degree	direction from which the wind is blowing
-25	27	wind	atmospheric	surface; upper-air	u	eastward_wind_speed	m s-1	Eastward indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
-26	28	wind	atmospheric	surface; upper-air	v	northward_wind_speed	m s-1	Northward indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
-27	29	wind	atmospheric	surface; upper-air	w	wind_speed	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity.
-28	30	wind	atmospheric	surface	w_gust	wind_speed_of_gust	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed,  the gust wind speed can be indicated by a cell_methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness,  the gust wind speed may be separately diagnosed from the wind speed.
+observed_variable	parameter_group	domain	sub_domain	abbreviation	name	units	description
+0	cloud	atmospheric	upper-air	ch	high_cloud_type	coded	type of high clouds (ch)
+1	cloud	atmospheric	upper-air	cm	middle_cloud_type	coded	type of middle clouds (cm)
+2	cloud	atmospheric	upper-air	cl	low_cloud_type	coded	type of low clouds (cl)
+3	cloud	atmospheric	upper-air	nh	cloud_base_height	m	cloud base height (nh)
+4	cloud	atmospheric	upper-air	nl	low_cloud_amount	Okta	low cloud amount (n)
+5	cloud	atmospheric	upper-air	tcc	total_cloud_amount	Okta	total amount of clouds
+6	cloud	atmospheric	upper-air	n	cloud_cover	Okta	Total cloud cover
+7	humidity	atmospheric	surface; upper-air	rh	relative_humidity	1	NA
+8	humidity	atmospheric	surface; upper-air	q	specific_humidity	1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
+9	humidity	atmospheric	surface; upper-air	dep_dew	dew_point_depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
+10	humidity	atmospheric	surface; upper-air	t_dew	dew_point_temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
+11	humidity	atmospheric	surface; upper-air	t_wet	wet_bulb_temperature	K	NA
+12	humidity	atmospheric	surface; upper-air	t_ice_bulb	ice_bulb_temperature	K	NA
+13	pressure	atmospheric	surface	a	pressure_tendancy_characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
+14	pressure	atmospheric	surface	p	air_pressure	Pa	NA
+15	pressure	atmospheric	surface	mslp	air_pressure_at_sea_level	Pa	sea_level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
+16	pressure	atmospheric	surface	ppp	pressure_tendancy	Pa	pressure tendency
+18	salinity	oceanic	surface; sub-surface	sal	salinity	psu	ocean salinity (PSU)
+19	temperature	atmospheric	surface; upper-air	t_air	air_temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
+20	temperature	oceanic	surface; sub-surface	t_water	water_temperature	K	Water (sea, river, lake) temperature at depth indicated
+21	visibility	atmospheric	surface	vv	horizontal_visibility_in_air	m	The visibility is the distance at which something can be seen.
+22	weather	atmospheric	surface	w1	past_weather_1	coded	past weather (w)
+23	weather	atmospheric	surface	ww	present_weather	coded	present weather (ww)
+24	weather	atmospheric	surface	w2	past_weather_2	coded	past weather 2 (used in synoptic maps)
+26	wind	atmospheric	surface; upper-air	d	wind_from_direction	degree	direction from which the wind is blowing
+27	wind	atmospheric	surface; upper-air	u	eastward_wind_speed	m s-1	Eastward indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
+28	wind	atmospheric	surface; upper-air	v	northward_wind_speed	m s-1	Northward indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
+29	wind	atmospheric	surface; upper-air	w	wind_speed	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity.
+30	wind	atmospheric	surface	w_gust	wind_speed_of_gust	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed,  the gust wind speed can be indicated by a cell_methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness,  the gust wind speed may be separately diagnosed from the wind speed.

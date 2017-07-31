@@ -1,25 +1,25 @@
-index	platform_type	description
-0	0	Aircraft
-1	1	Autonomous marine vehicle
-2	2	Autonomous pinneped bathythermograph
-3	3	Coastal / Island
-4	4	Drifting buoy
-5	5	Expendable bathythermograph (XBT)
-6	6	Glider
-7	7	High-resolution Conductivity-Temperature-Depth (CTD) / Expendable CTD(XCTD)
-8	8	Ice buoy 
-9	9	Ice station
-10	10	Land station
-11	11	Land vehicle
-12	12	Lightship
-13	13	Mechanical / digital / micro bathythermograph (MBT)
-14	14	Moored buoy
-15	15	Oceanographic station data (bottle and low resolution CTD / XCTD data)
-16	16	Profiling float
-17	17	Rig / platform
-18	18	Shallow water station (fixed to sea / lake floor)
-19	19	Ship
-20	20	Subsurface float (moving)
-21	21	Tide gauge
-22	22	Underwater platform
-23	23	Undulating oceanographic recorder
+platform_type	description
+0	Aircraft
+1	Autonomous marine vehicle
+2	Autonomous pinneped bathythermograph
+3	Coastal / Island
+4	Drifting buoy
+5	Expendable bathythermograph (XBT)
+6	Glider
+7	High-resolution Conductivity-Temperature-Depth (CTD) / Expendable CTD(XCTD)
+8	Ice buoy 
+9	Ice station
+10	Land station
+11	Land vehicle
+12	Lightship
+13	Mechanical / digital / micro bathythermograph (MBT)
+14	Moored buoy
+15	Oceanographic station data (bottle and low resolution CTD / XCTD data)
+16	Profiling float
+17	Rig / platform
+18	Shallow water station (fixed to sea / lake floor)
+19	Ship
+20	Subsurface float (moving)
+21	Tide gauge
+22	Underwater platform
+23	Undulating oceanographic recorder

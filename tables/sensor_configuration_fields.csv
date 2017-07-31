@@ -1,6 +1,6 @@
 # Description:				
 # Source:				
-field_id	field_name	parameter	type	decription
+field_id	field_name	parameter	type	description
 SACC	sensor accuracy	all	numeric	Reported accuracy (trueness) of sensor in units of measurement.
 SPRE	sensor precision	all	numeric	Reported precision (repeatability) of sensor in units of measurement
 B002033	sensor type - salinity	salinity	int (fk)	NA

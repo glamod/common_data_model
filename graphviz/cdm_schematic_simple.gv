@@ -38,8 +38,21 @@ the observation. Fields reported will depend on variable<BR ALIGN="LEFT"/>
 and observation type.<BR ALIGN="LEFT"/></TD></TR>
                              </TABLE>>]
 
+qc_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">qc_fields</TD></TR>
+                                <TR><TD>Additional information on QC applied to observation.</TD></TR></TABLE>>]
+
+uncertainty_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">uncertainty_fields</TD></TR>
+                                <TR><TD>
+Additional information on uncertainty budget <BR ALIGN="LEFT"/>
+used to set standard_uncertainty field.</TD></TR></TABLE>>]
+
+
   observations_table:head -> station_configuration:head;
   observations_table:head -> profile_configuration:head;
   observations_table:source -> source_configuration:head;
   observations_table:sensor -> sensor_configuration:head;
+  qc_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
+  uncertainty_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
 }

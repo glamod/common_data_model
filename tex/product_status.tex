@@ -9,22 +9,20 @@
             \caption{product\_status}
             \label{tab:DataTableProductstatus}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{index}}} & 
-            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{product\_status}}} & 
-            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{description}}} & 
+            \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{product\_status}}} & 
+            \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{description}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{extended\_description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{4}{c}{Table \thetable\ product\_status (cont.)} \\
+            \multicolumn{3}{c}{Table \thetable\ product\_status (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{index}}} & 
-            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{product\_status}}} & 
-            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{description}}} & 
+            \hline\hline             \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{product\_status}}} & 
+            \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{description}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{extended\_description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{4}{r}{{Continued on next page}} \\
+            \multicolumn{3}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{4}{r}{{End of table}} \\ 
+            \multicolumn{3}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -32,19 +30,14 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/index/.style={
-            string type, 
-            column type= V{1.266667 in}, 
-            string replace*={_}{\_}
-        },
     columns/product_status/.style={
             string type, 
-            column type= V{1.266667 in}, 
+            column type= V{1.900000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
             string type, 
-            column type= V{1.266667 in}, 
+            column type= V{1.900000 in}, 
             string replace*={_}{\_}
         },
     columns/extended_description/.style={
@@ -52,4 +45,4 @@
             string replace*={_}{\_},
             column type = V{3.000000 in}
         }
-    ]{/Users/dyb/GitHub/common_data_model/tables/product_status.csv}
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/product_status.csv}

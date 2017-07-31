@@ -9,20 +9,18 @@
             \caption{location\_quality}
             \label{tab:DataTableLocationquality}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{index}}} & 
-            \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{location\_quality}}} & 
+            \hline\hline             \multicolumn{1} { V{3.800000 in}} { \textbf{\seqsplit{location\_quality}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{3}{c}{Table \thetable\ location\_quality (cont.)} \\
+            \multicolumn{2}{c}{Table \thetable\ location\_quality (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{index}}} & 
-            \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{location\_quality}}} & 
+            \hline\hline             \multicolumn{1} {V{3.800000 in} } { \textbf{\seqsplit{location\_quality}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{3}{r}{{Continued on next page}} \\
+            \multicolumn{2}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{3}{r}{{End of table}} \\ 
+            \multicolumn{2}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -30,14 +28,9 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/index/.style={
-            string type, 
-            column type= V{1.900000 in}, 
-            string replace*={_}{\_}
-        },
     columns/location_quality/.style={
             string type, 
-            column type= V{1.900000 in}, 
+            column type= V{3.800000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
@@ -45,4 +38,4 @@
             string replace*={_}{\_},
             column type = V{3.000000 in}
         }
-    ]{/Users/dyb/GitHub/common_data_model/tables/location_quality.csv}
+    ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/location_quality.csv}

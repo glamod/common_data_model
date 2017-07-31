@@ -1,9 +1,9 @@
-index	quality_flag	description
-0	0	Good
-1	1	Inconsistent
-2	2	Doubtful
-3	3	Wrong
-4	4	Not checked
-5	5	Has been changed
-6	6	Estimated
-7	7	Missing value
+quality_flag	description
+0	Good
+1	Inconsistent
+2	Doubtful
+3	Wrong
+4	Not checked
+5	Has been changed
+6	Estimated
+7	Missing value

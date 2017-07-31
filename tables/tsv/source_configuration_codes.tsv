@@ -1,44 +1,44 @@
-index	field	field_name	code_value	description	extended_description
-0	0	delayed mode format	0	IMMT version just prior to version number being included	NA
-1	0	delayed mode format	1	IMMT-1 (in effect from 2 Nov. 1994)	NA
-2	0	delayed mode format	2	IMMT-2 (in effect from Jan. 2003)	NA
-3	0	delayed mode format	3	IMMT-3 (in effect from Jan. 2007)	NA
-4	0	delayed mode format	4	IMMT-4 (in effect from Jan. 2011)	NA
-5	0	delayed mode format	5	IMMT-5 (in effect from June 2012)	NA
-6	1	metadata source	0	COAPS	NA
-7	1	metadata source	1	WMO Publication 47	NA
-8	2	metadata source format	1	Output from digitisation project, semi-colon delimited format (1955)	NA
-9	2	metadata source format	2	Output from digitisation project, semi-colon delimited format (1956)	NA
-10	2	metadata source format	3	Output from digitisation project, semi-colon delimited format (1957 - 1967)	NA
-11	2	metadata source format	4	Output from digitisation project, semi-colon delimited format (1968 - 1969)	NA
-12	2	metadata source format	5	Fixed format (1970 - 1004)	NA
-13	2	metadata source format	6	Semi-colon delimited format (1995 - 2001)	NA
-14	2	metadata source format	7	Semi-colon delimited format (2002 - 2007 q1)	NA
-15	2	metadata source format	8	Semi-colon delimited format (2007 - 2008)	NA
-16	2	metadata source format	9	Semi-colon delimited format (2009 - 2014)	NA
-17	3	observation source type	0	unknown	NA
-18	3	observation source type	1	delayed mode - logbook (paper)	NA
-19	3	observation source type	2	real time - national telecommunication channels	NA
-20	3	observation source type	3	delayed mode - national publications	NA
-21	3	observation source type	4	delayed mode - logbook (electronic)	NA
-22	3	observation source type	5	real time - global telecommunication system (GTS)	NA
-23	3	observation source type	6	delayed mode - International publications	NA
-24	4	real time format	0	previous to FM24-V	NA
-25	4	real time format	1	FM 24-V	NA
-26	4	real time format	2	FM 24-VI Ext.	NA
-27	4	real time format	3	FM 13-VII	NA
-28	4	real time format	4	FM 13-VIII	NA
-29	4	real time format	5	FM 13-VIII Ext.	NA
-30	4	real time format	6	FM 12-IX	NA
-31	4	real time format	7	FM 13-IX Ext.	NA
-32	4	real time format	8	FM 13-X	NA
-33	4	real time format	9	FM 13-XI	NA
-34	4	real time format	10	FM 13-XII Ext.	NA
-35	4	real time format	11	FM 13-XIII	NA
-36	4	real time format	12	FM 13-XIV Ext.	NA
-37	5	source format	0	IMMA - Version 0	NA
-38	5	source format	1	IMMA - Version 1	NA
-39	6	icoads source deck	NA	See ICOADS Source Deck	NA
-40	7	icoads source id	NA	See ICOADS Source ID	NA
-41	8	product level	2	Data read from original data file	NA
-42	9	product status	1	Data approved	Data exist, read from chache, PTU + altitude columns available, all GC25 tests ok, all uncertainties as expected
+field_id	field_name	code_value	description	extended_description
+0	delayed mode format	0	IMMT version just prior to version number being included	NA
+0	delayed mode format	1	IMMT-1 (in effect from 2 Nov. 1994)	NA
+0	delayed mode format	2	IMMT-2 (in effect from Jan. 2003)	NA
+0	delayed mode format	3	IMMT-3 (in effect from Jan. 2007)	NA
+0	delayed mode format	4	IMMT-4 (in effect from Jan. 2011)	NA
+0	delayed mode format	5	IMMT-5 (in effect from June 2012)	NA
+1	metadata source	0	COAPS	NA
+1	metadata source	1	WMO Publication 47	NA
+2	metadata source format	1	Output from digitisation project, semi-colon delimited format (1955)	NA
+2	metadata source format	2	Output from digitisation project, semi-colon delimited format (1956)	NA
+2	metadata source format	3	Output from digitisation project, semi-colon delimited format (1957 - 1967)	NA
+2	metadata source format	4	Output from digitisation project, semi-colon delimited format (1968 - 1969)	NA
+2	metadata source format	5	Fixed format (1970 - 1004)	NA
+2	metadata source format	6	Semi-colon delimited format (1995 - 2001)	NA
+2	metadata source format	7	Semi-colon delimited format (2002 - 2007 q1)	NA
+2	metadata source format	8	Semi-colon delimited format (2007 - 2008)	NA
+2	metadata source format	9	Semi-colon delimited format (2009 - 2014)	NA
+3	observation source type	0	unknown	NA
+3	observation source type	1	delayed mode - logbook (paper)	NA
+3	observation source type	2	real time - national telecommunication channels	NA
+3	observation source type	3	delayed mode - national publications	NA
+3	observation source type	4	delayed mode - logbook (electronic)	NA
+3	observation source type	5	real time - global telecommunication system (GTS)	NA
+3	observation source type	6	delayed mode - International publications	NA
+4	real time format	0	previous to FM24-V	NA
+4	real time format	1	FM 24-V	NA
+4	real time format	2	FM 24-VI Ext.	NA
+4	real time format	3	FM 13-VII	NA
+4	real time format	4	FM 13-VIII	NA
+4	real time format	5	FM 13-VIII Ext.	NA
+4	real time format	6	FM 12-IX	NA
+4	real time format	7	FM 13-IX Ext.	NA
+4	real time format	8	FM 13-X	NA
+4	real time format	9	FM 13-XI	NA
+4	real time format	10	FM 13-XII Ext.	NA
+4	real time format	11	FM 13-XIII	NA
+4	real time format	12	FM 13-XIV Ext.	NA
+5	source format	0	IMMA - Version 0	NA
+5	source format	1	IMMA - Version 1	NA
+6	icoads source deck	NA	See ICOADS Source Deck	NA
+7	icoads source id	NA	See ICOADS Source ID	NA
+8	product level	2	Data read from original data file	NA
+9	product status	1	Data approved	Data exist, read from chache, PTU + altitude columns available, all GC25 tests ok, all uncertainties as expected

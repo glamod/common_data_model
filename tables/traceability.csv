@@ -1,6 +1,6 @@
 # Description: traceability of measurement
 # Source: WIGOS 8-05
-index	traceability	description
-0	0	Unknown
-1	1	Traceable to international standards
-2	2	Traceable to other standards
+traceability	description
+0	Unknown
+1	Traceable to international standards
+2	Traceable to other standards

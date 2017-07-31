@@ -1,19 +1,19 @@
 # Description: Report events at station at the time of the report / observation
 # Source: WIGOS 4-04
-index	events_at_station	description
-0	1	Grass-cutting
-1	2	Snow clearing
-2	3	Tree removal
-3	4	Construction activity
-4	5	Road work
-5	6	Biomass burning
-6	7	Dust storm
-7	8	Storm damage
-8	9	Wind storm
-9	10	Flood
-10	11	Fire
-11	12	Earthquake
-12	13	Land slide
-13	14	Storm surge or tsunami
-14	15	Lightning
-15	16	Vandalism
+events_at_station	description
+1	Grass-cutting
+2	Snow clearing
+3	Tree removal
+4	Construction activity
+5	Road work
+6	Biomass burning
+7	Dust storm
+8	Storm damage
+9	Wind storm
+10	Flood
+11	Fire
+12	Earthquake
+13	Land slide
+14	Storm surge or tsunami
+15	Lightning
+16	Vandalism

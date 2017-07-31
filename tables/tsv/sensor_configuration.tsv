@@ -1,18 +1,18 @@
-element_number	element_name	type	external_table	description
-0	instrument_id	varchar		Unique ID for this instrument
-1	station_id	varchar	station_configuration	Station associated with this instrument
-2	observing_method	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
-3	sampling_strategy	int (fk)	sampling_strategy	Sampling strategy used by instrument
-4	calibration_status	int (fk)	calibration_status	Whether the sensor is in / out of calibration
-5	calibration_date	timestamp		Date of last calibration
-6	field_numeric	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
-7	value_numeric	numeric[]		Numeric value for this entry (if numeric)
-8	field_coded	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
-9	value_coded	int[] (fk)	sensor_configuration_codes	coded value for this entry
-10	field_character	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
-11	value_character	varchar[]		Value for entry if not coded or numeric
-12	field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
-13	value_timestamp	timestamp[]		time stamp entry
-14	comments	varchar		additional comments for sensor not reportable elsewhere
-15	date_start	timestamp		start date for period of validity assoiciated with this entry
-16	date_end	timestamp		end date for period of validity assoiciated with this entry
+element_name	type	external_table	description
+instrument_id	varchar		Unique ID for this instrument
+station_id	varchar	station_configuration	Station associated with this instrument
+observing_method	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
+sampling_strategy	int (fk)	sampling_strategy	Sampling strategy used by instrument
+calibration_status	int (fk)	calibration_status	Whether the sensor is in / out of calibration
+calibration_date	timestamp		Date of last calibration
+field_numeric	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+value_numeric	numeric[]		Numeric value for this entry (if numeric)
+field_coded	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+value_coded	int[] (fk)	sensor_configuration_codes	coded value for this entry
+field_character	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+value_character	varchar[]		Value for entry if not coded or numeric
+field_timestamp	int[] (fk)	sensor_configuration_fields	fields for which this entry is applicable
+value_timestamp	timestamp[]		time stamp entry
+comments	varchar		additional comments for sensor not reportable elsewhere
+date_start	timestamp		start date for period of validity assoiciated with this entry
+date_end	timestamp		end date for period of validity assoiciated with this entry

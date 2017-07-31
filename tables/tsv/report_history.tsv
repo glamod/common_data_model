@@ -1,5 +1,5 @@
-element_number	element_name	type	Description
-0	history_id	bigint	Unique ID for entry
-1	report_id	bigint	Which report this is an entry for
-2	timestamp		timestamp for entry
-3	history	varchar	String containing history entry
+element_name	type	Description
+history_id	bigint	Unique ID for entry
+report_id	bigint	Which report this is an entry for
+timestamp		timestamp for entry
+history	varchar	String containing history entry
