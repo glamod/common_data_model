@@ -6,7 +6,7 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{meaning\_of\_time\_stamp (WIGOS 11-03 (simplified))}
+            \caption{meaning\_of\_time\_stamp (Based on simplified version of WIGOS 11-03)}
             \label{tab:DataTableMeaningoftimestamp}\\
             % Initial column headers
             \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{meaning\_of\_time\_stamp}}} & 
@@ -37,7 +37,7 @@
         },
     columns/name/.style={
             string type, 
-            column type= n{1.900000 in}, 
+            column type= V{1.900000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={

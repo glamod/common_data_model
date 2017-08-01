@@ -1,4 +1,4 @@
-element_name	occurance	type	external_table	description
+element_name	occurrence	type	external_table	description
 source_id	1	varchar (pk) 		Unique record ID for dataset
 product_id	1	varchar		ID for product
 product_name	1	varchar		Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product
@@ -14,13 +14,11 @@ source_format 	1	int (fk)	source_format	Original format for data
 source_format_version 	1	varchar		Version of original data format
 source_file	1	varchar		Filename for data from source
 source_file_checksum	1	varchar		Checksum of source datafile
-data_centre 	1	int (fk)	institute	Data centre from which data sourced
+data_centre 	1	int (fk)	organisation	Data centre from which data sourced
 data_centre_url 	1	varchar		URL for data centre
-parent_organisation	1	int (fk)	organisation	Parent organisation for institute
 data_policy_licence 	1	int (fk)	data_policy_licence	Data policy / licence
-pi_name 	1	varchar		Name of PI responsible for dataset
-pi_email 	1	varchar		Email address of PI
-pi_url 	1	varchar		URL for PI
+contact	1+	varchar[] (fk)	contact	contact for data source with role specified by role element
+contact_role	1+	int[] (fk)	role	role of contact
 history	1	varchar		History of source
 comments	1	varchar		Additional comments / footnotes
 timestamp	1	timestamp with timezone		Date record created / created

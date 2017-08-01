@@ -1,5 +1,5 @@
 # Description:
-# Source:
+# Source: NA
 field_id	field_name	kind	description
 0	AWS Entry and Display Software	int (fk)	NA
 1	AWS Entry and Display Software Version	int (fk)	NA

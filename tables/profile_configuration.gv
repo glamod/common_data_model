@@ -1,0 +1,16 @@
+digraph profile_configuration {
+node [color=white]
+profile_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: profile_configuration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/profile_configuration.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: table containing information on individual profiles				</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: NA</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">occurrence</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="profile_idL">profile_id</TD><TD>1 </TD><TD>varchar </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/NA.tsv"><FONT color="blue">NA </FONT></TD><TD PORT="profile_idR">Unique ID for this profile entry </TD></TR>
+<TR><TD PORT="profile_typeL">profile_type</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/profile_type.tsv"><FONT color="blue">profile_type </FONT></TD><TD PORT="profile_typeR">Type of profile (e.g. atmospheric or oceanic) </TD></TR>
+<TR><TD PORT="standard_timeL">standard_time</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/standard_time.tsv"><FONT color="blue">standard_time </FONT></TD><TD PORT="standard_timeR">e.g. Standard / scheduled time for launch or report, e.g. <BR/>00, 06, 12, 18 UTC </TD></TR>
+<TR><TD PORT="profile_numberL">profile_number</TD><TD>1 </TD><TD>numeric </TD><TD></TD><TD PORT="profile_numberR">e.g. Balloon Number </TD></TR>
+<TR><TD PORT="commentsL">comments</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="commentsR">Any additional comments / footnotes </TD></TR>
+<TR><TD PORT="L"></TD><TD>0+ </TD><TD>NA </TD><TD></TD><TD PORT="R">See profile_configuration_fields for valid fields and types. </TD></TR>
+</TABLE>>];
+}

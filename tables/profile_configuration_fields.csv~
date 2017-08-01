@@ -1,0 +1,34 @@
+# Description:			
+# Source:			
+field_id	field_name	type	description
+0	include descent	int (fk)	NA
+1	processing code	int (fk)	NA
+2	unwinder type	varchar	NA
+3	burstpoint altitude	numeric	NA
+4	burstpoint pressure	numeric	NA
+5	filling weight	numeric	NA
+6	gross weight	numeric	NA
+7	payload	numeric	NA
+8	unwinder length	numeric	NA
+9	ascent rate	numeric	Rate of ascent / descent for profile (+ve values indicate ascent, -ve descent)(m/s)
+B002016	radiosonde configuration	int (fk)	NA
+B002003	type of measuring equipment used	int (fk)	NA
+B002011	radiosonde sounding system	int (fk)	NA
+B002011	radiosonde type	int (fk)	NA
+B002013	solar and infrared radiation correction	int (fk)	NA
+B002014	tracking technique 	int (fk)	NA
+B002015	radiosonde completeness	int (fk)	NA
+B002017	humidity correction algorithm	int (fk)	NA
+B002066	radiosonde ground receiving system	int (fk)	NA
+B002080	balloon manufacturer	int (fk)	NA
+B002081	balloon type	int (fk)	NA
+B002083	type of balloon shelter	int (fk)	NA
+B002084	type of gas used in balloon	int (fk)	NA
+B002095	type of pressure sensor	int (fk)	NA
+B002191	geopotential height calculation	int (fk)	NA
+B003011	method of depth calculation	int (fk)	NA
+B022056	profile direction	int (fk)	NA
+B022067	instrument type for water temperature salinity profile	int (fk)	NA
+B022068	water temperature profile recorder type	int (fk)	NA
+B022178	XBT launcher type	int (fk)	NA
+B035035	reason for termination	int (fk)	NA

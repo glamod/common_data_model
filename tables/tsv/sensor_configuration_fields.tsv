@@ -43,7 +43,7 @@ SSIDE	sensor side - ship	all	int (fk)	NA
 STAB	sensor stability	all	numeric	Reported stability of sensor in reported units of measurement per year.
 SWV	sensor type - waves	waves	int (fk)	NA
 SWW	sensor type - present weather	present weather	int (fk)	NA
-TREAT	sample treatment	all	int (fk)	treatment of the sample prior to analysis
+STREAT	sample treatment	all	int (fk)	treatment of the sample prior to analysis
 TSONDE	telemetry_sonde	sonde	int (fk)	NA
 WGHT	weight	sonde	numeric	NA
 STIME	sample times	all	timestamp	time of the samples used to calculate statistics

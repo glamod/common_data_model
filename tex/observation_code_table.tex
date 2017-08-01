@@ -7,7 +7,7 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{observation\_code\_table}
+            \caption{observation\_code\_table (NA)}
             \label{tab:DataTableObservationcodetable}\\
             % Initial column headers
             \hline\hline             \multicolumn{1} { V{1.180000 in}} { \textbf{\seqsplit{observation\_code\_table}}} & 
@@ -54,7 +54,7 @@
         },
     columns/code_table_name/.style={
             string type, 
-            column type= n{1.180000 in}, 
+            column type= V{1.180000 in}, 
             string replace*={_}{\_}
         },
     columns/value/.style={

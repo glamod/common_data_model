@@ -1,30 +1,30 @@
 # Description:						
-# Source:						
+# Source: NA
 field_id	field_name	code_value	abbreviation	description	start_date	end_date
-0	include_descent	NA	NA	NA	NA	NA
-1	processing_code	0	cc	Calibration correction (of humidity sensors)	NA	NA
-1	processing_code	1	HRC	Humidity radiation correction	NA	NA
-1	processing_code	2	or	Outlier removal (remove temperature spikes)	NA	NA
-1	processing_code	3	pGPS	Combination of pressure and GPS	NA	NA
-1	processing_code	4	TL	Time-lag correction	NA	NA
-1	processing_code	5	TRC	Temperature radiation correction	NA	NA
-2	unwinder_type		NA	STRING	NA	NA
-B002003	type_of_measuring_equipment_used	0 - 15	NA	See BUFR table 0 02 003	NA	NA
-B002011	radiosonde_sounding_system	0 - 255	NA	See BUFR table 0 02 011	NA	NA
-B002013	solar_and_infrared_radiation_correction	0 - 15	NA	See BUFR table 0 02 013	NA	NA
-B002014	tracking_technique	0 - 127	NA	See BUFR table 0 02 014	NA	NA
-B002015	radiosonde_completeness	0 - 15	NA	See BUFR table 0 02 015	NA	NA
-B002017	humidity_correction_algorithm	0 - 31	NA	See BUFR table 0 02 017	NA	NA
-B002066	radiosonde_ground_receiving_system	0 - 63	NA	See BUFR table 0 02 066	NA	NA
-B002080	balloon_manufacturer	0 - 63	NA	See BUFR table 0 02 080	NA	NA
-B002081	balloon_type	0 - 31	NA	See BUFR table 0 02 081	NA	NA
-B002083	type_of_balloon_shelter	NA	NA	See BUFR table 0 02 083	NA	NA
-B002084	type_of_gas_used_in_balloon	NA	NA	See BUFR table 0 02 084	NA	NA
-B002095	type_of_pressure_sensor	0 - 31	NA	See BUFR table 0 02 095	NA	NA
-B002191	geopotential_height_calculation	0 - 15	NA	See BUFR table 0 02 191	NA	NA
-B003011	method_of_depth_calculation	0 - 3	NA	See BUFR table 0 03 011	NA	NA
-B022056	profile_direction	0 - 3	NA	See BUFR table 0 22 056	NA	NA
-B022067	instrument_type_for_water_temperature_salinity_profile	0 - 1023	NA	See BUFR table 0 22 067	NA	NA
-B022068	water_temperature_profile_recorder_type	0 - 127	NA	See BUFR table 0 22 068	NA	NA
-B022178	XBT_launcher_type	0 - 255	NA	See BUFR table 0 22 178	NA	NA
-B035035	reason_for_termination	0 - 31	NA	See BUFR table 0 35 035	NA	NA
+0	include descent	NA	NA	NA	NA	NA
+1	processing code	0	cc	Calibration correction (of humidity sensors)	NA	NA
+1	processing code	1	HRC	Humidity radiation correction	NA	NA
+1	processing code	2	or	Outlier removal (remove temperature spikes)	NA	NA
+1	processing code	3	pGPS	Combination of pressure and GPS	NA	NA
+1	processing code	4	TL	Time-lag correction	NA	NA
+1	processing code	5	TRC	Temperature radiation correction	NA	NA
+2	unwinder type		NA	STRING	NA	NA
+B002003	type of measuring equipment used	0 - 15	NA	See BUFR table 0 02 003	NA	NA
+B002011	radiosonde sounding system	0 - 255	NA	See BUFR table 0 02 011	NA	NA
+B002013	solar and infrared radiation correction	0 - 15	NA	See BUFR table 0 02 013	NA	NA
+B002014	tracking technique	0 - 127	NA	See BUFR table 0 02 014	NA	NA
+B002015	radiosonde completeness	0 - 15	NA	See BUFR table 0 02 015	NA	NA
+B002017	humidity correction algorithm	0 - 31	NA	See BUFR table 0 02 017	NA	NA
+B002066	radiosonde ground receiving system	0 - 63	NA	See BUFR table 0 02 066	NA	NA
+B002080	balloon manufacturer	0 - 63	NA	See BUFR table 0 02 080	NA	NA
+B002081	balloon type	0 - 31	NA	See BUFR table 0 02 081	NA	NA
+B002083	type of balloon shelter	NA	NA	See BUFR table 0 02 083	NA	NA
+B002084	type of gas used in balloon	NA	NA	See BUFR table 0 02 084	NA	NA
+B002095	type of pressure sensor	0 - 31	NA	See BUFR table 0 02 095	NA	NA
+B002191	geopotential height calculation	0 - 15	NA	See BUFR table 0 02 191	NA	NA
+B003011	method of depth calculation	0 - 3	NA	See BUFR table 0 03 011	NA	NA
+B022056	profile direction	0 - 3	NA	See BUFR table 0 22 056	NA	NA
+B022067	instrument type for water temperature salinity profile	0 - 1023	NA	See BUFR table 0 22 067	NA	NA
+B022068	water temperature profile recorder type	0 - 127	NA	See BUFR table 0 22 068	NA	NA
+B022178	XBT launcher type	0 - 255	NA	See BUFR table 0 22 178	NA	NA
+B035035	reason for termination	0 - 31	NA	See BUFR table 0 35 035	NA	NA

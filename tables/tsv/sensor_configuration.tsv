@@ -1,4 +1,4 @@
-element_name	occurance	type	external_table	description
+element_name	occurrence	type	external_table	description
 instrument_id	1	varchar (pk)		Unique ID for this instrument
 observing_method	1	int (fk)	observing_method	Method (instrumental, estimated / visual, computed) by which observation made
 sampling_strategy	1	int (fk)	sampling_strategy	Sampling strategy used by instrument

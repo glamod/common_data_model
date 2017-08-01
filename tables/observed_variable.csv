@@ -1,114 +1,114 @@
 # Description:							
-# Source:							
-observed_variable	parameter_group	domain	sub-domain	abbreviation	name	units	description / notes
-0	aerosols			aaod	aerosol_absorption_optical_depth	Dimensionless	NA
-1	aerosols			acb	aerosol_column_burden	g m-2	NA
-2	aerosols			adc	aerosol_dust_concentration	g kg-1	NA
-3	aerosols			aer	aerosol_effective_radius	µm	NA
-4	aerosols			aec	aerosol_extinction_coefficient	m-1	NA
-5	aerosols			ammr	aerosol_mass_mixing_ratio	g kg-1	NA
-6	aerosols			aod	aerosol_optical_depth	Dimensionless	NA
-7	aerosols			asmf	aerosol_species_mole_fraction	moles per mole of dry air 	NA
-8	aerosols			astcb	aerosol_species_total_column_burden	moles m-2	NA
-9	aerosols			at	aerosol_type	coded	NA
-10	aerosols			ava	aerosol_volcanic_ash	g kg-1	NA
-11	aerosols			avat	total_column_aerosol_volcanic_ash 	g m-2	NA
-12	aerosols			ac	air_conductivity 	km	NA
-13	albedo			bsa	blue_ice_and_snow_albedo	percent	NA
-14	albedo			bir	blue_ice_bidirectional_reflectance	sr-1	NA
-15	albedo			cga	clean_glacier_ice_albedo	percent	NA
-16	albedo			dga	dirty_glacier_ice_albedo	percent	NA
-17	albedo			esa	earth_surface_albedo	percent	NA
-18	albedo			sbr	snow_bidirectional_reflectance	sr-1	NA
-19	cloud	atmospheric	upper-air	hb	cloud_base_height	m	cloud base height (hb)
-20	cloud	atmospheric	upper-air	h	cloud_base_lowest_height	coded	Height above surface of the base of the lowest cloud seen (coded 0-9)
-21	cloud	atmospheric	upper-air	n	cloud_cover	Okta or percent	NA
-22	cloud	atmospheric	upper-air	c	cloud_genus	Coded	Genus of cloud (0 - Cirrus … 9 - Cumulo-Nimbus)
-23	cloud	atmospheric	upper-air	hs	cloud_genus_base_height	Coded or m	Height of base of cloud whose genus is c  
-24	cloud	atmospheric	upper-air	ch	high_cloud_type	coded	type of high clouds (ch)
-25	cloud	atmospheric	upper-air	cl	low_cloud_type	coded	type of low clouds (cl)
-26	cloud	atmospheric	upper-air	nh	lowest_cloud_amout	Okta	low or (if low clouds don't exist) middle cloud amount 
-27	cloud	atmospheric	upper-air	cm	middle_cloud_type	coded	type of middle clouds (cm)
-28	cloud	atmospheric	upper-air	tca	total_cloud_amount	Okta	total amount of clouds
+# Source: NA
+observed_variable	parameter_group	domain	sub_domain	abbreviation	name	units	description
+0	aerosols			aaod	aerosol absorption optical depth	Dimensionless	NA
+1	aerosols			acb	aerosol column burden	g m-2	NA
+2	aerosols			adc	aerosol dust concentration	g kg-1	NA
+3	aerosols			aer	aerosol effective radius	µm	NA
+4	aerosols			aec	aerosol extinction coefficient	m-1	NA
+5	aerosols			ammr	aerosol mass mixing ratio	g kg-1	NA
+6	aerosols			aod	aerosol optical depth	Dimensionless	NA
+7	aerosols			asmf	aerosol species mole fraction	moles per mole of dry air 	NA
+8	aerosols			astcb	aerosol species total column burden	moles m-2	NA
+9	aerosols			at	aerosol type	coded	NA
+10	aerosols			ava	aerosol volcanic ash	g kg-1	NA
+11	aerosols			avat	total column aerosol volcanic ash 	g m-2	NA
+12	aerosols			ac	air conductivity 	km	NA
+13	albedo			bsa	blue ice and snow albedo	percent	NA
+14	albedo			bir	blue ice bidirectional reflectance	sr-1	NA
+15	albedo			cga	clean glacier ice albedo	percent	NA
+16	albedo			dga	dirty glacier ice albedo	percent	NA
+17	albedo			esa	earth surface albedo	percent	NA
+18	albedo			sbr	snow bidirectional reflectance	sr-1	NA
+19	cloud	atmospheric	upper-air	hb	cloud base height	m	cloud base height (hb)
+20	cloud	atmospheric	upper-air	h	cloud base lowest height	coded	Height above surface of the base of the lowest cloud seen (coded 0-9)
+21	cloud	atmospheric	upper-air	n	cloud cover	Okta or percent	NA
+22	cloud	atmospheric	upper-air	c	cloud genus	Coded	Genus of cloud (0 - Cirrus … 9 - Cumulo-Nimbus)
+23	cloud	atmospheric	upper-air	hs	cloud genus base height	Coded or m	Height of base of cloud whose genus is c  
+24	cloud	atmospheric	upper-air	ch	high cloud type	coded	type of high clouds (ch)
+25	cloud	atmospheric	upper-air	cl	low cloud type	coded	type of low clouds (cl)
+26	cloud	atmospheric	upper-air	nh	lowest cloud amout	Okta	low or (if low clouds don't exist) middle cloud amount 
+27	cloud	atmospheric	upper-air	cm	middle cloud type	coded	type of middle clouds (cm)
+28	cloud	atmospheric	upper-air	tca	total cloud amount	Okta	total amount of clouds
 29	evaporation	atmospheric		eee	evaporation	mm	NA
 30	evaporation	atmospheric		ev	evaporation	kg m-2 s-1	NA
-31	evaporation	atmospheric		pev	potential_evapotranspiration	mm day-1	NA
-32	evaporation	atmospheric		rev	real_evapotranspiration	mm day-1	NA
-33	humidity	atmospheric		ah	absolute_humidity	g m-3	NA
-34	humidity	atmospheric	surface; upper-air	dep_dew	dew_point_depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
-35	humidity	atmospheric		td	dew_point_temperature	C	NA
-36	humidity	atmospheric	surface; upper-air	t_dew	dew_point_temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
-37	humidity	atmospheric	surface; upper-air	ibt	ice_bulb_temperature	K	NA
-38	humidity	atmospheric	surface; upper-air	rh	relative_humidity	percent	NA usually abbreviated as UUU in WMO but I like rh
-39	humidity	atmospheric	surface; upper-air	q	specific_humidity	g kg-1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
-40	humidity	atmospheric		e	water_vapour_pressure	hPa	NA
-41	humidity	atmospheric	surface; upper-air	tb	wet_bulb_temperature	C	NA
-42	humidity	atmospheric	surface; upper-air	t_wet	wet_bulb_temperature	K	NA
-43	ice			ddd	ice_thickness	m	NA
-44	precipitation	atmospheric		rr	accumulated_precipitation	mm	accumulated precipitation over specified period
-45	precipitation	atmospheric		fs	fresh_snow	mm	NA
-46	precipitation	atmospheric		ht	hydrometeor_type	Code table	NA
+31	evaporation	atmospheric		pev	potential evapotranspiration	mm day-1	NA
+32	evaporation	atmospheric		rev	real evapotranspiration	mm day-1	NA
+33	humidity	atmospheric		ah	absolute humidity	g m-3	NA
+34	humidity	atmospheric	surface; upper-air	dep dew	dew point depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
+35	humidity	atmospheric		td	dew point temperature	C	NA
+36	humidity	atmospheric	surface; upper-air	t dew	dew point temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
+37	humidity	atmospheric	surface; upper-air	ibt	ice bulb temperature	K	NA
+38	humidity	atmospheric	surface; upper-air	rh	relative humidity	percent	NA usually abbreviated as UUU in WMO but I like rh
+39	humidity	atmospheric	surface; upper-air	q	specific humidity	g kg-1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
+40	humidity	atmospheric		e	water vapour pressure	hPa	NA
+41	humidity	atmospheric	surface; upper-air	tb	wet bulb temperature	C	NA
+42	humidity	atmospheric	surface; upper-air	t wet	wet bulb temperature	K	NA
+43	ice			ddd	ice thickness	m	NA
+44	precipitation	atmospheric		rr	accumulated precipitation	mm	accumulated precipitation over specified period
+45	precipitation	atmospheric		fs	fresh snow	mm	NA
+46	precipitation	atmospheric		ht	hydrometeor type	Code table	NA
 47	precipitation	atmospheric		rrls	precipitation  	g m-2 s-1	Precipitation (liquid or solid)
-48	precipitation	atmospheric		rril	precipitation_instensity_liquid	mm h-1	Precipitation intensity at surface (liquid or solid)
-49	precipitation	atmospheric		rris	precipitation_intensity_solid	mm h-1	Precipitation intensity at surface (solid)
-50	precipitation	atmospheric		rrt	precipitation_type	coded	Liquid, snow, hail, fog
-51	precipitation	atmospheric		nr	rainy_days	Days	NA
-52	precipitation	atmospheric		sc	snow_cover	percent	NA
-53	precipitation	atmospheric		sd	snow_depth	cm	NA
-54	precipitation	atmospheric		sst	snow_status	coded	Wet | dry
-55	precipitation	atmospheric		sw	snow_water_equivalent	mm	Surface snow amount
-56	pressure	atmospheric	surface	atb	adjunct_temperature_barometer	C	temperature of the adjunct thermometer to the barometer to reduce pressure to 0ºC
-57	pressure	atmospheric	surface	p	air_pressure	Pa	NA
-58	pressure	atmospheric	surface	mslp	air_pressure_at_sea_level	Pa	sea_level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
-59	pressure	atmospheric	surface	ppp	pressure_tendency	Pa	pressure tendency
-60	pressure	atmospheric	surface	a	pressure_tendency_characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
-61	radiation	atmopsheric		dr	diffuse_radiation	W m-2	NA
-62	radiation	atmopsheric		dlwie	downward_longwave_irradiance_at_earth_surface	W m-2	NA
-63	radiation	atmopsheric		dswie	downward_shortwave_irradiance_at_earth_surface	W m-2	NA
-64	radiation	atmopsheric		dswit	downward_shortwave_irradiance_at_toa	W m-2	NA
-65	radiation	atmopsheric		eswr	earth_surface_shortwave_bidirectional_reflectance	percent	NA
-66	radiation	atmopsheric		fapar	fraction_of_absorbed_par 	percent	FAPAR
-67	radiation	atmopsheric		gr	global_radiation	W m-2	NA
-68	radiation	atmopsheric		lwe	longwave_earth_surface_emissivity	percent	NA
-69	radiation	atmopsheric		lr	longwave_radiation	W m-2	NA
-70	radiation	atmopsheric		mor	meteorological_optical_range	m	Meteorological optical range at surface
-71	radiation	atmopsheric		par	photosynthetically_active_radiation	W m-2	NA
-72	radiation	atmopsheric		swcr	shortwave_cloud_reflectance	percent	NA
-73	radiation	atmopsheric		sr	shortwave_radiation	W m-2	NA
-74	radiation	atmopsheric		sgf	solar_gamma_ray_flux	W m-2	NA
-75	radiation	atmopsheric		suf	solar_UV_flux	W m-2	NA
-76	radiation	atmopsheric		svf	solar_VIS_flux	W m-2	NA
-77	radiation	atmopsheric		sxf	solar_X_ray_flux	W m-2	NA
-78	radiation	atmopsheric		ss	sunshine_duration 	h	NA
-79	radiation	atmopsheric		ulwie	upward_longwave_irradiance_at_Earth_surface	W m-2	NA
-80	radiation	atmopsheric		ulwit	upward_longwave_irradiance_at_TOA	W m-2	NA
-81	radiation	atmopsheric		uswit	upward_shortwave_irradiance_at_TOA	W m-2	NA
-82	radiation	atmopsheric		usrt	upward_spectral_radiance_at_TOA	W m-2 nm-1 sr-1  	NA
+48	precipitation	atmospheric		rril	precipitation instensity liquid	mm h-1	Precipitation intensity at surface (liquid or solid)
+49	precipitation	atmospheric		rris	precipitation intensity solid	mm h-1	Precipitation intensity at surface (solid)
+50	precipitation	atmospheric		rrt	precipitation type	coded	Liquid, snow, hail, fog
+51	precipitation	atmospheric		nr	rainy days	Days	NA
+52	precipitation	atmospheric		sc	snow cover	percent	NA
+53	precipitation	atmospheric		sd	snow depth	cm	NA
+54	precipitation	atmospheric		sst	snow status	coded	Wet | dry
+55	precipitation	atmospheric		sw	snow water equivalent	mm	Surface snow amount
+56	pressure	atmospheric	surface	atb	adjunct temperature barometer	C	temperature of the adjunct thermometer to the barometer to reduce pressure to 0ºC
+57	pressure	atmospheric	surface	p	air pressure	Pa	NA
+58	pressure	atmospheric	surface	mslp	air pressure at sea level	Pa	sea level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
+59	pressure	atmospheric	surface	ppp	pressure tendency	Pa	pressure tendency
+60	pressure	atmospheric	surface	a	pressure tendency characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
+61	radiation	atmopsheric		dr	diffuse radiation	W m-2	NA
+62	radiation	atmopsheric		dlwie	downward longwave irradiance at earth surface	W m-2	NA
+63	radiation	atmopsheric		dswie	downward shortwave irradiance at earth surface	W m-2	NA
+64	radiation	atmopsheric		dswit	downward shortwave irradiance at toa	W m-2	NA
+65	radiation	atmopsheric		eswr	earth surface shortwave bidirectional reflectance	percent	NA
+66	radiation	atmopsheric		fapar	fraction of absorbed par 	percent	FAPAR
+67	radiation	atmopsheric		gr	global radiation	W m-2	NA
+68	radiation	atmopsheric		lwe	longwave earth surface emissivity	percent	NA
+69	radiation	atmopsheric		lr	longwave radiation	W m-2	NA
+70	radiation	atmopsheric		mor	meteorological optical range	m	Meteorological optical range at surface
+71	radiation	atmopsheric		par	photosynthetically active radiation	W m-2	NA
+72	radiation	atmopsheric		swcr	shortwave cloud reflectance	percent	NA
+73	radiation	atmopsheric		sr	shortwave radiation	W m-2	NA
+74	radiation	atmopsheric		sgf	solar gamma ray flux	W m-2	NA
+75	radiation	atmopsheric		suf	solar UV flux	W m-2	NA
+76	radiation	atmopsheric		svf	solar VIS flux	W m-2	NA
+77	radiation	atmopsheric		sxf	solar X ray flux	W m-2	NA
+78	radiation	atmopsheric		ss	sunshine duration 	h	NA
+79	radiation	atmopsheric		ulwie	upward longwave irradiance at Earth surface	W m-2	NA
+80	radiation	atmopsheric		ulwit	upward longwave irradiance at TOA	W m-2	NA
+81	radiation	atmopsheric		uswit	upward shortwave irradiance at TOA	W m-2	NA
+82	radiation	atmopsheric		usrt	upward spectral radiance at TOA	W m-2 nm-1 sr-1  	NA
 83	salinity	oceanic	surface; sub-surface	sal	salinity	psu	ocean salinity (PSU)
-84	temperature	atmospheric	surface; upper-air	ta	air_temperature	C	NA
-85	temperature	atmospheric	surface; upper-air	t_air	air_temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
-86	temperature	atmospheric		t_max	daily_maximum_air_temperature	C	Lot 1 is using Tx - WMO abbrev.
-87	temperature	atmospheric		t_max_sun	daily_maximum_air_temperature_with_direct_sun_exposure	C	Lot 1 is using Txs
-88	temperature	atmospheric		t_max_g	daily_maximum_grass_temperature	C	Lot 1 is using TGx - Grass maximum thermometer is 5 cm above ground
-89	temperature	atmospheric		t_min	daily_minimum_air_temperature	C	Lot 1 is using Tn - WMO abbrev.
-90	temperature	atmospheric		t_min_sun	daily_minimum_air_temperature_with_direct_sun_exposure	C	Lot 1 is using Tns
-91	temperature	atmospheric		t_min_g	daily_minimum_grass_temperature	C	Lot 1 is using TGn - Grass minimum thermometer is 5 cm above ground
-92	temperature	atmospheric		days_frost	days_with ground_frost	Days	NA
-93	temperature	atmospheric		t_snow	snow_temperature	C	NA
-94	temperature	atmospheric		t_soil	soil_temperature	C	Lot 1 is using Ts - WMO abbrev.
-95	temperature	oceanic	surface; sub-surface	t_water	water_temperature	K	Water (sea, river, lake) temperature at depth indicated
-96	visibility	atmospheric	surface	vv	horizontal_visibility in air	m	The visibility is the distance at which something can be seen.
-97	weather			ld	lightning_detection	deg (lat, lon) and UTC	NA
-98	weather			ls	lightning_duration	s	NA
-99	weather			lhd	lightning_horizontal_distance	Km	NA
-100	weather	atmospheric	surface	w1	past_weather_1	coded	past weather 1 - most extreme phomenon  (w)
-101	weather	atmospheric	surface	w2	past_weather_2	coded	past weather 2 - most frequent phomenon (used in synoptic maps)
-102	weather	atmospheric	surface	ww	present_weather	coded	present weather (ww)
+84	temperature	atmospheric	surface; upper-air	ta	air temperature	C	NA
+85	temperature	atmospheric	surface; upper-air	t air	air temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
+86	temperature	atmospheric		t max	daily maximum air temperature	C	Lot 1 is using Tx - WMO abbrev.
+87	temperature	atmospheric		t max sun	daily maximum air temperature with direct sun exposure	C	Lot 1 is using Txs
+88	temperature	atmospheric		t max g	daily maximum grass temperature	C	Lot 1 is using TGx - Grass maximum thermometer is 5 cm above ground
+89	temperature	atmospheric		t min	daily minimum air temperature	C	Lot 1 is using Tn - WMO abbrev.
+90	temperature	atmospheric		t min sun	daily minimum air temperature with direct sun exposure	C	Lot 1 is using Tns
+91	temperature	atmospheric		t min g	daily minimum grass temperature	C	Lot 1 is using TGn - Grass minimum thermometer is 5 cm above ground
+92	temperature	atmospheric		days frost	days with ground frost	Days	NA
+93	temperature	atmospheric		t snow	snow temperature	C	NA
+94	temperature	atmospheric		t soil	soil temperature	C	Lot 1 is using Ts - WMO abbrev.
+95	temperature	oceanic	surface; sub-surface	t water	water temperature	K	Water (sea, river, lake) temperature at depth indicated
+96	visibility	atmospheric	surface	vv	horizontal visibility in air	m	The visibility is the distance at which something can be seen.
+97	weather			ld	lightning detection	deg (lat, lon) and UTC	NA
+98	weather			ls	lightning duration	s	NA
+99	weather			lhd	lightning horizontal distance	Km	NA
+100	weather	atmospheric	surface	w1	past weather 1	coded	past weather 1 - most extreme phomenon  (w)
+101	weather	atmospheric	surface	w2	past weather 2	coded	past weather 2 - most frequent phomenon (used in synoptic maps)
+102	weather	atmospheric	surface	ww	present weather	coded	present weather (ww)
 103	weather			tld	Total lightning density	Dimensionless	NA
-104	wind	atmospheric	surface; upper-air	u	eastward_wind_speed	m s-1	Eastward indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
-105	wind	atmospheric	surface; upper-air	v	northward_wind_speed	m s-1	Northward indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)
-106	wind	atmospheric	surface; upper-air	d	wind_from_direction	degree	direction from which the wind is blowing Lot 1 uses dd  - WMO abbrev.
-107	wind	atmospheric	surface; upper-air	w	wind_speed	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity. Lot 1 uses ff  - WMO abbrev.
-108	wind	atmospheric	surface	w_gust	wind_speed_of_gust	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed,  the gust wind speed can be indicated by a cell_methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness,  the gust wind speed may be separately diagnosed from the wind speed. Lot 1 uses fx  - WMO abbrev.
-109	wind	atmospheric		w_max	wind_speed_max	m s-1	Maximum observed wind speed over specified period Lot 1 uses fm  - WMO abbrev.
+104	wind	atmospheric	surface; upper-air	u	eastward wind speed	m s-1	Eastward indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.)
+105	wind	atmospheric	surface; upper-air	v	northward wind speed	m s-1	Northward indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.)
+106	wind	atmospheric	surface; upper-air	d	wind from direction	degree	direction from which the wind is blowing Lot 1 uses dd  - WMO abbrev.
+107	wind	atmospheric	surface; upper-air	w	wind speed	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.) The wind speed is the magnitude of the wind velocity. Lot 1 uses ff  - WMO abbrev.
+108	wind	atmospheric	surface	w gust	wind speed of gust	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed,  the gust wind speed can be indicated by a cell methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness,  the gust wind speed may be separately diagnosed from the wind speed. Lot 1 uses fx  - WMO abbrev.
+109	wind	atmospheric		w max	wind speed max	m s-1	Maximum observed wind speed over specified period Lot 1 uses fm  - WMO abbrev.
 110				turb	turbulence	J m-3	NA

@@ -7,7 +7,7 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{institute ()}
+            \caption{institute (NA)}
             \label{tab:DataTableInstitute}\\
             % Initial column headers
             \hline\hline             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{institute}}} & 
@@ -48,7 +48,7 @@
         },
     columns/name/.style={
             string type, 
-            column type= n{0.842857 in}, 
+            column type= V{0.842857 in}, 
             string replace*={_}{\_}
         },
     columns/region/.style={

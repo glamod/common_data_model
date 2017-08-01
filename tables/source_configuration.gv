@@ -1,0 +1,33 @@
+digraph source_configuration {
+node [color=white]
+source_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: source_configuration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/source_configuration.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: Table defining additional information on data sources				</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: NA</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">occurrence</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="source_idL">source_id</TD><TD>1 </TD><TD>varchar (pk) </TD><TD></TD><TD PORT="source_idR">Unique record ID for dataset </TD></TR>
+<TR><TD PORT="product_idL">product_id</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="product_idR">ID for product </TD></TR>
+<TR><TD PORT="product_nameL">product_name</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="product_nameR">Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, <BR/>RS92 GRUAN Data Product </TD></TR>
+<TR><TD PORT="product_codeL">product_code</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="product_codeR">Abbreviations / product code, e.g. ICOADS, RS92-GDP </TD></TR>
+<TR><TD PORT="product_versionL">product_version</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="product_versionR">Version number for dataset, e.g. Release 3.0.0 </TD></TR>
+<TR><TD PORT="product_levelL">product_level</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/product_level.tsv"><FONT color="blue">product_level </FONT></TD><TD PORT="product_levelR">Level of product </TD></TR>
+<TR><TD PORT="product_uriL">product_uri</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="product_uriR">URI for product, either to original source or to CDS <BR/></TD></TR>
+<TR><TD PORT="description L">description </TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="description R">Description of dataset / comments </TD></TR>
+<TR><TD PORT="product_referencesL">product_references</TD><TD>1+ </TD><TD>varchar[] </TD><TD></TD><TD PORT="product_referencesR">References describing the dataset </TD></TR>
+<TR><TD PORT="product_citationL">product_citation</TD><TD>1+ </TD><TD>varchar[] </TD><TD></TD><TD PORT="product_citationR">Citation to use when using this product </TD></TR>
+<TR><TD PORT="product_statusL">product_status</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/product_status.tsv"><FONT color="blue">product_status </FONT></TD><TD PORT="product_statusR">Status of product, draft, pre-release, release </TD></TR>
+<TR><TD PORT="source_format L">source_format </TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/source_format.tsv"><FONT color="blue">source_format </FONT></TD><TD PORT="source_format R">Original format for data </TD></TR>
+<TR><TD PORT="source_format_version L">source_format_version </TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="source_format_version R">Version of original data format </TD></TR>
+<TR><TD PORT="source_fileL">source_file</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="source_fileR">Filename for data from source </TD></TR>
+<TR><TD PORT="source_file_checksumL">source_file_checksum</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="source_file_checksumR">Checksum of source datafile </TD></TR>
+<TR><TD PORT="data_centre L">data_centre </TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/organisation.tsv"><FONT color="blue">organisation </FONT></TD><TD PORT="data_centre R">Data centre from which data sourced </TD></TR>
+<TR><TD PORT="data_centre_url L">data_centre_url </TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="data_centre_url R">URL for data centre </TD></TR>
+<TR><TD PORT="data_policy_licence L">data_policy_licence </TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/data_policy_licence.tsv"><FONT color="blue">data_policy_licence </FONT></TD><TD PORT="data_policy_licence R">Data policy / licence </TD></TR>
+<TR><TD PORT="contactL">contact</TD><TD>1+ </TD><TD>varchar[] (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/contact.tsv"><FONT color="blue">contact </FONT></TD><TD PORT="contactR">contact for data source with role specified by role element <BR/></TD></TR>
+<TR><TD PORT="contact_roleL">contact_role</TD><TD>1+ </TD><TD>int[] (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/role.tsv"><FONT color="blue">role </FONT></TD><TD PORT="contact_roleR">role of contact </TD></TR>
+<TR><TD PORT="historyL">history</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="historyR">History of source </TD></TR>
+<TR><TD PORT="commentsL">comments</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="commentsR">Additional comments / footnotes </TD></TR>
+<TR><TD PORT="L"></TD><TD>0+ </TD><TD></TD><TD></TD><TD PORT="R">See source_configuration_fields for list of optional fields and types </TD></TR>
+</TABLE>>];
+}

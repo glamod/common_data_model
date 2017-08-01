@@ -1,5 +1,5 @@
 # Description: coordinate reference system used to report location
-# Source: BUFR 0 01 150; WIGOS 11-02
+# Source: BUFR 0 01 150
 crs	description
 0	WGS84
 1	ETRS89

@@ -1,5 +1,5 @@
 # Description:			
-# Source:			
+# Source: NA
 field_id	field_name	type	description
 0	include descent	int (fk)	NA
 1	processing code	int (fk)	NA

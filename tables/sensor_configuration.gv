@@ -1,0 +1,19 @@
+digraph sensor_configuration {
+node [color=white]
+sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+<TR><TD COLSPAN="5" ALIGN="left" PORT="head"># Table: sensor_configuration</TD></TR>
+<TR><TD COLSPAN="5" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/sensor_configuration.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Description: definition of table specifying sensor configuration				</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="5"># Source: NA</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">occurrence</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="instrument_idL">instrument_id</TD><TD>1 </TD><TD>varchar (pk) </TD><TD></TD><TD PORT="instrument_idR">Unique ID for this instrument </TD></TR>
+<TR><TD PORT="observing_methodL">observing_method</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/observing_method.tsv"><FONT color="blue">observing_method </FONT></TD><TD PORT="observing_methodR">Method (instrumental, estimated / visual, computed) by which observation made <BR/></TD></TR>
+<TR><TD PORT="sampling_strategyL">sampling_strategy</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/sampling_strategy.tsv"><FONT color="blue">sampling_strategy </FONT></TD><TD PORT="sampling_strategyR">Sampling strategy used by instrument </TD></TR>
+<TR><TD PORT="calibration_statusL">calibration_status</TD><TD>1 </TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/calibration_status.tsv"><FONT color="blue">calibration_status </FONT></TD><TD PORT="calibration_statusR">Whether the sensor is in / out of calibration </TD></TR>
+<TR><TD PORT="calibration_dateL">calibration_date</TD><TD>1 </TD><TD>timestamp </TD><TD></TD><TD PORT="calibration_dateR">Date of last calibration </TD></TR>
+<TR><TD PORT="commentsL">comments</TD><TD>1 </TD><TD>varchar </TD><TD></TD><TD PORT="commentsR">additional comments for sensor not reportable elsewhere </TD></TR>
+<TR><TD PORT="date_startL">date_start</TD><TD>1 </TD><TD>timestamp </TD><TD></TD><TD PORT="date_startR">start date for period of validity assoiciated with this entry <BR/></TD></TR>
+<TR><TD PORT="date_endL">date_end</TD><TD>1 </TD><TD>timestamp </TD><TD></TD><TD PORT="date_endR">end date for period of validity assoiciated with this entry <BR/></TD></TR>
+<TR><TD PORT="L"></TD><TD>0+ </TD><TD></TD><TD></TD><TD PORT="R">see sensor_configuration_fields for list of valid fields and types. </TD></TR>
+</TABLE>>];
+}

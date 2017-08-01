@@ -1,0 +1,49 @@
+# Descripion: table defining elements in main header table				
+# Source: NA				
+element_name	occurrence	kind	external_table	description
+report_id	1	varchar (pk)		Unique ID for report (unique ID given by combination of report_id and observation_id)
+region	1	int (fk)	region	Region (WMO region / Ocean basin)
+sub_region	1	int (fk)	sub_region	Country / regional sea
+application_area	1+	int[] (fk)	application_area	WMO application area(s)
+observing_programme	1+	int[] (fk)	observing_programme	Observing programme, e.g. VOS
+report_type	1	int (fk)	report_type	e.g. SYNOP, TEMP, CLIMAT, etc
+station_name	1	varchar		e.g. GRUAN station name, ship name, site name etc
+station_type	1	int (fk)	station_type	Type of station, e.g. land station, sea station etc
+platform_type	1	int (fk)	platform_type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
+platform_sub_type	1	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m discuss buoy
+primary_station_id	1	varchar (fk)	station_configuration	Primary station identifier, e.g. WIGOS ID
+station_record_number	1	int (fk)	station_configuration	Together with primary_station_id this forms a link to the station configuration table.
+primary_station_id_scheme	1	int (fk)	id_scheme	Scheme used for station ID
+secondary_station_id	0+	varchar []		Alternate (e.g. local) ID for station.
+secondary_station_id_scheme	0+	int[] (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID.
+longitude	1	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
+latitude	1	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
+location_accuracy	1	numeric		Accuracy to which station location recorded (radius in km)
+location_method	1	int(fk)	location_method	Method by which location determined
+location_quality	1	int (fk)	location_quality	Quality flag for station location
+crs	1	int (fk)	crs	Coordinate reference scheme for station location
+station_speed	1	numeric		Station speed over ground if mobile (m/s)
+station_course	1	numeric		Station course over ground if mobile (degree true)
+station_heading	1	numeric		Station heading if mobile
+height_of_station_above_local_ground	1	numeric		Height of station above local ground (m)
+height_of_station_above_sea_level	1	numeric		Height of station above mean sea level (m), negative values for below sea level.
+height_of_station_above_sea_level_accuracy	1	numeric		Accuracy to which height of station known (m)
+sea_level_datum	1	int (fk)	sea_level_datum	Datum used for sea level
+report_meaning_of_time_stamp	1	int (fk)	meaning_of_time_stamp	Report time - beginning, middle or end of reporting period
+report_timestamp	1	timestamp with timezone		e.g. 1991-01-01 12:00:0.0+0
+report_duration	1	int		Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
+report_time_accuracy	1	numeric		Precision to which time was recorded (s)
+report_time_quality	1	int (fk)	time_quality	Quality flag for report_timestamp 
+report_time_reference	1	int (fk)	time_reference	Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
+profile_id	1	varchar (fk)	profile_configuration	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
+events_at_station	0+	int[] (fk)	events_at_station	e.g. ship hove to, crop burning etc.
+report_quality	1	int (fk)	quality_flag	Overall quality of report
+duplicate_status	1	int (fk)	duplicate_status	E.g. no duplicates, best duplicate, duplicate, not checked.
+duplicates	0+	varchar[] (fk)	observations_table	Array of report_id's for duplicates
+record_timestamp	1	timestamp with timezone		Timestamp of revision for this record
+history	1	varchar 	 	Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. 
+processing_level	1	int (fk)	report_processing_level	Level of processing applied to this report
+processing_codes	0+	int[] (fk)	report_processing_codes	Processing applied to this report
+source_id	1	varchar (fk)	source_configuration	Original source of data, link to external table
+source_record_id	1	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
+

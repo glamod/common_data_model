@@ -82,7 +82,7 @@ SWW	sensor type - present weather	present weather	4		Manned, included
 SWW	sensor type - present weather	present weather	5		Manned, omitted (no observation, data not available)
 SWW	sensor type - present weather	present weather	6		Manned, omitted (no significant phenomenon to report)
 TSONDE	telemetry_sonde	sonde	TBD		TBD
-TREAT	sample treatment	all	TBD		TBD
+STREAT	sample treatment	all	TBD		TBD
 SPROC	sample procedure	all	TBD		TBD
 QCPROC	quality control procedure	all	TBD		TBD
 CALMETH	Calibration method	all	TBD		TBD

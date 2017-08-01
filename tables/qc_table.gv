@@ -1,0 +1,14 @@
+digraph qc_table {
+node [color=white]
+qc_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head"># Table: qc_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/qc_table.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description:			</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source: NA</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="report_idL">report_id</TD><TD>varchar (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/observations_table.tsv"><FONT color="blue">observations_table </FONT></TD><TD PORT="report_idR">Link to report this entry is for </TD></TR>
+<TR><TD PORT="observation_idL">observation_id</TD><TD>varchar (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/observations_table.tsv"><FONT color="blue">observations_table </FONT></TD><TD PORT="observation_idR">Link to observation this entry is for. Set to NULL <BR/>/ NA if entry for report level QC </TD></TR>
+<TR><TD PORT="qc_methodL">qc_method</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/qc_method.tsv"><FONT color="blue">qc_method </FONT></TD><TD PORT="qc_methodR">Link to table describing QC method used to set this <BR/>flag </TD></TR>
+<TR><TD PORT="qc_flagL">qc_flag</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/qc_flag.tsv"><FONT color="blue">qc_flag </FONT></TD><TD PORT="qc_flagR">0 pass, 1 fail </TD></TR>
+</TABLE>>];
+}

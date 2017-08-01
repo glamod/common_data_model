@@ -1,5 +1,5 @@
 # Description: Quality of time variable
-# Source:
+# Source: NA
 time_quality	description
 0	Timestamp valid, time reported to nearest second
 1	Timestamp valid, time reported to nearest minute

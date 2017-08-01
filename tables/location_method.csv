@@ -1,5 +1,5 @@
 # Description: Method by which location of station / observation determined
-# Source: WIGOS 11-01 and BUFR 0 02 148
+# Source: based on WIGOS 11-01 and BUFR 0 02 148
 location_method	description
 0	Argos
 1	ARGOS DOPPLER

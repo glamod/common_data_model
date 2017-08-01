@@ -1,10 +1,15 @@
 digraph {
-  node [color=white]
+  #node [color=white]
+  node [margin="0.01" shape=plaintext]
   rankdir=LR;
-  observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
-                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">observations_table</TD></TR>
-                                <TR><TD PORT="head">Header information</TD></TR>
+  header_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+                                <TR><TD PORT="head" COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">header_table</TD></TR>
+                                <TR><TD PORT="header">Header information</TD></TR>
                                 <TR><TD PORT="source">Source information</TD></TR>
+                             </TABLE>>]
+
+  observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+                                <TR><TD PORT="head" COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">observations_table</TD></TR>
                                 <TR><TD PORT="sensor">Observed parameter and sensor information</TD></TR>
                              </TABLE>>]
 
@@ -49,10 +54,17 @@ Additional information on uncertainty budget <BR ALIGN="LEFT"/>
 used to set standard_uncertainty field.</TD></TR></TABLE>>]
 
 
-  observations_table:head -> station_configuration:head;
-  observations_table:head -> profile_configuration:head;
-  observations_table:source -> source_configuration:head;
-  observations_table:sensor -> sensor_configuration:head;
+  
+  {
+    rank=same;
+    header_table;
+    observations_table;
+  }
+  header_table -> observations_table;
+  header_table:header -> station_configuration:head;
+  header_table:header -> profile_configuration:head;
+  header_table:source -> source_configuration:head;
   qc_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
   uncertainty_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
+  sensor_configuration:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
 }

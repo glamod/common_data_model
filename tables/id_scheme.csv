@@ -1,20 +1,16 @@
 # Description: ID Scheme in use of ID element
-# Source: ICOADS, other ...
+# Source: NA
 id_scheme	description
-0	ICOADS: ID present, but unknown type
-1	ICOADS: ship, Ocean Station Vessel (OSV), or ice station callsign
-2	ICOADS: generic ID (e.g., SHIP, BUOY, RIGG, PLAT)
-3	ICOADS: WMO 5-digit buoy number
-4	ICOADS: other buoy number (e.g., Argos or national buoy number)
-5	ICOADS: Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations)
-6	ICOADS: station name or number
-7	ICOADS: oceanographic platform/cruise number
-8	ICOADS: fishing vessel psuedo-ID
-9	ICOADS: national ship number
-10	ICOADS: composite information from early ship data
-11	ICOADS: 7-digit buoy ID (proposed)
-12	WIGOS ID
-13	GRUAN ID
-14	IMO Number
-15	National ID
-16	WMO buoy / station number
+0	WIGOS ID
+1	GRUAN ID
+2	IMO Number
+3	National ID
+4	WMO buoy / station number
+5	Ship / platform callsign
+6	Generic ID (e.g. SHIP, PLAT etc)
+7	Station name
+8	ICOADS other
+9	ICOADS unknown
+10	ICOADS composite
+11	Oceangraphic platform / cruise number
+12	Other buoy number (e.g. Argo)

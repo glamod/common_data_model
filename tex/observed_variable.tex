@@ -7,27 +7,27 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{observed\_variable}
+            \caption{observed\_variable (NA)}
             \label{tab:DataTableObservedvariable}\\
             % Initial column headers
             \hline\hline             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{observed\_variable}}} & 
             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{parameter\_group}}} & 
             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{domain}}} & 
-            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{sub-domain}}} & 
+            \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{sub\_domain}}} & 
             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{abbreviation}}} & 
             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{name}}} & 
             \multicolumn{1} { V{0.842857 in}} { \textbf{\seqsplit{units}}} & 
-            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description / notes}}} \\ \hline\hline \endfirsthead
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{8}{c}{Table \thetable\ observed\_variable (cont.)} \\
             % column headers on additional pages
             \hline\hline             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{observed\_variable}}} & 
             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{parameter\_group}}} & 
             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{domain}}} & 
-            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{sub-domain}}} & 
+            \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{sub\_domain}}} & 
             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{abbreviation}}} & 
             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{name}}} & 
             \multicolumn{1} {V{0.842857 in} } { \textbf{\seqsplit{units}}} & 
-            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description / notes}}} \\ \hline\hline \endhead
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{8}{r}{{Continued on next page}} \\
             \endfoot
@@ -56,7 +56,7 @@
             column type= V{0.842857 in}, 
             string replace*={_}{\_}
         },
-    columns/sub-domain/.style={
+    columns/sub_domain/.style={
             string type, 
             column type= V{0.842857 in}, 
             string replace*={_}{\_}
@@ -68,7 +68,7 @@
         },
     columns/name/.style={
             string type, 
-            column type= n{0.842857 in}, 
+            column type= V{0.842857 in}, 
             string replace*={_}{\_}
         },
     columns/units/.style={
@@ -76,7 +76,7 @@
             column type= V{0.842857 in}, 
             string replace*={_}{\_}
         },
-    columns/description / notes/.style={
+    columns/description/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{2.000000 in}

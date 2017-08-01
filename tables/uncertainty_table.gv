@@ -1,0 +1,15 @@
+digraph uncertainty_table {
+node [color=white]
+uncertainty_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head"># Table: uncertainty_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left"># URL: https://github.com/glamod/common_data_model/blob/master/tables/tsv/uncertainty_table.tsv</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Description:</TD></TR>
+<TR><TD ALIGN="left" COLSPAN="4"># Source: NA</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="report_idL">report_id</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/observations_table.tsv"><FONT color="blue">observations_table </FONT></TD><TD PORT="report_idR">Link to report this entry is for </TD></TR>
+<TR><TD PORT="observation_idL">observation_id</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/observations_table.tsv"><FONT color="blue">observations_table </FONT></TD><TD PORT="observation_idR">Link to observation this entry is for </TD></TR>
+<TR><TD PORT="uncertainty_typeL">uncertainty_type</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/uncertainty_type.tsv"><FONT color="blue">uncertainty_type </FONT></TD><TD PORT="uncertainty_typeR">The type of uncertainty described by this entry </TD></TR>
+<TR><TD PORT="uncertainty_valueL">uncertainty_value</TD><TD>numeric </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/NA.tsv"><FONT color="blue">NA </FONT></TD><TD PORT="uncertainty_valueR">Expected error standard deviation due to specified uncerainty source </TD></TR>
+<TR><TD PORT="uncertainty_unitsL">uncertainty_units</TD><TD>int (fk) </TD><TD HREF="https://github.com/glamod/common_data_model/blob/master/tables/tsv/units.tsv"><FONT color="blue">units </FONT></TD><TD PORT="uncertainty_unitsR">The units used to report the uncertainty. This may be <BR/>different to the reporting units (e.g. \%) </TD></TR>
+</TABLE>>];
+}

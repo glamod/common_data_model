@@ -7,15 +7,17 @@
 \BOOKMARK [2][-]{subsection.2.2}{ECMWF Observations DataBase \(ODB\)}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{BUFR and WIGOS Metadata Standard}{section.2}% 8
 \BOOKMARK [1][-]{section.3}{Common Data Model}{}% 9
-\BOOKMARK [2][-]{subsection.3.1}{Observations table}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.2}{Station configuraiton}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.3}{Profile configuraiton}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.4}{Source configuraiton}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.5}{Sensor configuraiton}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.6}{Quality control flags}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.7}{Uncertainty budget}{section.3}% 16
-\BOOKMARK [1][-]{section.4}{Common Data Model governance and future development}{}% 17
-\BOOKMARK [1][-]{section.5}{Acknowledgements}{}% 18
-\BOOKMARK [1][-]{section.6}{References}{}% 19
-\BOOKMARK [1][-]{section.7}{Appendix}{}% 20
-\BOOKMARK [2][-]{subsection.7.1}{Code tables}{section.7}% 21
+\BOOKMARK [2][-]{subsection.3.1}{Header table}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Observations table}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Station configuration}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Profile configuration}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Source configuration}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.6}{Sensor configuration}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.7}{Quality control flags}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.8}{Uncertainty budget}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Common Data Model governance and future development}{}% 18
+\BOOKMARK [1][-]{section.5}{Acknowledgements}{}% 19
+\BOOKMARK [1][-]{section.6}{References}{}% 20
+\BOOKMARK [1][-]{section.7}{Appendix}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Other tables}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{Code tables}{section.7}% 23

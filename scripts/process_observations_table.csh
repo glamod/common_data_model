@@ -11,7 +11,7 @@ endif
 set tablename = `echo $file | cut -d '.' -f1`
 
 # get number of columns based on header row
-set ncols = `awk 'BEGIN {FS="\t"} ; /^value/ || /^element_number/ {print NF}' $file`
+set ncols = `awk 'BEGIN {FS="\t"} ; /^element_name/ {print NF}' $file`
 
 # get column containing the external table
 set extTable = `cat $file | grep "external_table" | awk -F"\t" '{for(i = 1; i <=NF ; i++){if ( $i ~ /external_table/ ){print i} }}'`
@@ -25,17 +25,17 @@ echo '<TR><TD COLSPAN="'$ncols'" ALIGN="left"># URL: https://github.com/glamod/c
 awk -v ncols="$ncols" -v extcolumn="$extTable" '\
 BEGIN { FS="\t"  } ; \
   /^#/ {print "<TR><TD ALIGN=\"left\" COLSPAN=\""ncols"\">"$0"</TD></TR>"} \
-  /^value/ || /^element_number/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
-  /^[^#]/ && /^[^value]/ && /^[^element_number]/ { \
+  /^element_name/ {{printf "<TR>"};{for(i=1;i<=NF;i++){printf "<TD BGCOLOR=\"GRAY\">%s<\/TD>", $i };printf "<\/TR>\n" }} \
+  /^[^#]/ && /^[^element_name]/ { \
       {printf "<TR>"};{ \
-      printf "<TD PORT=\"%sL\">%s</TD>",$2, $1 \
+      printf "<TD PORT=\"%sL\">%s</TD>",$1, $1 \
       for(i=2;i<=NF;i++){ \
         if( i == extcolumn && length($i) > 1 ){ \
           printf "<TD HREF=\"https://github.com/glamod/common_data_model/blob/master/tables/tsv/%s.tsv\">",$i \
           printf "<FONT color=\"blue\">" \
         } \
         else if(i == NF) {\
-          printf "<TD PORT=\"%sR\">", $2 \
+          printf "<TD PORT=\"%sR\">", $1 \
         } \
         else {\
           printf "<TD>" \

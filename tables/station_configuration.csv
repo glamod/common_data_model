@@ -1,9 +1,9 @@
 # Description:				
-# Source: 				
-element_name	occurance	type	external_table	description
-station_primary_id	1	varchar		Primary (e.g. WMO) ID for station
+# Source: NA
+element_name	occurrence	type	external_table	description
+station_primary_id	1	varchar (pk)		Primary (e.g. WMO) ID for station
 station_primary_id_scheme	1	int (fk)	id_scheme	Scheme used for primary ID
-station_record_number	1	int		Record number for this station entry
+station_record_number	1	int (pk)		Record number for this station entry
 station_secondary_id	0+	varchar		Secondary (e.g. local) ID for station
 station_secondary_id_scheme	0+	int (fk)	id_scheme	Scheme used for secondary ID
 station_name	1	varchar		Name of station (e.g. Tateno)
@@ -18,10 +18,11 @@ end_date	1	timestamp		Last data the station reported in this configuration
 station_type	1	int (fk)	station_type	Type of reporting station
 platform_type	1	int (fk)	platform_type	Generic type of observing platform
 platform_sub_type	1	int (fk)	platform_sub_type	Specific type of observing platform
-operating_institute	1	int (fk)	institute	Institute operating the station (e.g. National Oceanography Centre)
-operating_organisation	1	int (fk)	organisation	Parent organsiation for the institute (e.g. Natural Environment Research Council)
+operating_institute	1	int (fk)	organisation	Institute operating the station (e.g. National Oceanography Centre)
 operating_territory	1	int (fk)	sub_region	Sub-region where station is located or country of registry for mobile station
-city	1	int (fk)	cities	Nearest city / town to station location
+city	1	varchar	NA	Nearest city / town to station location
+contact	1+	varchar[] (fk)	contact	Contact for station
+role	1+	int[] (fk)	role	Role of contact
 observing_frequency	1	int (fk)	observing_frequency	Typical frequency of observations for this station (reports per day)
 telecommunication_method	1	int (fk)	communication_method	Method used to report observations
 station_automation	1	int (fk)	automation_status	Whether station is automated, manual or mixed
