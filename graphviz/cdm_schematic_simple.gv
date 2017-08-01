@@ -2,6 +2,7 @@ digraph {
   #node [color=white]
   node [margin="0.01" shape=plaintext]
   rankdir=LR;
+  n1, n2, n3, n4, n5 [style=invis]
   header_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
                                 <TR><TD PORT="head" COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">header_table</TD></TR>
                                 <TR><TD PORT="header">Header information</TD></TR>
@@ -54,17 +55,49 @@ Additional information on uncertainty budget <BR ALIGN="LEFT"/>
 used to set standard_uncertainty field.</TD></TR></TABLE>>]
 
 
+
+station_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">station_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for station_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+source_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">source_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for source_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+sensor_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">sensor_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for sensor_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+profile_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">profile_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for profile_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
   
   {
     rank=same;
     header_table;
     observations_table;
   }
-  header_table -> observations_table;
-  header_table:header -> station_configuration:head;
-  header_table:header -> profile_configuration:head;
-  header_table:source -> source_configuration:head;
-  qc_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
-  uncertainty_fields:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
-  sensor_configuration:head -> observations_table:sensor [arrowhead=none, dir=both, arrowtail=normal];
+
+  n1 -> n2 [arrowtail = dot , arrowhead = crow, dir = both, label = "one to many relationship"];
+  n2 -> n3 [arrowhead = dot , arrowtail = crow, dir = both, label = "many to one relationship"];
+  n4 -> n5 [arrowhead = dot , arrowtail = dot , dir = both, label = "one to one relationship"];
+
+  header_table -> observations_table [arrowtail=dot, arrowhead=crow, dir=both, label="      "];
+  header_table:header -> station_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:header -> profile_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:source -> source_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+
+  observations_table:head -> qc_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -> uncertainty_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:sensor -> sensor_configuration:head [arrowtail=crow, dir=both, arrowhead=dot];
+
+  station_configuration:head -> station_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  source_configuration:head -> source_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  profile_configuration:head -> profile_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  sensor_configuration:head -> sensor_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
 }

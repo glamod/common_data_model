@@ -191,16 +191,16 @@ Comprehensive metadata is supported through the use of configuration tables, rec
 \item Profile level metadata: Additional information for profile data, e.g. unwinder type, type of balloon or XBT etc.
 \item Sensor level metadata: e.g. calibration history and status, sensor type / serial number etc.
 \end{itemize}
-Comprehensive quality control and uncertainty information can be record through the use of linked entity-attribute-value tables.
+Comprehensive quality control and uncertainty information can be recorded through the use of linked entity-attribute-value tables.
 
 \subsection {Structure of this document}
 
-Section 2 of this document provides backgound information on the data model and existing relevant data models and standards. Section 3 forms the core section of this document and defines the primary observations table and associated configuration, quality control and uncertainty budget tables. Recognising that the data model will change and evolve as the requirements of the users and the C3S Climate Data Store develop, Section 4 proposes a goverance model for the CDM and outlines future developments.
+Section 2 of this document provides background information on the data model and existing relevant data models and standards. Section 3 forms the core section of this document and defines the primary observations table and associated configuration, quality control and uncertainty budget tables. Recognising that the data model will change and evolve as the requirements of the users and the C3S Climate Data Store develop, Section 4 proposes a goverance model for the CDM and outlines future developments.
 
 \section {Background and existing standards}
 \subsection {Observational sources and requirements of the data model}
 
-Across the C3S 311a (Collection and Processing of In Situ Observations) service access will be provided to observations from surface terrestrial and marine environments and upper air data in a Common Data Model. The observations included in the service range from point observations made from moving platforms to daily and monthly statistics at fixed locations. The parameters reported include, inter alia: air temperature; humidity; wind speed; pressure; cloud cover information; present weather. The statistics include, inter alia: daily min, max and mean air temperature; accumulated precipitation over 3 or 24 hours; mean wind speed over the preceding 10 minutes. The full range of parameters and statistics to be reported will evolve as the service is developed. As new parameters are recovered from newly digitised sources and the reprocessed climate archives the list of parameters will need to expand.\\
+Across the C3S 311a service (Collection and Processing of In Situ Observations) access will be provided to observations from surface terrestrial and marine environments and upper air data in a common data model. The observations included in the service range from point observations made from moving platforms to daily and monthly statistics at fixed locations. The parameters reported include, inter alia: air temperature; humidity; wind speed; pressure; cloud cover information; present weather. The statistics include, inter alia: daily min, max and mean air temperature; accumulated precipitation over 3 or 24 hours; mean wind speed over the preceding 10 minutes. The full range of parameters and statistics to be reported will evolve as the service is developed. As new parameters are recovered from newly digitised sources and the reprocessed climate archives the list of parameters will need to expand.\\
 
 Both surface level (terrestrial and marine) and upper air data will be initially included in the service. The surface level data include observations made at standard and non-standard heights. The upper air data will include multiple observations, starting at the surface and at increasing heights through the atmosphere, often as a function of pressure or geopotential height. As a result the data model needs to include the flexibility to record the height and the units used for reporting the height of measurement with every observation. Similarly, some reporting stations, and hence observations, will move in the horizontal plan, and the horizontal coordinates need to be reported with each observation. To avoid ambiguity, the CRS should be provided with each location reported.\\
 
@@ -212,7 +212,7 @@ In order to meet the above requirements a data model based on the ECMWF Observat
 
 \subsection{ECMWF Observations DataBase (ODB)}
 
-The data model developed and used in the ECMWF Observations DataBase (ODB) software allows the representation of environmental data from many sources, including in situ observations and weather reports, satellite data and model output. As noted in Hersbach et al. (2015), in the ODB implementation a distinction is made between weather reports and observations and this same distinction is made within the CDM and this document.  A weather report, such as a ship weather report or a radiosonde ascent, may contain multiple observations or one or more parameters. In the case of a ship weather report observations of the air temperature and humidity, sea level pressure, sea surface temperature, wind speed and direction are typically made and recorded in a single report. In the case of a radiosonde report observations of the temperature will be made at a range of levels from the surface to the burst point of the balloon. To enable flexibility and scalability with the ODB data model the different elements making up a weather report are split into header elements, recording information common across a weather report, and observational (or body) elements specific to a single observation.\\
+The data model developed and used in the ECMWF Observations DataBase (ODB) software allows the representation of environmental data from many sources, including in situ observations and weather reports, satellite data and model output. As noted in Hersbach et al. (2015), in the ODB implementation a distinction is made between weather reports and observations and this same distinction is made within the CDM and this document.  A weather report, such as a ship weather report or a radiosonde ascent, may contain multiple observations of one or more parameters. In the case of a ship weather report observations of the air temperature and humidity, sea level pressure, sea surface temperature, wind speed and direction are typically made and recorded in a single report. In the case of a radiosonde report observations of the temperature will be made at a range of levels from the surface to the burst point of the balloon. To enable flexibility and scalability with the ODB data model the different elements making up a weather report are split into header elements, recording information common across a weather report, and observational (or body) elements specific to a single observation.\\
 
 In the original version of ODB, e.g. Saarinen (2004), these elements were split between a header table, containing the header elements, and a linked body table containing the observations or body elements. Within the body table the name of the parameter being observed, or its enumeration, is recorded in one column and the observed value within a second column.  Other columns, recording information such as QC results, are permissible. This data model allows the efficient expansion of the data model to new variables, without the need to change the underlying structure, by the addition of the new variable to the enumerated list defining the reportable variables. Within the latest version of ODB (ODB-2; e.g. Hersbach et al., 2015) the header and body tables have been combined into a single flat table, with the header rows repeated, to enable efficient archival within the ECMWF MARS system. A simplified schematic of the ODB-2 structure is shown in Table 1.\\
 
@@ -238,14 +238,7 @@ As noted above, the common data model has been developed based on the original O
 \item Instrument (or sensor) level metadata (\textit{sensor\_configuration} table). This level contains detailed information on the sensor used to make a particular observation, including: calibration status; sampling strategy; observing method; sensor housing and ventilation; instrument model and serial number etc.
 \end{itemize}
 
-The configuration tables contain elements that are mandatory across all report types. Additional optional elements are provided through Entity-Attribute-Value based tables linked to the configuration tables. Two additional tables have been defined to include the reporting of comprehensive uncertainty estimates and quality control flags. A simplified schematic of the 12 tables forming the core of the CDM is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. \\
-
-\begin{figure}
-\centering
-\includegraphics[width=1\textwidth]{/Users/dyb/GitHub/common_data_model/png/cdm_schematic_simple.png}
-\caption {Simplified schematic showing overview of common data model}
-\end{figure}
-\FloatBarrier
+These tables are defined in the following section and contain elements that are mandatory across all report types. Additional optional elements are provided through Entity-Attribute-Value based tables linked to the configuration tables. Two additional tables have been defined to include the reporting of comprehensive uncertainty estimates and quality control flags. A simplified schematic of the 12 tables forming the core of the CDM is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. \\
 
 Within the tables in the following sections the following syntax has been:\\
 \begin{itemize}
@@ -261,21 +254,37 @@ Within the tables in the following sections the following syntax has been:\\
 
 Mandatory elements are indicated by a 1 (or 1+) in the occurrence column. Mandatory elements that are not available must be included but may be encoded as missing (.e.g NA, NULL or format specific equivalent). Optional elements are indicated by 0+. Whilst arrays have been indicated for the elements containing multiple values this does not preclude other implementations. 
 
+\begin{landscape}
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{/Users/dyb/GitHub/common_data_model/png/cdm_schematic_simple.png}
+\caption {Simplified schematic showing overview of common data model}
+\end{figure}
+\end{landscape}
+
 \input{header_table_wrapper}
 
 \input{observations_table_wrapper}
 
 \input {station_configuration_wrapper}
+\input {station_configuration_optional}
 \input {station_configuration_fields}
+\input {station_configuration_codes}
 
 \input {profile_configuration_wrapper}
+\input {profile_configuration_optional}
 \input {profile_configuration_fields}
+\input {profile_configuration_codes}
 
 \input {source_configuration_wrapper}
+\input {source_configuration_optional}
 \input {source_configuration_fields}
+\input {source_configuration_codes}
 
 \input {sensor_configuration_wrapper}
+\input {sensor_configuration_optional}
 \input {sensor_configuration_fields}
+\input {sensor_configuration_codes}
 
 \subsection {Quality control flags}
 A single QC flag is provided in the observations table for the observed value. Additional flags can be provided using the qc\_table and by setting the advanced\_qc flag to true in the observations\_table.\\
@@ -311,6 +320,10 @@ A single standard uncertainty value is provided for each observed value in the o
 
 \section {References}
 
+\hangindent=2em\hangafter=1 Freeman et al., 2017 ...
+
+\hangindent=2em\hangafter=1 GCOS, 2010 ...
+
 \hangindent=2em\hangafter=1 Hersbach, H., P. Poli and D. Dee, 2015: The observation feedback archive for ICOADS and ISPD datasets. ERA Report Series No. 18, ECMWF, Reading, UK, 31pp.
 
 \hangindent=2em\hangafter=1 Saarinen, S., 2004: ODB User guide (draft 1st edition), ECMWF, Reading, UK, 289pp.
@@ -320,13 +333,15 @@ A single standard uncertainty value is provided for each observed value in the o
 \hangindent=2em\hangafter=1 WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Annex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.
 
 \section {Appendix}
-
+% \subsection {Observed variable}
+\input {observed_variable_wrapper}
+\begin{landscape}
 \subsection {Other tables}
 \input {adjustment}
 \input {contact}
 \input {conversion_method}
 \input {organisation}
-
+\end{landscape}
 \subsection {Code tables}
 \input {application_area}
 \input {automation_status}
@@ -345,7 +360,6 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {meaning_of_time_stamp}
 \input {measuring_system_model}
 \input {method_of_estimating_uncertainty}
-\input {observed_variable}
 \input {observation_code_table}
 \input {observation_value_significance}
 \input {observing_frequency}
@@ -357,7 +371,6 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {processing_level}
 \input {product_level}
 \input {product_status}
-\input {profile_configuration_codes}
 \input {profile_type}
 \input {quality_flag}
 \input {region}
@@ -367,12 +380,9 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {sampling_strategy}
 \input {sea_level_datum}
 \input {secondary_variable}
-\input {sensor_configuration_codes}
-\input {source_configuration_codes}
 \input {source_format}
 \input {spatial_representativeness}
 \input {standard_time}
-\input {station_configuration_codes}
 \input {station_type}
 \input {sub_region}
 \input {time_quality}
