@@ -229,7 +229,7 @@ The BUFR format is a flexible and efficient table driven format for reporting we
 In recognition of the increasing importance of observational metadata the WMDS is currently under development and undergoing a phased implementation (WMO, 2015b). The WMDS forms an extension of the ISO19115 metadata standard, with additional mandatory elements describing both the station level and discovery metadata as well as specific information on the instrumentation used and processing steps. As part of the process simplified versions of BUFR and other tables have been included in the standard. As with BUFR these tables have been referenced, where appropriate, in preference to defining new code tables.
 
 \section {Common Data Model}
-As noted above, the common data model has been developed based on the original ODB data model, with meteorological reports split into header and observational records stored in separate tables. In support of these two primary tables 4 auxiliary tables have been defined to enable the comprehensive reporting of metadata at different levels:\\
+As noted above, the common data model has been developed based on the original ODB data model, with meteorological reports split into header and observational records stored in separate tables. In support of these two primary tables, four auxiliary tables have been defined to enable the comprehensive reporting of metadata at different levels:\\
 
 \begin{itemize}
 \item Source level metadata (\textit{source\_configuration} table). This level contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc.
@@ -240,7 +240,7 @@ As noted above, the common data model has been developed based on the original O
 
 These tables are defined in the following section and contain elements that are mandatory across all report types. Additional optional elements are provided through Entity-Attribute-Value based tables linked to the configuration tables. Two additional tables have been defined to include the reporting of comprehensive uncertainty estimates and quality control flags. A simplified schematic of the 12 tables forming the core of the CDM is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. \\
 
-Within the tables in the following sections the following syntax has been:\\
+Within the tables in the following sections the following syntax has been used:\\
 \begin{itemize}
 \item numeric: \tabto{3 cm} Any numeric value (integer or floating point).
 \item int: \tabto{3 cm} An integer value.
