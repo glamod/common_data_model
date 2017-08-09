@@ -21,8 +21,11 @@ BARG	sensor type - barograph	pressure trend	int (fk)	NA
 BARM	sensor type - barometer	pressure	int (fk)	NA
 CALINT	calibration interval	all	numeric	Maximum number of months recommended between calibrations.
 CALMETH	calibration method	all	int (fk)	Method used to calibrate instrument
+CALREF	calibration reference	all	varchar	Reference instrument (make, model and serial number) used to perform calibtation
+CALDEV	calibration chamber	all	varchar	Calibration chamber (or device) used to perform the calibration
 CALPRTY	calibration party	all	varchar	Who performed the calibration
-CALRES	calibration result	all	varchar TBD	Result of the calibration
+CALRES	calibration result	all	varchar	Result of the calibration
+CALCERT	calibration certificate	all	varchar	Certificate number of calibration certificate
 FREQ	sampling frequency	all	numeric	time period (s) between successive measurements from sensor
 IBS	ice bulb status	humidity	int (fk)	NA
 LDCL	sensor location - distance from center line	wind speed	numeric	NA
@@ -49,3 +52,8 @@ STREAT	sample treatment	all	int (fk)	treatment of the sample prior to analysis
 TSONDE	telemetry_sonde	sonde	int (fk)	NA
 WGHT	weight	sonde	numeric	NA
 STIME	sample times	all	timestamp	time of the samples used to calculate statistics
+INSTDATE	installation date	all	timestamp	Date when sensor was installed
+MNTDATE	maintenance date	all	timestamp	Date when maintenance performed (use MTNCE to summarise activites undertaken)
+MNTMETH	maintenance	all	varchar	Summary of maintenance performed
+MNTPRTY	maintenance party	all	varchar	Who performed the maintenance
+MNTINT	maintenance interval	all	numeric	Maximum number of months recommended between maintenance activities

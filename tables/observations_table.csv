@@ -14,12 +14,13 @@ z_coordinate	1	numeric		z coordinate of observation
 z_coordinate_type	1	int (fk)	z_coordinate_type	Type of z coordinate
 observation_height_above_station_surface	1	numeric		Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
 observed_variable	1	int (fk)	observed_variable	The variable being observed / measured
-secondary_variable	0 or 1	int (fk)	secondary_variable	Secondary variable required to understand observation, e.g. chemical constituent
+secondary_variable	1	int (fk)	secondary_variable	Secondary variable required to understand observation, e.g. chemical constituent. Set to NA / missing if not applicable.
 observation_value	1	numeric		The observed value
 value_significance	1	int (fk)	observation_value_significance	e.g. min, max, mean, sum
-secondary_value	0 or 1	int (fk)	secondary_variable	value for the secondary variable.
+secondary_value	1	int (fk)	secondary_variable	value for the secondary variable. Set to NA or missing if not applicable.
 units	1	int (fk)	units	Units for the observed variable
 code_table	1	int (fk)	observation_code_table	Encode / decode table for variable (if encoded)
+conversion_flag	1	int (fk)	conversion_flag	Flag indicating whether original, converted or both values are available.
 location_method	1	int (fk)	location_method	Method of determining location, 
 location_precision	1	numeric		Precision to which location is reported (radius km)
 z_coordinate_method	1	int (fk)	z_coordinate_method	Method of determining z coordinate
@@ -29,7 +30,8 @@ bbox_min_latitude	1	numeric		Bounding box for observation, valid range given by 
 bbox_max_latitude	1	numeric		Bounding box for observation, valid range given by CRS
 spatial_representativeness	1	int (fk)	spatial_representativeness	Spatial representativeness of observation
 quality_flag	1	int (fk)	quality_flag	Quality flag for observation
-quality_bitmap	1	byte		TBD
+qc_passed	1	int		Number of quality control checks passed (see qc_table for more information)
+qc_failed	1	int		Number of quality control checks failed (see qc_table for more information)
 numerical_precision	1	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
 standard_uncertainty	1	numeric		Standard uncertainty in reported value
 method_of_estimating_standard_uncertainty	1	int (fk)	method_of_estimating_uncertainty	Method of estimating the standard uncertainty
@@ -42,7 +44,8 @@ original_value	1	numeric 		Original value as reported or recorded in log book.
 conversion_method	1	int (fk)	conversion_method	Link to table describing conversion process
 processing_code	0+	int[] (fk)	processing_code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
 processing_level	1	int (fk)	processing_level	Level of processing applied to observation.
-adjustment_id	1	int (fk)	adjustment	Adjustment applied to observation reported in observation value (observation_value = original + adjustment)
+adjustment_id	1	int (fk)	adjustment	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 traceability	1	int (fk)	traceability	Whether observation can be traced to international standards.
-advanced_qc	1	flag	NA	Whether there are advanced qc data available for this observation in qc_records table
-advanced_uncertainty	1	flag	NA	Whether there are advanced uncertainty estimates for this observation in the uncertainty_budget table
+advanced_qc	1	flag	NA	Flag indicating whether advanced qc data are available
+advanced_uncertainty	1	flag	NA	Flag indicating whether advanced uncertainty estimates are available
+advanced_homogenisation	1	flag	NA	Flag indicating whether advanced homogenisation information is available

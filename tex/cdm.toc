@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.6}Sensor configuration}{38}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Quality control flags}{49}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Uncertainty budget}{49}{subsection.3.8}
-\contentsline {section}{\numberline {4}Common Data Model governance and future development}{49}{section.4}
+\contentsline {section}{\numberline {4}Governance of the Common Data Model}{49}{section.4}
 \contentsline {section}{\numberline {5}Acknowledgements}{50}{section.5}
 \contentsline {section}{\numberline {6}References}{50}{section.6}
 \contentsline {section}{\numberline {7}Appendix}{50}{section.7}

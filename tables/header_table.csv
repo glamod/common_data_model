@@ -14,8 +14,6 @@ platform_sub_type	1	int (fk)	platform_sub_type	Sub-type for platform, e.g. 3m di
 primary_station_id	1	varchar (fk)	station_configuration	Primary station identifier, e.g. WIGOS ID
 station_record_number	1	int (fk)	station_configuration	Together with primary_station_id this forms a link to the station configuration table.
 primary_station_id_scheme	1	int (fk)	id_scheme	Scheme used for station ID
-secondary_station_id	0+	varchar []		Alternate (e.g. local) ID for station.
-secondary_station_id_scheme	0+	int[] (fk)	id_scheme	Alternate ID Scheme, e.g. Network ID.
 longitude	1	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
 latitude	1	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
 location_accuracy	1	numeric		Accuracy to which station location recorded (radius in km)
