@@ -2,7 +2,7 @@
 # Source: NA
 element_name	kind	external_table	description
 profile_id	varchar (fk)	profile_configuration	Link to profile for which this entry corresponds
-kind	int (fk)	TBD	Enumerated data type (numeric, int, etc)
+kind	int (fk)	kind	Enumerated data type (numeric, int, etc)
 field	varchar (fk)	profile_configuration_fields	Field that this entry corresponds to
-value			Kind depends on field and kind
+value			Kind inherited from field
 comments	varchar	NA	Any additional comments.

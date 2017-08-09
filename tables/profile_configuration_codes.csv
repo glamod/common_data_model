@@ -1,14 +1,14 @@
 # Description:						
 # Source: NA
 field_id	field_name	code_value	abbreviation	description	start_date	end_date
-0	include descent	NA	NA	NA	NA	NA
+0	include descent	0	NA	Descent excluded	NA	NA
+0	include descent	1	NA	Descent included	NA	NA
 1	processing code	0	cc	Calibration correction (of humidity sensors)	NA	NA
 1	processing code	1	HRC	Humidity radiation correction	NA	NA
 1	processing code	2	or	Outlier removal (remove temperature spikes)	NA	NA
 1	processing code	3	pGPS	Combination of pressure and GPS	NA	NA
 1	processing code	4	TL	Time-lag correction	NA	NA
 1	processing code	5	TRC	Temperature radiation correction	NA	NA
-2	unwinder type		NA	STRING	NA	NA
 B002003	type of measuring equipment used	0 - 15	NA	See BUFR table 0 02 003	NA	NA
 B002011	radiosonde sounding system	0 - 255	NA	See BUFR table 0 02 011	NA	NA
 B002013	solar and infrared radiation correction	0 - 15	NA	See BUFR table 0 02 013	NA	NA

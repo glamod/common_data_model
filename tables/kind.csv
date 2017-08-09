@@ -1,0 +1,7 @@
+# Description:
+# Source: NA
+kind	description
+0	int
+1	numeric
+2	varchar
+3	timestamp with timezone

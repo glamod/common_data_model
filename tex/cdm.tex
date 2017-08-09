@@ -245,8 +245,7 @@ Within the tables in the following sections the following syntax has been used:\
 \item numeric: \tabto{3 cm} Any numeric value (integer or floating point).
 \item int: \tabto{3 cm} An integer value.
 \item varchar: \tabto{3 cm} A variable length character string.
-\item timestamp: \tabto{3 cm} A timestamp, e.g. "2017-07-01 00:00:0.0+00".
-\item byte: \tabto{3 cm} A single byte of data used to store e.g. a bit flag array. 
+\item timestamp with time zone: \tabto{3 cm} A timestamp, e.g. "2017-07-01 00:00:0.0+00".
 \item {[]}:\tabto{3 cm} An array of the indicated type.
 \item (fk) \tabto{3 cm} The indicated value is also a foreign key linking to another table (e.g. decode table for encoded data).
 \item (pk) \tabto{3 cm} The indicated elements marked as (pk) within a table form the unique ID for the record.
@@ -268,6 +267,7 @@ Mandatory elements are indicated by a 1 (or 1+) in the occurrence column. Mandat
 
 \input {station_configuration_wrapper}
 \input {station_configuration_optional}
+\input {kind}
 \input {station_configuration_fields}
 \input {station_configuration_codes}
 
@@ -293,6 +293,9 @@ A single QC flag is provided in the observations table for the observed value. A
 \subsection {Uncertainty budget}
 A single standard uncertainty value is provided for each observed value in the observations table. Additional values can be provided using the uncertainty\_table and by setting the advanced\_uncertainty to true in the observations\_table.\\
 \input {uncertainty_table}
+
+\subsection {Homogenisation data}
+\input {homogenisation_table}
 
 % \section {Examples}
 
@@ -349,6 +352,7 @@ The initial working group and contact details are listed in Table XX.
 %\input {city}
 \input {communication_method}
 \input {crs}
+\input {data_present}
 \input {data_policy_licence}
 \input {duplicate_status}
 \input {events_at_station}
@@ -377,6 +381,7 @@ The initial working group and contact details are listed in Table XX.
 \input {report_processing_codes}
 \input {report_processing_level}
 \input {report_type}
+\input {role}
 \input {sampling_strategy}
 \input {sea_level_datum}
 \input {secondary_variable}

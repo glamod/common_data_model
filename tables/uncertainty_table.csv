@@ -4,5 +4,6 @@ element_name	kind	external_table	description
 report_id	int (fk)	observations_table	Link to report this entry is for
 observation_id	int (fk)	observations_table	Link to observation this entry is for
 uncertainty_type	int (fk)	uncertainty_type	The type of uncertainty described by this entry
+uncertainty_method	int (fk)	uncertainty_method	Method used to estimate this uncertainty
 uncertainty_value	numeric	NA	Expected error standard deviation due to specified uncerainty source
 uncertainty_units	int (fk)	units	The units used to report the uncertainty. This may be different to the reporting units (e.g. \%)

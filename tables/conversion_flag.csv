@@ -1,5 +1,5 @@
 # Description:
-# Source:
+# Source: NA
 conversion_flag	description
 0	Both original (non SI) and converted (SI) values available, see conversion_method for details.
 1	Only original value in non-SI units available, no conversion has been performed. See original_value field.

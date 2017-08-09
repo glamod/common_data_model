@@ -46,6 +46,6 @@ processing_code	0+	int[] (fk)	processing_code	e.g. TRC (temperature radiation co
 processing_level	1	int (fk)	processing_level	Level of processing applied to observation.
 adjustment_id	1	int (fk)	adjustment	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 traceability	1	int (fk)	traceability	Whether observation can be traced to international standards.
-advanced_qc	1	flag	NA	Flag indicating whether advanced qc data are available
-advanced_uncertainty	1	flag	NA	Flag indicating whether advanced uncertainty estimates are available
-advanced_homogenisation	1	flag	NA	Flag indicating whether advanced homogenisation information is available
+advanced_qc	1	int (fk)	data_present	Flag indicating whether advanced qc data are available
+advanced_uncertainty	1	 (fk)flag	data_present	Flag indicating whether advanced uncertainty estimates are available
+advanced_homogenisation	1	 (fk)flag	data_present	Flag indicating whether advanced homogenisation information is available
