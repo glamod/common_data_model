@@ -1,6 +1,6 @@
 # Description: ID Scheme in use of ID element
 # Source: NA
-id_scheme	description
+scheme	description
 0	WIGOS ID
 1	GRUAN ID
 2	IMO Number

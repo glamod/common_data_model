@@ -9,14 +9,14 @@
             \caption{sampling\_strategy (WIGOS 6-03)}
             \label{tab:DataTableSamplingstrategy}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{sampling\_strategy}}} & 
-            \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{name}}} & 
-            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
+            \hline\hline             \multicolumn{1} { V{1.400000 in}} { \textbf{\seqsplit{strategy}}} & 
+            \multicolumn{1} { V{1.400000 in}} { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{3}{c}{Table \thetable\ sampling\_strategy (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{sampling\_strategy}}} & 
-            \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{name}}} & 
-            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
+            \hline\hline             \multicolumn{1} {V{1.400000 in} } { \textbf{\seqsplit{strategy}}} & 
+            \multicolumn{1} {V{1.400000 in} } { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{3}{r}{{Continued on next page}} \\
             \endfoot
@@ -30,19 +30,19 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/sampling_strategy/.style={
+    columns/strategy/.style={
             string type, 
-            column type= V{1.900000 in}, 
+            column type= V{1.400000 in}, 
             string replace*={_}{\_}
         },
     columns/name/.style={
             string type, 
-            column type= V{1.900000 in}, 
+            column type= V{1.400000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
             string type, 
             string replace*={_}{\_},
-            column type = V{3.000000 in}
+            column type = V{4.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/sampling_strategy.csv}

@@ -1,6 +1,6 @@
 # Description: Method by which station reports its observations
 # Source: Various sources (WMO47, WIGOS, BUFR)
-communication_method	description
+method	description
 0	Cellular (unspecified)
 1	Meteosat DCP
 2	Iridium (unspecified)

@@ -1,8 +1,8 @@
 # Description:
 # Source: NA
 element_name	kind	external_table	description
-profile_id	varchar (fk)	profile_configuration	Link to profile for which this entry corresponds
-kind	int (fk)	kind	Enumerated data type (numeric, int, etc)
-field	varchar (fk)	profile_configuration_fields	Field that this entry corresponds to
+profile_id	varchar	profile_configuration:profile_id	Link to profile for which this entry corresponds
+kind	int	kind:kind	Enumerated data type (numeric, int, etc)
+field	varchar	profile_configuration_fields:field_id	Field that this entry corresponds to
 value			Kind inherited from field
 comments	varchar	NA	Any additional comments.

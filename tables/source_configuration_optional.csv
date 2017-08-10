@@ -1,8 +1,8 @@
 # Description:
 # Source: NA
 element_name	kind	external_table	description
-source_id	varchar (fk)	source_configuration	Link to source for which this entry corresponds
-kind	int (fk)	kind	Enumerated data type (numeric, int, etc)
-field	varchar (fk)	source_configuration_fields	Field that this entry corresponds to
+source_id	varchar (fk)	source_configuration:source_configuration_id	Link to source for which this entry corresponds
+kind	int	kind:kind	Enumerated data type (numeric, int, etc)
+field	varchar	source_configuration_fields:field_id	Field that this entry corresponds to
 value			Kind inherited from field
 comments	varchar	NA	Any additional comments.

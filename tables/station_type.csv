@@ -1,6 +1,6 @@
 # Description: simplified description of station type
 # Source: WIGOS 3-04
-station_type	description
+type	description
 1	Land station
 2	Sea station
 3	Aircraft

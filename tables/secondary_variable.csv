@@ -1,6 +1,6 @@
 # Description:				
 # Source: NA
-secondary_variable	variable_name	code_value	symbol	description
+variable	variable_name	code_value	symbol	description
 0	atmospheric constituent	0	BrO	Bromine monoxide
 0	atmospheric constituent	1	C10H16	3-Carene
 0	atmospheric constituent	2	C10H16 	Alpha pinene

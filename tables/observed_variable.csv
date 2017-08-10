@@ -1,6 +1,6 @@
 # Description:						
 # Source: NA						
-observed_variable	parameter_group	domain	sub_domain	name	units	description
+variable	parameter_group	domain	sub_domain	name	units	description
 0	aerosols			aerosol absorption optical depth	Dimensionless	Vertical column integral of spectral aerosol absorption coefficient: AAOD = exp(-K. Dz) where K is the absorption coefficient [km-1] and Dz the vertical path [km]  
 1	aerosols			aerosol column burden	g m-2	2D field of the column burden of condensed particles in the atmosphere 
 2	aerosols			aerosol dust concentration	g kg-1	3-D field of concentration of dust or sand in the atmosphere

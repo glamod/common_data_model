@@ -1,10 +1,10 @@
 # Description: table containing information on individual profiles				
 # Source: NA
 element_name	occurrence	kind	external_table	description
-profile_id	1	varchar	NA	Unique ID for this profile entry
-profile_type	1	int (fk)	profile_type	Type of profile (e.g. atmospheric or oceanic)
-standard_time	1	int (fk)	standard_time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
+profile_id	1	varchar (pk)	NA	Unique ID for this profile entry
+profile_type	1	int	profile_type:type	Type of profile (e.g. atmospheric or oceanic)
+standard_time	1	int	standard_time:time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
 actual_time	1	timestamp		Actual report / launch time
 profile_number	1	numeric		e.g. Balloon Number
 comments	1	varchar		Any additional comments / footnotes
-	0+	NA		See profile_configuration_fields for valid fields and types.
+optional_data	1	int	data_present:flag	Flag indicating whether there is additional metadata available

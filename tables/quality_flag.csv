@@ -1,6 +1,6 @@
 # Description: Quality flag for observations
 # Source: BUFR 0 33 020
-quality_flag	description
+flag	description
 0	Good
 1	Inconsistent
 2	Doubtful

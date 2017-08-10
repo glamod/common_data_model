@@ -1,4 +1,7 @@
 # Description: Table containing definition of conversions between units used
 # Source: NA
-conversion_method	description	implementation	reference
-NA	Farenheit to degrees Celsius	T_Celsius = (T_Farenheit - 32) / 1.8	NA
+element_name	kind	description
+method	int	unique ID for entry
+description	varchar	text description of conversion method
+implementation	varchar	details of implementation
+reference	varchar	reference / doi of document giving more details on conversion method

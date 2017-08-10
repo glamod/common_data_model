@@ -4,7 +4,7 @@ element_name	occurrence	kind	external_table	description
 contact_id	1	varchar (pk)	NA	primary key
 title	1	varchar	NA	Title of contact (e.g. Mr, Mrs, Dr. etc)
 name	1	varchar	NA	Name of contact
-organisation	1	varchar (fk)	organisation	Link to organisation that contact is associated with
+organisation	1	varchar 	organisation:organisation_id	Link to organisation that contact is associated with
 telephone	1	varchar	NA	telephone number for contacr
 email	1	varchar	NA	email address for contact
 url	1	varchar	NA	website for contact

@@ -1,6 +1,6 @@
 # Description: Frequency at which observations are typically made by this station
 # Source: WMO47 - 0602
-observing_frequency	abbreviatione	description
+frequency	abbreviatione	description
 0	opd	One observation per day (24 hour intervals).
 1	tpd	Two observations per day (12 hour intervals).
 2	fpd	Four observations per day (6 hour intervals).

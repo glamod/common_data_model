@@ -1,34 +1,34 @@
 # Description:				
 # Source: NA
 element_name	occurrence	type	external_table	description
-station_primary_id	1	varchar (pk)		Primary (e.g. WMO) ID for station
-station_primary_id_scheme	1	int (fk)	id_scheme	Scheme used for primary ID
-station_record_number	1	int (pk)		Record number for this station entry
-station_secondary_id	0+	varchar[]		Secondary (e.g. local) ID for station
-station_secondary_id_scheme	0+	int[] (fk)	id_scheme	Scheme used for secondary ID
+primary_id	1	varchar (pk)		Primary (e.g. WMO) ID for station
+primary_id_scheme	1	int	id_scheme:scheme	Scheme used for primary ID
+record_number	1	int (pk)		Record number for this station entry
+secondary_id	0+	varchar[]		Secondary (e.g. local) ID for station
+secondary_id_scheme	0+	int[]	id_scheme:scheme	Scheme used for secondary ID
 station_name	1	varchar		Name of station (e.g. Tateno)
 station_abbreviation	1	varchar		Abbreviation of station name (e.g. TAT)
 alternative_name	0+	varchar[]		NA
-station_crs	1	int (fk)	crs	coordinate reference system used to report stations location
-station_longitude	1	numeric		Report position for station if stationary or NULL if mobile. If more than one estimate record best here and additional values using optional fields.
-station_latitude	1	numeric		Report position for station if stationary or NULL if mobile
+station_crs	1	int	crs:crs	coordinate reference system used to report stations location
+longitude	1	numeric		Report position for station if stationary or NULL if mobile. If more than one estimate record best here and additional values using optional fields.
+latitude	1	numeric	NA	Report position for station if stationary or NULL if mobile
 local_gravity	1	numeric	NA	Local gravity at station location (units ms-2)
 start_date	1	timestamp		Date that the station first started reporting in this configuration
 end_date	1	timestamp		Last data the station reported in this configuration
-station_type	1	int (fk)	station_type	Type of reporting station
-platform_type	1	int (fk)	platform_type	Generic type of observing platform
-platform_sub_type	1	int (fk)	platform_sub_type	Specific type of observing platform
-operating_institute	1	int (fk)	organisation	Institute operating the station (e.g. National Oceanography Centre)
-operating_territory	1	int (fk)	sub_region	Sub-region where station is located or country of registry for mobile station
+station_type	1	int	station_type:type	Type of reporting station
+platform_type	1	int	platform_type:type	Generic type of observing platform
+platform_sub_type	1	int	platform_sub_type:type	Specific type of observing platform
+operating_institute	1	int	organisation:organisation	Institute operating the station (e.g. National Oceanography Centre)
+operating_territory	1	int	sub_region:sub_region	Sub-region where station is located or country of registry for mobile station
 city	1	varchar	NA	Nearest city / town to station location
-contact	1+	varchar[] (fk)	contact	Contact for station
-role	1+	int[] (fk)	role	Role of contact
-observing_frequency	1	int (fk)	observing_frequency	Typical frequency of observations for this station (reports per day). If irregular use reporting_time.
+contact	1+	varchar[]	contact:contact_id	Contact for station
+role	1+	int[]	role:role	Role of contact
+observing_frequency	1	int	observing_frequency:frequency	Typical frequency of observations for this station (reports per day). If irregular use reporting_time.
 reporting_time	1+	int[]	NA	Reporting hour(s) if non-standard / irregular hours used
-telecommunication_method	1+	int[] (fk)	communication_method	Method used to report observations
-station_automation	1	int (fk)	automation_status	Whether station is automated, manual or mixed
-measuring_system_model	1+	int[] (fk)	measuring_system_model	Station / AWS model type
+telecommunication_method	1+	int[]	communication_method:method	Method used to report observations
+station_automation	1	int	automation_status:automation	Whether station is automated, manual or mixed
+measuring_system_model	1+	varchar[]	measuring_system_model	Station / AWS model type
 measuring_system_id	1+	varchar[]		ID or serial number of measuring system
-observed_variables	1+	int[] (fk)	observed_variable	array indicating which variables are observed by this station
+observed_variables	1+	int[]	observed_variable:variable	array indicating which variables are observed by this station
 comment	1	varchar		Any other comments / footnotes
-	0+	NA		See station_configuration_fields for valid optional fields and types
+optional_data	1	int	data_present:flag	Flag indicating availability of additional data

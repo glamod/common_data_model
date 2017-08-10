@@ -1,6 +1,6 @@
 # Description: Processing level applied to observation
 # Source: WIGOS 7-06
-processing_level	name	description
+level	name	description
 0	Unknown	NA
 1	Raw	NA
 2	Level 0	Analogue/digital electric signals

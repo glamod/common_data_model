@@ -9,12 +9,12 @@
             \caption{time\_reference (WIGOS: 7-10)}
             \label{tab:DataTableTimereference}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{3.800000 in}} { \textbf{\seqsplit{time\_reference}}} & 
-            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
+            \hline\hline             \multicolumn{1} { V{2.800000 in}} { \textbf{\seqsplit{reference}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{2}{c}{Table \thetable\ time\_reference (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{3.800000 in} } { \textbf{\seqsplit{time\_reference}}} & 
-            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
+            \hline\hline             \multicolumn{1} {V{2.800000 in} } { \textbf{\seqsplit{reference}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{2}{r}{{Continued on next page}} \\
             \endfoot
@@ -28,14 +28,14 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/time_reference/.style={
+    columns/reference/.style={
             string type, 
-            column type= V{3.800000 in}, 
+            column type= V{2.800000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
             string type, 
             string replace*={_}{\_},
-            column type = V{3.000000 in}
+            column type = V{4.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/time_reference.csv}

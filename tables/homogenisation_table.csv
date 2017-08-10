@@ -1,9 +1,8 @@
 # Description:
 # Source: NA
 element_name	kind	external_table	description
-report_id	varchar (fk)	observations_table	Link to report this entry is for
-observation_id	varchar (fk)	observations_table	Link to observation this entry is for
-homogenisation_method	int (fk)	homogenisation_method	Method used to homogenise data
+observation_id	varchar	observations_table:observation_id	Link to observation this entry is for
+homogenisation_method	int	homogenisation_method:method	Method used to homogenise data
 homogenisation_adjustment	numeric	NA	Value applied to homogenise data (homogenised_value = original (+-/*) homogenisation_adjustment)
-homogenisation_operator	int (fk)	homogenisation_operator	Operator (+-/*) used to apply adjustment
-homogenisation_order	int	NA	Order in which the adjustments are applied
+homogenisation_operator	int	homogenisation_operator:operator	Operator (+-/*) used to apply adjustment
+homogenisation_order	int	NA	Order in which the adjustments are applied. Set to NA or missing if not applicable
