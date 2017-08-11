@@ -1,0 +1,7 @@
+# Description: Sub-region / country where observation was made, or recruiting country for mobile platforms			
+# Source: NA
+element_name	kind	external_table	description
+sub_region	int(pk)	NA	primary key
+type	varchar	NA	tpye of sub region, e.g. country, regional sea etc
+code	varchar	NA	abbreviation or character code
+name	varchar	NA	decoded value

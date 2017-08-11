@@ -1,0 +1,5 @@
+# Description: base time to which times referenced
+# Source: WIGOS: 7-10
+element_name	kind	external_table	description
+reference	int(pk)	NA	primary key, coded value
+description	varchar	NA	decoded base time to which times referenced

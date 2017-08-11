@@ -1,0 +1,6 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+code	int (pk)	NA	primary key for table
+abbreviation	varchar	NA	abbreviation for processing code
+description	varchar	NA	description / meaning of processing code

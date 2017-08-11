@@ -1,0 +1,6 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+status	int(pk)	NA	primary key for table
+abbreviation	varchar	NA	abbreviation used to indicate product status
+description	varchar	NA	Meaning of product status

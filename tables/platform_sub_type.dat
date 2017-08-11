@@ -1,0 +1,106 @@
+sub_type	platform_type	abbreviation	description
+0	2	BA	Barge
+1	2	BC	Bulk Carrier
+2	2	CA	 Cable ship
+3	2	CG	Coast Guard Ship
+4	2	CS	Container Ship
+5	2	DR	Dredger
+6	2	FE	Passenger ferries
+7	2	FP	Floating production and storage units
+8	2	FV	Other Fishing Vessel
+9	2	GC	General Cargo
+10	2	GT	 Gas Tanker
+11	2	IC	Icebreaking vessel
+12	2	IF	Inshore Fishing Vessel
+13	2	LC	 Livestock carrier
+14	2	LT	Liquid Tanker
+15	2	LV	Light Vessel
+16	2	MI	Mobile installation including mobile offshore drill ships, jack-up rigs and semi-submersibles
+17	2	MS	 Military Ship
+18	2	OT	 Other
+19	2	MW	Ocean Weather Ship
+20	2	PI	Pipe layer
+21	2	PS	 Passenger ships and cruise liners
+22	2	RF	Ro/Ro Ferry
+23	2	RR	Ro/Ro Cargo
+24	2	RS	 Refrigerated cargo ships including banana ships
+25	2	RV	Research Vessel
+26	2	SA	Large sailing vessels
+27	2	SV	Support Vessel
+28	2	TR	  Trawler
+29	2	TU	 Tug
+30	2	VC	 Vehicle carriers
+31	2	YA	Yacht / Pleasure Craft
+32	2	BA	Barges, including crane barges and tank barges.
+33	2	BC	Bulk Carriers, including Ore/Bulk/Oil (OBO) carriers and Ore/Oil carriers.
+34	2	CA	Cable ships.
+35	2	CG	Coastguard cutters, patrol ships and launches.
+36	2	CS	Container ships, including open and closed container ships and refrigerated container ships.
+37	2	DR	Dredgers including bucket, hopper, grab and suction dredgers.
+38	2	FE	Passenger ferries (carrying passengers only).
+39	2	FP	Floating Production and Storage Units.
+40	2	FV	Fishing Vessels including purse seiners, long liners etc., but excluding trawlers.
+41	2	GC	General Cargo ships with one or more holds.
+42	2	GT	Liquefied gas carriers/tankers including LNG and LPG carriers.
+43	2	IC	Icebreaking vessels (dedicated vessel). If the vessel fits in another category and is ice strengthened
+44	2	LC	Livestock Carrier (dedicated ship for the carriage of livestock).
+45	2	LT	Liquid tankers including oil product tankers, chemical tankers and crude oil tankers (including VLCC's and ULCC's).
+46	2	LV	Light vessels.
+47	2	MI	Mobile installations, including mobile offshore drill ships, jack-up rigs, semi-submersibles.
+48	2	MS	Military ships.
+49	2	OW	Ocean Weather Ships (dedicated weather ship).
+50	2	PI	Pipe Layers.
+51	2	PS	Passenger ships and Cruise liners.
+52	2	RF	Ro Ro ferries (carrying passengers and laden vehicles).
+53	2	RR	Ro Ro cargo ships for carriage of road and/or rail vehicles and cargo, including containerised cargo.
+54	2	RS	Refrigerated cargo ships including banana ships.
+55	2	RV	Research Vessels, including oceanographic, meteorological and hydrographic research ships and seismographic research ships.
+56	2	SA	Large sailing vessels, including sail training vessels.
+57	2	SV	Support vessels including offshore support vessels, offshore supply vessels, stand-by vessels, pipe carriers, anchor handling vessels, buoy tenders (including coastguard vessels engaged solely on buoy tending duties), diving support vessels, etc.
+58	2	TR	Trawler fishing vessels.
+59	2	TU	Tugs, including fire-fighting tugs, salvage tugs, pusher tugs, pilot vessels, tenders etc.
+60	2	VC	Vehicle Carriers: dedicated multi deck ships for the carriage of new unladen road vehicles.
+61	2	YA	Yachts and pleasure craft.
+62	2	OT	Other (specify in footnote).
+63	0		Synoptic network
+64	7		Local Network
+65	2		Ocean Weather Ship (on station)
+66	2		Ocean Weather Ship (off station)
+67	43		Other
+68	43		Coastal-Marine Automated Network (C-MAN) (NDBC operated)
+69	5		Unspecified drifting buoy
+70	5		Standard Lagrangian drifter (Global Drifter Programme)
+71	5		Standard FGGE type drifting buoy (non-Lagrangian meteorological drifting buoy)
+72	5		Wind measuring FGGE type drifting buoy (non-Lagrangian meteorological drifting buoy)
+73	6		Ice drifter
+74	5		SVPG Standard Lagrangian drifter with GPS
+75	5		SVP-HR drifter with high-resolution temperature or thermistor string
+76	37		Unspecified subsurface float
+77	36		SOFAR
+78	36		ALACE
+79	36		MARVOR
+80	36		RAFOS
+81	36		PROVOR
+82	36		SOLO
+83	36		APEX
+84	4		Unspecified moored buoy
+85	4		Nomad
+86	4		3-metre discus
+87	4		10-12-metre discus
+88	4		ODAS 30 series
+89	4		ATLAS (e.g. TAO area)
+90	4		TRITON buoy
+91	4		FLEX mooring (e.g. TIP area)
+92	4		Omnidirectional waverider
+93	4		Directional waverider
+94	36		Subsurface ARGO float
+95	36		PALACE
+96	36		NEMO
+97	36		NINJA
+98	6		Ice buoy/float (POPS or ITP)
+99	4		Mooring oceanographic
+100	4		Mooring meteorological
+101	4		Mooring multidisciplinary (OceanSITES)
+102	4		Mooring tide gauge or tsunami buoy
+103	6		Ice beacon
+104	6		Ice mass balance buoy

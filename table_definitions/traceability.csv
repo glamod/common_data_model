@@ -1,0 +1,5 @@
+# Description: traceability of measurement
+# Source: WIGOS 8-05
+element_name	kind	external_table	description
+traceability	int(pk)	NA	primary key, coded value
+description	varchar	NA	definition of traceability of measurement

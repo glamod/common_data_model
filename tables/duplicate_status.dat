@@ -1,0 +1,5 @@
+status	description
+0	Unique observation, no known duplicates
+1	Best duplicate
+2	Worst duplicate
+3	Unchecked

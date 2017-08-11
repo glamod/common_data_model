@@ -1,0 +1,5 @@
+# Description: Frequency at which observations are typically made by this station
+# Source: WMO47 - 0602
+element_name	kind	external_table	description
+frequency	int(pk)	NA	primary key for table
+description	varchar	NA	decoded value / description of reporting frequency (e.g. once per day)

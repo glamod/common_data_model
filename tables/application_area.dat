@@ -1,0 +1,22 @@
+application_area	description
+1	Global numerical weather prediction (GNWP)
+2	High-resolution numerical weather prediction (HRNWP)
+3	Nowcasting and very short range forecasting (NVSRF)
+4	Seasonal and inter-annual forecasting (SIAF)
+5	General weather forecasting
+6	Aeronautical meteorology
+7	Ocean applications
+8	Agricultural meteorology
+9	Hydrology 
+10	Climate monitoring (as undertaken through the Global Climate Observing System, GCOS)
+11	Climate applications
+12	Space weather
+13	Cryosphere applications
+14	Energy sector
+15	Transportation sector
+16	Health sector
+17	Terrestrial ecology
+18	Operational air quality forecasting
+19	Atmospheric composition forecasting
+20	Atmospheric composition monitoring and analysis
+21	Large urban complexes

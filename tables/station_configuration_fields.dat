@@ -1,0 +1,32 @@
+# Description:
+# Source: NA
+field_id	field_name	kind	description
+0	AWS Entry and Display Software	int (fk)	See station_configuration_codes
+1	AWS Entry and Display Software Version	int (fk)	See station_configuration_codes
+2	AWS Model	int (fk)	See station_configuration_codes
+3	AWS Model Version	int (fk)	See station_configuration_codes
+4	AWS Software	int (fk)	See station_configuration_codes
+5	AWS Software version	int (fk)	See station_configuration_codes
+6	Cargo height	numeric	Height of cargo above deck (m)
+7	Distance of bridge from bow	numeric	(m)
+8	Draught	numeric	(m)
+9	Drogue type	int (fk)	See station_configuration_codes
+10	Freeboard	numeric	NA
+11	Lagrangian drifter drogue status	int (fk)	See station_configuration_codes
+12	Length overall of the ship, ignoring bulbous bow	numeric	NA
+13	LogBook software and version	int (fk)	See station_configuration_codes
+14	Maximum operating speed on normal service	numeric	NA
+15	Moulded breadth	numeric	NA
+16	Other instruments	int (fk)	See station_configuration_codes
+17	Station status	int (fk)	See station_configuration_codes
+18	Type of meteorological reporting ship	int (fk)	See station_configuration_codes
+19	Surface cover	int (fk)	See station_configuration_codes
+20	Surface cover scheme	int (fk)	See station_configuration_codes
+21	Topography	int (fk)	See station_configuration_codes
+22	Topography scheme	int (fk)	See station_configuration_codes
+23	Soil type	int (fk)	See station_configuration_codes
+24	Land use	int (fk)	See station_configuration_codes
+25	Alternate longitude	numeric	NA
+26	Alternate latitude	numeric	NA
+27	Distance from road	numeric	Distance from nearest road (in km)
+28	Distance from water body	numeric	Distance from nearest water body (in km)

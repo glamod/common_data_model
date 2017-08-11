@@ -1,0 +1,5 @@
+# Description: Method by which station reports its observations
+# Source: Various sources (WMO47, WIGOS, BUFR)
+elemet_name	kind	external_table	description
+method	int(pk)	NA	Primary key / unique ID for entry
+description	varchar	NA	Decoded value / text description of communication method

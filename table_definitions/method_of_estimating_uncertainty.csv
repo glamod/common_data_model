@@ -1,0 +1,6 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+method	int(pk)	NA	primary key for table
+description	varchar	NA	decoded value / description of how the uncertainty has been determined
+reference	varchar	NA	Reference or DOI describing method

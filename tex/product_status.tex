@@ -9,20 +9,22 @@
             \caption{product\_status (NA)}
             \label{tab:DataTableProductstatus}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.400000 in}} { \textbf{\seqsplit{status}}} & 
-            \multicolumn{1} { V{1.400000 in}} { \textbf{\seqsplit{description}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{extended\_description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{3}{c}{Table \thetable\ product\_status (cont.)} \\
+            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ product\_status (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.400000 in} } { \textbf{\seqsplit{status}}} & 
-            \multicolumn{1} {V{1.400000 in} } { \textbf{\seqsplit{description}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{extended\_description}}} \\ \hline\hline \endhead
+            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{3}{r}{{Continued on next page}} \\
+            \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{3}{r}{{End of table}} \\ 
+            \multicolumn{4}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -30,17 +32,22 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/status/.style={
+    columns/element_name/.style={
             string type, 
-            column type= V{1.400000 in}, 
+            column type= n{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/kind/.style={
+            string type, 
+            column type= V{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/external_table/.style={
+            string type, 
+            column type= n{0.933333 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
-            string type, 
-            column type= V{1.400000 in}, 
-            string replace*={_}{\_}
-        },
-    columns/extended_description/.style={
             string type, 
             string replace*={_}{\_},
             column type = V{4.000000 in}

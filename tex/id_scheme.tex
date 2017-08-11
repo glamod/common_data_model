@@ -9,18 +9,22 @@
             \caption{id\_scheme (NA)}
             \label{tab:DataTableIdscheme}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{2.800000 in}} { \textbf{\seqsplit{scheme}}} & 
+            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{2}{c}{Table \thetable\ id\_scheme (cont.)} \\
+            \multicolumn{4}{c}{Table \thetable\ id\_scheme (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{2.800000 in} } { \textbf{\seqsplit{scheme}}} & 
+            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{2}{r}{{Continued on next page}} \\
+            \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{2}{r}{{End of table}} \\ 
+            \multicolumn{4}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -28,9 +32,19 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/scheme/.style={
+    columns/element_name/.style={
             string type, 
-            column type= V{2.800000 in}, 
+            column type= n{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/kind/.style={
+            string type, 
+            column type= V{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/external_table/.style={
+            string type, 
+            column type= n{0.933333 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={

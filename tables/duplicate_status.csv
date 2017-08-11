@@ -1,7 +1,0 @@
-# Description: Duplicate status of the observation
-# Source: Simplified version of duplicate status flags from IMMA (ICOADS)
-status	description
-0	Unique observation, no known duplicates
-1	Best duplicate
-2	Worst duplicate
-3	Unchecked

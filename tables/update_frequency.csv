@@ -1,8 +1,0 @@
-# Description: Table defining frequencies at which data updated / reprocessed
-# Source: NA
-frequency	description
-0	Irregular
-1	Daily
-2	Weekly
-3	Monthly
-4	Annual

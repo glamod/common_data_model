@@ -1,0 +1,10 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+variable	int(pk)	NA	primary key for table
+parameter_group	varchar	NA	parameter group (e.g. temperature, pressure) that this variable belongs to
+domain	varchar	NA	Observation domain (atmospheric, oceanic etc) that this variable is typically reported for
+sub_domain	varchar	NA	Sub-domain (e.g. upper air, surface etc)
+name	varchar	NA	common name for variable
+units	varchar	NA	ASCII abbreviation of units
+description	varchar	NA	Description / definition of variable

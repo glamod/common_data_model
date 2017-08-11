@@ -1,5 +1,0 @@
-# Description: Datum used to define mean sea level
-# Source: BUFR 0 01 151
-datum	description
-0	Earth Gravitational Model 1996
-1	Baltic height system 1977

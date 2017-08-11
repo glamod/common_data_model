@@ -1,0 +1,3 @@
+element_name	kind	external_table	description
+level	int (pk)	NA	primary key for table
+description	varchar	NA	Meaning of product level

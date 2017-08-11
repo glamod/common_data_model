@@ -1,4 +1,3 @@
-\begin{landscape}
 \pgfplotstabletypeset[
     empty header,
     begin table=\begin{longtable},
@@ -10,24 +9,22 @@
             \caption{secondary\_variable (NA)}
             \label{tab:DataTableSecondaryvariable}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.125000 in}} { \textbf{\seqsplit{variable}}} & 
-            \multicolumn{1} { V{1.125000 in}} { \textbf{\seqsplit{variable\_name}}} & 
-            \multicolumn{1} { V{1.125000 in}} { \textbf{\seqsplit{code\_value}}} & 
-            \multicolumn{1} { V{1.125000 in}} { \textbf{\seqsplit{symbol}}} & 
+            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
-            \multicolumn{5}{c}{Table \thetable\ secondary\_variable (cont.)} \\
+            \multicolumn{4}{c}{Table \thetable\ secondary\_variable (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.125000 in} } { \textbf{\seqsplit{variable}}} & 
-            \multicolumn{1} {V{1.125000 in} } { \textbf{\seqsplit{variable\_name}}} & 
-            \multicolumn{1} {V{1.125000 in} } { \textbf{\seqsplit{code\_value}}} & 
-            \multicolumn{1} {V{1.125000 in} } { \textbf{\seqsplit{symbol}}} & 
+            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{external\_table}}} & 
             \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{5}{r}{{Continued on next page}} \\
+            \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{5}{r}{{End of table}} \\ 
+            \multicolumn{4}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -35,24 +32,19 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
-    columns/variable/.style={
+    columns/element_name/.style={
             string type, 
-            column type= V{1.125000 in}, 
+            column type= n{0.933333 in}, 
             string replace*={_}{\_}
         },
-    columns/variable_name/.style={
+    columns/kind/.style={
             string type, 
-            column type= V{1.125000 in}, 
+            column type= V{0.933333 in}, 
             string replace*={_}{\_}
         },
-    columns/code_value/.style={
+    columns/external_table/.style={
             string type, 
-            column type= V{1.125000 in}, 
-            string replace*={_}{\_}
-        },
-    columns/symbol/.style={
-            string type, 
-            column type= V{1.125000 in}, 
+            column type= n{0.933333 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
@@ -61,4 +53,3 @@
             column type = V{4.000000 in}
         }
     ]{/Users/dyb/GitHub/C3S_311a_CDM/tables/secondary_variable.csv}
-\end{landscape}

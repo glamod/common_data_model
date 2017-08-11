@@ -1,0 +1,6 @@
+# Description:
+# Source: WIGOS 6-03
+element_name	kind	external_table	description
+strategy	int (pk)	NA	primary key for table
+name	varchar	NA	name or abbreviation used to indicate sampling strategy
+description	varchar	NA	definition of sampling strategy

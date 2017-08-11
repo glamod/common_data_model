@@ -1,0 +1,7 @@
+frequency	description
+0	One observation per day (24 hour intervals).
+1	Two observations per day (12 hour intervals).
+2	Four observations per day (6 hour intervals).
+3	Eight observations per day (3 hour intervals).
+4	Hourly observations.
+5	Irregular observations.

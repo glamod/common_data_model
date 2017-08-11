@@ -1,0 +1,5 @@
+# Description:
+# Source: ISOTC211/19115 CIRoleCode
+element_name	kind	external_table	description
+role	int(pk)	NA	primary key for table
+description	varchar	NA	definition of role

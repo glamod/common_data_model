@@ -1,0 +1,9 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+station_primary_id	varchar	station_configuration:primary_id	Link to station for which this entry corresponds
+record_number	int	station_configuration:record_number	Link to station for which this entry corresponds
+kind	int	kind:kind	Enumerated data type (numeric, int, etc)
+field	varchar	station_configuration_fields:field_id	Field that this entry corresponds to
+value			Kind inherited from field 
+comments	varchar	NA	Any additional comments.

@@ -1,0 +1,9 @@
+# Description: Code tables used to decode obseravtions when encoded
+# Source: NA
+element_name	kind	external_table	description
+code_table	int (pk)	NA	Primary key for table
+code_table_scheme	varchar	NA	External scheme used for code table (e.g. BUFR)
+code_table_id	varchar	NA	ID used to identify table within scheme (e.g. F XX YYY for BUFR tables)
+code_table_name	varchar	NA	Name of code table
+value	int	NA	coded value
+description	varchar	NA	decoded value / meaning of decoded value

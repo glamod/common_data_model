@@ -1,0 +1,7 @@
+# Description:			
+# Source: N
+element_name	kind	external_table	description
+report_id	varchar	header_table:report_id	Link to report this entry is for
+observation_id	varchar	observations_table:observation_id	Link to observation this entry is for. Set to NULL / NA if entry for report level QC
+qc_method	int	qc_method:method	Link to table describing QC method used to set this flag
+qc_flag	int	quality_flag:flag	E.g. 0 = good, 1 = inconsistent etc

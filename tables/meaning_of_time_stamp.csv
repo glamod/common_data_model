@@ -1,6 +1,0 @@
-# Description: Meaning / significance of date / time reported for report or observation
-# Source: Based on simplified version of WIGOS 11-03
-meaning	name	description
-1	beginning	Date / time specified indicates the start of the period over which the observation was made.
-2	end	Date / time specified indicates the end of the period over which the observation was made.
-3	middle	Date / time specified indicates the middle of the period over which the observation was made.

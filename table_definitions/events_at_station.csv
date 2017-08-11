@@ -1,0 +1,5 @@
+# Description: Report events at station at the time of the report / observation
+# Source: WIGOS 4-04
+element_name	kind	external_table	description
+event	int(pk)	NA	primary key for table
+description	varchar	NA	Decoded value / description of events at the time of report / observation

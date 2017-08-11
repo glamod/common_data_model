@@ -1,0 +1,5 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+type	int (pk)	NA	primary key for table
+description	varchar	NA	type of profile measurements (atmospheric, oceanographic etc)

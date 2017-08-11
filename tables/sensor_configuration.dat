@@ -1,0 +1,12 @@
+# Description: definition of table specifying sensor configuration				
+# Source: NA
+element_name	type	external_table	description
+instrument_id	varchar (pk)		Unique ID for this instrument
+observing_method	int	observing_method:method	Method (instrumental, estimated / visual, computed) by which observation made
+sampling_strategy	int	sampling_strategy:strategy	Sampling strategy used by instrument
+calibration_status	int	calibration_status:status	Whether the sensor is in / out of calibration
+calibration_date	timestamp		Date of last calibration
+comments	varchar		additional comments for sensor not reportable elsewhere
+date_start	timestamp		start date for period of validity assoiciated with this entry
+date_end	timestamp		end date for period of validity assoiciated with this entry
+optional_data	int	data_present:flag	Flag indicating if additional data available

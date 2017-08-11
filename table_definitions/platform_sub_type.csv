@@ -1,0 +1,7 @@
+# Description: Platform subtype for platform making observation
+# Source: based on WMO47, ICOADS, BUFR 0 02 149	
+element_name	kind	external_table	description
+sub_type	int (pk)	NA	primary key for table
+platform_type	int	platform_type:type	platform type to which this sub-type belongs
+abbreviation	varchar	NA	abbreviation used to indicate this platform sub-type
+description	varchar	NA	description of observing platform sub-type (e.g. Container ship)

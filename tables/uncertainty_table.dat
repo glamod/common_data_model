@@ -1,0 +1,8 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+observation_id	varchar	observations_table:observation_id	Link to observation this entry is for
+uncertainty_type	int	uncertainty_type:type	The type of uncertainty described by this entry
+uncertainty_method	int	uncertainty_method:method	Method used to estimate this uncertainty
+uncertainty_value	numeric	NA	Expected error standard deviation due to specified uncerainty source
+uncertainty_units	int	units:units	The units used to report the uncertainty. This may be different to the reporting units (e.g. \%)

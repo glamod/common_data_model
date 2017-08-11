@@ -1,0 +1,5 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+kind	int(pk)	NA	primary key
+description	varchar	NA	kind of data (int, numeric etc)

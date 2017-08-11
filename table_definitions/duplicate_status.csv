@@ -1,0 +1,5 @@
+# Description: Duplicate status of the observation
+# Source: Simplified version of duplicate status flags from IMMA (ICOADS)
+element_name	kind	external_table	description
+status	int(pk)	NA	Primary key for table
+description	varchar	NA	Decoded value / description of duplicate status (e.g. unique, best duplicate etc)

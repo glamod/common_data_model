@@ -1,6 +1,0 @@
-# Description: Code tables used to decode obseravtions when encoded
-# Source: NA
-code_table	code_table_scheme	code_table_id	code_table_name	value	description
-0	BUFR	0 20 003	Present weather	NA	See BUFR 0 20 003
-1	BUFR	0 20 004	Past weather	NA	See BUFR 0 20 004
-2	BUFR	0 10 063	Characteristics of pressure tendancy	NA	See BUFR 0 10 063

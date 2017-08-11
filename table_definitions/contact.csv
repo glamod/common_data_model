@@ -1,0 +1,10 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+contact_id	varchar (pk)	NA	primary key
+title	varchar	NA	Title of contact (e.g. Mr, Mrs, Dr. etc)
+name	varchar	NA	Name of contact
+organisation	varchar 	organisation:organisation_id	Link to organisation that contact is associated with
+telephone	varchar	NA	telephone number for contacr
+email	varchar	NA	email address for contact
+url	varchar	NA	website for contact

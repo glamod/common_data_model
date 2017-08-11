@@ -1,0 +1,5 @@
+# Description:
+# Source: NA
+element_name	kind	external_table	description
+flag	int(pk)	NA	Primary key for table
+description	varchar	NA	Decoded value indicating presence of additional data

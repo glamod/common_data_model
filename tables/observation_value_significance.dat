@@ -1,0 +1,16 @@
+significance	description
+0	Maximum value over indicated period
+1	Minimum value over indicated period
+2	Mean value over indicated period
+3	Median value over indicated period
+4	Modal value over indicated period
+5	Mean absolute error over indicated period
+6	Best estimate of standard deviation (N-1) of observed parameter over indicated period
+7	Standard deviation (N) of observed parameter over indicated period
+8	Harmonic mean of observed parameter over indicated period
+9	Root mean square vector error of observed parameter over indicated period
+10	root mean square of observed parameter over indicated period
+11	Vector mean of observed parameter over indicated period
+12	Instantaneous value of observed parameter
+13	Accumulation over specified period
+14	Not applicable
