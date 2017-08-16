@@ -1,5 +1,5 @@
 # Descripion: table defining elements in main header table
-# Source: NA	
+# Source:	
 element_name	kind	external_table	description
 report_id	varchar (pk)		Unique ID for report (unique ID given by combination of report_id and observation_id)
 region	int	region:region	Region (WMO region / Ocean basin)

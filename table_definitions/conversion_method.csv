@@ -1,5 +1,5 @@
 # Description: Table containing definition of conversions between units used
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 method	int(pk)	NA	unique ID for entry
 description	varchar		text description of conversion method

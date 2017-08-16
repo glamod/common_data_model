@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 time	int(pk)	NA	primary key for table, encoded value
 description	varchar	NA	decoded observing time, e.g. 12 UTC

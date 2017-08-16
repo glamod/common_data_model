@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 observation_id	varchar	observations_table:observation_id	Link to observation this entry is for
 uncertainty_type	int	uncertainty_type:type	The type of uncertainty described by this entry

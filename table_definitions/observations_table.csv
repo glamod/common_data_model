@@ -1,5 +1,5 @@
 # Descripion: table defining elements in main observations table				
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 observation_id	varchar (pk)		unique ID for observation
 report_id	varchar	header_table:report_id	Link to header information
@@ -35,7 +35,7 @@ qc_failed	int		Number of quality control checks failed (see qc_table for more in
 numerical_precision	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
 standard_uncertainty	numeric		Standard uncertainty in reported value
 method_of_estimating_standard_uncertainty	int	method_of_estimating_uncertainty:method	Method of estimating the standard uncertainty
-sensor_id	varchar	sensor_configuration:configuration	NA
+sensor_id	varchar	sensor_configuration:sensor_id	NA
 sensor_automation_status	int	automation_status:automation	Automated, manual, mixed or visual observation
 exposure_of_sensor	int	instrument_exposure_quality:exposure	Whether the exposure of the instrument will impact on the quality of the measurement
 original_precision	int 		Original reporting precision in units given by 'original_units'

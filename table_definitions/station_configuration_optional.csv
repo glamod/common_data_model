@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 station_primary_id	varchar	station_configuration:primary_id	Link to station for which this entry corresponds
 record_number	int	station_configuration:record_number	Link to station for which this entry corresponds

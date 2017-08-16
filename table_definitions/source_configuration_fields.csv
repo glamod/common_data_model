@@ -1,12 +1,7 @@
-# Description:
-# Source: NA
-field_id	field_name	kind	description
-0	delayed mode format	int (fk)	NA
-1	metadata source	int (fk)	NA
-2	metadata source format	int (fk)	NA
-3	observation source type	int (fk)	NA
-4	real time format	int (fk)	NA
-5	source format	int (fk)	NA
-6	source deck	int (fk)	NA
-7	source id	int (fk)	NA
-10	product original time resolution	numeric	NA
+# Description:			
+# Source:
+element_name	kind	external_table	description
+field_id	varchar (pk)	NA	primary key
+field_name	varchar	NA	Name of field described by this entry
+type	int	kind:kind	The variable type used to store information on the indicated field
+description	varchar	NA	Description of the indicated field

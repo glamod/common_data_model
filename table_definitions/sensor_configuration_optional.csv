@@ -1,7 +1,7 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
-sensor_id	varchar (fk)	sensor_configuration	Link to sensor for which this entry corresponds
+sensor_id	varchar (fk)	sensor_configuration:sensor_id	Link to sensor for which this entry corresponds
 kind	int	kind:kind	Enumerated data type (numeric, int, etc)
 field	varchar	sensor_configuration_fields:field_id	Field that this entry corresponds to
 value			Kind inherited from field

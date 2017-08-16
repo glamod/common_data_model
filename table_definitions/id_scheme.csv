@@ -1,5 +1,5 @@
 # Description: ID Scheme in use of ID element
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 scheme	int(pk)	NA	Primary key for table
 description	varchar	NA	Decoded value / description of ID scheme used to report the station ID

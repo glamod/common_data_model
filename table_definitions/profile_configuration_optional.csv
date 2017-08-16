@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 profile_id	varchar	profile_configuration:profile_id	Link to profile for which this entry corresponds
 kind	int	kind:kind	Enumerated data type (numeric, int, etc)

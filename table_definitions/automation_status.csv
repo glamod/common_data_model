@@ -1,5 +1,5 @@
 # Description: Automation status of the station and / or individual observation
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 automation	int(pk)	NA	Unique ID for entry
 description	varchar	NA	description of automation status (e.g. automatic observations, manual observation etc)

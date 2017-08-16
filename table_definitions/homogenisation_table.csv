@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 observation_id	varchar	observations_table:observation_id	Link to observation this entry is for
 homogenisation_method	int	homogenisation_method:method	Method used to homogenise data

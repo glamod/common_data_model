@@ -1,5 +1,5 @@
 # Description:	
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 units	int(pk)	NA	primary key
 name	varchar	NA	name of units

@@ -1,5 +1,5 @@
 # Description: table containing information on individual profiles				
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 profile_id	varchar (pk)	NA	Unique ID for this profile entry
 profile_type	int	profile_type:type	Type of profile (e.g. atmospheric or oceanic)

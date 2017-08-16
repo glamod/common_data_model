@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 organisation_id	varchar (pk)	NA	unique ID for organisation
 parent_organisation	varchar	organisation:organisation_id	Link to parent organisation (or NA/NULL or none)

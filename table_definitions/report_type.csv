@@ -1,5 +1,5 @@
 # Description: Original report type for this report / observaiton
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 type	int(pk)	NA	primary key for table
 abbreviation	varchar	NA	abbreviation used to indicate report type (e.g. SHIP)

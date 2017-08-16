@@ -1,5 +1,5 @@
 # Description: method by which observation made
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 method	int (pk)	NA	primary key for table
 description	varchar	NA	decoded value indicating method of observing (e.g. measured, estimating or computed)

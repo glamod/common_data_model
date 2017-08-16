@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 variable	int(pk)	NA	primary key for table
 parameter_group	varchar	NA	parameter group (e.g. temperature, pressure) that this variable belongs to

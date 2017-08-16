@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 source_id	varchar (fk)	source_configuration:source_configuration_id	Link to source for which this entry corresponds
 kind	int	kind:kind	Enumerated data type (numeric, int, etc)

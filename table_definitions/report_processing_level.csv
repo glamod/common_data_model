@@ -1,5 +1,5 @@
 # Description: 
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 level	int(pk)	NA	primary key for table
 abbreviation	varchar	NA	abbreviation used to indicate processing level

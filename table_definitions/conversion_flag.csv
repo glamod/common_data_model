@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 flag	int(pk)	NA	primary key
 description	varchar	NA	Description of whether the original value has been converted or decoded and is stored in the observed variable element

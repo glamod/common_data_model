@@ -1,5 +1,5 @@
 # Description:				
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 variable	int(pk)	NA	part of primary key - indicator for secondary variable name
 variable_name	varchar	NA	name / description of secondary variable

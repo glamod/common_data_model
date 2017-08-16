@@ -1,5 +1,5 @@
 # Description:			
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 report_id	varchar	header_table:report_id	Link to report this entry is for
 observation_id	varchar	observations_table:observation_id	Link to observation this entry is for. Set to NULL / NA if entry for report level QC

@@ -1,0 +1,55 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{product\_level}
+            \label{tab:DataTableProductlevel}\\
+            % Initial column headers
+            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{varchar}}} & 
+            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{NA}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{Meaning of product level}}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ product\_level (cont.)} \\
+            % column headers on additional pages
+            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{varchar}}} & 
+            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{NA}}} & 
+            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{Meaning of product level}}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/description/.style={
+            string type, 
+            column type= V{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/varchar/.style={
+            string type, 
+            column type= V{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/NA/.style={
+            string type, 
+            column type= V{0.933333 in}, 
+            string replace*={_}{\_}
+        },
+    columns/Meaning of product level/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{4.000000 in}
+        }
+    ]{../table_definitions/product_level.csv}

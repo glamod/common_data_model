@@ -1,5 +1,5 @@
 # Description:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 contact_id	varchar (pk)	NA	primary key
 title	varchar	NA	Title of contact (e.g. Mr, Mrs, Dr. etc)

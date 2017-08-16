@@ -1,6 +1,6 @@
 # Description:
 # Source: NA
-field_id	field_name	code_value	description	extended_description
+field_id	field_name	code_value	abbreviation	description
 0	delayed mode format	0	IMMT version just prior to version number being included	NA
 0	delayed mode format	1	IMMT-1 (in effect from 2 Nov. 1994)	NA
 0	delayed mode format	2	IMMT-2 (in effect from Jan. 2003)	NA

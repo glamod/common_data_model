@@ -21,7 +21,7 @@
 \usepackage{tikz}
 \usepackage[hidelinks]{hyperref}
 \usepackage{changepage}
-
+\usepackage{float}
 \SetWatermarkText{Draft}
 
 \definecolor{maroon}{RGB}{102,0,33}
@@ -77,7 +77,7 @@ empty header/.style={
 \lhead{\textcolor{maroon}{Copernicus Climate Change Service}\vskip 0.5 cm}
 \rhead{\includegraphics{/Users/dyb/GitHub/common_data_model/png/c3s_logo_small.png} \vskip 0.3 cm}
 
-\lfoot{C3S\_311a\_Lot2\_NUIM\_2017 \{ref\} }
+\lfoot{C3S\_311A\_Lot2\_NUIM\_2017SC1 - Initial specification for CDM}
 \cfoot{}
 \rfoot{Page \textbf{\thepage}  of \textbf{\pageref{LastPage}} }
 
@@ -122,13 +122,13 @@ empty header/.style={
 \huge\textbf{Common Data Model for in situ observations}\\
 \LARGE\textbf{\textcolor{maroon}{ C3S311a Lot 2: Global Land and Marine Observations Database } }\\
 \vskip 5cm
-\large{Issued by: XXXX / YYYY} \\
+\large{Issued by: NUIM / Peter Thorne} \\
 
-\large{Date: DD/MM/YYYY}\\
+\large{Date: 21/08/2017}\\
 
-\large{Ref: C3S\_D311a\_Lot2.2.1.1\_201708\_CDM\_Definition\_v1}\\
+\large{Ref: C3S\_D311a\_Lot2.2.1.1\_201708\_Initial\_specification\_for\_CDM\_v1}\\
 
-\large{Official reference number service contract: 201x/C3S\_311a\_Lot2\_NUIM/SCx}\\
+\large{Official reference number service contract: 2017/C3S\_311a\_Lot2\_NUIM/SC1}\\
 \end{adjustwidth}
 
 %footer bar
@@ -148,24 +148,94 @@ The user thereof uses the information at its sole risk and liability. For the av
 and the European Centre for Medium-Range Weather Forecasts has no liability in respect of this document, which is merely representing the authors view.
 \end{Framed}
 
+
+
+% ========================= contributors page ===================================
 % title page
 \newpage
 
-\maketitle
+\begin{adjustwidth}{2.cm}{}
+\vspace* {10mm}
 
-\vskip 0.25in
-\section*{Summary}
-\hrule
-\vskip 0.25in
-This document defines the initial version of the Common Data Model (CDM) developed within the Copernicus Climate Change Service (C3S) Access to Global Land and Marine Observations Database (C3S 311a Lot 2) service. This has been developed in consultation across the C3S 311a (Collection and Processing of In Situ Observations) Lots and ECMWF.\\
-\vskip 0.25in
+\LARGE{\textcolor{maroon}{Contributors}}\\
+
+\large\uppercase{{National Oceanography Centre (NOC), Natural Environment Research Council (NERC)}}
+\begin{enumerate}
+\item David I. Berry (Lot 2)
+\item Elizabeth C. Kent (Lot 2)\\
+\end{enumerate}
+
+
+\large{\uppercase{Istituto di Metodologie per l'Analisi Ambientale (IMAA), Consiglio Nazionale delle Ricerche (CNR)}}
+\begin{enumerate}
+\item Fabio Madonna (Lot 3)
+\item Emanuele Tramutola (Lot 3)
+% \item Ermann Ripepi (Lot 3)
+\end{enumerate}
+
+\large{\uppercase{Instituto Dom Luiz, Universidade de Lisboa}}
+\begin{enumerate}
+\item Maria Ant\'onia Valente (Lot 1)\\
+\end{enumerate}
+
+\large{\uppercase{Universitat Rovira i Virgili }}
+\begin{enumerate}
+\item Alba Gilabert Gallart (Lot 1)
+\item Manola Brunet (Lot 1)\\
+\end{enumerate}
+
+\large{\uppercase{Met Office}}
+\begin{enumerate}
+\item Robert Dunn (Lot 2)
+\item Philip Brohan (Lot 1)
+\item Rob Allan (Lot 1)\\
+\end{enumerate}
+
+\large{\uppercase{National University of Ireland Maynooth (NUIM)}}
+\begin{enumerate}
+\item Peter Thorne (Lots 2 and 3)
+\item Simon Noone (Lot 2)\\
+% \item Anthony Kettle (Lot 2)
+\end{enumerate}
+
+\large{\uppercase{Science Technology Facilities Council (STFC)}}
+\begin{enumerate}
+\item Ag Stephens (Lot 2)\\
+\end{enumerate}
+
+\large{\uppercase{Koninklijk Nederlands Meteorolgisch Instituut (KNMI)}}
+\begin{enumerate}
+% \item Ge Verver (Lot 4)
+\item Else van den Besselaar (Lot 4)
+% \item Wim Som de Cerff (Lot 4)
+% \item Maarten Plieger (Lot 4)
+\end{enumerate}
+
+\end{adjustwidth}
+
+
+% ========================= Executive summary ===================================
+%\maketitle
+\newpage
+
+\section*{Executive Summary}
+This document defines the initial version of the Common Data Model (CDM) developed within the Copernicus Climate Change Service (C3S) Access to Global Land and Marine Observations Database (C3S 311a Lot 2) service. This has been developed in consultation across the four C3S 311a (Collection and Processing of In Situ Observations) Lots and ECMWF.\\
+
 Tab separated versions of the code tables defining the data model can be found at:\\ \\
 \tabto{2cm} \url{https://github.com/glamod/common_data_model/tree/master/tables/tsv/}
-\vskip 0.25in
-\hrule
-\vskip 1in
-Revision number: \revision \\
-Revision date: \revisiondate \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Version} & \textbf{Release date} & \textbf{Release notes}\\
+\hline
+1 & 31/08/2017 & Initial version of the common data model\\
+\hline
+\end{tabular}
+\end{table}
+% Revision number: \revision \\
+% Revision date: \revisiondate \\
 
 \newpage
 \tableofcontents
@@ -177,12 +247,12 @@ Revision date: \revisiondate \\
 \section {Introduction}
 
 \subsection {Purpose of this document}
-This document defines the initial version of the Common Data Model (CDM)\footnote{As noted in the ITT: A common data model is different from a file format, which defines how information is encoded in a file. The purpose of a data model is to provide a well-defined data structure that can be used to represent data records from a variety of sources, in such a way that the information contained in those records can be unambiguously accessed using a common set of tools. Development of a common data model for observations involves specification of data attributes and their symbolic names, including, for example, identifiers for different instruments, observed parameters, geolocation and timing, etc. A governance structure is required to manage such specifications, ensure consistency with standards where they exist, and to ensure a controlled evolution of the data model.} developed within the Copernicus Climate Change Service (C3S) Access to Global Land and Marine Observations Database (C3S 311a Lot 2) service. This has been developed in consultation across the C3S 311a (Collection and Processing of In Situ Observations) Lots and ECMWF.
+This document defines the initial version of the Common Data Model (CDM)\footnote{As noted in the ITT: A common data model is different from a file format, which defines how information is encoded in a file. The purpose of a data model is to provide a well-defined data structure that can be used to represent data records from a variety of sources, in such a way that the information contained in those records can be unambiguously accessed using a common set of tools. Development of a common data model for observations involves specification of data attributes and their symbolic names, including, for example, identifiers for different instruments, observed parameters, geolocation and timing, etc. A governance structure is required to manage such specifications, ensure consistency with standards where they exist, and to ensure a controlled evolution of the data model.} developed within the Copernicus Climate Change Service (C3S) Access to Global Land and Marine Observations Database (C3S 311a Lot 2) service. This has been developed in consultation across the four C3S 311a (Collection and Processing of In Situ Observations) Lots and with ECMWF.
 
 \subsection {Scope}
-The defined common data model is intended for use with in situ land and marine observations. Instantaneous (or point) observations and temporal statistics (e.g. daily and monthly min / max temperatures, accumulation of precipitation etc.)  are supported through the use of a significance qualifier. Similarly, profile data is supported through a z-coordinate for each observed value.\\
+The defined common data model is intended for use with in situ land and marine observations. Instantaneous (or point) observations and temporal statistics (e.g. daily and monthly min / max temperatures, accumulation of precipitation etc.) are supported through the use of a significance qualifier. Similarly, column average data are supported through the reporting of the observed variable alongside its value. Profile data is supported through reporting the z-coordinate for each observed value.\\
 
-Whilst initially intended for use with observations of Essential Climate Variables (ECVs; e.g. GCOS, 2010) the data model is not restricted to the ECVs. Following the ECMWF Observations DataBase (ODB) type data model, the measurand (or observed parameter) is parameterized, as both the variable being reported and its value are specified in the data model.\\
+Whilst initially intended for use with observations of Essential Climate Variables (ECVs; e.g. GCOS, 2016) the data model is not restricted to the ECVs. As noted above, and following the ECMWF Observations DataBase (ODB) type data model, the observed variable is reported alongside the observed value.\\
 
 Comprehensive metadata is supported through the use of configuration tables, recording information on:
 \begin{itemize}
@@ -195,20 +265,20 @@ Comprehensive quality control and uncertainty information can be recorded using 
 
 \subsection {Structure of this document}
 
-Section 2 of this document provides background information on the data model and existing relevant data models and standards. Section 3 forms the core section of this document and defines the primary observations table and associated configuration, quality control and uncertainty budget tables. Recognising that the data model will change and evolve as the requirements of the users and the C3S Climate Data Store develop, Section 4 proposes a goverance model for the CDM and outlines future developments.
+Section 2 of this document provides background information on the data model and existing relevant data models and standards. Section 3 proposes a governance mechanism for the CDM in recognition that the data model will change and evolve as the requirements of the users and the C3S Climate Data Store develop. Section 4 describes the core components and tables of the data model. The appendix includes the individual table definitions and preliminary versions of the code tables. The code tables listed are provisional and will be expanded as the service develops.
 
 \section {Background and existing standards}
 \subsection {Observational sources and requirements of the data model}
 
 Across the C3S 311a service (Collection and Processing of In Situ Observations) access will be provided to observations from surface terrestrial and marine environments and upper air data in a common data model. The observations included range from point observations made from moving platforms to daily and monthly statistics at fixed locations. The parameters reported include, inter alia: air temperature; humidity; wind speed; pressure; cloud cover information; present weather. The statistics include, inter alia: daily min, max and mean air temperature; accumulated precipitation over 3 or 24 hours; mean wind speed over the preceding 10 minutes. The full range of parameters and statistics to be reported will evolve as the service is developed. As new parameters are recovered from newly digitised sources and the reprocessed climate archives the list of parameters will need to expand.\\
 
-Both surface level (terrestrial and marine) and upper air data will be initially included in the service. The surface level data include observations made at standard and non-standard heights. The upper air data will include multiple observations, starting at the surface and at increasing heights through the atmosphere, often as a function of pressure or geopotential height. As a result the data model needs to include the flexibility to record the height and the units used for reporting the height of measurement with every observation. Similarly, some reporting stations, and hence observations, will move in the horizontal plane, and the horizontal coordinates need to be reported with each observation. To avoid ambiguity, the CRS should be provided with each location reported.\\
+Both surface level (terrestrial and marine) and upper air data will be initially included in the service. The surface level data include observations made at standard and non-standard heights. The upper air data will include multiple observations, starting at the surface and at increasing heights through the atmosphere, often as a function of pressure or geopotential height. Columnar averages will be included. As a result the data model needs to include the flexibility to record the height and the units used for reporting the height of measurement with every observation. Similarly, some reporting stations, and hence observations, will move in the horizontal plane, and the horizontal coordinates need to be reported with each observation. To avoid ambiguity, the CRS should be provided with each location reported.\\
 
-The period covered by the service ranges from $\sim$1850 to present. Over this period there have been many changes to the instruments and practices used to record the various parameters. The choice of instruments and practices will influence the quality of the observations and a change in instrumentation, or location, may introduce inhomogeneities into the record. To mitigate this risk comprehensive observational metadata are required. Similarly, information on adjustments and conversions applied to the data need to be recorded. The full range of observational practices and instruments used is not currently known and developed data model will need to be extendable to accommodate new metadata as required.\\
+The period covered by Lot 2 of the service ranges from $\sim$1850 to present. Over this period there have been many changes to the instruments and practices used to record the various parameters. The choice of instruments and practices will influence the quality of the observations and a change in instrumentation, or location, may introduce inhomogeneities into the record. To mitigate this risk comprehensive observational metadata are required. Similarly, information on adjustments and conversions applied to the data need to be recorded. The full range of observational practices and instruments used is not currently known and developed data model will need to be extendable to accommodate new metadata as required.\\
 
-The observations to be included will be sourced from a variety of existing datasets, such as the International Comprehensive Ocean and Atmosphere Data Set (ICOADS; e.g. Freeman et al., 2017), and newly digitised sources. In defining the data model the provenance and lineage of the data sources need to be preserved. Similarly, usage rights and citation information need to be preserved and provided to users alongside the observational data.\\
+The observations to be included will be sourced from a variety of existing datasets, such as the International Comprehensive Ocean and Atmosphere Data Set (ICOADS; e.g. Freeman et al., 2017), and newly digitised sources. In defining the data model the provenance and lineage of the data sources need to be preserved. Similarly, usage rights and citation information need to be preserved and provided to users alongside the observational data. This is a common requirement across all Lots within the service.\\
 
-In order to meet the above requirements a data model based on the ECMWF Observations DataBase (ODB) model has been developed, with the use of linked tables providing information on the observational and provenance metadata. The ODB type model allows for estension to new parameters through the use of a parameterized observation list (see next section). The linked tables will define a core set of parameters under 4 different categories (station, source, profile and sensor), flexibility will be provided through the specification of optional elements and associated decode tables.\\
+In order to meet the above requirements a data model based on the ECMWF Observations DataBase (ODB) model has been developed, with the use of linked tables providing information on the observational and provenance metadata. The ODB type model allows for extension to new parameters through the use of a parameterized observation list (see next section). The linked tables will define a core set of parameters under 4 different categories (station, source, profile and sensor), flexibility will be provided through the specification of optional elements and associated decode tables.\\
 
 \subsection{ECMWF Observations DataBase (ODB)}
 
@@ -227,6 +297,19 @@ There has been a large body of work and significant effort invested in defining 
 The BUFR format (WMO 2015a) is a flexible and efficient table driven format for reporting weather observations on the WMO Global Telecommunications System (GTS) in binary. The tables defined as part of the BUFR format include many of the parameters that will be included in the CDM. For example, Common code table C6 (WMO 2015a) includes all the measurement units reportable in BUFR (and other WMO codes). Similarly, code tables are defined for reporting instrument types and methods, station types etc. Where possible, these code tables have been referenced and used in preference to defining new code tables.  BUFR tables from Version 27 of Master Table 0 have been used in this version of this document.\\
 
 In recognition of the increasing importance of observational metadata the WMDS is currently under development and phased implementation (WMO, 2015b). The WMDS extends the ISO19115 metadata standard, with additional mandatory elements describing both the station level and discovery metadata as well as specific information on the instrumentation used and processing steps. As part of the process simplified versions of BUFR and other tables have been included in the standard. As with BUFR these tables have been referenced, where appropriate, in preference to defining new code tables.
+
+\section {Governance of the Common Data Model}
+A working group will be set up to manage the governance of the common data model. This group will operate remotely via email and regular teleconferences.  Proposals to add new entries to the code tables or make changes to the structure of the common data model shall be made via email to email address:\\
+
+\tabto{2cm} {c3s\_311a\_CDM\_governance}@surfacetemperatures.org.\\
+
+Emails to this address will be distributed to all members of the working group. \\
+
+During the initial development stage of the service proposals sent to the above email address will be assessed monthly, with discussion via email and teleconference as required. Accepted changes will be implemented at the beginning of the following month or with at least 2 weeks notice. These changes will be published both via the service website and via a subscription email list:\\
+
+\tabto{2 cm} {c3s\_311a\_CDM\_notifications}@surfacetemperatures.org.\\
+
+The working group will be self nominating and initially contain at least one member from each Lot to act as a primary point of contact for that Lot and to represent their requirements on the working group. The working group will also contain a representative from ECMWF, or a nominated representative from another organisation, to represent the needs of the wider C3S community. Additional members from the different Lots will be welcomed. In the case of disagreement over proposed changes each Lot will have one vote irrespective of the number of members in the working group. In the case of a hung vote ECMWF, or their representative, will have the deciding vote.\\
 
 \section {Common Data Model}
 As noted above, the CDM is based on the original ODB data model, with meteorological reports split into header and observational records stored in separate tables. In support of these two primary tables, four auxiliary tables have been defined to enable the comprehensive reporting of metadata at different levels:\\
@@ -266,135 +349,154 @@ Mandatory elements are indicated by a 1 (or 1+) in the occurrence column. Mandat
 \input{observations_table_wrapper}
 
 \input {station_configuration_wrapper}
-\input {station_configuration_optional}
-\input {kind}
-\input {station_configuration_fields}
-\input {station_configuration_codes}
+\input {station_configuration_optional_definition}
 
 \input {profile_configuration_wrapper}
-\input {profile_configuration_optional}
-\input {profile_configuration_fields}
-\input {profile_configuration_codes}
+\input {profile_configuration_optional_definition}
+
 
 \input {source_configuration_wrapper}
-\input {source_configuration_optional}
-\input {source_configuration_fields}
-\input {source_configuration_codes}
+\input {source_configuration_optional_definition}
 
 \input {sensor_configuration_wrapper}
-\input {sensor_configuration_optional}
-\input {sensor_configuration_fields}
-\input {sensor_configuration_codes}
+\input {sensor_configuration_optional_definition}
+
 
 \subsection {Quality control flags}
 A single QC flag is provided in the observations table for the observed value. Additional flags can be provided using the qc\_table and by setting the advanced\_qc flag to true in the observations\_table.\\
-\input {qc_table}
+\input {qc_table_definition}
 
 \subsection {Uncertainty budget}
 A single standard uncertainty value is provided for each observed value in the observations table. Additional values can be provided using the uncertainty\_table and by setting the advanced\_uncertainty to true in the observations\_table.\\
-\input {uncertainty_table}
+\input {uncertainty_table_definition}
 
 \subsection {Homogenisation data}
-\input {homogenisation_table}
-
-% \section {Examples}
-
-% \section {Mapping to WIGOS metadata standard}
-% To do ...
-% \section {Mapping to INSPIRE}
-% To do ...
-\section {Governance of the Common Data Model}
-A working group will be set up to manage the governance of the common data model. This group will operate remotely via email and regular teleconferences.  Proposals to add new entries to the code tables or make changes to the structure of the common data model shall be made via email to email address TBD. Emails to this address will be distributed to all members of the working group. \\
-
-During the initial development stage of the service proposals sent to the above email address will be assessed monthly, with discussion via email and teleconference as required. Accepted changes will be implemented at the beginning of the following month or with at least 2 weeks notice. These changes will be published both via the service website and via a subscription email list (email list / address TBD).\\
-
-The working group will be self nominating and initially contain at least one member from each Lot to act as a primary point of contact for that Lot and to represent their requirements on the working group. The working group will also contain a representative from ECMWF, or a nominated representative from another organisation, to represent the needs of the wider C3S community. Additional members from the different Lots will be welcomed. In the case of disagreement over proposed changes each Lot will have one vote irrespective of the number of members in the working group. In the case of a hung vote ECMWF, or their representative, will have the deciding vote.\\
-
-The initial working group and contact details are listed in Table XX.
-
-\section {Acknowledgements}
-\begin{itemize}
-\item Participants from Lot 1
-\item Participants from Lot 2
-\item Participants from Lot 3
-\item External comments ...
-\end{itemize}
+\input {homogenisation_table_definition}
 
 \section {References}
 
-\hangindent=2em\hangafter=1 Freeman et al., 2017 ...
+\hangindent=2em\hangafter=1 Freeman E., S. D. Woodruff, S. J. Worley, S. J. Lubker, E. C. Kent, W. E. Angel, D. I. Berry , P. Brohan, R. Eastman, L. Gates, W. Gloeden, Z. Ji, J. Lawrimore, N. A. Rayner, G. Rosenhagen, S. R. Smith, 2017: ICOADS Release 3.0: A Major Update to the Historical Marine Climate Record, International Journal of Climatology, 37, 2211Ð2232. doi:10.1002/joc.4775\\
 
-\hangindent=2em\hangafter=1 GCOS, 2010 ...
+\hangindent=2em\hangafter=1 GCOS, 2016: The Global Observing System for Climate: Implementation Needs. GCOS-200 / GOOS-214, WMO, Geneva, 342pp.\\
 
-\hangindent=2em\hangafter=1 Hersbach, H., P. Poli and D. Dee, 2015: The observation feedback archive for ICOADS and ISPD datasets. ERA Report Series No. 18, ECMWF, Reading, UK, 31pp.
+\hangindent=2em\hangafter=1 Hersbach, H., P. Poli and D. Dee, 2015: The observation feedback archive for ICOADS and ISPD datasets. ERA Report Series No. 18, ECMWF, Reading, UK, \\31pp.
 
-\hangindent=2em\hangafter=1 Saarinen, S., 2004: ODB User guide (draft 1st edition), ECMWF, Reading, UK, 289pp.
+\hangindent=2em\hangafter=1 Saarinen, S., 2004: ODB User guide (draft 1st edition), ECMWF, Reading, UK, 289pp.\\
 
-\hangindent=2em\hangafter=1 WMO, 2015a: Manual On Codes (WMO-No 306), Volume I.2, Part B - Binary Codes, WMO, Geneva.
+\hangindent=2em\hangafter=1 WMO, 2015a: Manual On Codes (WMO-No 306), Volume I.2, Part B - Binary Codes, WMO, Geneva.\\
 
-\hangindent=2em\hangafter=1 WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Annex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.
+\hangindent=2em\hangafter=1 WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Annex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.\\
 
 \section {Appendix}
-% \subsection {Observed variable}
-\input {observed_variable_wrapper}
-\subsection {Additional tables}
-\input {adjustment}
-\input {contact}
-\input {conversion_flag}
-\input {conversion_method}
-\input {organisation}
-\subsection {Code tables}
-\input {application_area}
-\input {automation_status}
-\input {calibration_status}
-%\input {city}
-\input {communication_method}
-\input {crs}
-\input {data_present}
-\input {data_policy_licence}
-\input {duplicate_status}
-\input {events_at_station}
-\input {id_scheme}
-\input {instrument_exposure_quality}
-\input {location_method}
-\input {location_quality}
-\input {meaning_of_time_stamp}
-\input {method_of_estimating_uncertainty}
-\input {observation_code_table}
-\input {observation_value_significance}
-\input {observing_frequency}
-\input {observing_method}
-\input {observing_programme}
-\input {platform_sub_type}
-\input {platform_type}
-\input {processing_code}
-\input {processing_level}
-\input {product_level}
-\input {product_status}
-\input {profile_type}
-\input {quality_flag}
-\input {region}
-\input {report_processing_codes}
-\input {report_processing_level}
-\input {report_type}
-\input {role}
-\input {sampling_strategy}
-\input {sea_level_datum}
-\input {secondary_variable}
-\input {source_format}
-\input {spatial_representativeness}
-\input {standard_time}
-\input {station_type}
-\input {sub_region}
-\input {time_quality}
-\input {time_reference}
-\input {traceability}
-\input {units}
-\input {update_frequency}
-\input {z_coordinate_method}
-\input {z_coordinate_type}
+\subsection {Table definitions}
 
+\subsubsection {Data tables}
+\input {adjustment_definition} % data table
+\input {contact_definition} % data table
+\begin{landscape}
+\input {header_table_definition} % data table
+\end{landscape}
+\input {homogenisation_table_definition}
+
+\input {profile_configuration_definition}
+\input {profile_configuration_optional_definition}
+
+\input {qc_table_definition}
+
+\input {sensor_configuration_definition}
+\input {sensor_configuration_optional_definition}
+
+\input {source_configuration_definition}
+\input {source_configuration_optional_definition}
+
+\input {station_configuration_definition} % data table
+\input {station_configuration_optional_definition} % data table
+
+\input {uncertainty_table_definition}
+
+
+\FloatBarrier
+\subsubsection {Code tables}
+\input {application_area_definition} % code table
+\input {automation_status_definition} % code table
+\input {calibration_status_definition} % code table
+\input {communication_method_definition} % code table
+\input {conversion_flag_definition} % code table
+\input {conversion_method_definition} % data table
+\input {crs_definition} % code table
+\input {data_present_definition} % code table
+\input {data_policy_licence_definition} % code table
+\input {duplicate_status_definition} % code table
+\input {events_at_station_definition} % code table
+\input {id_scheme_definition} % code table
+\input {instrument_exposure_quality_definition} % code table
+\input {kind_definition} % code table
+\input {location_method_definition} % code table
+\input {location_quality_definition} % code table
+\input {meaning_of_time_stamp_definition} % code table
+\input {method_of_estimating_uncertainty_definition} % data table
+\input {observation_code_table_definition} % code table (of tables!)
+\input {observation_value_significance_definition} % code table
+\input {observed_variable_definition} % code table
+\input {observing_frequency_definition} % code table
+\input {observing_method_definition} % code table
+\input {observing_programme_definition} % code table
+\input {platform_sub_type_definition} % code table
+\input {platform_type_definition} % code table
+\input {processing_code_definition} % code table
+\input {processing_level_definition} % code table
+\input {product_level_definition} % code table
+\input {product_status_definition} % code table
+\input {profile_configuration_fields_definition}
+\input {profile_configuration_codes_definition}
+\input {profile_type_definition} % code table
+\input {quality_flag_definition} % code table
+\input {region_definition} % code table
+\input {report_processing_codes_definition} % code table
+\input {report_processing_level_definition} % code table
+\input {report_type_definition} % code table
+\input {role_definition} % code table
+\input {sampling_strategy_definition} % code table
+\input {sea_level_datum_definition} % code table
+\input {secondary_variable_definition} % code table
+\input {sensor_configuration_fields_definition} % code table
+\input {sensor_configuration_codes_definition} % code table
+\input {source_configuration_fields_definition} % code table
+\input {source_configuration_codes_definition} % code table
+\input {source_format_definition} % code table
+\input {spatial_representativeness_definition} % code table
+\input {standard_time_definition} % code table
+\input {station_configuration_codes_definition} % code table
+\input {station_configuration_fields_definition} % code table
+\input {station_type_definition} % code table
+\input {sub_region_definition} % code table
+\input {time_quality_definition} % code table
+\input {time_reference_definition} % code table
+\input {traceability_definition} % code table
+\input {units_definition} % code table
+\input {update_frequency_definition} % code table
+\input {z_coordinate_method_definition} % code table
+\input {z_coordinate_type_definition} % code table
+
+
+\FloatBarrier
+%\input {organisation}
 \subsection {Code tables}
+
+% \subsection {Observed variable}
+%\input {observed_variable_wrapper}
+
+
+
+
+
+
+
+
+
+
+
+
 
 %\input {surface_type}
 %\input {surface_type_scheme}

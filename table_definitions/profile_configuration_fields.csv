@@ -1,34 +1,7 @@
 # Description:			
-# Source: NA
-field_id	field_name	type	description
-0	include descent	int (fk)	See profile_configuration_codes
-1	processing code	int (fk)	See profile_configuration_codes
-2	unwinder type	varchar	NA
-3	burstpoint altitude	numeric	NA
-4	burstpoint pressure	numeric	NA
-5	filling weight	numeric	NA
-6	gross weight	numeric	NA
-7	payload	numeric	NA
-8	unwinder length	numeric	NA
-9	ascent rate	numeric	Rate of ascent / descent for profile (+ve values indicate ascent, -ve descent)(m/s)
-B002016	radiosonde configuration	int (fk)	See profile_configuration_codes
-B002003	type of measuring equipment used	int (fk)	See profile_configuration_codes
-B002011	radiosonde sounding system	int (fk)	See profile_configuration_codes
-B002011	radiosonde type	int (fk)	See profile_configuration_codes
-B002013	solar and infrared radiation correction	int (fk)	See profile_configuration_codes
-B002014	tracking technique 	int (fk)	See profile_configuration_codes
-B002015	radiosonde completeness	int (fk)	See profile_configuration_codes
-B002017	humidity correction algorithm	int (fk)	See profile_configuration_codes
-B002066	radiosonde ground receiving system	int (fk)	See profile_configuration_codes
-B002080	balloon manufacturer	int (fk)	See profile_configuration_codes
-B002081	balloon type	int (fk)	See profile_configuration_codes
-B002083	type of balloon shelter	int (fk)	See profile_configuration_codes
-B002084	type of gas used in balloon	int (fk)	See profile_configuration_codes
-B002095	type of pressure sensor	int (fk)	See profile_configuration_codes
-B002191	geopotential height calculation	int (fk)	See profile_configuration_codes
-B003011	method of depth calculation	int (fk)	See profile_configuration_codes
-B022056	profile direction	int (fk)	See profile_configuration_codes
-B022067	instrument type for water temperature salinity profile	int (fk)	See profile_configuration_codes
-B022068	water temperature profile recorder type	int (fk)	See profile_configuration_codes
-B022178	XBT launcher type	int (fk)	See profile_configuration_codes
-B035035	reason for termination	int (fk)	See profile_configuration_codes
+# Source:
+element_name	kind	external_table	description
+field_id	varchar (pk)	NA	primary key
+field_name	varchar	NA	Name of field described by this entry
+type	int	kind:kind	The variable type used to store information on the indicated field
+description	varchar	NA	Description of the indicated field

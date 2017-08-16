@@ -1,5 +1,5 @@
 # Description:				
-# Source: NA
+# Source:
 element_name	type	external_table	description
 primary_id	varchar (pk)		Primary (e.g. WMO) ID for station
 primary_id_scheme	int	id_scheme:scheme	Scheme used for primary ID

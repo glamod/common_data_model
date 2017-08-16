@@ -1,5 +1,5 @@
 # Description: Data format from source prior to ingestion
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 format	int(pk)	NA	primary key for table
 description	varchar	NA	description of data format, e.g. NetCDF

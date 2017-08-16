@@ -1,5 +1,5 @@
 # Desription:
-# Source: NA
+# Source:
 element_name	kind	external_table	description
 method	int (pk)	NA	primary key, coded value
 description	varchar	NA	description of method used to determine z location
