@@ -1,5 +1,3 @@
-# Description:			
-# Source: NA
 field_id	field_name	type	description
 0	include descent	int (fk)	See profile_configuration_codes
 1	processing code	int (fk)	See profile_configuration_codes

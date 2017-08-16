@@ -1,0 +1,55 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{units codes}
+            \label{tab:DataTableUnits}\\
+            % Initial column headers
+            \hline\hline             \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{units}}} & 
+            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{abbreviation}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{base\_units}}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ units (cont.)} \\
+            % column headers on additional pages
+            \hline\hline             \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{units}}} & 
+            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{name}}} & 
+            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{abbreviation}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{base\_units}}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/units/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/name/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/abbreviation/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/base_units/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{../tables/units.dat}

@@ -1,5 +1,3 @@
-# Description:
-# Source: NA
 field_id	field_name	kind	description
 0	delayed mode format	int (fk)	NA
 1	metadata source	int (fk)	NA

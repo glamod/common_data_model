@@ -1,5 +1,5 @@
 # Description: Method by which location of station / observation determined
 # Source: based on WIGOS 11-01 and BUFR 0 02 148
 element_name	kind	external_table	description
-method	int(pk)	NA	primary key for table
-description	varchar	NA	decoded value / description of method by which the station location has been determined
+method	int(pk)	 	primary key for table
+description	varchar	 	decoded value / description of method by which the station location has been determined

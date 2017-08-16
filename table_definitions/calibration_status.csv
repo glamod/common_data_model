@@ -1,5 +1,5 @@
 # Description: Calibration status of the instrument
 # Source: WIGOS 5-08
 element_name	kind	external_table	description
-status	int(pk)	NA	unique ID for entry
-description	varchar	NA	Description of calibration status (e.g. No changes - in calibration etc)
+status	int(pk)	 	unique ID for entry
+description	varchar	 	Description of calibration status (e.g. No changes - in calibration etc)

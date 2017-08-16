@@ -1,16 +1,16 @@
 # Description:
 # Source:
 element_name	kind	external_table	description
-organisation_id	varchar (pk)	NA	unique ID for organisation
+organisation_id	varchar (pk)	 	unique ID for organisation
 parent_organisation	varchar	organisation:organisation_id	Link to parent organisation (or NA/NULL or none)
-name	varchar	NA	Name of organisation
-abbreviation	varchar	NA	Abbreviated name (or NA/NULL)
-address	varchar	NA	Road / building name
-city	varchar	NA	City
-admin_area	varchar	NA	County or admin region
+name	varchar	 	Name of organisation
+abbreviation	varchar	 	Abbreviated name (or NA/NULL)
+address	varchar	 	Road / building name
+city	varchar	 	City
+admin_area	varchar	 	County or admin region
 region	int	region:region	WMO Region
 country	int	sub_region:sub_region	Country
-postal_code	varchar	NA	Postal / zip code
-telephone	varchar	NA	Primary telephone number of organisation
-url	varchar	NA	Link to organisation website
-email	varchar	NA	Primary email contact for website
+postal_code	varchar	 	Postal / zip code
+telephone	varchar	 	Primary telephone number of organisation
+url	varchar	 	Link to organisation website
+email	varchar	 	Primary email contact for website

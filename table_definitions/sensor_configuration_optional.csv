@@ -5,4 +5,4 @@ sensor_id	varchar (fk)	sensor_configuration:sensor_id	Link to sensor for which t
 kind	int	kind:kind	Enumerated data type (numeric, int, etc)
 field	varchar	sensor_configuration_fields:field_id	Field that this entry corresponds to
 value			Kind inherited from field
-comments	varchar	NA	Any additional comments.
+comments	varchar	 	Any additional comments.

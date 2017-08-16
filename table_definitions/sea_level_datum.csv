@@ -1,5 +1,5 @@
 # Description: Datum used to define mean sea level
 # Source: BUFR 0 01 151
 element_name	kind	external_table	description
-datum	int(pk)	NA	primary key for table
-description	varchar	NA	Long name of sea level dataum
+datum	int(pk)	 	primary key for table
+description	varchar	 	Long name of sea level dataum

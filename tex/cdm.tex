@@ -222,7 +222,7 @@ and the European Centre for Medium-Range Weather Forecasts has no liability in r
 This document defines the initial version of the Common Data Model (CDM) developed within the Copernicus Climate Change Service (C3S) Access to Global Land and Marine Observations Database (C3S 311a Lot 2) service. This has been developed in consultation across the four C3S 311a (Collection and Processing of In Situ Observations) Lots and ECMWF.\\
 
 Tab separated versions of the code tables defining the data model can be found at:\\ \\
-\tabto{2cm} \url{https://github.com/glamod/common_data_model/tree/master/tables/tsv/}
+\tabto{2cm} \url{https://github.com/glamod/common_data_model/tree/master/tables/}
 
 \begin{table}[H]
 \centering
@@ -243,7 +243,7 @@ Tab separated versions of the code tables defining the data model can be found a
 \listoftables
 \newpage
 
-
+% ================================= Introduction ======================
 \section {Introduction}
 
 \subsection {Purpose of this document}
@@ -267,12 +267,13 @@ Comprehensive quality control and uncertainty information can be recorded using 
 
 Section 2 of this document provides background information on the data model and existing relevant data models and standards. Section 3 proposes a governance mechanism for the CDM in recognition that the data model will change and evolve as the requirements of the users and the C3S Climate Data Store develop. Section 4 describes the core components and tables of the data model. The appendix includes the individual table definitions and preliminary versions of the code tables. The code tables listed are provisional and will be expanded as the service develops.
 
+% =============================== background =========================
 \section {Background and existing standards}
 \subsection {Observational sources and requirements of the data model}
 
 Across the C3S 311a service (Collection and Processing of In Situ Observations) access will be provided to observations from surface terrestrial and marine environments and upper air data in a common data model. The observations included range from point observations made from moving platforms to daily and monthly statistics at fixed locations. The parameters reported include, inter alia: air temperature; humidity; wind speed; pressure; cloud cover information; present weather. The statistics include, inter alia: daily min, max and mean air temperature; accumulated precipitation over 3 or 24 hours; mean wind speed over the preceding 10 minutes. The full range of parameters and statistics to be reported will evolve as the service is developed. As new parameters are recovered from newly digitised sources and the reprocessed climate archives the list of parameters will need to expand.\\
 
-Both surface level (terrestrial and marine) and upper air data will be initially included in the service. The surface level data include observations made at standard and non-standard heights. The upper air data will include multiple observations, starting at the surface and at increasing heights through the atmosphere, often as a function of pressure or geopotential height. Columnar averages will be included. As a result the data model needs to include the flexibility to record the height and the units used for reporting the height of measurement with every observation. Similarly, some reporting stations, and hence observations, will move in the horizontal plane, and the horizontal coordinates need to be reported with each observation. To avoid ambiguity, the CRS should be provided with each location reported.\\
+Both surface level (terrestrial and marine) and upper air data will be initially included in the service. The surface level data include observations made at standard and non-standard heights. The upper air data will include multiple observations, starting at the surface and at increasing heights through the atmosphere, often as a function of pressure or geopotential height. Columnar averages will be included. As a result the data model needs to include the flexibility to record the height and the units used for reporting the height of measurement with every observation. Similarly, some reporting stations, and hence observations, will move in the horizontal plane, and the horizontal coordinates need to be reported with each observation. To avoid ambiguity, the coordinate reference system (CRS) should be provided with each location reported.\\
 
 The period covered by Lot 2 of the service ranges from $\sim$1850 to present. Over this period there have been many changes to the instruments and practices used to record the various parameters. The choice of instruments and practices will influence the quality of the observations and a change in instrumentation, or location, may introduce inhomogeneities into the record. To mitigate this risk comprehensive observational metadata are required. Similarly, information on adjustments and conversions applied to the data need to be recorded. The full range of observational practices and instruments used is not currently known and developed data model will need to be extendable to accommodate new metadata as required.\\
 
@@ -312,7 +313,7 @@ During the initial development stage of the service proposals sent to the above 
 The working group will be self nominating and initially contain at least one member from each Lot to act as a primary point of contact for that Lot and to represent their requirements on the working group. The working group will also contain a representative from ECMWF, or a nominated representative from another organisation, to represent the needs of the wider C3S community. Additional members from the different Lots will be welcomed. In the case of disagreement over proposed changes each Lot will have one vote irrespective of the number of members in the working group. In the case of a hung vote ECMWF, or their representative, will have the deciding vote.\\
 
 \section {Common Data Model}
-As noted above, the CDM is based on the original ODB data model, with meteorological reports split into header and observational records stored in separate tables. In support of these two primary tables, four auxiliary tables have been defined to enable the comprehensive reporting of metadata at different levels:\\
+As noted above, the CDM is based on the original ODB data model, with meteorological reports split into header and observational records stored in separate tables, header\_table and observations\_table respectively. In support of these two primary tables, four auxiliary tables have been defined to enable the comprehensive reporting of metadata at different levels:\\
 
 \begin{itemize}
 \item Source level metadata (\textit{source\_configuration} table). This level contains detailed information on the source dataset, including: information on the product; whether any processing has been applied; the original data centre the data were sourced from; citation information; the data licence for the product; how to cite the data source etc.
@@ -325,16 +326,16 @@ These tables are defined in the following section and contain elements that are 
 
 Within the tables in the following sections the following syntax has been used:\\
 \begin{itemize}
-\item numeric: \tabto{3 cm} Any numeric value (integer or floating point).
-\item int: \tabto{3 cm} An integer value.
-\item varchar: \tabto{3 cm} A variable length character string.
-\item timestamp with time zone: \tabto{3 cm} A timestamp, e.g. "2017-07-01 00:00:0.0+00".
-\item {[]}:\tabto{3 cm} An array of the indicated type.
-\item (fk) \tabto{3 cm} The indicated value is also a foreign key linking to another table (e.g. decode table for encoded data).
-\item (pk) \tabto{3 cm} The indicated elements marked as (pk) within a table form the unique ID for the record.
+\item numeric \tabto{2 cm} Any numeric value (integer or floating point).
+\item int \tabto{2 cm} An integer value.
+\item varchar \tabto{2 cm} A variable length character string.
+\item timestamp \tabto{2 cm} A timestamp with time zone, e.g. "2017-07-01 00:00:0.0+00".
+\item {[]} \tabto{2 cm} An array of the indicated type.
+\item {*} \tabto{2 cm} An optional element.
+\item (pk) \tabto{2 cm} The indicated elements marked as (pk) within a table form the unique ID for the record.
 \end {itemize}
 
-Mandatory elements are indicated by a 1 (or 1+) in the occurrence column. Mandatory elements that are not available must be included but may be encoded as missing (.e.g NA, NULL or format specific equivalent). Optional elements are indicated by 0+. Whilst arrays have been indicated for the elements containing multiple values this does not preclude other implementations. 
+Unless indicated otherwise all elements listed are mandatory but may be encoded as missing (e.g NA, NULL or format specific equivalent) if not available. Optional elements are indicated by *. Whilst arrays have been indicated for the elements containing multiple values this does not preclude other implementations. Within the table definitions references to external tables are indicated in the external\_table column. These references are composed of two parts separated by a colon (:). The first part indicates the table, the second the element within the table. For example, station\_configuration:primary\_id indicates a reference to the primary\_id element in the station\_configuration table.\\
 
 \begin{landscape}
 \begin{figure}
@@ -386,17 +387,18 @@ A single standard uncertainty value is provided for each observed value in the o
 \hangindent=2em\hangafter=1 WMO, 2015a: Manual On Codes (WMO-No 306), Volume I.2, Part B - Binary Codes, WMO, Geneva.\\
 
 \hangindent=2em\hangafter=1 WMO, 2015b:  Manual on the WMO Integrated Global Observing System: Annex VIII to the Technical Regulations (WMO-No 1160), WMO, Geneva.\\
-
+\newpage
 \section {Appendix}
 \subsection {Table definitions}
 
 \subsubsection {Data tables}
 \input {adjustment_definition} % data table
 \input {contact_definition} % data table
-\begin{landscape}
 \input {header_table_definition} % data table
-\end{landscape}
 \input {homogenisation_table_definition}
+\input {observations_table_definition}
+\input {organisation_definition} 
+
 
 \input {profile_configuration_definition}
 \input {profile_configuration_optional_definition}
@@ -416,6 +418,7 @@ A single standard uncertainty value is provided for each observed value in the o
 
 
 \FloatBarrier
+\newpage
 \subsubsection {Code tables}
 \input {application_area_definition} % code table
 \input {automation_status_definition} % code table
@@ -424,8 +427,8 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {conversion_flag_definition} % code table
 \input {conversion_method_definition} % data table
 \input {crs_definition} % code table
-\input {data_present_definition} % code table
 \input {data_policy_licence_definition} % code table
+\input {data_present_definition} % code table
 \input {duplicate_status_definition} % code table
 \input {events_at_station_definition} % code table
 \input {id_scheme_definition} % code table
@@ -447,8 +450,8 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {processing_level_definition} % code table
 \input {product_level_definition} % code table
 \input {product_status_definition} % code table
-\input {profile_configuration_fields_definition}
 \input {profile_configuration_codes_definition}
+\input {profile_configuration_fields_definition}
 \input {profile_type_definition} % code table
 \input {quality_flag_definition} % code table
 \input {region_definition} % code table
@@ -459,10 +462,10 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {sampling_strategy_definition} % code table
 \input {sea_level_datum_definition} % code table
 \input {secondary_variable_definition} % code table
-\input {sensor_configuration_fields_definition} % code table
 \input {sensor_configuration_codes_definition} % code table
-\input {source_configuration_fields_definition} % code table
+\input {sensor_configuration_fields_definition} % code table
 \input {source_configuration_codes_definition} % code table
+\input {source_configuration_fields_definition} % code table
 \input {source_format_definition} % code table
 \input {spatial_representativeness_definition} % code table
 \input {standard_time_definition} % code table
@@ -480,28 +483,70 @@ A single standard uncertainty value is provided for each observed value in the o
 
 
 \FloatBarrier
-%\input {organisation}
+\newpage
 \subsection {Code tables}
-
-% \subsection {Observed variable}
-%\input {observed_variable_wrapper}
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\input {surface_type}
-%\input {surface_type_scheme}
-%\input {topography}
-%\input {processing_code}
+\input {application_area_table} % code table
+\input {automation_status_table} % code table
+\input {calibration_status_table} % code table
+\input {communication_method_table} % code table
+\input {conversion_flag_table} % code table
+\input {conversion_method_table} % data table
+\input {crs_table} % code table
+\input {data_policy_licence_table} % code table
+\input {data_present_table} % code table
+\input {duplicate_status_table} % code table
+\input {events_at_station_table} % code table
+\input {id_scheme_table} % code table
+\input {instrument_exposure_quality_table} % code table
+\input {kind_table} % code table
+\input {location_method_table} % code table
+\input {location_quality_table} % code table
+\input {meaning_of_time_stamp_table} % code table
+\input {method_of_estimating_uncertainty_table} % data table
+\input {observation_code_table_table} % code table (of tables!)
+\input {observation_value_significance_table} % code table
+\begin{landscape}
+\input {observed_variable_table} % code table
+\end{landscape}
+\input {observing_frequency_table} % code table
+\input {observing_method_table} % code table
+\input {observing_programme_table} % code table
+\input {platform_sub_type_table} % code table
+\input {platform_type_table} % code table
+\input {processing_code_table} % code table
+\input {processing_level_table} % code table
+\input {product_level_table} % code table
+\input {product_status_table} % code table
+\input {profile_configuration_codes_table}
+\input {profile_configuration_fields_table}
+\input {profile_type_table} % code table
+\input {quality_flag_table} % code table
+\input {region_table} % code table
+\input {report_processing_codes_table} % code table
+\input {report_processing_level_table} % code table
+\input {report_type_table} % code table
+\input {role_table} % code table
+\input {sampling_strategy_table} % code table
+\input {sea_level_datum_table} % code table
+\input {secondary_variable_table} % code table
+\input {sensor_configuration_codes_table} % code table
+\input {sensor_configuration_fields_table} % code table
+\input {source_configuration_codes_table} % code table
+\input {source_configuration_fields_table} % code table
+\input {source_format_table} % code table
+\input {spatial_representativeness_table} % code table
+\input {standard_time_table} % code table
+\input {station_configuration_codes_table} % code table
+\input {station_configuration_fields_table} % code table
+\input {station_type_table} % code table
+\input {sub_region_table} % code table
+\input {time_quality_table} % code table
+\input {time_reference_table} % code table
+\input {traceability_table} % code table
+\input {units_table} % code table
+\input {update_frequency_table} % code table
+\input {z_coordinate_method_table} % code table
+\input {z_coordinate_type_table} % code table
 
 
 \end{document}

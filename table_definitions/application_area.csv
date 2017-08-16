@@ -1,5 +1,5 @@
 # Description: Context within, or intended application(s) for which the observation is primarily made or which has/have the most stringent requirements
 # Source: WIGOS 2-01
 element_name	kind	external_table	description
-application_area	int(pk)	NA	Unique ID for code entry
-description	varchar	NA	Description of application area
+application_area	int(pk)	 	Unique ID for code entry
+description	varchar	 	Description of application area

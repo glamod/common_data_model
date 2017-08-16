@@ -1,3 +1,5 @@
+# Description:
+# Source: 
 element_name	kind	external_table	description
-level	int (pk)	NA	primary key for table
-description	varchar	NA	Meaning of product level
+level	int (pk)		primary key for table
+description	varchar		Meaning of product level

@@ -1,5 +1,5 @@
 # Description: simplified description of station type
 # Source: WIGOS 3-04
 element_name	kind	external_table	description
-type	int (pk)	NA	primary key for table, coded value
-description	varchar	NA	decoded station type
+type	int (pk)	 	primary key for table, coded value
+description	varchar	 	decoded station type

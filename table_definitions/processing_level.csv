@@ -1,6 +1,6 @@
 # Description: Processing level applied to observation
 # Source: WIGOS 7-06
 element_name	kind	external_table	description
-level	int (pk)	NA	primary key for table
-name	varchar	NA	Name commonly used to indicate level of processing
-description	varchar	NA	Description of processing level
+level	int (pk)	 	primary key for table
+name	varchar	 	Name commonly used to indicate level of processing
+description	varchar	 	Description of processing level

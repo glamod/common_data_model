@@ -1,5 +1,5 @@
 # Description:
 # Source:
 element_name	kind	external_table	description
-type	int(pk)	NA	primary key, coded value
-description	varchar	NA	description of units / type of z coordinate
+type	int(pk)	 	primary key, coded value
+description	varchar	 	description of units / type of z coordinate

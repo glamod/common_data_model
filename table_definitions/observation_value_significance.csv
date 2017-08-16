@@ -1,5 +1,5 @@
 # Description: Significance of observed value, e.g. instantaneous value, statistic over specified period, tendancy over specified period
 # Source: based on BUFR 0 08 023
 element_name	kind	external_table	description
-significance	int (pk)	NA	Primary key for table
-description	varchar	NA	decoded value / description of indicated significance (e.g. min over specified period)
+significance	int (pk)	 	Primary key for table
+description	varchar	 	decoded value / description of indicated significance (e.g. min over specified period)

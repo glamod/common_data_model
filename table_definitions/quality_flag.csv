@@ -1,5 +1,5 @@
 # Description: Quality flag for observations
 # Source: BUFR 0 33 020
 element_name	kind	external_table	description
-flag	int (pk)	NA	primary key for table
-description	varchar	NA	meaning of quality flag
+flag	int (pk)	 	primary key for table
+description	varchar	 	meaning of quality flag

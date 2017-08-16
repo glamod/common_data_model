@@ -6,19 +6,19 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{product\_level}
-            \label{tab:DataTableProductlevel}\\
+            \caption{product\_level definition}
+            \label{tab:DataTableDefProductlevel}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{description}}} & 
-            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{varchar}}} & 
-            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{NA}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{Meaning of product level}}} \\ \hline\hline \endfirsthead
+            \hline\hline             \multicolumn{1} { V{1.750000 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{0.800000 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{1.750000 in}} { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{4}{c}{Table \thetable\ product\_level (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{description}}} & 
-            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{varchar}}} & 
-            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{NA}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{Meaning of product level}}} \\ \hline\hline \endhead
+            \hline\hline             \multicolumn{1} {V{1.750000 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{0.800000 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} {V{1.750000 in} } { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
@@ -32,24 +32,24 @@
     end table=\end{longtable},
     col sep=tab,
     string type,
+    columns/element_name/.style={
+            string type, 
+            column type= n{1.750000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/kind/.style={
+            string type, 
+            column type= V{0.800000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/external_table/.style={
+            string type, 
+            column type= n{1.750000 in}, 
+            string replace*={_}{\_}
+        },
     columns/description/.style={
             string type, 
-            column type= V{0.933333 in}, 
-            string replace*={_}{\_}
-        },
-    columns/varchar/.style={
-            string type, 
-            column type= V{0.933333 in}, 
-            string replace*={_}{\_}
-        },
-    columns/NA/.style={
-            string type, 
-            column type= V{0.933333 in}, 
-            string replace*={_}{\_}
-        },
-    columns/Meaning of product level/.style={
-            string type, 
             string replace*={_}{\_},
-            column type = V{4.000000 in}
+            column type = V{2.000000 in}
         }
     ]{../table_definitions/product_level.csv}

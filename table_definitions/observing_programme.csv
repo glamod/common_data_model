@@ -1,7 +1,7 @@
 # Description: Observing programme(s) that this report / observation was collected as part of
 # Source: WIGOS 2-02
 element_name	kind	external_table	description
-observing_programme	int(pk)	NA	primary key for table
-abbreviation	varchar	NA	Commonly used abbreviation for observing programme (e.g. VOS)
-description	varchar	NA	Description or name of obsserving programme (e.g. Voluntary Observing Ships)
-sponsor	varchar	NA	primary sponsor of observing programme (e.g. JCOMM)
+observing_programme	int(pk)	 	primary key for table
+abbreviation	varchar	 	Commonly used abbreviation for observing programme (e.g. VOS)
+description	varchar	 	Description or name of obsserving programme (e.g. Voluntary Observing Ships)
+sponsor	varchar	 	primary sponsor of observing programme (e.g. JCOMM)

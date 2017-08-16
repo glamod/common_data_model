@@ -1,0 +1,55 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{source\_configuration\_fields codes}
+            \label{tab:DataTableSourceconfigurationfields}\\
+            % Initial column headers
+            \hline\hline             \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{field\_id}}} & 
+            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{field\_name}}} & 
+            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
+            \multicolumn{4}{c}{Table \thetable\ source\_configuration\_fields (cont.)} \\
+            % column headers on additional pages
+            \hline\hline             \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{field\_id}}} & 
+            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{field\_name}}} & 
+            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{4}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{4}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/field_id/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/field_name/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/kind/.style={
+            string type, 
+            column type= V{1.266667 in}, 
+            string replace*={_}{\_}
+        },
+    columns/description/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{../tables/source_configuration_fields.dat}

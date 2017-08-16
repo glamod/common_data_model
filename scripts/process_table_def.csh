@@ -38,7 +38,7 @@ BEGIN { FS = "\t" ; \
       pagewidth = 6.8;\
     }\
     gsub(/_/,"\\_",tablename); \
-    colwidth = (pagewidth-4.0) / (ncols - 1.0) ;\
+    colwidth = (pagewidth-2.0) / (ncols - 1.0) ;\
     print "\\pgfplotstabletypeset[";\
     print "    empty header,";\
     print "    begin table=\\begin{longtable},";\
@@ -48,34 +48,44 @@ BEGIN { FS = "\t" ; \
     print "        before row={%";\
     print "            % Initial caption";\
     if( length( tablesource ) > 1 ){\
-      printf "            \\caption{%s (%s)}\n" , tablename, tablesource;\
+      printf "            \\caption{%s definition (%s)}\n" , tablename, tablesource;\
     }else{\
-      printf "            \\caption{%s}\n" , tablename;\
+      printf "            \\caption{%s definition}\n" , tablename;\
     }\
-   printf "            \\label{tab:DataTable%s}\\\\\n", tablecaption;\
+   printf "            \\label{tab:DataTableDef%s}\\\\\n", tablecaption;\
     print "            % Initial column headers";\
 }\
 {\
     printf "            \\hline\\hline " \
     for( i = 1; i < NF ; i ++) { \
+        if( i != 2){ \
+          colwidth = 1.75 \
+        }else{ \
+          colwidth = 0.8\
+        }\
         entry = $i;\
         gsub(/_/,"\\_",entry);\
         printf "            \\multicolumn{1} { V{%f in}} { \\textbf{\\seqsplit{%s}}} & \n", colwidth , entry \
     } \
     entry = $i;\
     gsub(/_/,"\\_",entry);\
-    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endfirsthead\n", 4.0, entry; \
+    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endfirsthead\n", 2.0, entry; \
     printf "            \\multicolumn{%d}{c}{Table \\thetable\\ %s (cont.)} \\\\\n", ncols, tablename;\
     print "            % column headers on additional pages";\
     printf "            \\hline\\hline " \
     for( i = 1; i < NF ; i ++) { \
+        if( i != 2){ \
+          colwidth = 1.75 \
+        }else{ \
+          colwidth = 0.8\
+        }\
         entry = $i;\
         gsub(/_/,"\\_",entry);\
         printf "            \\multicolumn{1} {V{%f in} } { \\textbf{\\seqsplit{%s}}} & \n", colwidth, entry \
     } \
     entry = $i;\
     gsub(/_/,"\\_",entry);\
-    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endhead\n", 4.0,  entry; \
+    printf "            \\multicolumn{1} { V{%f in} } {\\textbf{\\seqsplit{%s}}} \\\\ \\hline\\hline \\endhead\n", 2.0,  entry; \
     print "            % Footer on 1st to penultimate pages";\
     printf "            \\multicolumn{%d}{r}{{Continued on next page}} \\\\\n", ncols;\
     print "            \\endfoot";\
@@ -90,6 +100,11 @@ BEGIN { FS = "\t" ; \
     print "    col sep=tab,";\
     print "    string type,";\
     for( i = 1 ; i < NF ; i ++){\
+        if( i != 2){ \
+            colwidth = 1.75 \
+        }else{ \
+            colwidth = 0.8\
+        }\
         printf "    columns/%s/.style={\n", $i;\
         print "            string type, ";\
         if( $i == "element_name" || $i == "external_table" || $i ~ "nhjame" ){\
@@ -103,7 +118,7 @@ BEGIN { FS = "\t" ; \
     printf "    columns/%s/.style={\n", $i;\
     print "            string type, ";\
     print "            string replace*={_}{\\_},";\
-    printf "            column type = V{%f in}\n", 4.0;\
+    printf "            column type = V{%f in}\n", 2.0;\
     print "        }";\
     printf "    ]{%s%s}\n", tablepath, file ;\
 } \

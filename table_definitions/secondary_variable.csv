@@ -1,8 +1,8 @@
 # Description:				
 # Source:
 element_name	kind	external_table	description
-variable	int(pk)	NA	part of primary key - indicator for secondary variable name
-variable_name	varchar	NA	name / description of secondary variable
-code_value	int(pk)	NA	coded value for secondary variable
-symbol	varchar	NA	abbreviation or symbol used to represent decoded value, e.g. chemical symbol for atmospheric constituent
-description	varchar	NA	Name or description of decoded value
+variable	int(pk)	 	part of primary key - indicator for secondary variable name
+variable_name	varchar	 	name / description of secondary variable
+code_value	int(pk)	 	coded value for secondary variable
+symbol	varchar	 	abbreviation or symbol used to represent decoded value, e.g. chemical symbol for atmospheric constituent
+description	varchar	 	Name or description of decoded value

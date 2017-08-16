@@ -6,19 +6,19 @@
     every first row/.append style={
         before row={%
             % Initial caption
-            \caption{duplicate\_status (Simplified version of duplicate status flags from IMMA (ICOADS))}
-            \label{tab:DataTableDuplicatestatus}\\
+            \caption{duplicate\_status definition (Simplified version of duplicate status flags from IMMA (ICOADS))}
+            \label{tab:DataTableDefDuplicatestatus}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{element\_name}}} & 
-            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{kind}}} & 
-            \multicolumn{1} { V{0.933333 in}} { \textbf{\seqsplit{external\_table}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
+            \hline\hline             \multicolumn{1} { V{1.750000 in}} { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} { V{0.800000 in}} { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} { V{1.750000 in}} { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endfirsthead
             \multicolumn{4}{c}{Table \thetable\ duplicate\_status (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{element\_name}}} & 
-            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{kind}}} & 
-            \multicolumn{1} {V{0.933333 in} } { \textbf{\seqsplit{external\_table}}} & 
-            \multicolumn{1} { V{4.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
+            \hline\hline             \multicolumn{1} {V{1.750000 in} } { \textbf{\seqsplit{element\_name}}} & 
+            \multicolumn{1} {V{0.800000 in} } { \textbf{\seqsplit{kind}}} & 
+            \multicolumn{1} {V{1.750000 in} } { \textbf{\seqsplit{external\_table}}} & 
+            \multicolumn{1} { V{2.000000 in} } {\textbf{\seqsplit{description}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
             \multicolumn{4}{r}{{Continued on next page}} \\
             \endfoot
@@ -34,22 +34,22 @@
     string type,
     columns/element_name/.style={
             string type, 
-            column type= n{0.933333 in}, 
+            column type= n{1.750000 in}, 
             string replace*={_}{\_}
         },
     columns/kind/.style={
             string type, 
-            column type= V{0.933333 in}, 
+            column type= V{0.800000 in}, 
             string replace*={_}{\_}
         },
     columns/external_table/.style={
             string type, 
-            column type= n{0.933333 in}, 
+            column type= n{1.750000 in}, 
             string replace*={_}{\_}
         },
     columns/description/.style={
             string type, 
             string replace*={_}{\_},
-            column type = V{4.000000 in}
+            column type = V{2.000000 in}
         }
     ]{../table_definitions/duplicate_status.csv}

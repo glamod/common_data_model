@@ -1,7 +1,7 @@
 # Description:			
 # Source:
 element_name	kind	external_table	description
-field_id	varchar (pk)	NA	primary key
-field_name	varchar	NA	Name of field described by this entry
+field_id	varchar (pk)	 	primary key
+field_name	varchar	 	Name of field described by this entry
 type	int	kind:kind	The variable type used to store information on the indicated field
-description	varchar	NA	Description of the indicated field
+description	varchar	 	Description of the indicated field

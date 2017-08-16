@@ -1,5 +1,5 @@
 # Description: Quality of exposure of instrument used to make observation
 # Source: WIGOS 5-15
 element_name	kind	external_table	description
-exposure	int(pk)	NA	primary key for table
-description	varchar	NA	decoded value / description of instrument exposure quality
+exposure	int(pk)	 	primary key for table
+description	varchar	 	decoded value / description of instrument exposure quality

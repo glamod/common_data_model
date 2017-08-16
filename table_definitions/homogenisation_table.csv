@@ -3,6 +3,6 @@
 element_name	kind	external_table	description
 observation_id	varchar	observations_table:observation_id	Link to observation this entry is for
 homogenisation_method	int	homogenisation_method:method	Method used to homogenise data
-homogenisation_adjustment	numeric	NA	Value applied to homogenise data (homogenised_value = original (+-/*) homogenisation_adjustment)
+homogenisation_adjustment	numeric	 	Value applied to homogenise data (homogenised_value = original (+-/*) homogenisation_adjustment)
 homogenisation_operator	int	homogenisation_operator:operator	Operator (+-/*) used to apply adjustment
-homogenisation_order	int	NA	Order in which the adjustments are applied. Set to NA or missing if not applicable
+homogenisation_order	int	 	Order in which the adjustments are applied. Set to NA or missing if not applicable

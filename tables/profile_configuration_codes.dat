@@ -1,5 +1,3 @@
-# Description:						
-# Source: NA
 field_id	field_name	code_value	abbreviation	description	start_date	end_date
 0	include descent	0	NA	Descent excluded	NA	NA
 0	include descent	1	NA	Descent included	NA	NA

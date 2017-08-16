@@ -1,5 +1,5 @@
 # Description: coordinate reference system used to report location
 # Source: BUFR 0 01 150
 element_name	kind	external_table	description
-crs	int(pk)	NA	primary key
-description	varchar	NA	Decoded value / description of coordinate reference system
+crs	int(pk)	 	primary key
+description	varchar	 	Decoded value / description of coordinate reference system

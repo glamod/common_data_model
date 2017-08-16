@@ -2,7 +2,7 @@
 # Source:
 element_name	kind	external_table	description
 field_id	varchar (pk)	source_configuration_fields:field_id	Link to field code is for
-field_name	varchar	NA	Name of field
-code_value	int (pk)	NA	Coded value. Together with field_id forms primary key
-abbreviation	varchar	NA	Abbreviation used for coded value
-description	varchar	NA	Decoded value / meaning of code
+field_name	varchar	 	Name of field
+code_value	int (pk)	 	Coded value. Together with field_id forms primary key
+abbreviation	varchar	 	Abbreviation used for coded value
+description	varchar	 	Decoded value / meaning of code

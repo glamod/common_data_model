@@ -1,7 +1,7 @@
 # Description: table containing information on individual profiles				
 # Source:
 element_name	kind	external_table	description
-profile_id	varchar (pk)	NA	Unique ID for this profile entry
+profile_id	varchar (pk)	 	Unique ID for this profile entry
 profile_type	int	profile_type:type	Type of profile (e.g. atmospheric or oceanic)
 standard_time	int	standard_time:time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
 actual_time	timestamp		Actual report / launch time

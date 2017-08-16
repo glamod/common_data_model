@@ -1,5 +1,5 @@
 # Description: Type of platform making the observation	
 # Source: IMMA (ICOADS) and BUFR 0 03 001 (0 - 31)	
 element_name	kind	external_table	description
-type	int (pk)	NA	primary key for table
-description	varchar	NA	Description of class of observing platform
+type	int (pk)	 	primary key for table
+description	varchar	 	Description of class of observing platform

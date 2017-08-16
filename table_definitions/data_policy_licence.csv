@@ -1,6 +1,6 @@
 # Description: Data policy / licence applicable to this report / observations / data source
 # Source: WIGOS 9-02
 element_name	kind	external_table	description
-policy	int (pk)	NA	Primary key for table
-name	varchar	NA	short name of data policy
-description	varchar	NA	Description of data licence, usage rights and restrictions
+policy	int (pk)	 	Primary key for table
+name	varchar	 	short name of data policy
+description	varchar	 	Description of data licence, usage rights and restrictions
