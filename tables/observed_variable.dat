@@ -58,28 +58,28 @@ variable	parameter_group	domain	sub_domain	name	units	description
 58	pressure	atmospheric	surface	air pressure at sea level	Pa	sea level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
 59	pressure	atmospheric	surface	pressure tendency	Pa	pressure tendency
 60	pressure	atmospheric	surface	pressure tendency characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
-61	radiation	atmopsheric		diffuse radiation	W m-2	TBD
-62	radiation	atmopsheric		downward longwave irradiance at earth surface	W m-2	Flux density of radiation emitted by the gases, aerosols and clouds of the atmosphere to the Earth's surface
-63	radiation	atmopsheric		downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface 
-64	radiation	atmopsheric		downward shortwave irradiance at toa	W m-2	Flux density of the solar radiation at the top of the atmosphere 
-65	radiation	atmopsheric		earth surface shortwave bidirectional reflectance	percent	Reflectance of the Earth surface as a function of the viewing angle and the illumination angle in the range 0.4-0.7 micro m . The distribution of this variable is represented by the Bidirectional Reflectance Distribution Function (BRDF)
-66	radiation	atmopsheric		fraction of absorbed par 	percent	Fraction of PAR absorbed by vegetation (land or marine) for photosynthesis processes (generally around the 'red' )
-67	radiation	atmopsheric		global radiation	W m-2	TBD
-68	radiation	atmopsheric		longwave earth surface emissivity	percent	TBD
-69	radiation	atmopsheric		longwave radiation	W m-2	TBD
-70	radiation	atmopsheric		meteorological optical range	m	Meteorological optical range at surface
-71	radiation	atmopsheric		photosynthetically active radiation	W m-2	Flux of downwelling photons of wavelength 0.4-0.7 micro m
-72	radiation	atmopsheric		shortwave cloud reflectance	percent	Reflectance of the solar radiation from clouds 
-73	radiation	atmopsheric		shortwave radiation	W m-2	TBD
-74	radiation	atmopsheric		solar gamma ray flux	W m-2	Radiative flux integrated over the gamma-ray domain. 
-75	radiation	atmopsheric		solar UV flux	W m-2	 Integrated UV flux over the solar disk. 
-76	radiation	atmopsheric		solar VIS flux	W m-2	 Integrated VIS flux over the solar disk 
-77	radiation	atmopsheric		solar X ray flux	W m-2	Integrated X-ray flux over the solar disk
-78	radiation	atmopsheric		sunshine duration 	h	TBD
-79	radiation	atmopsheric		upward longwave irradiance at Earth surface	W m-2	Flux density of terrestrial radiation emitted by the Earth surface 
-80	radiation	atmopsheric		upward longwave irradiance at TOA	W m-2	Flux density of terrestrial radiation emitted by the Earth surface and the gases, aerosols and clouds ot the atmosphere at the top of the atmosphere 
-81	radiation	atmopsheric		upward shortwave irradiance at TOA	W m-2	Flux density of solar radiation, reflected by the Earth surface and atmosphere, emitted to space at the top of the atmosphere 
-82	radiation	atmopsheric		upward spectral radiance at TOA	W m-2 nm-1 sr-1  	Upward radiant power measured at the top of the atmosphere per area unit, per solid angle, and per wavelength interval. Spectral range 0.2-200 micro m.
+61	radiation	atmospheric		diffuse radiation	W m-2	TBD
+62	radiation	atmospheric		downward longwave irradiance at earth surface	W m-2	Flux density of radiation emitted by the gases, aerosols and clouds of the atmosphere to the Earth's surface
+63	radiation	atmospheric		downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface 
+64	radiation	atmospheric		downward shortwave irradiance at toa	W m-2	Flux density of the solar radiation at the top of the atmosphere 
+65	radiation	atmospheric		earth surface shortwave bidirectional reflectance	percent	Reflectance of the Earth surface as a function of the viewing angle and the illumination angle in the range 0.4-0.7 micro m . The distribution of this variable is represented by the Bidirectional Reflectance Distribution Function (BRDF)
+66	radiation	atmospheric		fraction of absorbed par 	percent	Fraction of PAR absorbed by vegetation (land or marine) for photosynthesis processes (generally around the 'red' )
+67	radiation	atmospheric		global radiation	W m-2	TBD
+68	radiation	atmospheric		longwave earth surface emissivity	percent	TBD
+69	radiation	atmospheric		longwave radiation	W m-2	TBD
+70	radiation	atmospheric		meteorological optical range	m	Meteorological optical range at surface
+71	radiation	atmospheric		photosynthetically active radiation	W m-2	Flux of downwelling photons of wavelength 0.4-0.7 micro m
+72	radiation	atmospheric		shortwave cloud reflectance	percent	Reflectance of the solar radiation from clouds 
+73	radiation	atmospheric		shortwave radiation	W m-2	TBD
+74	radiation	atmospheric		solar gamma ray flux	W m-2	Radiative flux integrated over the gamma-ray domain. 
+75	radiation	atmospheric		solar UV flux	W m-2	 Integrated UV flux over the solar disk. 
+76	radiation	atmospheric		solar VIS flux	W m-2	 Integrated VIS flux over the solar disk 
+77	radiation	atmospheric		solar X ray flux	W m-2	Integrated X-ray flux over the solar disk
+78	radiation	atmospheric		sunshine duration 	h	TBD
+79	radiation	atmospheric		upward longwave irradiance at Earth surface	W m-2	Flux density of terrestrial radiation emitted by the Earth surface 
+80	radiation	atmospheric		upward longwave irradiance at TOA	W m-2	Flux density of terrestrial radiation emitted by the Earth surface and the gases, aerosols and clouds ot the atmosphere at the top of the atmosphere 
+81	radiation	atmospheric		upward shortwave irradiance at TOA	W m-2	Flux density of solar radiation, reflected by the Earth surface and atmosphere, emitted to space at the top of the atmosphere 
+82	radiation	atmospheric		upward spectral radiance at TOA	W m-2 nm-1 sr-1  	Upward radiant power measured at the top of the atmosphere per area unit, per solid angle, and per wavelength interval. Spectral range 0.2-200 micro m.
 83	salinity	oceanic	surface; sub-surface	salinity	psu	ocean salinity (PSU)
 85	temperature	atmospheric	surface; upper-air	air temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
 86	temperature	atmospheric		daily maximum air temperature	K	TBD
@@ -107,3 +107,10 @@ variable	parameter_group	domain	sub_domain	name	units	description
 108	wind	atmospheric	surface	wind speed of gust	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed,  the gust wind speed can be indicated by a cell methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness,  the gust wind speed may be separately diagnosed from the wind speed. Lot 1 uses fx  - WMO abbrev.
 109	wind	atmospheric		wind speed max	m s-1	Maximum observed wind speed over specified period Lot 1 uses fm  - WMO abbrev.
 110				turbulence	J m-3	TBD
+110				turbulence	J m-3	TBD
+111				precipitable water column	kg m-2	TBD
+112				tropopause height	m	TBD
+113				tropopause temperature	K	TBD
+114				tropopause pressure	Pa	TBD
+115				tropopause potential temperature	K	TBD
+116				frost point temperature	K	TBD

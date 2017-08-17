@@ -1,11 +1,10 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage{pgfplotstable}
 \usepackage{longtable}
 \usepackage{varwidth}
 \usepackage{array}
 \usepackage{lscape}
 \usepackage[top=4.5 cm,bottom=2.54cm, lmargin=2cm, rmargin=1.74cm, headheight=3.25cm]{geometry}
-\usepackage{helvet}
 \usepackage{tabto}
 \usepackage{collcell}
 \usepackage{seqsplit}
@@ -14,7 +13,7 @@
 \usepackage{xcolor}
 \usepackage{sectsty}
 \usepackage{mdframed}
-\usepackage{draftwatermark}
+% \usepackage{draftwatermark}
 \usepackage{textpos}
 \usepackage{placeins}
 \usepackage{listings}
@@ -22,10 +21,16 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{changepage}
 \usepackage{float}
-\SetWatermarkText{Draft}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\setmainfont{Calibri}
+\setsansfont{Calibri}
+%\SetWatermarkText{Draft}
 
-\definecolor{maroon}{RGB}{102,0,33}
+\definecolor{maroon}{RGB}{122,11,44}
 \sectionfont{\color{maroon}}  % sets colour of section headings
+
+\definecolor{maroon_banner}{RGB}{141,28,59}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -95,7 +100,7 @@ empty header/.style={
 \draw ([yshift=-15.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/c3s_banner_top.png}};
 \draw ([yshift=-25.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=62.8mm]{/Users/dyb/GitHub/common_data_model/png/copernicus_logo_large.png}};
 \node[shift={(0 mm, -10mm)}]  at (current page.north)   {
-\tiny\color{white} ECMWF COPERNICUS REPORT \\
+{\fontsize{8}{9.6}\selectfont \color{white} ECMWF COPERNICUS REPORT }\\
 };
 \end{tikzpicture}
 
@@ -104,7 +109,7 @@ empty header/.style={
 \draw ([yshift=-53.3 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/header_bar.png}};
 \draw (17.75,-0.23) node {\includegraphics{/Users/dyb/GitHub/common_data_model/png/logo_thermometer.png}};
 \node at (2.5,-0.35)   {
-    \large{\textbf{\color{white} Copernicus Climate Change Service}}
+    {\fontsize{12}{14.4} \fontspec{Verdana} \selectfont \color{white} Copernicus Climate Change Service}
 };
 %\draw[style=help lines] (-2.5,0) grid (30,10);
 \end{tikzpicture}
@@ -119,16 +124,20 @@ empty header/.style={
 
 \vskip 4cm
 \begin{adjustwidth}{2.5cm}{}
-\huge\textbf{Common Data Model for in situ observations}\\
-\LARGE\textbf{\textcolor{maroon}{ C3S311a Lot 2: Global Land and Marine Observations Database } }\\
+\fontsize{22}{26}\selectfont{
+    \textbf{Common Data Model for in situ observations}\\
+}
+\fontsize{20}{24}\selectfont{
+\textbf{\textcolor{maroon}{ C3S311a Lot 2: Global Land and Marine Observations Database } }\\
+}
+
 \vskip 5cm
-\large{Issued by: NUIM / Peter Thorne} \\
-
-\large{Date: 21/08/2017}\\
-
-\large{Ref: C3S\_D311a\_Lot2.2.1.1\_201708\_Initial\_specification\_for\_CDM\_v1}\\
-
-\large{Official reference number service contract: 2017/C3S\_311a\_Lot2\_NUIM/SC1}\\
+\fontsize{12}{14}\selectfont{
+\textbf{Issued by:} NUIM / Peter Thorne\\
+\textbf{Date:} 21/08/2017\\
+\textbf{Ref:} C3S\_D311a\_Lot2.2.1.1\_201708\_Initial\_specification\_for\_CDM\_v1\\
+\textbf{Official reference number service contract:} 2017/C3S\_311a\_Lot2\_NUIM/SC1\\
+}
 \end{adjustwidth}
 
 %footer bar
@@ -142,6 +151,7 @@ empty header/.style={
 
 \vspace*{\fill}
 \begin{Framed}
+\fontsize{9}{11}\selectfont
 This document has been produced in the context of the Copernicus Climate Change Service (C3S).\\
 The activities leading to these results have been contracted by the European Centre for Medium-Range Weather Forecasts, operator of C3S on behalf of the European Union (Delegation Agreement signed on 11/11/2014). All information in this document is provided "as is" and no guarantee or warranty is given that the information is fit for any particular purpose.\\
 The user thereof uses the information at its sole risk and liability. For the avoidance of all doubts, the European Commission
@@ -157,53 +167,53 @@ and the European Centre for Medium-Range Weather Forecasts has no liability in r
 \begin{adjustwidth}{2.cm}{}
 \vspace* {10mm}
 
-\LARGE{\textcolor{maroon}{Contributors}}\\
+{\fontsize{20}{24} \selectfont \textcolor{maroon}{Contributors}}\\
 
-\large\uppercase{{National Oceanography Centre (NOC), Natural Environment Research Council (NERC)}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{{National Oceanography Centre (NOC), Natural Environment Research Council (NERC)}}}}
 \begin{enumerate}
 \item David I. Berry (Lot 2)
 \item Elizabeth C. Kent (Lot 2)\\
 \end{enumerate}
 
 
-\large{\uppercase{Istituto di Metodologie per l'Analisi Ambientale (IMAA), Consiglio Nazionale delle Ricerche (CNR)}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Istituto di Metodologie per l'Analisi Ambientale (IMAA), Consiglio Nazionale delle Ricerche (CNR)}}}
 \begin{enumerate}
 \item Fabio Madonna (Lot 3)
 \item Emanuele Tramutola (Lot 3)
 % \item Ermann Ripepi (Lot 3)
 \end{enumerate}
 
-\large{\uppercase{Instituto Dom Luiz, Universidade de Lisboa}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Instituto Dom Luiz, Universidade de Lisboa}}}
 \begin{enumerate}
 \item Maria Ant\'onia Valente (Lot 1)\\
 \end{enumerate}
 
-\large{\uppercase{Universitat Rovira i Virgili }}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Universitat Rovira i Virgili }}}
 \begin{enumerate}
 \item Alba Gilabert Gallart (Lot 1)
 \item Manola Brunet (Lot 1)\\
 \end{enumerate}
 
-\large{\uppercase{Met Office}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Met Office}}}
 \begin{enumerate}
 \item Robert Dunn (Lot 2)
 \item Philip Brohan (Lot 1)
 \item Rob Allan (Lot 1)\\
 \end{enumerate}
 
-\large{\uppercase{National University of Ireland Maynooth (NUIM)}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{National University of Ireland Maynooth (NUIM)}}}
 \begin{enumerate}
 \item Peter Thorne (Lots 2 and 3)
 \item Simon Noone (Lot 2)\\
 % \item Anthony Kettle (Lot 2)
 \end{enumerate}
 
-\large{\uppercase{Science Technology Facilities Council (STFC)}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Science Technology Facilities Council (STFC)}}}
 \begin{enumerate}
 \item Ag Stephens (Lot 2)\\
 \end{enumerate}
 
-\large{\uppercase{Koninklijk Nederlands Meteorolgisch Instituut (KNMI)}}
+{\fontsize{14}{17} \selectfont \textbf{\uppercase{Koninklijk Nederlands Meteorolgisch Instituut (KNMI)}}}
 \begin{enumerate}
 % \item Ge Verver (Lot 4)
 \item Else van den Besselaar (Lot 4)
@@ -322,7 +332,7 @@ As noted above, the CDM is based on the original ODB data model, with meteorolog
 \item Instrument (or sensor) level metadata (\textit{sensor\_configuration} table). This level contains detailed information on the sensor used to make a particular observation, including: calibration status; sampling strategy; observing method; sensor housing and ventilation; instrument model and serial number etc.
 \end{itemize}
 
-These tables are defined in the following section and contain elements that are mandatory across all report types. Additional optional elements are provided through Entity-Attribute-Value based tables linked to the configuration tables. Two additional tables have been defined to include the reporting of comprehensive uncertainty estimates and quality control flags. A simplified schematic of the 12 tables forming the core of the CDM is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_short.pdf}. \\
+These tables are defined in the following section and contain elements that are mandatory across all report types. Additional optional elements are provided through Entity-Attribute-Value based tables linked to the configuration tables. Two additional tables have been defined to include the reporting of comprehensive uncertainty estimates and quality control flags. A simplified schematic of the 12 tables forming the core of the CDM is shown in Figure 1 - a more complete schematic can be found at \url{https://github.com/glamod/common_data_model/blob/master/cdm_full.pdf}. \\
 
 Within the tables in the following sections the following syntax has been used:\\
 \begin{itemize}
@@ -376,7 +386,7 @@ A single standard uncertainty value is provided for each observed value in the o
 
 \section {References}
 
-\hangindent=2em\hangafter=1 Freeman E., S. D. Woodruff, S. J. Worley, S. J. Lubker, E. C. Kent, W. E. Angel, D. I. Berry , P. Brohan, R. Eastman, L. Gates, W. Gloeden, Z. Ji, J. Lawrimore, N. A. Rayner, G. Rosenhagen, S. R. Smith, 2017: ICOADS Release 3.0: A Major Update to the Historical Marine Climate Record, International Journal of Climatology, 37, 2211Ð2232. doi:10.1002/joc.4775\\
+\hangindent=2em\hangafter=1 Freeman E., S. D. Woodruff, S. J. Worley, S. J. Lubker, E. C. Kent, W. E. Angel, D. I. Berry , P. Brohan, R. Eastman, L. Gates, W. Gloeden, Z. Ji, J. Lawrimore, N. A. Rayner, G. Rosenhagen, S. R. Smith, 2017: ICOADS Release 3.0: A Major Update to the Historical Marine Climate Record, International Journal of Climatology, 37, 2211 - 2232. doi:10.1002/joc.4775\\
 
 \hangindent=2em\hangafter=1 GCOS, 2016: The Global Observing System for Climate: Implementation Needs. GCOS-200 / GOOS-214, WMO, Geneva, 342pp.\\
 
@@ -431,6 +441,8 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {data_present_definition} % code table
 \input {duplicate_status_definition} % code table
 \input {events_at_station_definition} % code table
+\input {homogenisation_method_definition}
+\input {homogenisation_operator_definition}
 \input {id_scheme_definition} % code table
 \input {instrument_exposure_quality_definition} % code table
 \input {kind_definition} % code table
@@ -453,6 +465,7 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {profile_configuration_codes_definition}
 \input {profile_configuration_fields_definition}
 \input {profile_type_definition} % code table
+\input {qc_method_definition}
 \input {quality_flag_definition} % code table
 \input {region_definition} % code table
 \input {report_processing_codes_definition} % code table
@@ -476,6 +489,7 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {time_quality_definition} % code table
 \input {time_reference_definition} % code table
 \input {traceability_definition} % code table
+\input {uncertainty_method_definition}
 \input {units_definition} % code table
 \input {update_frequency_definition} % code table
 \input {z_coordinate_method_definition} % code table
@@ -496,6 +510,8 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {data_present_table} % code table
 \input {duplicate_status_table} % code table
 \input {events_at_station_table} % code table
+\input {homogenisation_method_table}
+\input {homogenisation_operator_table}
 \input {id_scheme_table} % code table
 \input {instrument_exposure_quality_table} % code table
 \input {kind_table} % code table
@@ -520,6 +536,7 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {profile_configuration_codes_table}
 \input {profile_configuration_fields_table}
 \input {profile_type_table} % code table
+\input {qc_method_table}
 \input {quality_flag_table} % code table
 \input {region_table} % code table
 \input {report_processing_codes_table} % code table
@@ -543,11 +560,16 @@ A single standard uncertainty value is provided for each observed value in the o
 \input {time_quality_table} % code table
 \input {time_reference_table} % code table
 \input {traceability_table} % code table
+\input {uncertainty_method_table}
 \input {units_table} % code table
 \input {update_frequency_table} % code table
 \input {z_coordinate_method_table} % code table
 \input {z_coordinate_type_table} % code table
 
+   \clearpage
+   \ifodd\value{page}\hbox{}\vspace*{\fill}\thispagestyle{empty}\newpage\fi
+
+\includepdf[fitpaper,pages={1}]{backpage.pdf}
 
 \end{document}
 

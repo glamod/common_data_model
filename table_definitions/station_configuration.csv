@@ -17,8 +17,8 @@ start_date	timestamp		Date that the station first started reporting in this conf
 end_date	timestamp		Last data the station reported in this configuration
 station_type	int	station_type:type	Type of reporting station
 platform_type	int	platform_type:type	Generic type of observing platform
-platform_sub_type	int	platform_sub_type:type	Specific type of observing platform
-operating_institute	int	organisation:organisation	Institute operating the station (e.g. National Oceanography Centre)
+platform_sub_type	int	platform_sub_type:sub_type	Specific type of observing platform
+operating_institute	int	organisation:organisation_id	Institute operating the station (e.g. National Oceanography Centre)
 operating_territory	int	sub_region:sub_region	Sub-region where station is located or country of registry for mobile station
 city	varchar	 	Nearest city / town to station location
 contact	varchar[]	contact:contact_id	Contact for station
@@ -27,7 +27,7 @@ observing_frequency	int	observing_frequency:frequency	Typical frequency of obser
 reporting_time	int[]	 	Reporting hour(s) if non-standard / irregular hours used
 telecommunication_method	int[]	communication_method:method	Method used to report observations
 station_automation	int	automation_status:automation	Whether station is automated, manual or mixed
-measuring_system_model	varchar[]	measuring_system_model	Station / AWS model type
+measuring_system_model	varchar[]		Station / AWS model type
 measuring_system_id	varchar[]		ID or serial number of measuring system
 observed_variables	int[]	observed_variable:variable	array indicating which variables are observed by this station
 comment	varchar		Any other comments / footnotes

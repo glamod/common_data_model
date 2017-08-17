@@ -1,7 +1,7 @@
 # Description: Table to store adjustment values 
 # Source:
 element_name	kind	external_table	description
-adjustment_id	varchar (pk)	 	unique ID for adjustment record
+adjustment_id	varchar (pk)		unique ID for adjustment record
 observation_id	varchar	observations_table:observation_id	link to observation that this entry is for
-value	numeric	 	adjustment value
+value	numeric		adjustment value
 reference	varchar	 	reference describing adjustment

@@ -10,10 +10,10 @@ report_type	int	report_type:type	e.g. SYNOP, TEMP, CLIMAT, etc
 station_name	varchar		e.g. GRUAN station name, ship name, site name etc
 station_type	int	station_type:type	Type of station, e.g. land station, sea station etc
 platform_type	int	platform_type:type	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
-platform_sub_type	int	platform_sub_type:type	Sub-type for platform, e.g. 3m discuss buoy
+platform_sub_type	int	platform_sub_type:sub_type	Sub-type for platform, e.g. 3m discuss buoy
 primary_station_id	varchar	station_configuration:primary_id	Primary station identifier, e.g. WIGOS ID
 station_record_number	int	station_configuration:record_number	Together with primary_station_id this forms a link to the station configuration table.
-primary_station_id_scheme	int	id_scheme:id_scheme	Scheme used for station ID
+primary_station_id_scheme	int	id_scheme:scheme	Scheme used for station ID
 longitude	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
 latitude	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
 location_accuracy	numeric		Accuracy to which station location recorded (radius in km)
@@ -42,6 +42,6 @@ record_timestamp	timestamp with timezone		Timestamp of revision for this record
 history	varchar 	 	Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. 
 processing_level	int	report_processing_level:level	Level of processing applied to this report
 processing_codes	int[]*	report_processing_codes:code	Processing applied to this report
-source_id	varchar	source_configuration:source_configuration	Original source of data, link to external table
+source_id	varchar	source_configuration:source_id	Original source of data, link to external table
 source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
 

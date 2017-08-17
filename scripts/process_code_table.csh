@@ -109,3 +109,4 @@ END { \
     } \
 }\
 ' > ${tablename}_table.tex
+echo "Success !"

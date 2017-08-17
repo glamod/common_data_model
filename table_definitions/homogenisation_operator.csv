@@ -1,0 +1,6 @@
+# Description:
+# Source:
+element_name	kind	external_table	description
+operator	int (pk)		Primary key for table
+symbol	varchar		symbol representation of operator, e.g. +
+description	varchar		text representation of operator, e.g. add

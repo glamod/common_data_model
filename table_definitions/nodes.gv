@@ -1,0 +1,1015 @@
+node [color=white]
+adjustment [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: adjustment</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/adjustment.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="adjustment_id_left">adjustment_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="adjustment_id_right">unique ID for adjustment record</TD></TR>
+<TR><TD PORT="observation_id_left">observation_id</TD>;<TD>varchar</TD><TD>observations_table:observation_id</TD>33
+<TD PORT="observation_id_right">link to observation that this entry is for</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD>numeric</TD><TD></TD><TD PORT="value_right">adjustment value</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">reference describing adjustment</TD></TR>
+</TABLE>>]
+node [color=white]
+application_area [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: application_area</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/application_area.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="application_area_left">application_area</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="application_area_right">Unique ID for code entry</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of application area</TD></TR>
+</TABLE>>]
+node [color=white]
+automation_status [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: automation_status</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/automation_status.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="automation_left">automation</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="automation_right">Unique ID for entry</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of automation status (e.g. automatic observations, manual observation etc)</TD></TR>
+</TABLE>>]
+node [color=white]
+calibration_status [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: calibration_status</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/calibration_status.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="status_left">status</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="status_right">unique ID for entry</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of calibration status (e.g. No changes - in calibration etc)</TD></TR>
+</TABLE>>]
+node [color=white]
+communication_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: communication_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/communication_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">elemet_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="method_right">Primary key / unique ID for entry</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / text description of communication method</TD></TR>
+</TABLE>>]
+node [color=white]
+contact [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: contact</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/contact.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="contact_id_left">contact_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="contact_id_right">primary key</TD></TR>
+<TR><TD PORT="title_left">title</TD>;<TD>varchar</TD><TD></TD><TD PORT="title_right">Title of contact (e.g. Mr, Mrs, Dr. etc)</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">Name of contact</TD></TR>
+<TR><TD PORT="organisation_left">organisation</TD>;<TD>varchar </TD><TD>organisation:organisation_id</TD>28
+<TD PORT="organisation_right">Link to organisation that contact is associated with</TD></TR>
+<TR><TD PORT="telephone_left">telephone</TD>;<TD>varchar</TD><TD></TD><TD PORT="telephone_right">telephone number for contacr</TD></TR>
+<TR><TD PORT="email_left">email</TD>;<TD>varchar</TD><TD></TD><TD PORT="email_right">email address for contact</TD></TR>
+<TR><TD PORT="url_left">url</TD>;<TD>varchar</TD><TD></TD><TD PORT="url_right">website for contact</TD></TR>
+</TABLE>>]
+node [color=white]
+conversion_flag [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: conversion_flag</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/conversion_flag.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="flag_left">flag</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="flag_right">primary key</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of whether the original value has been converted or decoded and is stored in the observed variable element</TD></TR>
+</TABLE>>]
+node [color=white]
+conversion_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: conversion_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/conversion_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="method_right">unique ID for entry</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">text description of conversion method</TD></TR>
+<TR><TD PORT="implementation_left">implementation</TD>;<TD>varchar</TD><TD></TD><TD PORT="implementation_right">details of implementation</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">reference / doi of document giving more details on conversion method</TD></TR>
+</TABLE>>]
+node [color=white]
+crs [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: crs</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/crs.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="crs_left">crs</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="crs_right">primary key</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / description of coordinate reference system</TD></TR>
+</TABLE>>]
+node [color=white]
+data_policy_licence [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: data_policy_licence</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/data_policy_licence.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="policy_left">policy</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="policy_right">Primary key for table</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">short name of data policy</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of data licence, usage rights and restrictions</TD></TR>
+</TABLE>>]
+node [color=white]
+data_present [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: data_present</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/data_present.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="flag_left">flag</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="flag_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value indicating presence of additional data</TD></TR>
+</TABLE>>]
+node [color=white]
+duplicate_status [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: duplicate_status</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/duplicate_status.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="status_left">status</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="status_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / description of duplicate status (e.g. unique, best duplicate etc)</TD></TR>
+</TABLE>>]
+node [color=white]
+events_at_station [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: events_at_station</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/events_at_station.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="event_left">event</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="event_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / description of events at the time of report / observation</TD></TR>
+</TABLE>>]
+node [color=white]
+header_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: header_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/header_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="report_id_left">report_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="report_id_right">Unique ID for report (unique ID given by combination of report_id and observation_id)</TD></TR>
+<TR><TD PORT="region_left">region</TD>;<TD>int</TD><TD>region:region</TD>13
+<TD PORT="region_right">Region (WMO region / Ocean basin)</TD></TR>
+<TR><TD PORT="sub_region_left">sub_region</TD>;<TD>int</TD><TD>sub_region:sub_region</TD>21
+<TD PORT="sub_region_right">Country / regional sea</TD></TR>
+<TR><TD PORT="application_area_left">application_area</TD>;<TD>int[]</TD><TD>application_area:application_area</TD>33
+<TD PORT="application_area_right">WMO application area(s)</TD></TR>
+<TR><TD PORT="observing_programme_left">observing_programme</TD>;<TD>int[]</TD><TD>observing_programme:observing_programme</TD>39
+<TD PORT="observing_programme_right">Observing programme, e.g. VOS</TD></TR>
+<TR><TD PORT="report_type_left">report_type</TD>;<TD>int</TD><TD>report_type:type</TD>16
+<TD PORT="report_type_right">e.g. SYNOP, TEMP, CLIMAT, etc</TD></TR>
+<TR><TD PORT="station_name_left">station_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="station_name_right">e.g. GRUAN station name, ship name, site name etc</TD></TR>
+<TR><TD PORT="station_type_left">station_type</TD>;<TD>int</TD><TD>station_type:type</TD>17
+<TD PORT="station_type_right">Type of station, e.g. land station, sea station etc</TD></TR>
+<TR><TD PORT="platform_type_left">platform_type</TD>;<TD>int</TD><TD>platform_type:type</TD>18
+<TD PORT="platform_type_right">Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc</TD></TR>
+<TR><TD PORT="platform_sub_type_left">platform_sub_type</TD>;<TD>int</TD><TD>platform_sub_type:sub_type</TD>26
+<TD PORT="platform_sub_type_right">Sub-type for platform, e.g. 3m discuss buoy</TD></TR>
+<TR><TD PORT="primary_station_id_left">primary_station_id</TD>;<TD>varchar</TD><TD>station_configuration:primary_id</TD>32
+<TD PORT="primary_station_id_right">Primary station identifier, e.g. WIGOS ID</TD></TR>
+<TR><TD PORT="station_record_number_left">station_record_number</TD>;<TD>int</TD><TD>station_configuration:record_number</TD>35
+<TD PORT="station_record_number_right">Together with primary_station_id this forms a link to the station configuration table.</TD></TR>
+<TR><TD PORT="primary_station_id_scheme_left">primary_station_id_scheme</TD>;<TD>int</TD><TD>id_scheme:scheme</TD>16
+<TD PORT="primary_station_id_scheme_right">Scheme used for station ID</TD></TR>
+<TR><TD PORT="longitude_left">longitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="longitude_right">Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)</TD></TR>
+<TR><TD PORT="latitude_left">latitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="latitude_right">Latitude of station, -90 to 90 (or other as defined by station_crs)</TD></TR>
+<TR><TD PORT="location_accuracy_left">location_accuracy</TD>;<TD>numeric</TD><TD></TD><TD PORT="location_accuracy_right">Accuracy to which station location recorded (radius in km)</TD></TR>
+<TR><TD PORT="location_method_left">location_method</TD>;<TD>int</TD><TD>location_method:method</TD>22
+<TD PORT="location_method_right">Method by which location determined</TD></TR>
+<TR><TD PORT="location_quality_left">location_quality</TD>;<TD>int</TD><TD>location_quality:quality</TD>24
+<TD PORT="location_quality_right">Quality flag for station location</TD></TR>
+<TR><TD PORT="crs_left">crs</TD>;<TD>int</TD><TD>crs:crs</TD>7
+<TD PORT="crs_right">Coordinate reference scheme for station location</TD></TR>
+<TR><TD PORT="station_speed_left">station_speed</TD>;<TD>numeric</TD><TD></TD><TD PORT="station_speed_right">Station speed over ground if mobile (m/s)</TD></TR>
+<TR><TD PORT="station_course_left">station_course</TD>;<TD>numeric</TD><TD></TD><TD PORT="station_course_right">Station course over ground if mobile (degree true)</TD></TR>
+<TR><TD PORT="station_heading_left">station_heading</TD>;<TD>numeric</TD><TD></TD><TD PORT="station_heading_right">Station heading if mobile</TD></TR>
+<TR><TD PORT="height_of_station_above_local_ground_left">height_of_station_above_local_ground</TD>;<TD>numeric</TD><TD></TD><TD PORT="height_of_station_above_local_ground_right">Height of station above local ground (m)</TD></TR>
+<TR><TD PORT="height_of_station_above_sea_level_left">height_of_station_above_sea_level</TD>;<TD>numeric</TD><TD></TD><TD PORT="height_of_station_above_sea_level_right">Height of station above mean sea level (m), negative values for below sea level.</TD></TR>
+<TR><TD PORT="height_of_station_above_sea_level_accuracy_left">height_of_station_above_sea_level_accuracy</TD>;<TD>numeric</TD><TD></TD><TD PORT="height_of_station_above_sea_level_accuracy_right">Accuracy to which height of station known (m)</TD></TR>
+<TR><TD PORT="sea_level_datum_left">sea_level_datum</TD>;<TD>int</TD><TD>sea_level_datum:datum</TD>21
+<TD PORT="sea_level_datum_right">Datum used for sea level</TD></TR>
+<TR><TD PORT="report_meaning_of_time_stamp_left">report_meaning_of_time_stamp</TD>;<TD>int</TD><TD>meaning_of_time_stamp:meaning</TD>29
+<TD PORT="report_meaning_of_time_stamp_right">Report time - beginning, middle or end of reporting period</TD></TR>
+<TR><TD PORT="report_timestamp_left">report_timestamp</TD>;<TD>timestamp with timezone</TD><TD></TD><TD PORT="report_timestamp_right">e.g. 1991-01-01 12:00:0.0+0</TD></TR>
+<TR><TD PORT="report_duration_left">report_duration</TD>;<TD>int</TD><TD></TD><TD PORT="report_duration_right">Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc</TD></TR>
+<TR><TD PORT="report_time_accuracy_left">report_time_accuracy</TD>;<TD>numeric</TD><TD></TD><TD PORT="report_time_accuracy_right">Precision to which time was recorded (s)</TD></TR>
+<TR><TD PORT="report_time_quality_left">report_time_quality</TD>;<TD>int</TD><TD>time_quality:quality</TD>20
+<TD PORT="report_time_quality_right">Quality flag for report_timestamp </TD></TR>
+<TR><TD PORT="report_time_reference_left">report_time_reference</TD>;<TD>int</TD><TD>time_reference:reference</TD>24
+<TD PORT="report_time_reference_right">Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)</TD></TR>
+<TR><TD PORT="profile_id_left">profile_id</TD>;<TD>varchar</TD><TD>profile_configuration:profile_id</TD>32
+<TD PORT="profile_id_right">Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.</TD></TR>
+<TR><TD PORT="events_at_station_left">events_at_station</TD>;<TD>int[]*</TD><TD>events_at_station:event</TD>23
+<TD PORT="events_at_station_right">e.g. ship hove to, crop burning etc.</TD></TR>
+<TR><TD PORT="report_quality_left">report_quality</TD>;<TD>int </TD><TD>quality_flag:flag</TD>17
+<TD PORT="report_quality_right">Overall quality of report</TD></TR>
+<TR><TD PORT="duplicate_status_left">duplicate_status</TD>;<TD>int</TD><TD>duplicate_status:status</TD>23
+<TD PORT="duplicate_status_right">E.g. no duplicates, best duplicate, duplicate, not checked.</TD></TR>
+<TR><TD PORT="duplicates_left">duplicates</TD>;<TD>varchar[]*</TD><TD>header_table:report_id</TD>22
+<TD PORT="duplicates_right">Array of report_id's for duplicates</TD></TR>
+<TR><TD PORT="record_timestamp_left">record_timestamp</TD>;<TD>timestamp with timezone</TD><TD></TD><TD PORT="record_timestamp_right">Timestamp of revision for this record</TD></TR>
+<TR><TD PORT="history_left">history</TD>;<TD>varchar </TD><TD></TD><TD PORT="history_right">Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. </TD></TR>
+<TR><TD PORT="processing_level_left">processing_level</TD>;<TD>int</TD><TD>report_processing_level:level</TD>29
+<TD PORT="processing_level_right">Level of processing applied to this report</TD></TR>
+<TR><TD PORT="processing_codes_left">processing_codes</TD>;<TD>int[]*</TD><TD>report_processing_codes:code</TD>28
+<TD PORT="processing_codes_right">Processing applied to this report</TD></TR>
+<TR><TD PORT="source_id_left">source_id</TD>;<TD>varchar</TD><TD>source_configuration:source_id</TD>30
+<TD PORT="source_id_right">Original source of data, link to external table</TD></TR>
+<TR><TD PORT="source_record_id_left">source_record_id</TD>;<TD>varchar</TD><TD></TD><TD PORT="source_record_id_right">Record ID in source data, e.g. ID of event from GRUAN meta database</TD></TR>
+<TR><TD PORT="_left"></TD>;<TD></TD><TD></TD><TD PORT="_right"></TD></TR>
+</TABLE>>]
+node [color=white]
+homogenisation_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: homogenisation_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/homogenisation_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="method_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of method</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">DOI or reference for method</TD></TR>
+</TABLE>>]
+node [color=white]
+homogenisation_operator [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: homogenisation_operator</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/homogenisation_operator.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="operator_left">operator</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="operator_right">Primary key for table</TD></TR>
+<TR><TD PORT="symbol_left">symbol</TD>;<TD>varchar</TD><TD></TD><TD PORT="symbol_right">symbol representation of operator, e.g. +</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">text representation of operator, e.g. add</TD></TR>
+</TABLE>>]
+node [color=white]
+homogenisation_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: homogenisation_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/homogenisation_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="observation_id_left">observation_id</TD>;<TD>varchar</TD><TD>observations_table:observation_id</TD>33
+<TD PORT="observation_id_right">Link to observation this entry is for</TD></TR>
+<TR><TD PORT="homogenisation_method_left">homogenisation_method</TD>;<TD>int</TD><TD>homogenisation_method:method</TD>28
+<TD PORT="homogenisation_method_right">Method used to homogenise data</TD></TR>
+<TR><TD PORT="homogenisation_adjustment_left">homogenisation_adjustment</TD>;<TD>numeric</TD><TD></TD><TD PORT="homogenisation_adjustment_right">Value applied to homogenise data (homogenised_value = original (+-/*) homogenisation_adjustment)</TD></TR>
+<TR><TD PORT="homogenisation_operator_left">homogenisation_operator</TD>;<TD>int</TD><TD>homogenisation_operator:operator</TD>32
+<TD PORT="homogenisation_operator_right">Operator (+-/*) used to apply adjustment</TD></TR>
+<TR><TD PORT="homogenisation_order_left">homogenisation_order</TD>;<TD>int</TD><TD></TD><TD PORT="homogenisation_order_right">Order in which the adjustments are applied. Set to NA or missing if not applicable</TD></TR>
+</TABLE>>]
+node [color=white]
+id_scheme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: id_scheme</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/id_scheme.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="scheme_left">scheme</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="scheme_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / description of ID scheme used to report the station ID</TD></TR>
+</TABLE>>]
+node [color=white]
+instrument_exposure_quality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: instrument_exposure_quality</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/instrument_exposure_quality.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="exposure_left">exposure</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="exposure_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of instrument exposure quality</TD></TR>
+</TABLE>>]
+node [color=white]
+kind [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: kind</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/kind.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="kind_left">kind</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="kind_right">primary key</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">kind of data (int, numeric etc)</TD></TR>
+</TABLE>>]
+node [color=white]
+location_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: location_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/location_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="method_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of method by which the station location has been determined</TD></TR>
+</TABLE>>]
+node [color=white]
+location_quality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: location_quality</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/location_quality.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="quality_left">quality</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="quality_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of the quality of the location this indicator is for</TD></TR>
+</TABLE>>]
+node [color=white]
+meaning_of_time_stamp [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: meaning_of_time_stamp</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/meaning_of_time_stamp.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="meaning_left">meaning</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="meaning_right">primary key</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">abbreviation / simple name for meaning of time stamp</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of meaning of time stamp</TD></TR>
+</TABLE>>]
+node [color=white]
+method_of_estimating_uncertainty [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: method_of_estimating_uncertainty</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/method_of_estimating_uncertainty.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="method_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of how the uncertainty has been determined</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">Reference or DOI describing method</TD></TR>
+</TABLE>>]
+node [color=white]
+observation_code_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observation_code_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observation_code_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="code_table_left">code_table</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_table_right">Primary key for table</TD></TR>
+<TR><TD PORT="code_table_scheme_left">code_table_scheme</TD>;<TD>varchar</TD><TD></TD><TD PORT="code_table_scheme_right">External scheme used for code table (e.g. BUFR)</TD></TR>
+<TR><TD PORT="code_table_id_left">code_table_id</TD>;<TD>varchar</TD><TD></TD><TD PORT="code_table_id_right">ID used to identify table within scheme (e.g. F XX YYY for BUFR tables)</TD></TR>
+<TR><TD PORT="code_table_name_left">code_table_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="code_table_name_right">Name of code table</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD>int</TD><TD></TD><TD PORT="value_right">coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / meaning of decoded value</TD></TR>
+</TABLE>>]
+node [color=white]
+observation_value_significance [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observation_value_significance</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observation_value_significance.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="significance_left">significance</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="significance_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of indicated significance (e.g. min over specified period)</TD></TR>
+</TABLE>>]
+node [color=white]
+observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observations_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observations_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="observation_id_left">observation_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="observation_id_right">unique ID for observation</TD></TR>
+<TR><TD PORT="report_id_left">report_id</TD>;<TD>varchar</TD><TD>header_table:report_id</TD>22
+<TD PORT="report_id_right">Link to header information</TD></TR>
+<TR><TD PORT="data_policy_licence_left">data_policy_licence</TD>;<TD>int</TD><TD>data_policy_licence:policy</TD>26
+<TD PORT="data_policy_licence_right">WMOessential, WMOadditional, WMOother</TD></TR>
+<TR><TD PORT="date_time_left">date_time</TD>;<TD>timestamp with timezone</TD><TD></TD><TD PORT="date_time_right">timestamp for observation</TD></TR>
+<TR><TD PORT="date_time_meaning_left">date_time_meaning</TD>;<TD>int</TD><TD>meaning_of_time_stamp:meaning</TD>29
+<TD PORT="date_time_meaning_right">beginning, middle, end</TD></TR>
+<TR><TD PORT="observation_duration_left">observation_duration</TD>;<TD>int</TD><TD></TD><TD PORT="observation_duration_right">Duration/period over which observation was made (s)</TD></TR>
+<TR><TD PORT="longitude_left">longitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="longitude_right">Longitude of the observed value, -180 to 180 (or other as defined by CRS). This may or may not be the same as the report location.</TD></TR>
+<TR><TD PORT="latitude_left">latitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="latitude_right">Latitude of the observed value, -90 to 90 (or other as defined by CRS)</TD></TR>
+<TR><TD PORT="crs_left">crs</TD>;<TD>int</TD><TD>crs:crs</TD>7
+<TD PORT="crs_right">Coordinate reference scheme use to encode location</TD></TR>
+<TR><TD PORT="z_coordinate_left">z_coordinate</TD>;<TD>numeric</TD><TD></TD><TD PORT="z_coordinate_right">z coordinate of observation</TD></TR>
+<TR><TD PORT="z_coordinate_type_left">z_coordinate_type</TD>;<TD>int</TD><TD>z_coordinate_type:type</TD>22
+<TD PORT="z_coordinate_type_right">Type of z coordinate</TD></TR>
+<TR><TD PORT="observation_height_above_station_surface_left">observation_height_above_station_surface</TD>;<TD>numeric</TD><TD></TD><TD PORT="observation_height_above_station_surface_right">Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.</TD></TR>
+<TR><TD PORT="observed_variable_left">observed_variable</TD>;<TD>int</TD><TD>observed_variable:variable</TD>26
+<TD PORT="observed_variable_right">The variable being observed / measured</TD></TR>
+<TR><TD PORT="secondary_variable_left">secondary_variable</TD>;<TD>int</TD><TD>secondary_variable:variable</TD>27
+<TD PORT="secondary_variable_right">Secondary variable required to understand observation, e.g. chemical constituent. Set to NA / missing if not applicable.</TD></TR>
+<TR><TD PORT="observation_value_left">observation_value</TD>;<TD>numeric</TD><TD></TD><TD PORT="observation_value_right">The observed value</TD></TR>
+<TR><TD PORT="value_significance_left">value_significance</TD>;<TD>int</TD><TD>observation_value_significance:significance</TD>43
+<TD PORT="value_significance_right">e.g. min, max, mean, sum</TD></TR>
+<TR><TD PORT="secondary_value_left">secondary_value</TD>;<TD>int</TD><TD>secondary_variable:value</TD>24
+<TD PORT="secondary_value_right">value for the secondary variable. Set to NA or missing if not applicable.</TD></TR>
+<TR><TD PORT="units_left">units</TD>;<TD>int</TD><TD>units:units</TD>11
+<TD PORT="units_right">Units for the observed variable</TD></TR>
+<TR><TD PORT="code_table_left">code_table</TD>;<TD>int</TD><TD>observation_code_table:code_table</TD>33
+<TD PORT="code_table_right">Encode / decode table for variable (if encoded)</TD></TR>
+<TR><TD PORT="conversion_flag_left">conversion_flag</TD>;<TD>int</TD><TD>conversion_flag:flag</TD>20
+<TD PORT="conversion_flag_right">Flag indicating whether original, converted or both values are available.</TD></TR>
+<TR><TD PORT="location_method_left">location_method</TD>;<TD>int</TD><TD>location_method:method</TD>22
+<TD PORT="location_method_right">Method of determining location, </TD></TR>
+<TR><TD PORT="location_precision_left">location_precision</TD>;<TD>numeric</TD><TD></TD><TD PORT="location_precision_right">Precision to which location is reported (radius km)</TD></TR>
+<TR><TD PORT="z_coordinate_method_left">z_coordinate_method</TD>;<TD>int</TD><TD>z_coordinate_method:method</TD>26
+<TD PORT="z_coordinate_method_right">Method of determining z coordinate</TD></TR>
+<TR><TD PORT="bbox_min_longitude_left">bbox_min_longitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="bbox_min_longitude_right">Bounding box for observation, valid range given by CRS</TD></TR>
+<TR><TD PORT="bbox_max_longitude_left">bbox_max_longitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="bbox_max_longitude_right">Bounding box for observation, valid range given by CRS</TD></TR>
+<TR><TD PORT="bbox_min_latitude_left">bbox_min_latitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="bbox_min_latitude_right">Bounding box for observation, valid range given by CRS</TD></TR>
+<TR><TD PORT="bbox_max_latitude_left">bbox_max_latitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="bbox_max_latitude_right">Bounding box for observation, valid range given by CRS</TD></TR>
+<TR><TD PORT="spatial_representativeness_left">spatial_representativeness</TD>;<TD>int</TD><TD>spatial_representativeness:representativeness</TD>45
+<TD PORT="spatial_representativeness_right">Spatial representativeness of observation</TD></TR>
+<TR><TD PORT="quality_flag_left">quality_flag</TD>;<TD>int</TD><TD>quality_flag:flag</TD>17
+<TD PORT="quality_flag_right">Quality flag for observation</TD></TR>
+<TR><TD PORT="qc_passed_left">qc_passed</TD>;<TD>int</TD><TD></TD><TD PORT="qc_passed_right">Number of quality control checks passed (see qc_table for more information)</TD></TR>
+<TR><TD PORT="qc_failed_left">qc_failed</TD>;<TD>int</TD><TD></TD><TD PORT="qc_failed_right">Number of quality control checks failed (see qc_table for more information)</TD></TR>
+<TR><TD PORT="numerical_precision_left">numerical_precision</TD>;<TD>int</TD><TD></TD><TD PORT="numerical_precision_right">Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor</TD></TR>
+<TR><TD PORT="standard_uncertainty_left">standard_uncertainty</TD>;<TD>numeric</TD><TD></TD><TD PORT="standard_uncertainty_right">Standard uncertainty in reported value</TD></TR>
+<TR><TD PORT="method_of_estimating_standard_uncertainty_left">method_of_estimating_standard_uncertainty</TD>;<TD>int</TD><TD>method_of_estimating_uncertainty:method</TD>39
+<TD PORT="method_of_estimating_standard_uncertainty_right">Method of estimating the standard uncertainty</TD></TR>
+<TR><TD PORT="sensor_id_left">sensor_id</TD>;<TD>varchar</TD><TD>sensor_configuration:sensor_id</TD>30
+<TD PORT="sensor_id_right"> Link to sensor_configuration table.</TD></TR>
+<TR><TD PORT="sensor_automation_status_left">sensor_automation_status</TD>;<TD>int</TD><TD>automation_status:automation</TD>28
+<TD PORT="sensor_automation_status_right">Automated, manual, mixed or visual observation</TD></TR>
+<TR><TD PORT="exposure_of_sensor_left">exposure_of_sensor</TD>;<TD>int</TD><TD>instrument_exposure_quality:exposure</TD>36
+<TD PORT="exposure_of_sensor_right">Whether the exposure of the instrument will impact on the quality of the measurement</TD></TR>
+<TR><TD PORT="original_precision_left">original_precision</TD>;<TD>int </TD><TD></TD><TD PORT="original_precision_right">Original reporting precision in units given by 'original_units'</TD></TR>
+<TR><TD PORT="original_units_left">original_units</TD>;<TD>int</TD><TD>units:units</TD>11
+<TD PORT="original_units_right">Original units </TD></TR>
+<TR><TD PORT="original_value_left">original_value</TD>;<TD>numeric </TD><TD></TD><TD PORT="original_value_right">Original value as reported or recorded in log book.</TD></TR>
+<TR><TD PORT="conversion_method_left">conversion_method</TD>;<TD>int</TD><TD>conversion_method:method</TD>24
+<TD PORT="conversion_method_right">Link to table describing conversion process</TD></TR>
+<TR><TD PORT="processing_code_left">processing_code</TD>;<TD>int[]*</TD><TD>processing_code:code</TD>20
+<TD PORT="processing_code_right">e.g. TRC (temperature radiation corrections) etc. Encoded in table.</TD></TR>
+<TR><TD PORT="processing_level_left">processing_level</TD>;<TD>int</TD><TD>processing_level:level</TD>22
+<TD PORT="processing_level_right">Level of processing applied to observation.</TD></TR>
+<TR><TD PORT="adjustment_id_left">adjustment_id</TD>;<TD>int</TD><TD>adjustment:adjustment_id</TD>24
+<TD PORT="adjustment_id_right">Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)</TD></TR>
+<TR><TD PORT="traceability_left">traceability</TD>;<TD>int</TD><TD>traceability:traceability</TD>25
+<TD PORT="traceability_right">Whether observation can be traced to international standards.</TD></TR>
+<TR><TD PORT="advanced_qc_left">advanced_qc</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="advanced_qc_right">Flag indicating whether advanced qc data are available</TD></TR>
+<TR><TD PORT="advanced_uncertainty_left">advanced_uncertainty</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="advanced_uncertainty_right">Flag indicating whether advanced uncertainty estimates are available</TD></TR>
+<TR><TD PORT="advanced_homogenisation_left">advanced_homogenisation</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="advanced_homogenisation_right">Flag indicating whether advanced homogenisation information is available</TD></TR>
+</TABLE>>]
+node [color=white]
+observed_variable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observed_variable</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observed_variable.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="variable_left">variable</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="variable_right">primary key for table</TD></TR>
+<TR><TD PORT="parameter_group_left">parameter_group</TD>;<TD>varchar</TD><TD></TD><TD PORT="parameter_group_right">parameter group (e.g. temperature, pressure) that this variable belongs to</TD></TR>
+<TR><TD PORT="domain_left">domain</TD>;<TD>varchar</TD><TD></TD><TD PORT="domain_right">Observation domain (atmospheric, oceanic etc) that this variable is typically reported for</TD></TR>
+<TR><TD PORT="sub_domain_left">sub_domain</TD>;<TD>varchar</TD><TD></TD><TD PORT="sub_domain_right">Sub-domain (e.g. upper air, surface etc)</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">common name for variable</TD></TR>
+<TR><TD PORT="units_left">units</TD>;<TD>varchar</TD><TD></TD><TD PORT="units_right">ASCII abbreviation of units</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description / definition of variable</TD></TR>
+</TABLE>>]
+node [color=white]
+observing_frequency [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observing_frequency</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observing_frequency.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="frequency_left">frequency</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="frequency_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value / description of reporting frequency (e.g. once per day)</TD></TR>
+</TABLE>>]
+node [color=white]
+observing_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observing_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observing_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="method_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value indicating method of observing (e.g. measured, estimating or computed)</TD></TR>
+</TABLE>>]
+node [color=white]
+observing_programme [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: observing_programme</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/observing_programme.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="observing_programme_left">observing_programme</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="observing_programme_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Commonly used abbreviation for observing programme (e.g. VOS)</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description or name of obsserving programme (e.g. Voluntary Observing Ships)</TD></TR>
+<TR><TD PORT="sponsor_left">sponsor</TD>;<TD>varchar</TD><TD></TD><TD PORT="sponsor_right">primary sponsor of observing programme (e.g. JCOMM)</TD></TR>
+</TABLE>>]
+node [color=white]
+organisation [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: organisation</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/organisation.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="organisation_id_left">organisation_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="organisation_id_right">unique ID for organisation</TD></TR>
+<TR><TD PORT="parent_organisation_left">parent_organisation</TD>;<TD>varchar</TD><TD>organisation:organisation_id</TD>28
+<TD PORT="parent_organisation_right">Link to parent organisation (or NA/NULL or none)</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">Name of organisation</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Abbreviated name (or NA/NULL)</TD></TR>
+<TR><TD PORT="address_left">address</TD>;<TD>varchar</TD><TD></TD><TD PORT="address_right">Road / building name</TD></TR>
+<TR><TD PORT="city_left">city</TD>;<TD>varchar</TD><TD></TD><TD PORT="city_right">City</TD></TR>
+<TR><TD PORT="admin_area_left">admin_area</TD>;<TD>varchar</TD><TD></TD><TD PORT="admin_area_right">County or admin region</TD></TR>
+<TR><TD PORT="region_left">region</TD>;<TD>int</TD><TD>region:region</TD>13
+<TD PORT="region_right">WMO Region</TD></TR>
+<TR><TD PORT="country_left">country</TD>;<TD>int</TD><TD>sub_region:sub_region</TD>21
+<TD PORT="country_right">Country</TD></TR>
+<TR><TD PORT="postal_code_left">postal_code</TD>;<TD>varchar</TD><TD></TD><TD PORT="postal_code_right">Postal / zip code</TD></TR>
+<TR><TD PORT="telephone_left">telephone</TD>;<TD>varchar</TD><TD></TD><TD PORT="telephone_right">Primary telephone number of organisation</TD></TR>
+<TR><TD PORT="url_left">url</TD>;<TD>varchar</TD><TD></TD><TD PORT="url_right">Link to organisation website</TD></TR>
+<TR><TD PORT="email_left">email</TD>;<TD>varchar</TD><TD></TD><TD PORT="email_right">Primary email contact for website</TD></TR>
+</TABLE>>]
+node [color=white]
+platform_sub_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: platform_sub_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/platform_sub_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="sub_type_left">sub_type</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="sub_type_right">primary key for table</TD></TR>
+<TR><TD PORT="platform_type_left">platform_type</TD>;<TD>int</TD><TD>platform_type:type</TD>18
+<TD PORT="platform_type_right">platform type to which this sub-type belongs</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation used to indicate this platform sub-type</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of observing platform sub-type (e.g. Container ship)</TD></TR>
+</TABLE>>]
+node [color=white]
+platform_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: platform_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/platform_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="type_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of class of observing platform</TD></TR>
+</TABLE>>]
+node [color=white]
+processing_code [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: processing_code</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/processing_code.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="code_left">code</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation for processing code</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description / meaning of processing code</TD></TR>
+</TABLE>>]
+node [color=white]
+processing_level [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: processing_level</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/processing_level.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="level_left">level</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="level_right">primary key for table</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">Name commonly used to indicate level of processing</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of processing level</TD></TR>
+</TABLE>>]
+node [color=white]
+product_level [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: product_level</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/product_level.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="level_left">level</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="level_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Meaning of product level</TD></TR>
+</TABLE>>]
+node [color=white]
+product_status [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: product_status</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/product_status.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="status_left">status</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="status_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation used to indicate product status</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Meaning of product status</TD></TR>
+</TABLE>>]
+node [color=white]
+profile_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: profile_configuration</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/profile_configuration.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="profile_id_left">profile_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="profile_id_right">Unique ID for this profile entry</TD></TR>
+<TR><TD PORT="profile_type_left">profile_type</TD>;<TD>int</TD><TD>profile_type:type</TD>17
+<TD PORT="profile_type_right">Type of profile (e.g. atmospheric or oceanic)</TD></TR>
+<TR><TD PORT="standard_time_left">standard_time</TD>;<TD>int</TD><TD>standard_time:time</TD>18
+<TD PORT="standard_time_right">e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC</TD></TR>
+<TR><TD PORT="actual_time_left">actual_time</TD>;<TD>timestamp</TD><TD></TD><TD PORT="actual_time_right">Actual report / launch time</TD></TR>
+<TR><TD PORT="profile_number_left">profile_number</TD>;<TD>numeric</TD><TD></TD><TD PORT="profile_number_right">e.g. Balloon Number</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Any additional comments / footnotes</TD></TR>
+<TR><TD PORT="optional_data_left">optional_data</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="optional_data_right">Flag indicating whether there is additional metadata available</TD></TR>
+</TABLE>>]
+node [color=white]
+profile_configuration_codes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: profile_configuration_codes</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/profile_configuration_codes.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD>profile_configuration_fields:field_id</TD>37
+<TD PORT="field_id_right">Link to field code is for</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field</TD></TR>
+<TR><TD PORT="code_value_left">code_value</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_value_right">Coded value. Together with field_id forms primary key</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Abbreviation used for coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / meaning of code</TD></TR>
+<TR><TD PORT="start_date_left">start_date</TD>;<TD>timestamp</TD><TD></TD><TD PORT="start_date_right">Start of validity period for indicated code</TD></TR>
+<TR><TD PORT="end_date_left">end_date</TD>;<TD>timestamp</TD><TD></TD><TD PORT="end_date_right">End of validity period for indicated code</TD></TR>
+</TABLE>>]
+node [color=white]
+profile_configuration_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: profile_configuration_fields</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/profile_configuration_fields.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="field_id_right">primary key</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field described by this entry</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="type_right">The variable type used to store information on the indicated field</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of the indicated field</TD></TR>
+</TABLE>>]
+node [color=white]
+profile_configuration_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: profile_configuration_optional</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/profile_configuration_optional.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="profile_id_left">profile_id</TD>;<TD>varchar</TD><TD>profile_configuration:profile_id</TD>32
+<TD PORT="profile_id_right">Link to profile for which this entry corresponds</TD></TR>
+<TR><TD PORT="kind_left">kind</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="kind_right">Enumerated data type (numeric, int, etc)</TD></TR>
+<TR><TD PORT="field_left">field</TD>;<TD>varchar</TD><TD>profile_configuration_fields:field_id</TD>37
+<TD PORT="field_right">Field that this entry corresponds to</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD></TD><TD></TD><TD PORT="value_right">Kind inherited from field</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Any additional comments.</TD></TR>
+</TABLE>>]
+node [color=white]
+profile_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: profile_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/profile_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="type_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">type of profile measurements (atmospheric, oceanographic etc)</TD></TR>
+</TABLE>>]
+node [color=white]
+qc_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: qc_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/qc_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="method_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of method</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">DOI or reference for method</TD></TR>
+</TABLE>>]
+node [color=white]
+qc_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: qc_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/qc_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="report_id_left">report_id</TD>;<TD>varchar</TD><TD>header_table:report_id</TD>22
+<TD PORT="report_id_right">Link to report this entry is for</TD></TR>
+<TR><TD PORT="observation_id_left">observation_id</TD>;<TD>varchar</TD><TD>observations_table:observation_id</TD>33
+<TD PORT="observation_id_right">Link to observation this entry is for. Set to NULL / NA if entry for report level QC</TD></TR>
+<TR><TD PORT="qc_method_left">qc_method</TD>;<TD>int</TD><TD>qc_method:method</TD>16
+<TD PORT="qc_method_right">Link to table describing QC method used to set this flag</TD></TR>
+<TR><TD PORT="qc_flag_left">qc_flag</TD>;<TD>int</TD><TD>quality_flag:flag</TD>17
+<TD PORT="qc_flag_right">E.g. 0 = good, 1 = inconsistent etc</TD></TR>
+</TABLE>>]
+node [color=white]
+quality_flag [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: quality_flag</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/quality_flag.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="flag_left">flag</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="flag_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">meaning of quality flag</TD></TR>
+</TABLE>>]
+node [color=white]
+region [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: region</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/region.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="region_left">region</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="region_right">primary key for table</TD></TR>
+<TR><TD PORT="WMO_region_left">WMO_region</TD>;<TD>int</TD><TD></TD><TD PORT="WMO_region_right">WMO region that this corresponds to</TD></TR>
+<TR><TD PORT="desription_left">desription</TD>;<TD>varchar</TD><TD></TD><TD PORT="desription_right">Definition of region</TD></TR>
+</TABLE>>]
+node [color=white]
+report_processing_codes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: report_processing_codes</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/report_processing_codes.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="code_left">code</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation used to indicate processing code</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of processing code</TD></TR>
+</TABLE>>]
+node [color=white]
+report_processing_level [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: report_processing_level</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/report_processing_level.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="level_left">level</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="level_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation used to indicate processing level</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of processing level</TD></TR>
+</TABLE>>]
+node [color=white]
+report_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: report_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/report_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="type_right">primary key for table</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">abbreviation used to indicate report type (e.g. SHIP)</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of report type, e.g. routine weather report made by ship</TD></TR>
+</TABLE>>]
+node [color=white]
+role [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: role</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/role.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="role_left">role</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="role_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of role</TD></TR>
+</TABLE>>]
+node [color=white]
+sampling_strategy [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sampling_strategy</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sampling_strategy.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="strategy_left">strategy</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="strategy_right">primary key for table</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">name or abbreviation used to indicate sampling strategy</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of sampling strategy</TD></TR>
+</TABLE>>]
+node [color=white]
+sea_level_datum [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sea_level_datum</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sea_level_datum.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="datum_left">datum</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="datum_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Long name of sea level dataum</TD></TR>
+</TABLE>>]
+node [color=white]
+secondary_variable [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: secondary_variable</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/secondary_variable.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="variable_left">variable</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="variable_right">part of primary key - indicator for secondary variable name</TD></TR>
+<TR><TD PORT="variable_name_left">variable_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="variable_name_right">name / description of secondary variable</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="value_right">coded value for secondary variable</TD></TR>
+<TR><TD PORT="symbol_left">symbol</TD>;<TD>varchar</TD><TD></TD><TD PORT="symbol_right">abbreviation or symbol used to represent decoded value, e.g. chemical symbol for atmospheric constituent</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Name or description of decoded value</TD></TR>
+</TABLE>>]
+node [color=white]
+sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sensor_configuration</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sensor_configuration.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="sensor_id_left">sensor_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="sensor_id_right">Unique ID for this instrument</TD></TR>
+<TR><TD PORT="observing_method_left">observing_method</TD>;<TD>int</TD><TD>observing_method:method</TD>23
+<TD PORT="observing_method_right">Method (instrumental, estimated / visual, computed) by which observation made</TD></TR>
+<TR><TD PORT="sampling_strategy_left">sampling_strategy</TD>;<TD>int</TD><TD>sampling_strategy:strategy</TD>26
+<TD PORT="sampling_strategy_right">Sampling strategy used by instrument</TD></TR>
+<TR><TD PORT="calibration_status_left">calibration_status</TD>;<TD>int</TD><TD>calibration_status:status</TD>25
+<TD PORT="calibration_status_right">Whether the sensor is in / out of calibration</TD></TR>
+<TR><TD PORT="calibration_date_left">calibration_date</TD>;<TD>timestamp</TD><TD></TD><TD PORT="calibration_date_right">Date of last calibration</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">additional comments for sensor not reportable elsewhere</TD></TR>
+<TR><TD PORT="date_start_left">date_start</TD>;<TD>timestamp</TD><TD></TD><TD PORT="date_start_right">start date for period of validity assoiciated with this entry</TD></TR>
+<TR><TD PORT="date_end_left">date_end</TD>;<TD>timestamp</TD><TD></TD><TD PORT="date_end_right">end date for period of validity assoiciated with this entry</TD></TR>
+<TR><TD PORT="optional_data_left">optional_data</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="optional_data_right">Flag indicating if additional data available</TD></TR>
+</TABLE>>]
+node [color=white]
+sensor_configuration_codes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sensor_configuration_codes</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sensor_configuration_codes.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD>sensor_configuration_fields:field_id</TD>36
+<TD PORT="field_id_right">Link to field code is for</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field</TD></TR>
+<TR><TD PORT="parameter_left">parameter</TD>;<TD>varchar</TD><TD></TD><TD PORT="parameter_right">Which parameter this entry is valid for</TD></TR>
+<TR><TD PORT="code_value_left">code_value</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_value_right">Coded value. Together with field_id forms primary key</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Abbreviation used for coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / meaning of code</TD></TR>
+</TABLE>>]
+node [color=white]
+sensor_configuration_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sensor_configuration_fields</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sensor_configuration_fields.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="field_id_right">primary key</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field described by this entry</TD></TR>
+<TR><TD PORT="parameter_left">parameter</TD>;<TD>varchar</TD><TD></TD><TD PORT="parameter_right">Which parameter this entry if relevant for</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="type_right">The variable type used to store information on the indicated field</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of the indicated field</TD></TR>
+</TABLE>>]
+node [color=white]
+sensor_configuration_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sensor_configuration_optional</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sensor_configuration_optional.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="sensor_id_left">sensor_id</TD>;<TD>varchar (fk)</TD><TD>sensor_configuration:sensor_id</TD>30
+<TD PORT="sensor_id_right">Link to sensor for which this entry corresponds</TD></TR>
+<TR><TD PORT="kind_left">kind</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="kind_right">Enumerated data type (numeric, int, etc)</TD></TR>
+<TR><TD PORT="field_left">field</TD>;<TD>varchar</TD><TD>sensor_configuration_fields:field_id</TD>36
+<TD PORT="field_right">Field that this entry corresponds to</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD></TD><TD></TD><TD PORT="value_right">Kind inherited from field</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Any additional comments.</TD></TR>
+</TABLE>>]
+node [color=white]
+source_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: source_configuration</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/source_configuration.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="source_id_left">source_id</TD>;<TD>varchar (pk) </TD><TD></TD><TD PORT="source_id_right">Unique record ID for dataset</TD></TR>
+<TR><TD PORT="product_id_left">product_id</TD>;<TD>varchar</TD><TD></TD><TD PORT="product_id_right">ID for product</TD></TR>
+<TR><TD PORT="product_name_left">product_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="product_name_right">Name of source, e.g. International Comprehensive Ocean Atmosphere Data Set, RS92 GRUAN Data Product</TD></TR>
+<TR><TD PORT="product_code_left">product_code</TD>;<TD>varchar</TD><TD></TD><TD PORT="product_code_right">Abbreviations / product code, e.g. ICOADS, RS92-GDP</TD></TR>
+<TR><TD PORT="product_version_left">product_version</TD>;<TD>varchar</TD><TD></TD><TD PORT="product_version_right">Version number for dataset, e.g. Release 3.0.0</TD></TR>
+<TR><TD PORT="product_level_left">product_level</TD>;<TD>int</TD><TD>product_level:level</TD>19
+<TD PORT="product_level_right">Level of product</TD></TR>
+<TR><TD PORT="product_uri_left">product_uri</TD>;<TD>varchar</TD><TD></TD><TD PORT="product_uri_right">URI for product, either to original source or to CDS</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of dataset / comments</TD></TR>
+<TR><TD PORT="product_references_left">product_references</TD>;<TD>varchar[]</TD><TD></TD><TD PORT="product_references_right">References describing the dataset</TD></TR>
+<TR><TD PORT="product_citation_left">product_citation</TD>;<TD>varchar[]</TD><TD></TD><TD PORT="product_citation_right">Citation to use when using this product</TD></TR>
+<TR><TD PORT="product_status_left">product_status</TD>;<TD>int</TD><TD>product_status:status</TD>21
+<TD PORT="product_status_right">Status of product, draft, pre-release, release</TD></TR>
+<TR><TD PORT="source_format_left">source_format</TD>;<TD>int</TD><TD>source_format:format</TD>20
+<TD PORT="source_format_right">Original format for data</TD></TR>
+<TR><TD PORT="source_format_version_left">source_format_version</TD>;<TD>varchar</TD><TD></TD><TD PORT="source_format_version_right">Version of original data format</TD></TR>
+<TR><TD PORT="source_file_left">source_file</TD>;<TD>varchar</TD><TD></TD><TD PORT="source_file_right">Filename for data from source</TD></TR>
+<TR><TD PORT="source_file_checksum_left">source_file_checksum</TD>;<TD>varchar</TD><TD></TD><TD PORT="source_file_checksum_right">Checksum of source datafile</TD></TR>
+<TR><TD PORT="data_centre_left">data_centre</TD>;<TD>int</TD><TD>organisation:organisation_id</TD>28
+<TD PORT="data_centre_right">Data centre from which data sourced</TD></TR>
+<TR><TD PORT="data_centre_url_left">data_centre_url</TD>;<TD>varchar</TD><TD></TD><TD PORT="data_centre_url_right">URL for data centre</TD></TR>
+<TR><TD PORT="data_policy_licence_left">data_policy_licence</TD>;<TD>int</TD><TD>data_policy_licence:policy</TD>26
+<TD PORT="data_policy_licence_right">Data policy / licence</TD></TR>
+<TR><TD PORT="contact_left">contact</TD>;<TD>varchar[]</TD><TD>contact:contact_id</TD>18
+<TD PORT="contact_right">contact for data source with role specified by role element</TD></TR>
+<TR><TD PORT="contact_role_left">contact_role</TD>;<TD>int[]</TD><TD>role:role</TD>9
+<TD PORT="contact_role_right">role of contact</TD></TR>
+<TR><TD PORT="history_left">history</TD>;<TD>varchar</TD><TD></TD><TD PORT="history_right">History of source</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Additional comments / footnotes</TD></TR>
+<TR><TD PORT="timestamp_left">timestamp</TD>;<TD>timestamp with timezone</TD><TD></TD><TD PORT="timestamp_right">Date record created / created</TD></TR>
+<TR><TD PORT="maintenance_and_update_frequency_left">maintenance_and_update_frequency</TD>;<TD>int</TD><TD>update_frequency:frequency</TD>26
+<TD PORT="maintenance_and_update_frequency_right">Frequency with which modifications and deletions are made to the data after it is first produced</TD></TR>
+<TR><TD PORT="optional_data_left">optional_data</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="optional_data_right">Flag indicating availability of additional data</TD></TR>
+</TABLE>>]
+node [color=white]
+source_configuration_codes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: source_configuration_codes</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/source_configuration_codes.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD>source_configuration_fields:field_id</TD>36
+<TD PORT="field_id_right">Link to field code is for</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field</TD></TR>
+<TR><TD PORT="code_value_left">code_value</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_value_right">Coded value. Together with field_id forms primary key</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Abbreviation used for coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / meaning of code</TD></TR>
+</TABLE>>]
+node [color=white]
+source_configuration_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: source_configuration_fields</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/source_configuration_fields.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="field_id_right">primary key</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field described by this entry</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="type_right">The variable type used to store information on the indicated field</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of the indicated field</TD></TR>
+</TABLE>>]
+node [color=white]
+source_configuration_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: source_configuration_optional</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/source_configuration_optional.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="source_id_left">source_id</TD>;<TD>varchar (fk)</TD><TD>source_configuration:source_id</TD>30
+<TD PORT="source_id_right">Link to source for which this entry corresponds</TD></TR>
+<TR><TD PORT="kind_left">kind</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="kind_right">Enumerated data type (numeric, int, etc)</TD></TR>
+<TR><TD PORT="field_left">field</TD>;<TD>varchar</TD><TD>source_configuration_fields:field_id</TD>36
+<TD PORT="field_right">Field that this entry corresponds to</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD></TD><TD></TD><TD PORT="value_right">Kind inherited from field</TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Any additional comments.</TD></TR>
+</TABLE>>]
+node [color=white]
+source_format [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: source_format</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/source_format.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="format_left">format</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="format_right">primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of data format, e.g. NetCDF</TD></TR>
+</TABLE>>]
+node [color=white]
+spatial_representativeness [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: spatial_representativeness</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/spatial_representativeness.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="representativeness_left">representativeness</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="representativeness_right">primary key for table. coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">meaning / definition of decoded value</TD></TR>
+</TABLE>>]
+node [color=white]
+standard_time [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: standard_time</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/standard_time.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="time_left">time</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="time_right">primary key for table, encoded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded observing time, e.g. 12 UTC</TD></TR>
+</TABLE>>]
+node [color=white]
+station_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: station_configuration</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/station_configuration.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">type</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="primary_id_left">primary_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="primary_id_right">Primary (e.g. WMO) ID for station</TD></TR>
+<TR><TD PORT="primary_id_scheme_left">primary_id_scheme</TD>;<TD>int</TD><TD>id_scheme:scheme</TD>16
+<TD PORT="primary_id_scheme_right">Scheme used for primary ID</TD></TR>
+<TR><TD PORT="record_number_left">record_number</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="record_number_right">Record number for this station entry</TD></TR>
+<TR><TD PORT="secondary_id_left">secondary_id</TD>;<TD>varchar[]*</TD><TD></TD><TD PORT="secondary_id_right">Secondary (e.g. local) ID for station</TD></TR>
+<TR><TD PORT="secondary_id_scheme_left">secondary_id_scheme</TD>;<TD>int[]*</TD><TD>id_scheme:scheme</TD>16
+<TD PORT="secondary_id_scheme_right">Scheme used for secondary ID</TD></TR>
+<TR><TD PORT="station_name_left">station_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="station_name_right">Name of station (e.g. Tateno)</TD></TR>
+<TR><TD PORT="station_abbreviation_left">station_abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="station_abbreviation_right">Abbreviation of station name (e.g. TAT)</TD></TR>
+<TR><TD PORT="alternative_name_left">alternative_name</TD>;<TD>varchar[]*</TD><TD></TD><TD PORT="alternative_name_right"> Alternative name for station</TD></TR>
+<TR><TD PORT="station_crs_left">station_crs</TD>;<TD>int</TD><TD>crs:crs</TD>7
+<TD PORT="station_crs_right">coordinate reference system used to report stations location</TD></TR>
+<TR><TD PORT="longitude_left">longitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="longitude_right">Report position for station if stationary or NULL if mobile. If more than one estimate record best here and additional values using optional fields.</TD></TR>
+<TR><TD PORT="latitude_left">latitude</TD>;<TD>numeric</TD><TD></TD><TD PORT="latitude_right">Report position for station if stationary or NULL if mobile</TD></TR>
+<TR><TD PORT="local_gravity_left">local_gravity</TD>;<TD>numeric</TD><TD></TD><TD PORT="local_gravity_right">Local gravity at station location (units ms-2)</TD></TR>
+<TR><TD PORT="start_date_left">start_date</TD>;<TD>timestamp</TD><TD></TD><TD PORT="start_date_right">Date that the station first started reporting in this configuration</TD></TR>
+<TR><TD PORT="end_date_left">end_date</TD>;<TD>timestamp</TD><TD></TD><TD PORT="end_date_right">Last data the station reported in this configuration</TD></TR>
+<TR><TD PORT="station_type_left">station_type</TD>;<TD>int</TD><TD>station_type:type</TD>17
+<TD PORT="station_type_right">Type of reporting station</TD></TR>
+<TR><TD PORT="platform_type_left">platform_type</TD>;<TD>int</TD><TD>platform_type:type</TD>18
+<TD PORT="platform_type_right">Generic type of observing platform</TD></TR>
+<TR><TD PORT="platform_sub_type_left">platform_sub_type</TD>;<TD>int</TD><TD>platform_sub_type:sub_type</TD>26
+<TD PORT="platform_sub_type_right">Specific type of observing platform</TD></TR>
+<TR><TD PORT="operating_institute_left">operating_institute</TD>;<TD>int</TD><TD>organisation:organisation_id</TD>28
+<TD PORT="operating_institute_right">Institute operating the station (e.g. National Oceanography Centre)</TD></TR>
+<TR><TD PORT="operating_territory_left">operating_territory</TD>;<TD>int</TD><TD>sub_region:sub_region</TD>21
+<TD PORT="operating_territory_right">Sub-region where station is located or country of registry for mobile station</TD></TR>
+<TR><TD PORT="city_left">city</TD>;<TD>varchar</TD><TD></TD><TD PORT="city_right">Nearest city / town to station location</TD></TR>
+<TR><TD PORT="contact_left">contact</TD>;<TD>varchar[]</TD><TD>contact:contact_id</TD>18
+<TD PORT="contact_right">Contact for station</TD></TR>
+<TR><TD PORT="role_left">role</TD>;<TD>int[]</TD><TD>role:role</TD>9
+<TD PORT="role_right">Role of contact</TD></TR>
+<TR><TD PORT="observing_frequency_left">observing_frequency</TD>;<TD>int</TD><TD>observing_frequency:frequency</TD>29
+<TD PORT="observing_frequency_right">Typical frequency of observations for this station (reports per day). If irregular use reporting_time.</TD></TR>
+<TR><TD PORT="reporting_time_left">reporting_time</TD>;<TD>int[]</TD><TD></TD><TD PORT="reporting_time_right">Reporting hour(s) if non-standard / irregular hours used</TD></TR>
+<TR><TD PORT="telecommunication_method_left">telecommunication_method</TD>;<TD>int[]</TD><TD>communication_method:method</TD>27
+<TD PORT="telecommunication_method_right">Method used to report observations</TD></TR>
+<TR><TD PORT="station_automation_left">station_automation</TD>;<TD>int</TD><TD>automation_status:automation</TD>28
+<TD PORT="station_automation_right">Whether station is automated, manual or mixed</TD></TR>
+<TR><TD PORT="measuring_system_model_left">measuring_system_model</TD>;<TD>varchar[]</TD><TD></TD><TD PORT="measuring_system_model_right">Station / AWS model type</TD></TR>
+<TR><TD PORT="measuring_system_id_left">measuring_system_id</TD>;<TD>varchar[]</TD><TD></TD><TD PORT="measuring_system_id_right">ID or serial number of measuring system</TD></TR>
+<TR><TD PORT="observed_variables_left">observed_variables</TD>;<TD>int[]</TD><TD>observed_variable:variable</TD>26
+<TD PORT="observed_variables_right">array indicating which variables are observed by this station</TD></TR>
+<TR><TD PORT="comment_left">comment</TD>;<TD>varchar</TD><TD></TD><TD PORT="comment_right">Any other comments / footnotes</TD></TR>
+<TR><TD PORT="optional_data_left">optional_data</TD>;<TD>int</TD><TD>data_present:flag</TD>17
+<TD PORT="optional_data_right">Flag indicating availability of additional data</TD></TR>
+</TABLE>>]
+node [color=white]
+station_configuration_codes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: station_configuration_codes</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/station_configuration_codes.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD>station_configuration_fields:field_id</TD>37
+<TD PORT="field_id_right">Link to field code is for</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field</TD></TR>
+<TR><TD PORT="code_value_left">code_value</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="code_value_right">Coded value. Together with field_id forms primary key</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">Abbreviation used for coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Decoded value / meaning of code</TD></TR>
+</TABLE>>]
+node [color=white]
+station_configuration_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: station_configuration_fields</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/station_configuration_fields.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="field_id_left">field_id</TD>;<TD>varchar (pk)</TD><TD></TD><TD PORT="field_id_right">primary key</TD></TR>
+<TR><TD PORT="field_name_left">field_name</TD>;<TD>varchar</TD><TD></TD><TD PORT="field_name_right">Name of field described by this entry</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="type_right">The variable type used to store information on the indicated field</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of the indicated field</TD></TR>
+</TABLE>>]
+node [color=white]
+station_configuration_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: station_configuration_optional</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/station_configuration_optional.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="station_primary_id_left">station_primary_id</TD>;<TD>varchar</TD><TD>station_configuration:primary_id</TD>32
+<TD PORT="station_primary_id_right">Link to station for which this entry corresponds</TD></TR>
+<TR><TD PORT="record_number_left">record_number</TD>;<TD>int</TD><TD>station_configuration:record_number</TD>35
+<TD PORT="record_number_right">Link to station for which this entry corresponds</TD></TR>
+<TR><TD PORT="kind_left">kind</TD>;<TD>int</TD><TD>kind:kind</TD>9
+<TD PORT="kind_right">Enumerated data type (numeric, int, etc)</TD></TR>
+<TR><TD PORT="field_left">field</TD>;<TD>varchar</TD><TD>station_configuration_fields:field_id</TD>37
+<TD PORT="field_right">Field that this entry corresponds to</TD></TR>
+<TR><TD PORT="value_left">value</TD>;<TD></TD><TD></TD><TD PORT="value_right">Kind inherited from field </TD></TR>
+<TR><TD PORT="comments_left">comments</TD>;<TD>varchar</TD><TD></TD><TD PORT="comments_right">Any additional comments.</TD></TR>
+</TABLE>>]
+node [color=white]
+station_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: station_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/station_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="type_right">primary key for table, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded station type</TD></TR>
+</TABLE>>]
+node [color=white]
+sub_region [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: sub_region</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/sub_region.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="sub_region_left">sub_region</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="sub_region_right">primary key</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>varchar</TD><TD></TD><TD PORT="type_right">tpye of sub region, e.g. country, regional sea etc</TD></TR>
+<TR><TD PORT="code_left">code</TD>;<TD>varchar</TD><TD></TD><TD PORT="code_right">abbreviation or character code</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">decoded value</TD></TR>
+</TABLE>>]
+node [color=white]
+time_quality [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: time_quality</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/time_quality.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="quality_left">quality</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="quality_right">primary key, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded value expressing quality of time / date information</TD></TR>
+</TABLE>>]
+node [color=white]
+time_reference [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: time_reference</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/time_reference.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="reference_right">primary key, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">decoded base time to which times referenced</TD></TR>
+</TABLE>>]
+node [color=white]
+traceability [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: traceability</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/traceability.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="traceability_left">traceability</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="traceability_right">primary key, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">definition of traceability of measurement</TD></TR>
+</TABLE>>]
+node [color=white]
+uncertainty_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: uncertainty_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/uncertainty_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="method_right">Primary key for table</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of method</TD></TR>
+<TR><TD PORT="reference_left">reference</TD>;<TD>varchar</TD><TD></TD><TD PORT="reference_right">DOI or reference for method</TD></TR>
+</TABLE>>]
+node [color=white]
+uncertainty_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: uncertainty_table</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/uncertainty_table.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="observation_id_left">observation_id</TD>;<TD>varchar</TD><TD>observations_table:observation_id</TD>33
+<TD PORT="observation_id_right">Link to observation this entry is for</TD></TR>
+<TR><TD PORT="uncertainty_type_left">uncertainty_type</TD>;<TD>varchar</TD><TD></TD><TD PORT="uncertainty_type_right">Text description of the type of uncertainty described by this entry</TD></TR>
+<TR><TD PORT="uncertainty_method_left">uncertainty_method</TD>;<TD>int</TD><TD>uncertainty_method:method</TD>25
+<TD PORT="uncertainty_method_right">Method used to estimate this uncertainty</TD></TR>
+<TR><TD PORT="uncertainty_value_left">uncertainty_value</TD>;<TD>numeric</TD><TD></TD><TD PORT="uncertainty_value_right">Expected error standard deviation due to specified uncerainty source</TD></TR>
+<TR><TD PORT="uncertainty_units_left">uncertainty_units</TD>;<TD>int</TD><TD>units:units</TD>11
+<TD PORT="uncertainty_units_right">The units used to report the uncertainty. This may be different to the reporting units (e.g. \%)</TD></TR>
+</TABLE>>]
+node [color=white]
+units [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: units</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/units.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="units_left">units</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="units_right">primary key</TD></TR>
+<TR><TD PORT="name_left">name</TD>;<TD>varchar</TD><TD></TD><TD PORT="name_right">name of units</TD></TR>
+<TR><TD PORT="abbreviation_left">abbreviation</TD>;<TD>varchar</TD><TD></TD><TD PORT="abbreviation_right">conventional abbreviation in ASCII</TD></TR>
+<TR><TD PORT="base_units_left">base_units</TD>;<TD>varchar</TD><TD></TD><TD PORT="base_units_right">definition in base units</TD></TR>
+</TABLE>>]
+node [color=white]
+update_frequency [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: update_frequency</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/update_frequency.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="frequency_left">frequency</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="frequency_right">primary key</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">Description of update frequency</TD></TR>
+</TABLE>>]
+node [color=white]
+z_coordinate_method [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: z_coordinate_method</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/z_coordinate_method.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="method_left">method</TD>;<TD>int (pk)</TD><TD></TD><TD PORT="method_right">primary key, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of method used to determine z location</TD></TR>
+</TABLE>>]
+node [color=white]
+z_coordinate_type [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="4" ALIGN="left" PORT="head">Table: z_coordinate_type</TD></TR>
+<TR><TD COLSPAN="4" ALIGN="left">URL:https://raw.githubusercontent.com/glamod/common_data_model/master/tables/z_coordinate_type.tsv</TD></TR>
+<TR><TD BGCOLOR="GRAY">element_name</TD><TD BGCOLOR="GRAY">kind</TD><TD BGCOLOR="GRAY">external_table</TD><TD BGCOLOR="GRAY">description</TD></TR>
+<TR><TD PORT="type_left">type</TD>;<TD>int(pk)</TD><TD></TD><TD PORT="type_right">primary key, coded value</TD></TR>
+<TR><TD PORT="description_left">description</TD>;<TD>varchar</TD><TD></TD><TD PORT="description_right">description of units / type of z coordinate</TD></TR>
+</TABLE>>]

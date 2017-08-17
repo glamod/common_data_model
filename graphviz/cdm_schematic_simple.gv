@@ -55,6 +55,9 @@ Additional information on uncertainty budget <BR ALIGN="LEFT"/>
 used to set standard_uncertainty field.</TD></TR></TABLE>>]
 
 
+homogenisation_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">homogenisation_fields</TD></TR>
+                                <TR><TD>Additional information on homogenisation applied to observation.</TD></TR></TABLE>>]
 
 station_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
                                 <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">station_configuration_optional</TD></TR>
@@ -94,6 +97,7 @@ configuration in EAV based table</TD></TR></TABLE>>]
 
   observations_table:head -> qc_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
   observations_table:head -> uncertainty_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -> homogenisation_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
   observations_table:sensor -> sensor_configuration:head [arrowtail=crow, dir=both, arrowhead=dot];
 
   station_configuration:head -> station_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
