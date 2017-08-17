@@ -1,4 +1,0 @@
-code_table_scheme	code_table_id	code_table_name	value	description
-BUFR	0 20 003	Present weather	NA	See BUFR 0 20 003
-BUFR	0 20 004	Past weather	NA	See BUFR 0 20 004
-BUFR	0 10 063	Characteristics of pressure tendancy	NA	See BUFR 0 10 063

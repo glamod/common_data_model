@@ -1,5 +1,0 @@
-element_name	type	Description
-history_id	bigint	Unique ID for entry
-report_id	bigint	Which report this is an entry for
-timestamp		timestamp for entry
-history	varchar	String containing history entry

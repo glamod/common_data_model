@@ -1,2 +1,0 @@
-conversion_method	description	implementation	reference
-NA	Farenheit to degrees Celsius	T_Celsius = (T_Farenheit - 32) / 1.8	NA

@@ -1,8 +1,0 @@
-automation_status	description
-0	Automatic observation.
-1	Automatic, always supplemented by manual input.
-2	Automatic, occasionally supplemented by manual input.
-3	Automatic, supplemented by manual observations.
-4	Manual observation.
-5	Unknown.
-6	Visual observation.
