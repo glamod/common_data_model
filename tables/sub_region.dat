@@ -249,3 +249,4 @@ sub_region	type	code	name
 247	country	ZM	ZAMBIA
 248	country	ZW	ZIMBABWE
 249	country	ZZ	THIRD PARTY SUPPORT SHIPS
+250	country	CW	CURACAO
