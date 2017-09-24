@@ -12,7 +12,7 @@ endif
 # set table name
 set tablename = `echo $file | cut -d '.' -f1`
 
-# get number of columns - this shoudl be 4
+# get number of columns - this should be 4
 set ncols = `head -n 3 $file | tail -1 | awk 'BEGIN {FS="\t"} ; {print NF}'`
 
 
@@ -50,5 +50,3 @@ awk -v tablename="$tablename" 'BEGIN{FS="\t"} \
 
 echo "</TABLE>>]" >> nodes.gv
 #echo "}" >> nodes.gv
-
-
