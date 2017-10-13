@@ -18,7 +18,7 @@ end_date	timestamp		Last data the station reported in this configuration
 station_type	int	station_type:type	Type of reporting station
 platform_type	int	platform_type:type	Generic type of observing platform
 platform_sub_type	int	platform_sub_type:sub_type	Specific type of observing platform
-operating_institute	int	organisation:organisation_id	Institute operating the station (e.g. National Oceanography Centre)
+operating_institute	varchar	organisation:organisation_id	Institute operating the station (e.g. National Oceanography Centre)
 operating_territory	int	sub_region:sub_region	Sub-region where station is located or country of registry for mobile station
 city	varchar	 	Nearest city / town to station location
 contact	varchar[]	contact:contact_id	Contact for station

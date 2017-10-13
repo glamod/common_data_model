@@ -16,7 +16,7 @@ source_format	int	source_format:format	Original format for data
 source_format_version	varchar		Version of original data format
 source_file	varchar		Filename for data from source
 source_file_checksum	varchar		Checksum of source datafile
-data_centre	int	organisation:organisation_id	Data centre from which data sourced
+data_centre	varchar	organisation:organisation_id	Data centre from which data sourced
 data_centre_url	varchar		URL for data centre
 data_policy_licence	int	data_policy_licence:policy	Data policy / licence
 contact	varchar[]	contact:contact_id	contact for data source with role specified by role element

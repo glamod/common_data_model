@@ -44,7 +44,7 @@ original_value	numeric 		Original value as reported or recorded in log book.
 conversion_method	int	conversion_method:method	Link to table describing conversion process
 processing_code	int[]*	processing_code:code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
 processing_level	int	processing_level:level	Level of processing applied to observation.
-adjustment_id	int	adjustment:adjustment_id	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
+adjustment_id	varchar	adjustment:adjustment_id	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 traceability	int	traceability:traceability	Whether observation can be traced to international standards.
 advanced_qc	int	data_present:flag	Flag indicating whether advanced qc data are available
 advanced_uncertainty	int	data_present:flag	Flag indicating whether advanced uncertainty estimates are available
