@@ -1,2 +1,140 @@
 units	name	abbreviation	base_units
-1 - 1024			See BUFR Common Code Table C-6
+001	metre	m	NULL
+002	kilogram	kg	NULL
+003	second	s	NULL
+004	ampere	A	NULL
+005	kelvin	K	NULL
+006	mole	mol	NULL
+007	candela	cd	NULL
+021	radian	rad	NULL
+022	steradian	sr	NULL
+030	hertz	Hz	s-1
+031	newton	N	kg m s-2
+032	pascal	Pa	kg m-1 s-2
+033	joule	J	kg m2 s-2
+034	watt	W	kg m2 s-3
+035	coulomb	C	A s
+036	volt	V	kg m2 s-3 A-1
+037	farad	F	kg-1 m-2 s4 A2
+038	ohm	Ohm	kg m2 s-3 A-2
+039	siemens	S	kg-1 m-2 s3 A2
+040	weber	Wb	kg m2 s-2 A-1
+041	tesla	T	kg s-2 A-1
+042	henry	H	kg m2 s-2 A-2
+060	degree Celsius	deg C	K+273.15
+070	lumen	lm	cd sr
+071	lux	lx	cd sr m-2
+080	becquerel	Bq	s-1
+081	grey	Gy	m2 s-2
+082	sievert	Sv	m2 s-2
+110	degree (angle)	deg	NULL
+111	minute (angle)	'	NULL
+112	second (angle)	"	NULL
+120	litre	l or L	NULL
+130	minute (time)	min	NULL
+131	hour	h	NULL
+132	day	d	NULL
+150	tonne	t	NULL
+160	electron	eV	EV
+161	atomic	unit	u
+170	astronomic	AU	ASU
+171	parsec	pc	NULL
+200	nautical		NULL
+201	knot	kt	NULL
+210	decibel	dB	NULL
+220	hectare	ha	NULL
+230	week		NULL
+231	year	a	NULL
+300	per cent	\%	NULL
+301	parts per thousand	0/00	NULL
+310	eighths of cloud	okta	NULL
+320	degrees true	deg	NULL
+321	degrees per second	deg/s	NULL
+350	degrees Celsius	C	NULL
+351	degrees Celsius per metre	C/m	NULL
+352	degrees Celsius per 100 metres	m	m
+360	Dobson Unit	DU	NULL
+430	month	mon	NULL
+441	per second (same as hertz)	/s	NULL
+442	per second squared	s-2	NULL
+501	knots per 1000 metres	m	KT/KM
+510	foot	ft	NULL
+511	inch	in	NULL
+520	decipascals per second (microbar per second)	dPa/s	NULL
+521	centibars per second	cb/s	NULL
+522	centibars per 12 hours	h	h
+523	dekapascal	daPa	NULL
+530	hectopascal	hPa	NULL
+531	hectopascals per second	s-1	HPAL/S
+532	hectopascals per hour	h-1	HPAL/HR
+533	hectopascals per 3 hours	h	h
+535	nanobar = hPa 10-6	nbar	NULL
+620	grams per kilogram	g/kg	NULL
+621	grams per kilogram per second	g kg-1 s-1	NULL
+622	kilograms per kilogram	kg/kg	NULL
+623	kilograms per kilogram per second	kg kg-1 s-1	NULL
+624	kilograms per square metre	kg m-2	NULL
+630	acceleration due to gravity	g	NULL
+631	geopotential metre	gpm	NULL
+710	millimetre	mm	NULL
+711	millimetres per second	mm/s	NULL
+712	millimetres per hour	mm/h	NULL
+713	millimetres to the sixth power per cubic metre	mm6 m-3	NULL
+715	centimetre	cm	NULL
+716	centimetres per second	cm/s	NULL
+717	centimetres per hour	cm/h	NULL
+720	decimetre	dm	NULL
+731	metres per second	m/s	NULL
+732	metres per second per metre	m s-1/m	NULL
+733	metres per second per 1000 metres	m s-1/km	NULL
+734	square metres	m2	NULL
+735	square metres per second	m2/s	NULL
+740	kilometre	km	NULL
+741	kilometres per hour	km/h	NULL
+742	kilometres per day	km/d	NULL
+743	per metre	m-1	NULL
+750	becquerels per litre	Bq/l	NULL
+751	becquerels per square metre	Bq m-2	NULL
+752	becquerels per cubic metre	Bq m-3	NULL
+753	millisievert	mSv	NULL
+760	metres per second squared	m s-2	NULL
+761	square metres second	m2 s	NULL
+762	square metres per second squared	m2 s-2	NULL
+763	square metres per radian second	m2 rad-1 s	NULL
+764	square metres per hertz	m2/Hz	NULL
+765	cubic metres	m3	NULL
+766	cubic metres per second	m3/s	NULL
+767	cubic metres per cubic metre	m3 m-3	NULL
+768	metres to the fourth power		NULL
+769	metres to the two thirds power per second	m2/3 s-1	NULL
+772	logarithm per metre	log (m-1)	NULL
+773	logarithm per square metre	log (m-2)	NULL
+775	kilograms per metre	kg/m	NULL
+776	kilograms per square metre per second	kg m-2 s-1	NULL
+777	kilograms per cubic metre	kg m-3	NULL
+778	per square kilogram per second	kg-2 s-1	NULL
+779	seconds per metre	s/m	NULL
+785	kelvin metres per second	K m s-1	NULL
+786	kelvins per metre	K/m	NULL
+787	kelvin square metres per kilogram per second	K m2 kg-1 s-1	NULL
+788	moles per mole	mol/mol	NULL
+790	radians per metre	rad/m	NULL
+795	newtons per square metre	N m-2	NULL
+800	pascals per second	Pa/s	NULL
+801	kilopascal	kPa	NULL
+805	joules per square metre	J m-2	NULL
+806	joules per kilogram	J/kg	NULL
+810	watts per metre per steradian	W m-1 sr-1	NULL
+811	watts per square metre	W m-2	NULL
+812	watts per square metre per steradian	W m-2 sr-1	NULL
+813	watts per square metre per steradian centimetre	W m-2 sr-1 cm	NULL
+814	watts per square metre per steradian metre	W m-2 sr-1 m	NULL
+815	watts per cubic metre per steradian	W m-3 sr-1	NULL
+820	siemens per metre	S/m	NULL
+825	square degrees	deg2	NULL
+830	becquerel seconds per cubic metre	Bq s m-3	NULL
+835	decibels per metre	dB/m	NULL
+836	decibels per degree	dB/deg	NULL
+841	pH unit	pH unit	NULL
+842	N units	N units	NULL
+843	Nephelometric turbidity units	NTU	NULL

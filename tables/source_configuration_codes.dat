@@ -38,7 +38,3 @@ field_id	field_name	code_value	abbreviation	description
 4	real time format	12	FM 13-XIV Ext.	NA
 5	source format	0	IMMA - Version 0	NA
 5	source format	1	IMMA - Version 1	NA
-6	icoads source deck	NA	See ICOADS Source Deck	NA
-7	icoads source id	NA	See ICOADS Source ID	NA
-8	product level	2	Data read from original data file	NA
-9	product status	1	Data approved	Data exist, read from chache, PTU + altitude columns available, all GC25 tests ok, all uncertainties as expected

@@ -44,4 +44,3 @@ processing_level	int	report_processing_level:level	Level of processing applied t
 processing_codes	int[]*	report_processing_codes:code	Processing applied to this report
 source_id	varchar	source_configuration:source_id	Original source of data, link to external table
 source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database
-

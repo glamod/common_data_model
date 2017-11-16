@@ -1,4 +1,267 @@
 code_table	code_table_scheme	code_table_id	code_table_name	value	description
-0	BUFR	0 20 003	Present weather	NA	See BUFR 0 20 003
-1	BUFR	0 20 004	Past weather	NA	See BUFR 0 20 004
-2	BUFR	0 10 063	Characteristics of pressure tendancy	NA	See BUFR 0 10 063
+0	BUFR	0 20 003	Present weather	0	Cloud development not observed or not observable
+0	BUFR	0 20 003	Present weather	1	Clouds generally dissolving or becoming less developed
+0	BUFR	0 20 003	Present weather	2	State of sky on the whole unchanged
+0	BUFR	0 20 003	Present weather	3	Clouds generally forming or developing
+0	BUFR	0 20 003	Present weather	4	Visibility reduced by smoke, e.g. veldt or forest fires, industrial smoke or volcanic ashes
+0	BUFR	0 20 003	Present weather	5	Haze
+0	BUFR	0 20 003	Present weather	6	Widespread dust in suspension in the air, not raised by wind at or near the station at the time of observation
+0	BUFR	0 20 003	Present weather	7	Dust or sand raised by wind at or near the station at the time of observation, but no well-developed dust whirl(s) or sand whirl(s), and no duststorm or sandstorm seen; or, in the case of sea stations and coastal stations, blowing spray at the station
+0	BUFR	0 20 003	Present weather	8	Well-developed dust whirl(s) or sand whirl(s) seen at or near the station during the preceding hour or at the same time of observation, but no duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	9	Duststorm or sandstorm within sight at the time of observation, or at the station during the preceding hour
+0	BUFR	0 20 003	Present weather	10	Mist
+0	BUFR	0 20 003	Present weather	11	Patches
+0	BUFR	0 20 003	Present weather	12	More or less continuous
+0	BUFR	0 20 003	Present weather	13	Lightning visible, no thunder heard
+0	BUFR	0 20 003	Present weather	14	Precipitation within sight, not reaching the ground or the surface of the sea
+0	BUFR	0 20 003	Present weather	15	Precipitation within sight, reaching the ground or the surface of the sea, but distant, i.e. estimated to be more than 5 km from the station
+0	BUFR	0 20 003	Present weather	16	Precipitation within sight, reaching the ground or the surface of the sea, near to, but not at the station
+0	BUFR	0 20 003	Present weather	17	Thunderstorm, but no precipitation at the time of observation
+0	BUFR	0 20 003	Present weather	18	Squalls
+0	BUFR	0 20 003	Present weather	19	Funnel cloud(s)
+0	BUFR	0 20 003	Present weather	20	Drizzle (not freezing) or snow grains
+0	BUFR	0 20 003	Present weather	21	Rain (not freezing)
+0	BUFR	0 20 003	Present weather	22	Snow
+0	BUFR	0 20 003	Present weather	23	Rain and snow or ice pellets
+0	BUFR	0 20 003	Present weather	24	Freezing drizzle or freezing rain
+0	BUFR	0 20 003	Present weather	25	Shower(s) of rain
+0	BUFR	0 20 003	Present weather	26	Shower(s) of snow, or of rain and snow
+0	BUFR	0 20 003	Present weather	27	Shower(s) of hail*, or of rain and hail*
+0	BUFR	0 20 003	Present weather	28	Fog or ice fog
+0	BUFR	0 20 003	Present weather	29	Thunderstorm (with or without precipitation)
+0	BUFR	0 20 003	Present weather	30	Slight or moderate duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	31	Slight or moderate duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	32	Slight or moderate duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	33	Severe duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	34	Severe duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	35	Severe duststorm or sandstorm
+0	BUFR	0 20 003	Present weather	36	Slight or moderate drifting snow
+0	BUFR	0 20 003	Present weather	37	Heavy drifting snow
+0	BUFR	0 20 003	Present weather	38	Slight or moderate blowing snow
+0	BUFR	0 20 003	Present weather	39	Heavy blowing snow
+0	BUFR	0 20 003	Present weather	40	Fog or ice fog at a distance at the time of observation, but not at the station during the preceding hour, the fog or ice fog extending to a level above that of the observer
+0	BUFR	0 20 003	Present weather	41	Fog or ice fog in patches
+0	BUFR	0 20 003	Present weather	42	Fog or ice fog, sky visible
+0	BUFR	0 20 003	Present weather	43	Fog or ice fog, sky invisible
+0	BUFR	0 20 003	Present weather	44	Fog or ice fog, sky visible
+0	BUFR	0 20 003	Present weather	45	Fog or ice fog, sky invisible
+0	BUFR	0 20 003	Present weather	46	Fog or ice fog, sky visible
+0	BUFR	0 20 003	Present weather	47	Fog or ice fog, sky invisible
+0	BUFR	0 20 003	Present weather	48	Fog, depositing rime, sky visible
+0	BUFR	0 20 003	Present weather	49	Fog, depositing rime, sky invisible
+0	BUFR	0 20 003	Present weather	50	Drizzle, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	51	Drizzle, not freezing, continuous
+0	BUFR	0 20 003	Present weather	52	Drizzle, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	53	Drizzle, not freezing, continuous
+0	BUFR	0 20 003	Present weather	54	Drizzle, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	55	Drizzle, not freezing, continuous
+0	BUFR	0 20 003	Present weather	56	Drizzle, freezing, slight
+0	BUFR	0 20 003	Present weather	57	Drizzle, freezing, moderate or heavy (dense)
+0	BUFR	0 20 003	Present weather	58	Drizzle and rain, slight
+0	BUFR	0 20 003	Present weather	59	Drizzle and rain, moderate or heavy
+0	BUFR	0 20 003	Present weather	60	Rain, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	61	Rain, not freezing, continuous
+0	BUFR	0 20 003	Present weather	62	Rain, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	63	Rain, not freezing, continuous
+0	BUFR	0 20 003	Present weather	64	Rain, not freezing, intermittent
+0	BUFR	0 20 003	Present weather	65	Rain, not freezing, continuous
+0	BUFR	0 20 003	Present weather	66	Rain, freezing, slight
+0	BUFR	0 20 003	Present weather	67	Rain, freezing, moderate or heavy
+0	BUFR	0 20 003	Present weather	68	Rain or drizzle and snow, slight
+0	BUFR	0 20 003	Present weather	69	Rain or drizzle and snow, moderate or heavy
+0	BUFR	0 20 003	Present weather	70	Intermittent fall of snowflakes
+0	BUFR	0 20 003	Present weather	71	Continuous fall of snowflakes
+0	BUFR	0 20 003	Present weather	72	Intermittent fall of snowflakes
+0	BUFR	0 20 003	Present weather	73	Continuous fall of snowflakes
+0	BUFR	0 20 003	Present weather	74	Intermittent fall of snowflakes
+0	BUFR	0 20 003	Present weather	75	Continuous fall of snowflakes
+0	BUFR	0 20 003	Present weather	76	Diamond dust (with or without fog)
+0	BUFR	0 20 003	Present weather	77	Snow grains (with or without fog)
+0	BUFR	0 20 003	Present weather	78	Isolated star-like snow crystals (with or without fog)
+0	BUFR	0 20 003	Present weather	79	Ice pellets
+0	BUFR	0 20 003	Present weather	80	Rain shower(s), slight
+0	BUFR	0 20 003	Present weather	81	Rain shower(s), moderate or heavy
+0	BUFR	0 20 003	Present weather	82	Rain shower(s), violent
+0	BUFR	0 20 003	Present weather	83	Shower(s) of rain and snow mixed, slight
+0	BUFR	0 20 003	Present weather	84	Shower(s) of rain and snow mixed, moderate or heavy
+0	BUFR	0 20 003	Present weather	85	Snow shower(s), slight
+0	BUFR	0 20 003	Present weather	86	Snow shower(s), moderate or heavy
+0	BUFR	0 20 003	Present weather	87	Shower(s) of snow pellets or small hail, with or without rain or rain and snow mixed
+0	BUFR	0 20 003	Present weather	88	Shower(s) of snow pellets or small hail, with or without rain or rain and snow mixed
+0	BUFR	0 20 003	Present weather	89	Shower(s) of hail, with or without rain or rain and snow mixed, not associated with thunder
+0	BUFR	0 20 003	Present weather	90	Shower(s) of hail, with or without rain or rain and snow mixed, not associated with thunder
+0	BUFR	0 20 003	Present weather	91	Slight rain at time of observation
+0	BUFR	0 20 003	Present weather	92	Moderate or heavy rain at time of observation
+0	BUFR	0 20 003	Present weather	93	Slight snow, or rain and snow mixed or hail* at time of observation
+0	BUFR	0 20 003	Present weather	94	Moderate or heavy snow, or rain and snow mixed or hail* at time of observation
+0	BUFR	0 20 003	Present weather	95	Thunderstorm, slight or moderate, without hail*, but with rain and/or snow at time of observation
+0	BUFR	0 20 003	Present weather	96	Thunderstorm, slight or moderate, with hail* at time of observation
+0	BUFR	0 20 003	Present weather	97	Thunderstorm, heavy, without hail*, but with rain and/or snow at time of observation
+0	BUFR	0 20 003	Present weather	98	Thunderstorm combined with duststorm or sandstorm at time of observation
+0	BUFR	0 20 003	Present weather	99	Thunderstorm, heavy, with hail* at time of observation
+0	BUFR	0 20 003	Present weather	100	No significant weather observed
+0	BUFR	0 20 003	Present weather	101	Clouds generally dissolving or becoming less developed during the past hour
+0	BUFR	0 20 003	Present weather	102	State of sky on the whole unchanged during the past hour
+0	BUFR	0 20 003	Present weather	103	Clouds generally forming or developing during the past hour
+0	BUFR	0 20 003	Present weather	104	Haze or smoke, or dust in suspension in the air, visibility equal to, or greater than, 1 km
+0	BUFR	0 20 003	Present weather	105	Haze or smoke, or dust in suspension in the air, visibility less than 1 km
+0	BUFR	0 20 003	Present weather	110	Mist
+0	BUFR	0 20 003	Present weather	111	Diamond dust
+0	BUFR	0 20 003	Present weather	112	Distant lightning
+0	BUFR	0 20 003	Present weather	118	Squalls
+0	BUFR	0 20 003	Present weather	119	Reserved
+0	BUFR	0 20 003	Present weather	120	Fog
+0	BUFR	0 20 003	Present weather	121	PRECIPITATION
+0	BUFR	0 20 003	Present weather	122	Drizzle (not freezing) or snow grains
+0	BUFR	0 20 003	Present weather	123	Rain (not freezing)
+0	BUFR	0 20 003	Present weather	124	Snow
+0	BUFR	0 20 003	Present weather	125	Freezing drizzle or freezing rain
+0	BUFR	0 20 003	Present weather	126	Thunderstorm (with or without precipitation)
+0	BUFR	0 20 003	Present weather	127	BLOWING OR DRIFTING SNOW OR SAND
+0	BUFR	0 20 003	Present weather	128	Blowing or drifting snow or sand, visibility equal to, or greater than, 1 km
+0	BUFR	0 20 003	Present weather	129	Blowing or drifting snow or sand, visibility less than 1 km
+0	BUFR	0 20 003	Present weather	130	FOG
+0	BUFR	0 20 003	Present weather	131	Fog or ice fog in patches
+0	BUFR	0 20 003	Present weather	132	Fog or ice fog, has become thinner during the past hour
+0	BUFR	0 20 003	Present weather	133	Fog or ice fog, no appreciable change during the past hour
+0	BUFR	0 20 003	Present weather	134	Fog or ice fog, has begun or become thicker during the past hour
+0	BUFR	0 20 003	Present weather	135	Fog, depositing rime
+0	BUFR	0 20 003	Present weather	140	PRECIPITATION
+0	BUFR	0 20 003	Present weather	141	Precipitation, slight or moderate
+0	BUFR	0 20 003	Present weather	142	Precipitation, heavy
+0	BUFR	0 20 003	Present weather	143	Liquid precipitation, slight or moderate
+0	BUFR	0 20 003	Present weather	144	Liquid precipitation, heavy
+0	BUFR	0 20 003	Present weather	145	Solid precipitation, slight or moderate
+0	BUFR	0 20 003	Present weather	146	Solid precipitation, heavy
+0	BUFR	0 20 003	Present weather	147	Freezing precipitation, slight or moderate
+0	BUFR	0 20 003	Present weather	148	Freezing precipitation, heavy
+0	BUFR	0 20 003	Present weather	149	Reserved
+0	BUFR	0 20 003	Present weather	150	DRIZZLE
+0	BUFR	0 20 003	Present weather	151	Drizzle, not freezing, slight
+0	BUFR	0 20 003	Present weather	152	Drizzle, not freezing, moderate
+0	BUFR	0 20 003	Present weather	153	Drizzle, not freezing, heavy
+0	BUFR	0 20 003	Present weather	154	Drizzle, freezing, slight
+0	BUFR	0 20 003	Present weather	155	Drizzle, freezing, moderate
+0	BUFR	0 20 003	Present weather	156	Drizzle, freezing, heavy
+0	BUFR	0 20 003	Present weather	157	Drizzle and rain, slight
+0	BUFR	0 20 003	Present weather	158	Drizzle and rain, moderate or heavy
+0	BUFR	0 20 003	Present weather	159	Reserved
+0	BUFR	0 20 003	Present weather	160	RAIN
+0	BUFR	0 20 003	Present weather	161	Rain, not freezing, slight
+0	BUFR	0 20 003	Present weather	162	Rain, not freezing, moderate
+0	BUFR	0 20 003	Present weather	163	Rain, not freezing, heavy
+0	BUFR	0 20 003	Present weather	164	Rain, freezing, slight
+0	BUFR	0 20 003	Present weather	165	Rain, freezing, moderate
+0	BUFR	0 20 003	Present weather	166	Rain, freezing, heavy
+0	BUFR	0 20 003	Present weather	167	Rain (or drizzle) and snow, slight
+0	BUFR	0 20 003	Present weather	168	Rain (or drizzle) and snow, moderate or heavy
+0	BUFR	0 20 003	Present weather	169	Reserved
+0	BUFR	0 20 003	Present weather	170	SNOW
+0	BUFR	0 20 003	Present weather	171	Snow, slight
+0	BUFR	0 20 003	Present weather	172	Snow, moderate
+0	BUFR	0 20 003	Present weather	173	Snow, heavy
+0	BUFR	0 20 003	Present weather	174	Ice pellets, slight
+0	BUFR	0 20 003	Present weather	175	Ice pellets, moderate
+0	BUFR	0 20 003	Present weather	176	Ice pellets, heavy
+0	BUFR	0 20 003	Present weather	177	Snow grains
+0	BUFR	0 20 003	Present weather	178	Ice crystals
+0	BUFR	0 20 003	Present weather	179	Reserved
+0	BUFR	0 20 003	Present weather	180	SHOWER(S) OR INTERMITTENT PRECIPITATION
+0	BUFR	0 20 003	Present weather	181	Rain shower(s) or intermittent rain, slight
+0	BUFR	0 20 003	Present weather	182	Rain shower(s) or intermittent rain, moderate
+0	BUFR	0 20 003	Present weather	183	Rain shower(s) or intermittent rain, heavy
+0	BUFR	0 20 003	Present weather	184	Rain shower(s) or intermittent rain, violent
+0	BUFR	0 20 003	Present weather	185	Snow shower(s) or intermittent snow, slight
+0	BUFR	0 20 003	Present weather	186	Snow shower(s) or intermittent snow, moderate
+0	BUFR	0 20 003	Present weather	187	Snow shower(s) or intermittent snow, heavy
+0	BUFR	0 20 003	Present weather	188	Reserved
+0	BUFR	0 20 003	Present weather	189	Hail
+0	BUFR	0 20 003	Present weather	190	THUNDERSTORM
+0	BUFR	0 20 003	Present weather	191	Thunderstorm, slight or moderate, with no precipitation
+0	BUFR	0 20 003	Present weather	192	Thunderstorm, slight or moderate, with rain showers and/or snow showers
+0	BUFR	0 20 003	Present weather	193	Thunderstorm, slight or moderate, with hail
+0	BUFR	0 20 003	Present weather	194	Thunderstorm, heavy, with no precipitation
+0	BUFR	0 20 003	Present weather	195	Thunderstorm, heavy, with rain showers and/or snow showers
+0	BUFR	0 20 003	Present weather	196	Thunderstorm, heavy, with hail
+0	BUFR	0 20 003	Present weather	199	Tornado
+0	BUFR	0 20 003	Present weather	204	Volcanic ash suspended in the air aloft
+0	BUFR	0 20 003	Present weather	205	Not used
+0	BUFR	0 20 003	Present weather	206	Thick dust haze, visibility less than 1 km
+0	BUFR	0 20 003	Present weather	207	Blowing spray at the station
+0	BUFR	0 20 003	Present weather	208	Drifting dust (sand)
+0	BUFR	0 20 003	Present weather	209	Wall of dust or sand in distance (like haboob)
+0	BUFR	0 20 003	Present weather	210	Snow haze
+0	BUFR	0 20 003	Present weather	211	Whiteout
+0	BUFR	0 20 003	Present weather	212	Not used
+0	BUFR	0 20 003	Present weather	213	Lightning, cloud to surface
+0	BUFR	0 20 003	Present weather	217	Dry thunderstorm
+0	BUFR	0 20 003	Present weather	218	Not used
+0	BUFR	0 20 003	Present weather	219	Tornado cloud (destructive) at or within sight of the station during preceding hour or at the time of observation
+0	BUFR	0 20 003	Present weather	220	Deposition of volcanic ash
+0	BUFR	0 20 003	Present weather	221	Deposition of dust or sand
+0	BUFR	0 20 003	Present weather	222	Deposition of dew
+0	BUFR	0 20 003	Present weather	223	Deposition of wet snow
+0	BUFR	0 20 003	Present weather	224	Deposition of soft rime
+0	BUFR	0 20 003	Present weather	225	Deposition of hard rime
+0	BUFR	0 20 003	Present weather	226	Deposition of hoar frost
+0	BUFR	0 20 003	Present weather	227	Deposition of glaze
+0	BUFR	0 20 003	Present weather	228	Deposition of ice crust (ice slick)
+0	BUFR	0 20 003	Present weather	229	Not used
+0	BUFR	0 20 003	Present weather	230	Duststorm or sandstorm with temperature below 0 ¬∞C
+0	BUFR	0 20 003	Present weather	239	Blowing snow, impossible to determine whether snow is falling or not
+0	BUFR	0 20 003	Present weather	240	Not used
+0	BUFR	0 20 003	Present weather	241	Fog on sea
+0	BUFR	0 20 003	Present weather	242	Fog in valleys
+0	BUFR	0 20 003	Present weather	243	Arctic or Antarctic sea smoke
+0	BUFR	0 20 003	Present weather	244	Steam fog (sea, lake or river)
+0	BUFR	0 20 003	Present weather	245	Steam log (land)
+0	BUFR	0 20 003	Present weather	246	Fog over ice or snow cover
+0	BUFR	0 20 003	Present weather	247	Dense fog, visibility 60-90 m
+0	BUFR	0 20 003	Present weather	248	Dense fog, visibility 30-60 m
+0	BUFR	0 20 003	Present weather	249	Dense fog, visibility less than 30 m
+0	BUFR	0 20 003	Present weather	250	Drizzle, rate of fall - less than 0.10 mm h-1
+0	BUFR	0 20 003	Present weather	251	Drizzle, rate of fall - 0.10-0.19 mm h-1
+0	BUFR	0 20 003	Present weather	252	Drizzle, rate of fall - 0.20-0.39 mm h-1
+0	BUFR	0 20 003	Present weather	253	Drizzle, rate of fall - 0.40-0.79 mm h-1
+0	BUFR	0 20 003	Present weather	254	Drizzle, rate of fall - 0.80-1.59 mm h-1
+0	BUFR	0 20 003	Present weather	255	Drizzle, rate of fall - 1.60-3.19 mm h-1
+0	BUFR	0 20 003	Present weather	256	Drizzle, rate of fall - 3.20-6.39 mm h-1
+0	BUFR	0 20 003	Present weather	257	Drizzle, rate of fall - 6.4 mm h-1 or more
+0	BUFR	0 20 003	Present weather	258	Not used
+0	BUFR	0 20 003	Present weather	259	Drizzle and snow
+0	BUFR	0 20 003	Present weather	260	Rain, rate of fall - less than 1.0 mm h-1
+0	BUFR	0 20 003	Present weather	261	Rain, rate of fall - 1.0-1.9 mm h-1
+0	BUFR	0 20 003	Present weather	262	Rain, rate of fall - 2.0-3.9 mm h-1
+0	BUFR	0 20 003	Present weather	263	Rain, rate of fall - 4.0-7.9 mm h-1
+0	BUFR	0 20 003	Present weather	264	Rain, rate of fall - 8.0-15.9 mm h-1
+0	BUFR	0 20 003	Present weather	265	Rain, rate of fall - 16.0-31.9 mm h-1
+0	BUFR	0 20 003	Present weather	266	Rain, rate of fall - 32.0-63.9 mm h-1
+0	BUFR	0 20 003	Present weather	267	Rain, rate of fall - 64.0 mm h-1 or more
+0	BUFR	0 20 003	Present weather	270	Snow, rate of fall - less than 1.0 cm h-1
+0	BUFR	0 20 003	Present weather	271	Snow, rate of fall - 1.0-1.9 cm h-1
+0	BUFR	0 20 003	Present weather	272	Snow, rate of fall - 2.0-3.9 cm h-1
+0	BUFR	0 20 003	Present weather	273	Snow, rate of fall - 4.0-7.9 cm h-1
+0	BUFR	0 20 003	Present weather	274	Snow, rate of fall - 8.0-15.9 cm h-1
+0	BUFR	0 20 003	Present weather	275	Snow, rate of fall - 16.0-31.9 cm h-1
+0	BUFR	0 20 003	Present weather	276	Snow, rate of fall - 32.0-63.9 cm h-1
+0	BUFR	0 20 003	Present weather	277	Snow, rate of fall - 64.0 cm h-1 or more
+0	BUFR	0 20 003	Present weather	278	Snow or ice crystal precipitation from a clear sky
+0	BUFR	0 20 003	Present weather	279	Wet snow, freezing on contact
+0	BUFR	0 20 003	Present weather	280	Precipitation of rain
+0	BUFR	0 20 003	Present weather	281	Precipitation of rain, freezing
+0	BUFR	0 20 003	Present weather	282	Precipitation of rain and snow mixed
+0	BUFR	0 20 003	Present weather	283	Precipitation of snow
+0	BUFR	0 20 003	Present weather	284	Precipitation of snow pellets or small hall
+0	BUFR	0 20 003	Present weather	285	Precipitation of snow pellets or small hail, with rain
+0	BUFR	0 20 003	Present weather	286	Precipitation of snow pellets or small hail, with rain and snow mixed
+0	BUFR	0 20 003	Present weather	287	Precipitation of snow pellets or small hail, with snow
+0	BUFR	0 20 003	Present weather	288	Precipitation of hail
+0	BUFR	0 20 003	Present weather	289	Precipitation of hail, with rain
+0	BUFR	0 20 003	Present weather	290	Precipitation of hall, with rain and snow mixed
+0	BUFR	0 20 003	Present weather	291	Precipitation of hail, with snow
+0	BUFR	0 20 003	Present weather	292	Shower(s) or thunderstorm over sea
+0	BUFR	0 20 003	Present weather	293	Shower(s) or thunderstorm over mountains
+0	BUFR	0 20 003	Present weather	508	No significant phenomenon to report, present and past weather omitted
+0	BUFR	0 20 003	Present weather	509	No observation, data not available, present and past weather omitted
+0	BUFR	0 20 003	Present weather	510	Present and past weather missing, but expected
+0	BUFR	0 20 003	Present weather	511	Missing value

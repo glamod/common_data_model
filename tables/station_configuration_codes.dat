@@ -1,13 +1,4 @@
 field_id	field_name	code_value	abbreviation	description
-0	AWS Entry and Display Software			TBD
-1	AWS Entry and Display Software Version			TBD
-2	AWS Model			TBD
-3	AWS Model Version			TBD
-4	AWS Software			TBD
-5	AWS Software version			TBD
-9	Drogue type	NA		See BUFR code table 0 02 034
-11	Lagrangian drifter drogue status	NA		See BUFR code table 0 22 060
-11	LogBook software and version			TBD
 16	Other instruments	0	BAT	Bathythermometer.
 16	Other instruments	1	BT	Bathythermograph (towed).
 16	Other instruments	2	FLM	Fluorometer.
