@@ -1,0 +1,43 @@
+Element Name	Value [PLEASE INSERT]	Mandatory (Y/N)	Data Type	Look-up Table (table:column id) with Link	Description
+region		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/region.dat", "region:region")	Region (WMO region / Ocean basin)
+sub_region		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/sub_region.dat", "sub_region:sub_region")	Country / regional sea
+application_area		N	int[]	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/application_area.dat", "application_area:application_area")	WMO application area(s)
+observing_programme		N	int[]	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/observing_programme.dat", "observing_programme:observing_programme")	Observing programme, e.g. VOS
+report_type		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/report_type.dat", "report_type:type")	e.g. SYNOP, TEMP, CLIMAT, etc
+station_name		N	varchar		e.g. GRUAN station name, ship name, site name etc
+station_type		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/station_type.dat", "station_type:type")	Type of station, e.g. land station, sea station etc
+platform_type		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/platform_type.dat", "platform_type:type")	Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc
+platform_sub_type		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/platform_sub_type.dat", "platform_sub_type:sub_type")	Sub-type for platform, e.g. 3m discuss buoy
+primary_station_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/station_configuration.dat", "station_configuration:primary_id")	Primary station identifier, e.g. WIGOS ID
+station_record_number		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/station_configuration.dat", "station_configuration:record_number")	Together with primary_station_id this forms a link to the station configuration table.
+primary_station_id_scheme		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/id_scheme.dat", "id_scheme:scheme")	Scheme used for station ID
+longitude		N	numeric		Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)
+latitude		N	numeric		Latitude of station, -90 to 90 (or other as defined by station_crs)
+location_accuracy		N	numeric		Accuracy to which station location recorded (radius in km)
+location_method		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/location_method.dat", "location_method:method")	Method by which location determined
+location_quality		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/location_quality.dat", "location_quality:quality")	Quality flag for station location
+crs		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/crs.dat", "crs:crs")	Coordinate reference scheme for station location
+station_speed		N	numeric		Station speed over ground if mobile (m/s)
+station_course		N	numeric		Station course over ground if mobile (degree true)
+station_heading		N	numeric		Station heading if mobile
+height_of_station_above_local_ground		N	numeric		Height of station above local ground (m)
+height_of_station_above_sea_level		N	numeric		Height of station above mean sea level (m), negative values for below sea level.
+height_of_station_above_sea_level_accuracy		N	numeric		Accuracy to which height of station known (m)
+sea_level_datum		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/sea_level_datum.dat", "sea_level_datum:datum")	Datum used for sea level
+report_meaning_of_time_stamp		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/meaning_of_time_stamp.dat", "meaning_of_time_stamp:meaning")	Report time - beginning, middle or end of reporting period
+report_timestamp		N	timestamp with timezone		e.g. 1991-01-01 12:00:0.0+0
+report_duration		N	int		Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
+report_time_accuracy		N	numeric		Precision to which time was recorded (s)
+report_time_quality		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/time_quality.dat", "time_quality:quality")	Quality flag for report_timestamp 
+report_time_reference		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/time_reference.dat", "time_reference:reference")	Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
+profile_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/profile_configuration.dat", "profile_configuration:profile_id")	Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.
+events_at_station		N	int[]*	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/events_at_station.dat", "events_at_station:event")	e.g. ship hove to, crop burning etc.
+report_quality		N	int 	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/quality_flag.dat", "quality_flag:flag")	Overall quality of report
+duplicate_status		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/duplicate_status.dat", "duplicate_status:status")	E.g. no duplicates, best duplicate, duplicate, not checked.
+duplicates		N	varchar[]*	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/header_table.dat", "header_table:report_id")	Array of report_id's for duplicates
+record_timestamp		N	timestamp with timezone		Timestamp of revision for this record
+history		N	varchar 	 	Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc. 
+processing_level		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/report_processing_level.dat", "report_processing_level:level")	Level of processing applied to this report
+processing_codes		N	int[]*	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/report_processing_codes.dat", "report_processing_codes:code")	Processing applied to this report
+source_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/source_configuration.dat", "source_configuration:source_id")	Original source of data, link to external table
+source_record_id		N	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database

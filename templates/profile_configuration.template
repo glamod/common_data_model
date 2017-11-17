@@ -1,7 +1,0 @@
-Element Name	Value [PLEASE INSERT]	Mandatory (Y/N)	Data Type	Look-up Table (where possible values are defined)	Description
-profile_type		N	int	profile_type:type	Type of profile (e.g. atmospheric or oceanic)
-standard_time		N	int	standard_time:time	e.g. Standard / scheduled time for launch or report, e.g. 00, 06, 12, 18 UTC
-actual_time		N	timestamp		Actual report / launch time
-profile_number		N	numeric		e.g. Balloon Number
-comments		N	varchar		Any additional comments / footnotes
-optional_data		N	int	data_present:flag	Flag indicating whether there is additional metadata available

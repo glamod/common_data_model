@@ -1,0 +1,48 @@
+Element Name	Value [PLEASE INSERT]	Mandatory (Y/N)	Data Type	Look-up Table (table:column id) with Link	Description
+report_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/header_table.dat", "header_table:report_id")	Link to header information
+data_policy_licence		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/data_policy_licence.dat", "data_policy_licence:policy")	WMOessential, WMOadditional, WMOother
+date_time		N	timestamp with timezone		timestamp for observation
+date_time_meaning		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/meaning_of_time_stamp.dat", "meaning_of_time_stamp:meaning")	beginning, middle, end
+observation_duration		N	int		Duration/period over which observation was made (s)
+longitude		N	numeric		Longitude of the observed value, -180 to 180 (or other as defined by CRS). This may or may not be the same as the report location.
+latitude		N	numeric		Latitude of the observed value, -90 to 90 (or other as defined by CRS)
+crs		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/crs.dat", "crs:crs")	Coordinate reference scheme use to encode location
+z_coordinate		N	numeric		z coordinate of observation
+z_coordinate_type		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/z_coordinate_type.dat", "z_coordinate_type:type")	Type of z coordinate
+observation_height_above_station_surface		N	numeric		Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.
+observed_variable		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/observed_variable.dat", "observed_variable:variable")	The variable being observed / measured
+secondary_variable		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/secondary_variable.dat", "secondary_variable:variable")	Secondary variable required to understand observation, e.g. chemical constituent. Set to NA / missing if not applicable.
+observation_value		N	numeric		The observed value
+value_significance		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/observation_value_significance.dat", "observation_value_significance:significance")	e.g. min, max, mean, sum
+secondary_value		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/secondary_variable.dat", "secondary_variable:value")	value for the secondary variable. Set to NA or missing if not applicable.
+units		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/units.dat", "units:units")	Units for the observed variable
+code_table		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/observation_code_table.dat", "observation_code_table:code_table")	Encode / decode table for variable (if encoded)
+conversion_flag		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/conversion_flag.dat", "conversion_flag:flag")	Flag indicating whether original, converted or both values are available.
+location_method		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/location_method.dat", "location_method:method")	Method of determining location, 
+location_precision		N	numeric		Precision to which location is reported (radius km)
+z_coordinate_method		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/z_coordinate_method.dat", "z_coordinate_method:method")	Method of determining z coordinate
+bbox_min_longitude		N	numeric		Bounding box for observation, valid range given by CRS
+bbox_max_longitude		N	numeric		Bounding box for observation, valid range given by CRS
+bbox_min_latitude		N	numeric		Bounding box for observation, valid range given by CRS
+bbox_max_latitude		N	numeric		Bounding box for observation, valid range given by CRS
+spatial_representativeness		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/spatial_representativeness.dat", "spatial_representativeness:representativeness")	Spatial representativeness of observation
+quality_flag		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/quality_flag.dat", "quality_flag:flag")	Quality flag for observation
+qc_passed		N	int		Number of quality control checks passed (see qc_table for more information)
+qc_failed		N	int		Number of quality control checks failed (see qc_table for more information)
+numerical_precision		N	int		Reporting precision of observation in units given by 'units' variable. Equivalent to BUFR scale factor
+standard_uncertainty		N	numeric		Standard uncertainty in reported value
+method_of_estimating_standard_uncertainty		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/method_of_estimating_uncertainty.dat", "method_of_estimating_uncertainty:method")	Method of estimating the standard uncertainty
+sensor_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/sensor_configuration.dat", "sensor_configuration:sensor_id")	 Link to sensor_configuration table.
+sensor_automation_status		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/automation_status.dat", "automation_status:automation")	Automated, manual, mixed or visual observation
+exposure_of_sensor		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/instrument_exposure_quality.dat", "instrument_exposure_quality:exposure")	Whether the exposure of the instrument will impact on the quality of the measurement
+original_precision		N	int 		Original reporting precision in units given by 'original_units'
+original_units		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/units.dat", "units:units")	Original units 
+original_value		N	numeric 		Original value as reported or recorded in log book.
+conversion_method		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/conversion_method.dat", "conversion_method:method")	Link to table describing conversion process
+processing_code		N	int[]*	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/processing_code.dat", "processing_code:code")	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
+processing_level		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/processing_level.dat", "processing_level:level")	Level of processing applied to observation.
+adjustment_id		N	varchar	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/adjustment.dat", "adjustment:adjustment_id")	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
+traceability		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/traceability.dat", "traceability:traceability")	Whether observation can be traced to international standards.
+advanced_qc		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/data_present.dat", "data_present:flag")	Flag indicating whether advanced qc data are available
+advanced_uncertainty		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/data_present.dat", "data_present:flag")	Flag indicating whether advanced uncertainty estimates are available
+advanced_homogenisation		N	int	=HYPERLINK("https://github.com/glamod/common_data_model/blob/master/tables/data_present.dat", "data_present:flag")	Flag indicating whether advanced homogenisation information is available
