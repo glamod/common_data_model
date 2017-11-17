@@ -1,0 +1,9 @@
+Element Name	Value [PLEASE INSERT]	Mandatory (Y/N)	Data Type	Look-up Table (where possible values are defined)	Description
+observing_method		N	int	observing_method:method	Method (instrumental, estimated / visual, computed) by which observation made
+sampling_strategy		N	int	sampling_strategy:strategy	Sampling strategy used by instrument
+calibration_status		N	int	calibration_status:status	Whether the sensor is in / out of calibration
+calibration_date		N	timestamp		Date of last calibration
+comments		N	varchar		additional comments for sensor not reportable elsewhere
+date_start		N	timestamp		start date for period of validity assoiciated with this entry
+date_end		N	timestamp		end date for period of validity assoiciated with this entry
+optional_data		N	int	data_present:flag	Flag indicating if additional data available
