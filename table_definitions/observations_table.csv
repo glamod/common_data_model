@@ -40,6 +40,7 @@ sensor_automation_status	int	automation_status:automation	Automated, manual, mix
 exposure_of_sensor	int	instrument_exposure_quality:exposure	Whether the exposure of the instrument will impact on the quality of the measurement
 original_precision	int 		Original reporting precision in units given by 'original_units'
 original_units	int	units:units	Original units 
+original_code_table	int	observation_code_table:code_table	Encode / decode table for variable (if encoded)
 original_value	numeric 		Original value as reported or recorded in log book.
 conversion_method	int	conversion_method:method	Link to table describing conversion process
 processing_code	int[]*	processing_code:code	e.g. TRC (temperature radiation corrections) etc. Encoded in table.
@@ -49,3 +50,5 @@ traceability	int	traceability:traceability	Whether observation can be traced to 
 advanced_qc	int	data_present:flag	Flag indicating whether advanced qc data are available
 advanced_uncertainty	int	data_present:flag	Flag indicating whether advanced uncertainty estimates are available
 advanced_homogenisation	int	data_present:flag	Flag indicating whether advanced homogenisation information is available
+source_id	 varchar	source_configuration:source_id	Original source of data, link to external table
+source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database

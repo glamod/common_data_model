@@ -1,2 +1,22 @@
-method	description	implementation	reference
-0	NA	NA	NA
+method	variable	description	implementation	reference
+1	36	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	37	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	41	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	56	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	85	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	86	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	87	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	88	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	89	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	90	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	91	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	92	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	93	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	94	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	95	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	113	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+1	116	Temperature value in degrees Celsius converted to value in Kelvin	The original temperature value in degrees Celsius in converted by adding 273.15 to the original value	NA
+2	58	Station pressure converted to sea level pressure	\[{{log}_{10}}\frac{p_0}{p_s}=\frac{K_p H_p}{T_{mv}}\] where ${p_0}$ is the pressure reduced to sea level in hPa; ${p_s}$ the station pressure in hPa; ${K_p}$ the constant 0.0148275 K / gpm; ${H_p}$ the station elevation in gpm; and ${T_{mv}}$ the mean virtual temperature in K 	WMO, 2012: Guide to Meteorological Instruments and Methods of Observation. WMO-No 8, WMO, Geneva, 716 pp. (Equation 3.1, page I.3-21).
+3	107	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA
+3	108	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA
+3	109	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA

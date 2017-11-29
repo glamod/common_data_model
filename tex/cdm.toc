@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {4.1}Header table}{17}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Observations table}{19}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Station configuration}{22}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Profile configuration}{24}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Source configuration}{25}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.4}Profile configuration}{25}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Source configuration}{26}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Sensor configuration}{27}{subsection.4.6}
 \contentsline {subsection}{\numberline {4.7}Quality control flags}{28}{subsection.4.7}
 \contentsline {subsection}{\numberline {4.8}Uncertainty budget}{29}{subsection.4.8}
@@ -21,5 +21,5 @@
 \contentsline {section}{\numberline {6}Appendix}{31}{section.6}
 \contentsline {subsection}{\numberline {6.1}Table definitions}{31}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Data tables}{31}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Code tables}{45}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Code tables}{62}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.1.2}Code tables}{46}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Code tables}{63}{subsection.6.2}
