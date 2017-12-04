@@ -20,3 +20,5 @@ method	variable	description	implementation	reference
 3	107	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA
 3	108	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA
 3	109	Wind speed value in Beaufort scale converted to metres per second (m/s)	\[W = 0.836*F^{\frac{3}{2}}\] where F = Wind speed in Beaufort scale; W = wind speed in m/s.	NA
+4	106	Wind direction from 32 point compass	Wind direction converted from 32 point compass, mid point used (see observation_code_table 1, GLAMOD wind32)	NA
+5	107	Knots to m/s	Wind speed converted from knots to m/s, wind_ms = wspd_knot * 0.5144	NA
