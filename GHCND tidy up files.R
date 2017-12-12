@@ -1,7 +1,7 @@
- ##set working directory where you nwat fils to be saved
+ ##set working directory where you want files to be saved
 ##ftp ghcnd FILE AND EXTRACTS ELEMENTS AND FLAGS INTO COLLUMNS THEN NEED TO MERGE
 ###change station id "USW00003820" as needed and var as needed see GHCNd read  file for details
-###requir rnoaa package
+###requires rnoaa package
 ###set {date_min} earlist date of data needed 
 
 library("rnoaa")
