@@ -1,3 +1,4 @@
+\begin{landscape}
 \pgfplotstabletypeset[
     empty header,
     begin table=\begin{longtable},
@@ -9,22 +10,24 @@
             \caption{sub\_region codes}
             \label{tab:DataTableSubregion}\\
             % Initial column headers
-            \hline\hline             \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{sub\_region}}} & 
-            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{type}}} & 
-            \multicolumn{1} { V{1.266667 in}} { \textbf{\seqsplit{code}}} & 
+            \hline\hline             \multicolumn{1} { V{1.375000 in}} { \textbf{\seqsplit{sub\_region}}} & 
+            \multicolumn{1} { V{1.375000 in}} { \textbf{\seqsplit{type}}} & 
+            \multicolumn{1} { V{1.375000 in}} { \textbf{\seqsplit{code}}} & 
+            \multicolumn{1} { V{1.375000 in}} { \textbf{\seqsplit{alpha\_3\_code}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{name}}} \\ \hline\hline \endfirsthead
-            \multicolumn{4}{c}{Table \thetable\ sub\_region (cont.)} \\
+            \multicolumn{5}{c}{Table \thetable\ sub\_region (cont.)} \\
             % column headers on additional pages
-            \hline\hline             \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{sub\_region}}} & 
-            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{type}}} & 
-            \multicolumn{1} {V{1.266667 in} } { \textbf{\seqsplit{code}}} & 
+            \hline\hline             \multicolumn{1} {V{1.375000 in} } { \textbf{\seqsplit{sub\_region}}} & 
+            \multicolumn{1} {V{1.375000 in} } { \textbf{\seqsplit{type}}} & 
+            \multicolumn{1} {V{1.375000 in} } { \textbf{\seqsplit{code}}} & 
+            \multicolumn{1} {V{1.375000 in} } { \textbf{\seqsplit{alpha\_3\_code}}} & 
             \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{name}}} \\ \hline\hline \endhead
             % Footer on 1st to penultimate pages
-            \multicolumn{4}{r}{{Continued on next page}} \\
+            \multicolumn{5}{r}{{Continued on next page}} \\
             \endfoot
             % Footer on last page of table
             \hline
-            \multicolumn{4}{r}{{End of table}} \\ 
+            \multicolumn{5}{r}{{End of table}} \\ 
             \endlastfoot
         }
     },
@@ -34,17 +37,22 @@
     string type,
     columns/sub_region/.style={
             string type, 
-            column type= V{1.266667 in}, 
+            column type= V{1.375000 in}, 
             string replace*={_}{\_}
         },
     columns/type/.style={
             string type, 
-            column type= V{1.266667 in}, 
+            column type= V{1.375000 in}, 
             string replace*={_}{\_}
         },
     columns/code/.style={
             string type, 
-            column type= V{1.266667 in}, 
+            column type= V{1.375000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/alpha_3_code/.style={
+            string type, 
+            column type= V{1.375000 in}, 
             string replace*={_}{\_}
         },
     columns/name/.style={
@@ -53,3 +61,4 @@
             column type = V{3.000000 in}
         }
     ]{../tables/sub_region.dat}
+\end{landscape}
