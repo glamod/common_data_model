@@ -3,4 +3,5 @@
 element_name	kind	external_table	description
 method	int (pk)		Primary key for table
 description	varchar		Description of method
+originator	varchar		Originator (person / institute) of QC scheme / method
 reference	varchar		DOI or reference for method

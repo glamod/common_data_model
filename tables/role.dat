@@ -1,2 +1,21 @@
-role	description
-0	TBD
+role	entry	description
+0	author 	the individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). while it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator. applicable mainly to documents, reports, memos, etc. 
+1	custodian 	the individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource. 
+2	distributor 	the organization that is responsible for providing the PARR required access to the data. 
+3	originator 	the name of the individual or organization who is responsible for the data at the point when the data was first created. applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data. 
+4	owner 	the individual or organization that has ownership of the resource. 
+5	pointOfContact 	the individual or organization who is responsible for the initial triage of and answering questions related to the resource. 
+6	principalInvestigator 	the individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). if there are co-principal investigators then this field will repeat for each principle investigator. while it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author. 
+7	processor 	the name of the individual or organization who has processed the data in a manner such that the resource has been modified. 
+8	publisher 	the individual or organization who prepares and issues the resource. 
+9	resourceProvider 	the individual or organization that supplies or allocates the resource for another entity. 
+10	sponsor 	the individual or organization who is providing sponsorship for the resource. 
+11	user 	the individuals or organizations who are the intended consumers of the resource. 
+12	coAuthor 	the individual(s) or organization(s) who name(s) should appear after the first name in a citation for the resource (use author to denote the first name in the citation). while it is possible to have a co-author and principal investigator/collaborator be the same individual or organization, co-author is no the same as nor synonymous with principle investigator or collaborator 
+13	collaborator 	party who assists with the generation of the resource other than the principal investigator 
+14	contributor 	the individuals or organizations whose contributions deserve recognition in the citation. contributor is mutually exclusive from author, co-author, principal investigator, and collaborator. use ISO MD_Identification credit field to identify individual or organizations that should be given acknowledgement only. 
+15	editor 	the individual who has made a corrective or editorial change to the resource as part of a systematic revision process. 
+16	funder 	the individual or organization which has provided all or part of the finances associated with the resource. 
+17	mediator 	a class of entity that mediates access to the resource and for whom the resource is intended or useful 
+18	rightsHolder	the individual or organization who has ownership of the legal right to the resource. 
+19	stakeholder	an individual or organization who has an interest in the resource and/or is affected by or affects the actions of the resource 

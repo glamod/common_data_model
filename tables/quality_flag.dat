@@ -1,9 +1,5 @@
 flag	description
-0	Good
-1	Inconsistent
-2	Doubtful
-3	Wrong
-4	Not checked
-5	Has been changed
-6	Estimated
-7	Missing value
+0	Passed
+1	Failed
+2	Not checked
+3	Missing

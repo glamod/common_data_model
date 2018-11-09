@@ -6,7 +6,7 @@ report_id	varchar	header_table:report_id	Link to header information
 data_policy_licence	int	data_policy_licence:policy	WMOessential, WMOadditional, WMOother
 date_time	timestamp with timezone		timestamp for observation
 date_time_meaning	int	meaning_of_time_stamp:meaning	beginning, middle, end
-observation_duration	int		Duration/period over which observation was made (s)
+observation_duration	int	duration:duration	Duration/period over which observation was made
 longitude	numeric		Longitude of the observed value, -180 to 180 (or other as defined by CRS). This may or may not be the same as the report location.
 latitude	numeric		Latitude of the observed value, -90 to 90 (or other as defined by CRS)
 crs	int	crs:crs	Coordinate reference scheme use to encode location
@@ -30,11 +30,7 @@ bbox_min_latitude	numeric		Bounding box for observation, valid range given by CR
 bbox_max_latitude	numeric		Bounding box for observation, valid range given by CRS
 spatial_representativeness	int	spatial_representativeness:representativeness	Spatial representativeness of observation
 quality_flag	int	quality_flag:flag	Quality flag for observation
-qc_passed	int		Number of quality control checks passed (see qc_table for more information)
-qc_failed	int		Number of quality control checks failed (see qc_table for more information)
 numerical_precision	numeric		Reporting precision of observation in units given by 'units' variable. E.g. 0.1 = reported to nearest tenth, 0.5 to nearest half etc.
-standard_uncertainty	numeric		Standard uncertainty in reported value
-method_of_estimating_standard_uncertainty	int	method_of_estimating_uncertainty:method	Method of estimating the standard uncertainty
 sensor_id	varchar	sensor_configuration:sensor_id	 Link to sensor_configuration table.
 sensor_automation_status	int	automation_status:automation	Automated, manual, mixed or visual observation
 exposure_of_sensor	int	instrument_exposure_quality:exposure	Whether the exposure of the instrument will impact on the quality of the measurement
@@ -48,7 +44,5 @@ processing_level	int	processing_level:level	Level of processing applied to obser
 adjustment_id	varchar	adjustment:adjustment_id	Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)
 traceability	int	traceability:traceability	Whether observation can be traced to international standards.
 advanced_qc	int	data_present:flag	Flag indicating whether advanced qc data are available
-advanced_uncertainty	int	data_present:flag	Flag indicating whether advanced uncertainty estimates are available
+advanced_uncertainty	int	data_present:flag	Flag indicating whether uncertainty estimates are available
 advanced_homogenisation	int	data_present:flag	Flag indicating whether advanced homogenisation information is available
-source_id	 varchar	source_configuration:source_id	Original source of data, link to external table
-source_record_id	varchar		Record ID in source data, e.g. ID of event from GRUAN meta database

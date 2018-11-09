@@ -16,7 +16,7 @@ source_format	int	source_format:format	Original format for data
 source_format_version	varchar		Version of original data format
 source_file	varchar		Filename for data from source
 source_file_checksum	varchar		Checksum of source datafile
-data_centre	varchar	organisation:organisation_id	Data centre from which data sourced
+data_centre	varchar	organisation:organisation_id	Data centre or organisation from which data sourced
 data_centre_url	varchar		URL for data centre
 data_policy_licence	int	data_policy_licence:policy	Data policy / licence
 contact	varchar[]	contact:contact_id	contact for data source with role specified by role element
@@ -26,3 +26,9 @@ comments	varchar		Additional comments / footnotes
 timestamp	timestamp with timezone		Date record created / created
 maintenance_and_update_frequency	int	update_frequency:frequency	Frequency with which modifications and deletions are made to the data after it is first produced
 optional_data	int	data_present:flag	Flag indicating availability of additional data
+bbox_min_longitude	numeric		Bounding box for observations contained in this source, valid range given by CRS
+bbox_max_longitude	numeric		Bounding box for observations contained in this source, valid range given by CRS
+bbox_min_latitude	numeric		Bounding box for observations contained in this source, valid range given by CRS
+bbox_max_latitude	numeric		Bounding box for observations contained in this source, valid range given by CRS
+metadata_contact	varchar[]	contact:contact_id	contact for responsible for maintaing this record
+metadata_contact_role	int[]	role:role	role of metadata_contact

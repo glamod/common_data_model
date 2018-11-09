@@ -3,4 +3,4 @@
 element_name	kind	external_table	description
 region	int(pk)	 	primary key for table
 WMO_region	int	 	WMO region that this corresponds to
-desription	varchar	 	Definition of region
+description	varchar	 	Definition of region

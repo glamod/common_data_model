@@ -5,5 +5,5 @@ code_table	int (pk)	 	Primary key for table
 code_table_scheme	varchar	 	External scheme used for code table (e.g. BUFR)
 code_table_id	varchar	 	ID used to identify table within scheme (e.g. F XX YYY for BUFR tables)
 code_table_name	varchar	 	Name of code table
-value	int	 	coded value
+value	int (pk)	 	coded value
 description	varchar	 	decoded value / meaning of decoded value

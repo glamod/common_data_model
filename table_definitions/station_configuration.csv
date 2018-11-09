@@ -32,3 +32,9 @@ measuring_system_id	varchar[]		ID or serial number of measuring system
 observed_variables	int[]	observed_variable:variable	array indicating which variables are observed by this station
 comment	varchar		Any other comments / footnotes
 optional_data	int	data_present:flag	Flag indicating availability of additional data
+bbox_min_longitude	numeric		Bounding box for observation from this station, valid range given by CRS
+bbox_max_longitude	numeric		Bounding box for observation from this station, valid range given by CRS
+bbox_min_latitude	numeric		Bounding box for observation from this station, valid range given by CRS
+bbox_max_latitude	numeric		Bounding box for observation from this station, valid range given by CR
+metadata_contact	varchar[]		contact:contact_id      contact for responsible for maintaing this record
+metadata_contact_role	int[]	role:role	role of metadata_contact

@@ -1,0 +1,24 @@
+digraph  {
+node [color=white]
+[label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" COLOR="BLACK">
+<TR><TD COLSPAN="" ALIGN="left" PORT="head"># Table: </TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># URL: https://github.com/DavidBerryNOC/C3S_311a_CDM/blob/master/tables/tsv/.tsv</TD></TR>
+<TR><TD COLSPAN="" ALIGN="left"># Note: Only first 20  entries shown. View above table for full details</TD></TR>
+<TR><TD ALIGN="left" COLSPAN=""># Description:				</TD></TR>
+<TR><TD ALIGN="left" COLSPAN=""># Source:</TD></TR>
+<TR><TD>primary_id</TD><TD>varchar (pk) </TD><TD></TD><TD>Primary (e.g. WMO) ID for station </TD></TR>
+<TR><TD>primary_id_scheme</TD><TD>int </TD><TD>id_scheme:scheme </TD><TD>Scheme used for primary ID </TD></TR>
+<TR><TD>secondary_id</TD><TD>varchar[]* </TD><TD></TD><TD>Secondary (e.g. local) ID for station </TD></TR>
+<TR><TD>secondary_id_scheme</TD><TD>int[]* </TD><TD>id_scheme:scheme </TD><TD>Scheme used for secondary ID </TD></TR>
+<TR><TD>station_name</TD><TD>varchar </TD><TD></TD><TD>Name of station (e.g. Tateno) </TD></TR>
+<TR><TD>station_abbreviation</TD><TD>varchar </TD><TD></TD><TD>Abbreviation of station name (e.g. TAT) </TD></TR>
+<TR><TD>station_crs</TD><TD>int </TD><TD>crs:crs </TD><TD>coordinate reference system used to report stations location </TD></TR>
+<TR><TD>start_date</TD><TD>timestamp </TD><TD></TD><TD>Date that the station first started reporting in this configuration <BR/></TD></TR>
+<TR><TD>station_type</TD><TD>int </TD><TD>station_type:type </TD><TD>Type of reporting station </TD></TR>
+<TR><TD>platform_type</TD><TD>int </TD><TD>platform_type:type </TD><TD>Generic type of observing platform </TD></TR>
+<TR><TD>platform_sub_type</TD><TD>int </TD><TD>platform_sub_type:sub_type </TD><TD>Specific type of observing platform </TD></TR>
+<TR><TD>operating_institute</TD><TD>varchar </TD><TD>organisation:organisation_id </TD><TD>Institute operating the station (e.g. National Oceanography Centre) </TD></TR>
+<TR><TD>operating_territory</TD><TD>int </TD><TD>sub_region:sub_region </TD><TD>Sub-region where station is located or country of registry for <BR/>mobile station </TD></TR>
+<TR><TD>city</TD><TD>varchar </TD><TD></TD><TD>Nearest city / town to station location </TD></TR>
+</TABLE>>];
+}

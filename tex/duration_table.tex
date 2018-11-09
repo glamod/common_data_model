@@ -1,0 +1,48 @@
+\pgfplotstabletypeset[
+    empty header,
+    begin table=\begin{longtable},
+    %every head row/.style={output empty row},
+    every nth row={1}{before row=\hline},
+    every first row/.append style={
+        before row={%
+            % Initial caption
+            \caption{duration codes}
+            \label{tab:DataTableDuration}\\
+            % Initial column headers
+            \hline\hline             \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{duration}}} & 
+            \multicolumn{1} { V{1.900000 in}} { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{period}}} \\ \hline\hline \endfirsthead
+            \multicolumn{3}{c}{Table \thetable\ duration (cont.)} \\
+            % column headers on additional pages
+            \hline\hline             \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{duration}}} & 
+            \multicolumn{1} {V{1.900000 in} } { \textbf{\seqsplit{description}}} & 
+            \multicolumn{1} { V{3.000000 in} } {\textbf{\seqsplit{period}}} \\ \hline\hline \endhead
+            % Footer on 1st to penultimate pages
+            \multicolumn{3}{r}{{Continued on next page}} \\
+            \endfoot
+            % Footer on last page of table
+            \hline
+            \multicolumn{3}{r}{{End of table}} \\ 
+            \endlastfoot
+        }
+    },
+    %
+    end table=\end{longtable},
+    col sep=tab,
+    string type,
+    columns/duration/.style={
+            string type, 
+            column type= V{1.900000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/description/.style={
+            string type, 
+            column type= V{1.900000 in}, 
+            string replace*={_}{\_}
+        },
+    columns/period/.style={
+            string type, 
+            string replace*={_}{\_},
+            column type = V{3.000000 in}
+        }
+    ]{../tables/duration.dat}

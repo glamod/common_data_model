@@ -27,9 +27,9 @@ height_of_station_above_local_ground	numeric		Height of station above local grou
 height_of_station_above_sea_level	numeric		Height of station above mean sea level (m), negative values for below sea level.
 height_of_station_above_sea_level_accuracy	numeric		Accuracy to which height of station known (m)
 sea_level_datum	int	sea_level_datum:datum	Datum used for sea level
-report_meaning_of_time_stamp	int	meaning_of_time_stamp:meaning	Report time - beginning, middle or end of reporting period
+report_meaning_of_timestamp	int	meaning_of_time_stamp:meaning	Report time - beginning, middle or end of reporting period
 report_timestamp	timestamp with timezone		e.g. 1991-01-01 12:00:0.0+0
-report_duration	int		Report duration (s), e.g. 86400 = daily obs, 3600 hourly etc
+report_duration	int	duration:duration	Report duration
 report_time_accuracy	numeric		Precision to which time was recorded (s)
 report_time_quality	int	time_quality:quality	Quality flag for report_timestamp 
 report_time_reference	int	time_reference:reference	Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)
