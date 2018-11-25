@@ -32,7 +32,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 30	evaporation	atmospheric		evaporation	kg m-2 s-1	TBD
 31	evaporation	atmospheric		potential evapotranspiration	mm day-1	Quantity of water evaporated from the soil and plants when the ground is at its natural moisture content.
 32	evaporation	atmospheric		real evapotranspiration	mm day-1	TBD
-33	humidity	atmospheric		absolute humidity	g m-3	TBD
+33	humidity	atmospheric		absolute humidity	g m-3	measure of water vapor (moisture) in the air, regardless of temperature
 34	humidity	atmospheric	surface; upper-air	dew point depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
 36	humidity	atmospheric	surface; upper-air	dew point temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
 37	humidity	atmospheric	surface; upper-air	ice bulb temperature	K	TBD
@@ -113,3 +113,9 @@ variable	parameter_group	domain	sub_domain	name	units	description
 114				tropopause pressure	Pa	TBD
 115				tropopause potential temperature	K	TBD
 116				frost point temperature	K	TBD
+117	pressure	atmospheric	surface; upper air	geopotential height	m	height of a standard or significant pressure level in meters
+118	pressure	atmospheric	surface; upper air	geopotential height decameters	decametres	height of a standard or significant pressure level in decameters
+119	temperature	atmospheric	surface; upper air	vertical gradient of temperature	K m-1	vertical variation of temperature 
+120	temperature	atmospheric	surface; upper air	vertical gradient of potential temperature	K m-1	vertical variation of potential temperature 
+121	temperature	atmospheric	surface; upper air	equivalent potential temperature	K	temperature a parcel of air would reach if all the water vapor in the parcel were to condense, releasing its latent heat, and the parcel was brought adiabatically to a standard reference pressure, usually 1000 hPa
+122	wind	atmospheric	surface; upper air	vertical speed of radiosonde	m s-1	vertical speed of radiosonde ascent

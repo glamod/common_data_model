@@ -46,3 +46,4 @@ traceability	int	traceability:traceability	Whether observation can be traced to 
 advanced_qc	int	data_present:flag	Flag indicating whether advanced qc data are available
 advanced_uncertainty	int	data_present:flag	Flag indicating whether uncertainty estimates are available
 advanced_homogenisation	int	data_present:flag	Flag indicating whether advanced homogenisation information is available
+source_id	 varchar	source_configuration:source_id	Original source of data, link to external table
