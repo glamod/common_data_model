@@ -2,3 +2,6 @@ type	abbreviation	description
 0	SYNOP	NA
 1	TEMP	NA
 2	CLIMAT	NA
+3	DAILY	NA
+4	METAR	NA
+5	CLIMAT TEMP	NA

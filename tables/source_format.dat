@@ -1,3 +1,6 @@
 format	description
 0	ASCII (comma separated values)
 1	IMMA
+2	WMO BUFR
+3	WMO TAC
+4	CF-compliant NetCDF
