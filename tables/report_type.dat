@@ -5,3 +5,4 @@ type	abbreviation	description
 3	DAILY	NA
 4	METAR	NA
 5	CLIMAT TEMP	NA
+6	TEMP_DIFF	NA

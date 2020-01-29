@@ -119,3 +119,4 @@ variable	parameter_group	domain	sub_domain	name	units	description
 120	temperature	atmospheric	surface; upper air	vertical gradient of potential temperature	K m-1	vertical variation of potential temperature 
 121	temperature	atmospheric	surface; upper air	equivalent potential temperature	K	temperature a parcel of air would reach if all the water vapor in the parcel were to condense, releasing its latent heat, and the parcel was brought adiabatically to a standard reference pressure, usually 1000 hPa
 122	wind	atmospheric	surface; upper air	vertical speed of radiosonde	m s-1	vertical speed of radiosonde ascent
+141	radiation	atmospheric	surface; upper air	Solar zenith angle	degrees	solar zenith angle

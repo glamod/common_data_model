@@ -3,3 +3,5 @@ flag	description
 1	Failed
 2	Not checked
 3	Missing
+4	Observed value updated and changed (manual correction)
+5	Observed value updated and changed (automatic correction)

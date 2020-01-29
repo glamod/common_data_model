@@ -24,3 +24,4 @@ method	variable	description	implementation	reference
 5	107	Knots to m/s	Wind speed converted from knots to m/s, wind_ms = wspd_knot * 0.5144	NA
 6	53	Conversion of mm to cm	\[SD = SD_{orig}*0.1\] where SD is the converted snow depth and \[SD_{orig}\] the original value.	NA
 7	58	Conversion from hPa to Pa	\[P = P_{orig}*100\]	NA
+7	57	Conversion from hPa to Pa	\[P = P_{orig}*100\]	NA

@@ -14,3 +14,6 @@ significance	description
 12	Instantaneous value of observed parameter
 13	Accumulation over specified period
 14	Not applicable
+15	Daytime ensemble mean
+16	Nighttime ensemble mean
+
