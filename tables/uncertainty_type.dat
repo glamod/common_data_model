@@ -1,4 +1,6 @@
-uncertainty_type	name	description
-1	random	Random uncertainties are the uncertainty contributions due to random effects causing random errors that cannot be corrected for in a single measured value, even in principle, because the effect is stochastic
-2	systematic	Systematic uncertainties are the uncertainty contributions due to systematic effects which, although they can be corrected in principle, cannot be corrected in practice. In other words, systematic uncertainties are statistical characterizations, by means of distributions of possible values of the measurand, of those systematic errors which, although removable in principle, cannot be corrected in practice
-3	total	total
+uncertainty_type	name	description	reference
+1	random	Random uncertainties are the uncertainty contributions due to random effects causing random errors that cannot be corrected for in a single measured value, even in principle, because the effect is stochastic	
+2	systematic	Systematic uncertainties are the uncertainty contributions due to systematic effects which, although they can be corrected in principle, cannot be corrected in practice. In other words, systematic uncertainties are statistical characterizations, by means of distributions of possible values of the measurand, of those systematic errors which, although removable in principle, cannot be corrected in practice	
+3	quasi-systematic	The quasi-systematic uncertainties are related to the estimates of errors which behave in a consistent way between measurements over a time period similar to that over which measurements are recorded.	
+4	structured random	The structured random uncertainty is a contribution systematic over one timescale and / or space scale, but effectively random over longer space and / or timescales.	
+5	total	The total uncertainty is the sum in quadrature of all the contributions (systematic, quasi-systematic and statistical) to the uncertainty budget.	

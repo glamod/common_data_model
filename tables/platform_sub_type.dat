@@ -1,7 +1,7 @@
 sub_type	platform_type	abbreviation	description
 0	2	BA	Barge
 1	2	BC	Bulk Carrier
-2	2	CA	 Cable ship
+2	2	CA	Cable ship
 3	2	CG	Coast Guard Ship
 4	2	CS	Container Ship
 5	2	DR	Dredger
@@ -9,28 +9,33 @@ sub_type	platform_type	abbreviation	description
 7	2	FP	Floating production and storage units
 8	2	FV	Other Fishing Vessel
 9	2	GC	General Cargo
-10	2	GT	 Gas Tanker
+10	2	GT	Gas Tanker
 11	2	IC	Icebreaking vessel
 12	2	IF	Inshore Fishing Vessel
-13	2	LC	 Livestock carrier
+13	2	LC	Livestock carrier
 14	2	LT	Liquid Tanker
 15	2	LV	Light Vessel
 16	2	MI	Mobile installation including mobile offshore drill ships, jack-up rigs and semi-submersibles
-17	2	MS	 Military Ship
-18	2	OT	 Other
+17	2	MS	Military Ship
+18	2	OT	Other
 19	2	MW	Ocean Weather Ship
 20	2	PI	Pipe layer
-21	2	PS	 Passenger ships and cruise liners
+21	2	PS	Passenger ships and cruise liners
 22	2	RF	Ro/Ro Ferry
 23	2	RR	Ro/Ro Cargo
-24	2	RS	 Refrigerated cargo ships including banana ships
+24	2	RS	Refrigerated cargo ships including banana ships
 25	2	RV	Research Vessel
 26	2	SA	Large sailing vessels
 27	2	SV	Support Vessel
-28	2	TR	  Trawler
-29	2	TU	 Tug
-30	2	VC	 Vehicle carriers
+28	2	TR	Trawler
+29	2	TU	Tug
+30	2	VC	Vehicle carriers
 31	2	YA	Yacht / Pleasure Craft
+32	2	HP	Hospital ship
+33	2	MD	MARID (U.K. Fisheries)
+34	2	RC	North sea traders
+35	2	TS	Training ship
+36	2	WH	Whaler
 63	0		Synoptic network
 64	7		Local Network
 65	2		Ocean Weather Ship (on station)

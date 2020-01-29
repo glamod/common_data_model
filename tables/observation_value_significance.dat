@@ -16,4 +16,20 @@ significance	description
 14	Not applicable
 15	Daytime ensemble mean
 16	Nighttime ensemble mean
+100	Maximum difference between observed and reference (obs - ref) values over indicated period
+101	Minimum difference between observed and reference (obs - ref) values over indicated period
+102	Mean difference between observed and reference (obs - ref) values over indicated period
+103	Median difference between observed and reference (obs - ref) values over indicated period
+104	Modal difference between observed and reference (obs - ref) values over indicated period
+105	Mean absolute error of differences between observed and reference (obs - ref) values over indicated period
+106	Best estimate of standard deviation (N-1) of differences between observed and reference (obs - ref) values over indicated period
+107	Standard deviation (N) of differences between observed and reference (obs - ref) values over indicated period
+108	Harmonic mean of differences between observed and reference (obs - ref) values over indicated period
+109	Root mean square vector error of differences between observed and reference (obs - ref) values over indicated period
+110	root mean square of differences between observed and reference (obs - ref) values over indicated period
+111	Vector mean of differences between observed and reference (obs - ref) values over indicated period
+112	Instantaneous difference between observed and reference (obs - ref) value
+113	Accumulated difference between observed and reference (obs - ref) values over specified period
+115	Daytime ensemble mean difference between observed and reference (obs - ref) values
+116	Nighttime ensemble mean difference between observed and reference (obs - ref) values
 

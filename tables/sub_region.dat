@@ -54,7 +54,7 @@ sub_region	type	code	alpha_3_code	name
 52	country	CX	CXV	CHRISTMAS ISLAND
 53	country	CY	CYP	CYPRUS
 54	country	CZ	CZE	CZECHIA
-55	country	DD		GERMAN DEMOCRATIC REPUBLIC
+55	country	DD		GERMAN DEMOCRATIC REPUBLIC (OBSOLETE)
 56	country	DE	DEU	GERMANY
 57	country	DJ	DJI	DJIBOUTI
 58	country	DK	DNK	DENMARK
@@ -207,7 +207,7 @@ sub_region	type	code	alpha_3_code	name
 205	country	SO	SOM	SOMALIA
 206	country	SR	SUR	SURINAME
 207	country	ST	STP	SAO TOME AND PRINCIPE
-208	country	SU		USSR
+208	country	SU		USSR (OBSOLETE)
 209	country	SV	SLV	EL SALVADOR
 210	country	SY	SYR	SYRIAN ARAB REPUBLIC
 211	country	SZ	SWZ	SWAZILAND
@@ -244,7 +244,7 @@ sub_region	type	code	alpha_3_code	name
 242	country	WS	WSM	SAMOA
 243	country	YE	YEM	YEMEN
 244	country	YT	MYT	MAYOTTE
-245	country	YU		YUGOSLAVIA
+245	country	YU		YUGOSLAVIA (OBSOLETE)
 246	country	ZA	ZAF	SOUTH AFRICA
 247	country	ZM	ZMB	ZAMBIA
 248	country	ZW	ZWE	ZIMBABWE
@@ -253,3 +253,6 @@ sub_region	type	code	alpha_3_code	name
 251	country	BQ	BES	BONAIRE, SINT EUSTATIUS AND SABA
 252	country	SS	SSD	SOUTH SUDAN
 253	country	SX	SXM	SINT MAARTEN, DUTCH PART
+244	country	Z1		BRITISH CARIBBEAN TERRITORIES (OBSOLETE)
+245	country	Z2		KENYA, UGANDA, TANZANIA (OBSOLETE)
+246	country	EU		EUROPEAN UNION
