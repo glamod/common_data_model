@@ -1,0 +1,9 @@
+field_id	field_name	kind	description
+1	PI Website	2	URL (e.g. Internet path for SHADOZ archive)
+2	data reprocessed flag	2	"Yes" if data reprocessed
+3	reference model	2	Model ID where applicable
+4	ozone reference total ozone	1	Daily value of total column ozone amount (in DU) defined as the "best representative value". Typically in the order of DS, ZS and FM
+5	ozone reference utc mean	3	The mean time of observations
+6	utc begin	3	The starting time of observations
+7	utc end	3	The ending time of observations
+8	utc mean	3	The mean time of observations

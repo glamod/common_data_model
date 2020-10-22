@@ -1,0 +1,20 @@
+field_id	field_name	kind	description
+1	geometric pressure offset correction	2	"Yes" if the correction was applied.
+2	pressure sensor offset	2	Offset value applied (Pa).
+3	ozone reference number	2	Identifier number for the ozonesonde.
+4	KI solution content	2	Details of the KI solution content.
+5	preflight summary solution volume	2	Volume of cathode solution (cm3 or cc).
+6	cathode soln volume correction	2	"Yes" if the correction was applied.
+7	preflight summary pump flow rate	2	The pump flow rate (ml/sec), measured during the conditioning procedures, is approx.  constant up to 100 hPa and decreases steadily to the top of the atmosphere due to instrumental degradation at low pressures.
+8	flowrate correction	2	Flowrate correction in (%).
+9	pump temperature correction	2	"Yes" if the pump temerpature correction was applied.
+10	sampling method type ozone free air	2	The background current (A) is the residual current measured by the sonde when sampling ozone-free air.
+11	applied pump efficiency factors	2	Reference for the applied pump efficiency factors.
+12	conversion transfer function	2	Transfer function used to convert measurements made with any of the various combinations to one of the two WMO recommended standard preparations (1.0 for SP and 0.5% for EN for the KI concentrations of the cathode electrolyte). 
+13	sample temperature	2	Measured ozonesonde pump temperature in degrees Celsius (C).
+14	sonde current	2	Measured ozonesonde cell current (A).
+15	pump motor current	2	Electrical current (mA) measured through the pump motor.
+16	pump motor voltage	2	Applied voltage (V) measured across the pump motor.
+17	wl code	2	WCode to designate the wavelength pair(s) used for total ozone measurement.
+18	obs code	2	Code to designate the type of total ozone measurement.
+19	m mu	2	The harmonic mean of the relative slant path through the ozone layer at 22Km for each of the observations used to compute the daily value. 

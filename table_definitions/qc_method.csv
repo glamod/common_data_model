@@ -5,3 +5,5 @@ method	int (pk)		Primary key for table
 description	varchar		Description of method
 originator	varchar		Originator (person / institute) of QC scheme / method
 reference	varchar		DOI or reference for method
+domain	varchar	Domain 	(land, air, sea) to which check applies
+quality_check_type	varchar		Description of type of QC check, e.g. metadata, format, completeness etc

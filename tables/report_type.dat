@@ -1,8 +1,8 @@
 type	abbreviation	description
-0	SYNOP	NA
-1	TEMP	NA
-2	CLIMAT	NA
-3	DAILY	NA
-4	METAR	NA
-5	CLIMAT TEMP	NA
-6	TEMP_DIFF	NA
+0	Sub daily	Hourly observations
+1	Radiosonde	Radiosonde profile
+2	Monthly	Monthly summary statistics
+3	Daily	Daily summary statistics
+4	METAR	Meteorological aerodrome report
+5	Monthly radiosonde	Monthly radiosonde profile summary
+6	Radiosonde difference	Difference between (quasi-)coincident / multi-rig radiosonde instruments

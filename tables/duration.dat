@@ -15,3 +15,5 @@ duration	description	period
 13	1 day	86400
 14	monthly	NA
 15	mixed frequency	NA
+16	pentad	432000
+17	weekly	604800

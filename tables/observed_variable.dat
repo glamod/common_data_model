@@ -1,15 +1,15 @@
 variable	parameter_group	domain	sub_domain	name	units	description
-0	aerosols			aerosol absorption optical depth	Dimensionless	Vertical column integral of spectral aerosol absorption coefficient: AAOD = exp(-K. Dz) where K is the absorption coefficient [km-1] and Dz the vertical path [km]  
-1	aerosols			aerosol column burden	g m-2	2D field of the column burden of condensed particles in the atmosphere 
+0	aerosols			aerosol absorption optical depth	Dimensionless	Vertical column integral of spectral aerosol absorption coefficient: AAOD = exp(-K. Dz) where K is the absorption coefficient [km-1] and Dz the vertical path [km]
+1	aerosols			aerosol column burden	g m-2	2D field of the column burden of condensed particles in the atmosphere
 2	aerosols			aerosol dust concentration	g kg-1	3-D field of concentration of dust or sand in the atmosphere
 3	aerosols			aerosol effective radius	micro m	3D field of mean aerosol particle size, defined as the ratio of the third and second moments of the number size distribution of aerosol particles.  Requested in the troposphere (assumed height: 12 km) and as columnar average.
-4	aerosols			aerosol extinction coefficient	m-1	3D field of spectral volumetric extinction cross-section of aerosol particles. 
+4	aerosols			aerosol extinction coefficient	m-1	3D field of spectral volumetric extinction cross-section of aerosol particles.
 5	aerosols			aerosol mass mixing ratio	g kg-1	3D field of the mass mixing ratio of condensed particles in the atmosphere
-6	aerosols			aerosol optical depth	Dimensionless	The AOD is the effective depth of the aerosol column from the viewpoint of radiation propagation: Vertical column integral of spectral aerosol extinction coefficient AOD = exp(-K. Dz) where K is the extinction coefficient [km-1 ] and Dz the vertical path [km] 
+6	aerosols			aerosol optical depth	Dimensionless	The AOD is the effective depth of the aerosol column from the viewpoint of radiation propagation: Vertical column integral of spectral aerosol extinction coefficient AOD = exp(-K. Dz) where K is the extinction coefficient [km-1 ] and Dz the vertical path [km]
 7	aerosols			aerosol species mole fraction	moles per mole of dry air 	3D field of the mole fraction of condensed-phase chemical species (e.g., sulfate, nitrate, ammonium, elemental carbon, organic carbon),  in the atmosphere
-8	aerosols			aerosol species total column burden	moles m-2	2D field of the total column burden concentration of condensed-phase chemical species (e.g., sulfate, nitrate, ammonium, elemental carbon, organic carbon), in the atmosphere 
-9	aerosols			aerosol type	coded	Selection, out of a pre-defined set of aerosol classes, that best fits an input data set (observed or modeled). The pre-defined set of aerosol classes includes specification of the particle composition, mixing state, complex refractive index, and shape as a function of particle size. The definition of aerosol type includes specification of all the classes as well as the algorithm used to choose the best fit to the input data. 
-10	aerosols			aerosol volcanic ash	g kg-1	3D field of mass mixing ratio of volcanic ash 
+8	aerosols			aerosol species total column burden	moles m-2	2D field of the total column burden concentration of condensed-phase chemical species (e.g., sulfate, nitrate, ammonium, elemental carbon, organic carbon), in the atmosphere
+9	aerosols			aerosol type	coded	Selection, out of a pre-defined set of aerosol classes, that best fits an input data set (observed or modeled). The pre-defined set of aerosol classes includes specification of the particle composition, mixing state, complex refractive index, and shape as a function of particle size. The definition of aerosol type includes specification of all the classes as well as the algorithm used to choose the best fit to the input data.
+10	aerosols			aerosol volcanic ash	g kg-1	3D field of mass mixing ratio of volcanic ash
 11	aerosols			total column aerosol volcanic ash 	g m-2	Field of total column mass of volcanic ash
 12	aerosols			air conductivity 	km	TBD
 13	albedo			blue ice and snow albedo	percent	TBD
@@ -20,12 +20,12 @@ variable	parameter_group	domain	sub_domain	name	units	description
 18	albedo			snow bidirectional reflectance	sr-1	TBD
 19	cloud	atmospheric	upper-air	cloud base height	m	cloud base height (hb)
 20	cloud	atmospheric	upper-air	cloud base lowest height	coded	Height above surface of the base of the lowest cloud seen (coded 0-9)
-21	cloud	atmospheric	upper-air	cloud cover	Okta or percent	3D field of fraction of sky filled by clouds.  
+21	cloud	atmospheric	upper-air	cloud cover	Okta or percent	3D field of fraction of sky filled by clouds.
 22	cloud	atmospheric	upper-air	cloud genus	Coded	Genus of cloud (0 - Cirrus to 9 - Cumulo-Nimbus)
-23	cloud	atmospheric	upper-air	cloud genus base height	Coded or m	Height of base of cloud whose genus is c  
+23	cloud	atmospheric	upper-air	cloud genus base height	Coded or m	Height of base of cloud whose genus is c
 24	cloud	atmospheric	upper-air	high cloud type	coded	type of high clouds (ch)
 25	cloud	atmospheric	upper-air	low cloud type	coded	type of low clouds (cl)
-26	cloud	atmospheric	upper-air	lowest cloud amout	Okta	low or (if low clouds don't exist) middle cloud amount 
+26	cloud	atmospheric	upper-air	lowest cloud amout	Okta	low or (if low clouds don't exist) middle cloud amount
 27	cloud	atmospheric	upper-air	middle cloud type	coded	type of middle clouds (cm)
 28	cloud	atmospheric	upper-air	total cloud amount	Okta	total amount of clouds
 29	evaporation	atmospheric		evaporation	mm	TBD
@@ -40,7 +40,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 39	humidity	atmospheric	surface; upper-air	specific humidity	g kg-1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
 40	humidity	atmospheric		water vapour pressure	hPa	TBD
 41	humidity	atmospheric	surface; upper-air	wet bulb temperature	K	TBD
-43	ice			ice thickness	m	Thickness of the ice sheet. It is related to sea-ice elevation and ice density 
+43	ice			ice thickness	m	Thickness of the ice sheet. It is related to sea-ice elevation and ice density
 44	precipitation	atmospheric		accumulated precipitation	mm	accumulated precipitation over specified period
 45	precipitation	atmospheric		fresh snow	mm	TBD
 46	precipitation	atmospheric		hydrometeor type	Code table	3D field of the predominant form of condensed water in a volume of free atmosphere, including liquid cloud, rain, ice crystals, snow, graupel and hail. (This variable replaces "precipitation type").
@@ -49,7 +49,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 49	precipitation	atmospheric		precipitation intensity solid	mm h-1	Precipitation intensity at surface (solid)
 50	precipitation	atmospheric		precipitation type	coded	Liquid, snow, hail, fog
 51	precipitation	atmospheric		rainy days	Days	TBD
-52	precipitation	atmospheric		snow cover	percent	Fraction of a given area which is covered by snow 
+52	precipitation	atmospheric		snow cover	percent	Fraction of a given area which is covered by snow
 53	precipitation	atmospheric		snow depth	cm	Vertical distance from the snow surface to the underlying surface (ground, glacier ice or sea ice).
 54	precipitation	atmospheric		snow status	coded	Wet or dry
 55	precipitation	atmospheric		snow water equivalent	mm	Surface snow amount
@@ -60,8 +60,8 @@ variable	parameter_group	domain	sub_domain	name	units	description
 60	pressure	atmospheric	surface	pressure tendency characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
 61	radiation	atmospheric		diffuse radiation	W m-2	TBD
 62	radiation	atmospheric		downward longwave irradiance at earth surface	W m-2	Flux density of radiation emitted by the gases, aerosols and clouds of the atmosphere to the Earth's surface
-63	radiation	atmospheric		downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface 
-64	radiation	atmospheric		downward shortwave irradiance at toa	W m-2	Flux density of the solar radiation at the top of the atmosphere 
+63	radiation	atmospheric		downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface
+64	radiation	atmospheric		downward shortwave irradiance at toa	W m-2	Flux density of the solar radiation at the top of the atmosphere
 65	radiation	atmospheric		earth surface shortwave bidirectional reflectance	percent	Reflectance of the Earth surface as a function of the viewing angle and the illumination angle in the range 0.4-0.7 micro m . The distribution of this variable is represented by the Bidirectional Reflectance Distribution Function (BRDF)
 66	radiation	atmospheric		fraction of absorbed par 	percent	Fraction of PAR absorbed by vegetation (land or marine) for photosynthesis processes (generally around the 'red' )
 67	radiation	atmospheric		global radiation	W m-2	TBD
@@ -69,16 +69,16 @@ variable	parameter_group	domain	sub_domain	name	units	description
 69	radiation	atmospheric		longwave radiation	W m-2	TBD
 70	radiation	atmospheric		meteorological optical range	m	Meteorological optical range at surface
 71	radiation	atmospheric		photosynthetically active radiation	W m-2	Flux of downwelling photons of wavelength 0.4-0.7 micro m
-72	radiation	atmospheric		shortwave cloud reflectance	percent	Reflectance of the solar radiation from clouds 
+72	radiation	atmospheric		shortwave cloud reflectance	percent	Reflectance of the solar radiation from clouds
 73	radiation	atmospheric		shortwave radiation	W m-2	TBD
-74	radiation	atmospheric		solar gamma ray flux	W m-2	Radiative flux integrated over the gamma-ray domain. 
-75	radiation	atmospheric		solar UV flux	W m-2	 Integrated UV flux over the solar disk. 
-76	radiation	atmospheric		solar VIS flux	W m-2	 Integrated VIS flux over the solar disk 
+74	radiation	atmospheric		solar gamma ray flux	W m-2	Radiative flux integrated over the gamma-ray domain.
+75	radiation	atmospheric		solar UV flux	W m-2	 Integrated UV flux over the solar disk.
+76	radiation	atmospheric		solar VIS flux	W m-2	 Integrated VIS flux over the solar disk
 77	radiation	atmospheric		solar X ray flux	W m-2	Integrated X-ray flux over the solar disk
 78	radiation	atmospheric		sunshine duration 	h	TBD
-79	radiation	atmospheric		upward longwave irradiance at Earth surface	W m-2	Flux density of terrestrial radiation emitted by the Earth surface 
-80	radiation	atmospheric		upward longwave irradiance at TOA	W m-2	Flux density of terrestrial radiation emitted by the Earth surface and the gases, aerosols and clouds ot the atmosphere at the top of the atmosphere 
-81	radiation	atmospheric		upward shortwave irradiance at TOA	W m-2	Flux density of solar radiation, reflected by the Earth surface and atmosphere, emitted to space at the top of the atmosphere 
+79	radiation	atmospheric		upward longwave irradiance at Earth surface	W m-2	Flux density of terrestrial radiation emitted by the Earth surface
+80	radiation	atmospheric		upward longwave irradiance at TOA	W m-2	Flux density of terrestrial radiation emitted by the Earth surface and the gases, aerosols and clouds ot the atmosphere at the top of the atmosphere
+81	radiation	atmospheric		upward shortwave irradiance at TOA	W m-2	Flux density of solar radiation, reflected by the Earth surface and atmosphere, emitted to space at the top of the atmosphere
 82	radiation	atmospheric		upward spectral radiance at TOA	W m-2 nm-1 sr-1  	Upward radiant power measured at the top of the atmosphere per area unit, per solid angle, and per wavelength interval. Spectral range 0.2-200 micro m.
 83	salinity	oceanic	surface; sub-surface	salinity	psu	ocean salinity (PSU)
 85	temperature	atmospheric	surface; upper-air	air temperature	K	Air temperature is the bulk temperature of the air,  not the surface (skin) temperature.
@@ -115,12 +115,12 @@ variable	parameter_group	domain	sub_domain	name	units	description
 116				frost point temperature	K	TBD
 117	pressure	atmospheric	surface; upper air	geopotential height	m	height of a standard or significant pressure level in meters
 118	pressure	atmospheric	surface; upper air	geopotential height decameters	decametres	height of a standard or significant pressure level in decameters
-119	temperature	atmospheric	surface; upper air	vertical gradient of temperature	K m-1	vertical variation of temperature 
-120	temperature	atmospheric	surface; upper air	vertical gradient of potential temperature	K m-1	vertical variation of potential temperature 
+119	temperature	atmospheric	surface; upper air	vertical gradient of temperature	K m-1	vertical variation of temperature
+120	temperature	atmospheric	surface; upper air	vertical gradient of potential temperature	K m-1	vertical variation of potential temperature
 121	temperature	atmospheric	surface; upper air	equivalent potential temperature	K	temperature a parcel of air would reach if all the water vapor in the parcel were to condense, releasing its latent heat, and the parcel was brought adiabatically to a standard reference pressure, usually 1000 hPa
 122	wind	atmospheric	surface; upper air	vertical speed of radiosonde	m s-1	vertical speed of radiosonde ascent
 123	humidity	atmospheric	upper air	water vapour mixing ratio	mol mol-1	Volume mixing ratio (mol/mol) of water vapor calculated using Hyland, R. W. and A. Wexler, Formulations for the Thermodynamic Properties of the saturated Phases of H2O from 173.15K to 473.15K, ASHRAE Trans, 89(2A), 500-519, 1983
-124	humidity	atmospheric	upper air	air relative humidity effective vertical resolution	s	Resolution (defined by 1 / cut_off frequency) of the relative_humidity in terms of time
+124	humidity	atmospheric	upper air	air relative humidity effective vertical resolution	s	Resolution (defined by 1 / cut off frequency) of the relative humidity in terms of time
 125	pressure	atmospheric	upper-air	altitude	m	Altitude
 126	temperature	atmospheric	surface; upper air	air temperature	K	Air temperature (from profile measurement)
 137	humidity	atmospheric	surface; upper air	air dewpoint	K	Dewpoint measurement (from profile measurement)
@@ -128,3 +128,16 @@ variable	parameter_group	domain	sub_domain	name	units	description
 139	wind	atmospheric	surface; upper air	eastward wind speed	m s-1	Eastward wind speed (from profile measurement)
 140	wind	atmospheric	surface; upper air	northward wind speed	m s-1	Northward wind speed (from profile measurement)
 141	radiation	atmospheric	surface; upper air	Solar zenith angle	degrees	solar zenith angle
+142	pressure	atmospheric	upper air	pressure	Pa	pressure
+143				time since launch	s	Time since launch of radiosonde
+144		atmospheric	upper-air	monthly total ozone column	DU	Monthly value of total column ozone amount
+145		atmospheric	upper-air	monthly standard deviation ozone		Standard deviation of daily total column ozone
+146				monthly total ozone column number of points	count	The number of points (typically this is the number of daily averages) used to estimate the monthly mean ozone value
+147		atmospheric	upper-air	standard deviation ozone		Estimated population standard deviation of the total column ozone measurements used for the daily value.
+148				number of points		Number of observations used to calculate the total column ozone value
+149		atmospheric	upper-air	column sulphur dioxide	DU	The daily total column sulphur dioxide (SO2) amount calculated as the mean of the individual SO2 amounts
+150		atmospheric	upper-air	ozone partial pressure	Pa	Level partial pressure of ozone in milli-Pascals (mPa)
+151		atmospheric	upper-air	ozone concentration	ppmv	Level mixing ratio of ozone in ppmv
+152		atmospheric	upper-air	total ozone column 	DU	Ozone (DU) integrated up to the current altitude level
+153		atmospheric	upper-air	flight summary integrated O3	DU	Ozone amount integrated over the whole balloon profile.
+154				sampling method burst ozone pressure	Pa	Atmospheric pressure when balloon burst in hPa.
