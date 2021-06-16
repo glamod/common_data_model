@@ -138,3 +138,18 @@ units	name	abbreviation	base_units
 841	pH unit	pH unit	NULL
 842	N units	N units	NULL
 843	Nephelometric turbidity units	NTU	NULL
+1001	Inches of mercury	NULL	NULL
+1002	Millimetres of mercury	NULL	NULL
+1003	Millibars	mb	NULL
+1004	Paris Inches	NULL	NULL
+1005	Fahrenheit	F	NULL
+1006	Reaumur	NULL	NULL
+1007	Micheli du Crest scale	NULL	NULL
+1008	Delisle scale	NULL	NULL
+1009	Florentine thermometer	NULL	NULL
+1010	Hauksbee or Royal Society thermometer	NULL	NULL
+1011	Air thermometer (undefined)	NULL	NULL
+1012	Rijnland Inches	NULL	NULL
+1013	Vienna Inches	NULL	NULL
+1014	Swedish Inches	NULL	NULL
+1015	Amsterdam Inches	NULL	NULL

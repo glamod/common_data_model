@@ -29,3 +29,5 @@ field_id	field_name	kind	description
 27	Distance from road	1	Distance from nearest road (in km)
 28	Distance from water body	1	Distance from nearest water body (in km)
 29	Alternative elevation	1	Alternative elevation above sea level (m)
+30	Hull material	0	Hull material, e.g. wood, itron etc
+31	Vessel propulsion	0	Method of propulsion (screw, paddle, sail). Primarily used for late 19th and early 20th century vessels.

@@ -1,2 +1,14 @@
 method	description	originator	reference	domain	quality_check_type
-TBD	TBD	TBD	TBD	TBD	TBD
+0	statistical outliers (threshold proportional to interquartile range)	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	climatic outliers
+1	value exceeds a fixed threshold	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	out of range
+2	consecutive identical values	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	repetition
+3	transcription error in which the same data column (or row) has been keyed twice	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	duplicate columns
+4	date appears more than once (for daily data)	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	duplicate dates
+5	time stamp appears more than once	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	duplicate times
+6	values outside 0-100 for variables bounded to that range (e.g., rh)	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	impossible values
+7	consistency between pair of variables (e.g., Tx>Tn)	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	internal consistency
+8	simple visual check of the time series	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	plot
+9	significant weekly cycle in daily precipitation after a binomial test	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	weekly cycle
+10	difference between consecutive days exceeds a fixed threshold (for daily data)	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	temporal coherence
+11	value exceeds thresholds recommended by WMO guidelines	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	wmo gross errors
+12	difference between consecutive observations exceeds thresholds recommended by WMO guidelines	C3S 311a Lot 1	https://cran.r-project.org/package=dataresqc	land	wmo time consistency

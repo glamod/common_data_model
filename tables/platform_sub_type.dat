@@ -78,3 +78,42 @@ sub_type	platform_type	abbreviation	description
 102	4		Mooring tide gauge or tsunami buoy
 103	6		Ice beacon
 104	6		Ice mass balance buoy
+105	2		Bark or barque
+106	2		Barkentine or barquentine
+107	2		Brigantine
+108	2		Schooner
+109	2		Frigate
+110	2		Brig
+111	2		Corvet
+112	2		Cutter
+113	2		Dispatch boat
+114	2		East Indiaman
+115	2		Fluyt
+116	2		Packetship
+117	2		Sloop
+118	2		Snauw
+119	2		Steam frigate
+120	2		Steam ship
+121	2		Store ship
+122	2		Transport ship
+123	2		Troop ship
+124	2		2nd rate UK naval ship
+125	2		3rd rate UK naval ship
+126	2		4th rate UK naval ship
+127	2		5th rate UK naval ship
+128	2		6th rate UK naval ship
+129	2		7th rate UK naval ship
+130	2		8th rate UK naval ship
+131	2		Ship of the line
+132	2		Balandra (Canaries) / trawler
+133	2		Falucho
+134	2		Galley
+135	2		Hoeker
+136	2		Mistico
+137	2		Pink
+138	2		Polacca
+139	2		Whaler (18th/ 19th century)
+140	2		Dutch warship (18th century)
+141	2		Scow (Gabarre)
+142	2		Clipper
+143	2		Pilot boat

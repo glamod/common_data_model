@@ -43,3 +43,11 @@ field_id	field_name	code_value	abbreviation	description
 18	Type of meteorological reporting ship	8	99	Unknown
 18	Type of meteorological reporting ship	9	30	VOSClim - VOS Climate
 18	Type of meteorological reporting ship	10	35	VOSClim (AWS) - VOS Climate (AWS)
+30	Hull material	0		Unknown
+30	Hull material	1		Wood
+30	Hull material	2		Iron
+30	Hull material	3		Composite
+31	Vessel propulsion	0		Unknown
+31	Vessel propulsion	1		Screw
+31	Vessel propulsion	2		Paddle
+31	Vessel propulsion	3		Sail
