@@ -1,0 +1,5 @@
+# Description: feedback method
+# Source: 
+element_name	kind	external_table	description
+method	int (pk)		primary key for table, coded value
+description	varchar		description of feedback method
