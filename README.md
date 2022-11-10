@@ -18,3 +18,8 @@ docker run -it -v ${pwd}:/local latex_env
 cd /local/tex
 lualatex cdm.tex
 ``` 
+
+# Notes
+
+The pdf uses the Verdana font from Microsoft. To install the required fonts as part of the install a line needs to be 
+uncommented to accept the EULA for the fonts.
