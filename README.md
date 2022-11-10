@@ -10,11 +10,11 @@ The Dockerfile creates a container with the necessary software to build the pdf 
 
 From the cloned repository:
 
-'''
+```
 git clone https://github.com/glamod/common_data_model.git
 cd common_data_model
 docker build -t latex_env .
 docker run -it -v ${pwd}:/local latex_env
 cd /local/tex
 lualatex cdm.tex
-''' 
+``` 
