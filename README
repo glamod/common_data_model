@@ -1,10 +1,19 @@
-Directory structure:
-	./tables	csv (tsv) files containing table definition and header / comment rows
-	./tables/tsv/	tsv files containing table definitions with comments stripped. Generate from csv files in higher level directory
-	./graphviz/	graphviz files for each table
-        ./scripts/	Scripts used to convert .csv to .gv and .tsv files
-        ./tex/          latex files used to generate pdf documentation
-        ./png/          figrues / pngs used in documentation
+# About
 
-The file cdm_short.pdf contains a schematic for the common data model. External tables are linked to their definition tsv on github.
-The file cdm_full.pdf contains the full specification of the data model.
+Repository containing the files used to build the documentation for the common data model.
+
+# Setup
+
+The Dockerfile creates a container with the necessary software to build the pdf documentation using LaTeX.
+
+# Usage
+
+From the cloned repository:
+
+'''
+git clone 
+docker build -t latex_env .
+docker run -it -v ${pwd}:/local latex_env
+cd /local/tex
+lualatex cdm.tex
+''' 

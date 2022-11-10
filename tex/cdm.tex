@@ -23,8 +23,10 @@
 \usepackage{float}
 \usepackage{pdfpages}
 \usepackage{fontspec}
-\setmainfont{Calibri}
-\setsansfont{Calibri}
+%\setmainfont{Calibri}
+%\setsansfont{Calibri}
+\setmainfont{Carlito} % replacement for Calibri (unavailable on Linux) 
+\setsansfont{Carlito} % replacement for Calibri (unavailable on Linux)
 %\SetWatermarkText{Draft}
 
 \definecolor{maroon}{RGB}{122,11,44}
@@ -33,6 +35,7 @@
 \definecolor{maroon_banner}{RGB}{141,28,59}
 
 \renewcommand{\familydefault}{\sfdefault}
+\newcommand{\DocumentRoot}{./../tex}%
 
 % Set title etc
 \title {Copernicus Climate Change Service - 311a Lot 2 \\ Defining a Common Data Model}
@@ -80,7 +83,7 @@ empty header/.style={
 \headsep  0.5 cm
 
 \lhead{\textcolor{maroon}{Copernicus Climate Change Service}\vskip 0.5 cm}
-\rhead{\includegraphics{/Users/dyb/GitHub/common_data_model/png/c3s_logo_small.png} \vskip 0.3 cm}
+\rhead{\includegraphics{/local/png/c3s_logo_small.png} \vskip 0.3 cm}
 
 \lfoot{C3S\_311A\_Lot2\_NUIM\_2017SC1 - Initial specification for CDM}
 \cfoot{}
@@ -88,7 +91,7 @@ empty header/.style={
 
 \pagestyle{fancy}
 
-\input {revision.tex}
+% \input {\DocumentRoot/revision.tex}
 
 \begin{document}\thispagestyle{empty}
 
@@ -97,8 +100,8 @@ empty header/.style={
 
 % top banner
 \begin{tikzpicture}[remember picture,overlay]
-\draw ([yshift=-15.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/c3s_banner_top.png}};
-\draw ([yshift=-25.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=62.8mm]{/Users/dyb/GitHub/common_data_model/png/copernicus_logo_large.png}};
+\draw ([yshift=-15.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/local/png/c3s_banner_top.png}};
+\draw ([yshift=-25.7mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=62.8mm]{/local/png/copernicus_logo_large.png}};
 \node[shift={(0 mm, -10mm)}]  at (current page.north)   {
 {\fontsize{8}{9.6}\selectfont \color{white} ECMWF COPERNICUS REPORT }\\
 };
@@ -106,8 +109,8 @@ empty header/.style={
 
 % top maroon bar
 \begin{tikzpicture}[remember picture,overlay]
-\draw ([yshift=-53.3 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/header_bar.png}};
-\draw (17.75,-0.23) node {\includegraphics{/Users/dyb/GitHub/common_data_model/png/logo_thermometer.png}};
+\draw ([yshift=-53.3 mm]current page.north) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/local/png/header_bar.png}};
+\draw (17.75,-0.23) node {\includegraphics{/local/png/logo_thermometer.png}};
 \node at (2.5,-0.35)   {
     {\fontsize{12}{14.4} \fontspec{Verdana} \selectfont \color{white} Copernicus Climate Change Service}
 };
@@ -142,10 +145,10 @@ empty header/.style={
 
 %footer bar
 \begin{tikzpicture}[remember picture,overlay]
-\draw ([yshift=15. mm]current page.south) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/Users/dyb/GitHub/common_data_model/png/footer_bar.png}};
-\draw ([yshift=10.5 mm]current page.south) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/copernicus_logo.png}};
-\draw ([xshift=-30 mm, yshift=10.5 mm]current page.south east) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ECMWF_logo.png}};
-\draw ([xshift=30 mm, yshift=10.5 mm]current page.south west) node[inner sep=0] (a) {\includegraphics{/Users/dyb/GitHub/common_data_model/png/ec_logo_small.png}};
+\draw ([yshift=15. mm]current page.south) node[inner sep=0] (a) {\includegraphics[width=\paperwidth]{/local/png/footer_bar.png}};
+\draw ([yshift=10.5 mm]current page.south) node[inner sep=0] (a) {\includegraphics{/local/png/copernicus_logo.png}};
+\draw ([xshift=-30 mm, yshift=10.5 mm]current page.south east) node[inner sep=0] (a) {\includegraphics{/local/png/ECMWF_logo.png}};
+\draw ([xshift=30 mm, yshift=10.5 mm]current page.south west) node[inner sep=0] (a) {\includegraphics{/local/png/ec_logo_small.png}};
 \end{tikzpicture}
 \newpage
 
@@ -270,6 +273,7 @@ Tab separated versions of the code tables defining the data model can be found a
 & & Additional entries in code tables\\
 1.16 & 16/06/2021 & Changes (additions to code tables) following calls on \\
 & & 26th Jan 2021 and 16th June 2021.\\
+1.17 & 17/07/2021 & AddiƟon of missing code table (feedback\_method).\\
 \hline
 \end{tabular}
 \end{table}
@@ -374,7 +378,7 @@ Unless indicated otherwise all elements listed are mandatory but may be encoded 
 \begin{landscape}
 \begin{figure}
 \centering
-\includegraphics[width=1\textwidth]{/Users/dyb/GitHub/common_data_model/png/cdm_schematic_simple.png}
+\includegraphics[width=1\textwidth]{/local/png/cdm_schematic_simple.png}
 \caption {Simplified schematic showing overview of common data model}
 \end{figure}
 \end{landscape}
