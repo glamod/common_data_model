@@ -141,3 +141,15 @@ variable	parameter_group	domain	sub_domain	name	units	description
 152		atmospheric	upper-air	total ozone column 	DU	Ozone (DU) integrated up to the current altitude level
 153		atmospheric	upper-air	flight summary integrated O3	DU	Ozone amount integrated over the whole balloon profile.
 154				sampling method burst ozone pressure	Pa	Atmospheric pressure when balloon burst in hPa.
+155	lidar	atmospheric		measurement_wavelength	nm	Wavelength of the transmitted laser pulse
+156	lidar	atmospheric		integrated_backscatter	1/sr	integrated backscatter
+157	lidar	atmospheric		lidar_ratio	sr	aerosol extinction-to-backscatter ratio
+158	lidar	atmospheric		aerosol_boundary_layer	m	altitude of the upper bound of the aerosol planet boundary layer
+159	lidar	atmospheric		h63_of_aerosol_optical_depth	m	altitude below which stays the 63% of the total aerosol optical depth
+160	lidar	atmospheric		h63_of_integrated_backscatter	m	altitude below which stays the 63% of the total integrated backscatter
+161	lidar	atmospheric		center_of_mass	m	center of mass
+162	lidar	atmospheric		particle_depolarization	1	aerosol linear particle depolarization ratio
+163	lidar	atmospheric		angstrom_coefficient	1	angstrom coefficient
+164	lidar	atmospheric		base_layer_altitude		Frequency distribution of the base layer altitude values
+165	lidar	atmospheric		top_layer_altitude		Frequency distribution of the top layer altitude values
+166	lidar	atmospheric		center_of_mass_altitude		Frequency distribution of the center of mass altitude values
