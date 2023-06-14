@@ -36,7 +36,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 34	humidity	atmospheric	surface; upper-air	dew point depression	K	Dew point depression is also called dew point deficit. It is the amount by which the air temperature exceeds its dew point temperature. Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
 36	humidity	atmospheric	surface; upper-air	dew point temperature	K	Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.
 37	humidity	atmospheric	surface; upper-air	ice bulb temperature	K	TBD
-38	humidity	atmospheric	surface; upper-air	relative humidity	percent	TBD
+38	humidity	atmospheric	surface; upper-air	relative humidity	percent	Relative humidity is the ratio of the amount of atmospheric moisture present relative to the amount that would be present if the air were saturated with respect to water or ice to be specified in the metadata
 39	humidity	atmospheric	surface; upper-air	specific humidity	g kg-1	specific means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.
 40	humidity	atmospheric		water vapour pressure	hPa	TBD
 41	humidity	atmospheric	surface; upper-air	wet bulb temperature	K	TBD
@@ -58,13 +58,13 @@ variable	parameter_group	domain	sub_domain	name	units	description
 58	pressure	atmospheric	surface	air pressure at sea level	Pa	sea level means mean sea level,  which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.
 59	pressure	atmospheric	surface	pressure tendency	Pa	pressure tendency
 60	pressure	atmospheric	surface	pressure tendency characteristics	coded	characteristic of pressure tendency (used in synoptic maps)
-61	radiation	atmospheric		diffuse radiation	W m-2	TBD
+61	radiation	atmospheric		diffuse radiation	W m-2	The component of global radia-tion that is scattered out of the solar beam by at-mospheric constituents. It is also called diffuse hori-zontal irradiance. 
 62	radiation	atmospheric		downward longwave irradiance at earth surface	W m-2	Flux density of radiation emitted by the gases, aerosols and clouds of the atmosphere to the Earth's surface
 63	radiation	atmospheric		downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface
 64	radiation	atmospheric		downward shortwave irradiance at toa	W m-2	Flux density of the solar radiation at the top of the atmosphere
 65	radiation	atmospheric		earth surface shortwave bidirectional reflectance	percent	Reflectance of the Earth surface as a function of the viewing angle and the illumination angle in the range 0.4-0.7 micro m . The distribution of this variable is represented by the Bidirectional Reflectance Distribution Function (BRDF)
 66	radiation	atmospheric		fraction of absorbed par 	percent	Fraction of PAR absorbed by vegetation (land or marine) for photosynthesis processes (generally around the 'red' )
-67	radiation	atmospheric		global radiation	W m-2	TBD
+67	radiation	atmospheric		global radiation	W m-2	The part of the global radiation in-cident on a surface orthogonal (or “normal”) to the sun’s beam, which originates from the solid angle subtended by the sun’s disk. It is also called direct normal irradiance.
 68	radiation	atmospheric		longwave earth surface emissivity	percent	TBD
 69	radiation	atmospheric		longwave radiation	W m-2	TBD
 70	radiation	atmospheric		meteorological optical range	m	Meteorological optical range at surface
@@ -153,3 +153,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 164	lidar	atmospheric		base_layer_altitude		Frequency distribution of the base layer altitude values
 165	lidar	atmospheric		top_layer_altitude		Frequency distribution of the top layer altitude values
 166	lidar	atmospheric		center_of_mass_altitude		Frequency distribution of the center of mass altitude values
+167	Global Navigation Satellite System 	atmosphere	surface;upper-air   	zenith_total_delay	m	This parameter characterizes the delay of the GNSS signal on the path from a satellite to the receiver due to atmospheric refraction and bending, mapped into the zenith direction. It is expressed as an equivalent distance travelled additionally by the radio waves, due to the atmosphere. The numerical value of zenith total delay correlates with the amount of total column water vapour (i.e., not including effects of liquid water and/or ice) above the GNSS receiver antenna. It is hence used to estimate the total column water vapour.	new variable added to observed variable table
+168	Global Navigation Satellite System 	atmosphere	surface;upper-air   	zenith tropospheric delay	m	This parameter characterizes the delay through the troposphere of the GNSS signal on the path from a satellite to the receiver due to atmospheric refraction and bending, mapped into the zenith direction. It is expressed as an equivalent distance travelled additionally by the radio waves, due to the atmosphere.
+170	humidity    atmospheric    surface soil_moisture	m3 m-3  Ratio of water volume over sample volume (m^3 water/m^3 soil)
+169	humidity   atmospheric      surface  wetness  Ohms  The presence or absence of moisture due to precipitation, in Ohms. High values (>= 1000) indicate an absence of moisture. Low values (< 1000) indicate the presence of moisture
