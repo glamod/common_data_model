@@ -1,12 +1,14 @@
 method	description	reference
-1	Post-processing radiation correction	Dirksen et al 2014                            
-2	Post-processing adjustment due to intercomparison with GRUAN	Dirksen et al 2014
-3	Post-processing adjustment due to intercomparison with WMO/CIMO 2010 dataset	Nash et al. 2010
-4	Radiosonde HARMonization (RHARM)	Madonna et al. 2019
-11	RASE v1.72 approach	Haimberger et al. 2020 (ERA5 -1978)
-12	RISE v1.51 approach	Haimberger et al. 2020 (ERA5 1979-)
-13	RASE v1.8  approach	(TBD)
-14	RISE v1.8  approach	(TBD)
-15	RASE v2.0  approach	(TBD)
-16	RISE v2.0  approach	(TBD)
-
+1    Post-processing radiation correction    Dirksen et al 2014                           
+2    Post-processing adjustment due to intercomparison with GRUAN    Dirksen et al 2014
+3    Post-processing adjustment due to intercomparison with WMO/CIMO 2010 dataset    Nash et al. 2010
+4    Radiosonde HARMonization (RHARM)     v1  Madonna et al. 2022 (https://doi.org/10.1029/2021JD035220)
+5    Radiosonde HARMonization (RHARM)   v2  
+11    RASE v1.72 approach    Haimberger et al. 2020 (ERA5 -1978)
+12    RISE v1.51 approach    Haimberger et al. 2020 (ERA5 1979-)
+13    RASE v1.8  approach    (https://confluence.ecmwf.int/pages/viewpage.action?pageId=265029677, not public (yet))
+14    RISE v1.8  approach    (https://confluence.ecmwf.int/pages/viewpage.action?pageId=265029677, not public (yet))
+15    RASE v2.0  approach    
+16    RISE v2.0  approach    
+21    RHARM+RASE v1.0 
+22    RHARM+RISE v1.0  
