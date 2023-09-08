@@ -153,7 +153,26 @@ variable	parameter_group	domain	sub_domain	name	units	description
 164	lidar	atmospheric		base_layer_altitude		Frequency distribution of the base layer altitude values
 165	lidar	atmospheric		top_layer_altitude		Frequency distribution of the top layer altitude values
 166	lidar	atmospheric		center_of_mass_altitude		Frequency distribution of the center of mass altitude values
-167	Global Navigation Satellite System 	atmosphere	surface;upper-air   	zenith_total_delay	m	This parameter characterizes the delay of the GNSS signal on the path from a satellite to the receiver due to atmospheric refraction and bending, mapped into the zenith direction. It is expressed as an equivalent distance travelled additionally by the radio waves, due to the atmosphere. The numerical value of zenith total delay correlates with the amount of total column water vapour (i.e., not including effects of liquid water and/or ice) above the GNSS receiver antenna. It is hence used to estimate the total column water vapour.	new variable added to observed variable table
+167	Global Navigation Satellite System 	atmosphere	surface;upper-air   	zenith_total_delay	m	This parameter characterizes the delay of the GNSS signal on the path from a satellite to the receiver due to atmospheric refraction and bending, mapped into the zenith direction. It is expressed as an equivalent distance travelled additionally by the radio waves, due to the atmosphere. The numerical value of zenith total delay correlates with the amount of total column water vapour (i.e., not including effects of liquid water and/or ice) above the GNSS receiver antenna. It is hence used to estimate the total column water vapour.
 168	Global Navigation Satellite System 	atmosphere	surface;upper-air   	zenith tropospheric delay	m	This parameter characterizes the delay through the troposphere of the GNSS signal on the path from a satellite to the receiver due to atmospheric refraction and bending, mapped into the zenith direction. It is expressed as an equivalent distance travelled additionally by the radio waves, due to the atmosphere.
-169	humidity   atmospheric      surface  wetness  Ohms  The presence or absence of moisture due to precipitation, in Ohms. High values (>= 1000) indicate an absence of moisture. Low values (< 1000) indicate the presence of moisture
-170	humidity    atmospheric    surface soil_moisture	m3 m-3  Ratio of water volume over sample volume (m^3 water/m^3 soil)
+169	humidity	atmospheric	surface	wetness	Ohms	The presence or absence of moisture due to precipitation, in Ohms. High values (>= 1000) indicate an absence of moisture. Low values (< 1000) indicate the presence of moisture
+170	humidity	atmospheric	surface	soil_moisture	m3 m-3	Ratio of water volume over sample volume (m^3 water/m^3 soil)
+171	humidity	atmospheric		daily maximum relative humidity	percent	TBD
+172	humidity	atmospheric		daily minimum relative humidity	percent	TBD
+173	temperature	atmospheric		monthly maximum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
+174	temperature	atmospheric		monthly minimum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
+175	wind	atmospheric	surface; upper-air	wind speed 2 meters from earth surface	m s-1	Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector,  with no vertical component. (Vertical motion in the atmosphere has the standard name upward air velocity.) The wind speed is the magnitude of the wind velocity. Lot 1 uses ff  - WMO abbrev.
+176	temperature	atmospheric		soil temperature 5cm from earth surface	K	TBD
+177	temperature	atmospheric		soil temperature 10cm from earth surface	K	TBD
+178	temperature	atmospheric		soil temperature 20cm from earth surface	K	TBD
+179	temperature	atmospheric		soil temperature 50cm from earth surface	K	TBD
+180	temperature	atmospheric		soil temperature 100cm from earth surface	K	TBD
+181	humidity	atmospheric		soil moisture 5cm from earth surface	m3 m-3	TBD
+182	humidity	atmospheric		soil moisture 10cm from earth surface	m3 m-3	TBD
+183	humidity	atmospheric		soil moisture 20cm from earth surface	m3 m-3	TBD
+184	humidity	atmospheric		soil moisture 50cm from earth surface	m3 m-3	TBD
+185	humidity	atmospheric		soil moisture 100cm from earth surface	m3 m-3	TBD
+186	radiation	atmospheric		hourly maximum downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface
+187	radiation	atmospheric		hourly minimum downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface
+188	temperature	atmospheric		hourly maximum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
+189	temperature	atmospheric		hourly minimum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
