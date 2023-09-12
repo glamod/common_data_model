@@ -127,7 +127,7 @@ variable	parameter_group	domain	sub_domain	name	units	description
 138	humidity	atmospheric	surface; upper air	relative humidity	1	Relative humidity (from profile measurement)
 139	wind	atmospheric	surface; upper air	eastward wind speed	m s-1	Eastward wind speed (from profile measurement)
 140	wind	atmospheric	surface; upper air	northward wind speed	m s-1	Northward wind speed (from profile measurement)
-141	radiation	atmospheric	surface; upper air	Solar zenith angle	degrees	solar zenith angle
+141	radiation	atmospheric	surface; upper air	solar zenith angle	degrees	solar zenith angle
 142	pressure	atmospheric	upper air	pressure	Pa	pressure
 143				time since launch	s	Time since launch of radiosonde
 144		atmospheric	upper-air	monthly total ozone column	DU	Monthly value of total column ozone amount
