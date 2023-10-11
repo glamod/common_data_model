@@ -176,3 +176,4 @@ variable	parameter_group	domain	sub_domain	name	units	description
 187	radiation	atmospheric		hourly minimum downward shortwave irradiance at earth surface	W m-2	Flux density of the solar radiation at the Earth surface
 188	temperature	atmospheric		hourly maximum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
 189	temperature	atmospheric		hourly minimum soil temperature	K	Lot 1 is using Ts - WMO abbrev.
+190 precipitable water column era5   kg m-2	TBD (GNSS variable)ad
