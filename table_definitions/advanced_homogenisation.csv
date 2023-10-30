@@ -1,0 +1,14 @@
+# Description:
+# Source:
+element_name	kind	external_table	description
+observation_id	varchar (pk)	observations_table:observation_id	Link to observation this entry is for
+RAOBCORE_bias_estimate	numeric		RAOBCORE bias estimate
+RASE_bias_estimate	numeric		RASE bias estimate
+RICH_bias_estimate	numeric		RICH bias estimate
+RISE_bias_estimate	numeric		RISE bias estimate
+humidity_bias_estimate	numeric		Humidity bias estimate
+latitude_displacement	numeric		Latitude displacement
+longitude_displacement	numeric		Longitude displacement
+time_since_launch	numeric		Time since launch
+true_time	numeric		True time
+wind_bias_estimate	numeric		Wind bias estimate
