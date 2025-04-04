@@ -1,6 +1,6 @@
 # Description: Duration of report
 # Source:
 element_name	kind	external_table	description
-duration	int(pk)	 	Primary key 
+duration	int(pk)	 	Primary key
 description	varchar	 	Text description of duration
 period	int	 	Duration converted to seconds
